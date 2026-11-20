@@ -1,0 +1,31 @@
+{
+  "profile_version": "2026.07",
+  "services": [
+    {
+      "name": "network",
+      "env": {"IFACE": "wan0", "MODE": "dhcp"},
+      "restart": "on-failure",
+      "health_path": "/app/signals/network.ok"
+    },
+    {
+      "name": "firewall",
+      "after": ["gateway"],
+      "env": {"DEFAULT-POLICY": "drop", "NFT_TABLE": "edge", "UPLINK": "${network.IFACE}"},
+      "restart": "on-failure",
+      "health_path": "/app/signals/firewall.ok"
+    },
+    {
+      "name": "watchdog",
+      "after": [],
+      "env": {"INTERVAL_SEC": "15", "TARGET": "gateway"},
+      "restart": "always"
+    },
+    {
+      "name": "gateway",
+      "after": ["firewall"],
+      "env": {"LISTEN": "127.0.0.1:8080", "MODE": "edge", "POLICY": "${firewall.DEFAULT_POLICY}"},
+      "restart": "always",
+      "health_path": "/app/signals/gateway.down"
+    }
+  ]
+}

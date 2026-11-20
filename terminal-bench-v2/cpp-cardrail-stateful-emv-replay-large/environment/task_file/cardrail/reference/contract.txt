@@ -1,0 +1,19 @@
+# Cardrail offline replay contract
+
+Start here when repairing the card security-audit replay tool. The command /app/cardrail/bin/cardrail_replay <case_dir> <output_dir> reads manifest.meta and trace.tsv from the case directory, updates /app/cardrail/state/ledger.tsv, and writes four files in the output directory: case_summary.json, issuer_scripts.jsonl, reversal_queue.csv, and audit_digest.txt. These files form an issuer-side security audit trail for offline replay and reversal decisions. The documents next to this one are part of the contract, not examples.
+
+The security objective is described in threat-model.txt. The replay must detect duplicate card/ATC lineage effects without double-posting them, preserve issuer-script failure evidence, expose configured private TLV tags, queue reversals for duplicate ATC replay attempts, host-decline/timeout and hard-script outcomes, and make the audit digest stable enough for tamper-evident comparison across repeated runs.
+
+The replay must be deterministic. Running the same case twice leaves the ledger with one effect row for each kept transaction or script and produces the same artifact bytes. Ledger rows use five tab-delimited fields: case id, lineage key, kind, ATC, and the record id or script id. The kind field is exactly TXN or SCRIPT. When a transaction is continuation-joined, the transaction ledger row uses the first record id from the logical command, not the later record that supplied the continuation response.
+
+Profile selection is described in profile-selection.txt. The /etc/cardrail/profile.toml override wins, the manifest profile is only the middle fallback, and the bundled default profile is last. The profile_id written to case_summary.json comes from the selected profile file.
+
+Output schemas are exact. JSON keys follow the order in output-artifacts.txt, session rows use the summary sort defined there, every JSONL row uses the same field order, and the CSV header is fixed. The digest file contains one line: cardrail-v1, a space, sixteen lower-case hexadecimal digits, and a trailing newline. The digest covers the field stream in audit-digest.txt, not the rendered JSON or CSV bytes.
+
+Not every non-9000 status word is final. 61xx and 6Cxx are continuation statuses and are joined with the following response for the same session, card, and ATC. Script warning statuses such as 6283 and 6300 are soft failures when the selected profile lists them. 6985 and 6A80 are hard failures in the bundled profiles.
+
+Private BER-TLV extraction is covered in tlv-profile.txt. Constructed templates are parsed recursively. Tags whose names begin with DF are kept in lexical order when the selected profile allows private tags.
+
+Duplicate ATC handling is lineage based. Within one card lineage, a later transaction with the same ATC is suppressed, but scripts on that ATC are still considered. A duplicate from another card lineage is independent. The lineage key is card id plus the first ATC on a TXN row for that card after sorting raw rows by card, session, ATC, decimal seq, and record. The seq field is ordered as an integer, so 2 comes before 10. That word "first" refers to this sorted row order. It is not a request to choose the numerically smallest ATC unless the same row is also first after sorting. SCRIPT rows never choose the first ATC.
+
+Reversal planning uses the effective decision after continuation joining and host outcome reconciliation. Offline approval followed by host decline queues host_decline_after_offline_approval. Online approval followed by host timeout queues host_timeout_after_online_approval. A hard script failure on the same lineage and ATC queues issuer_script_hard_failure, with precedence as described in reversal-precedence.txt.

@@ -1,0 +1,30 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+    },
+    "trial_name": "luajit-virtual-heap-exits__wNsmmBC",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2-regrade",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        }
+    },
+    "job_id": "be6e5db9-fa00-40ed-b9be-114a4630bca1",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "a109fc52-f98b-4fd6-a0e1-66e2fd8c19ac",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6"
+    }
+}

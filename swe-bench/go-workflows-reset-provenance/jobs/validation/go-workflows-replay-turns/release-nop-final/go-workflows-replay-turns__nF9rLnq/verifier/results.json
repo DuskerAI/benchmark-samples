@@ -1,0 +1,233 @@
+{
+  "count": 57,
+  "tests": [
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P01_existing_activity_replay",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P01_existing_child_replay",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P01_existing_timer_replay",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P02_live_channels",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P02_live_side",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P02_live_simple",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_P02_live_spans",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R01_cold_actor_ownership_2",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R01_cold_actor_ownership_3",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R01_cold_actor_ownership_5",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R01_inline_actor_before_plain_actor",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R01_plain_actor_before_inline_actor",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R02_immediate_select_1",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R02_immediate_select_2",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R02_immediate_select_4",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R03_nested_span_around_memo",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R03_nested_span_parentage_2",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R03_nested_span_parentage_3",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R03_span_without_side_effect",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R04_three_turn_alternate",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R04_three_turn_cold",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R04_three_turn_warm_suffix",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_forward_batch_0",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_forward_batch_1",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_0",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_1",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R06_blocked_receiver_then_inline_sender",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R06_buffered_handoff_after_memo",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R06_spawn_after_inline_memo",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R06_spawn_before_explicit_span",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R07_cancelled_timer_stays_cancelled",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R07_real_child_waits",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R07_real_signal_waits",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R07_real_timer_waits",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R08_caught_activity_failure_then_inline_work",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R08_retry_keeps_actor_identity",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R09_empty_string_is_a_committed_value",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R09_null_payload_remains_distinct_from_missing",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R09_wrapped_payloads_across_restarts",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_0",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_1",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_0",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_1",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_bad_payload",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_duplicate_side",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_duplicate_trace",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_future_turn_side",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_future_turn_trace",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_missing_side",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_missing_trace",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R11_reject_wrong_owner",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_actor_tokens",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_nested_spans",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_ready_and_null",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_wrapped_receipts",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R13_logical_task_clock_cold",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_replay_turns.ReplayTurnSemantics.test_R13_logical_task_clock_warm_suffix",
+      "status": "FAILED"
+    }
+  ]
+}

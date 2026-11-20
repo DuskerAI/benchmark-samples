@@ -1,0 +1,17 @@
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+.git
+.gitignore
+**/.mypy_cache/
+**/.ruff_cache/
+**/node_modules/
+.env
+**/.env
+debs/
+solution/
+tests/
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/

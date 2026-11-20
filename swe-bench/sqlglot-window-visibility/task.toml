@@ -1,0 +1,44 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/sqlglot", destination = "candidate-source" }]
+
+[task]
+name = "dusker-ai/sqlglot-window-visibility"
+version = "1.0.0"
+description = "Execute peer-aware windows without losing row identity or query-phase visibility"
+authors = [{ name = "dusker ai" }]
+keywords = ["query-engine", "sql", "window-functions", "frames", "execution"]
+
+[metadata]
+difficulty = "hard"
+category = "Query engine semantic correctness"
+tags = ["original", "sqlglot", "semantic-correctness"]
+base_commit = "0ebcabfcb4edfbbdd18a4fa1a38485a59a5f6d7f"
+upstream_commit = "ad8764a0436a7b5c500b783ebe50dbf20c1e477c"
+repository = "https://github.com/tobymao/sqlglot"
+
+[agent]
+timeout_sec = 3000.0
+network_mode = "no-network"
+user = "solver"
+
+[environment]
+build_timeout_sec = 900.0
+network_mode = "public"
+cpus = 2
+memory_mb = 4096
+storage_mb = 4096
+workdir = "/app"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+network_mode = "no-network"
+user = "root"
+
+[verifier.environment]
+build_timeout_sec = 900.0
+network_mode = "no-network"
+cpus = 2
+memory_mb = 2048
+storage_mb = 4096
+workdir = "/app"

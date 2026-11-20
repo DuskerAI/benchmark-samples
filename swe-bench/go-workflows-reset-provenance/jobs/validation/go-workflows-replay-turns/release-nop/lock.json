@@ -1,0 +1,64 @@
+{
+    "schema_version": 3,
+    "created_at": "2026-10-15T22:24:47.619423Z",
+    "harbor": {
+        "version": "0.22.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "RewardFileEmptyError",
+            "ApiUsageLimitError",
+            "ModelNotFoundError",
+            "AgentSafetyRefusalError",
+            "VerifierOutputParseError",
+            "RewardFileNotFoundError",
+            "AgentAuthenticationError",
+            "AgentTimeoutError",
+            "VerifierTimeoutError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "go-workflows-replay-turns",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:719986e6d59203c73862944b6020f77a6dee320ebb585942136348acaed986b3",
+                "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "nop",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [],
+                "kwargs": {},
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            }
+        }
+    ]
+}

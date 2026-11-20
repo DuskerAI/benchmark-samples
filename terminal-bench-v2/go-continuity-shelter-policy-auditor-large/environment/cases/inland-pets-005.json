@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": false,
+  "case_id": "inland-pets-005",
+  "evacuation_status": "advisory",
+  "exceptions": [],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-04",
+  "jurisdiction": "inland",
+  "medical_dependent": false,
+  "opened_at": "2026-02-13",
+  "pet_accommodation": false,
+  "pet_count": 2,
+  "residents": 30,
+  "shelter_type": "community_center",
+  "staff_count": 2,
+  "transport_status": "not_required",
+  "water_days": 3
+}

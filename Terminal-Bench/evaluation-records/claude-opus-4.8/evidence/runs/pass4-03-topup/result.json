@@ -1,0 +1,30 @@
+{
+    "id": "f4929e14-24de-429f-bfb6-8c9bb18593ca",
+    "started_at": "2026-07-24T01:06:07.413681",
+    "finished_at": "2026-07-24T01:12:27.952791",
+    "n_total_trials": 2,
+    "stats": {
+        "n_trials": 2,
+        "n_errors": 0,
+        "evals": {
+            "claude-code__tasks": {
+                "n_trials": 2,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "03-sbom-vulnerability-analyzer__5zvFTA9",
+                            "03-sbom-vulnerability-analyzer__dmTjNg3"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

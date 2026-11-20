@@ -1,0 +1,6 @@
+Name: libcore
+Version: 1.0.7
+Target: any
+Requires.private: sys-zlib >= 1.2, libm
+Cflags: -I${pc_sysrootdir}/include/core
+Libs: -L${pc_sysrootdir}/lib -lcore

@@ -1,0 +1,7 @@
+Name: zlib-ng
+Version: 2.1.0
+Target: armv7-linux-gnueabihf
+Provides: sys-zlib = 1.3.4
+Conflicts: zlib-old
+Cflags: -I/usr/include/zlib-ng
+Libs: -L/usr/lib -lzng

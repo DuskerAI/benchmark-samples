@@ -1,0 +1,114 @@
+{
+    "id": "06ee5061-ef98-4b76-bff6-2816944fce57",
+    "task_name": "dusker-ai/go-workflows-reset-provenance",
+    "trial_name": "go-workflows-reset-provenance__8sVshyP",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-nop-final/go-workflows-reset-provenance__8sVshyP",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "source": null,
+    "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "go-workflows-reset-provenance__8sVshyP",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-nop-final",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "881ae0d7-0474-4380-89a0-bc564f9f970c",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T09:38:14.620839Z",
+    "finished_at": "2026-10-16T09:38:41.520130Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T09:38:14.652479Z",
+        "finished_at": "2026-10-16T09:38:18.086295Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T09:38:18.086366Z",
+        "finished_at": "2026-10-16T09:38:18.086437Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T09:38:18.086512Z",
+        "finished_at": "2026-10-16T09:38:20.231875Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T09:38:25.706858Z",
+        "finished_at": "2026-10-16T09:38:41.520109Z"
+    },
+    "step_results": null
+}

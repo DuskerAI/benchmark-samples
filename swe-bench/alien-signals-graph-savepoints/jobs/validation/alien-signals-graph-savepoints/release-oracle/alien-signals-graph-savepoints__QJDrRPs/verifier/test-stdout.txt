@@ -1,0 +1,149 @@
+{
+  "reward": 1,
+  "category": "acceptance_pass",
+  "exact_inventory": true,
+  "fail_to_pass": {
+    "passed": 118,
+    "total": 118
+  },
+  "pass_to_pass": {
+    "passed": 10,
+    "total": 10
+  },
+  "nonpassing": [],
+  "suite_exit_code": 0,
+  "requirement_groups": {
+    "S01": {
+      "passed": 2,
+      "total": 2
+    },
+    "S02": {
+      "passed": 10,
+      "total": 10
+    },
+    "S03": {
+      "passed": 4,
+      "total": 4
+    },
+    "S04": {
+      "passed": 4,
+      "total": 4
+    },
+    "S05": {
+      "passed": 4,
+      "total": 4
+    },
+    "S06": {
+      "passed": 4,
+      "total": 4
+    },
+    "S07": {
+      "passed": 4,
+      "total": 4
+    },
+    "S08": {
+      "passed": 2,
+      "total": 2
+    },
+    "S09": {
+      "passed": 4,
+      "total": 4
+    },
+    "S10": {
+      "passed": 2,
+      "total": 2
+    },
+    "S11": {
+      "passed": 4,
+      "total": 4
+    },
+    "S12": {
+      "passed": 2,
+      "total": 2
+    },
+    "S13": {
+      "passed": 6,
+      "total": 6
+    },
+    "S14": {
+      "passed": 2,
+      "total": 2
+    },
+    "S15": {
+      "passed": 4,
+      "total": 4
+    },
+    "S16": {
+      "passed": 2,
+      "total": 2
+    },
+    "S17": {
+      "passed": 6,
+      "total": 6
+    },
+    "S18": {
+      "passed": 4,
+      "total": 4
+    },
+    "S19": {
+      "passed": 2,
+      "total": 2
+    },
+    "S20": {
+      "passed": 4,
+      "total": 4
+    },
+    "S21": {
+      "passed": 2,
+      "total": 2
+    },
+    "S22": {
+      "passed": 4,
+      "total": 4
+    },
+    "P01": {
+      "passed": 4,
+      "total": 4
+    },
+    "P02": {
+      "passed": 2,
+      "total": 2
+    },
+    "P03": {
+      "passed": 2,
+      "total": 2
+    },
+    "P04": {
+      "passed": 2,
+      "total": 2
+    },
+    "G01": {
+      "passed": 24,
+      "total": 24
+    },
+    "S23": {
+      "passed": 2,
+      "total": 2
+    },
+    "S24": {
+      "passed": 2,
+      "total": 2
+    },
+    "S25": {
+      "passed": 2,
+      "total": 2
+    },
+    "S26": {
+      "passed": 2,
+      "total": 2
+    },
+    "S27": {
+      "passed": 2,
+      "total": 2
+    },
+    "S28": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}

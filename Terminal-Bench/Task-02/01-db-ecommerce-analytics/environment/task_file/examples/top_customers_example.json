@@ -1,0 +1,22 @@
+[
+  {
+    "customer_id": 42,
+    "name": "Alice Chen",
+    "gross_spend": 4821.5,
+    "return_value": 213.75,
+    "return_count": 2,
+    "net_spend": 4607.75,
+    "order_count": 18,
+    "avg_order_value": 255.99
+  },
+  {
+    "customer_id": 7,
+    "name": "Bob Martins",
+    "gross_spend": 4390.0,
+    "return_value": 0.0,
+    "return_count": 0,
+    "net_spend": 4390.0,
+    "order_count": 21,
+    "avg_order_value": 209.05
+  }
+]

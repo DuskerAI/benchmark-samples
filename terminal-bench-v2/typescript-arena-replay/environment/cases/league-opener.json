@@ -1,0 +1,25 @@
+{
+  "matchId": "league-opener",
+  "arena": {"width": 6, "height": 5, "walls": [[2, 2], [3, 2]]},
+  "teams": ["red", "blue"],
+  "units": [
+    {"id": "B1", "team": "blue", "hp": 9, "attack": 4, "speed": 4, "vision": 2, "x": 4, "y": 1},
+    {"id": "B2", "team": "blue", "hp": 8, "attack": 3, "speed": 2, "vision": 3, "x": 5, "y": 3},
+    {"id": "R1", "team": "red", "hp": 10, "attack": 4, "speed": 4, "vision": 2, "x": 1, "y": 1},
+    {"id": "R2", "team": "red", "hp": 7, "attack": 5, "speed": 2, "vision": 2, "x": 0, "y": 3}
+  ],
+  "events": [
+    {"round": 1, "actor": "R1", "action": "move", "dx": 1, "dy": 0},
+    {"round": 1, "actor": "B1", "action": "strike", "target": "R1"},
+    {"round": 1, "actor": "R2", "action": "blast", "x": 4, "y": 3},
+    {"round": 1, "actor": "B2", "action": "strike", "target": "R2"},
+    {"round": 2, "actor": "R1", "action": "strike", "target": "B1"},
+    {"round": 2, "actor": "B1", "action": "strike", "target": "R1"},
+    {"round": 2, "actor": "R2", "action": "move", "dx": 1, "dy": -1},
+    {"round": 2, "actor": "B2", "action": "blast", "x": 1, "y": 2},
+    {"round": 3, "actor": "R1", "action": "strike", "target": "B1"},
+    {"round": 3, "actor": "B1", "action": "strike", "target": "R1"},
+    {"round": 3, "actor": "R2", "action": "strike", "target": "B2"},
+    {"round": 3, "actor": "B2", "action": "wait"}
+  ]
+}

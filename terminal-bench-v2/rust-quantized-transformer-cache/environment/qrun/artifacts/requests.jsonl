@@ -1,0 +1,4 @@
+{"id": "edge-a", "prompt": "Quant cache deterministic", "max_new": 5, "rank_k": 4, "checkpoint_after": 2}
+{"id": "edge-b", "prompt": "edge\r\ncache cache", "max_new": 4, "rank_k": 3}
+{"id": "reject-me", "prompt": "cache", "max_new": 0, "rank_k": 3}
+{"id": "bad-rank", "prompt": "kv cache", "max_new": 3, "rank_k": 0}

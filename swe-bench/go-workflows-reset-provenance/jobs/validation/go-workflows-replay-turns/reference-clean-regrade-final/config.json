@@ -1,0 +1,18 @@
+{
+    "job_name": "reference-clean-regrade-final",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+        }
+    ],
+    "source_jobs": [
+        {
+            "action": "regrade",
+            "type": "local",
+            "job_id": "78964b6e-b7f7-4e96-ae2f-4fc59892ac3d",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/release-oracle"
+        }
+    ]
+}

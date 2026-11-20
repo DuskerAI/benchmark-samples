@@ -1,0 +1,115 @@
+{
+  "source": "Dusker SWE catalog.json, dataset10 (copied verbatim at packaging time)",
+  "sample_location": "swe-bench/luajit-virtual-heap-exits",
+  "catalog_entry": {
+    "number": 10,
+    "slug": "luajit-virtual-heap-exits",
+    "task_id": "dusker-ai/luajit-virtual-heap-exits",
+    "version": "1.0.0",
+    "description": "Preserve virtual heap identity and values across native trace recovery and side-trace import",
+    "category": "JIT compiler deoptimization",
+    "path": "dataset10/luajit-virtual-heap-exits",
+    "jobs": "dataset10/jobs",
+    "base_commit": "620a6171118fa972c3b000b7c17f2d151175cde6",
+    "upstream_commit": "2a8e017ef1ece6a95b983ffca073d30609dce7c4",
+    "repository": "https://github.com/LuaJIT/LuaJIT",
+    "harbor_task_checksum": "6150315eafc9251c1d8e1d9175628ca5ac7fab2ea93be318c89e6b4b9ae837fb",
+    "package_tree_sha256": "35cf3d9c4ad8794fb51e404113758e58b521d73599b1b59f3274815e57c41d03",
+    "files": {
+      "environment/Dockerfile": {
+        "sha256": "c31d2c9ae165c6cb9a42d4665b46b99811e8d8a761cfc6cc920ffccfbac2a3d6",
+        "bytes": 669
+      },
+      "environment/base.bundle": {
+        "sha256": "8561aabc8cc03a5e8880ae82a0ff792e3423db01fa10025eb1137a99be2d8027",
+        "bytes": 1152961
+      },
+      "instruction.md": {
+        "sha256": "7830106a22823f8a82c0812faa91e130400e7b351a9b681dfce6491450ecd863",
+        "bytes": 2333
+      },
+      "solution/gold_patch.diff": {
+        "sha256": "e8e283fda2eb5f360a4721cc4165a0aa7766c325c76c07991bd51114e90556f0",
+        "bytes": 13683
+      },
+      "solution/solve.sh": {
+        "sha256": "a50451f331a55a124d2b85aa2683a69d9b41a9935a6be23faa828bd6e7f6d631",
+        "bytes": 190
+      },
+      "task.toml": {
+        "sha256": "652bea5e75b6f8bb29224114aeb1992d84a6fa35c47b510dfb1636c0c69773a4",
+        "bytes": 1225
+      },
+      "tests/Dockerfile": {
+        "sha256": "c4493e779305fe0005f0ec1e0f3e05a1d6d5b2ed670f85cce453c20271565d75",
+        "bytes": 882
+      },
+      "tests/base.bundle": {
+        "sha256": "8561aabc8cc03a5e8880ae82a0ff792e3423db01fa10025eb1137a99be2d8027",
+        "bytes": 1152961
+      },
+      "tests/config.json": {
+        "sha256": "5b56071f1f550b32ce7cadd13fddaba81658f83810cc0ff630d018bd74a2f0ff",
+        "bytes": 5833
+      },
+      "tests/driver.c": {
+        "sha256": "d438507bf59cac0786df23595206a41767242f8eb48ef51ba421a6ba8199aa5e",
+        "bytes": 1895
+      },
+      "tests/launch_candidate.py": {
+        "sha256": "cf28ca3c04ac246263d36182700ab5e24b4b300c093a8e1c7fd12fbaeeac9f62",
+        "bytes": 521
+      },
+      "tests/parser.py": {
+        "sha256": "4161ca29ddc509a6f37dfc6908719322dd2c9289d9551dcacc1492f1289201b3",
+        "bytes": 9580
+      },
+      "tests/run_script.sh": {
+        "sha256": "b890fbfcf833a601ce59c9647642c63dc1df327ec65a55fb09a1266d9ea3329b",
+        "bytes": 87
+      },
+      "tests/test.sh": {
+        "sha256": "42a08c1f41838a639bbcc588273ef52c0c29f94e7091d337e285e15dc58a1648",
+        "bytes": 924
+      },
+      "tests/test_patch.patch": {
+        "sha256": "3773670655990051ac192cdf110a13ea5830c564d3b209dd071ef9beef9da415",
+        "bytes": 25219
+      }
+    },
+    "evidence_tree_sha256": "09d2ebcb7611a18e46734220d78e56aa523f33f9de17bf1e70cdd779228e01d8",
+    "declared_metadata_equivalent_checksums": [
+      "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "6150315eafc9251c1d8e1d9175628ca5ac7fab2ea93be318c89e6b4b9ae837fb"
+    ],
+    "recorded_controls": {
+      "clean_regrade": {
+        "result": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final-r3/luajit-virtual-heap-exits__VixZJFk/result.json",
+        "grade": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final-r3/luajit-virtual-heap-exits__VixZJFk/verifier/grade.json",
+        "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+        "reward": 1
+      },
+      "nop": {
+        "result": "validation/luajit-virtual-heap-exits/release-nop-final-r3/luajit-virtual-heap-exits__fttp8BG/result.json",
+        "grade": "validation/luajit-virtual-heap-exits/release-nop-final-r3/luajit-virtual-heap-exits__fttp8BG/verifier/grade.json",
+        "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+        "reward": 0
+      },
+      "oracle": {
+        "result": "validation/luajit-virtual-heap-exits/release-oracle-final-r3/luajit-virtual-heap-exits__FGmskjZ/result.json",
+        "grade": "validation/luajit-virtual-heap-exits/release-oracle-final-r3/luajit-virtual-heap-exits__FGmskjZ/verifier/grade.json",
+        "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+        "reward": 1
+      }
+    },
+    "tests": {
+      "fail_to_pass": 38,
+      "pass_to_pass": 10
+    },
+    "model_trials": {
+      "total": 4,
+      "passed": 0,
+      "failed": 4
+    }
+  }
+}

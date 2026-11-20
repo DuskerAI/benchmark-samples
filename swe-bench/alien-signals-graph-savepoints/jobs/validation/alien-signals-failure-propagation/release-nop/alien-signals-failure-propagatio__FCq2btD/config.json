@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-failure-propagation"
+    },
+    "trial_name": "alien-signals-failure-propagatio__FCq2btD",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs/release-nop",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "06205f37-8d4f-4006-a2a3-2c6a9b8a5e2e"
+}

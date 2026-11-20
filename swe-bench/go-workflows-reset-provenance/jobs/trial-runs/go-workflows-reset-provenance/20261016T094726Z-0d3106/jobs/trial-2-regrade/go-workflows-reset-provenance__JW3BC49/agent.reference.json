@@ -1,0 +1,8 @@
+{
+  "retained_directory": "../../trial-2/go-workflows-reset-provenance__xUAbaTU/agent",
+  "tree_sha256": "bfdfafa0715a0f31da9e68cf92021ab24d60ea60adedc411c36a045f0c8fcd7e",
+  "file_count": 3,
+  "bytes": 2810412,
+  "reason": "Byte-identical derived regrade copy; original evidence retained.",
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

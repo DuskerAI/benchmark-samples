@@ -1,0 +1,373 @@
+{
+  "count": 92,
+  "tests": [
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P01_laziness_and_cache_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P01_laziness_and_cache_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P01_unchanged_success_suppression_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P01_unchanged_success_suppression_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P02_normal_lifecycle_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P02_normal_lifecycle_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P03_dispose_during_tracked_prefix_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_P03_dispose_during_tracked_prefix_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R02_previous_success_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R02_previous_success_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_branch_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_branch_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_chain_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_chain_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_diamond_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_diamond_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_reconverge_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R03_reconverge_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_branch_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_branch_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_chain_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_chain_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_diamond_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_diamond_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_reconverge_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R04_reconverge_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R06_reentrant_drain_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R06_reentrant_drain_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R11_rerun_after_cleanup_failure_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R11_rerun_after_cleanup_failure_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R19_reentrant_sibling_disposal_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R19_reentrant_sibling_disposal_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R19_self_disposal_from_cleanup_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R19_self_disposal_from_cleanup_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_esm",
+      "status": "PASSED"
+    }
+  ]
+}

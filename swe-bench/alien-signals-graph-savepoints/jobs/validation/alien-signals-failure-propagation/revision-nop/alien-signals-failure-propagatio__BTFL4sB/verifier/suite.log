@@ -1,0 +1,2537 @@
+test_P01_laziness_and_cache_cjs (test_propagation_semantics.PropagationSemantics.test_P01_laziness_and_cache_cjs) ... ok
+test_P01_laziness_and_cache_esm (test_propagation_semantics.PropagationSemantics.test_P01_laziness_and_cache_esm) ... ok
+test_P01_unchanged_success_suppression_cjs (test_propagation_semantics.PropagationSemantics.test_P01_unchanged_success_suppression_cjs) ... ok
+test_P01_unchanged_success_suppression_esm (test_propagation_semantics.PropagationSemantics.test_P01_unchanged_success_suppression_esm) ... ok
+test_P02_normal_lifecycle_cjs (test_propagation_semantics.PropagationSemantics.test_P02_normal_lifecycle_cjs) ... ok
+test_P02_normal_lifecycle_esm (test_propagation_semantics.PropagationSemantics.test_P02_normal_lifecycle_esm) ... ok
+test_P03_dispose_during_tracked_prefix_cjs (test_propagation_semantics.PropagationSemantics.test_P03_dispose_during_tracked_prefix_cjs) ... ok
+test_P03_dispose_during_tracked_prefix_esm (test_propagation_semantics.PropagationSemantics.test_P03_dispose_during_tracked_prefix_esm) ... ok
+test_P04_child_cleanup_stops_running_parent_cjs (test_propagation_semantics.PropagationSemantics.test_P04_child_cleanup_stops_running_parent_cjs) ... ok
+test_P04_child_cleanup_stops_running_parent_esm (test_propagation_semantics.PropagationSemantics.test_P04_child_cleanup_stops_running_parent_esm) ... ok
+test_P04_cleanup_stops_pruning_consumer_cjs (test_propagation_semantics.PropagationSemantics.test_P04_cleanup_stops_pruning_consumer_cjs) ... ok
+test_P04_cleanup_stops_pruning_consumer_esm (test_propagation_semantics.PropagationSemantics.test_P04_cleanup_stops_pruning_consumer_esm) ... ok
+test_P05_branch_prune_resubscribes_same_computed_cjs (test_propagation_semantics.PropagationSemantics.test_P05_branch_prune_resubscribes_same_computed_cjs) ... ok
+test_P05_branch_prune_resubscribes_same_computed_esm (test_propagation_semantics.PropagationSemantics.test_P05_branch_prune_resubscribes_same_computed_esm) ... ok
+test_P05_revival_with_throwing_old_cleanup_cjs (test_propagation_semantics.PropagationSemantics.test_P05_revival_with_throwing_old_cleanup_cjs) ... ok
+test_P05_revival_with_throwing_old_cleanup_esm (test_propagation_semantics.PropagationSemantics.test_P05_revival_with_throwing_old_cleanup_esm) ... ok
+test_P05_revived_computed_source_subscription_survives_cjs (test_propagation_semantics.PropagationSemantics.test_P05_revived_computed_source_subscription_survives_cjs) ... ok
+test_P05_revived_computed_source_subscription_survives_esm (test_propagation_semantics.PropagationSemantics.test_P05_revived_computed_source_subscription_survives_esm) ... ok
+test_P06_cleanup_created_detached_effect_stays_independent_cjs (test_propagation_semantics.PropagationSemantics.test_P06_cleanup_created_detached_effect_stays_independent_cjs) ... ok
+test_P06_cleanup_created_detached_effect_stays_independent_esm (test_propagation_semantics.PropagationSemantics.test_P06_cleanup_created_detached_effect_stays_independent_esm) ... ok
+test_P06_shared_computed_is_not_retired_with_one_owner_cjs (test_propagation_semantics.PropagationSemantics.test_P06_shared_computed_is_not_retired_with_one_owner_cjs) ... ok
+test_P06_shared_computed_is_not_retired_with_one_owner_esm (test_propagation_semantics.PropagationSemantics.test_P06_shared_computed_is_not_retired_with_one_owner_esm) ... ok
+test_R01_sticky_null_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_cjs) ... FAIL
+test_R01_sticky_null_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_esm) ... FAIL
+test_R01_sticky_number_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_cjs) ... FAIL
+test_R01_sticky_number_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_esm) ... FAIL
+test_R01_sticky_object_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_cjs) ... FAIL
+test_R01_sticky_object_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_esm) ... FAIL
+test_R01_sticky_string_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_cjs) ... FAIL
+test_R01_sticky_string_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_esm) ... FAIL
+test_R01_sticky_undefined_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_cjs) ... FAIL
+test_R01_sticky_undefined_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_esm) ... FAIL
+test_R02_first_failure_then_success_cjs (test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_cjs) ... FAIL
+test_R02_first_failure_then_success_esm (test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_esm) ... FAIL
+test_R02_previous_success_cjs (test_propagation_semantics.PropagationSemantics.test_R02_previous_success_cjs) ... ok
+test_R02_previous_success_esm (test_propagation_semantics.PropagationSemantics.test_R02_previous_success_esm) ... ok
+test_R03_branch_cjs (test_propagation_semantics.PropagationSemantics.test_R03_branch_cjs) ... FAIL
+test_R03_branch_esm (test_propagation_semantics.PropagationSemantics.test_R03_branch_esm) ... FAIL
+test_R03_chain_cjs (test_propagation_semantics.PropagationSemantics.test_R03_chain_cjs) ... FAIL
+test_R03_chain_esm (test_propagation_semantics.PropagationSemantics.test_R03_chain_esm) ... FAIL
+test_R03_diamond_cjs (test_propagation_semantics.PropagationSemantics.test_R03_diamond_cjs) ... FAIL
+test_R03_diamond_esm (test_propagation_semantics.PropagationSemantics.test_R03_diamond_esm) ... FAIL
+test_R03_reconverge_cjs (test_propagation_semantics.PropagationSemantics.test_R03_reconverge_cjs) ... FAIL
+test_R03_reconverge_esm (test_propagation_semantics.PropagationSemantics.test_R03_reconverge_esm) ... FAIL
+test_R04_branch_cjs (test_propagation_semantics.PropagationSemantics.test_R04_branch_cjs) ... FAIL
+test_R04_branch_esm (test_propagation_semantics.PropagationSemantics.test_R04_branch_esm) ... FAIL
+test_R04_chain_cjs (test_propagation_semantics.PropagationSemantics.test_R04_chain_cjs) ... FAIL
+test_R04_chain_esm (test_propagation_semantics.PropagationSemantics.test_R04_chain_esm) ... FAIL
+test_R04_diamond_cjs (test_propagation_semantics.PropagationSemantics.test_R04_diamond_cjs) ... FAIL
+test_R04_diamond_esm (test_propagation_semantics.PropagationSemantics.test_R04_diamond_esm) ... FAIL
+test_R04_reconverge_cjs (test_propagation_semantics.PropagationSemantics.test_R04_reconverge_cjs) ... FAIL
+test_R04_reconverge_esm (test_propagation_semantics.PropagationSemantics.test_R04_reconverge_esm) ... FAIL
+test_R05_siblings_0_cjs (test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_cjs) ... FAIL
+test_R05_siblings_0_esm (test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_esm) ... FAIL
+test_R05_siblings_1_cjs (test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_cjs) ... FAIL
+test_R05_siblings_1_esm (test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_esm) ... FAIL
+test_R06_nested_batches_cjs (test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_cjs) ... FAIL
+test_R06_nested_batches_esm (test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_esm) ... FAIL
+test_R06_reentrant_drain_cjs (test_propagation_semantics.PropagationSemantics.test_R06_reentrant_drain_cjs) ... ok
+test_R06_reentrant_drain_esm (test_propagation_semantics.PropagationSemantics.test_R06_reentrant_drain_esm) ... ok
+test_R07_caught_error_not_scheduler_error_cjs (test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_cjs) ... FAIL
+test_R07_caught_error_not_scheduler_error_esm (test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_esm) ... FAIL
+test_R08_trigger_failure_recovery_cjs (test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_cjs) ... FAIL
+test_R08_trigger_failure_recovery_esm (test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_esm) ... FAIL
+test_R09_scope_reverse_0_cjs (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_cjs) ... FAIL
+test_R09_scope_reverse_0_esm (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_esm) ... FAIL
+test_R09_scope_reverse_1_cjs (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_cjs) ... FAIL
+test_R09_scope_reverse_1_esm (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_esm) ... FAIL
+test_R10_owner_cleanup_after_children_cjs (test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_cjs) ... FAIL
+test_R10_owner_cleanup_after_children_esm (test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_esm) ... FAIL
+test_R11_child_cleanup_before_new_parent_body_cjs (test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_cjs) ... FAIL
+test_R11_child_cleanup_before_new_parent_body_esm (test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_esm) ... FAIL
+test_R11_rerun_after_cleanup_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R11_rerun_after_cleanup_failure_cjs) ... ok
+test_R11_rerun_after_cleanup_failure_esm (test_propagation_semantics.PropagationSemantics.test_R11_rerun_after_cleanup_failure_esm) ... ok
+test_R12_failed_initial_effect_cjs (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_cjs) ... FAIL
+test_R12_failed_initial_effect_esm (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_esm) ... FAIL
+test_R12_failed_initial_scope_cjs (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_cjs) ... FAIL
+test_R12_failed_initial_scope_esm (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_esm) ... FAIL
+test_R13_failed_computed_owned_children_cjs (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_cjs) ... FAIL
+test_R13_failed_computed_owned_children_esm (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_esm) ... FAIL
+test_R13_failed_computed_partial_children_cjs (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_cjs) ... FAIL
+test_R13_failed_computed_partial_children_esm (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_esm) ... FAIL
+test_R14_untracked_cleanup_and_context_cjs (test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_cjs) ... FAIL
+test_R14_untracked_cleanup_and_context_esm (test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_esm) ... FAIL
+test_R15_cleanup_precedes_body_error_cjs (test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_cjs) ... FAIL
+test_R15_cleanup_precedes_body_error_esm (test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_esm) ... FAIL
+test_R15_first_observer_error_identity_cjs (test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_cjs) ... FAIL
+test_R15_first_observer_error_identity_esm (test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_esm) ... FAIL
+test_R16_computed_teardown_failure_cached_cjs (test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_cjs) ... FAIL
+test_R16_computed_teardown_failure_cached_esm (test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_esm) ... FAIL
+test_R17_throwing_value_is_also_ordinary_data_cjs (test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_cjs) ... FAIL
+test_R17_throwing_value_is_also_ordinary_data_esm (test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_esm) ... FAIL
+test_R18_cleanup_mutation_drains_after_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_cjs) ... FAIL
+test_R18_cleanup_mutation_drains_after_failure_esm (test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_esm) ... FAIL
+test_R19_reentrant_sibling_disposal_cjs (test_propagation_semantics.PropagationSemantics.test_R19_reentrant_sibling_disposal_cjs) ... ok
+test_R19_reentrant_sibling_disposal_esm (test_propagation_semantics.PropagationSemantics.test_R19_reentrant_sibling_disposal_esm) ... ok
+test_R19_self_disposal_from_cleanup_cjs (test_propagation_semantics.PropagationSemantics.test_R19_self_disposal_from_cleanup_cjs) ... ok
+test_R19_self_disposal_from_cleanup_esm (test_propagation_semantics.PropagationSemantics.test_R19_self_disposal_from_cleanup_esm) ... ok
+test_R20_failed_rerun_discards_new_children_cjs (test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_cjs) ... FAIL
+test_R20_failed_rerun_discards_new_children_esm (test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_esm) ... FAIL
+test_R21_undefined_flush_and_disposal_cjs (test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_cjs) ... FAIL
+test_R21_undefined_flush_and_disposal_esm (test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_esm) ... FAIL
+test_R22_dependency_prune_cleanup_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_cjs) ... FAIL
+test_R22_dependency_prune_cleanup_failure_esm (test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_esm) ... FAIL
+test_R23_own_cleanup_failure_releases_computed_cjs (test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_cjs) ... FAIL
+test_R23_own_cleanup_failure_releases_computed_esm (test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_esm) ... FAIL
+test_R24_caught_trigger_teardown_does_not_fail_effect_cjs (test_propagation_semantics.PropagationSemantics.test_R24_caught_trigger_teardown_does_not_fail_effect_cjs) ... ok
+test_R24_caught_trigger_teardown_does_not_fail_effect_esm (test_propagation_semantics.PropagationSemantics.test_R24_caught_trigger_teardown_does_not_fail_effect_esm) ... ok
+test_R24_nested_trigger_restores_outer_depth_cjs (test_propagation_semantics.PropagationSemantics.test_R24_nested_trigger_restores_outer_depth_cjs) ... FAIL
+test_R24_nested_trigger_restores_outer_depth_esm (test_propagation_semantics.PropagationSemantics.test_R24_nested_trigger_restores_outer_depth_esm) ... FAIL
+test_R24_trigger_preserves_callback_error_cjs (test_propagation_semantics.PropagationSemantics.test_R24_trigger_preserves_callback_error_cjs) ... FAIL
+test_R24_trigger_preserves_callback_error_esm (test_propagation_semantics.PropagationSemantics.test_R24_trigger_preserves_callback_error_esm) ... FAIL
+test_R24_trigger_teardown_restores_batch_cjs (test_propagation_semantics.PropagationSemantics.test_R24_trigger_teardown_restores_batch_cjs) ... FAIL
+test_R24_trigger_teardown_restores_batch_esm (test_propagation_semantics.PropagationSemantics.test_R24_trigger_teardown_restores_batch_esm) ... FAIL
+test_R25_self_stop_failed_new_scope_keeps_primary_error_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_failed_new_scope_keeps_primary_error_cjs) ... FAIL
+test_R25_self_stop_failed_new_scope_keeps_primary_error_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_failed_new_scope_keeps_primary_error_esm) ... FAIL
+test_R25_self_stop_late_cleanup_error_is_reported_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_late_cleanup_error_is_reported_cjs) ... FAIL
+test_R25_self_stop_late_cleanup_error_is_reported_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_late_cleanup_error_is_reported_esm) ... FAIL
+test_R25_self_stop_new_child_success_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_success_cjs) ... FAIL
+test_R25_self_stop_new_child_success_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_success_esm) ... FAIL
+test_R25_self_stop_new_child_then_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_then_failure_cjs) ... FAIL
+test_R25_self_stop_new_child_then_failure_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_then_failure_esm) ... FAIL
+test_R25_self_stop_then_nested_scope_success_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_then_nested_scope_success_cjs) ... FAIL
+test_R25_self_stop_then_nested_scope_success_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_then_nested_scope_success_esm) ... FAIL
+test_R26_effect_retirement_precedes_descendant_write_cjs (test_propagation_semantics.PropagationSemantics.test_R26_effect_retirement_precedes_descendant_write_cjs) ... FAIL
+test_R26_effect_retirement_precedes_descendant_write_esm (test_propagation_semantics.PropagationSemantics.test_R26_effect_retirement_precedes_descendant_write_esm) ... FAIL
+test_R26_nested_scope_retirement_external_observer_cjs (test_propagation_semantics.PropagationSemantics.test_R26_nested_scope_retirement_external_observer_cjs) ... FAIL
+test_R26_nested_scope_retirement_external_observer_esm (test_propagation_semantics.PropagationSemantics.test_R26_nested_scope_retirement_external_observer_esm) ... FAIL
+test_R26_retired_computed_sibling_is_not_rebuilt_cjs (test_propagation_semantics.PropagationSemantics.test_R26_retired_computed_sibling_is_not_rebuilt_cjs) ... FAIL
+test_R26_retired_computed_sibling_is_not_rebuilt_esm (test_propagation_semantics.PropagationSemantics.test_R26_retired_computed_sibling_is_not_rebuilt_esm) ... FAIL
+test_R26_retirement_force_trigger_mutable_input_cjs (test_propagation_semantics.PropagationSemantics.test_R26_retirement_force_trigger_mutable_input_cjs) ... FAIL
+test_R26_retirement_force_trigger_mutable_input_esm (test_propagation_semantics.PropagationSemantics.test_R26_retirement_force_trigger_mutable_input_esm) ... FAIL
+test_R26_scope_retirement_precedes_sibling_write_cjs (test_propagation_semantics.PropagationSemantics.test_R26_scope_retirement_precedes_sibling_write_cjs) ... FAIL
+test_R26_scope_retirement_precedes_sibling_write_esm (test_propagation_semantics.PropagationSemantics.test_R26_scope_retirement_precedes_sibling_write_esm) ... FAIL
+test_R27_nested_caught_initial_failure_during_cleanup_cjs (test_propagation_semantics.PropagationSemantics.test_R27_nested_caught_initial_failure_during_cleanup_cjs) ... FAIL
+test_R27_nested_caught_initial_failure_during_cleanup_esm (test_propagation_semantics.PropagationSemantics.test_R27_nested_caught_initial_failure_during_cleanup_esm) ... FAIL
+test_R28_retired_sibling_does_not_win_first_error_cjs (test_propagation_semantics.PropagationSemantics.test_R28_retired_sibling_does_not_win_first_error_cjs) ... FAIL
+test_R28_retired_sibling_does_not_win_first_error_esm (test_propagation_semantics.PropagationSemantics.test_R28_retired_sibling_does_not_win_first_error_esm) ... FAIL
+test_R28_retirement_while_notifications_already_queued_cjs (test_propagation_semantics.PropagationSemantics.test_R28_retirement_while_notifications_already_queued_cjs) ... FAIL
+test_R28_retirement_while_notifications_already_queued_esm (test_propagation_semantics.PropagationSemantics.test_R28_retirement_while_notifications_already_queued_esm) ... FAIL
+test_R28_retirement_writes_coalesce_for_external_sink_cjs (test_propagation_semantics.PropagationSemantics.test_R28_retirement_writes_coalesce_for_external_sink_cjs) ... FAIL
+test_R28_retirement_writes_coalesce_for_external_sink_esm (test_propagation_semantics.PropagationSemantics.test_R28_retirement_writes_coalesce_for_external_sink_esm) ... FAIL
+test_R29_rerun_children_retired_before_cleanup_writes_cjs (test_propagation_semantics.PropagationSemantics.test_R29_rerun_children_retired_before_cleanup_writes_cjs) ... FAIL
+test_R29_rerun_children_retired_before_cleanup_writes_esm (test_propagation_semantics.PropagationSemantics.test_R29_rerun_children_retired_before_cleanup_writes_esm) ... FAIL
+test_R30_failed_computed_subtree_retires_before_unwind_cjs (test_propagation_semantics.PropagationSemantics.test_R30_failed_computed_subtree_retires_before_unwind_cjs) ... FAIL
+test_R30_failed_computed_subtree_retires_before_unwind_esm (test_propagation_semantics.PropagationSemantics.test_R30_failed_computed_subtree_retires_before_unwind_esm) ... FAIL
+test_R30_failed_effect_subtree_retires_before_unwind_cjs (test_propagation_semantics.PropagationSemantics.test_R30_failed_effect_subtree_retires_before_unwind_cjs) ... FAIL
+test_R30_failed_effect_subtree_retires_before_unwind_esm (test_propagation_semantics.PropagationSemantics.test_R30_failed_effect_subtree_retires_before_unwind_esm) ... FAIL
+test_R30_failed_scope_subtree_retires_before_unwind_cjs (test_propagation_semantics.PropagationSemantics.test_R30_failed_scope_subtree_retires_before_unwind_cjs) ... FAIL
+test_R30_failed_scope_subtree_retires_before_unwind_esm (test_propagation_semantics.PropagationSemantics.test_R30_failed_scope_subtree_retires_before_unwind_esm) ... FAIL
+test_R31_retired_owner_reentrant_stop_is_idempotent_cjs (test_propagation_semantics.PropagationSemantics.test_R31_retired_owner_reentrant_stop_is_idempotent_cjs) ... ok
+test_R31_retired_owner_reentrant_stop_is_idempotent_esm (test_propagation_semantics.PropagationSemantics.test_R31_retired_owner_reentrant_stop_is_idempotent_esm) ... ok
+
+======================================================================
+FAIL: test_R01_sticky_null_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_null_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_number_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_number_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_object_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_object_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_string_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_string_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_undefined_cjs (test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R01_sticky_undefined_esm (test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'read_fail_2', 'ok': True} != {'label': 'read_fail_2', 'ok': False, 'error': 'bad'}
+- {'label': 'read_fail_2', 'ok': True}
++ {'error': 'bad', 'label': 'read_fail_2', 'ok': False}
+
+======================================================================
+FAIL: test_R02_first_failure_then_success_cjs (test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'cached', 'ok': True} != {'label': 'cached', 'ok': False, 'error': 'bad'}
+- {'label': 'cached', 'ok': True}
++ {'error': 'bad', 'label': 'cached', 'ok': False}
+
+======================================================================
+FAIL: test_R02_first_failure_then_success_esm (test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'cached', 'ok': True} != {'label': 'cached', 'ok': False, 'error': 'bad'}
+- {'label': 'cached', 'ok': True}
++ {'error': 'bad', 'label': 'cached', 'ok': False}
+
+======================================================================
+FAIL: test_R03_branch_cjs (test_propagation_semantics.PropagationSemantics.test_R03_branch_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_branch_esm (test_propagation_semantics.PropagationSemantics.test_R03_branch_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_chain_cjs (test_propagation_semantics.PropagationSemantics.test_R03_chain_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_chain_esm (test_propagation_semantics.PropagationSemantics.test_R03_chain_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_diamond_cjs (test_propagation_semantics.PropagationSemantics.test_R03_diamond_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_diamond_esm (test_propagation_semantics.PropagationSemantics.test_R03_diamond_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_reconverge_cjs (test_propagation_semantics.PropagationSemantics.test_R03_reconverge_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R03_reconverge_esm (test_propagation_semantics.PropagationSemantics.test_R03_reconverge_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'wave0', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R04_branch_cjs (test_propagation_semantics.PropagationSemantics.test_R04_branch_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_branch_esm (test_propagation_semantics.PropagationSemantics.test_R04_branch_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_chain_cjs (test_propagation_semantics.PropagationSemantics.test_R04_chain_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_chain_esm (test_propagation_semantics.PropagationSemantics.test_R04_chain_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_diamond_cjs (test_propagation_semantics.PropagationSemantics.test_R04_diamond_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_diamond_esm (test_propagation_semantics.PropagationSemantics.test_R04_diamond_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_reconverge_cjs (test_propagation_semantics.PropagationSemantics.test_R04_reconverge_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R04_reconverge_esm (test_propagation_semantics.PropagationSemantics.test_R04_reconverge_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 160, in test
+    if kind=='graph':return self.graph_case(case,format)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 148, in graph_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave3', 'ok': True} != {'label': 'wave3', 'ok': False, 'error': 'other'}
+- {'label': 'wave3', 'ok': True}
++ {'error': 'other', 'label': 'wave3', 'ok': False}
+
+======================================================================
+FAIL: test_R05_siblings_0_cjs (test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 110, in check_case
+    elif check['kind']=='label':self.assertEqual(named(events,check['label']),check['expected'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [{'ki[83 chars]ue': 6}] != [{'ki[83 chars]ue': 2}, {'kind': 'mark', 'label': 'goodA', 'v[53 chars]: 6}]
+
+First differing element 1:
+{'kind': 'mark', 'label': 'goodA', 'value': 6}
+{'kind': 'mark', 'label': 'goodA', 'value': 2}
+
+Second list contains 2 additional elements.
+First extra element 2:
+{'kind': 'mark', 'label': 'goodA', 'value': 4}
+
+  [{'kind': 'mark', 'label': 'goodA', 'value': 0},
++  {'kind': 'mark', 'label': 'goodA', 'value': 2},
++  {'kind': 'mark', 'label': 'goodA', 'value': 4},
+   {'kind': 'mark', 'label': 'goodA', 'value': 6}]
+
+======================================================================
+FAIL: test_R05_siblings_0_esm (test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 110, in check_case
+    elif check['kind']=='label':self.assertEqual(named(events,check['label']),check['expected'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [{'ki[83 chars]ue': 6}] != [{'ki[83 chars]ue': 2}, {'kind': 'mark', 'label': 'goodA', 'v[53 chars]: 6}]
+
+First differing element 1:
+{'kind': 'mark', 'label': 'goodA', 'value': 6}
+{'kind': 'mark', 'label': 'goodA', 'value': 2}
+
+Second list contains 2 additional elements.
+First extra element 2:
+{'kind': 'mark', 'label': 'goodA', 'value': 4}
+
+  [{'kind': 'mark', 'label': 'goodA', 'value': 0},
++  {'kind': 'mark', 'label': 'goodA', 'value': 2},
++  {'kind': 'mark', 'label': 'goodA', 'value': 4},
+   {'kind': 'mark', 'label': 'goodA', 'value': 6}]
+
+======================================================================
+FAIL: test_R05_siblings_1_cjs (test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 110, in check_case
+    elif check['kind']=='label':self.assertEqual(named(events,check['label']),check['expected'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [{'ki[83 chars]ue': 3}] != [{'ki[83 chars]ue': 1}, {'kind': 'mark', 'label': 'goodA', 'v[53 chars]: 3}]
+
+First differing element 1:
+{'kind': 'mark', 'label': 'goodA', 'value': 3}
+{'kind': 'mark', 'label': 'goodA', 'value': 1}
+
+Second list contains 2 additional elements.
+First extra element 2:
+{'kind': 'mark', 'label': 'goodA', 'value': 2}
+
+  [{'kind': 'mark', 'label': 'goodA', 'value': 0},
++  {'kind': 'mark', 'label': 'goodA', 'value': 1},
++  {'kind': 'mark', 'label': 'goodA', 'value': 2},
+   {'kind': 'mark', 'label': 'goodA', 'value': 3}]
+
+======================================================================
+FAIL: test_R05_siblings_1_esm (test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 110, in check_case
+    elif check['kind']=='label':self.assertEqual(named(events,check['label']),check['expected'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [{'ki[83 chars]ue': 3}] != [{'ki[83 chars]ue': 1}, {'kind': 'mark', 'label': 'goodA', 'v[53 chars]: 3}]
+
+First differing element 1:
+{'kind': 'mark', 'label': 'goodA', 'value': 3}
+{'kind': 'mark', 'label': 'goodA', 'value': 1}
+
+Second list contains 2 additional elements.
+First extra element 2:
+{'kind': 'mark', 'label': 'goodA', 'value': 2}
+
+  [{'kind': 'mark', 'label': 'goodA', 'value': 0},
++  {'kind': 'mark', 'label': 'goodA', 'value': 1},
++  {'kind': 'mark', 'label': 'goodA', 'value': 2},
+   {'kind': 'mark', 'label': 'goodA', 'value': 3}]
+
+======================================================================
+FAIL: test_R06_nested_batches_cjs (test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 110, in check_case
+    elif check['kind']=='label':self.assertEqual(named(events,check['label']),check['expected'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [{'ki[34 chars]': 0}] != [{'ki[34 chars]': 0}, {'kind': 'mark', 'label': 'ok', 'value'[45 chars]: 4}]
+
+Second list contains 2 additional elements.
+First extra element 1:
+{'kind': 'mark', 'label': 'ok', 'value': 3}
+
+- [{'kind': 'mark', 'label': 'ok', 'value': 0}]
+?                                             ^
+
++ [{'kind': 'mark', 'label': 'ok', 'value': 0},
+?                                             ^
+
++  {'kind': 'mark', 'label': 'ok', 'value': 3},
++  {'kind': 'mark', 'label': 'ok', 'value': 4}]
+
+======================================================================
+FAIL: test_R06_nested_batches_esm (test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 110, in check_case
+    elif check['kind']=='label':self.assertEqual(named(events,check['label']),check['expected'])
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [{'ki[34 chars]': 0}] != [{'ki[34 chars]': 0}, {'kind': 'mark', 'label': 'ok', 'value'[45 chars]: 4}]
+
+Second list contains 2 additional elements.
+First extra element 1:
+{'kind': 'mark', 'label': 'ok', 'value': 3}
+
+- [{'kind': 'mark', 'label': 'ok', 'value': 0}]
+?                                             ^
+
++ [{'kind': 'mark', 'label': 'ok', 'value': 0},
+?                                             ^
+
++  {'kind': 'mark', 'label': 'ok', 'value': 3},
++  {'kind': 'mark', 'label': 'ok', 'value': 4}]
+
+======================================================================
+FAIL: test_R07_caught_error_not_scheduler_error_cjs (test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'handled_write', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R07_caught_error_not_scheduler_error_esm (test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'handled_write', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R08_trigger_failure_recovery_cjs (test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R08_trigger_failure_recovery_esm (test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R09_scope_reverse_0_cjs (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'again', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R09_scope_reverse_0_esm (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'again', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R09_scope_reverse_1_cjs (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R09_scope_reverse_1_esm (test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R10_owner_cleanup_after_children_cjs (test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '3', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R10_owner_cleanup_after_children_esm (test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '3', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R11_child_cleanup_before_new_parent_body_cjs (test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'dispose', 'ok': True} != {'label': 'dispose', 'ok': False, 'error': 'cleanup'}
+- {'label': 'dispose', 'ok': True}
++ {'error': 'cleanup', 'label': 'dispose', 'ok': False}
+
+======================================================================
+FAIL: test_R11_child_cleanup_before_new_parent_body_esm (test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'dispose', 'ok': True} != {'label': 'dispose', 'ok': False, 'error': 'cleanup'}
+- {'label': 'dispose', 'ok': True}
++ {'error': 'cleanup', 'label': 'dispose', 'ok': False}
+
+======================================================================
+FAIL: test_R12_failed_initial_effect_cjs (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'followup', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R12_failed_initial_effect_esm (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': 'followup', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R12_failed_initial_scope_cjs (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '2', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R12_failed_initial_scope_esm (test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '2', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R13_failed_computed_owned_children_cjs (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R13_failed_computed_owned_children_esm (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R13_failed_computed_partial_children_cjs (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'cached', 'ok': True} != {'label': 'cached', 'ok': False, 'error': 'bad'}
+- {'label': 'cached', 'ok': True}
++ {'error': 'bad', 'label': 'cached', 'ok': False}
+
+======================================================================
+FAIL: test_R13_failed_computed_partial_children_esm (test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'cached', 'ok': True} != {'label': 'cached', 'ok': False, 'error': 'bad'}
+- {'label': 'cached', 'ok': True}
++ {'error': 'bad', 'label': 'cached', 'ok': False}
+
+======================================================================
+FAIL: test_R14_untracked_cleanup_and_context_cjs (test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'second', 'ok': True} != {'label': 'second', 'ok': False, 'error': 'cleanup'}
+- {'label': 'second', 'ok': True}
++ {'error': 'cleanup', 'label': 'second', 'ok': False}
+
+======================================================================
+FAIL: test_R14_untracked_cleanup_and_context_esm (test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'second', 'ok': True} != {'label': 'second', 'ok': False, 'error': 'cleanup'}
+- {'label': 'second', 'ok': True}
++ {'error': 'cleanup', 'label': 'second', 'ok': False}
+
+======================================================================
+FAIL: test_R15_cleanup_precedes_body_error_cjs (test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave2', 'ok': True} != {'label': 'wave2', 'ok': False, 'error': 'bad'}
+- {'label': 'wave2', 'ok': True}
++ {'error': 'bad', 'label': 'wave2', 'ok': False}
+
+======================================================================
+FAIL: test_R15_cleanup_precedes_body_error_esm (test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'wave2', 'ok': True} != {'label': 'wave2', 'ok': False, 'error': 'bad'}
+- {'label': 'wave2', 'ok': True}
++ {'error': 'bad', 'label': 'wave2', 'ok': False}
+
+======================================================================
+FAIL: test_R15_first_observer_error_identity_cjs (test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 118, in check_case
+    self.assertEqual(sorted(item['value'] for item in attempted),[1,2])
+AssertionError: Lists differ: [1] != [1, 2]
+
+Second list contains 1 additional elements.
+First extra element 1:
+2
+
+- [1]
++ [1, 2]
+
+======================================================================
+FAIL: test_R15_first_observer_error_identity_esm (test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 118, in check_case
+    self.assertEqual(sorted(item['value'] for item in attempted),[1,2])
+AssertionError: Lists differ: [1] != [1, 2]
+
+Second list contains 1 additional elements.
+First extra element 1:
+2
+
+- [1]
++ [1, 2]
+
+======================================================================
+FAIL: test_R16_computed_teardown_failure_cached_cjs (test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '3', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R16_computed_teardown_failure_cached_esm (test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '3', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R17_throwing_value_is_also_ordinary_data_cjs (test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '3', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R17_throwing_value_is_also_ordinary_data_esm (test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '3', 'ok': False, 'error': 'bad'}
+
+======================================================================
+FAIL: test_R18_cleanup_mutation_drains_after_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'dispose', 'ok': True} != {'label': 'dispose', 'ok': False, 'error': 'cleanup'}
+- {'label': 'dispose', 'ok': True}
++ {'error': 'cleanup', 'label': 'dispose', 'ok': False}
+
+======================================================================
+FAIL: test_R18_cleanup_mutation_drains_after_failure_esm (test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'dispose', 'ok': True} != {'label': 'dispose', 'ok': False, 'error': 'cleanup'}
+- {'label': 'dispose', 'ok': True}
++ {'error': 'cleanup', 'label': 'dispose', 'ok': False}
+
+======================================================================
+FAIL: test_R20_failed_rerun_discards_new_children_cjs (test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R20_failed_rerun_discards_new_children_esm (test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '4', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R21_undefined_flush_and_disposal_cjs (test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'dispose', 'ok': True} != {'label': 'dispose', 'ok': False, 'error': 'bad'}
+- {'label': 'dispose', 'ok': True}
++ {'error': 'bad', 'label': 'dispose', 'ok': False}
+
+======================================================================
+FAIL: test_R21_undefined_flush_and_disposal_esm (test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 101, in boundaries
+    else:self.assertEqual(item,failure_boundary(item['label'],expected))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'label': 'dispose', 'ok': True} != {'label': 'dispose', 'ok': False, 'error': 'bad'}
+- {'label': 'dispose', 'ok': True}
++ {'error': 'bad', 'label': 'dispose', 'ok': False}
+
+======================================================================
+FAIL: test_R22_dependency_prune_cleanup_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '6', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R22_dependency_prune_cleanup_failure_esm (test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 106, in check_case
+    self.boundaries(result,failures)
+  File "/app/tests/test_propagation_semantics.py", line 102, in boundaries
+    else:self.assertTrue(item['ok'],item)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : {'label': '6', 'ok': False, 'error': 'cleanup'}
+
+======================================================================
+FAIL: test_R23_own_cleanup_failure_releases_computed_cjs (test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 111, in check_case
+    elif check['kind']=='counts':self.assertEqual(Counter(item['label'] for item in events if item['kind']=='mark'),Counter(check['expected']))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Counter({'child': 3, 'child_cleanup': 3, 'owner': 1, 'owner_cleanup': 1}) != Counter({'child': 2, 'child_cleanup': 2, 'owner': 1, 'owner_cleanup': 1})
+
+======================================================================
+FAIL: test_R23_own_cleanup_failure_releases_computed_esm (test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 162, in test
+    return self.check_case(case,format)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 111, in check_case
+    elif check['kind']=='counts':self.assertEqual(Counter(item['label'] for item in events if item['kind']=='mark'),Counter(check['expected']))
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Counter({'child': 3, 'child_cleanup': 3, 'owner': 1, 'owner_cleanup': 1}) != Counter({'child': 2, 'child_cleanup': 2, 'owner': 1, 'owner_cleanup': 1})
+
+======================================================================
+FAIL: test_R24_nested_trigger_restores_outer_depth_cjs (test_propagation_semantics.PropagationSemantics.test_R24_nested_trigger_restores_outer_depth_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['cl[15 chars]r', 'cleanup'], ['depth', 2], ['fresh', 0], ['[29 chars]ok']] != [['cl[15 chars]r', 'bad'], ['depth', 1], ['fresh', 0], ['befo[39 chars]ok']]
+
+First differing element 1:
+['trigger', 'cleanup']
+['trigger', 'bad']
+
+Second list contains 1 additional elements.
+First extra element 6:
+['commit', 'ok']
+
+  [['clean'],
+-  ['trigger', 'cleanup'],
+?               ^^^ ^^^
+
++  ['trigger', 'bad'],
+?               ^ ^
+
+-  ['depth', 2],
+?            ^
+
++  ['depth', 1],
+?            ^
+
+   ['fresh', 0],
+   ['before_commit'],
++  ['fresh', 1],
+   ['commit', 'ok']]
+
+======================================================================
+FAIL: test_R24_nested_trigger_restores_outer_depth_esm (test_propagation_semantics.PropagationSemantics.test_R24_nested_trigger_restores_outer_depth_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['cl[15 chars]r', 'cleanup'], ['depth', 2], ['fresh', 0], ['[29 chars]ok']] != [['cl[15 chars]r', 'bad'], ['depth', 1], ['fresh', 0], ['befo[39 chars]ok']]
+
+First differing element 1:
+['trigger', 'cleanup']
+['trigger', 'bad']
+
+Second list contains 1 additional elements.
+First extra element 6:
+['commit', 'ok']
+
+  [['clean'],
+-  ['trigger', 'cleanup'],
+?               ^^^ ^^^
+
++  ['trigger', 'bad'],
+?               ^ ^
+
+-  ['depth', 2],
+?            ^
+
++  ['depth', 1],
+?            ^
+
+   ['fresh', 0],
+   ['before_commit'],
++  ['fresh', 1],
+   ['commit', 'ok']]
+
+======================================================================
+FAIL: test_R24_trigger_preserves_callback_error_cjs (test_propagation_semantics.PropagationSemantics.test_R24_trigger_preserves_callback_error_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]] != [['clean'], ['trigger', 'bad'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+
+First differing element 1:
+['trigger', 'cleanup']
+['trigger', 'bad']
+
+Second list contains 1 additional elements.
+First extra element 4:
+['fresh', 1]
+
+- [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]]
+?                          ^^^ ^^^              ^
+
++ [['clean'], ['trigger', 'bad'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+?                          ^ ^              ^               +++++++++++++ +
+
+
+======================================================================
+FAIL: test_R24_trigger_preserves_callback_error_esm (test_propagation_semantics.PropagationSemantics.test_R24_trigger_preserves_callback_error_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]] != [['clean'], ['trigger', 'bad'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+
+First differing element 1:
+['trigger', 'cleanup']
+['trigger', 'bad']
+
+Second list contains 1 additional elements.
+First extra element 4:
+['fresh', 1]
+
+- [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]]
+?                          ^^^ ^^^              ^
+
++ [['clean'], ['trigger', 'bad'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+?                          ^ ^              ^               +++++++++++++ +
+
+
+======================================================================
+FAIL: test_R24_trigger_teardown_restores_batch_cjs (test_propagation_semantics.PropagationSemantics.test_R24_trigger_teardown_restores_batch_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]] != [['clean'], ['trigger', 'cleanup'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+
+First differing element 2:
+['depth', 1]
+['depth', 0]
+
+Second list contains 1 additional elements.
+First extra element 4:
+['fresh', 1]
+
+- [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]]
+?                                               ^
+
++ [['clean'], ['trigger', 'cleanup'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+?                                               ^               +++++++++++++ +
+
+
+======================================================================
+FAIL: test_R24_trigger_teardown_restores_batch_esm (test_propagation_semantics.PropagationSemantics.test_R24_trigger_teardown_restores_batch_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]] != [['clean'], ['trigger', 'cleanup'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+
+First differing element 2:
+['depth', 1]
+['depth', 0]
+
+Second list contains 1 additional elements.
+First extra element 4:
+['fresh', 1]
+
+- [['clean'], ['trigger', 'cleanup'], ['depth', 1], ['fresh', 0]]
+?                                               ^
+
++ [['clean'], ['trigger', 'cleanup'], ['depth', 0], ['fresh', 0], ['fresh', 1]]
+?                                               ^               +++++++++++++ +
+
+
+======================================================================
+FAIL: test_R25_self_stop_failed_new_scope_keeps_primary_error_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_failed_new_scope_keeps_primary_error_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[17 chars]nt', 1], ['wave', 'bad'], ['late_clean'], ['again', 'cleanup']] != [['pa[17 chars]nt', 1], ['late_clean'], ['wave', 'bad'], ['again', 'ok']]
+
+First differing element 2:
+['wave', 'bad']
+['late_clean']
+
++ [['parent', 0], ['parent', 1], ['late_clean'], ['wave', 'bad'], ['again', 'ok']]
+- [['parent', 0],
+-  ['parent', 1],
+-  ['wave', 'bad'],
+-  ['late_clean'],
+-  ['again', 'cleanup']]
+
+======================================================================
+FAIL: test_R25_self_stop_failed_new_scope_keeps_primary_error_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_failed_new_scope_keeps_primary_error_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[17 chars]nt', 1], ['wave', 'bad'], ['late_clean'], ['again', 'cleanup']] != [['pa[17 chars]nt', 1], ['late_clean'], ['wave', 'bad'], ['again', 'ok']]
+
+First differing element 2:
+['wave', 'bad']
+['late_clean']
+
++ [['parent', 0], ['parent', 1], ['late_clean'], ['wave', 'bad'], ['again', 'ok']]
+- [['parent', 0],
+-  ['parent', 1],
+-  ['wave', 'bad'],
+-  ['late_clean'],
+-  ['again', 'cleanup']]
+
+======================================================================
+FAIL: test_R25_self_stop_late_cleanup_error_is_reported_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_late_cleanup_error_is_reported_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[16 chars]ent', 1], ['wave', 'ok'], ['late_clean'], ['again', 'cleanup']] != [['pa[16 chars]ent', 1], ['late_clean'], ['wave', 'cleanup'], ['again', 'ok']]
+
+First differing element 2:
+['wave', 'ok']
+['late_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+-  ['wave', 'ok'],
+   ['late_clean'],
+-  ['again', 'cleanup']]
+?     ^^^^             ^
+
++  ['wave', 'cleanup'],
+?    + ^^             ^
+
++  ['again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_late_cleanup_error_is_reported_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_late_cleanup_error_is_reported_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[16 chars]ent', 1], ['wave', 'ok'], ['late_clean'], ['again', 'cleanup']] != [['pa[16 chars]ent', 1], ['late_clean'], ['wave', 'cleanup'], ['again', 'ok']]
+
+First differing element 2:
+['wave', 'ok']
+['late_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+-  ['wave', 'ok'],
+   ['late_clean'],
+-  ['again', 'cleanup']]
+?     ^^^^             ^
+
++  ['wave', 'cleanup'],
+?    + ^^             ^
+
++  ['again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_new_child_success_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_success_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[37 chars]], ['wave', 'ok'], ['child_clean'], ['child', [55 chars]ok']] != [['pa[37 chars]], ['child_clean'], ['parent_clean'], ['wave',[24 chars]ok']]
+
+First differing element 3:
+['wave', 'ok']
+['child_clean']
+
+First list contains 2 additional elements.
+First extra element 7:
+['parent_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+   ['child', 0],
+-  ['wave', 'ok'],
+-  ['child_clean'],
+-  ['child', 1],
+   ['child_clean'],
+   ['parent_clean'],
++  ['wave', 'ok'],
+   ['stop_again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_new_child_success_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_success_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[37 chars]], ['wave', 'ok'], ['child_clean'], ['child', [55 chars]ok']] != [['pa[37 chars]], ['child_clean'], ['parent_clean'], ['wave',[24 chars]ok']]
+
+First differing element 3:
+['wave', 'ok']
+['child_clean']
+
+First list contains 2 additional elements.
+First extra element 7:
+['parent_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+   ['child', 0],
+-  ['wave', 'ok'],
+-  ['child_clean'],
+-  ['child', 1],
+   ['child_clean'],
+   ['parent_clean'],
++  ['wave', 'ok'],
+   ['stop_again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_new_child_then_failure_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_then_failure_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[37 chars]], ['wave', 'bad'], ['child_clean'], ['child',[38 chars]ok']] != [['pa[37 chars]], ['child_clean'], ['wave', 'bad'], ['stop_again', 'ok']]
+
+First differing element 3:
+['wave', 'bad']
+['child_clean']
+
+First list contains 2 additional elements.
+First extra element 6:
+['child_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+   ['child', 0],
++  ['child_clean'],
+   ['wave', 'bad'],
+-  ['child_clean'],
+-  ['child', 1],
+-  ['child_clean'],
+   ['stop_again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_new_child_then_failure_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_then_failure_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[37 chars]], ['wave', 'bad'], ['child_clean'], ['child',[38 chars]ok']] != [['pa[37 chars]], ['child_clean'], ['wave', 'bad'], ['stop_again', 'ok']]
+
+First differing element 3:
+['wave', 'bad']
+['child_clean']
+
+First list contains 2 additional elements.
+First extra element 6:
+['child_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+   ['child', 0],
++  ['child_clean'],
+   ['wave', 'bad'],
+-  ['child_clean'],
+-  ['child', 1],
+-  ['child_clean'],
+   ['stop_again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_then_nested_scope_success_cjs (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_then_nested_scope_success_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[37 chars]], ['wave', 'ok'], ['child_clean'], ['child', [66 chars]ok']] != [['pa[37 chars]], ['second_clean'], ['child_clean'], ['late_c[35 chars]ok']]
+
+First differing element 3:
+['wave', 'ok']
+['second_clean']
+
+First list contains 2 additional elements.
+First extra element 8:
+['late_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+   ['child', 0],
+-  ['wave', 'ok'],
+-  ['child_clean'],
+-  ['child', 1],
+   ['second_clean'],
+   ['child_clean'],
+   ['late_clean'],
++  ['wave', 'ok'],
+   ['again', 'ok']]
+
+======================================================================
+FAIL: test_R25_self_stop_then_nested_scope_success_esm (test_propagation_semantics.PropagationSemantics.test_R25_self_stop_then_nested_scope_success_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[37 chars]], ['wave', 'ok'], ['child_clean'], ['child', [66 chars]ok']] != [['pa[37 chars]], ['second_clean'], ['child_clean'], ['late_c[35 chars]ok']]
+
+First differing element 3:
+['wave', 'ok']
+['second_clean']
+
+First list contains 2 additional elements.
+First extra element 8:
+['late_clean']
+
+  [['parent', 0],
+   ['parent', 1],
+   ['child', 0],
+-  ['wave', 'ok'],
+-  ['child_clean'],
+-  ['child', 1],
+   ['second_clean'],
+   ['child_clean'],
+   ['late_clean'],
++  ['wave', 'ok'],
+   ['again', 'ok']]
+
+======================================================================
+FAIL: test_R26_effect_retirement_precedes_descendant_write_cjs (test_propagation_semantics.PropagationSemantics.test_R26_effect_retirement_precedes_descendant_write_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[57 chars]], ['child', 1], ['stop', 'cleanup'], ['child_[69 chars]ok']] != [['pa[57 chars]], ['parent_clean'], ['stop', 'cleanup'], ['again', 'ok']]
+
+First differing element 4:
+['child', 1]
+['parent_clean']
+
+First list contains 4 additional elements.
+First extra element 7:
+['child', 2]
+
+  [['parent', 0],
+   ['child', 0],
+   ['writer_clean'],
+   ['child_clean'],
+-  ['child', 1],
++  ['parent_clean'],
+   ['stop', 'cleanup'],
+-  ['child_clean'],
+-  ['child', 2],
+-  ['child_clean'],
+-  ['parent_clean'],
+   ['again', 'ok']]
+
+======================================================================
+FAIL: test_R26_effect_retirement_precedes_descendant_write_esm (test_propagation_semantics.PropagationSemantics.test_R26_effect_retirement_precedes_descendant_write_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[57 chars]], ['child', 1], ['stop', 'cleanup'], ['child_[69 chars]ok']] != [['pa[57 chars]], ['parent_clean'], ['stop', 'cleanup'], ['again', 'ok']]
+
+First differing element 4:
+['child', 1]
+['parent_clean']
+
+First list contains 4 additional elements.
+First extra element 7:
+['child', 2]
+
+  [['parent', 0],
+   ['child', 0],
+   ['writer_clean'],
+   ['child_clean'],
+-  ['child', 1],
++  ['parent_clean'],
+   ['stop', 'cleanup'],
+-  ['child_clean'],
+-  ['child', 2],
+-  ['child_clean'],
+-  ['parent_clean'],
+   ['again', 'ok']]
+
+======================================================================
+FAIL: test_R26_nested_scope_retirement_external_observer_cjs (test_propagation_semantics.PropagationSemantics.test_R26_nested_scope_retirement_external_observer_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['ex[57 chars]], ['external', 1], ['leaf_clean'], ['leaf', 1[64 chars], 2]] != [['ex[57 chars]], ['leaf_clean'], ['external', 1], ['stop', '[22 chars], 2]]
+
+First differing element 4:
+['external', 1]
+['leaf_clean']
+
+First list contains 3 additional elements.
+First extra element 8:
+['external', 2]
+
+  [['external', 0],
+   ['leaf', 0],
+   ['last_clean'],
+   ['writer_clean'],
++  ['leaf_clean'],
+   ['external', 1],
+-  ['leaf_clean'],
+-  ['leaf', 1],
+   ['stop', 'cleanup'],
+-  ['external', 2],
+?                 ^
+
++  ['external', 2]]
+?                 ^
+
+-  ['leaf_clean'],
+-  ['leaf', 2]]
+
+======================================================================
+FAIL: test_R26_nested_scope_retirement_external_observer_esm (test_propagation_semantics.PropagationSemantics.test_R26_nested_scope_retirement_external_observer_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['ex[57 chars]], ['external', 1], ['leaf_clean'], ['leaf', 1[64 chars], 2]] != [['ex[57 chars]], ['leaf_clean'], ['external', 1], ['stop', '[22 chars], 2]]
+
+First differing element 4:
+['external', 1]
+['leaf_clean']
+
+First list contains 3 additional elements.
+First extra element 8:
+['external', 2]
+
+  [['external', 0],
+   ['leaf', 0],
+   ['last_clean'],
+   ['writer_clean'],
++  ['leaf_clean'],
+   ['external', 1],
+-  ['leaf_clean'],
+-  ['leaf', 1],
+   ['stop', 'cleanup'],
+-  ['external', 2],
+?                 ^
+
++  ['external', 2]]
+?                 ^
+
+-  ['leaf_clean'],
+-  ['leaf', 2]]
+
+======================================================================
+FAIL: test_R26_retired_computed_sibling_is_not_rebuilt_cjs (test_propagation_semantics.PropagationSemantics.test_R26_retired_computed_sibling_is_not_rebuilt_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['ge[42 chars]], ['getter', 1], ['sibling_clean'], ['sibling[108 chars]ok']] != [['ge[42 chars]], ['sibling_clean'], ['stop', 'cleanup'], ['again', 'ok']]
+
+First differing element 3:
+['getter', 1]
+['sibling_clean']
+
+First list contains 6 additional elements.
+First extra element 6:
+['stop', 'cleanup']
+
+  [['getter', 0],
+   ['sibling', 0],
+   ['writer_clean'],
+-  ['getter', 1],
+   ['sibling_clean'],
+-  ['sibling', 2],
+   ['stop', 'cleanup'],
+-  ['getter', 2],
+-  ['sibling_clean'],
+-  ['sibling', 4],
+-  ['sibling_clean'],
+   ['again', 'ok']]
+
+======================================================================
+FAIL: test_R26_retired_computed_sibling_is_not_rebuilt_esm (test_propagation_semantics.PropagationSemantics.test_R26_retired_computed_sibling_is_not_rebuilt_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['ge[42 chars]], ['getter', 1], ['sibling_clean'], ['sibling[108 chars]ok']] != [['ge[42 chars]], ['sibling_clean'], ['stop', 'cleanup'], ['again', 'ok']]
+
+First differing element 3:
+['getter', 1]
+['sibling_clean']
+
+First list contains 6 additional elements.
+First extra element 6:
+['stop', 'cleanup']
+
+  [['getter', 0],
+   ['sibling', 0],
+   ['writer_clean'],
+-  ['getter', 1],
+   ['sibling_clean'],
+-  ['sibling', 2],
+   ['stop', 'cleanup'],
+-  ['getter', 2],
+-  ['sibling_clean'],
+-  ['sibling', 4],
+-  ['sibling_clean'],
+   ['again', 'ok']]
+
+======================================================================
+FAIL: test_R26_retirement_force_trigger_mutable_input_cjs (test_propagation_semantics.PropagationSemantics.test_R26_retirement_force_trigger_mutable_input_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['si[47 chars], ['sibling', 1], ['stop', 'cleanup'], ['sibli[22 chars], 2]] != [['si[47 chars], ['stop', 'cleanup']]
+
+First differing element 3:
+['sibling', 1]
+['stop', 'cleanup']
+
+First list contains 3 additional elements.
+First extra element 4:
+['stop', 'cleanup']
+
++ [['sibling', 0], ['writer_clean'], ['sibling_clean'], ['stop', 'cleanup']]
+- [['sibling', 0],
+-  ['writer_clean'],
+-  ['sibling_clean'],
+-  ['sibling', 1],
+-  ['stop', 'cleanup'],
+-  ['sibling_clean'],
+-  ['sibling', 2]]
+
+======================================================================
+FAIL: test_R26_retirement_force_trigger_mutable_input_esm (test_propagation_semantics.PropagationSemantics.test_R26_retirement_force_trigger_mutable_input_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['si[47 chars], ['sibling', 1], ['stop', 'cleanup'], ['sibli[22 chars], 2]] != [['si[47 chars], ['stop', 'cleanup']]
+
+First differing element 3:
+['sibling', 1]
+['stop', 'cleanup']
+
+First list contains 3 additional elements.
+First extra element 4:
+['stop', 'cleanup']
+
++ [['sibling', 0], ['writer_clean'], ['sibling_clean'], ['stop', 'cleanup']]
+- [['sibling', 0],
+-  ['writer_clean'],
+-  ['sibling_clean'],
+-  ['sibling', 1],
+-  ['stop', 'cleanup'],
+-  ['sibling_clean'],
+-  ['sibling', 2]]
+
+======================================================================
+FAIL: test_R26_scope_retirement_precedes_sibling_write_cjs (test_propagation_semantics.PropagationSemantics.test_R26_scope_retirement_precedes_sibling_write_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['on[35 chars]], ['one', 1], ['stop', 'cleanup'], ['one_clea[43 chars]ok']] != [['on[35 chars]], ['stop', 'cleanup'], ['again', 'ok']]
+
+First differing element 3:
+['one', 1]
+['stop', 'cleanup']
+
+First list contains 4 additional elements.
+First extra element 5:
+['one_clean']
+
++ [['one', 0], ['two_clean'], ['one_clean'], ['stop', 'cleanup'], ['again', 'ok']]
+- [['one', 0],
+-  ['two_clean'],
+-  ['one_clean'],
+-  ['one', 1],
+-  ['stop', 'cleanup'],
+-  ['one_clean'],
+-  ['one', 2],
+-  ['one_clean'],
+-  ['again', 'ok']]
+
+======================================================================
+FAIL: test_R26_scope_retirement_precedes_sibling_write_esm (test_propagation_semantics.PropagationSemantics.test_R26_scope_retirement_precedes_sibling_write_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['on[35 chars]], ['one', 1], ['stop', 'cleanup'], ['one_clea[43 chars]ok']] != [['on[35 chars]], ['stop', 'cleanup'], ['again', 'ok']]
+
+First differing element 3:
+['one', 1]
+['stop', 'cleanup']
+
+First list contains 4 additional elements.
+First extra element 5:
+['one_clean']
+
++ [['one', 0], ['two_clean'], ['one_clean'], ['stop', 'cleanup'], ['again', 'ok']]
+- [['one', 0],
+-  ['two_clean'],
+-  ['one_clean'],
+-  ['one', 1],
+-  ['stop', 'cleanup'],
+-  ['one_clean'],
+-  ['one', 2],
+-  ['one_clean'],
+-  ['again', 'ok']]
+
+======================================================================
+FAIL: test_R27_nested_caught_initial_failure_during_cleanup_cjs (test_propagation_semantics.PropagationSemantics.test_R27_nested_caught_initial_failure_during_cleanup_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['handled', 'bad'], ['wave', 'ok'], ['handl[23 chars]ok']] != [['inner_clean'], ['handled', 'bad'], ['wave[57 chars]ok']]
+
+First differing element 0:
+['handled', 'bad']
+['inner_clean']
+
+Second list contains 2 additional elements.
+First extra element 4:
+['handled', 'bad']
+
+- [['handled', 'bad'], ['wave', 'ok'], ['handled', 'bad'], ['stop', 'ok']]
++ [['inner_clean'],
++  ['handled', 'bad'],
++  ['wave', 'ok'],
++  ['inner_clean'],
++  ['handled', 'bad'],
++  ['stop', 'ok']]
+
+======================================================================
+FAIL: test_R27_nested_caught_initial_failure_during_cleanup_esm (test_propagation_semantics.PropagationSemantics.test_R27_nested_caught_initial_failure_during_cleanup_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['handled', 'bad'], ['wave', 'ok'], ['handl[23 chars]ok']] != [['inner_clean'], ['handled', 'bad'], ['wave[57 chars]ok']]
+
+First differing element 0:
+['handled', 'bad']
+['inner_clean']
+
+Second list contains 2 additional elements.
+First extra element 4:
+['handled', 'bad']
+
+- [['handled', 'bad'], ['wave', 'ok'], ['handled', 'bad'], ['stop', 'ok']]
++ [['inner_clean'],
++  ['handled', 'bad'],
++  ['wave', 'ok'],
++  ['inner_clean'],
++  ['handled', 'bad'],
++  ['stop', 'ok']]
+
+======================================================================
+FAIL: test_R28_retired_sibling_does_not_win_first_error_cjs (test_propagation_semantics.PropagationSemantics.test_R28_retired_sibling_does_not_win_first_error_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 92, in program_case
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sibling', 0], ['writer_clean'], ['sibling_clean'], ['sibling', 1], ['stop', 'bad'], ['sibling', 2]], 'uncaught': '[object Object]'} : {'events': [['sibling', 0], ['writer_clean'], ['sibling_clean'], ['sibling', 1], ['stop', 'bad'], ['sibling', 2]], 'uncaught': '[object Object]'}
+
+======================================================================
+FAIL: test_R28_retired_sibling_does_not_win_first_error_esm (test_propagation_semantics.PropagationSemantics.test_R28_retired_sibling_does_not_win_first_error_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 92, in program_case
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sibling', 0], ['writer_clean'], ['sibling_clean'], ['sibling', 1], ['stop', 'bad'], ['sibling', 2]], 'uncaught': '[object Object]'} : {'events': [['sibling', 0], ['writer_clean'], ['sibling_clean'], ['sibling', 1], ['stop', 'bad'], ['sibling', 2]], 'uncaught': '[object Object]'}
+
+======================================================================
+FAIL: test_R28_retirement_while_notifications_already_queued_cjs (test_propagation_semantics.PropagationSemantics.test_R28_retirement_while_notifications_already_queued_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['si[43 chars]], ['dispose', 'cleanup'], ['before_commit'], [114 chars], 2]] != [['si[43 chars]], ['sibling_clean'], ['dispose', 'cleanup'], [63 chars], 2]]
+
+First differing element 3:
+['dispose', 'cleanup']
+['sibling_clean']
+
+First list contains 3 additional elements.
+First extra element 9:
+['sibling_clean']
+
+  [['sibling', 0],
+   ['outside', 0],
+   ['writer_clean'],
++  ['sibling_clean'],
+   ['dispose', 'cleanup'],
+   ['before_commit'],
+-  ['sibling_clean'],
+-  ['sibling', 1],
+   ['outside', 1],
+   ['commit', 'ok'],
+-  ['sibling_clean'],
+-  ['sibling', 2],
+   ['outside', 2]]
+
+======================================================================
+FAIL: test_R28_retirement_while_notifications_already_queued_esm (test_propagation_semantics.PropagationSemantics.test_R28_retirement_while_notifications_already_queued_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['si[43 chars]], ['dispose', 'cleanup'], ['before_commit'], [114 chars], 2]] != [['si[43 chars]], ['sibling_clean'], ['dispose', 'cleanup'], [63 chars], 2]]
+
+First differing element 3:
+['dispose', 'cleanup']
+['sibling_clean']
+
+First list contains 3 additional elements.
+First extra element 9:
+['sibling_clean']
+
+  [['sibling', 0],
+   ['outside', 0],
+   ['writer_clean'],
++  ['sibling_clean'],
+   ['dispose', 'cleanup'],
+   ['before_commit'],
+-  ['sibling_clean'],
+-  ['sibling', 1],
+   ['outside', 1],
+   ['commit', 'ok'],
+-  ['sibling_clean'],
+-  ['sibling', 2],
+   ['outside', 2]]
+
+======================================================================
+FAIL: test_R28_retirement_writes_coalesce_for_external_sink_cjs (test_propagation_semantics.PropagationSemantics.test_R28_retirement_writes_coalesce_for_external_sink_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['ou[27 chars]], ['outside', 1], ['stop', 'cleanup'], ['outside', 3]] != [['ou[27 chars]], ['first_clean'], ['outside', 2], ['stop', '[21 chars], 3]]
+
+First differing element 2:
+['outside', 1]
+['first_clean']
+
+Second list contains 1 additional elements.
+First extra element 5:
+['outside', 3]
+
+  [['outside', 0],
+   ['second_clean'],
++  ['first_clean'],
+-  ['outside', 1],
+?              ^
+
++  ['outside', 2],
+?              ^
+
+   ['stop', 'cleanup'],
+   ['outside', 3]]
+
+======================================================================
+FAIL: test_R28_retirement_writes_coalesce_for_external_sink_esm (test_propagation_semantics.PropagationSemantics.test_R28_retirement_writes_coalesce_for_external_sink_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['ou[27 chars]], ['outside', 1], ['stop', 'cleanup'], ['outside', 3]] != [['ou[27 chars]], ['first_clean'], ['outside', 2], ['stop', '[21 chars], 3]]
+
+First differing element 2:
+['outside', 1]
+['first_clean']
+
+Second list contains 1 additional elements.
+First extra element 5:
+['outside', 3]
+
+  [['outside', 0],
+   ['second_clean'],
++  ['first_clean'],
+-  ['outside', 1],
+?              ^
+
++  ['outside', 2],
+?              ^
+
+   ['stop', 'cleanup'],
+   ['outside', 3]]
+
+======================================================================
+FAIL: test_R29_rerun_children_retired_before_cleanup_writes_cjs (test_propagation_semantics.PropagationSemantics.test_R29_rerun_children_retired_before_cleanup_writes_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[57 chars]], ['child', 1], ['wave', 'cleanup'], ['child_[19 chars]ok']] != [['pa[57 chars]], ['parent', 1], ['child', 1], ['wave', 'clea[57 chars]up']]
+
+First differing element 4:
+['child', 1]
+['parent', 1]
+
+Second list contains 2 additional elements.
+First extra element 8:
+['child_clean']
+
+  [['parent', 0],
+   ['child', 0],
+   ['writer_clean'],
+   ['child_clean'],
++  ['parent', 1],
+   ['child', 1],
+   ['wave', 'cleanup'],
++  ['writer_clean'],
+   ['child_clean'],
+-  ['stop', 'ok']]
+?            ^^
+
++  ['stop', 'cleanup']]
+?            ^^^^^^^
+
+
+======================================================================
+FAIL: test_R29_rerun_children_retired_before_cleanup_writes_esm (test_propagation_semantics.PropagationSemantics.test_R29_rerun_children_retired_before_cleanup_writes_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['pa[57 chars]], ['child', 1], ['wave', 'cleanup'], ['child_[19 chars]ok']] != [['pa[57 chars]], ['parent', 1], ['child', 1], ['wave', 'clea[57 chars]up']]
+
+First differing element 4:
+['child', 1]
+['parent', 1]
+
+Second list contains 2 additional elements.
+First extra element 8:
+['child_clean']
+
+  [['parent', 0],
+   ['child', 0],
+   ['writer_clean'],
+   ['child_clean'],
++  ['parent', 1],
+   ['child', 1],
+   ['wave', 'cleanup'],
++  ['writer_clean'],
+   ['child_clean'],
+-  ['stop', 'ok']]
+?            ^^
+
++  ['stop', 'cleanup']]
+?            ^^^^^^^
+
+
+======================================================================
+FAIL: test_R30_failed_computed_subtree_retires_before_unwind_cjs (test_propagation_semantics.PropagationSemantics.test_R30_failed_computed_subtree_retires_before_unwind_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['one', 0], ['read', 'bad'], ['cached', 'ok'], ['one_cl[80 chars]up']] != [['one', 0], ['writer_clean'], ['one_clean'], ['read', '[83 chars]ad']]
+
+First differing element 1:
+['read', 'bad']
+['writer_clean']
+
+  [['one', 0],
++  ['writer_clean'],
++  ['one_clean'],
+   ['read', 'bad'],
+-  ['cached', 'ok'],
+?              ^^
+
++  ['cached', 'bad'],
+?              ^^^
+
+-  ['one_clean'],
+   ['one', 2],
+   ['writer_clean'],
+   ['one_clean'],
+-  ['one', 3],
+-  ['retry', 'cleanup']]
+?             ^^^ ^^^
+
++  ['retry', 'bad']]
+?             ^ ^
+
+
+======================================================================
+FAIL: test_R30_failed_computed_subtree_retires_before_unwind_esm (test_propagation_semantics.PropagationSemantics.test_R30_failed_computed_subtree_retires_before_unwind_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['one', 0], ['read', 'bad'], ['cached', 'ok'], ['one_cl[80 chars]up']] != [['one', 0], ['writer_clean'], ['one_clean'], ['read', '[83 chars]ad']]
+
+First differing element 1:
+['read', 'bad']
+['writer_clean']
+
+  [['one', 0],
++  ['writer_clean'],
++  ['one_clean'],
+   ['read', 'bad'],
+-  ['cached', 'ok'],
+?              ^^
+
++  ['cached', 'bad'],
+?              ^^^
+
+-  ['one_clean'],
+   ['one', 2],
+   ['writer_clean'],
+   ['one_clean'],
+-  ['one', 3],
+-  ['retry', 'cleanup']]
+?             ^^^ ^^^
+
++  ['retry', 'bad']]
+?             ^ ^
+
+
+======================================================================
+FAIL: test_R30_failed_effect_subtree_retires_before_unwind_cjs (test_propagation_semantics.PropagationSemantics.test_R30_failed_effect_subtree_retires_before_unwind_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['one', 0], ['construct', 'bad'], ['one_clean'], ['one'[14 chars], 0]] != [['one', 0], ['writer_clean'], ['one_clean'], ['construc[20 chars], 0]]
+
+First differing element 1:
+['construct', 'bad']
+['writer_clean']
+
+- [['one', 0], ['construct', 'bad'], ['one_clean'], ['one', 2], ['depth', 0]]
++ [['one', 0],
++  ['writer_clean'],
++  ['one_clean'],
++  ['construct', 'bad'],
++  ['depth', 0]]
+
+======================================================================
+FAIL: test_R30_failed_effect_subtree_retires_before_unwind_esm (test_propagation_semantics.PropagationSemantics.test_R30_failed_effect_subtree_retires_before_unwind_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['one', 0], ['construct', 'bad'], ['one_clean'], ['one'[14 chars], 0]] != [['one', 0], ['writer_clean'], ['one_clean'], ['construc[20 chars], 0]]
+
+First differing element 1:
+['construct', 'bad']
+['writer_clean']
+
+- [['one', 0], ['construct', 'bad'], ['one_clean'], ['one', 2], ['depth', 0]]
++ [['one', 0],
++  ['writer_clean'],
++  ['one_clean'],
++  ['construct', 'bad'],
++  ['depth', 0]]
+
+======================================================================
+FAIL: test_R30_failed_scope_subtree_retires_before_unwind_cjs (test_propagation_semantics.PropagationSemantics.test_R30_failed_scope_subtree_retires_before_unwind_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['one', 0], ['construct', 'bad'], ['one_clean'], ['one'[14 chars], 0]] != [['one', 0], ['writer_clean'], ['one_clean'], ['construc[20 chars], 0]]
+
+First differing element 1:
+['construct', 'bad']
+['writer_clean']
+
+- [['one', 0], ['construct', 'bad'], ['one_clean'], ['one', 2], ['depth', 0]]
++ [['one', 0],
++  ['writer_clean'],
++  ['one_clean'],
++  ['construct', 'bad'],
++  ['depth', 0]]
+
+======================================================================
+FAIL: test_R30_failed_scope_subtree_retires_before_unwind_esm (test_propagation_semantics.PropagationSemantics.test_R30_failed_scope_subtree_retires_before_unwind_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_propagation_semantics.py", line 161, in test
+    if kind=='program':return self.program_case(case,format)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_propagation_semantics.py", line 93, in program_case
+    self.assertEqual(result['events'],case['expected_events'])
+AssertionError: Lists differ: [['one', 0], ['construct', 'bad'], ['one_clean'], ['one'[14 chars], 0]] != [['one', 0], ['writer_clean'], ['one_clean'], ['construc[20 chars], 0]]
+
+First differing element 1:
+['construct', 'bad']
+['writer_clean']
+
+- [['one', 0], ['construct', 'bad'], ['one_clean'], ['one', 2], ['depth', 0]]
++ [['one', 0],
++  ['writer_clean'],
++  ['one_clean'],
++  ['construct', 'bad'],
++  ['depth', 0]]
+
+----------------------------------------------------------------------
+Ran 152 tests in 2.833s
+
+FAILED (failures=116)

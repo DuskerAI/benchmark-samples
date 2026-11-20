@@ -1,0 +1,31 @@
+{
+  "keys": [
+    {
+      "alg": "HS256",
+      "exp": 1700010000,
+      "k": "c2VjcmV0LWxhYi1hbHBoYS1rZXktZm9yLWpvc2UtZ2F0ZS0zMg",
+      "kid": "lab-a",
+      "kty": "oct",
+      "nbf": 1699990000,
+      "use": "sig"
+    },
+    {
+      "alg": "HS256",
+      "exp": 1700010000,
+      "k": "YXJjaGl2ZS1lbmMta2V5LW5vdC1mb3Itc2lnbmF0dXJlLTMy",
+      "kid": "archive-enc",
+      "kty": "oct",
+      "nbf": 1699990000,
+      "use": "enc"
+    },
+    {
+      "alg": "RS256",
+      "exp": 1700010000,
+      "k": "bGVnYWN5LWtleS1pZ25vcmVkLWJ5LWNvbnRyYWN0LS0t",
+      "kid": "legacy-rs",
+      "kty": "oct",
+      "nbf": 1699990000,
+      "use": "sig"
+    }
+  ]
+}

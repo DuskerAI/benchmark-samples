@@ -1,0 +1,79 @@
+{
+  "reward": 1,
+  "category": "acceptance_pass",
+  "exact_inventory": true,
+  "tests_executed": 86,
+  "fail_to_pass": {
+    "passed": 77,
+    "total": 77
+  },
+  "pass_to_pass": {
+    "passed": 9,
+    "total": 9
+  },
+  "nonpassing": [],
+  "suite_exit_code": 0,
+  "requirement_groups": {
+    "F01": {
+      "passed": 3,
+      "total": 3
+    },
+    "F02": {
+      "passed": 5,
+      "total": 5
+    },
+    "F03": {
+      "passed": 4,
+      "total": 4
+    },
+    "F04": {
+      "passed": 7,
+      "total": 7
+    },
+    "F05": {
+      "passed": 31,
+      "total": 31
+    },
+    "P01": {
+      "passed": 2,
+      "total": 2
+    },
+    "F06": {
+      "passed": 5,
+      "total": 5
+    },
+    "P02": {
+      "passed": 2,
+      "total": 2
+    },
+    "F07": {
+      "passed": 7,
+      "total": 7
+    },
+    "F08": {
+      "passed": 2,
+      "total": 2
+    },
+    "F09": {
+      "passed": 4,
+      "total": 4
+    },
+    "F10": {
+      "passed": 2,
+      "total": 2
+    },
+    "P03": {
+      "passed": 2,
+      "total": 2
+    },
+    "P04": {
+      "passed": 6,
+      "total": 6
+    },
+    "F11": {
+      "passed": 4,
+      "total": 4
+    }
+  },
+  "trusted_assets_unchanged": true
+}

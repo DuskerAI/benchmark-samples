@@ -1,0 +1,282 @@
+{
+  "reward": 0,
+  "category": "acceptance_failure",
+  "exact_inventory": true,
+  "fail_to_pass": {
+    "passed": 0,
+    "total": 116
+  },
+  "pass_to_pass": {
+    "passed": 36,
+    "total": 36
+  },
+  "nonpassing": [
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_null_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_number_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_object_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_string_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R01_sticky_undefined_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R02_first_failure_then_success_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R03_branch_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R03_branch_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R03_chain_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R03_chain_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R03_diamond_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R03_diamond_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R03_reconverge_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R03_reconverge_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R04_branch_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R04_branch_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R04_chain_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R04_chain_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R04_diamond_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R04_diamond_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R04_reconverge_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R04_reconverge_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R05_siblings_0_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R05_siblings_1_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R06_nested_batches_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R07_caught_error_not_scheduler_error_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R08_trigger_failure_recovery_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_0_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R09_scope_reverse_1_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R10_owner_cleanup_after_children_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R11_child_cleanup_before_new_parent_body_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_effect_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R12_failed_initial_scope_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_owned_children_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R13_failed_computed_partial_children_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R14_untracked_cleanup_and_context_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R15_cleanup_precedes_body_error_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R15_first_observer_error_identity_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R16_computed_teardown_failure_cached_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R17_throwing_value_is_also_ordinary_data_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R18_cleanup_mutation_drains_after_failure_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R20_failed_rerun_discards_new_children_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R21_undefined_flush_and_disposal_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R22_dependency_prune_cleanup_failure_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R23_own_cleanup_failure_releases_computed_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R24_nested_trigger_restores_outer_depth_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R24_nested_trigger_restores_outer_depth_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R24_trigger_preserves_callback_error_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R24_trigger_preserves_callback_error_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R24_trigger_teardown_restores_batch_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R24_trigger_teardown_restores_batch_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_failed_new_scope_keeps_primary_error_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_failed_new_scope_keeps_primary_error_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_late_cleanup_error_is_reported_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_late_cleanup_error_is_reported_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_success_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_success_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_then_failure_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_new_child_then_failure_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_then_nested_scope_success_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R25_self_stop_then_nested_scope_success_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R26_effect_retirement_precedes_descendant_write_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R26_effect_retirement_precedes_descendant_write_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R26_nested_scope_retirement_external_observer_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R26_nested_scope_retirement_external_observer_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R26_retired_computed_sibling_is_not_rebuilt_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R26_retired_computed_sibling_is_not_rebuilt_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R26_retirement_force_trigger_mutable_input_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R26_retirement_force_trigger_mutable_input_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R26_scope_retirement_precedes_sibling_write_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R26_scope_retirement_precedes_sibling_write_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R27_nested_caught_initial_failure_during_cleanup_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R27_nested_caught_initial_failure_during_cleanup_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R28_retired_sibling_does_not_win_first_error_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R28_retired_sibling_does_not_win_first_error_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R28_retirement_while_notifications_already_queued_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R28_retirement_while_notifications_already_queued_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R28_retirement_writes_coalesce_for_external_sink_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R28_retirement_writes_coalesce_for_external_sink_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R29_rerun_children_retired_before_cleanup_writes_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R29_rerun_children_retired_before_cleanup_writes_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R30_failed_computed_subtree_retires_before_unwind_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R30_failed_computed_subtree_retires_before_unwind_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R30_failed_effect_subtree_retires_before_unwind_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R30_failed_effect_subtree_retires_before_unwind_esm",
+    "test_propagation_semantics.PropagationSemantics.test_R30_failed_scope_subtree_retires_before_unwind_cjs",
+    "test_propagation_semantics.PropagationSemantics.test_R30_failed_scope_subtree_retires_before_unwind_esm"
+  ],
+  "suite_exit_code": 1,
+  "requirement_groups": {
+    "P01": {
+      "passed": 4,
+      "total": 4
+    },
+    "P02": {
+      "passed": 2,
+      "total": 2
+    },
+    "P03": {
+      "passed": 2,
+      "total": 2
+    },
+    "P04": {
+      "passed": 4,
+      "total": 4
+    },
+    "P05": {
+      "passed": 6,
+      "total": 6
+    },
+    "P06": {
+      "passed": 4,
+      "total": 4
+    },
+    "R01": {
+      "passed": 0,
+      "total": 10
+    },
+    "R02": {
+      "passed": 2,
+      "total": 4
+    },
+    "R03": {
+      "passed": 0,
+      "total": 8
+    },
+    "R04": {
+      "passed": 0,
+      "total": 8
+    },
+    "R05": {
+      "passed": 0,
+      "total": 4
+    },
+    "R06": {
+      "passed": 2,
+      "total": 4
+    },
+    "R07": {
+      "passed": 0,
+      "total": 2
+    },
+    "R08": {
+      "passed": 0,
+      "total": 2
+    },
+    "R09": {
+      "passed": 0,
+      "total": 4
+    },
+    "R10": {
+      "passed": 0,
+      "total": 2
+    },
+    "R11": {
+      "passed": 2,
+      "total": 4
+    },
+    "R12": {
+      "passed": 0,
+      "total": 4
+    },
+    "R13": {
+      "passed": 0,
+      "total": 4
+    },
+    "R14": {
+      "passed": 0,
+      "total": 2
+    },
+    "R15": {
+      "passed": 0,
+      "total": 4
+    },
+    "R16": {
+      "passed": 0,
+      "total": 2
+    },
+    "R17": {
+      "passed": 0,
+      "total": 2
+    },
+    "R18": {
+      "passed": 0,
+      "total": 2
+    },
+    "R19": {
+      "passed": 4,
+      "total": 4
+    },
+    "R20": {
+      "passed": 0,
+      "total": 2
+    },
+    "R21": {
+      "passed": 0,
+      "total": 2
+    },
+    "R22": {
+      "passed": 0,
+      "total": 2
+    },
+    "R23": {
+      "passed": 0,
+      "total": 2
+    },
+    "R24": {
+      "passed": 2,
+      "total": 8
+    },
+    "R25": {
+      "passed": 0,
+      "total": 10
+    },
+    "R26": {
+      "passed": 0,
+      "total": 10
+    },
+    "R27": {
+      "passed": 0,
+      "total": 2
+    },
+    "R28": {
+      "passed": 0,
+      "total": 6
+    },
+    "R29": {
+      "passed": 0,
+      "total": 2
+    },
+    "R30": {
+      "passed": 0,
+      "total": 6
+    },
+    "R31": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}

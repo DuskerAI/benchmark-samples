@@ -1,0 +1,2 @@
+{"crc":"6af2ed8e","payload":{"entries":[{"index":5,"key":"alpha","op":"set","term":3,"value":7},{"delta":2,"index":6,"key":"alpha","op":"incr","term":3},{"index":7,"key":"beta","op":"set","term":3,"value":4}],"leader_commit":7,"node":"n1","prev_index":4,"prev_term":2}}
+{"crc":"d1a5ec0e","payload":{"entries":[{"expect":9,"index":8,"key":"alpha","op":"cas","term":4,"value":12},{"index":9,"op":"batch","ops":[{"delta":6,"key":"beta","op":"incr"},{"key":"legacy","op":"del"}],"term":4}],"leader_commit":9,"node":"n1","prev_index":7,"prev_term":3}}

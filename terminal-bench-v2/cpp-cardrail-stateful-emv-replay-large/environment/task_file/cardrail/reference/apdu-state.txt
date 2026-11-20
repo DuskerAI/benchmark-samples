@@ -1,0 +1,11 @@
+# APDU state
+
+trace.tsv is pipe-delimited. Its header is record|batch|session|card|terminal|atc|kind|pan_token|amount|currency|cid|host|sw|tlv|script_id|seq. The values are synthetic. Empty fields are valid only where the record kind does not use that column.
+
+Transaction rows have kind TXN. Script rows have kind SCRIPT. Transactions define the decision base for a session. Scripts update script counters and may add reversal reasons. Before any lineage key exists, sort raw trace rows by card, session, ATC, seq, and record. In that one pre-lineage sort, compare ATC as its normalized four-character upper-case string and seq numerically. After lineage keys are known, logical output rows use card id, lineage first ATC, session id, numeric ATC, numeric sequence, and record id.
+
+The first ATC for a card lineage comes from TXN rows only. Choose the first TXN for that card in the pre-lineage sorted order above. Do not choose the numerically smallest ATC, and do not use original file order as a tie-breaker. Ignore SCRIPT rows for this choice, even when a script for the same card appears earlier in input order or has a numerically smaller ATC. After the lineage key exists, scripts for that card attach to the same lineage and can affect counters or reversals.
+
+Status words 9000 and 9100 are successful final statuses. 61xx means more response bytes are available, so join the next record with the same card, session, and ATC before classification. 6Cxx means the command is retried with a corrected length; the next matching record replaces the status for the original command. A continuation record never creates a separate ledger effect, and the original record remains the logical row identity for ledger output. If no continuation is present, classify the original status normally.
+
+A status word beginning with 62 or 63 is a warning. Warnings on transactions do not automatically decline the transaction. Warnings on scripts are soft failures only when the selected profile lists that status. 6985 and 6A80 are hard script failures for all bundled profiles.

@@ -1,0 +1,6 @@
+OBJECT util
+SECTION .text - 12 -
+SECTION .rodata grp.msg 8 48656c6c6f2100ff
+SYMBOL helper STRONG DEF .text 0
+SYMBOL msg WEAK DEF .rodata 0
+RELOC .text 0 _start REL32 -4

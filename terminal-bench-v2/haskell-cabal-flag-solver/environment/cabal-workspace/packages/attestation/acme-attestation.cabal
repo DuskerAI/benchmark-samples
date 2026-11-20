@@ -1,0 +1,37 @@
+cabal-version: 2.4
+name: acme-attestation
+version: 0.3.0
+build-type: Simple
+
+flag local-kms
+  description: Select local key authority
+  default: False
+  manual: True
+
+flag reproducible
+  description: Select reproducible release stamping
+  default: False
+  manual: True
+
+library
+  exposed-modules: Acme.Attestation.Internal
+  hs-source-dirs: src
+  build-depends:
+      base >=4.14 && <5,
+      acme-manifest >=5.3 && <6,
+      acme-policy >=4.1 && <5,
+      acme-codec ^>=1.4
+  if flag(local-kms)
+    cpp-options: -DLOCAL_KMS
+  if flag(reproducible)
+    cpp-options: -DREPRODUCIBLE_STAMP
+  default-language: Haskell2010
+
+library token
+  exposed-modules: Acme.Attestation.Receipt
+  hs-source-dirs: token
+  build-depends:
+      base >=4.14 && <5,
+      acme-manifest:wire,
+      acme-manifest >=5.3 && <6
+  default-language: Haskell2010

@@ -1,0 +1,11 @@
+# Output Artifact Schemas
+
+`case_summary.json` contains `schema_version`, `case_id`, `profile_id`, `totals`, and `sessions`. The `schema_version` value is the integer `1`. The totals object contains `transactions_seen`, `transactions_kept`, `scripts_seen`, `scripts_kept`, `scripts_applied`, `scripts_failed_soft`, `scripts_failed_hard`, and `reversals_queued`. Session rows contain `session_id`, `card_id`, `lineage_key`, `terminal_ids`, `first_atc`, `last_atc`, `approved`, `declined`, `scripts_applied`, `scripts_failed_soft`, `scripts_failed_hard`, `reversal_required`, and `private_tags`. `reversal_required` is an integer count for the session, not a boolean.
+
+`transactions_seen` is the number of input rows whose kind is `TXN` before duplicate suppression. `transactions_kept` is the number of transaction rows that remain after lineage duplicate suppression and continuation joining. `scripts_seen` is the number of input rows whose kind is `SCRIPT` before script duplicate suppression. `scripts_kept` is the number of script rows that remain after duplicate script suppression. The script status totals count kept script rows by final status. `reversals_queued` is the number of emitted reversal rows.
+
+For session rows, `private_tags` is collected only from kept logical rows: kept transactions after duplicate suppression and continuation joining, plus kept issuer scripts after duplicate script suppression. Suppressed duplicates and standalone continuation rows do not contribute private tags. If the selected profile disallows private tags, emit empty arrays.
+
+`issuer_scripts.jsonl` and `reversal_queue.csv` are described in their respective documents. Empty JSONL output is a zero-byte file. Empty CSV output still contains only the header row and one trailing newline.
+
+All JSON arrays are sorted. Session rows are sorted by `card_id`, `lineage_key`, and `session_id`. Strings are emitted with JSON escaping. Numeric ATCs are compared by hexadecimal value but emitted as four-character upper-case strings exactly as normalized from the input.

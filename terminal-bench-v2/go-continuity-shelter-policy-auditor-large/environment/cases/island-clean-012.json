@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": false,
+  "case_id": "island-clean-012",
+  "evacuation_status": "advisory",
+  "exceptions": [],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-07",
+  "jurisdiction": "island",
+  "medical_dependent": false,
+  "opened_at": "2026-02-15",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 50,
+  "shelter_type": "school",
+  "staff_count": 2,
+  "transport_status": "not_required",
+  "water_days": 5
+}

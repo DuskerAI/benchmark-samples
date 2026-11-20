@@ -1,0 +1,7 @@
+matrix = A.mtx
+rhs = b.txt
+preconditioner = m.txt
+restart = 2
+maxiter = 8
+tol = 1e-9
+true_tol = 1e-8

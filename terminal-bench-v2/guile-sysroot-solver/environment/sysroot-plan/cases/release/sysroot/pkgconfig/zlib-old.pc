@@ -1,0 +1,6 @@
+Name: zlib-old
+Version: 1.2.11
+Target: armv7-linux-gnueabihf
+Provides: sys-zlib = 1.2.11
+Cflags: -I/usr/include/zlib-old
+Libs: -L/usr/lib -lzold

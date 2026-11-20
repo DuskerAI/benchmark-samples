@@ -1,0 +1,1708 @@
+test_all_null_empty_distinction (test_window_semantics.TestWindows.test_all_null_empty_distinction)
+W07: test_all_null_empty_distinction ... FAIL
+test_collision_names (test_window_semantics.TestWindows.test_collision_names)
+W16: test_collision_names ... FAIL
+test_cte_reused (test_window_semantics.TestWindows.test_cte_reused)
+W14: test_cte_reused ... FAIL
+test_derived_two_window_stages (test_window_semantics.TestWindows.test_derived_two_window_stages)
+W14: test_derived_two_window_stages ... FAIL
+test_duplicate_physical_rows (test_window_semantics.TestWindows.test_duplicate_physical_rows)
+W02: test_duplicate_physical_rows ... FAIL
+test_empty_filtered_window (test_window_semantics.TestWindows.test_empty_filtered_window)
+W15: test_empty_filtered_window ... FAIL
+test_empty_registered_table (test_window_semantics.TestWindows.test_empty_registered_table)
+W15: test_empty_registered_table ... FAIL
+test_exclude_all_without_order (test_window_semantics.TestWindows.test_exclude_all_without_order)
+W06: test_exclude_all_without_order ... FAIL
+test_exclude_groups_current_row (test_window_semantics.TestWindows.test_exclude_groups_current_row)
+W06: test_exclude_groups_current_row ... FAIL
+test_exclude_groups_group (test_window_semantics.TestWindows.test_exclude_groups_group)
+W06: test_exclude_groups_group ... FAIL
+test_exclude_groups_no_others (test_window_semantics.TestWindows.test_exclude_groups_no_others)
+W06: test_exclude_groups_no_others ... FAIL
+test_exclude_groups_ties (test_window_semantics.TestWindows.test_exclude_groups_ties)
+W06: test_exclude_groups_ties ... FAIL
+test_exclude_range_current_row (test_window_semantics.TestWindows.test_exclude_range_current_row)
+W06: test_exclude_range_current_row ... FAIL
+test_exclude_range_group (test_window_semantics.TestWindows.test_exclude_range_group)
+W06: test_exclude_range_group ... FAIL
+test_exclude_range_no_others (test_window_semantics.TestWindows.test_exclude_range_no_others)
+W06: test_exclude_range_no_others ... FAIL
+test_exclude_range_ties (test_window_semantics.TestWindows.test_exclude_range_ties)
+W06: test_exclude_range_ties ... FAIL
+test_exclude_rows_current_row (test_window_semantics.TestWindows.test_exclude_rows_current_row)
+W06: test_exclude_rows_current_row ... FAIL
+test_exclude_rows_group (test_window_semantics.TestWindows.test_exclude_rows_group)
+W06: test_exclude_rows_group ... FAIL
+test_exclude_rows_no_others (test_window_semantics.TestWindows.test_exclude_rows_no_others)
+W06: test_exclude_rows_no_others ... FAIL
+test_exclude_rows_ties (test_window_semantics.TestWindows.test_exclude_rows_ties)
+W06: test_exclude_rows_ties ... FAIL
+test_exclude_ties_current_outside_frame (test_window_semantics.TestWindows.test_exclude_ties_current_outside_frame)
+W06: test_exclude_ties_current_outside_frame ... FAIL
+test_existing_case_3vl (test_window_semantics.TestWindows.test_existing_case_3vl)
+P01: test_existing_case_3vl ... ok
+test_existing_count_operand (test_window_semantics.TestWindows.test_existing_count_operand)
+P01: test_existing_count_operand ... ok
+test_existing_cte (test_window_semantics.TestWindows.test_existing_cte)
+P01: test_existing_cte ... ok
+test_existing_distinct (test_window_semantics.TestWindows.test_existing_distinct)
+P01: test_existing_distinct ... ok
+test_existing_empty_aggregate (test_window_semantics.TestWindows.test_existing_empty_aggregate)
+P01: test_existing_empty_aggregate ... ok
+test_existing_filter (test_window_semantics.TestWindows.test_existing_filter)
+P01: test_existing_filter ... ok
+test_existing_group (test_window_semantics.TestWindows.test_existing_group)
+P01: test_existing_group ... ok
+test_existing_having (test_window_semantics.TestWindows.test_existing_having)
+P01: test_existing_having ... ok
+test_existing_join (test_window_semantics.TestWindows.test_existing_join)
+P01: test_existing_join ... ok
+test_existing_limit (test_window_semantics.TestWindows.test_existing_limit)
+P01: test_existing_limit ... ok
+test_existing_projection (test_window_semantics.TestWindows.test_existing_projection)
+P01: test_existing_projection ... ok
+test_existing_union (test_window_semantics.TestWindows.test_existing_union)
+P01: test_existing_union ... ok
+test_filter_avg (test_window_semantics.TestWindows.test_filter_avg)
+W07: test_filter_avg ... FAIL
+test_filter_count (test_window_semantics.TestWindows.test_filter_count)
+W07: test_filter_count ... FAIL
+test_filter_count_star (test_window_semantics.TestWindows.test_filter_count_star)
+W07: test_filter_count_star ... FAIL
+test_filter_max (test_window_semantics.TestWindows.test_filter_max)
+W07: test_filter_max ... FAIL
+test_filter_min (test_window_semantics.TestWindows.test_filter_min)
+W07: test_filter_min ... FAIL
+test_filter_sum (test_window_semantics.TestWindows.test_filter_sum)
+W07: test_filter_sum ... FAIL
+test_group_expression (test_window_semantics.TestWindows.test_group_expression)
+W12: test_group_expression ... FAIL
+test_grouped_empty_having (test_window_semantics.TestWindows.test_grouped_empty_having)
+W12: test_grouped_empty_having ... FAIL
+test_grouped_filter_operand (test_window_semantics.TestWindows.test_grouped_filter_operand)
+W12: test_grouped_filter_operand ... FAIL
+test_grouped_global_empty (test_window_semantics.TestWindows.test_grouped_global_empty)
+W12: test_grouped_global_empty ... FAIL
+test_grouped_native_plan_reuse (test_window_semantics.TestWindows.test_grouped_native_plan_reuse)
+W16: test_grouped_native_plan_reuse ... FAIL
+test_grouped_nested_sum (test_window_semantics.TestWindows.test_grouped_nested_sum)
+W12: test_grouped_nested_sum ... FAIL
+test_grouped_rank (test_window_semantics.TestWindows.test_grouped_rank)
+W12: test_grouped_rank ... FAIL
+test_groups_adjacent (test_window_semantics.TestWindows.test_groups_adjacent)
+W04: test_groups_adjacent ... FAIL
+test_groups_composite_peers (test_window_semantics.TestWindows.test_groups_composite_peers)
+W04: test_groups_composite_peers ... FAIL
+test_groups_future (test_window_semantics.TestWindows.test_groups_future)
+W04: test_groups_future ... FAIL
+test_groups_no_order (test_window_semantics.TestWindows.test_groups_no_order)
+W04: test_groups_no_order ... FAIL
+test_groups_past (test_window_semantics.TestWindows.test_groups_past)
+W04: test_groups_past ... FAIL
+test_groups_tail (test_window_semantics.TestWindows.test_groups_tail)
+W04: test_groups_tail ... FAIL
+test_hidden_window_order_key (test_window_semantics.TestWindows.test_hidden_window_order_key)
+W02: test_hidden_window_order_key ... FAIL
+test_incompatible_orders (test_window_semantics.TestWindows.test_incompatible_orders)
+W02: test_incompatible_orders ... FAIL
+test_metamorphic_1337 (test_window_semantics.TestWindows.test_metamorphic_1337)
+W18: test_metamorphic_1337 ... FAIL
+test_metamorphic_2243 (test_window_semantics.TestWindows.test_metamorphic_2243)
+W18: test_metamorphic_2243 ... FAIL
+test_metamorphic_401 (test_window_semantics.TestWindows.test_metamorphic_401)
+W18: test_metamorphic_401 ... FAIL
+test_metamorphic_827 (test_window_semantics.TestWindows.test_metamorphic_827)
+W18: test_metamorphic_827 ... FAIL
+test_named_inheritance (test_window_semantics.TestWindows.test_named_inheritance)
+W11: test_named_inheritance ... FAIL
+test_named_inline_frame (test_window_semantics.TestWindows.test_named_inline_frame)
+W11: test_named_inline_frame ... FAIL
+test_native_env_aggregate (test_window_semantics.TestWindows.test_native_env_aggregate)
+W16: test_native_env_aggregate ... FAIL
+test_native_env_operand (test_window_semantics.TestWindows.test_native_env_operand)
+W16: test_native_env_operand ... FAIL
+test_native_plan_reuse (test_window_semantics.TestWindows.test_native_plan_reuse)
+W16: test_native_plan_reuse ... FAIL
+test_navigation_default_expression (test_window_semantics.TestWindows.test_navigation_default_expression)
+W09: test_navigation_default_expression ... FAIL
+test_navigation_lag (test_window_semantics.TestWindows.test_navigation_lag)
+W09: test_navigation_lag ... FAIL
+test_navigation_lead (test_window_semantics.TestWindows.test_navigation_lead)
+W09: test_navigation_lead ... FAIL
+test_navigation_long (test_window_semantics.TestWindows.test_navigation_long)
+W09: test_navigation_long ... FAIL
+test_navigation_zero (test_window_semantics.TestWindows.test_navigation_zero)
+W09: test_navigation_zero ... FAIL
+test_qualify_alias (test_window_semantics.TestWindows.test_qualify_alias)
+W13: test_qualify_alias ... FAIL
+test_qualify_distinct (test_window_semantics.TestWindows.test_qualify_distinct)
+W13: test_qualify_distinct ... ok
+test_qualify_grouped (test_window_semantics.TestWindows.test_qualify_grouped)
+W13: test_qualify_grouped ... FAIL
+test_qualify_unprojected (test_window_semantics.TestWindows.test_qualify_unprojected)
+W13: test_qualify_unprojected ... FAIL
+test_range_ascending (test_window_semantics.TestWindows.test_range_ascending)
+W05: test_range_ascending ... FAIL
+test_range_descending (test_window_semantics.TestWindows.test_range_descending)
+W05: test_range_descending ... FAIL
+test_range_fractional (test_window_semantics.TestWindows.test_range_fractional)
+W05: test_range_fractional ... FAIL
+test_range_future_only (test_window_semantics.TestWindows.test_range_future_only)
+W05: test_range_future_only ... FAIL
+test_range_left_unbounded (test_window_semantics.TestWindows.test_range_left_unbounded)
+W05: test_range_left_unbounded ... FAIL
+test_range_past_only (test_window_semantics.TestWindows.test_range_past_only)
+W05: test_range_past_only ... FAIL
+test_range_right_unbounded (test_window_semantics.TestWindows.test_range_right_unbounded)
+W05: test_range_right_unbounded ... FAIL
+test_range_text_current (test_window_semantics.TestWindows.test_range_text_current)
+W05: test_range_text_current ... FAIL
+test_range_text_offset (test_window_semantics.TestWindows.test_range_text_offset)
+W05: test_range_text_offset ... FAIL
+test_range_zero_peers (test_window_semantics.TestWindows.test_range_zero_peers)
+W05: test_range_zero_peers ... FAIL
+test_rank_cume_dist (test_window_semantics.TestWindows.test_rank_cume_dist)
+W08: test_rank_cume_dist ... FAIL
+test_rank_dense_rank (test_window_semantics.TestWindows.test_rank_dense_rank)
+W08: test_rank_dense_rank ... FAIL
+test_rank_no_order (test_window_semantics.TestWindows.test_rank_no_order)
+W08: test_rank_no_order ... FAIL
+test_rank_ntile (test_window_semantics.TestWindows.test_rank_ntile)
+W08: test_rank_ntile ... FAIL
+test_rank_ntile20 (test_window_semantics.TestWindows.test_rank_ntile20)
+W08: test_rank_ntile20 ... FAIL
+test_rank_percent_rank (test_window_semantics.TestWindows.test_rank_percent_rank)
+W08: test_rank_percent_rank ... FAIL
+test_rank_rank (test_window_semantics.TestWindows.test_rank_rank)
+W08: test_rank_rank ... FAIL
+test_rank_row_number (test_window_semantics.TestWindows.test_rank_row_number)
+W08: test_rank_row_number ... FAIL
+test_reject_distinct_window (test_window_semantics.TestWindows.test_reject_distinct_window)
+W17: test_reject_distinct_window ... ok
+test_reject_fractional_groups (test_window_semantics.TestWindows.test_reject_fractional_groups)
+W17: test_reject_fractional_groups ... ok
+test_reject_multi_key_range (test_window_semantics.TestWindows.test_reject_multi_key_range)
+W17: test_reject_multi_key_range ... ok
+test_reject_negative_lag (test_window_semantics.TestWindows.test_reject_negative_lag)
+W17: test_reject_negative_lag ... ok
+test_reject_negative_range (test_window_semantics.TestWindows.test_reject_negative_range)
+W17: test_reject_negative_range ... ok
+test_reject_negative_rows (test_window_semantics.TestWindows.test_reject_negative_rows)
+W17: test_reject_negative_rows ... ok
+test_reject_range_without_order (test_window_semantics.TestWindows.test_reject_range_without_order)
+W17: test_reject_range_without_order ... ok
+test_reject_zero_nth (test_window_semantics.TestWindows.test_reject_zero_nth)
+W17: test_reject_zero_nth ... ok
+test_reject_zero_ntile (test_window_semantics.TestWindows.test_reject_zero_ntile)
+W17: test_reject_zero_ntile ... ok
+test_repeated_same_expression (test_window_semantics.TestWindows.test_repeated_same_expression)
+W02: test_repeated_same_expression ... FAIL
+test_rows_empty_count (test_window_semantics.TestWindows.test_rows_empty_count)
+W03: test_rows_empty_count ... FAIL
+test_rows_future_only (test_window_semantics.TestWindows.test_rows_future_only)
+W03: test_rows_future_only ... FAIL
+test_rows_oversized (test_window_semantics.TestWindows.test_rows_oversized)
+W03: test_rows_oversized ... FAIL
+test_rows_own (test_window_semantics.TestWindows.test_rows_own)
+W03: test_rows_own ... FAIL
+test_rows_past_only (test_window_semantics.TestWindows.test_rows_past_only)
+W03: test_rows_past_only ... FAIL
+test_rows_sliding (test_window_semantics.TestWindows.test_rows_sliding)
+W03: test_rows_sliding ... FAIL
+test_rows_tail (test_window_semantics.TestWindows.test_rows_tail)
+W03: test_rows_tail ... FAIL
+test_rows_zero (test_window_semantics.TestWindows.test_rows_zero)
+W03: test_rows_zero ... FAIL
+test_scalar_operand (test_window_semantics.TestWindows.test_scalar_operand)
+W07: test_scalar_operand ... FAIL
+test_singleton (test_window_semantics.TestWindows.test_singleton)
+W15: test_singleton ... FAIL
+test_star_count_partition (test_window_semantics.TestWindows.test_star_count_partition)
+W01: test_star_count_partition ... FAIL
+test_static_relation (test_window_semantics.TestWindows.test_static_relation)
+W15: test_static_relation ... FAIL
+test_sum_default_desc (test_window_semantics.TestWindows.test_sum_default_desc)
+W01: test_sum_default_desc ... FAIL
+test_sum_default_peer (test_window_semantics.TestWindows.test_sum_default_peer)
+W01: test_sum_default_peer ... FAIL
+test_sum_global (test_window_semantics.TestWindows.test_sum_global)
+W01: test_sum_global ... FAIL
+test_sum_partition (test_window_semantics.TestWindows.test_sum_partition)
+W01: test_sum_partition ... FAIL
+test_value_default_peer (test_window_semantics.TestWindows.test_value_default_peer)
+W10: test_value_default_peer ... FAIL
+test_value_empty (test_window_semantics.TestWindows.test_value_empty)
+W10: test_value_empty ... FAIL
+test_value_first (test_window_semantics.TestWindows.test_value_first)
+W10: test_value_first ... FAIL
+test_value_last (test_window_semantics.TestWindows.test_value_last)
+W10: test_value_last ... FAIL
+test_value_missing (test_window_semantics.TestWindows.test_value_missing)
+W10: test_value_missing ... FAIL
+test_value_nth (test_window_semantics.TestWindows.test_value_nth)
+W10: test_value_nth ... FAIL
+test_window_cte_then_navigation (test_window_semantics.TestWindows.test_window_cte_then_navigation)
+W14: test_window_cte_then_navigation ... FAIL
+test_window_join_input (test_window_semantics.TestWindows.test_window_join_input)
+W14: test_window_join_input ... FAIL
+test_window_scalar_composition (test_window_semantics.TestWindows.test_window_scalar_composition)
+W01: test_window_scalar_composition ... FAIL
+test_window_subquery_consumed (test_window_semantics.TestWindows.test_window_subquery_consumed)
+W14: test_window_subquery_consumed ... FAIL
+
+======================================================================
+FAIL: test_all_null_empty_distinction (test_window_semantics.TestWindows.test_all_null_empty_distinction)
+W07: test_all_null_empty_distinction
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 1, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473215955936)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"]), line 1)'}
+
+======================================================================
+FAIL: test_collision_names (test_window_semantics.TestWindows.test_collision_names)
+W16: test_collision_names
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 2, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: _window_11 (281473213916768)\' failed: invalid syntax (SUM(scope["_window_11"]["_window_8"]) OVER (PARTITION BY scope["_window_11"]["_window_9"] ORDER BY ORDERED(scope["_window_11"]["_window_7"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_cte_reused (test_window_semantics.TestWindows.test_cte_reused)
+W14: test_cte_reused
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 3, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: w (281473213929696)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"]), line 1)'}
+
+======================================================================
+FAIL: test_derived_two_window_stages (test_window_semantics.TestWindows.test_derived_two_window_stages)
+W14: test_derived_two_window_stages
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 4, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: q (281473213935120)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_duplicate_physical_rows (test_window_semantics.TestWindows.test_duplicate_physical_rows)
+W02: test_duplicate_physical_rows
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 5, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213929792)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_empty_filtered_window (test_window_semantics.TestWindows.test_empty_filtered_window)
+W15: test_empty_filtered_window
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 6, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213970288)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_empty_registered_table (test_window_semantics.TestWindows.test_empty_registered_table)
+W15: test_empty_registered_table
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 7, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213934448)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_exclude_all_without_order (test_window_semantics.TestWindows.test_exclude_all_without_order)
+W06: test_exclude_all_without_order
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 8, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214668224)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_groups_current_row (test_window_semantics.TestWindows.test_exclude_groups_current_row)
+W06: test_exclude_groups_current_row
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 9, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213986288)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_groups_group (test_window_semantics.TestWindows.test_exclude_groups_group)
+W06: test_exclude_groups_group
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 10, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213993024)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_groups_no_others (test_window_semantics.TestWindows.test_exclude_groups_no_others)
+W06: test_exclude_groups_no_others
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 11, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213982880)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_groups_ties (test_window_semantics.TestWindows.test_exclude_groups_ties)
+W06: test_exclude_groups_ties
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 12, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213968656)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_range_current_row (test_window_semantics.TestWindows.test_exclude_range_current_row)
+W06: test_exclude_range_current_row
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 13, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213933680)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_range_group (test_window_semantics.TestWindows.test_exclude_range_group)
+W06: test_exclude_range_group
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 14, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213933920)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_range_no_others (test_window_semantics.TestWindows.test_exclude_range_no_others)
+W06: test_exclude_range_no_others
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 15, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213912400)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_range_ties (test_window_semantics.TestWindows.test_exclude_range_ties)
+W06: test_exclude_range_ties
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 16, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213995616)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_rows_current_row (test_window_semantics.TestWindows.test_exclude_rows_current_row)
+W06: test_exclude_rows_current_row
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 17, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213999888)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_rows_group (test_window_semantics.TestWindows.test_exclude_rows_group)
+W06: test_exclude_rows_group
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 18, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214008544)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_rows_no_others (test_window_semantics.TestWindows.test_exclude_rows_no_others)
+W06: test_exclude_rows_no_others
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 19, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214013488)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_rows_ties (test_window_semantics.TestWindows.test_exclude_rows_ties)
+W06: test_exclude_rows_ties
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 20, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214018336)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_exclude_ties_current_outside_frame (test_window_semantics.TestWindows.test_exclude_ties_current_outside_frame)
+W06: test_exclude_ties_current_outside_frame
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 21, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214023536)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN 1 PRECEDING AND 1 PRECEDING), line 1)'}
+
+======================================================================
+FAIL: test_filter_avg (test_window_semantics.TestWindows.test_filter_avg)
+W07: test_filter_avg
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 34, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214634256)\' failed: invalid syntax (AVG(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_filter_count (test_window_semantics.TestWindows.test_filter_count)
+W07: test_filter_count
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 35, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214049184)\' failed: invalid syntax (COUNT(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_filter_count_star (test_window_semantics.TestWindows.test_filter_count_star)
+W07: test_filter_count_star
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 36, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214044816)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) FILTER(WHERE OR(lambda: scope["events"]["flag"] is None, lambda: LT(scope["events"]["v"], 0))) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_filter_max (test_window_semantics.TestWindows.test_filter_max)
+W07: test_filter_max
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 37, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214010656)\' failed: invalid syntax (MAX(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_filter_min (test_window_semantics.TestWindows.test_filter_min)
+W07: test_filter_min
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 38, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214010800)\' failed: invalid syntax (MIN(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_filter_sum (test_window_semantics.TestWindows.test_filter_sum)
+W07: test_filter_sum
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 39, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214014592)\' failed: invalid syntax (SUM(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_group_expression (test_window_semantics.TestWindows.test_group_expression)
+W12: test_group_expression
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 40, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214667792)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) OVER (ORDER BY ORDERED(ADD(scope["events"]["p"], 1), False, True)), line 1)'}
+
+======================================================================
+FAIL: test_grouped_empty_having (test_window_semantics.TestWindows.test_grouped_empty_having)
+W12: test_grouped_empty_having
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 41, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214049520)\' failed: invalid syntax (SUM(scope[None]["_a_1"]) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_grouped_filter_operand (test_window_semantics.TestWindows.test_grouped_filter_operand)
+W12: test_grouped_filter_operand
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 42, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214051008)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) FILTER(WHERE GT(COUNT(scope[None]["_a_1"]), 1)) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_grouped_global_empty (test_window_semantics.TestWindows.test_grouped_global_empty)
+W12: test_grouped_global_empty
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 43, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214053168)\' failed: invalid syntax (SUM(scope[None]["_a_1"]) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_grouped_native_plan_reuse (test_window_semantics.TestWindows.test_grouped_native_plan_reuse)
+W16: test_grouped_native_plan_reuse
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 44, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214042176)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) OVER (ORDER BY ORDERED(scope["events"]["p"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_grouped_nested_sum (test_window_semantics.TestWindows.test_grouped_nested_sum)
+W12: test_grouped_nested_sum
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 45, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214044432)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) OVER (ORDER BY ORDERED(scope["events"]["p"], False, False) ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_grouped_rank (test_window_semantics.TestWindows.test_grouped_rank)
+W12: test_grouped_rank
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 46, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213904128)\' failed: invalid syntax (DENSERANK() OVER (ORDER BY ORDERED(COUNT(scope[None]["_a_0"]), True, False)), line 1)'}
+
+======================================================================
+FAIL: test_groups_adjacent (test_window_semantics.TestWindows.test_groups_adjacent)
+W04: test_groups_adjacent
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 47, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213897936)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN 1 PRECEDING AND 1 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_groups_composite_peers (test_window_semantics.TestWindows.test_groups_composite_peers)
+W04: test_groups_composite_peers
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 48, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213898176)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["j"], True, False) GROUPS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_groups_future (test_window_semantics.TestWindows.test_groups_future)
+W04: test_groups_future
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 49, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214017616)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN 1 FOLLOWING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_groups_no_order (test_window_semantics.TestWindows.test_groups_no_order)
+W04: test_groups_no_order
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 50, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214038672)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] GROUPS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_groups_past (test_window_semantics.TestWindows.test_groups_past)
+W04: test_groups_past
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 51, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473219000224)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN 2 PRECEDING AND 1 PRECEDING), line 1)'}
+
+======================================================================
+FAIL: test_groups_tail (test_window_semantics.TestWindows.test_groups_tail)
+W04: test_groups_tail
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 52, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473219000176)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_hidden_window_order_key (test_window_semantics.TestWindows.test_hidden_window_order_key)
+W02: test_hidden_window_order_key
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 53, 'status': 'ExecuteError', 'message': 'Step \'Sort: events (281473214017232)\' failed: invalid syntax. Perhaps you forgot a comma? (ORDERED(SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"]), True, False), line 1)'}
+
+======================================================================
+FAIL: test_incompatible_orders (test_window_semantics.TestWindows.test_incompatible_orders)
+W02: test_incompatible_orders
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 54, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214020736)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_metamorphic_1337 (test_window_semantics.TestWindows.test_metamorphic_1337)
+W18: test_metamorphic_1337
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 55, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214051824)\' failed: invalid syntax (SUM(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False) RANGE BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_metamorphic_2243 (test_window_semantics.TestWindows.test_metamorphic_2243)
+W18: test_metamorphic_2243
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 56, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213919792)\' failed: invalid syntax (SUM(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False) GROUPS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_metamorphic_401 (test_window_semantics.TestWindows.test_metamorphic_401)
+W18: test_metamorphic_401
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 57, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213998640)\' failed: invalid syntax (SUM(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_metamorphic_827 (test_window_semantics.TestWindows.test_metamorphic_827)
+W18: test_metamorphic_827
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 58, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213992448)\' failed: invalid syntax (SUM(scope["events"]["v"]) FILTER(WHERE EQ(scope["events"]["flag"], 1)) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False) GROUPS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_named_inheritance (test_window_semantics.TestWindows.test_named_inheritance)
+W11: test_named_inheritance
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 59, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213994416)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER "w", line 1)'}
+
+======================================================================
+FAIL: test_named_inline_frame (test_window_semantics.TestWindows.test_named_inline_frame)
+W11: test_named_inline_frame
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 60, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213993120)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER ("w" ROWS BETWEEN 1 PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_native_env_aggregate (test_window_semantics.TestWindows.test_native_env_aggregate)
+W16: test_native_env_aggregate
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 61, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213996864)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_native_env_operand (test_window_semantics.TestWindows.test_native_env_operand)
+W16: test_native_env_operand
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 62, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473219069616)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_native_plan_reuse (test_window_semantics.TestWindows.test_native_plan_reuse)
+W16: test_native_plan_reuse
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 63, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473219069472)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_navigation_default_expression (test_window_semantics.TestWindows.test_navigation_default_expression)
+W09: test_navigation_default_expression
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 64, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214016608)\' failed: invalid syntax (LEAD(scope["events"]["v"], scope[None]["_a_0"], scope[None]["_a_1"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_navigation_lag (test_window_semantics.TestWindows.test_navigation_lag)
+W09: test_navigation_lag
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 65, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214018048)\' failed: invalid syntax (LAG(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_navigation_lead (test_window_semantics.TestWindows.test_navigation_lead)
+W09: test_navigation_lead
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 66, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214014592)\' failed: invalid syntax (LEAD(scope["events"]["v"], scope[None]["_a_0"], scope[None]["_a_1"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_navigation_long (test_window_semantics.TestWindows.test_navigation_long)
+W09: test_navigation_long
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 67, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214016896)\' failed: invalid syntax (LAG(scope["events"]["v"], scope[None]["_a_0"], scope[None]["_a_1"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_navigation_zero (test_window_semantics.TestWindows.test_navigation_zero)
+W09: test_navigation_zero
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 68, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213938000)\' failed: invalid syntax (LAG(scope["events"]["v"], scope[None]["_a_0"], scope[None]["_a_1"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_qualify_alias (test_window_semantics.TestWindows.test_qualify_alias)
+W13: test_qualify_alias
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 69, 'status': 'ExecuteError', 'message': 'Step \'Sort: events (281473213968368)\' failed: invalid syntax (ROWNUMBER() OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], True, False)), line 1)'}
+
+======================================================================
+FAIL: test_qualify_grouped (test_window_semantics.TestWindows.test_qualify_grouped)
+W13: test_qualify_grouped
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 313, in check
+    self.assertEqual(len(value['rows']), len(expected['rows']), item['sql'])
+AssertionError: 3 != 2 : SELECT p, SUM(v) AS total FROM events GROUP BY p HAVING COUNT(*) > 1
+ QUALIFY RANK() OVER (ORDER BY SUM(v) DESC) <= 2 ORDER BY p
+
+======================================================================
+FAIL: test_qualify_unprojected (test_window_semantics.TestWindows.test_qualify_unprojected)
+W13: test_qualify_unprojected
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 320, in check
+    self.assertEqual(a, b, (actual, wanted, item['sql']))
+AssertionError: 12 != 9 : ([12], [9], 'SELECT id FROM events\n QUALIFY SUM(v) OVER (PARTITION BY p) > 10 ORDER BY id DESC LIMIT 3')
+
+======================================================================
+FAIL: test_range_ascending (test_window_semantics.TestWindows.test_range_ascending)
+W05: test_range_ascending
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 73, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213994800)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN 2 PRECEDING AND 1 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_range_descending (test_window_semantics.TestWindows.test_range_descending)
+W05: test_range_descending
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 74, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213994800)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False) RANGE BETWEEN 2 PRECEDING AND 1 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_range_fractional (test_window_semantics.TestWindows.test_range_fractional)
+W05: test_range_fractional
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 75, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214000224)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (ORDER BY ORDERED(DIV(scope["events"]["k"], 2.0), False, True) RANGE BETWEEN 0.5 PRECEDING AND 1.5 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_range_future_only (test_window_semantics.TestWindows.test_range_future_only)
+W05: test_range_future_only
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 76, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213996672)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False) RANGE BETWEEN 1 FOLLOWING AND 4 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_range_left_unbounded (test_window_semantics.TestWindows.test_range_left_unbounded)
+W05: test_range_left_unbounded
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 77, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214000224)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, False) RANGE BETWEEN UNBOUNDED PRECEDING AND 1 PRECEDING), line 1)'}
+
+======================================================================
+FAIL: test_range_past_only (test_window_semantics.TestWindows.test_range_past_only)
+W05: test_range_past_only
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 78, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213932432)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN 3 PRECEDING AND 1 PRECEDING), line 1)'}
+
+======================================================================
+FAIL: test_range_right_unbounded (test_window_semantics.TestWindows.test_range_right_unbounded)
+W05: test_range_right_unbounded
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 79, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214060912)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True) RANGE BETWEEN 1 FOLLOWING AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_range_text_current (test_window_semantics.TestWindows.test_range_text_current)
+W05: test_range_text_current
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 80, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: words (281473214064128)\' failed: invalid syntax (SUM(scope["words"]["v"]) OVER (ORDER BY ORDERED(scope["words"]["k"], False, True) RANGE BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_range_text_offset (test_window_semantics.TestWindows.test_range_text_offset)
+W05: test_range_text_offset
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 81, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: words (281473214029296)\' failed: invalid syntax (SUM(scope["words"]["v"]) OVER (ORDER BY ORDERED(scope["words"]["k"], False, True) RANGE BETWEEN 2 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_range_zero_peers (test_window_semantics.TestWindows.test_range_zero_peers)
+W05: test_range_zero_peers
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 82, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214031792)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) RANGE BETWEEN 0 PRECEDING AND 0 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_rank_cume_dist (test_window_semantics.TestWindows.test_rank_cume_dist)
+W08: test_rank_cume_dist
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 83, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214029680)\' failed: invalid syntax (CUMEDIST() OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["j"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rank_dense_rank (test_window_semantics.TestWindows.test_rank_dense_rank)
+W08: test_rank_dense_rank
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 84, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213919792)\' failed: invalid syntax (DENSERANK() OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["j"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rank_no_order (test_window_semantics.TestWindows.test_rank_no_order)
+W08: test_rank_no_order
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 85, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213918064)\' failed: invalid syntax (RANK() OVER (PARTITION BY scope["events"]["p"]), line 1)'}
+
+======================================================================
+FAIL: test_rank_ntile (test_window_semantics.TestWindows.test_rank_ntile)
+W08: test_rank_ntile
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 86, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214033664)\' failed: invalid syntax (NTILE(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rank_ntile20 (test_window_semantics.TestWindows.test_rank_ntile20)
+W08: test_rank_ntile20
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 87, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214045296)\' failed: invalid syntax (NTILE(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rank_percent_rank (test_window_semantics.TestWindows.test_rank_percent_rank)
+W08: test_rank_percent_rank
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 88, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213928496)\' failed: invalid syntax (PERCENTRANK() OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["j"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rank_rank (test_window_semantics.TestWindows.test_rank_rank)
+W08: test_rank_rank
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 89, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213967648)\' failed: invalid syntax (RANK() OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["j"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rank_row_number (test_window_semantics.TestWindows.test_rank_row_number)
+W08: test_rank_row_number
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 90, 'status': 'ExecuteError', 'message': 'Step \'Sort: events (281473214063312)\' failed: invalid syntax (ROWNUMBER() OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_repeated_same_expression (test_window_semantics.TestWindows.test_repeated_same_expression)
+W02: test_repeated_same_expression
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 100, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214062496)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_rows_empty_count (test_window_semantics.TestWindows.test_rows_empty_count)
+W03: test_rows_empty_count
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 101, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213997872)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 2 FOLLOWING AND 3 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_rows_future_only (test_window_semantics.TestWindows.test_rows_future_only)
+W03: test_rows_future_only
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 102, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213907312)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 FOLLOWING AND 3 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_rows_oversized (test_window_semantics.TestWindows.test_rows_oversized)
+W03: test_rows_oversized
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 103, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214037504)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 99 PRECEDING AND 99 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_rows_own (test_window_semantics.TestWindows.test_rows_own)
+W03: test_rows_own
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 104, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214074224)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_rows_past_only (test_window_semantics.TestWindows.test_rows_past_only)
+W03: test_rows_past_only
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 105, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214078832)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 4 PRECEDING AND 2 PRECEDING), line 1)'}
+
+======================================================================
+FAIL: test_rows_sliding (test_window_semantics.TestWindows.test_rows_sliding)
+W03: test_rows_sliding
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 106, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214083680)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 2 PRECEDING AND 1 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_rows_tail (test_window_semantics.TestWindows.test_rows_tail)
+W03: test_rows_tail
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 107, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214139712)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_rows_zero (test_window_semantics.TestWindows.test_rows_zero)
+W03: test_rows_zero
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 108, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214081520)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 0 PRECEDING AND 0 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_scalar_operand (test_window_semantics.TestWindows.test_scalar_operand)
+W07: test_scalar_operand
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 109, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214071056)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_singleton (test_window_semantics.TestWindows.test_singleton)
+W15: test_singleton
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 110, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214024592)\' failed: invalid syntax (PERCENTRANK() OVER (ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_star_count_partition (test_window_semantics.TestWindows.test_star_count_partition)
+W01: test_star_count_partition
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 111, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213907312)\' failed: invalid syntax (COUNT(scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"]), line 1)'}
+
+======================================================================
+FAIL: test_static_relation (test_window_semantics.TestWindows.test_static_relation)
+W15: test_static_relation
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 112, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: (281473213913648)\' failed: invalid syntax (SUM(scope[None]["_a_0"]) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_sum_default_desc (test_window_semantics.TestWindows.test_sum_default_desc)
+W01: test_sum_default_desc
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 113, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214005168)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], True, False)), line 1)'}
+
+======================================================================
+FAIL: test_sum_default_peer (test_window_semantics.TestWindows.test_sum_default_peer)
+W01: test_sum_default_peer
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 114, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213918736)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_sum_global (test_window_semantics.TestWindows.test_sum_global)
+W01: test_sum_global
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 115, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213919168)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (), line 1)'}
+
+======================================================================
+FAIL: test_sum_partition (test_window_semantics.TestWindows.test_sum_partition)
+W01: test_sum_partition
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 116, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214042752)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"]), line 1)'}
+
+======================================================================
+FAIL: test_value_default_peer (test_window_semantics.TestWindows.test_value_default_peer)
+W10: test_value_default_peer
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 117, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214020160)\' failed: invalid syntax (LASTVALUE(scope["events"]["k"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_value_empty (test_window_semantics.TestWindows.test_value_empty)
+W10: test_value_empty
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 118, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213967360)\' failed: invalid syntax (LASTVALUE(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True) GROUPS BETWEEN CURRENT ROW AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_value_first (test_window_semantics.TestWindows.test_value_first)
+W10: test_value_first
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 119, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213965152)\' failed: invalid syntax (FIRSTVALUE(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_value_last (test_window_semantics.TestWindows.test_value_last)
+W10: test_value_last
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 120, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214063216)\' failed: invalid syntax (LASTVALUE(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_value_missing (test_window_semantics.TestWindows.test_value_missing)
+W10: test_value_missing
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 121, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473213970240)\' failed: invalid syntax (NTHVALUE(scope["events"]["v"], scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_value_nth (test_window_semantics.TestWindows.test_value_nth)
+W10: test_value_nth
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 122, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214018144)\' failed: invalid syntax (NTHVALUE(scope["events"]["v"], scope[None]["_a_0"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True), ORDERED(scope["events"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING), line 1)'}
+
+======================================================================
+FAIL: test_window_cte_then_navigation (test_window_semantics.TestWindows.test_window_cte_then_navigation)
+W14: test_window_cte_then_navigation
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 123, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: w (281473213914176)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+======================================================================
+FAIL: test_window_join_input (test_window_semantics.TestWindows.test_window_join_input)
+W14: test_window_join_input
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 124, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: a (281473214037312)\' failed: invalid syntax (SUM(scope["b"]["v"]) OVER (PARTITION BY scope["a"]["p"] ORDER BY ORDERED(scope["a"]["id"], False, True), ORDERED(scope["b"]["id"], False, True) ROWS BETWEEN 1 PRECEDING AND CURRENT ROW), line 1)'}
+
+======================================================================
+FAIL: test_window_scalar_composition (test_window_semantics.TestWindows.test_window_scalar_composition)
+W01: test_window_scalar_composition
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 125, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: events (281473214075760)\' failed: invalid syntax. Perhaps you forgot a comma? (ADD(COALESCE(SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"]), -17), scope["events"]["id"]), line 1)'}
+
+======================================================================
+FAIL: test_window_subquery_consumed (test_window_semantics.TestWindows.test_window_subquery_consumed)
+W14: test_window_subquery_consumed
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_window_semantics.py", line 325, in test
+    self.check(item)
+  File "/app/tests/test_window_semantics.py", line 308, in check
+    self.assertEqual(result.get('status'), 'ok', result)
+AssertionError: 'ExecuteError' != 'ok'
+- ExecuteError
++ ok
+ : {'id': 126, 'status': 'ExecuteError', 'message': 'Step \'Aggregate: q (281473214022960)\' failed: invalid syntax (SUM(scope["events"]["v"]) OVER (PARTITION BY scope["events"]["p"] ORDER BY ORDERED(scope["events"]["k"], False, True)), line 1)'}
+
+----------------------------------------------------------------------
+Ran 126 tests in 1.052s
+
+FAILED (failures=104)

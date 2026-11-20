@@ -1,0 +1,15 @@
+{
+    "job_name": "release-integrity-final",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs",
+    "n_concurrent_trials": 1,
+    "agents": [
+        {
+            "name": "checkpoint_probe:IntegrityProbe"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+        }
+    ]
+}

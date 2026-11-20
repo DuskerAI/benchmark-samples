@@ -1,0 +1,13 @@
+# Cardrail audit threat model
+
+Cardrail is an offline issuer security-audit tool for stored EMV-like terminal traces. It is used after terminal batches are recovered from field devices to identify replayed card events, missing reversals, issuer-script failures, and profile-dependent private TLV evidence before a batch is accepted into settlement systems.
+
+The attacker model is a compromised or unreliable terminal batch source. It may resend the same card and ATC to make a replay look like a fresh approval, interleave continuation responses out of sequence, include duplicate issuer scripts, hide private tags inside constructed TLV templates, or report an offline approval that the host later declined or timed out. The tool is not an access-control service and does not authenticate terminals; its security role is deterministic forensic reconstruction and enforcement of the issuer's replay/reversal audit policy from the supplied files.
+
+The required controls are observable in the four output artifacts:
+
+- The persistent ledger suppresses duplicate card lineage effects across repeated runs and duplicate ATCs, while the reversal queue still records duplicate ATC replay attempts that require issuer review.
+- `case_summary.json` reports per-session approvals, declines, failed scripts, reversal counts, terminals, and private tag evidence under the selected issuer profile.
+- `issuer_scripts.jsonl` preserves issuer-script status rows, including hard failures that can require reversal.
+- `reversal_queue.csv` is the actionable queue for offline approvals later declined by host, online approvals that timed out, and hard issuer-script failures.
+- `audit_digest.txt` is a stable digest over the documented field stream so an auditor can compare replay results without trusting JSON formatting alone.

@@ -1,0 +1,27 @@
+version = "2.0"
+
+[metadata]
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "medium"
+category = "data-processing"
+subcategories = ["db_interaction"]
+number_of_milestones = 0
+codebase_size = "minimal"
+languages = [ "Go" ]
+tags = [ "go", "raft", "json", "replay", "recovery" ]
+expert_time_estimate_min = 180
+junior_time_estimate_min = 300
+
+[verifier]
+timeout_sec = 450.0
+
+[agent]
+timeout_sec = 1200.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+allow_internet = false

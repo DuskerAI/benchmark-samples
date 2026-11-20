@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTY Packet Replay Viewer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <h1>TTY Packet Replay Viewer</h1>
+    <label>Capture path <input id="capturePath" type="text" autocomplete="off"></label>
+    <label>Search stream <input id="search" type="search" placeholder="Search stream"></label>
+    <label>Seek timestamp <input id="seek" type="number" placeholder="Seek timestamp"></label>
+    <button id="load">Load</button>
+    <button id="exportBtn">Export visible JSON</button>
+    <div id="status" role="status"></div>
+    <section id="sessions" aria-label="Sessions"></section>
+    <table aria-label="Terminal rows">
+      <thead><tr><th>Time</th><th>Session</th><th>Channel</th><th>Row</th><th>Text</th><th>Width</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <label>Export JSON <textarea id="exportJson" rows="10"></textarea></label>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

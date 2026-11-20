@@ -1,0 +1,17 @@
+{
+    "task": {
+        "path": "/Users/<user>/Downloads/raft-membership-v3.1/raft-membership-repair"
+    },
+    "trial_name": "raft-membership-repair__jwq7wqQ",
+    "trials_dir": "/Users/<user>/Downloads/raft-membership-v3.1/jobs/raft-difficulty-v3.1-20261023-135007",
+    "agent": {
+        "name": "terminus-2",
+        "model_name": "openai/gpt-6.1-sol",
+        "kwargs": {
+            "reasoning_effort": "high",
+            "use_responses_api": true,
+            "record_terminal_session": false
+        }
+    },
+    "job_id": "9d682990-608f-49ee-a2ee-b6bf51b06438"
+}

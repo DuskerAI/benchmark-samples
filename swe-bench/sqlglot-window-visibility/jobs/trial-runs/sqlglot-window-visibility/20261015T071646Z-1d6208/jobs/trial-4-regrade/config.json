@@ -1,0 +1,18 @@
+{
+    "job_name": "trial-4-regrade",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+        }
+    ],
+    "source_jobs": [
+        {
+            "action": "regrade",
+            "type": "local",
+            "job_id": "fc54b784-ae9a-4bf3-bc3c-bc53e6a2aacc",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4"
+        }
+    ]
+}

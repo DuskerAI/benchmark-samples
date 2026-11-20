@@ -1,0 +1,5 @@
+Five CSV files are available in `/app/input_data/`: `orders.csv`, `customers.csv`, `products.csv`, `suppliers.csv`, and `returns.csv`. Write a Go program to read them and produce nine JSON files in `/app/output_data/`. Your Go source file(s) must remain on disk after the program finishes. Go 1.22 is available with gcc for CGO; the `go-duckdb` package (`github.com/marcboeker/go-duckdb v1.6.3`) is pre-cached and usable without network access. You may use any approach — standard library, go-duckdb for SQL-based querying, or a combination. Read `/app/README.md` for the directory layout, `/app/schemas.json` for input column definitions, and `/app/output_spec.json` for the nine required outputs, their exact fields, sort orders, and calculation rules.
+
+**Data Quality**
+
+`returns.csv` contains dirty data: filter out returns referencing non-existent order IDs, and cap `quantity_returned` at the original order quantity. Refund value = `MIN(quantity_returned, original_quantity) × unit_price` from the matching order row.

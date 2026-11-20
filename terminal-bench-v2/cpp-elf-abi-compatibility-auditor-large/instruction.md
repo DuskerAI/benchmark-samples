@@ -1,0 +1,3 @@
+The ABI gate is giving bad compatibility reports. Repair the C++ tool under `/app/abiguard` so `/app/abiguard/bin/abiguard --policy /etc/abiguard/policy.toml --baseline /var/lib/abiguard/baselines --release /var/lib/abiguard/releases/current --output /var/lib/abiguard/output` rebuilds and writes a deterministic audit.
+
+Write `abi_report.json`, `soname_matrix.csv`, and `risk_trace.jsonl` under `/var/lib/abiguard/output`, and exit `0` after writing reports even when blocking issues exist. Follow `/app/abiguard/docs/abi_policy.md` and the policy file for all issue semantics. Keep results data-driven when fixtures change, and do not modify `/var/lib/abiguard/baselines`, `/var/lib/abiguard/releases/current`, `/etc/abiguard/policy.toml`, or `/app/abiguard/docs`.

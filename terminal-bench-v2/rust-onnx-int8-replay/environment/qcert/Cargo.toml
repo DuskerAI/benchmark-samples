@@ -1,0 +1,10 @@
+[package]
+name = "qcert"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 2
+debug = false
+strip = true
+codegen-units = 1

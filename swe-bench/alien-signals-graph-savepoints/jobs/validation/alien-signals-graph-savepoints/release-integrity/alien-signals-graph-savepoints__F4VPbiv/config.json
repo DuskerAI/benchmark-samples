@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+    },
+    "trial_name": "alien-signals-graph-savepoints__F4VPbiv",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-graph-savepoints/jobs/release-integrity",
+    "agent": {
+        "name": "reactive_probe:IntegrityProbe"
+    },
+    "job_id": "0fc69c79-8495-4bb8-8601-41c85e33d30d"
+}

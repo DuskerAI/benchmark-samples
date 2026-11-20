@@ -1,0 +1,55 @@
+=== Waiting for order service ===
+Service ready after 1s
+=== Rebuilding TypeScript ===
+
+> event-sourcing-compactor@1.0.0 build
+> tsc --project tsconfig.json
+
+=== Restarting service with new build ===
+Service restarted.
+=== Installing uv ===
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+=== Running tests ===
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 23 items
+
+../tests/test_outputs.py .......................                         [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_health
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_create_order
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_add_items
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_remove_item
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_confirm_order
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_confirm_empty_order_rejected
+PASSED ../tests/test_outputs.py::TestBasicOperations::test_basic_compaction_returns_expected_fields
+PASSED ../tests/test_outputs.py::TestCompactionPreservesState::test_state_unchanged_after_compaction
+PASSED ../tests/test_outputs.py::TestCompactionPreservesState::test_repeated_compaction_stable
+PASSED ../tests/test_outputs.py::TestCompactionPreservesState::test_new_events_after_compaction_reflected
+PASSED ../tests/test_outputs.py::TestCompactionPreservesState::test_snapshot_version_advances
+PASSED ../tests/test_outputs.py::TestConcurrentCompaction::test_snapshot_never_downgrades
+PASSED ../tests/test_outputs.py::TestConcurrentCompaction::test_concurrent_compact_and_write
+PASSED ../tests/test_outputs.py::TestConcurrentCompaction::test_concurrent_compaction_all_items_survive
+PASSED ../tests/test_outputs.py::TestReadDuringCompaction::test_reads_never_return_stale_state
+PASSED ../tests/test_outputs.py::TestReadDuringCompaction::test_status_never_regresses_during_compaction
+PASSED ../tests/test_outputs.py::TestVersionGap::test_gap_at_start_returns_failure
+PASSED ../tests/test_outputs.py::TestVersionGap::test_gap_in_middle_returns_failure
+PASSED ../tests/test_outputs.py::TestVersionGap::test_no_false_positive_on_clean_sequence
+PASSED ../tests/test_outputs.py::TestVersionGap::test_gap_above_existing_snapshot
+PASSED ../tests/test_outputs.py::TestIntegration::test_compact_all_endpoint
+PASSED ../tests/test_outputs.py::TestIntegration::test_snapshot_version_correct_after_compaction
+PASSED ../tests/test_outputs.py::TestIntegration::test_full_lifecycle_with_compaction
+============================== 23 passed in 1.84s ==============================

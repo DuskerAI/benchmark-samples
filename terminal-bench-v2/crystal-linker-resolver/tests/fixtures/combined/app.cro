@@ -1,0 +1,13 @@
+OBJECT app
+SECTION .text - 32 -
+SECTION .vtbl grp.v 8 -
+SYMBOL app_main STRONG DEF .text 0
+SYMBOL vt STRONG DEF .vtbl 0
+SYMBOL log WEAK DEF .text 8
+SYMBOL svc STRONG UNDEF
+SYMBOL fmt STRONG UNDEF
+SYMBOL scratch COMMON 6 8
+RELOC .text 4 svc REL32 -4
+RELOC .text 12 fmt ABS32 0
+RELOC .text 16 log REL32 0
+RELOC .text 20 scratch ABS32 0

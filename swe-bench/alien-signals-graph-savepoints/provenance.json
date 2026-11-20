@@ -1,0 +1,115 @@
+{
+  "source": "Dusker SWE catalog.json, dataset8 (copied verbatim at packaging time)",
+  "sample_location": "swe-bench/alien-signals-graph-savepoints",
+  "catalog_entry": {
+    "number": 8,
+    "slug": "alien-signals-graph-savepoints",
+    "task_id": "dusker-ai/alien-signals-graph-savepoints",
+    "version": "1.0.0",
+    "description": "Nested transactions restore reactive values, dependencies and resource ownership",
+    "category": "Reactive systems and dataflow propagation",
+    "path": "dataset8/alien-signals-graph-savepoints",
+    "jobs": "dataset8/jobs",
+    "base_commit": "995e375eb72e64b920e5c432590fb7a924cc9031",
+    "upstream_commit": "c00e63969bf261fc5dce31fae70cb9a90912b06e",
+    "repository": "https://github.com/stackblitz/alien-signals",
+    "harbor_task_checksum": "6235444d4464d1463522ac677a3cb79d2c103d12e9893ef8b27e0117713ae712",
+    "package_tree_sha256": "4f95cd538495881decc17d10986e0c4310b25f44867117a79a1188380b98d3e0",
+    "files": {
+      "environment/Dockerfile": {
+        "sha256": "9b76dc9fb524b4a07f81df4eea25dea81b90b2f46d3efba1c4f26ad86da9f3c3",
+        "bytes": 1138
+      },
+      "environment/base.bundle": {
+        "sha256": "9257a16d0b3520cd222aa52d865125557a2b83c0ce112e5f6b95600c4b9c449d",
+        "bytes": 639700
+      },
+      "instruction.md": {
+        "sha256": "aa2cd221b7db7b5f2fff340c349569118b6840d3d5bb4f2e2391dbeb7349f639",
+        "bytes": 5410
+      },
+      "solution/gold_patch.diff": {
+        "sha256": "289adc285217ca2e5fd01edf73f7a3cd3f35349c10d1d6bf6d84070617b41e15",
+        "bytes": 17332
+      },
+      "solution/solve.sh": {
+        "sha256": "baa7ca6cd9f7291f58c008b7912b66ce0499a55832060571378ee73b5a870024",
+        "bytes": 190
+      },
+      "task.toml": {
+        "sha256": "bc503dd030cb61d2c476fd6b1b96cf12c0e3c560f23006c4d6d1f3282f2f61e1",
+        "bytes": 1146
+      },
+      "tests/Dockerfile": {
+        "sha256": "5b568e9f9e523eb616f4405b5904cc631addf1860f7f7a2ba7384c87ad54af67",
+        "bytes": 1625
+      },
+      "tests/api_driver.cjs": {
+        "sha256": "9780b69c3a38408c3c21a0468b6a5c7ee25f947cdee888e458293adb6b1570d5",
+        "bytes": 1010
+      },
+      "tests/base.bundle": {
+        "sha256": "9257a16d0b3520cd222aa52d865125557a2b83c0ce112e5f6b95600c4b9c449d",
+        "bytes": 639700
+      },
+      "tests/config.json": {
+        "sha256": "6633684689361e3fb5a8ff5f4039d72678760223ca2d42a790c0d1e49c0001d3",
+        "bytes": 26492
+      },
+      "tests/launch_candidate.py": {
+        "sha256": "9ea51e8f7dba248728c3ea441f202db940d0bab365b76fdfb620aff65cc4045e",
+        "bytes": 496
+      },
+      "tests/parser.py": {
+        "sha256": "f36a64e5d7b321c08be220356eec8e4c8b02f989683a5d3469264a27a7277aac",
+        "bytes": 8409
+      },
+      "tests/run_script.sh": {
+        "sha256": "16c73914fd80fe516d6d044d7e02b5c0f25143c4d4477e7a549b340f77e115d4",
+        "bytes": 85
+      },
+      "tests/test.sh": {
+        "sha256": "e2bf50b2ce7227400b139dbe2e62782f011a2eb470942be77e5dd49e7b2d8f7b",
+        "bytes": 890
+      },
+      "tests/test_patch.patch": {
+        "sha256": "9c6ae4fe7d881234522b1057571135d13b14dd82115d51c9ce1c8bf0af993fe9",
+        "bytes": 199321
+      }
+    },
+    "evidence_tree_sha256": "548bc614915e7b015069366eb25ebd1163ad511ce40367d8c9a642f8eb8ea640",
+    "declared_metadata_equivalent_checksums": [
+      "6235444d4464d1463522ac677a3cb79d2c103d12e9893ef8b27e0117713ae712",
+      "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f"
+    ],
+    "recorded_controls": {
+      "clean_regrade": {
+        "result": "validation/alien-signals-graph-savepoints/reference-clean-regrade/alien-signals-graph-savepoints__VAZPcdf/result.json",
+        "grade": "validation/alien-signals-graph-savepoints/reference-clean-regrade/alien-signals-graph-savepoints__VAZPcdf/verifier/grade.json",
+        "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+        "reward": 1
+      },
+      "nop": {
+        "result": "validation/alien-signals-graph-savepoints/release-nop/alien-signals-graph-savepoints__MwJbcXK/result.json",
+        "grade": "validation/alien-signals-graph-savepoints/release-nop/alien-signals-graph-savepoints__MwJbcXK/verifier/grade.json",
+        "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+        "reward": 0
+      },
+      "oracle": {
+        "result": "validation/alien-signals-graph-savepoints/release-oracle/alien-signals-graph-savepoints__QJDrRPs/result.json",
+        "grade": "validation/alien-signals-graph-savepoints/release-oracle/alien-signals-graph-savepoints__QJDrRPs/verifier/grade.json",
+        "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+        "reward": 1
+      }
+    },
+    "tests": {
+      "fail_to_pass": 118,
+      "pass_to_pass": 10
+    },
+    "model_trials": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+    },
+    "trial_name": "sqlglot-window-visibility__8Foa9TW",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs/release-nop",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "ee71acb7-d432-4b2c-85b6-c79bed1bb9c8"
+}

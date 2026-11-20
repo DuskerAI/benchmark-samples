@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trace Timeline Viewer</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="app-title">Trace Timeline Viewer</h1>
+        <label>Filter <input id="filter" type="search" autocomplete="off" /></label>
+        <label>From <input id="from-ns" type="number" /></label>
+        <label>To <input id="to-ns" type="number" /></label>
+        <button id="apply-window" type="button">Apply window</button>
+        <button id="reset-window" type="button">Reset</button>
+        <button id="bookmark" type="button">Bookmark selection</button>
+      </header>
+      <section id="details" aria-live="polite">No selection</section>
+      <section id="timeline" aria-label="timeline"></section>
+      <aside>
+        <h2>Bookmarks</h2>
+        <ol id="bookmarks"></ol>
+      </aside>
+      <label for="export">Export</label>
+      <textarea id="export" rows="10" readonly></textarea>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

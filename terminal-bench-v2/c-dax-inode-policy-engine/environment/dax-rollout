@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+result=/var/lib/dax-rollout/result
+mkdir -p "$result"
+rm -f "$result/audit.tsv" "$result/state.tsv"
+cat /var/lib/dax-rollout/incident.plan /etc/dax-rollout/change.plan > /tmp/dax-rollout.plan
+/usr/local/libexec/daxadmin --media capable --plan /tmp/dax-rollout.plan --out "$result"

@@ -1,0 +1,5 @@
+# Supported Information Elements
+
+The collector only needs the information elements used by the shipped and same-schema verifier captures: `sourceIPv4Address` 8, `destinationIPv4Address` 12, `protocolIdentifier` 4, `sourceTransportPort` 7, `destinationTransportPort` 11, `packetDeltaCount` 2, `octetDeltaCount` 1, `flowStartMilliseconds` 152, `flowEndMilliseconds` 153, `samplerId` 48, `samplingInterval` 34, and `samplingAlgorithm` 35.
+
+Private enterprise number 32473 information elements 7233, 4001, and 40001 identify `applicationName` in the supported capture families. It is a variable-length UTF-8 string and maps to output field `application_name`. Unknown fields in a known template are skipped according to their declared length, but known flow fields must be decoded when present.

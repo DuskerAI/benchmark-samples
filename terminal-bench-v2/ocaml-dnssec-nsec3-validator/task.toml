@@ -1,0 +1,27 @@
+version = "2.0"
+
+[metadata]
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "hard"
+category = "security"
+subcategories = []
+tags = ["ocaml", "dnssec-security", "nsec3", "authenticated-denial", "downgrade-detection"]
+languages = ["OCaml"]
+codebase_size = "minimal"
+expert_time_estimate_min = 320
+junior_time_estimate_min = 480
+number_of_milestones = 0
+
+[verifier]
+timeout_sec = 900
+
+[agent]
+timeout_sec = 900
+
+[environment]
+build_timeout_sec = 600
+cpus = 1
+memory_mb = 2048
+storage_mb = 10240
+allow_internet = false

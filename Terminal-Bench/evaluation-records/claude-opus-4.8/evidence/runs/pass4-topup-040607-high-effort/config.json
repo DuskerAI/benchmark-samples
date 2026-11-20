@@ -1,0 +1,38 @@
+{
+    "job_name": "pass4-topup-040607-high-effort",
+    "jobs_dir": "/Users/<user>/Downloads/terminal_bench/terminal_bench/jobs",
+    "timeout_multiplier": 2.0,
+    "agent_setup_timeout_multiplier": 3.0,
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 1,
+        "include_exceptions": [
+            "AgentSetupTimeoutError"
+        ],
+        "exclude_exceptions": [
+            "VerifierTimeoutError",
+            "RewardFileEmptyError",
+            "RewardFileNotFoundError",
+            "VerifierOutputParseError"
+        ]
+    },
+    "agents": [
+        {
+            "name": "claude-code",
+            "model_name": "claude-opus-4-8",
+            "kwargs": {
+                "reasoning_effort": "high"
+            }
+        }
+    ],
+    "datasets": [
+        {
+            "path": "/Users/<user>/Downloads/terminal_bench/terminal_bench/tasks",
+            "task_names": [
+                "04-*",
+                "06-*",
+                "07-*"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,183 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-9.1.1, pluggy-1.7.0
+rootdir: /tests
+plugins: json-ctrf-0.5.2
+collected 109 items
+
+test_consensus.py .............................                          [ 26%]
+test_async.py ...................                                        [ 44%]
+test_transactions.py ..........................                          [ 67%]
+test_transfer.py .......................                                 [ 88%]
+test_interleavings.py FF..........                                       [100%]
+
+=================================== FAILURES ===================================
+____ test_each_compaction_request_completes_when_its_prefix_is_eligible[1] _____
+
+binary = '/build/target/release/membershipd', nodes = 1
+
+    @pytest.mark.parametrize('nodes', [1, 3])
+    def test_each_compaction_request_completes_when_its_prefix_is_eligible(binary, nodes):
+        """A newer stalled compaction cannot indefinitely block an older ready one."""
+        ids = list(range(1, nodes + 1))
+        c = Cluster(binary, ids=ids, voters=ids)
+        try:
+            c.elect(1)
+            c.pause_apply.add(1)
+            targets = []
+            for i in range(4):
+                c.write(1, f'compact-write-{i}', client=f'client-{i}', delta=i + 1)
+                c.drain()
+                c.event(1, 'compact')
+                target = c.disks[1]['commit']
+                generation = next(g for g, s in sorted(c.application[1].items()) if s['index'] >= target)
+                targets.append((target, generation))
+            for target, generation in targets:
+                c.apply(1, generation)
+                c.flush(1)
+>               assert c.disks[1]['snapshot']['index'] >= target, \
+                    'eligible compaction waits for an unrelated later application job'
+E                   AssertionError: eligible compaction waits for an unrelated later application job
+E                   assert 0 >= 2
+
+test_interleavings.py:84: AssertionError
+____ test_each_compaction_request_completes_when_its_prefix_is_eligible[3] _____
+
+binary = '/build/target/release/membershipd', nodes = 3
+
+    @pytest.mark.parametrize('nodes', [1, 3])
+    def test_each_compaction_request_completes_when_its_prefix_is_eligible(binary, nodes):
+        """A newer stalled compaction cannot indefinitely block an older ready one."""
+        ids = list(range(1, nodes + 1))
+        c = Cluster(binary, ids=ids, voters=ids)
+        try:
+            c.elect(1)
+            c.pause_apply.add(1)
+            targets = []
+            for i in range(4):
+                c.write(1, f'compact-write-{i}', client=f'client-{i}', delta=i + 1)
+                c.drain()
+                c.event(1, 'compact')
+                target = c.disks[1]['commit']
+                generation = next(g for g, s in sorted(c.application[1].items()) if s['index'] >= target)
+                targets.append((target, generation))
+            for target, generation in targets:
+                c.apply(1, generation)
+                c.flush(1)
+>               assert c.disks[1]['snapshot']['index'] >= target, \
+                    'eligible compaction waits for an unrelated later application job'
+E                   AssertionError: eligible compaction waits for an unrelated later application job
+E                   assert 0 >= 2
+
+test_interleavings.py:84: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED test_consensus.py::test_conditional_writes_and_retry_identity
+PASSED test_consensus.py::test_read_quorum_is_fresh_and_reads_do_not_grow_log
+PASSED test_consensus.py::test_vote_survives_process_restart
+PASSED test_consensus.py::test_voting_compares_term_before_length
+PASSED test_consensus.py::test_old_term_prefix_waits_for_current_term_barrier
+PASSED test_consensus.py::test_delayed_heartbeat_does_not_truncate_a_newer_suffix
+PASSED test_consensus.py::test_joint_configuration_needs_both_majorities[old0-new0-available0]
+PASSED test_consensus.py::test_joint_configuration_needs_both_majorities[old1-new1-available1]
+PASSED test_consensus.py::test_membership_rollout_removes_leader_and_old_voters
+PASSED test_consensus.py::test_new_leader_finishes_inflight_membership_change
+PASSED test_consensus.py::test_learner_votes_do_not_elect_a_leader
+PASSED test_consensus.py::test_snapshot_transfer_keeps_client_sessions
+PASSED test_consensus.py::test_install_snapshot_preserves_matching_uncommitted_suffix[legacy]
+PASSED test_consensus.py::test_install_snapshot_preserves_matching_uncommitted_suffix[chunks]
+PASSED test_consensus.py::test_stale_snapshot_cannot_roll_back_committed_state
+PASSED test_consensus.py::test_generated_operational_histories[103]
+PASSED test_consensus.py::test_generated_operational_histories[211]
+PASSED test_consensus.py::test_generated_operational_histories[307]
+PASSED test_consensus.py::test_generated_operational_histories[419]
+PASSED test_consensus.py::test_generated_operational_histories[523]
+PASSED test_consensus.py::test_generated_operational_histories[631]
+PASSED test_consensus.py::test_generated_operational_histories[733]
+PASSED test_consensus.py::test_generated_operational_histories[839]
+PASSED test_consensus.py::test_generated_operational_histories[947]
+PASSED test_consensus.py::test_generated_operational_histories[1051]
+PASSED test_consensus.py::test_generated_operational_histories[1153]
+PASSED test_consensus.py::test_generated_operational_histories[1259]
+PASSED test_consensus.py::test_joint_snapshot_recovery_completes_transition
+PASSED test_consensus.py::test_single_voter_replacement_and_arbitrary_node_ids
+PASSED test_async.py::test_unflushed_election_is_not_visible_to_other_replicas
+PASSED test_async.py::test_busy_storage_does_not_block_higher_term_and_old_callbacks
+PASSED test_async.py::test_append_ack_requires_durability_and_unflushed_suffix_is_lost
+PASSED test_async.py::test_fsync_survives_crash_even_when_its_callback_was_lost
+PASSED test_async.py::test_prefix_fsync_cannot_release_a_later_generation[False]
+PASSED test_async.py::test_prefix_fsync_cannot_release_a_later_generation[True]
+PASSED test_async.py::test_application_stall_keeps_replication_live_but_pins_reads_and_compaction
+PASSED test_async.py::test_recovery_replays_durable_commit_before_releasing_retry
+PASSED test_async.py::test_snapshot_crash_cuts_with_pending_application[before-fsync]
+PASSED test_async.py::test_snapshot_crash_cuts_with_pending_application[after-fsync]
+PASSED test_async.py::test_snapshot_crash_cuts_with_pending_application[after-apply]
+PASSED test_async.py::test_old_apply_completion_cannot_roll_back_an_installed_snapshot
+PASSED test_async.py::test_leader_removal_finishes_while_application_workers_are_stalled
+PASSED test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts[1601]
+PASSED test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts[1613]
+PASSED test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts[1627]
+PASSED test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts[1637]
+PASSED test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts[1657]
+PASSED test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts[1663]
+PASSED test_transactions.py::test_multi_key_write_skew_is_rejected
+PASSED test_transactions.py::test_range_predicates_detect_phantoms_and_aba[insert]
+PASSED test_transactions.py::test_range_predicates_detect_phantoms_and_aba[delete]
+PASSED test_transactions.py::test_range_predicates_detect_phantoms_and_aba[aba]
+PASSED test_transactions.py::test_range_predicates_detect_phantoms_and_aba[same-value]
+PASSED test_transactions.py::test_disjoint_concurrent_transactions_do_not_false_conflict
+PASSED test_transactions.py::test_blind_writes_and_absent_point_reads_conflict
+PASSED test_transactions.py::test_retried_and_failed_counter_updates_do_not_create_false_versions
+PASSED test_transactions.py::test_pagination_remains_at_original_snapshot_through_rewrites
+PASSED test_transactions.py::test_oldest_pin_controls_vacuum_and_tombstone_retention
+PASSED test_transactions.py::test_commit_receipt_survives_retry_recovery_and_payload_changes
+PASSED test_transactions.py::test_abort_and_unknown_transactions_are_distinct
+PASSED test_transactions.py::test_delayed_application_hides_transaction_results_and_pins
+PASSED test_transactions.py::test_snapshot_reads_cannot_bypass_a_new_leaders_closed_receipt
+PASSED test_transactions.py::test_live_transaction_survives_leader_replacement_and_compaction
+PASSED test_transactions.py::test_speculative_transaction_is_discarded_after_partition
+PASSED test_transactions.py::test_transaction_retry_across_independent_workers_and_crash[4109]
+PASSED test_transactions.py::test_transaction_retry_across_independent_workers_and_crash[4111]
+PASSED test_transactions.py::test_transaction_retry_across_independent_workers_and_crash[4127]
+PASSED test_transactions.py::test_transaction_retry_across_independent_workers_and_crash[4129]
+PASSED test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration[2707]
+PASSED test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration[2711]
+PASSED test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration[2713]
+PASSED test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration[2719]
+PASSED test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration[2729]
+PASSED test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration[2731]
+PASSED test_transfer.py::test_out_of_order_duplicate_and_overlapping_fragments[127]
+PASSED test_transfer.py::test_out_of_order_duplicate_and_overlapping_fragments[509]
+PASSED test_transfer.py::test_out_of_order_duplicate_and_overlapping_fragments[1024]
+PASSED test_transfer.py::test_conflicting_overlap_preserves_previously_accepted_bytes
+PASSED test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts[unflushed]
+PASSED test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts[partial-fsync-no-callback]
+PASSED test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts[partial-callback]
+PASSED test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts[complete-fsync-no-callback]
+PASSED test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts[complete-before-apply]
+PASSED test_transfer.py::test_partial_generation_cannot_acknowledge_a_later_fragment
+PASSED test_transfer.py::test_checksum_failure_never_installs_and_valid_retry_recovers
+PASSED test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress[empty]
+PASSED test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress[oversize-fragment]
+PASSED test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress[outside]
+PASSED test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress[overflow]
+PASSED test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress[zero-size]
+PASSED test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress[oversize-snapshot]
+PASSED test_transfer.py::test_complete_payload_must_match_manifest_and_decode[index]
+PASSED test_transfer.py::test_complete_payload_must_match_manifest_and_decode[term]
+PASSED test_transfer.py::test_complete_payload_must_match_manifest_and_decode[json]
+PASSED test_transfer.py::test_superseded_and_old_term_transfers_cannot_rollback
+PASSED test_transfer.py::test_streamed_pins_and_receipts_survive_voter_promotion
+PASSED test_transfer.py::test_sender_recovers_from_lost_fragment_reply_and_receiver_restart
+PASSED test_interleavings.py::test_overlapping_clients_workers_and_recovery[follower-1729]
+PASSED test_interleavings.py::test_overlapping_clients_workers_and_recovery[follower-3253]
+PASSED test_interleavings.py::test_overlapping_clients_workers_and_recovery[follower-7919]
+PASSED test_interleavings.py::test_overlapping_clients_workers_and_recovery[leader-1729]
+PASSED test_interleavings.py::test_overlapping_clients_workers_and_recovery[leader-3253]
+PASSED test_interleavings.py::test_overlapping_clients_workers_and_recovery[leader-7919]
+PASSED test_interleavings.py::test_overlapping_duplicate_receipts_with_application_stalled
+PASSED test_interleavings.py::test_streamed_pins_during_complete_voter_replacement[unflushed]
+PASSED test_interleavings.py::test_streamed_pins_during_complete_voter_replacement[fsync-without-notice]
+PASSED test_interleavings.py::test_streamed_pins_during_complete_voter_replacement[after-notice]
+FAILED test_interleavings.py::test_each_compaction_request_completes_when_its_prefix_is_eligible[1]
+FAILED test_interleavings.py::test_each_compaction_request_completes_when_its_prefix_is_eligible[3]
+======================== 2 failed, 107 passed in 48.88s ========================

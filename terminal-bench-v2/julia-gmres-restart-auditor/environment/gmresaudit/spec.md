@@ -1,0 +1,11 @@
+# GMRES audit case contract
+
+The audit command is `julia --project=/app/gmresaudit /app/gmresaudit/audit.jl <case-dir> <report.json>`. It reads one case directory and writes only the requested report path. Valid cases exit 0 and replace any existing report. Invalid cases exit nonzero and leave no report at that path.
+
+`case.txt` contains `key=value` records with optional blank lines and `#` comments. Required keys are `matrix`, `rhs`, `restart`, `maxiter`, `tol`, and `true_tol`; optional key `preconditioner` names a diagonal left preconditioner vector. `restart` is a positive integer, `maxiter` is a nonnegative integer, and both tolerances are positive finite floating point numbers. Vector files contain one finite real number per non-comment line and must have length equal to the matrix dimension. Preconditioner entries must be finite and nonzero.
+
+The matrix file is Matrix Market coordinate real format with `general` or `symmetric` storage. Comment lines beginning with `%` may appear before the size line. Indices are one-based, dimensions must be square and positive, entries may repeat and sum naturally, and symmetric off-diagonal entries represent both mirrored positions.
+
+The numerical process starts from the zero vector and performs restarted GMRES on the left-preconditioned system using Euclidean norms. A record is emitted for every inner iteration until convergence or `maxiter`. At the end of each restart cycle, the next cycle continues from the accumulated approximate solution. The stopping condition is satisfied only when both the preconditioned residual norm is at most `tol` and the true residual norm is at most `true_tol`.
+
+The JSON report has keys `status`, `iterations`, `restart`, `tolerance`, `true_tolerance`, `final_preconditioned_residual`, `final_true_residual`, `solution`, and `records`. `status` is `converged` or `not_converged`; `iterations` equals the number of records. Each record contains `iteration`, `cycle`, `cycle_iteration`, `preconditioned_residual`, `true_residual`, and `orthogonality_error`. Iteration numbers start at 1, cycle numbers start at 1, and `cycle_iteration` restarts at 1 for each cycle. Floating point results must be finite and accurate to the residual tolerances implied by the case.

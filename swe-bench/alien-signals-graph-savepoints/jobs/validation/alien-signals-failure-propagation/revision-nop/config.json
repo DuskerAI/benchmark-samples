@@ -1,0 +1,15 @@
+{
+    "job_name": "revision-nop",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs",
+    "n_concurrent_trials": 1,
+    "agents": [
+        {
+            "name": "nop"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-failure-propagation"
+        }
+    ]
+}

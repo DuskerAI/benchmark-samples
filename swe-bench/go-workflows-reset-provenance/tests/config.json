@@ -1,0 +1,142 @@
+{
+  "fail_to_pass": [
+    "test_reset_provenance.ResetSemantics.test_B01_2",
+    "test_reset_provenance.ResetSemantics.test_B01_4",
+    "test_reset_provenance.ResetSemantics.test_B01_8",
+    "test_reset_provenance.ResetSemantics.test_B02_envelope",
+    "test_reset_provenance.ResetSemantics.test_B02_plain",
+    "test_reset_provenance.ResetSemantics.test_B03_envelope",
+    "test_reset_provenance.ResetSemantics.test_B03_plain",
+    "test_reset_provenance.ResetSemantics.test_B04_envelope",
+    "test_reset_provenance.ResetSemantics.test_B04_plain",
+    "test_reset_provenance.ResetSemantics.test_B05_envelope",
+    "test_reset_provenance.ResetSemantics.test_B05_plain",
+    "test_reset_provenance.ResetSemantics.test_B06_first_cut",
+    "test_reset_provenance.ResetSemantics.test_B06_four",
+    "test_reset_provenance.ResetSemantics.test_B08_held_result",
+    "test_reset_provenance.ResetSemantics.test_B09_canceled",
+    "test_reset_provenance.ResetSemantics.test_B09_fired",
+    "test_reset_provenance.ResetSemantics.test_B11_active_collector",
+    "test_reset_provenance.ResetSemantics.test_B11_bulk",
+    "test_reset_provenance.ResetSemantics.test_B11_single",
+    "test_reset_provenance.ResetSemantics.test_B12_cycle",
+    "test_reset_provenance.ResetSemantics.test_B12_duplicate",
+    "test_reset_provenance.ResetSemantics.test_B12_gap",
+    "test_reset_provenance.ResetSemantics.test_B12_interior",
+    "test_reset_provenance.ResetSemantics.test_B12_missing",
+    "test_reset_provenance.ResetSemantics.test_B13_completed",
+    "test_reset_provenance.ResetSemantics.test_B13_outstanding",
+    "test_reset_provenance.ResetSemantics.test_B14_envelope",
+    "test_reset_provenance.ResetSemantics.test_B14_plain"
+  ],
+  "pass_to_pass": [
+    "test_reset_provenance.ResetSemantics.test_B06_partial_cut",
+    "test_reset_provenance.ResetSemantics.test_B07_inherited",
+    "test_reset_provenance.ResetSemantics.test_B07_reset_child",
+    "test_reset_provenance.ResetSemantics.test_B10_restart",
+    "test_reset_provenance.ResetSemantics.test_P01_interior",
+    "test_reset_provenance.ResetSemantics.test_P01_negative",
+    "test_reset_provenance.ResetSemantics.test_P01_past_end",
+    "test_reset_provenance.ResetSemantics.test_P01_zero",
+    "test_reset_provenance.ResetSemantics.test_P02_instance",
+    "test_reset_provenance.ResetSemantics.test_P02_ownership",
+    "test_reset_provenance.ResetSemantics.test_P02_pending",
+    "test_reset_provenance.ResetSemantics.test_P03_cold",
+    "test_reset_provenance.ResetSemantics.test_P03_warm",
+    "test_reset_provenance.ResetSemantics.test_P04_consumed",
+    "test_reset_provenance.ResetSemantics.test_P04_pending",
+    "test_reset_provenance.ResetSemantics.test_P04_terminal",
+    "test_reset_provenance.ResetSemantics.test_P05_acknowledged",
+    "test_reset_provenance.ResetSemantics.test_P05_uncommitted",
+    "test_reset_provenance.ResetSemantics.test_P06_retained"
+  ],
+  "requirement_groups": {
+    "B01": [
+      "test_reset_provenance.ResetSemantics.test_B01_2",
+      "test_reset_provenance.ResetSemantics.test_B01_4",
+      "test_reset_provenance.ResetSemantics.test_B01_8"
+    ],
+    "B02": [
+      "test_reset_provenance.ResetSemantics.test_B02_plain",
+      "test_reset_provenance.ResetSemantics.test_B02_envelope"
+    ],
+    "B03": [
+      "test_reset_provenance.ResetSemantics.test_B03_plain",
+      "test_reset_provenance.ResetSemantics.test_B03_envelope"
+    ],
+    "B04": [
+      "test_reset_provenance.ResetSemantics.test_B04_plain",
+      "test_reset_provenance.ResetSemantics.test_B04_envelope"
+    ],
+    "B05": [
+      "test_reset_provenance.ResetSemantics.test_B05_plain",
+      "test_reset_provenance.ResetSemantics.test_B05_envelope"
+    ],
+    "B06": [
+      "test_reset_provenance.ResetSemantics.test_B06_first_cut",
+      "test_reset_provenance.ResetSemantics.test_B06_partial_cut",
+      "test_reset_provenance.ResetSemantics.test_B06_four"
+    ],
+    "B07": [
+      "test_reset_provenance.ResetSemantics.test_B07_inherited",
+      "test_reset_provenance.ResetSemantics.test_B07_reset_child"
+    ],
+    "B08": [
+      "test_reset_provenance.ResetSemantics.test_B08_held_result"
+    ],
+    "B09": [
+      "test_reset_provenance.ResetSemantics.test_B09_canceled",
+      "test_reset_provenance.ResetSemantics.test_B09_fired"
+    ],
+    "B10": [
+      "test_reset_provenance.ResetSemantics.test_B10_restart"
+    ],
+    "P01": [
+      "test_reset_provenance.ResetSemantics.test_P01_zero",
+      "test_reset_provenance.ResetSemantics.test_P01_negative",
+      "test_reset_provenance.ResetSemantics.test_P01_interior",
+      "test_reset_provenance.ResetSemantics.test_P01_past_end"
+    ],
+    "P02": [
+      "test_reset_provenance.ResetSemantics.test_P02_instance",
+      "test_reset_provenance.ResetSemantics.test_P02_ownership",
+      "test_reset_provenance.ResetSemantics.test_P02_pending"
+    ],
+    "B11": [
+      "test_reset_provenance.ResetSemantics.test_B11_single",
+      "test_reset_provenance.ResetSemantics.test_B11_bulk",
+      "test_reset_provenance.ResetSemantics.test_B11_active_collector"
+    ],
+    "B12": [
+      "test_reset_provenance.ResetSemantics.test_B12_missing",
+      "test_reset_provenance.ResetSemantics.test_B12_cycle",
+      "test_reset_provenance.ResetSemantics.test_B12_interior",
+      "test_reset_provenance.ResetSemantics.test_B12_gap",
+      "test_reset_provenance.ResetSemantics.test_B12_duplicate"
+    ],
+    "P03": [
+      "test_reset_provenance.ResetSemantics.test_P03_warm",
+      "test_reset_provenance.ResetSemantics.test_P03_cold"
+    ],
+    "B13": [
+      "test_reset_provenance.ResetSemantics.test_B13_outstanding",
+      "test_reset_provenance.ResetSemantics.test_B13_completed"
+    ],
+    "P04": [
+      "test_reset_provenance.ResetSemantics.test_P04_pending",
+      "test_reset_provenance.ResetSemantics.test_P04_consumed",
+      "test_reset_provenance.ResetSemantics.test_P04_terminal"
+    ],
+    "P05": [
+      "test_reset_provenance.ResetSemantics.test_P05_uncommitted",
+      "test_reset_provenance.ResetSemantics.test_P05_acknowledged"
+    ],
+    "B14": [
+      "test_reset_provenance.ResetSemantics.test_B14_plain",
+      "test_reset_provenance.ResetSemantics.test_B14_envelope"
+    ],
+    "P06": [
+      "test_reset_provenance.ResetSemantics.test_P06_retained"
+    ]
+  }
+}

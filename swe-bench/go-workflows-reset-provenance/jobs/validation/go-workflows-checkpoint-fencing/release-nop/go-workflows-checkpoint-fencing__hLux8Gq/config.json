@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+    },
+    "trial_name": "go-workflows-checkpoint-fencing__hLux8Gq",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/release-nop",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "7083785a-5ced-49b3-abc0-dd08510938f8"
+}

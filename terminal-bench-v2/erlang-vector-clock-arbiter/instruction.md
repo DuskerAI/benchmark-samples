@@ -1,0 +1,3 @@
+Games task: an arena league needs its offline match official to score archived player cards, decide zone ownership, resolve timeout calls, and continue saved games. After `/app/scripts/build.sh`, the official is `/app/bin/arbiter`; it judges matches through `adjudicate <events> <report>`, `checkpoint <events> <count> <state> <report>`, and `resume <events> <state> <report>`.
+
+The match rules and report format are in `/app/match_contract.rules`. The checks run those commands against Erlang term streams and compare the JSON reports, ordering, scoring, checkpoint, and resume behavior to those rules.

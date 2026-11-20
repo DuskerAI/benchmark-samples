@@ -1,0 +1,29 @@
+[
+  {
+    "month": "2022-01",
+    "gross_revenue": 52310.4,
+    "order_count": 487,
+    "return_value": 1240.5,
+    "net_revenue": 51069.9,
+    "rolling_3m_avg_net_revenue": null,
+    "mom_growth_pct": null
+  },
+  {
+    "month": "2022-02",
+    "gross_revenue": 48920.15,
+    "order_count": 451,
+    "return_value": 980.2,
+    "net_revenue": 47939.95,
+    "rolling_3m_avg_net_revenue": null,
+    "mom_growth_pct": -6.12
+  },
+  {
+    "month": "2022-03",
+    "gross_revenue": 55640.8,
+    "order_count": 521,
+    "return_value": 1530.6,
+    "net_revenue": 54110.2,
+    "rolling_3m_avg_net_revenue": 51040.02,
+    "mom_growth_pct": 12.87
+  }
+]

@@ -1,0 +1,3 @@
+A DNSSEC operator must decide whether offline denial evidence authenticates absence or reveals an unsigned-delegation downgrade that leaves a child zone unprotected. Finish `/app/nsec3audit` so it performs the NSEC3 security audit described in `/app/spec.md`; build it with `make -C /app` and run it as `/app/nsec3audit --zone ZONE --query NAME --type TYPE`.
+
+The audit must read `ZONE`, write no stderr, and emit exactly the JSON verdict schema from `/app/spec.md`. Its security finding must distinguish proved data, wildcard synthesis, NODATA, NXDOMAIN, unsigned-delegation exposure, and bogus or inconsistent denial material using the DNSSEC owner-name, delegation, opt-out, and NSEC3 proof rules in that contract.

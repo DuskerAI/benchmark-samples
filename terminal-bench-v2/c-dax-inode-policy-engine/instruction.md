@@ -1,0 +1,5 @@
+Complete the interrupted DAX rollout for the payment host. The incident history is `/var/lib/dax-rollout/incident.plan`. Put approved operations in `/etc/dax-rollout/change.plan`, record each affected regular file in `/etc/dax-rollout/decisions.tsv` under the header `path<TAB>decision<TAB>reason`, then run `/usr/local/sbin/dax-rollout`.
+
+The final mount mode must be `inode`. `/pmem/payments` and its files must have the persistent DAX flag and newly instantiated files must have active DAX. `/pmem/archive` and its files must be unflagged with buffered access. Create a `canary` file in each directory after setting its directory policy. Keep the open `svc-ledger` service available throughout the change: do not close its handle or evict its inode, and mark its active-state transition `DEFER` with reason `open-service`. Other files must reach policy now and be marked `APPLY` with reason `dax-active` or `buffered`.
+
+The rollout command must finish without rejected operations. Its final evidence is `/var/lib/dax-rollout/result/audit.tsv` and `state.tsv`; leave the approved plan and decisions in place for change review.

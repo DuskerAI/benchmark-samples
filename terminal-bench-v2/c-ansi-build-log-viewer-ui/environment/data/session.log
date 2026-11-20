@@ -1,0 +1,12 @@
+[1/5] CC src/parser.o
+warning: cache entry reused for ui_wide.o
+progress 12%[Kprogress 100% ✓
+[2/5] CC src/view.o
+box │ コンパイル café output
+[3/5] LINK buildlogd
+error: previous artifact marked failed
+[31mred[0m plain [32mgreen[0m done
+[4/5] TEST ansi
+needle appears in folded group
+[5/5] PACK viewer
+done

@@ -1,0 +1,257 @@
+test_all_null_empty_distinction (test_window_semantics.TestWindows.test_all_null_empty_distinction)
+W07: test_all_null_empty_distinction ... ok
+test_collision_names (test_window_semantics.TestWindows.test_collision_names)
+W16: test_collision_names ... ok
+test_cte_reused (test_window_semantics.TestWindows.test_cte_reused)
+W14: test_cte_reused ... ok
+test_derived_two_window_stages (test_window_semantics.TestWindows.test_derived_two_window_stages)
+W14: test_derived_two_window_stages ... ok
+test_duplicate_physical_rows (test_window_semantics.TestWindows.test_duplicate_physical_rows)
+W02: test_duplicate_physical_rows ... ok
+test_empty_filtered_window (test_window_semantics.TestWindows.test_empty_filtered_window)
+W15: test_empty_filtered_window ... ok
+test_empty_registered_table (test_window_semantics.TestWindows.test_empty_registered_table)
+W15: test_empty_registered_table ... ok
+test_exclude_all_without_order (test_window_semantics.TestWindows.test_exclude_all_without_order)
+W06: test_exclude_all_without_order ... ok
+test_exclude_groups_current_row (test_window_semantics.TestWindows.test_exclude_groups_current_row)
+W06: test_exclude_groups_current_row ... ok
+test_exclude_groups_group (test_window_semantics.TestWindows.test_exclude_groups_group)
+W06: test_exclude_groups_group ... ok
+test_exclude_groups_no_others (test_window_semantics.TestWindows.test_exclude_groups_no_others)
+W06: test_exclude_groups_no_others ... ok
+test_exclude_groups_ties (test_window_semantics.TestWindows.test_exclude_groups_ties)
+W06: test_exclude_groups_ties ... ok
+test_exclude_range_current_row (test_window_semantics.TestWindows.test_exclude_range_current_row)
+W06: test_exclude_range_current_row ... ok
+test_exclude_range_group (test_window_semantics.TestWindows.test_exclude_range_group)
+W06: test_exclude_range_group ... ok
+test_exclude_range_no_others (test_window_semantics.TestWindows.test_exclude_range_no_others)
+W06: test_exclude_range_no_others ... ok
+test_exclude_range_ties (test_window_semantics.TestWindows.test_exclude_range_ties)
+W06: test_exclude_range_ties ... ok
+test_exclude_rows_current_row (test_window_semantics.TestWindows.test_exclude_rows_current_row)
+W06: test_exclude_rows_current_row ... ok
+test_exclude_rows_group (test_window_semantics.TestWindows.test_exclude_rows_group)
+W06: test_exclude_rows_group ... ok
+test_exclude_rows_no_others (test_window_semantics.TestWindows.test_exclude_rows_no_others)
+W06: test_exclude_rows_no_others ... ok
+test_exclude_rows_ties (test_window_semantics.TestWindows.test_exclude_rows_ties)
+W06: test_exclude_rows_ties ... ok
+test_exclude_ties_current_outside_frame (test_window_semantics.TestWindows.test_exclude_ties_current_outside_frame)
+W06: test_exclude_ties_current_outside_frame ... ok
+test_existing_case_3vl (test_window_semantics.TestWindows.test_existing_case_3vl)
+P01: test_existing_case_3vl ... ok
+test_existing_count_operand (test_window_semantics.TestWindows.test_existing_count_operand)
+P01: test_existing_count_operand ... ok
+test_existing_cte (test_window_semantics.TestWindows.test_existing_cte)
+P01: test_existing_cte ... ok
+test_existing_distinct (test_window_semantics.TestWindows.test_existing_distinct)
+P01: test_existing_distinct ... ok
+test_existing_empty_aggregate (test_window_semantics.TestWindows.test_existing_empty_aggregate)
+P01: test_existing_empty_aggregate ... ok
+test_existing_filter (test_window_semantics.TestWindows.test_existing_filter)
+P01: test_existing_filter ... ok
+test_existing_group (test_window_semantics.TestWindows.test_existing_group)
+P01: test_existing_group ... ok
+test_existing_having (test_window_semantics.TestWindows.test_existing_having)
+P01: test_existing_having ... ok
+test_existing_join (test_window_semantics.TestWindows.test_existing_join)
+P01: test_existing_join ... ok
+test_existing_limit (test_window_semantics.TestWindows.test_existing_limit)
+P01: test_existing_limit ... ok
+test_existing_projection (test_window_semantics.TestWindows.test_existing_projection)
+P01: test_existing_projection ... ok
+test_existing_union (test_window_semantics.TestWindows.test_existing_union)
+P01: test_existing_union ... ok
+test_filter_avg (test_window_semantics.TestWindows.test_filter_avg)
+W07: test_filter_avg ... ok
+test_filter_count (test_window_semantics.TestWindows.test_filter_count)
+W07: test_filter_count ... ok
+test_filter_count_star (test_window_semantics.TestWindows.test_filter_count_star)
+W07: test_filter_count_star ... ok
+test_filter_max (test_window_semantics.TestWindows.test_filter_max)
+W07: test_filter_max ... ok
+test_filter_min (test_window_semantics.TestWindows.test_filter_min)
+W07: test_filter_min ... ok
+test_filter_sum (test_window_semantics.TestWindows.test_filter_sum)
+W07: test_filter_sum ... ok
+test_group_expression (test_window_semantics.TestWindows.test_group_expression)
+W12: test_group_expression ... ok
+test_grouped_empty_having (test_window_semantics.TestWindows.test_grouped_empty_having)
+W12: test_grouped_empty_having ... ok
+test_grouped_filter_operand (test_window_semantics.TestWindows.test_grouped_filter_operand)
+W12: test_grouped_filter_operand ... ok
+test_grouped_global_empty (test_window_semantics.TestWindows.test_grouped_global_empty)
+W12: test_grouped_global_empty ... ok
+test_grouped_native_plan_reuse (test_window_semantics.TestWindows.test_grouped_native_plan_reuse)
+W16: test_grouped_native_plan_reuse ... ok
+test_grouped_nested_sum (test_window_semantics.TestWindows.test_grouped_nested_sum)
+W12: test_grouped_nested_sum ... ok
+test_grouped_rank (test_window_semantics.TestWindows.test_grouped_rank)
+W12: test_grouped_rank ... ok
+test_groups_adjacent (test_window_semantics.TestWindows.test_groups_adjacent)
+W04: test_groups_adjacent ... ok
+test_groups_composite_peers (test_window_semantics.TestWindows.test_groups_composite_peers)
+W04: test_groups_composite_peers ... ok
+test_groups_future (test_window_semantics.TestWindows.test_groups_future)
+W04: test_groups_future ... ok
+test_groups_no_order (test_window_semantics.TestWindows.test_groups_no_order)
+W04: test_groups_no_order ... ok
+test_groups_past (test_window_semantics.TestWindows.test_groups_past)
+W04: test_groups_past ... ok
+test_groups_tail (test_window_semantics.TestWindows.test_groups_tail)
+W04: test_groups_tail ... ok
+test_hidden_window_order_key (test_window_semantics.TestWindows.test_hidden_window_order_key)
+W02: test_hidden_window_order_key ... ok
+test_incompatible_orders (test_window_semantics.TestWindows.test_incompatible_orders)
+W02: test_incompatible_orders ... ok
+test_metamorphic_1337 (test_window_semantics.TestWindows.test_metamorphic_1337)
+W18: test_metamorphic_1337 ... ok
+test_metamorphic_2243 (test_window_semantics.TestWindows.test_metamorphic_2243)
+W18: test_metamorphic_2243 ... ok
+test_metamorphic_401 (test_window_semantics.TestWindows.test_metamorphic_401)
+W18: test_metamorphic_401 ... ok
+test_metamorphic_827 (test_window_semantics.TestWindows.test_metamorphic_827)
+W18: test_metamorphic_827 ... ok
+test_named_inheritance (test_window_semantics.TestWindows.test_named_inheritance)
+W11: test_named_inheritance ... ok
+test_named_inline_frame (test_window_semantics.TestWindows.test_named_inline_frame)
+W11: test_named_inline_frame ... ok
+test_native_env_aggregate (test_window_semantics.TestWindows.test_native_env_aggregate)
+W16: test_native_env_aggregate ... ok
+test_native_env_operand (test_window_semantics.TestWindows.test_native_env_operand)
+W16: test_native_env_operand ... ok
+test_native_plan_reuse (test_window_semantics.TestWindows.test_native_plan_reuse)
+W16: test_native_plan_reuse ... ok
+test_navigation_default_expression (test_window_semantics.TestWindows.test_navigation_default_expression)
+W09: test_navigation_default_expression ... ok
+test_navigation_lag (test_window_semantics.TestWindows.test_navigation_lag)
+W09: test_navigation_lag ... ok
+test_navigation_lead (test_window_semantics.TestWindows.test_navigation_lead)
+W09: test_navigation_lead ... ok
+test_navigation_long (test_window_semantics.TestWindows.test_navigation_long)
+W09: test_navigation_long ... ok
+test_navigation_zero (test_window_semantics.TestWindows.test_navigation_zero)
+W09: test_navigation_zero ... ok
+test_qualify_alias (test_window_semantics.TestWindows.test_qualify_alias)
+W13: test_qualify_alias ... ok
+test_qualify_distinct (test_window_semantics.TestWindows.test_qualify_distinct)
+W13: test_qualify_distinct ... ok
+test_qualify_grouped (test_window_semantics.TestWindows.test_qualify_grouped)
+W13: test_qualify_grouped ... ok
+test_qualify_unprojected (test_window_semantics.TestWindows.test_qualify_unprojected)
+W13: test_qualify_unprojected ... ok
+test_range_ascending (test_window_semantics.TestWindows.test_range_ascending)
+W05: test_range_ascending ... ok
+test_range_descending (test_window_semantics.TestWindows.test_range_descending)
+W05: test_range_descending ... ok
+test_range_fractional (test_window_semantics.TestWindows.test_range_fractional)
+W05: test_range_fractional ... ok
+test_range_future_only (test_window_semantics.TestWindows.test_range_future_only)
+W05: test_range_future_only ... ok
+test_range_left_unbounded (test_window_semantics.TestWindows.test_range_left_unbounded)
+W05: test_range_left_unbounded ... ok
+test_range_past_only (test_window_semantics.TestWindows.test_range_past_only)
+W05: test_range_past_only ... ok
+test_range_right_unbounded (test_window_semantics.TestWindows.test_range_right_unbounded)
+W05: test_range_right_unbounded ... ok
+test_range_text_current (test_window_semantics.TestWindows.test_range_text_current)
+W05: test_range_text_current ... ok
+test_range_text_offset (test_window_semantics.TestWindows.test_range_text_offset)
+W05: test_range_text_offset ... ok
+test_range_zero_peers (test_window_semantics.TestWindows.test_range_zero_peers)
+W05: test_range_zero_peers ... ok
+test_rank_cume_dist (test_window_semantics.TestWindows.test_rank_cume_dist)
+W08: test_rank_cume_dist ... ok
+test_rank_dense_rank (test_window_semantics.TestWindows.test_rank_dense_rank)
+W08: test_rank_dense_rank ... ok
+test_rank_no_order (test_window_semantics.TestWindows.test_rank_no_order)
+W08: test_rank_no_order ... ok
+test_rank_ntile (test_window_semantics.TestWindows.test_rank_ntile)
+W08: test_rank_ntile ... ok
+test_rank_ntile20 (test_window_semantics.TestWindows.test_rank_ntile20)
+W08: test_rank_ntile20 ... ok
+test_rank_percent_rank (test_window_semantics.TestWindows.test_rank_percent_rank)
+W08: test_rank_percent_rank ... ok
+test_rank_rank (test_window_semantics.TestWindows.test_rank_rank)
+W08: test_rank_rank ... ok
+test_rank_row_number (test_window_semantics.TestWindows.test_rank_row_number)
+W08: test_rank_row_number ... ok
+test_reject_distinct_window (test_window_semantics.TestWindows.test_reject_distinct_window)
+W17: test_reject_distinct_window ... ok
+test_reject_fractional_groups (test_window_semantics.TestWindows.test_reject_fractional_groups)
+W17: test_reject_fractional_groups ... ok
+test_reject_multi_key_range (test_window_semantics.TestWindows.test_reject_multi_key_range)
+W17: test_reject_multi_key_range ... ok
+test_reject_negative_lag (test_window_semantics.TestWindows.test_reject_negative_lag)
+W17: test_reject_negative_lag ... ok
+test_reject_negative_range (test_window_semantics.TestWindows.test_reject_negative_range)
+W17: test_reject_negative_range ... ok
+test_reject_negative_rows (test_window_semantics.TestWindows.test_reject_negative_rows)
+W17: test_reject_negative_rows ... ok
+test_reject_range_without_order (test_window_semantics.TestWindows.test_reject_range_without_order)
+W17: test_reject_range_without_order ... ok
+test_reject_zero_nth (test_window_semantics.TestWindows.test_reject_zero_nth)
+W17: test_reject_zero_nth ... ok
+test_reject_zero_ntile (test_window_semantics.TestWindows.test_reject_zero_ntile)
+W17: test_reject_zero_ntile ... ok
+test_repeated_same_expression (test_window_semantics.TestWindows.test_repeated_same_expression)
+W02: test_repeated_same_expression ... ok
+test_rows_empty_count (test_window_semantics.TestWindows.test_rows_empty_count)
+W03: test_rows_empty_count ... ok
+test_rows_future_only (test_window_semantics.TestWindows.test_rows_future_only)
+W03: test_rows_future_only ... ok
+test_rows_oversized (test_window_semantics.TestWindows.test_rows_oversized)
+W03: test_rows_oversized ... ok
+test_rows_own (test_window_semantics.TestWindows.test_rows_own)
+W03: test_rows_own ... ok
+test_rows_past_only (test_window_semantics.TestWindows.test_rows_past_only)
+W03: test_rows_past_only ... ok
+test_rows_sliding (test_window_semantics.TestWindows.test_rows_sliding)
+W03: test_rows_sliding ... ok
+test_rows_tail (test_window_semantics.TestWindows.test_rows_tail)
+W03: test_rows_tail ... ok
+test_rows_zero (test_window_semantics.TestWindows.test_rows_zero)
+W03: test_rows_zero ... ok
+test_scalar_operand (test_window_semantics.TestWindows.test_scalar_operand)
+W07: test_scalar_operand ... ok
+test_singleton (test_window_semantics.TestWindows.test_singleton)
+W15: test_singleton ... ok
+test_star_count_partition (test_window_semantics.TestWindows.test_star_count_partition)
+W01: test_star_count_partition ... ok
+test_static_relation (test_window_semantics.TestWindows.test_static_relation)
+W15: test_static_relation ... ok
+test_sum_default_desc (test_window_semantics.TestWindows.test_sum_default_desc)
+W01: test_sum_default_desc ... ok
+test_sum_default_peer (test_window_semantics.TestWindows.test_sum_default_peer)
+W01: test_sum_default_peer ... ok
+test_sum_global (test_window_semantics.TestWindows.test_sum_global)
+W01: test_sum_global ... ok
+test_sum_partition (test_window_semantics.TestWindows.test_sum_partition)
+W01: test_sum_partition ... ok
+test_value_default_peer (test_window_semantics.TestWindows.test_value_default_peer)
+W10: test_value_default_peer ... ok
+test_value_empty (test_window_semantics.TestWindows.test_value_empty)
+W10: test_value_empty ... ok
+test_value_first (test_window_semantics.TestWindows.test_value_first)
+W10: test_value_first ... ok
+test_value_last (test_window_semantics.TestWindows.test_value_last)
+W10: test_value_last ... ok
+test_value_missing (test_window_semantics.TestWindows.test_value_missing)
+W10: test_value_missing ... ok
+test_value_nth (test_window_semantics.TestWindows.test_value_nth)
+W10: test_value_nth ... ok
+test_window_cte_then_navigation (test_window_semantics.TestWindows.test_window_cte_then_navigation)
+W14: test_window_cte_then_navigation ... ok
+test_window_join_input (test_window_semantics.TestWindows.test_window_join_input)
+W14: test_window_join_input ... ok
+test_window_scalar_composition (test_window_semantics.TestWindows.test_window_scalar_composition)
+W01: test_window_scalar_composition ... ok
+test_window_subquery_consumed (test_window_semantics.TestWindows.test_window_subquery_consumed)
+W14: test_window_subquery_consumed ... ok
+
+----------------------------------------------------------------------
+Ran 126 tests in 1.365s
+
+OK

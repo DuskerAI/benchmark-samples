@@ -1,0 +1,27 @@
+cabal-version: 2.4
+name: acme-policy
+version: 4.0.0
+build-type: Simple
+
+flag strict
+  description: Select strict release policy
+  default: False
+  manual: True
+
+flag signed
+  description: Select signed release policy
+  default: True
+  manual: True
+
+library
+  exposed-modules: Acme.Policy
+  hs-source-dirs: src
+  build-depends:
+      base >=4.14 && <5,
+      acme-schema >=1.0 && <2,
+      acme-codec ^>=1.4
+  if flag(strict)
+    cpp-options: -DSTRICT_POLICY
+  if flag(signed)
+    cpp-options: -DSIGNED_POLICY
+  default-language: Haskell2010

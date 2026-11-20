@@ -1,0 +1,349 @@
+{
+  "count": 86,
+  "tests": [
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F01_other_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F01_same_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F01_worker_cycle",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F02_empty_token",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F02_expired_only",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F02_other_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F02_same_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F02_unknown_token",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F03_consumed",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F03_expired_only",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F03_other_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F03_same_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_continued",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_continued_cleanup",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_finished",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_later_acquisition",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_later_commit",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_other_worker",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F04_restart",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_attempt",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_input",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_name",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_order",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_queue",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_drop_activity",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_drop_message",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_drop_timer",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_event_kind",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_event_owner",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_executed_id",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_executed_order",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_input_id",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_input_order",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_input_payload",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_message_id",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_message_order",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_sequence",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_state",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_target_execution",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_target_input",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_target_parent",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_boundary",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_metadata",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_queue",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_state",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_at",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_order",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_owner",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_visible",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F05_timestamp",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F06_activity",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F06_attributes",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F06_history",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F06_target",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F06_timer",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_active_success",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_canceled",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_complete_error",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_evict_error",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_execute_error",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_terminal_error",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F07_terminal_success",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F08_after",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F08_before",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F09_11",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F09_23",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F09_47",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F09_5",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F10_conflicting",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F10_identical",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F11_after_error",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F11_after_success",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F11_before",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_F11_execute_error",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P01_empty_lists",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P01_timezone",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P02_retry",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P02_second_commit",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P03_history",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P03_pending",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P04_all",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P04_continued",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P04_continued_cleanup",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P04_empty",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P04_finished",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_checkpoint_fencing.CheckpointSemantics.test_P04_late_input",
+      "status": "PASSED"
+    }
+  ]
+}

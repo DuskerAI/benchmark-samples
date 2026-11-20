@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift(File.expand_path("../lib", __dir__))
+require "mb/auditor"
+
+if ARGV.length != 2
+  warn "usage: boot_audit CASE_DIR REPORT_JSON"
+  exit 2
+end
+
+MB::Auditor.new(ARGV[0], ARGV[1]).run

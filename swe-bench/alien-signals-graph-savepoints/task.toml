@@ -1,0 +1,44 @@
+schema_version = "1.4"
+artifacts = [{ source = "/app/src", destination = "candidate-source" }]
+
+[task]
+name = "dusker-ai/alien-signals-graph-savepoints"
+version = "1.0.0"
+description = "Nested transactions restore reactive values, dependencies and resource ownership"
+authors = [{ name = "dusker ai" }]
+keywords = ["reactive-systems", "dataflow", "savepoints", "atomicity", "ownership"]
+
+[metadata]
+difficulty = "hard"
+category = "Reactive systems and dataflow propagation"
+tags = ["original", "propagation", "alien-signals"]
+base_commit = "995e375eb72e64b920e5c432590fb7a924cc9031"
+upstream_commit = "c00e63969bf261fc5dce31fae70cb9a90912b06e"
+repository = "https://github.com/stackblitz/alien-signals"
+
+[agent]
+timeout_sec = 3000.0
+network_mode = "no-network"
+user = "solver"
+
+[environment]
+build_timeout_sec = 900.0
+network_mode = "public"
+cpus = 2
+memory_mb = 4096
+storage_mb = 8192
+workdir = "/app"
+
+[verifier]
+timeout_sec = 300.0
+environment_mode = "separate"
+network_mode = "no-network"
+user = "root"
+
+[verifier.environment]
+build_timeout_sec = 900.0
+network_mode = "no-network"
+cpus = 2
+memory_mb = 4096
+storage_mb = 8192
+workdir = "/app"

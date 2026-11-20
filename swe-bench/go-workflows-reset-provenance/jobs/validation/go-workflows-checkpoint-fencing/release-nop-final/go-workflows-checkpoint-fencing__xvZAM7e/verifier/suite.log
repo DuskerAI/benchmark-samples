@@ -1,0 +1,1223 @@
+test_F01_other_worker (__main__.CheckpointSemantics.test_F01_other_worker) ... FAIL
+test_F01_same_worker (__main__.CheckpointSemantics.test_F01_same_worker) ... FAIL
+test_F01_worker_cycle (__main__.CheckpointSemantics.test_F01_worker_cycle) ... FAIL
+test_F02_empty_token (__main__.CheckpointSemantics.test_F02_empty_token) ... FAIL
+test_F02_expired_only (__main__.CheckpointSemantics.test_F02_expired_only) ... FAIL
+test_F02_other_worker (__main__.CheckpointSemantics.test_F02_other_worker) ... ok
+test_F02_same_worker (__main__.CheckpointSemantics.test_F02_same_worker) ... FAIL
+test_F02_unknown_token (__main__.CheckpointSemantics.test_F02_unknown_token) ... FAIL
+test_F03_consumed (__main__.CheckpointSemantics.test_F03_consumed) ... FAIL
+test_F03_expired_only (__main__.CheckpointSemantics.test_F03_expired_only) ... FAIL
+test_F03_other_worker (__main__.CheckpointSemantics.test_F03_other_worker) ... ok
+test_F03_same_worker (__main__.CheckpointSemantics.test_F03_same_worker) ... FAIL
+test_F04_continued (__main__.CheckpointSemantics.test_F04_continued) ... FAIL
+test_F04_continued_cleanup (__main__.CheckpointSemantics.test_F04_continued_cleanup) ... FAIL
+test_F04_finished (__main__.CheckpointSemantics.test_F04_finished) ... FAIL
+test_F04_later_acquisition (__main__.CheckpointSemantics.test_F04_later_acquisition) ... FAIL
+test_F04_later_commit (__main__.CheckpointSemantics.test_F04_later_commit) ... FAIL
+test_F04_other_worker (__main__.CheckpointSemantics.test_F04_other_worker) ... FAIL
+test_F04_restart (__main__.CheckpointSemantics.test_F04_restart) ... FAIL
+test_F05_activity_attempt (__main__.CheckpointSemantics.test_F05_activity_attempt) ... FAIL
+test_F05_activity_input (__main__.CheckpointSemantics.test_F05_activity_input) ... FAIL
+test_F05_activity_name (__main__.CheckpointSemantics.test_F05_activity_name) ... FAIL
+test_F05_activity_order (__main__.CheckpointSemantics.test_F05_activity_order) ... FAIL
+test_F05_activity_queue (__main__.CheckpointSemantics.test_F05_activity_queue) ... FAIL
+test_F05_drop_activity (__main__.CheckpointSemantics.test_F05_drop_activity) ... FAIL
+test_F05_drop_message (__main__.CheckpointSemantics.test_F05_drop_message) ... FAIL
+test_F05_drop_timer (__main__.CheckpointSemantics.test_F05_drop_timer) ... FAIL
+test_F05_event_kind (__main__.CheckpointSemantics.test_F05_event_kind) ... FAIL
+test_F05_event_owner (__main__.CheckpointSemantics.test_F05_event_owner) ... FAIL
+test_F05_executed_id (__main__.CheckpointSemantics.test_F05_executed_id) ... FAIL
+test_F05_executed_order (__main__.CheckpointSemantics.test_F05_executed_order) ... FAIL
+test_F05_input_id (__main__.CheckpointSemantics.test_F05_input_id) ... FAIL
+test_F05_input_order (__main__.CheckpointSemantics.test_F05_input_order) ... FAIL
+test_F05_input_payload (__main__.CheckpointSemantics.test_F05_input_payload) ... FAIL
+test_F05_message_id (__main__.CheckpointSemantics.test_F05_message_id) ... FAIL
+test_F05_message_order (__main__.CheckpointSemantics.test_F05_message_order) ... FAIL
+test_F05_sequence (__main__.CheckpointSemantics.test_F05_sequence) ... FAIL
+test_F05_state (__main__.CheckpointSemantics.test_F05_state) ... FAIL
+test_F05_target_execution (__main__.CheckpointSemantics.test_F05_target_execution) ... FAIL
+test_F05_target_input (__main__.CheckpointSemantics.test_F05_target_input) ... FAIL
+test_F05_target_parent (__main__.CheckpointSemantics.test_F05_target_parent) ... FAIL
+test_F05_task_boundary (__main__.CheckpointSemantics.test_F05_task_boundary) ... FAIL
+test_F05_task_metadata (__main__.CheckpointSemantics.test_F05_task_metadata) ... FAIL
+test_F05_task_queue (__main__.CheckpointSemantics.test_F05_task_queue) ... FAIL
+test_F05_task_state (__main__.CheckpointSemantics.test_F05_task_state) ... FAIL
+test_F05_timer_at (__main__.CheckpointSemantics.test_F05_timer_at) ... FAIL
+test_F05_timer_order (__main__.CheckpointSemantics.test_F05_timer_order) ... FAIL
+test_F05_timer_owner (__main__.CheckpointSemantics.test_F05_timer_owner) ... FAIL
+test_F05_timer_visible (__main__.CheckpointSemantics.test_F05_timer_visible) ... FAIL
+test_F05_timestamp (__main__.CheckpointSemantics.test_F05_timestamp) ... FAIL
+test_F06_activity (__main__.CheckpointSemantics.test_F06_activity) ... FAIL
+test_F06_attributes (__main__.CheckpointSemantics.test_F06_attributes) ... FAIL
+test_F06_history (__main__.CheckpointSemantics.test_F06_history) ... FAIL
+test_F06_target (__main__.CheckpointSemantics.test_F06_target) ... FAIL
+test_F06_timer (__main__.CheckpointSemantics.test_F06_timer) ... FAIL
+test_F07_active_success (__main__.CheckpointSemantics.test_F07_active_success) ... FAIL
+test_F07_canceled (__main__.CheckpointSemantics.test_F07_canceled) ... FAIL
+test_F07_complete_error (__main__.CheckpointSemantics.test_F07_complete_error) ... FAIL
+test_F07_evict_error (__main__.CheckpointSemantics.test_F07_evict_error) ... FAIL
+test_F07_execute_error (__main__.CheckpointSemantics.test_F07_execute_error) ... FAIL
+test_F07_terminal_error (__main__.CheckpointSemantics.test_F07_terminal_error) ... FAIL
+test_F07_terminal_success (__main__.CheckpointSemantics.test_F07_terminal_success) ... FAIL
+test_F08_after (__main__.CheckpointSemantics.test_F08_after) ... FAIL
+test_F08_before (__main__.CheckpointSemantics.test_F08_before) ... FAIL
+test_F09_11 (__main__.CheckpointSemantics.test_F09_11) ... FAIL
+test_F09_23 (__main__.CheckpointSemantics.test_F09_23) ... FAIL
+test_F09_47 (__main__.CheckpointSemantics.test_F09_47) ... FAIL
+test_F09_5 (__main__.CheckpointSemantics.test_F09_5) ... FAIL
+test_F10_conflicting (__main__.CheckpointSemantics.test_F10_conflicting) ... ok
+test_F10_identical (__main__.CheckpointSemantics.test_F10_identical) ... FAIL
+test_P01_empty_lists (__main__.CheckpointSemantics.test_P01_empty_lists) ... FAIL
+test_P01_timezone (__main__.CheckpointSemantics.test_P01_timezone) ... FAIL
+test_P02_retry (__main__.CheckpointSemantics.test_P02_retry) ... FAIL
+test_P02_second_commit (__main__.CheckpointSemantics.test_P02_second_commit) ... FAIL
+test_P03_history (__main__.CheckpointSemantics.test_P03_history) ... FAIL
+test_P03_pending (__main__.CheckpointSemantics.test_P03_pending) ... FAIL
+test_P04_all (__main__.CheckpointSemantics.test_P04_all) ... ok
+test_P04_continued (__main__.CheckpointSemantics.test_P04_continued) ... ok
+test_P04_continued_cleanup (__main__.CheckpointSemantics.test_P04_continued_cleanup) ... ok
+test_P04_empty (__main__.CheckpointSemantics.test_P04_empty) ... ok
+test_P04_finished (__main__.CheckpointSemantics.test_P04_finished) ... ok
+test_P04_late_input (__main__.CheckpointSemantics.test_P04_late_input) ... ok
+
+======================================================================
+FAIL: test_F01_other_worker (__main__.CheckpointSemantics.test_F01_other_worker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 102, in acquisition
+    self.assertTrue(all(tokens));self.assertEqual(len(set(tokens)),len(tokens),'acquisitions reused identity')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 2 : acquisitions reused identity
+
+======================================================================
+FAIL: test_F01_same_worker (__main__.CheckpointSemantics.test_F01_same_worker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 102, in acquisition
+    self.assertTrue(all(tokens));self.assertEqual(len(set(tokens)),len(tokens),'acquisitions reused identity')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 2 : acquisitions reused identity
+
+======================================================================
+FAIL: test_F01_worker_cycle (__main__.CheckpointSemantics.test_F01_worker_cycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 102, in acquisition
+    self.assertTrue(all(tokens));self.assertEqual(len(set(tokens)),len(tokens),'acquisitions reused identity')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 4 : acquisitions reused identity
+
+======================================================================
+FAIL: test_F02_empty_token (__main__.CheckpointSemantics.test_F02_empty_token)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 111, in stale_complete
+    out=self.call([complete()]);self.assertTrue(out['Results'][0]['Error'],'stale/unowned checkpoint accepted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/unowned checkpoint accepted
+
+======================================================================
+FAIL: test_F02_expired_only (__main__.CheckpointSemantics.test_F02_expired_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 111, in stale_complete
+    out=self.call([complete()]);self.assertTrue(out['Results'][0]['Error'],'stale/unowned checkpoint accepted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/unowned checkpoint accepted
+
+======================================================================
+FAIL: test_F02_same_worker (__main__.CheckpointSemantics.test_F02_same_worker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 111, in stale_complete
+    out=self.call([complete()]);self.assertTrue(out['Results'][0]['Error'],'stale/unowned checkpoint accepted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/unowned checkpoint accepted
+
+======================================================================
+FAIL: test_F02_unknown_token (__main__.CheckpointSemantics.test_F02_unknown_token)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 111, in stale_complete
+    out=self.call([complete()]);self.assertTrue(out['Results'][0]['Error'],'stale/unowned checkpoint accepted')
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/unowned checkpoint accepted
+
+======================================================================
+FAIL: test_F03_consumed (__main__.CheckpointSemantics.test_F03_consumed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 122, in stale_extend
+    out=self.call([action('extend',Task='a')]);self.assertTrue(out['Results'][0]['Error'],'stale/expired lease renewed')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/expired lease renewed
+
+======================================================================
+FAIL: test_F03_expired_only (__main__.CheckpointSemantics.test_F03_expired_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 122, in stale_extend
+    out=self.call([action('extend',Task='a')]);self.assertTrue(out['Results'][0]['Error'],'stale/expired lease renewed')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/expired lease renewed
+
+======================================================================
+FAIL: test_F03_same_worker (__main__.CheckpointSemantics.test_F03_same_worker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 122, in stale_extend
+    out=self.call([action('extend',Task='a')]);self.assertTrue(out['Results'][0]['Error'],'stale/expired lease renewed')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : stale/expired lease renewed
+
+======================================================================
+FAIL: test_F04_continued (__main__.CheckpointSemantics.test_F04_continued)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F04_continued_cleanup (__main__.CheckpointSemantics.test_F04_continued_cleanup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'could not find workflow instance to unlock' != ''
+- could not find workflow instance to unlock
++ 
+ : complete: could not find workflow instance to unlock
+
+======================================================================
+FAIL: test_F04_finished (__main__.CheckpointSemantics.test_F04_finished)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F04_later_acquisition (__main__.CheckpointSemantics.test_F04_later_acquisition)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F04_later_commit (__main__.CheckpointSemantics.test_F04_later_commit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F04_other_worker (__main__.CheckpointSemantics.test_F04_other_worker)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'could not find workflow instance to unlock' != ''
+- could not find workflow instance to unlock
++ 
+ : complete: could not find workflow instance to unlock
+
+======================================================================
+FAIL: test_F04_restart (__main__.CheckpointSemantics.test_F04_restart)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 140, in committed_retry
+    self.clean(out['Results']);self.assertEqual(self.snapshot(),before,'acknowledged retry republished effects or altered a successor')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_activity_attempt (__main__.CheckpointSemantics.test_F05_activity_attempt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_activity_input (__main__.CheckpointSemantics.test_F05_activity_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_activity_name (__main__.CheckpointSemantics.test_F05_activity_name)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_activity_order (__main__.CheckpointSemantics.test_F05_activity_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_activity_queue (__main__.CheckpointSemantics.test_F05_activity_queue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_drop_activity (__main__.CheckpointSemantics.test_F05_drop_activity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_drop_message (__main__.CheckpointSemantics.test_F05_drop_message)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_drop_timer (__main__.CheckpointSemantics.test_F05_drop_timer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_event_kind (__main__.CheckpointSemantics.test_F05_event_kind)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_event_owner (__main__.CheckpointSemantics.test_F05_event_owner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_executed_id (__main__.CheckpointSemantics.test_F05_executed_id)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_executed_order (__main__.CheckpointSemantics.test_F05_executed_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_input_id (__main__.CheckpointSemantics.test_F05_input_id)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_input_order (__main__.CheckpointSemantics.test_F05_input_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_input_payload (__main__.CheckpointSemantics.test_F05_input_payload)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_message_id (__main__.CheckpointSemantics.test_F05_message_id)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_message_order (__main__.CheckpointSemantics.test_F05_message_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_sequence (__main__.CheckpointSemantics.test_F05_sequence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_state (__main__.CheckpointSemantics.test_F05_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_target_execution (__main__.CheckpointSemantics.test_F05_target_execution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_target_input (__main__.CheckpointSemantics.test_F05_target_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_target_parent (__main__.CheckpointSemantics.test_F05_target_parent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_task_boundary (__main__.CheckpointSemantics.test_F05_task_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_task_metadata (__main__.CheckpointSemantics.test_F05_task_metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_task_queue (__main__.CheckpointSemantics.test_F05_task_queue)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_task_state (__main__.CheckpointSemantics.test_F05_task_state)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_timer_at (__main__.CheckpointSemantics.test_F05_timer_at)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_timer_order (__main__.CheckpointSemantics.test_F05_timer_order)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_timer_owner (__main__.CheckpointSemantics.test_F05_timer_owner)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_timer_visible (__main__.CheckpointSemantics.test_F05_timer_visible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F05_timestamp (__main__.CheckpointSemantics.test_F05_timestamp)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 148, in conflicting_retry
+    self.clean(self.call([complete()])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F06_activity (__main__.CheckpointSemantics.test_F06_activity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 164, in rollback
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F06_attributes (__main__.CheckpointSemantics.test_F06_attributes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 164, in rollback
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F06_history (__main__.CheckpointSemantics.test_F06_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 164, in rollback
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F06_target (__main__.CheckpointSemantics.test_F06_target)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 164, in rollback
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F06_timer (__main__.CheckpointSemantics.test_F06_timer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 164, in rollback
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_F07_active_success (__main__.CheckpointSemantics.test_F07_active_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 186, in worker_cache
+    self.assertTrue(all(v==0 for v in out['metrics_during_commit'].values()),'success counter emitted before commit')
+AssertionError: False is not true : success counter emitted before commit
+
+======================================================================
+FAIL: test_F07_canceled (__main__.CheckpointSemantics.test_F07_canceled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 180, in worker_cache
+    self.assertEqual(out['evictions'],1,'failed speculative executor was not evicted')
+AssertionError: 0 != 1 : failed speculative executor was not evicted
+
+======================================================================
+FAIL: test_F07_complete_error (__main__.CheckpointSemantics.test_F07_complete_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 180, in worker_cache
+    self.assertEqual(out['evictions'],1,'failed speculative executor was not evicted')
+AssertionError: 0 != 1 : failed speculative executor was not evicted
+
+======================================================================
+FAIL: test_F07_evict_error (__main__.CheckpointSemantics.test_F07_evict_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 180, in worker_cache
+    self.assertEqual(out['evictions'],1,'failed speculative executor was not evicted')
+AssertionError: 0 != 1 : failed speculative executor was not evicted
+
+======================================================================
+FAIL: test_F07_execute_error (__main__.CheckpointSemantics.test_F07_execute_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 180, in worker_cache
+    self.assertEqual(out['evictions'],1,'failed speculative executor was not evicted')
+AssertionError: 0 != 1 : failed speculative executor was not evicted
+
+======================================================================
+FAIL: test_F07_terminal_error (__main__.CheckpointSemantics.test_F07_terminal_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 183, in worker_cache
+    self.assertTrue(all(v==0 for v in out['metrics_after'].values()),'failed checkpoint emitted success counters')
+AssertionError: False is not true : failed checkpoint emitted success counters
+
+======================================================================
+FAIL: test_F07_terminal_success (__main__.CheckpointSemantics.test_F07_terminal_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 185, in worker_cache
+    self.assertEqual(out['error'],'');self.assertTrue(out['cache_during_commit'],'executor was evicted before commit acknowledged')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : executor was evicted before commit acknowledged
+
+======================================================================
+FAIL: test_F08_after (__main__.CheckpointSemantics.test_F08_after)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 192, in recovery
+    self.assertTrue(out['first_error']);self.assertFalse(out['present_after_error'],'unacknowledged state retained in executor cache')
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : unacknowledged state retained in executor cache
+
+======================================================================
+FAIL: test_F08_before (__main__.CheckpointSemantics.test_F08_before)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 192, in recovery
+    self.assertTrue(out['first_error']);self.assertFalse(out['present_after_error'],'unacknowledged state retained in executor cache')
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : unacknowledged state retained in executor cache
+
+======================================================================
+FAIL: test_F09_11 (__main__.CheckpointSemantics.test_F09_11)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 228, in model_trace
+    out=self.call(steps)
+        ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 71, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_F09_23 (__main__.CheckpointSemantics.test_F09_23)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 228, in model_trace
+    out=self.call(steps)
+        ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 71, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_F09_47 (__main__.CheckpointSemantics.test_F09_47)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 228, in model_trace
+    out=self.call(steps)
+        ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 71, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_F09_5 (__main__.CheckpointSemantics.test_F09_5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 228, in model_trace
+    out=self.call(steps)
+        ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 71, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_F10_identical (__main__.CheckpointSemantics.test_F10_identical)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 238, in simultaneous
+    self.assertEqual(sum(bool(r['Error']) for r in results),1 if variant=='conflicting' else 0,'concurrent acknowledgements violated checkpoint identity')
+AssertionError: 1 != 0 : concurrent acknowledgements violated checkpoint identity
+
+======================================================================
+FAIL: test_P01_empty_lists (__main__.CheckpointSemantics.test_P01_empty_lists)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 154, in equivalent_retry
+    self.clean(self.call([complete(Mutate=variant)])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_P01_timezone (__main__.CheckpointSemantics.test_P01_timezone)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 154, in equivalent_retry
+    self.clean(self.call([complete(Mutate=variant)])['Results'])
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_P02_retry (__main__.CheckpointSemantics.test_P02_retry)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 171, in late_signal
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_P02_second_commit (__main__.CheckpointSemantics.test_P02_second_commit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 171, in late_signal
+    before=self.snapshot();self.clean(self.call([complete()])['Results']);self.assertEqual(self.snapshot(),before)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 78, in clean
+    if i not in except_indices:self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'inserting history events: inserting event[82 chars]555)' != ''
+- inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
++ 
+ : complete: inserting history events: inserting events: constraint failed: UNIQUE constraint failed: history.id, history.instance_id (1555)
+
+======================================================================
+FAIL: test_P03_history (__main__.CheckpointSemantics.test_P03_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 257, in legacy_migration
+    self.assertNotEqual(out['Results'][0]['Token'],nonce,'migrated acquisition remains unfenced')
+AssertionError: 'bd389fa2f2a8407aa0ae5c3fec805c99' == 'bd389fa2f2a8407aa0ae5c3fec805c99' : migrated acquisition remains unfenced
+
+======================================================================
+FAIL: test_P03_pending (__main__.CheckpointSemantics.test_P03_pending)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_checkpoint_fencing.py", line 286, in test
+    def test(self,variant=variant,method=method):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_checkpoint_fencing.py", line 257, in legacy_migration
+    self.assertNotEqual(out['Results'][0]['Token'],nonce,'migrated acquisition remains unfenced')
+AssertionError: '7e260469e96b4ff08aef0625c7bebe43' == '7e260469e96b4ff08aef0625c7bebe43' : migrated acquisition remains unfenced
+
+----------------------------------------------------------------------
+Ran 82 tests in 5.329s
+
+FAILED (failures=73)

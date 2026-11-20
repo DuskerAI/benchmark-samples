@@ -1,0 +1,24 @@
+{
+  "accessibility_retrofit": true,
+  "case_id": "island-med-003",
+  "evacuation_status": "advisory",
+  "exceptions": [
+    {
+      "code": "WATER_SHORTAGE_1D",
+      "expires_on": "2026-02-20",
+      "source": "waiver-board-17"
+    }
+  ],
+  "generator_class": "B",
+  "generator_tested_at": "2026-02-03",
+  "jurisdiction": "island",
+  "medical_dependent": true,
+  "opened_at": "2026-02-12",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 60,
+  "shelter_type": "clinic",
+  "staff_count": 3,
+  "transport_status": "confirmed",
+  "water_days": 4
+}

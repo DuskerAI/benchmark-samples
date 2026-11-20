@@ -1,0 +1,10 @@
+OBJECT main
+SECTION .text - 16 -
+SECTION .rodata grp.msg 8 48656c6c6f2100ff
+SYMBOL _start STRONG DEF .text 0
+SYMBOL msg STRONG DEF .rodata 0
+SYMBOL helper STRONG UNDEF
+SYMBOL extra STRONG UNDEF
+RELOC .text 4 helper REL32 0
+RELOC .text 8 msg ABS32 0
+RELOC .text 12 extra REL32 -4

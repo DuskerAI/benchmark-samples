@@ -1,0 +1,7 @@
+Name: app-runtime
+Version: 2.0.0
+Target: armv7-linux-gnueabihf
+Requires: libui >= 1.4
+Cflags: -I/usr/include/app
+Libs: -L/usr/lib \
+  -lappruntime

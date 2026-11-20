@@ -1,0 +1,132 @@
+{
+  "fail_to_pass": [
+    "test_jit_deopt.DeoptSemantics.test_G01_deep_cold",
+    "test_jit_deopt.DeoptSemantics.test_G01_deep_hot",
+    "test_jit_deopt.DeoptSemantics.test_G01_diamond_cold",
+    "test_jit_deopt.DeoptSemantics.test_G01_diamond_hot",
+    "test_jit_deopt.DeoptSemantics.test_G01_wide_cold",
+    "test_jit_deopt.DeoptSemantics.test_G01_wide_hot",
+    "test_jit_deopt.DeoptSemantics.test_G02_pair_cold",
+    "test_jit_deopt.DeoptSemantics.test_G02_pair_hot",
+    "test_jit_deopt.DeoptSemantics.test_G02_ring_cold",
+    "test_jit_deopt.DeoptSemantics.test_G02_ring_hot",
+    "test_jit_deopt.DeoptSemantics.test_G02_self_cold",
+    "test_jit_deopt.DeoptSemantics.test_G02_self_hot",
+    "test_jit_deopt.DeoptSemantics.test_G03_hidden_cold",
+    "test_jit_deopt.DeoptSemantics.test_G03_hidden_hot",
+    "test_jit_deopt.DeoptSemantics.test_G03_pressure_cold",
+    "test_jit_deopt.DeoptSemantics.test_G03_pressure_hot",
+    "test_jit_deopt.DeoptSemantics.test_G04_distinct_cold",
+    "test_jit_deopt.DeoptSemantics.test_G04_distinct_hot",
+    "test_jit_deopt.DeoptSemantics.test_G05_after_cold",
+    "test_jit_deopt.DeoptSemantics.test_G05_after_hot",
+    "test_jit_deopt.DeoptSemantics.test_G05_before_cold",
+    "test_jit_deopt.DeoptSemantics.test_G05_before_hot",
+    "test_jit_deopt.DeoptSemantics.test_G06_ffi_graph_cold",
+    "test_jit_deopt.DeoptSemantics.test_G06_ffi_graph_hot",
+    "test_jit_deopt.DeoptSemantics.test_G06_payload_cold",
+    "test_jit_deopt.DeoptSemantics.test_G06_payload_hot",
+    "test_jit_deopt.DeoptSemantics.test_G06_template_cold",
+    "test_jit_deopt.DeoptSemantics.test_G06_template_hot",
+    "test_jit_deopt.DeoptSemantics.test_G07_mutate_cold",
+    "test_jit_deopt.DeoptSemantics.test_G07_mutate_hot",
+    "test_jit_deopt.DeoptSemantics.test_G08_table",
+    "test_jit_deopt.DeoptSemantics.test_G08_upvalue",
+    "test_jit_deopt.DeoptSemantics.test_G09_cold",
+    "test_jit_deopt.DeoptSemantics.test_G09_hot",
+    "test_jit_deopt.DeoptSemantics.test_G10_flush",
+    "test_jit_deopt.DeoptSemantics.test_G10_same_trace",
+    "test_jit_deopt.DeoptSemantics.test_G11_coroutine",
+    "test_jit_deopt.DeoptSemantics.test_G11_error"
+  ],
+  "pass_to_pass": [
+    "test_jit_deopt.DeoptSemantics.test_P01_diamond",
+    "test_jit_deopt.DeoptSemantics.test_P01_pair",
+    "test_jit_deopt.DeoptSemantics.test_P01_template",
+    "test_jit_deopt.DeoptSemantics.test_P02_ffi",
+    "test_jit_deopt.DeoptSemantics.test_P02_flat",
+    "test_jit_deopt.DeoptSemantics.test_P02_interpreter",
+    "test_jit_deopt.DeoptSemantics.test_P02_loop_carried",
+    "test_jit_deopt.DeoptSemantics.test_P02_nosink",
+    "test_jit_deopt.DeoptSemantics.test_P02_table_key",
+    "test_jit_deopt.DeoptSemantics.test_P03_real_escapes"
+  ],
+  "requirement_groups": {
+    "G01": [
+      "test_jit_deopt.DeoptSemantics.test_G01_diamond_cold",
+      "test_jit_deopt.DeoptSemantics.test_G01_diamond_hot",
+      "test_jit_deopt.DeoptSemantics.test_G01_deep_cold",
+      "test_jit_deopt.DeoptSemantics.test_G01_deep_hot",
+      "test_jit_deopt.DeoptSemantics.test_G01_wide_cold",
+      "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+    ],
+    "G02": [
+      "test_jit_deopt.DeoptSemantics.test_G02_self_cold",
+      "test_jit_deopt.DeoptSemantics.test_G02_self_hot",
+      "test_jit_deopt.DeoptSemantics.test_G02_pair_cold",
+      "test_jit_deopt.DeoptSemantics.test_G02_pair_hot",
+      "test_jit_deopt.DeoptSemantics.test_G02_ring_cold",
+      "test_jit_deopt.DeoptSemantics.test_G02_ring_hot"
+    ],
+    "G03": [
+      "test_jit_deopt.DeoptSemantics.test_G03_hidden_cold",
+      "test_jit_deopt.DeoptSemantics.test_G03_hidden_hot",
+      "test_jit_deopt.DeoptSemantics.test_G03_pressure_cold",
+      "test_jit_deopt.DeoptSemantics.test_G03_pressure_hot"
+    ],
+    "G04": [
+      "test_jit_deopt.DeoptSemantics.test_G04_distinct_cold",
+      "test_jit_deopt.DeoptSemantics.test_G04_distinct_hot"
+    ],
+    "G05": [
+      "test_jit_deopt.DeoptSemantics.test_G05_before_cold",
+      "test_jit_deopt.DeoptSemantics.test_G05_after_cold",
+      "test_jit_deopt.DeoptSemantics.test_G05_before_hot",
+      "test_jit_deopt.DeoptSemantics.test_G05_after_hot"
+    ],
+    "G06": [
+      "test_jit_deopt.DeoptSemantics.test_G06_payload_cold",
+      "test_jit_deopt.DeoptSemantics.test_G06_payload_hot",
+      "test_jit_deopt.DeoptSemantics.test_G06_template_cold",
+      "test_jit_deopt.DeoptSemantics.test_G06_template_hot",
+      "test_jit_deopt.DeoptSemantics.test_G06_ffi_graph_cold",
+      "test_jit_deopt.DeoptSemantics.test_G06_ffi_graph_hot"
+    ],
+    "G07": [
+      "test_jit_deopt.DeoptSemantics.test_G07_mutate_cold",
+      "test_jit_deopt.DeoptSemantics.test_G07_mutate_hot"
+    ],
+    "G08": [
+      "test_jit_deopt.DeoptSemantics.test_G08_table",
+      "test_jit_deopt.DeoptSemantics.test_G08_upvalue"
+    ],
+    "G09": [
+      "test_jit_deopt.DeoptSemantics.test_G09_cold",
+      "test_jit_deopt.DeoptSemantics.test_G09_hot"
+    ],
+    "G10": [
+      "test_jit_deopt.DeoptSemantics.test_G10_same_trace",
+      "test_jit_deopt.DeoptSemantics.test_G10_flush"
+    ],
+    "G11": [
+      "test_jit_deopt.DeoptSemantics.test_G11_error",
+      "test_jit_deopt.DeoptSemantics.test_G11_coroutine"
+    ],
+    "P01": [
+      "test_jit_deopt.DeoptSemantics.test_P01_diamond",
+      "test_jit_deopt.DeoptSemantics.test_P01_pair",
+      "test_jit_deopt.DeoptSemantics.test_P01_template"
+    ],
+    "P02": [
+      "test_jit_deopt.DeoptSemantics.test_P02_nosink",
+      "test_jit_deopt.DeoptSemantics.test_P02_interpreter",
+      "test_jit_deopt.DeoptSemantics.test_P02_flat",
+      "test_jit_deopt.DeoptSemantics.test_P02_loop_carried",
+      "test_jit_deopt.DeoptSemantics.test_P02_ffi",
+      "test_jit_deopt.DeoptSemantics.test_P02_table_key"
+    ],
+    "P03": [
+      "test_jit_deopt.DeoptSemantics.test_P03_real_escapes"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "release_keys": {
+    "release-alpha": "rel-alpha-key"
+  },
+  "log_keys": {
+    "main": "log-main-key"
+  },
+  "witness_keys": {
+    "north": "wit-north-key",
+    "south": "wit-south-key",
+    "east": "wit-east-key"
+  },
+  "quorum": 2
+}

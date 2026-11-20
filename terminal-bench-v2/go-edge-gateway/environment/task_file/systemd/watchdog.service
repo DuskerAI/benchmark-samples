@@ -1,0 +1,8 @@
+[Unit]
+Description=Edge gateway watchdog
+
+[Service]
+EnvironmentFile=/app/run/rendered/configs/watchdog.env
+
+[Install]
+WantedBy=edge-gateway.target

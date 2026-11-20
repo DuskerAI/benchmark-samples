@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "trial_name": "go-workflows-reset-provenance__8gVd4EB",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/reference-clean-regrade-final",
+    "job_id": "7f8eed59-6618-4f30-82c3-b6a9d47f4ba8",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "49ede0b4-f5e7-4722-8ece-77204d93d303",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-oracle-final/go-workflows-reset-provenance__9eYyVcz"
+    }
+}

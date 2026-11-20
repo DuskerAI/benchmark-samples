@@ -1,0 +1,4 @@
+OBJECT y
+SECTION .text - 8 -
+SYMBOL dup STRONG DEF .text 0
+RELOC .text 0 xref ABS32 0

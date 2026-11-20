@@ -1,0 +1,12 @@
+MKDIR /pmem
+SETFLAG /pmem on
+MKDIR /pmem/payments
+MKDIR /pmem/archive
+REMOUNT never
+CREATE /pmem/payments/ledger
+OPEN /pmem/payments/ledger svc-ledger
+CREATE /pmem/payments/cache
+OPEN /pmem/payments/cache batch-cache
+CREATE /pmem/archive/old
+SETFLAG /pmem/payments off
+REMOUNT always

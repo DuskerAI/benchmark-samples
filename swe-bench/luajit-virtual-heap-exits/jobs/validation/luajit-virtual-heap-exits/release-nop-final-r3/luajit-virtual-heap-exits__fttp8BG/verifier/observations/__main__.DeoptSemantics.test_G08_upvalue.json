@@ -1,0 +1,75 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$next",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "439"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$next",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "440"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 16,
+    "on": true,
+    "roots": 2,
+    "sides": 1
+  }
+}

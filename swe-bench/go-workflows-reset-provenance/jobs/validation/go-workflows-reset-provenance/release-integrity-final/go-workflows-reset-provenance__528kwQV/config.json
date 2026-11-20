@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "trial_name": "go-workflows-reset-provenance__528kwQV",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-integrity-final",
+    "agent": {
+        "name": "reset_probe:IntegrityProbe"
+    },
+    "job_id": "bf3fe087-4bf6-4436-84d2-0938e5e1f2c0"
+}

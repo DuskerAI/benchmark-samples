@@ -1,0 +1,11 @@
+**/__pycache__/
+**/*.pyc
+**/.pytest_cache/
+solution/
+tests/
+.git
+.env
+node_modules/
+__pycache__/
+*.pyc
+.pytest_cache/

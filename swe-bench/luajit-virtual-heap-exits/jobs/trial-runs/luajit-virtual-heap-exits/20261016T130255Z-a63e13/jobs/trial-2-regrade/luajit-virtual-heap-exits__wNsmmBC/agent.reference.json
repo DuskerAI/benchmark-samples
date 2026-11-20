@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "agent",
+  "retained_directory": "../../trial-2/luajit-virtual-heap-exits__i7TWFc6/agent",
+  "tree_sha256": "1062ecc479061f14f950c8ee459f786970edd4dd72287e8cb957e012acf91946",
+  "file_count": 3,
+  "bytes": 2928846,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

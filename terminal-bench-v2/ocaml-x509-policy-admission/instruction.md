@@ -1,0 +1,5 @@
+A security release needs `/app/src/certadmit.ml` to make deterministic offline X.509-style admission decisions from local certificate and revocation evidence. Build with `make -C /app` and provide `/app/certadmit --trust TRUST --crl CRLDIR --now UNIX --host NAME --bundle BUNDLE`, printing only `ACCEPT` with exit 0 or `REJECT:<CODE>` with exit 1.
+
+Use `/app/spec.md` as the authoritative contract for the certificate and CRL record grammar, malformed input handling, path construction, candidate evaluation, certificate policy mapping, name constraints, CRL selection, revocation, candidate aggregation, and rejection priority. The command must make the same decision regardless of input file ordering.
+
+Admit a bundle certificate only as an end entity on a linked path ending at a TRUST record. Evaluate every linked bundle certificate as a leaf candidate, then suppress linked CA leaf-candidate results whenever any linked non-CA leaf candidate exists after path evaluation, including independently linked sibling candidates. Pathless candidates contribute no rejection code.

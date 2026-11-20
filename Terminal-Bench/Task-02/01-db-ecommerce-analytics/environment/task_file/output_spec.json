@@ -1,0 +1,133 @@
+{
+  "top_customers.json": {
+    "description": "Top 15 customers ranked by net lifetime spend (gross spend minus return refunds), descending.",
+    "fields": {
+      "customer_id": "INTEGER",
+      "name": "VARCHAR",
+      "gross_spend": "DECIMAL \u2014 total spend before returns, rounded to 2 decimal places",
+      "return_value": "DECIMAL \u2014 total refund value from valid returns, rounded to 2 decimal places",
+      "return_count": "INTEGER \u2014 number of returned orders",
+      "net_spend": "DECIMAL \u2014 gross_spend minus return_value, rounded to 2 decimal places",
+      "order_count": "INTEGER \u2014 number of distinct orders",
+      "avg_order_value": "DECIMAL \u2014 net_spend / order_count, rounded to 2 decimal places"
+    },
+    "order": "net_spend DESC",
+    "count": 15
+  },
+  "monthly_revenue.json": {
+    "description": "Revenue aggregated by calendar month, including return adjustments and rolling average.",
+    "fields": {
+      "month": "VARCHAR \u2014 format YYYY-MM",
+      "gross_revenue": "DECIMAL \u2014 sum of quantity * unit_price for orders in that month, rounded to 2 decimal places",
+      "order_count": "INTEGER \u2014 number of orders in that month",
+      "return_value": "DECIMAL \u2014 sum of refund amounts for returns processed in that month, rounded to 2 decimal places",
+      "net_revenue": "DECIMAL \u2014 gross_revenue minus return_value, rounded to 2 decimal places",
+      "rolling_3m_avg_net_revenue": "DECIMAL \u2014 3-month rolling average of net_revenue (ROWS BETWEEN 2 PRECEDING AND CURRENT ROW), rounded to 2 decimal places; null for the first 2 months",
+      "mom_growth_pct": "DECIMAL \u2014 percentage change in net_revenue vs previous month, rounded to 2 decimal places; null for the first month"
+    },
+    "order": "month ASC"
+  },
+  "category_stats.json": {
+    "description": "Aggregated sales and return statistics per product category.",
+    "fields": {
+      "category": "VARCHAR",
+      "total_revenue": "DECIMAL \u2014 gross revenue (sum of quantity * unit_price), rounded to 2 decimal places",
+      "total_units": "INTEGER \u2014 sum of quantity",
+      "unique_products_sold": "INTEGER \u2014 count of distinct product_ids with at least one order",
+      "return_value": "DECIMAL \u2014 total refund value from valid returns for this category, rounded to 2 decimal places",
+      "net_revenue": "DECIMAL \u2014 total_revenue minus return_value, rounded to 2 decimal places",
+      "return_rate_pct": "DECIMAL \u2014 (number of orders with a return / total orders) * 100, rounded to 2 decimal places"
+    },
+    "order": "total_revenue DESC"
+  },
+  "supplier_share.json": {
+    "description": "Revenue contribution per supplier based on net revenue (after returns).",
+    "fields": {
+      "supplier_id": "INTEGER",
+      "supplier_name": "VARCHAR",
+      "country": "VARCHAR",
+      "total_revenue": "DECIMAL \u2014 gross revenue, rounded to 2 decimal places",
+      "return_value": "DECIMAL \u2014 total refund value for this supplier's products, rounded to 2 decimal places",
+      "net_revenue": "DECIMAL \u2014 total_revenue minus return_value, rounded to 2 decimal places",
+      "share_pct": "DECIMAL \u2014 net_revenue as percentage of total net revenue across all suppliers (0\u2013100), rounded to 2 decimal places"
+    },
+    "order": "net_revenue DESC"
+  },
+  "customer_cohorts.json": {
+    "description": "Monthly cohort retention analysis.",
+    "fields": {
+      "cohort_month": "VARCHAR \u2014 format YYYY-MM",
+      "cohort_size": "INTEGER",
+      "retained_month2": "INTEGER",
+      "retention_rate_pct": "DECIMAL \u2014 retained_month2 / cohort_size * 100, rounded to 2 decimal places"
+    },
+    "order": "cohort_month ASC",
+    "notes": "Only include cohort months where cohort_size >= 5. Exclude the last calendar month in the dataset."
+  },
+  "product_performance.json": {
+    "description": "ABC inventory classification for all 50 products, ranked by net revenue (after returns).",
+    "fields": {
+      "product_id": "INTEGER",
+      "product_name": "VARCHAR",
+      "category": "VARCHAR",
+      "supplier_name": "VARCHAR",
+      "total_orders": "INTEGER \u2014 total number of orders containing this product",
+      "net_quantity_sold": "INTEGER \u2014 total units ordered",
+      "gross_revenue": "DECIMAL \u2014 total gross revenue for this product, rounded to 2 decimal places",
+      "return_value": "DECIMAL \u2014 total refund value for this product, rounded to 2 decimal places",
+      "net_revenue": "DECIMAL \u2014 gross_revenue minus return_value, rounded to 2 decimal places",
+      "return_rate_pct": "DECIMAL \u2014 (number of return transactions / total_orders) * 100, rounded to 2 decimal places",
+      "revenue_share_pct": "DECIMAL \u2014 this product's net_revenue as percentage of total net revenue across all products, rounded to 2 decimal places",
+      "cumulative_revenue_pct": "DECIMAL \u2014 running cumulative sum of revenue_share_pct when sorted by net_revenue DESC, rounded to 2 decimal places",
+      "abc_class": "VARCHAR \u2014 \"A\" if cumulative_revenue_pct <= 70%, \"B\" if <= 90%, \"C\" otherwise (Pareto/ABC analysis)"
+    },
+    "order": "net_revenue DESC",
+    "count": 50,
+    "notes": "All 50 products must appear. ABC classification uses Pareto principle: A-class products generate the top 70% of net revenue."
+  },
+  "customer_segments.json": {
+    "description": "RFM customer segmentation into four segments based on Recency, Frequency, and Monetary quartile scores.",
+    "fields": {
+      "segment": "VARCHAR \u2014 one of: Champions, Loyal Customers, At Risk, Lost",
+      "customer_count": "INTEGER \u2014 number of customers in this segment",
+      "avg_recency_days": "DECIMAL \u2014 average days from last order to dataset max order_date, rounded to 1 decimal place",
+      "avg_order_count": "DECIMAL \u2014 average number of orders per customer in segment, rounded to 2 decimal places",
+      "avg_net_spend": "DECIMAL \u2014 average net spend per customer in segment, rounded to 2 decimal places",
+      "total_net_spend": "DECIMAL \u2014 sum of net spend for all customers in segment, rounded to 2 decimal places",
+      "revenue_share_pct": "DECIMAL \u2014 segment total_net_spend as % of grand total net spend across all customers (0\u2013100), rounded to 2 decimal places"
+    },
+    "order": "total_net_spend DESC",
+    "count": 4,
+    "notes": "Reference date for recency is MAX(order_date) across the entire orders table, not the current date. Each score is assigned via NTILE(4) and ranges 1-4. R_score: ORDER BY recency_days DESC, customer_id ASC \u2014 lowest recency_days (most recent) lands in tile 4, highest (oldest) in tile 1. F_score: ORDER BY order_count ASC, customer_id ASC \u2014 highest order_count lands in tile 4, lowest in tile 1. M_score: ORDER BY net_spend ASC, customer_id ASC \u2014 highest net_spend lands in tile 4, lowest in tile 1. Use customer_id ASC as the tiebreaker in all three NTILE windows to ensure deterministic results when values are equal. RFM total = R_score + F_score + M_score (range 3-12). Segments: Champions >= 10, Loyal Customers 7-9, At Risk 4-6, Lost = 3."
+  },
+  "price_cohort_performance.json": {
+    "description": "Sales performance broken down by product price tier, where tiers are derived from each product's median transactional selling price.",
+    "fields": {
+      "tier": "INTEGER \u2014 price tier number (1, 2, or 3)",
+      "tier_name": "VARCHAR \u2014 'Budget' (tier 1), 'Mid-range' (tier 2), 'Premium' (tier 3)",
+      "product_count": "INTEGER \u2014 number of products assigned to this tier",
+      "total_orders": "INTEGER \u2014 total number of order lines for products in this tier",
+      "gross_revenue": "DECIMAL \u2014 total gross revenue for this tier, rounded to 2 decimal places",
+      "return_value": "DECIMAL \u2014 total refund value for this tier (valid returns only), rounded to 2 decimal places",
+      "net_revenue": "DECIMAL \u2014 gross_revenue minus return_value, rounded to 2 decimal places",
+      "return_rate_pct": "DECIMAL \u2014 (order lines with a return / total order lines) * 100, rounded to 2 decimal places",
+      "avg_net_revenue_per_product": "DECIMAL \u2014 net_revenue / product_count, rounded to 2 decimal places"
+    },
+    "order": "tier ASC",
+    "count": 3,
+    "notes": "Tier assignment: compute each product's median unit_price across all its rows in orders.csv (this is the actual transactional selling price \u2014 do NOT use base_price from products.csv). Then assign tiers using NTILE(3) on those per-product medians, ordered ascending: the cheapest third of products = tier 1 (Budget), middle third = tier 2 (Mid-range), most expensive third = tier 3 (Premium). Apply the same valid-return filtering as all other outputs."
+  },
+  "cohort_revenue_trend.json": {
+    "description": "Tracks revenue generated by each monthly acquisition cohort across all subsequent calendar months.",
+    "fields": {
+      "cohort_month": "VARCHAR \u2014 format YYYY-MM, the month of the customer's first-ever order",
+      "activity_month": "VARCHAR \u2014 format YYYY-MM, the calendar month of the orders being measured",
+      "months_since_acquisition": "INTEGER \u2014 (year(activity_month) - year(cohort_month)) * 12 + (month(activity_month) - month(cohort_month)); 0 for the acquisition month itself",
+      "active_customers": "INTEGER \u2014 count of distinct customers from this cohort who placed at least one order in activity_month",
+      "gross_revenue": "DECIMAL \u2014 sum of quantity * unit_price for orders placed by cohort customers in activity_month, rounded to 2 decimal places",
+      "net_revenue": "DECIMAL \u2014 gross_revenue minus valid return refunds for those orders, rounded to 2 decimal places"
+    },
+    "order": "cohort_month ASC, activity_month ASC",
+    "notes": "Cohort membership is determined by MIN(order_date) per customer. Only include rows where activity_month >= cohort_month (never attribute orders to a cohort before it was acquired). Only output rows where at least 1 cohort customer was active in that activity_month. Apply the same valid-return filtering as all other outputs: join returns to orders (orphaned return IDs are silently dropped), cap quantity_returned at original order quantity, refund = MIN(qty_returned, qty_ordered) * unit_price from the order row."
+  }
+}

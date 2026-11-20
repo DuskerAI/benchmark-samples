@@ -1,0 +1,91 @@
+#!/usr/bin/env guile
+!#
+
+(use-modules (ice-9 match)
+             (ice-9 rdelim)
+             (ice-9 regex)
+             (srfi srfi-1)
+             (srfi srfi-13))
+
+(define (usage)
+  (display "usage: fwplan --case CASEDIR --out OUTDIR\n")
+  (exit 2))
+
+(define (arg-value args flag)
+  (let loop ((xs args))
+    (match xs
+      (() #f)
+      ((a b . rest) (if (string=? a flag) b (loop (cons b rest))))
+      (_ #f))))
+
+(define (trim-comment line)
+  (let ((m (string-index line #\#)))
+    (if m (substring line 0 m) line)))
+
+(define (words line)
+  (filter (lambda (s) (> (string-length s) 0))
+          (string-split (string-trim-both (trim-comment line)) #\space)))
+
+(define (read-lines path)
+  (call-with-input-file path
+    (lambda (port)
+      (let loop ((acc '()))
+        (let ((line (read-line port)))
+          (if (eof-object? line) (reverse acc) (loop (cons line acc))))))))
+
+(define (write-reject out reason)
+  (system* "mkdir" "-p" out)
+  (call-with-output-file (string-append out "/plan.json")
+    (lambda (p)
+      (display "{\"status\":\"reject\",\"reason\":\"" p)
+      (display reason p)
+      (display "\",\"rollback_to\":null,\"transactions\":[],\"chains\":[],\"rules\":[]}" p)))
+  (call-with-output-file (string-append out "/service-audit.tsv")
+    (lambda (p) (display "service\towner\texposure\tallowed_zones\tstatus\n" p))))
+
+(define (main args)
+  (let ((case-dir (arg-value (cdr args) "--case"))
+        (out-dir (arg-value (cdr args) "--out")))
+    (unless (and case-dir out-dir) (usage))
+    (let ((root (string-append case-dir "/root.fw")))
+      (if (not (file-exists? root))
+          (write-reject out-dir "missing-root")
+          (let ((services '()) (chains '()) (rules '()) (checkpoint #f))
+            (for-each
+             (lambda (line)
+               (let ((w (words line)))
+                 (match w
+                   (() #t)
+                   (("service" name "owner" owner "exposure" exposure "ports" ports "zones" zones)
+                    (set! services (cons (list name owner exposure zones ports) services)))
+                   (("chain" fam tab name "priority" pri "policy" pol)
+                    (set! chains (cons (list fam tab name pri pol) chains)))
+                   (((or "allow" "deny") fam tab ch proto port "service" svc "zones" zones "ticket" ticket)
+                    (set! rules (cons (list (car w) fam tab ch proto port svc zones ticket) rules)))
+                   (("checkpoint" id status) (set! checkpoint (list id status)))
+                   (_ #t))))
+             (read-lines root))
+            (if (not checkpoint)
+                (write-reject out-dir "no-usable-checkpoint")
+                (begin
+                  (system* "mkdir" "-p" out-dir)
+                  (call-with-output-file (string-append out-dir "/plan.json")
+                    (lambda (p)
+                      (display "{\"status\":\"apply\",\"reason\":\"\",\"rollback_to\":\"" p)
+                      (display (car checkpoint) p)
+                      (display "\",\"transactions\":[{\"id\":\"" p)
+                      (display (car checkpoint) p)
+                      (display "\",\"status\":\"" p)
+                      (display (cadr checkpoint) p)
+                      (display "\"}],\"chains\":[],\"rules\":[]}" p)))
+                  (call-with-output-file (string-append out-dir "/service-audit.tsv")
+                    (lambda (p)
+                      (display "service\towner\texposure\tallowed_zones\tstatus\n" p)
+                      (for-each
+                       (lambda (s)
+                         (display (car s) p) (display "\t" p)
+                         (display (cadr s) p) (display "\t" p)
+                         (display (caddr s) p) (display "\t\tclosed\n" p))
+                       (reverse services)))))))))))
+
+(main (command-line))

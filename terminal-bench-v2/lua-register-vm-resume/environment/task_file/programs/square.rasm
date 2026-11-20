@@ -1,0 +1,5 @@
+# Returns the square of a constant. Demonstrates the .rasm format.
+.proto main regs=3 upvals=none
+  LOADK 0 9
+  MUL 1 0 0
+  HALT 1

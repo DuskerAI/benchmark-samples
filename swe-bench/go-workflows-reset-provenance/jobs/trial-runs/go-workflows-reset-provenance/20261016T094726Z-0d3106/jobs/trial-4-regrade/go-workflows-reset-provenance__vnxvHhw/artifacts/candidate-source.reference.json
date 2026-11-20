@@ -1,0 +1,8 @@
+{
+  "retained_directory": "../../../trial-4/go-workflows-reset-provenance__ry6B97K/artifacts/candidate-source",
+  "tree_sha256": "74c3894dda19565e4f61a6fbd79de9217bd683a04cd62a5386b19d9a74e85a05",
+  "file_count": 322,
+  "bytes": 4261862,
+  "reason": "Byte-identical derived regrade copy; original evidence retained.",
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

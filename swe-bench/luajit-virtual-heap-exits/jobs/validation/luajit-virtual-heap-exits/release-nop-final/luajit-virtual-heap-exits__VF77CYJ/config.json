@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+    },
+    "trial_name": "luajit-virtual-heap-exits__VF77CYJ",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/release-nop-final",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "4916ba0b-b168-41c9-a385-034035b8235d"
+}

@@ -1,0 +1,373 @@
+diff --git a/tests/test_reset_provenance.py b/tests/test_reset_provenance.py
+new file mode 100644
+--- /dev/null
++++ b/tests/test_reset_provenance.py
+@@ -0,0 +1,368 @@
++"""Behavior/model assertions stay outside submitted Go code."""
++from copy import deepcopy
++import json
++import os
++from pathlib import Path
++import signal
++import sqlite3
++import subprocess
++import tempfile
++import unittest
++import uuid
++
++LOG=Path('/logs/verifier')
++
++
++def act(kind,label='',**values):return dict(Kind=kind,Label=label,**values)
++
++
++class MaterializedModel:
++    """Tiny immutable logical tapes; no SQL ranges, routes or implementation helpers."""
++    def __init__(self):self.tapes={}
++    def commit(self,key,events):self.tapes.setdefault(key,[]).extend(deepcopy(events))
++    def reset(self,source,target,cut):self.tapes[target]=deepcopy(self.tapes[source][:cut])
++
++
++class ResetSemantics(unittest.TestCase):
++    maxDiff=2500
++    def setUp(self):
++        self.tmp=tempfile.TemporaryDirectory(dir='/sandbox/tmp',prefix='reset-')
++        os.chown(self.tmp.name,1000,1000);os.chmod(self.tmp.name,0o700)
++        self.db=Path(self.tmp.name)/'workflow.sqlite'
++        self.nonce=uuid.uuid4().hex
++        self.req={'Database':'/tmp/'+Path(self.tmp.name).name+'/workflow.sqlite','Nonce':self.nonce,'Program':'serial','State':{}}
++        self.calls=[];self.model=MaterializedModel()
++    def tearDown(self):self.tmp.cleanup()
++    @staticmethod
++    def key(instance):return instance['instance_id']+'/'+instance['execution_id']
++    def call(self,actions,**options):
++        before=deepcopy(self.req['State']);request=dict(self.req,Actions=actions,**options)
++        with tempfile.TemporaryFile(dir=LOG) as stdout,tempfile.TemporaryFile(dir=LOG) as stderr:
++            p=subprocess.Popen(['/usr/bin/python3','-I','-B','/tests/launch_candidate.py','/bin/durable-driver'],stdin=subprocess.PIPE,stdout=stdout,stderr=stderr,start_new_session=True,cwd='/',
++                env={'PATH':'/usr/bin:/bin','HOME':'/tmp','TMPDIR':'/tmp','GOMAXPROCS':'2','GOMEMLIMIT':'512MiB','TZ':'UTC'})
++            try:p.communicate(json.dumps(request).encode(),timeout=5)
++            except subprocess.TimeoutExpired:self.fail('workflow/reset operation did not terminate')
++            finally:
++                try:os.killpg(p.pid,signal.SIGKILL)
++                except ProcessLookupError:pass
++                p.wait()
++            stdout.seek(0);raw=stdout.read(8*1024*1024+1);stderr.seek(0);diagnostic=stderr.read(8192)
++            if diagnostic:
++                with (LOG/'candidate-stderr.log').open('ab') as f:f.write(diagnostic+b'\n')
++            self.assertEqual(p.returncode,0,diagnostic[-1800:].decode(errors='replace'))
++            self.assertLessEqual(len(raw),8*1024*1024)
++            out=None
++            for line in reversed(raw.splitlines()):
++                try:value=json.loads(line)
++                except (ValueError,UnicodeError):continue
++                if isinstance(value,dict) and all(k in value for k in ('Observations','State','Calls','Error')):out=value;break
++            self.assertIsNotNone(out,'candidate produced no behavioral response')
++        self.assertEqual(out['Error'],'','candidate probe error')
++        self.req.update(options);self.req['State']=out['State'];self.calls.extend(out['Calls'])
++        instances=deepcopy(before.get('Instances',{}));current=before.get('Current');cuts=dict(before.get('Cuts',{}))
++        for a,o in zip(actions,out['Observations']):
++            if o['Error']:continue
++            if a['Kind']=='create':instances['root']=out['State']['Instances']['root'];current=instances['root']
++            elif a['Kind']=='reset':
++                source=instances.get(a.get('Source')) if a.get('Source') else current
++                cut=cuts[a['Cut']] if a.get('Cut') else a.get('Sequence',0)
++                self.model.reset(self.key(source),self.key(o['Instance']),cut)
++                instances[a['Label']]=o['Instance']
++                if source==current:current=o['Instance']
++            elif a['Kind']=='child' and o['Instance'] is not None:instances[a['Label']]=o['Instance']
++            elif a['Kind']=='tick' and not o['Nil']:
++                key=self.key(o['Instance']);self.model.commit(key,o['Executed'])
++                self.assertEqual(o['History'],self.model.tapes[key],'logical history disagrees with independent prefix model')
++                cuts[a['Label']]=len(o['History'])
++            elif a['Kind']=='history':
++                source=instances.get(a.get('Source')) if a.get('Source') else current
++                expected=self.model.tapes[self.key(source)]
++                after=a.get('Sequence',0)
++                self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
++            elif a['Kind']=='commit':
++                task=out['State']['Tasks'][a['Source']];result=out['State']['Results'][a['Source']]
++                self.model.commit(self.key(task['WorkflowInstance']),result['Executed'])
++        self.assertEqual(len(out['Observations']),len(actions))
++        return out['Observations']
++    def ok(self,actions,**options):
++        results=self.call(actions,**options)
++        for result in results:
++            self.assertEqual(result['Error'],'',f"{result['Kind']}: {result['Error']}")
++            if result['Kind'] in ('tick','execute','activity','child'):self.assertFalse(result['Nil'],result)
++        return results
++    def output(self,observation):
++        self.assertIsInstance(observation['Output'],list,'workflow did not reach its required terminal result')
++        return observation['Output']
++    def rows(self,table,where='',args=()):
++        with sqlite3.connect(self.db) as db:
++            return db.execute('SELECT * FROM '+table+(' WHERE '+where if where else '')+' ORDER BY rowid',args).fetchall()
++    def count(self,table,where='',args=()):return len(self.rows(table,where,args))
++    def snapshot(self):return {t:self.rows(t) for t in ('instances','history','pending_events','activities','attributes','workflow_branches','workflow_effects','workflow_checkpoint_receipts')}
++    def first(self,program='serial',converter=''):
++        self.ok([act('create'),act('tick','first')],Program=program,Converter=converter)
++        self.prefix=deepcopy(self.model.tapes[self.key(self.req['State']['Current'])])
++        if program in ('serial','child'):self.ok([act('activity','anchor')]);self.assert_activity('anchor','anchor')
++    def assert_activity(self,label,name):self.assertEqual(self.req['State']['Activities'][label]['Event']['attr']['name'],name)
++    def advance(self,program='serial'):
++        self.ok([act('complete',Source='anchor',Value='anchored:'+self.nonce),act('tick','second')])
++        if program=='serial':self.ok([act('activity','old')]);self.assert_activity('old','dispatch-old')
++        else:self.ok([act('child','old-child',Source='second')])
++    def finish_serial(self):
++        self.ok([act('activity','new')]);self.assert_activity('new','dispatch-new')
++        end=self.ok([act('complete',Source='new',Value='fresh:'+self.nonce),act('signal','finish',Name='finish',Value='done'),act('tick','last')])[-1]
++        self.assertEqual(self.output(end),['seed:'+self.nonce,'anchor:anchored:'+self.nonce,'phase:new','result:fresh:'+self.nonce,'signal:finish:done'])
++        self.assertEqual(self.calls.count('seed'),1,'committed seed callback reexecuted')
++
++    def nested(self,depth):
++        self.first()
++        for i in range(depth):
++            label='branch'+str(i)
++            self.ok([act('reset',label,Cut='first'),act('history'),act('history',Sequence=2)])
++            self.assertEqual(self.count('history','execution_id = ?',(self.nonce+'-'+label,)),0,'inherited history was materialized')
++        self.ok([act('phase',Value='new'),act('complete',Source='anchor',Value='anchored:'+self.nonce),act('tick','resumed',Cold=True)])
++        self.finish_serial()
++
++    def ancestor_cut(self,variant):
++        self.first(converter='envelope' if variant=='envelope' else '')
++        self.advance()
++        self.ok([act('reset','wide',Cut='second'),act('reset','early',Cut='first'),act('history')])
++        self.assertEqual(self.model.tapes[self.key(self.req['State']['Current'])],self.prefix)
++        self.ok([act('phase',Value='new'),act('tick','resumed',Cold=True)])
++        self.finish_serial()
++
++    def stale_activity(self,variant):
++        self.first(converter='envelope' if variant=='envelope' else '')
++        self.advance();old=self.req['State']['Activities']['old']
++        self.ok([act('reset','branch',Cut='first'),act('phase',Value='new'),act('tick','resumed'),act('activity','new')])
++        self.assert_activity('new','dispatch-new');new=self.req['State']['Activities']['new']
++        self.assertEqual(old['Event']['seid'],new['Event']['seid'],'fixture did not exercise reused command slot')
++        self.assertNotEqual(old['ActivityID'],new['ActivityID'])
++        before=self.snapshot();rejected=self.call([act('complete',Source='old',Value='stale:'+self.nonce)])[0]
++        self.assertTrue(rejected['Error'],'abandoned completion accepted')
++        self.assertEqual(self.snapshot(),before,'old result consumed or altered replacement work')
++        end=self.ok([act('complete',Source='new',Value='fresh:'+self.nonce),act('signal','finish',Name='finish',Value='done'),act('tick','last')])[-1]
++        self.assertEqual(self.output(end)[-2:],["result:fresh:"+self.nonce,'signal:finish:done'])
++
++    def completed_work(self,variant):
++        self.first(converter='envelope' if variant=='envelope' else '');self.advance()
++        self.ok([act('reset','branch',Cut='first')])
++        self.assertEqual(self.count('activities'),0,'completed anchor was rescheduled')
++        self.ok([act('phase',Value='new'),act('tick','resumed',Cold=True)])
++        self.finish_serial()
++
++    def signals(self,variant):
++        self.first('signals','envelope' if variant=='envelope' else '')
++        self.ok([act('signal','one',Name='steps',Value='one'),act('tick','one'),act('signal','two',Name='steps',Value='two'),act('tick','two'),act('signal','three',Name='steps',Value='three')])
++        self.ok([act('reset','branch',Cut='first'),act('tick','resumed',Cold=True)])
++        end=self.ok([act('signal','finish',Name='finish',Value='done'),act('tick','last')])[-1]
++        self.assertEqual(self.output(end),['seed:'+self.nonce,'signal:steps:one','signal:steps:two','signal:steps:three','signal:finish:done'])
++        self.assertEqual(self.calls,['seed'])
++
++    def parallel(self,variant):
++        count=4 if variant=='four' else 2
++        self.req['Fanout']=count
++        self.first('parallel')
++        for i in range(count):self.ok([act('activity','actor'+str(i))])
++        tasks=self.req['State']['Activities'];names={label:t['Event']['attr']['name'] for label,t in tasks.items()}
++        self.ok([act('complete',Source='actor0',Value='value:'+names['actor0']),act('tick','partial')])
++        cut='partial' if variant=='partial-cut' else 'first'
++        self.ok([act('reset','branch',Cut=cut)])
++        self.assertEqual(self.count('activities'),count-1,'reset duplicated completed or outstanding actors')
++        for i in reversed(range(1,count)):self.ok([act('complete',Source='actor'+str(i),Value='value:'+names['actor'+str(i)])])
++        self.ok([act('tick','resumed',Cold=True),act('signal','finish',Name='finish',Value='done')])
++        end=self.ok([act('tick','last')])[-1]
++        self.assertEqual(self.output(end),['seed:'+self.nonce]+['actor:'+str(i)+':value:work-'+str(i) for i in range(count)]+['signal:finish:done'])
++
++    def child(self,variant):
++        self.first('child');self.advance('child')
++        self.ok([act('tick','child-first',Queue='audit'),act('activity','old-leaf',Queue='audit')])
++        if variant=='reset-child':
++            self.ok([act('reset','child-reset',Source='old-child',Cut='child-first')])
++            child=self.req['State']['Instances']['child-reset']
++            self.assertEqual(child['parent']['execution_id'],'initial','reset child lost original parent')
++        else:self.ok([act('reset','branch',Cut='second')])
++        self.ok([act('complete',Source='old-leaf',Value='leaf'),act('tick','child-last',Queue='audit')])
++        end=self.ok([act('signal','finish',Name='finish',Value='done'),act('tick','last',Cold=True)])[-1]
++        self.assertEqual(self.output(end)[-3:],['phase:old','result:child:leaf','signal:finish:done'])
++
++    def abandoned_child(self,variant):
++        self.first('child');self.advance('child')
++        self.ok([act('tick','old-child-first',Queue='audit'),act('activity','old-leaf',Queue='audit'),act('complete',Source='old-leaf',Value='obsolete'),act('execute','old-child-result',Queue='audit')])
++        self.ok([act('reset','branch',Cut='first'),act('phase',Value='new'),act('tick','resumed'),act('child','new-child',Source='resumed')])
++        old=self.req['State']['Instances']['old-child'];new=self.req['State']['Instances']['new-child']
++        self.assertEqual(old['parent_event_id'],new['parent_event_id'],'fixture did not reuse parent command slot')
++        self.ok([act('commit',Source='old-child-result')])
++        self.assertEqual(self.count('pending_events','instance_id = ? AND execution_id = ?',(self.nonce,self.nonce+'-branch')),0,'abandoned child woke replacement parent')
++        self.ok([act('tick','new-child-first',Queue='audit'),act('activity','new-leaf',Queue='audit'),act('complete',Source='new-leaf',Value='fresh'),act('tick','new-child-last',Queue='audit'),act('signal','finish',Name='finish',Value='done')])
++        end=self.ok([act('tick','last')])[-1]
++        self.assertEqual(self.output(end)[-3:],['phase:new','result:child:fresh','signal:finish:done'])
++
++    def timer(self,variant):
++        self.req['Due']=variant=='fired';self.first('timer')
++        with sqlite3.connect(self.db) as db:original_visibility=db.execute('SELECT visible_at FROM pending_events WHERE event_type = 15').fetchone()[0]
++        self.ok([act('phase',Value='wait' if variant=='fired' else 'cancel'),act('signal','go',Name='go',Value='advance'),act('tick','second')])
++        self.ok([act('reset','branch',Cut='first')])
++        self.assertEqual(self.count('pending_events','event_type = 15 AND execution_id = ?',(self.nonce+'-branch',)),1,'timer delivery was lost or duplicated')
++        if variant!='fired':
++            with sqlite3.connect(self.db) as db:
++                visible=db.execute('SELECT visible_at FROM pending_events WHERE event_type = 15 AND execution_id = ?',(self.nonce+'-branch',)).fetchone()[0]
++            self.assertEqual(visible,original_visibility,'original timer visibility changed')
++            self.ok([act('phase',Value='keep')])
++        self.ok([act('tick','resumed',Cold=True),act('signal','finish',Name='finish',Value='done')])
++        end=self.ok([act('tick','last')])[-1]
++        self.assertIsInstance(self.output(end),list,'reset did not let the workflow finish')
++        if variant=='fired':self.assertIn('timer:fired',self.output(end))
++        else:self.assertIn('phase:keep',self.output(end));self.assertNotIn('timer:canceled',self.output(end))
++
++    def idempotence(self,variant):
++        self.first();self.ok([act('reset','branch',Source='root',Cut='first')])
++        before=self.snapshot();self.ok([act('reset','branch',Source='root',Cut='first')]);self.assertEqual(self.snapshot(),before)
++        failed=self.call([act('reset','branch',Sequence=1)])[0];self.assertTrue(failed['Error']);self.assertEqual(self.snapshot(),before)
++
++    def invalid_cut(self,variant):
++        self.first();before=self.snapshot()
++        sequence={'zero':0,'negative':-1,'interior':1,'past-end':len(self.prefix)+20}[variant]
++        failed=self.call([act('reset','invalid',Sequence=sequence)])[0];self.assertTrue(failed['Error']);self.assertEqual(self.snapshot(),before)
++        self.ok([act('complete',Source='anchor',Value='anchored:'+self.nonce),act('tick','second')])
++
++    def atomic(self,stage):
++        self.first()
++        self.ok([act('signal','retained',Name='unused',Value='retained')])
++        before=self.snapshot()
++        table='instances' if stage=='instance' else 'workflow_effects' if stage=='ownership' else 'pending_events'
++        event='UPDATE' if stage=='ownership' else 'INSERT'
++        with sqlite3.connect(self.db) as db:db.execute(f"CREATE TRIGGER reset_fault BEFORE {event} ON {table} BEGIN SELECT RAISE(ABORT,'injected-reset-failure'); END")
++        failed=self.call([act('reset','branch',Cut='first')])[0];self.assertTrue(failed['Error']);self.assertEqual(self.snapshot(),before)
++        with sqlite3.connect(self.db) as db:db.execute('DROP TRIGGER reset_fault')
++        self.ok([act('reset','branch',Cut='first'),act('history')])
++
++    def retention(self,variant):
++        self.first();self.ok([act('reset','branch',Cut='first')])
++        before=self.snapshot()
++        if variant=='active-collector':self.ok([act('collect')]);self.assertEqual(self.snapshot(),before);return
++        failed=self.call([act('remove',Source='root')])[0];self.assertTrue(failed['Error'],'referenced ancestor was removed');self.assertEqual(self.snapshot(),before)
++        self.ok([act('phase',Value='new'),act('complete',Source='anchor',Value='anchored:'+self.nonce),act('tick','resumed')]);self.finish_serial()
++        if variant=='bulk':self.ok([act('collect')])
++        else:self.ok([act('remove',Source='branch'),act('remove',Source='root')])
++        for table in ('instances','history','pending_events','activities','attributes','workflow_branches','workflow_effects'):self.assertEqual(self.count(table),0,'obsolete '+table+' retained')
++
++    def corruption(self,variant):
++        self.first();self.ok([act('reset','branch',Cut='first'),act('signal','wake',Name='unused',Value='x')])
++        with sqlite3.connect(self.db) as db:
++            if variant=='missing':db.execute('UPDATE workflow_branches SET base_execution = ?',('missing-owner',))
++            elif variant=='cycle':db.execute('UPDATE workflow_branches SET base_execution = execution_id')
++            elif variant=='interior':db.execute('UPDATE workflow_branches SET cut_sequence = 1')
++            elif variant=='gap':db.execute('DELETE FROM history WHERE sequence_id = 2')
++            elif variant=='duplicate':
++                db.execute("INSERT INTO history SELECT id||'-duplicate',sequence_id,instance_id,execution_id,event_type,timestamp,schedule_event_id,visible_at FROM history WHERE sequence_id = 2")
++                db.execute("INSERT INTO attributes SELECT id||'-duplicate',instance_id,execution_id,data FROM attributes WHERE id IN(SELECT id FROM history WHERE sequence_id = 2 AND id NOT LIKE '%-duplicate')")
++        before=self.snapshot()
++        failed=self.call([act('history'),act('tick','invalid')])
++        self.assertTrue(all(x['Error'] for x in failed),'corrupt ancestry was accepted')
++        self.assertEqual(self.snapshot(),before,'failed history read/task acquisition changed persistence')
++
++    def normal(self,variant):
++        if variant=='warm':
++            end=self.ok([act('create'),act('tick','first'),act('activity','anchor'),act('complete',Source='anchor',Value='anchored:'+self.nonce),act('tick','second'),act('activity','old'),act('complete',Source='old',Value='ordinary'),act('signal','finish',Name='finish',Value='done'),act('tick','last')])[-1]
++        else:
++            self.first();self.advance()
++            end=self.ok([act('complete',Source='old',Value='ordinary'),act('signal','finish',Name='finish',Value='done'),act('tick','last',Cold=True)])[-1]
++        self.assertEqual(self.output(end)[-3:],['phase:old','result:ordinary','signal:finish:done'])
++        self.assertEqual(self.calls.count('seed'),1)
++
++    def mixed_branch(self,variant):
++        self.first();self.advance()
++        self.ok([act('reset','a',Cut='first'),act('phase',Value='branch-a'),act('tick','a-turn'),act('activity','a-work')])
++        self.assert_activity('a-work','dispatch-branch-a')
++        if variant=='completed':
++            self.ok([act('complete',Source='a-work',Value='a-result'),act('tick','a-result')])
++        self.ok([act('reset','b',Cut='a-turn'),act('reset','c',Cut='a-turn'),act('history')])
++        if variant!='completed':self.ok([act('complete',Source='a-work',Value='a-result')])
++        self.ok([act('phase',Value='must-not-run'),act('signal','finish',Name='finish',Value='done')])
++        end=self.ok([act('tick','last',Cold=True)])[-1]
++        self.assertEqual(self.output(end),['seed:'+self.nonce,'anchor:anchored:'+self.nonce,'phase:branch-a','result:a-result','signal:finish:done'])
++        self.assertEqual(self.calls.count('phase:branch-a'),1)
++        self.assertNotIn('phase:must-not-run',self.calls)
++
++    def completion_retry(self,variant):
++        self.first();self.ok([act('reset','a',Cut='first'),act('complete',Source='anchor',Value='accepted')])
++        if variant in ('consumed','terminal'):
++            self.ok([act('phase',Value='new'),act('tick','resumed')])
++        if variant=='terminal':
++            self.ok([act('activity','last-work'),act('complete',Source='last-work',Value='last'),act('signal','finish',Name='finish',Value='done'),act('tick','last')])
++        before=self.snapshot()
++        self.ok([act('complete',Source='anchor',Value='accepted')])
++        self.assertEqual(self.snapshot(),before,'identical adopted completion wrote state')
++        rejected=self.call([act('complete',Source='anchor',Value='conflicting')])[0]
++        self.assertTrue(rejected['Error']);self.assertEqual(self.snapshot(),before,'conflicting adopted completion changed state')
++
++    def workflow_fencing(self,variant):
++        self.first()
++        if variant=='uncommitted':
++            self.ok([act('complete',Source='anchor',Value='accepted'),act('execute','old-turn')])
++            old='old-turn'
++        else:old='first'
++        self.ok([act('reset','a',Cut='first')]);before=self.snapshot()
++        result=self.call([act('commit',Source=old)])[0]
++        if variant=='uncommitted':self.assertTrue(result['Error'],'old workflow acquisition published after reset')
++        else:self.assertEqual(result['Error'],'','acknowledged checkpoint retry lost its receipt')
++        self.assertEqual(self.snapshot(),before,'old checkpoint affected reset execution')
++
++    def completed_child(self,variant):
++        self.first('child','envelope' if variant=='envelope' else '');self.advance('child')
++        self.ok([act('tick','child-first',Queue='audit'),act('activity','leaf',Queue='audit'),act('complete',Source='leaf',Value='cached'),act('tick','child-last',Queue='audit'),act('tick','received')])
++        self.ok([act('reset','a',Cut='second'),act('reset','b',Cut='second'),act('signal','finish',Name='finish',Value='done')])
++        end=self.ok([act('tick','last',Cold=True)])[-1]
++        self.assertEqual(self.output(end)[-3:],['phase:old','result:child:cached','signal:finish:done'])
++        self.assertEqual(self.count('activities'),0,'completed child work was duplicated')
++
++    def missing_journal(self,variant):
++        self.first()
++        with sqlite3.connect(self.db) as db:db.execute('DELETE FROM workflow_effects')
++        before=self.snapshot();result=self.call([act('reset','a',Cut='first')])[0]
++        self.assertTrue(result['Error'],'reset fabricated a missing publication')
++        self.assertEqual(self.snapshot(),before)
++
++
++CASES=[]
++def family(group,method,variants):
++    for variant in variants:
++        name=group+'_'+str(variant).replace('-','_')
++        CASES.append({'name':name,'group':group,'method':method,'variant':variant})
++        def test(self,method=method,variant=variant):getattr(self,method)(variant)
++        setattr(ResetSemantics,'test_'+name,test)
++
++family('B01','nested',[2,4,8])
++family('B02','ancestor_cut',['plain','envelope'])
++family('B03','stale_activity',['plain','envelope'])
++family('B04','completed_work',['plain','envelope'])
++family('B05','signals',['plain','envelope'])
++family('B06','parallel',['first-cut','partial-cut','four'])
++family('B07','child',['inherited','reset-child'])
++family('B08','abandoned_child',['held-result'])
++family('B09','timer',['canceled','fired'])
++family('B10','idempotence',['restart'])
++family('P01','invalid_cut',['zero','negative','interior','past-end'])
++family('P02','atomic',['instance','ownership','pending'])
++family('B11','retention',['single','bulk','active-collector'])
++family('B12','corruption',['missing','cycle','interior','gap','duplicate'])
++family('P03','normal',['warm','cold'])
++family('B13','mixed_branch',['outstanding','completed'])
++family('P04','completion_retry',['pending','consumed','terminal'])
++family('P05','workflow_fencing',['uncommitted','acknowledged'])
++family('B14','completed_child',['plain','envelope'])
++family('P06','missing_journal',['retained'])
++
++
++class RecordingResult(unittest.TextTestResult):
++    def __init__(self,*a,**kw):super().__init__(*a,**kw);self.records=[]
++    def record(self,t,status):self.records.append({'name':t.id().replace('__main__.','test_reset_provenance.'),'status':status})
++    def addSuccess(self,t):super().addSuccess(t);self.record(t,'PASSED')
++    def addFailure(self,t,e):super().addFailure(t,e);self.record(t,'FAILED')
++    def addError(self,t,e):super().addError(t,e);self.record(t,'ERROR')
++    def addSkip(self,t,r):super().addSkip(t,r);self.record(t,'SKIPPED')
++
++if __name__=='__main__':
++    result=unittest.TextTestRunner(verbosity=2,resultclass=RecordingResult).run(unittest.defaultTestLoader.loadTestsFromTestCase(ResetSemantics))
++    (LOG/'results.json').write_text(json.dumps({'count':result.testsRun,'tests':result.records},indent=2)+'\n')
++    raise SystemExit(0 if result.wasSuccessful() else 1)

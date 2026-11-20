@@ -1,0 +1,396 @@
+{
+  "task_directory": "../go-workflows-reset-provenance",
+  "task_files_unchanged": true,
+  "model_series": [
+    {
+      "series": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/series.json",
+      "status": "COMPLETED",
+      "task_id": "dusker-ai/go-workflows-reset-provenance",
+      "task_version": "3.0.0",
+      "model_id": "anthropic/claude-sonnet-5-5",
+      "passed_trials": 0,
+      "failed_trials": 4,
+      "trials": [
+        {
+          "trial_number": 1,
+          "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ",
+          "result_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ/result.json",
+          "result_sha256": "59629e0455aeeff7ab74d84061f59dd7b609b444c4e09494f80234d056a8881b",
+          "grade_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_reset_provenance.ResetSemantics.test_B12_interior"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 2.8674796000000002
+        },
+        {
+          "trial_number": 2,
+          "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU",
+          "result_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU/result.json",
+          "result_sha256": "c85a2c66132a4c5428fdb2009e8600b442f4a88c8af1b5d4f432ecfd5d9be876",
+          "grade_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_reset_provenance.ResetSemantics.test_B12_interior"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 2.4900260000000007
+        },
+        {
+          "trial_number": 3,
+          "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP",
+          "result_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP/result.json",
+          "result_sha256": "1f7b71d2988032341ab1aa6fdff947a7da7b4f85f670af589e19cfdf0455e18a",
+          "grade_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_reset_provenance.ResetSemantics.test_B12_interior"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 2.5976160999999993
+        },
+        {
+          "trial_number": 4,
+          "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K",
+          "result_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K/result.json",
+          "result_sha256": "2cc599494b9ba99bb4181d7891a76d7bcad2408cb4d39b43f7bc291324c5a834",
+          "grade_path": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_reset_provenance.ResetSemantics.test_B12_interior"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 3.1950849999999993
+        }
+      ]
+    }
+  ],
+  "native_trials": [
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ/result.json",
+      "result_sha256": "59629e0455aeeff7ab74d84061f59dd7b609b444c4e09494f80234d056a8881b",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1-regrade/go-workflows-reset-provenance__feuz9Gr",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1-regrade/go-workflows-reset-provenance__feuz9Gr/result.json",
+      "result_sha256": "46e57c0ba4f561c8ecd6d3ab85789c7a25035f31c94497cc6468aec444ecc103",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1-regrade/go-workflows-reset-provenance__feuz9Gr/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU/result.json",
+      "result_sha256": "c85a2c66132a4c5428fdb2009e8600b442f4a88c8af1b5d4f432ecfd5d9be876",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2-regrade/go-workflows-reset-provenance__JW3BC49",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2-regrade/go-workflows-reset-provenance__JW3BC49/result.json",
+      "result_sha256": "131ec9275c1911871bc36b18a3f2f13932e671c5d7f0be3ef6653c05f9e1674a",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2-regrade/go-workflows-reset-provenance__JW3BC49/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP/result.json",
+      "result_sha256": "1f7b71d2988032341ab1aa6fdff947a7da7b4f85f670af589e19cfdf0455e18a",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3-regrade/go-workflows-reset-provenance__jwxV6mG",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3-regrade/go-workflows-reset-provenance__jwxV6mG/result.json",
+      "result_sha256": "c499c5025830153dade969cde1d7eb7bb3aa9391eac96ed2cfdb13332498c199",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3-regrade/go-workflows-reset-provenance__jwxV6mG/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K/result.json",
+      "result_sha256": "2cc599494b9ba99bb4181d7891a76d7bcad2408cb4d39b43f7bc291324c5a834",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4-regrade/go-workflows-reset-provenance__vnxvHhw",
+      "result": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4-regrade/go-workflows-reset-provenance__vnxvHhw/result.json",
+      "result_sha256": "cb0b7b20eb9453c8496bb3a9e0dc7925b78124918482375502551db23d531894",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4-regrade/go-workflows-reset-provenance__vnxvHhw/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/reference-clean-regrade-final/go-workflows-checkpoint-fencing__Z5LR4JF",
+      "result": "validation/go-workflows-checkpoint-fencing/reference-clean-regrade-final/go-workflows-checkpoint-fencing__Z5LR4JF/result.json",
+      "result_sha256": "6e330fa04eb4c7965db261cf36d0f36a9b5b9e026c55483e46d04f77a822ef39",
+      "task_checksum": "ff468a9c5aa5ad11d967207d03fce57b1e97bc15de2f6afab1316f6ef47e607a",
+      "grade": "validation/go-workflows-checkpoint-fencing/reference-clean-regrade-final/go-workflows-checkpoint-fencing__Z5LR4JF/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/reference-clean-regrade-release/go-workflows-checkpoint-fencing__LLH7u9p",
+      "result": "validation/go-workflows-checkpoint-fencing/reference-clean-regrade-release/go-workflows-checkpoint-fencing__LLH7u9p/result.json",
+      "result_sha256": "9d5128a7c7d4eee949a6352005ff1c893240d89bd2088af11729e0fcdc4a0f5e",
+      "task_checksum": "290a740e791203c3efecd36c70050c4f452ff388846b3901d0378a41e7c39579",
+      "grade": "validation/go-workflows-checkpoint-fencing/reference-clean-regrade-release/go-workflows-checkpoint-fencing__LLH7u9p/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-integrity-final/go-workflows-checkpoint-fencing__Ks7fwHn",
+      "result": "validation/go-workflows-checkpoint-fencing/release-integrity-final/go-workflows-checkpoint-fencing__Ks7fwHn/result.json",
+      "result_sha256": "4ace3007533383f170e3db3e85bfe64c6dd4170015a36b4ae14806552b4a1fa0",
+      "task_checksum": "ff468a9c5aa5ad11d967207d03fce57b1e97bc15de2f6afab1316f6ef47e607a",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-integrity-final/go-workflows-checkpoint-fencing__Ks7fwHn/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-integrity-release/go-workflows-checkpoint-fencing__UdgwMfC",
+      "result": "validation/go-workflows-checkpoint-fencing/release-integrity-release/go-workflows-checkpoint-fencing__UdgwMfC/result.json",
+      "result_sha256": "d45785e1fe085568d1a340702fd3ed899010d8520bcf85666c1088d6178220eb",
+      "task_checksum": "290a740e791203c3efecd36c70050c4f452ff388846b3901d0378a41e7c39579",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-integrity-release/go-workflows-checkpoint-fencing__UdgwMfC/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-nop/go-workflows-checkpoint-fencing__hLux8Gq",
+      "result": "validation/go-workflows-checkpoint-fencing/release-nop/go-workflows-checkpoint-fencing__hLux8Gq/result.json",
+      "result_sha256": "96a9ddc42cf3d714db61c313fe0057361d4f86115be17351ae4d791aada04175",
+      "task_checksum": "c6778a5bf8d227ecb70b833a5c3b649a1528454269bf4fbbbc9d720c0fa00261",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-nop/go-workflows-checkpoint-fencing__hLux8Gq/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-nop-final/go-workflows-checkpoint-fencing__xvZAM7e",
+      "result": "validation/go-workflows-checkpoint-fencing/release-nop-final/go-workflows-checkpoint-fencing__xvZAM7e/result.json",
+      "result_sha256": "361326ea5b025865e1e03394f52c5f6ec0e9f6d6a7fdd3d62318e2c830fafb3c",
+      "task_checksum": "ff468a9c5aa5ad11d967207d03fce57b1e97bc15de2f6afab1316f6ef47e607a",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-nop-final/go-workflows-checkpoint-fencing__xvZAM7e/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-nop-release/go-workflows-checkpoint-fencing__EBjsvpd",
+      "result": "validation/go-workflows-checkpoint-fencing/release-nop-release/go-workflows-checkpoint-fencing__EBjsvpd/result.json",
+      "result_sha256": "397543aa4c1aa888f5caf246a6411ca706d025aa64c3558750229729fd36b012",
+      "task_checksum": "290a740e791203c3efecd36c70050c4f452ff388846b3901d0378a41e7c39579",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-nop-release/go-workflows-checkpoint-fencing__EBjsvpd/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-oracle/go-workflows-checkpoint-fencing__hJPKZ9z",
+      "result": "validation/go-workflows-checkpoint-fencing/release-oracle/go-workflows-checkpoint-fencing__hJPKZ9z/result.json",
+      "result_sha256": "c2557bcb6b8345c2d3fb2e666d800b20343673b6b6a46291f4fb875eaf4b2f71",
+      "task_checksum": "c6778a5bf8d227ecb70b833a5c3b649a1528454269bf4fbbbc9d720c0fa00261",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-oracle/go-workflows-checkpoint-fencing__hJPKZ9z/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-oracle-final/go-workflows-checkpoint-fencing__CW9mhWT",
+      "result": "validation/go-workflows-checkpoint-fencing/release-oracle-final/go-workflows-checkpoint-fencing__CW9mhWT/result.json",
+      "result_sha256": "c8e7e4bcfc0296a65181fc841847eba64fd944737638ee56149bb006bd08da00",
+      "task_checksum": "ff468a9c5aa5ad11d967207d03fce57b1e97bc15de2f6afab1316f6ef47e607a",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-oracle-final/go-workflows-checkpoint-fencing__CW9mhWT/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-checkpoint-fencing/release-oracle-release/go-workflows-checkpoint-fencing__cbkeKgT",
+      "result": "validation/go-workflows-checkpoint-fencing/release-oracle-release/go-workflows-checkpoint-fencing__cbkeKgT/result.json",
+      "result_sha256": "0e518d99a86d69357988fd55d72ff8fcdb1d4965e2496cbddbc6d2e1aa84dcf2",
+      "task_checksum": "290a740e791203c3efecd36c70050c4f452ff388846b3901d0378a41e7c39579",
+      "grade": "validation/go-workflows-checkpoint-fencing/release-oracle-release/go-workflows-checkpoint-fencing__cbkeKgT/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/draft-oracle/go-workflows-replay-turns__yQ9ZNVW",
+      "result": "validation/go-workflows-replay-turns/draft-oracle/go-workflows-replay-turns__yQ9ZNVW/result.json",
+      "result_sha256": "fbae96995edd94b9a2c0dd3035e0252cd637c500de97a666b0c01a86617602bd",
+      "task_checksum": "05b9c23bf6bfe80cc6400beeea216615116757c5fa54d2abb7e79f80119acff9",
+      "grade": "validation/go-workflows-replay-turns/draft-oracle/go-workflows-replay-turns__yQ9ZNVW/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/reference-clean-regrade/go-workflows-replay-turns__wGoXDwz",
+      "result": "validation/go-workflows-replay-turns/reference-clean-regrade/go-workflows-replay-turns__wGoXDwz/result.json",
+      "result_sha256": "1bd5b9aa2d776c0ea573db54e3fcda7933e3f786be57f94c103196b0c8a22bac",
+      "task_checksum": "05b9c23bf6bfe80cc6400beeea216615116757c5fa54d2abb7e79f80119acff9",
+      "grade": "validation/go-workflows-replay-turns/reference-clean-regrade/go-workflows-replay-turns__wGoXDwz/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/reference-clean-regrade-final/go-workflows-replay-turns__CJhnA3T",
+      "result": "validation/go-workflows-replay-turns/reference-clean-regrade-final/go-workflows-replay-turns__CJhnA3T/result.json",
+      "result_sha256": "d418ac440f09ef7d1264ab73edc2296867174487d0c72e09a58cb0516fc894b3",
+      "task_checksum": "08206a1807958878bc2d147cff0b93b85a0d8e830cc5f6ac1a0196bba3f0f96a",
+      "grade": "validation/go-workflows-replay-turns/reference-clean-regrade-final/go-workflows-replay-turns__CJhnA3T/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/release-integrity/go-workflows-replay-turns__yMpqx53",
+      "result": "validation/go-workflows-replay-turns/release-integrity/go-workflows-replay-turns__yMpqx53/result.json",
+      "result_sha256": "670c1ad44666de97038f9285b322e623ff9d0496fb12c28952804462687dca79",
+      "task_checksum": "05b9c23bf6bfe80cc6400beeea216615116757c5fa54d2abb7e79f80119acff9",
+      "grade": "validation/go-workflows-replay-turns/release-integrity/go-workflows-replay-turns__yMpqx53/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/release-integrity-final/go-workflows-replay-turns__CdnvSEe",
+      "result": "validation/go-workflows-replay-turns/release-integrity-final/go-workflows-replay-turns__CdnvSEe/result.json",
+      "result_sha256": "60d87f5338f77d23d55d2f8b8457833b2891279ad47eb8cbe021af43a8e9babf",
+      "task_checksum": "08206a1807958878bc2d147cff0b93b85a0d8e830cc5f6ac1a0196bba3f0f96a",
+      "grade": "validation/go-workflows-replay-turns/release-integrity-final/go-workflows-replay-turns__CdnvSEe/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/release-nop/go-workflows-replay-turns__9qCu8vS",
+      "result": "validation/go-workflows-replay-turns/release-nop/go-workflows-replay-turns__9qCu8vS/result.json",
+      "result_sha256": "d71d4988c60cb244beeb48b51ba2667f86d8b867d3eee3b5518b03bbdb72745b",
+      "task_checksum": "05b9c23bf6bfe80cc6400beeea216615116757c5fa54d2abb7e79f80119acff9",
+      "grade": "validation/go-workflows-replay-turns/release-nop/go-workflows-replay-turns__9qCu8vS/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/release-nop-final/go-workflows-replay-turns__nF9rLnq",
+      "result": "validation/go-workflows-replay-turns/release-nop-final/go-workflows-replay-turns__nF9rLnq/result.json",
+      "result_sha256": "1baa1617829382ded505c2a362ddfedd6f53d1ca46be4168540bcfcacf779fec",
+      "task_checksum": "08206a1807958878bc2d147cff0b93b85a0d8e830cc5f6ac1a0196bba3f0f96a",
+      "grade": "validation/go-workflows-replay-turns/release-nop-final/go-workflows-replay-turns__nF9rLnq/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-replay-turns/release-oracle/go-workflows-replay-turns__J7sJLP8",
+      "result": "validation/go-workflows-replay-turns/release-oracle/go-workflows-replay-turns__J7sJLP8/result.json",
+      "result_sha256": "23b1bec4e4e63168fc74be201de8b9de3cb91f93a169b80b29f3335dfb0b5bd3",
+      "task_checksum": "08206a1807958878bc2d147cff0b93b85a0d8e830cc5f6ac1a0196bba3f0f96a",
+      "grade": "validation/go-workflows-replay-turns/release-oracle/go-workflows-replay-turns__J7sJLP8/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-reset-provenance/reference-clean-regrade-final/go-workflows-reset-provenance__8gVd4EB",
+      "result": "validation/go-workflows-reset-provenance/reference-clean-regrade-final/go-workflows-reset-provenance__8gVd4EB/result.json",
+      "result_sha256": "80331a9c07c99f56bb24168e3cddd4de522e115e59dcc6a96344ed0bd3d600b0",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "validation/go-workflows-reset-provenance/reference-clean-regrade-final/go-workflows-reset-provenance__8gVd4EB/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-reset-provenance/release-integrity-final/go-workflows-reset-provenance__528kwQV",
+      "result": "validation/go-workflows-reset-provenance/release-integrity-final/go-workflows-reset-provenance__528kwQV/result.json",
+      "result_sha256": "ee5cf1a7a9e6e29e0a792a1ecdd73c07cea8e0ffd2a22ca15275c8906b2fda40",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "validation/go-workflows-reset-provenance/release-integrity-final/go-workflows-reset-provenance__528kwQV/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-reset-provenance/release-nop-final/go-workflows-reset-provenance__8sVshyP",
+      "result": "validation/go-workflows-reset-provenance/release-nop-final/go-workflows-reset-provenance__8sVshyP/result.json",
+      "result_sha256": "1bf9c48c441dbb4e8cf9bbda42313c44eab610122ed9a546aa2685bc650973a6",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "validation/go-workflows-reset-provenance/release-nop-final/go-workflows-reset-provenance__8sVshyP/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-reset-provenance/release-oracle-final/go-workflows-reset-provenance__9eYyVcz",
+      "result": "validation/go-workflows-reset-provenance/release-oracle-final/go-workflows-reset-provenance__9eYyVcz/result.json",
+      "result_sha256": "592ef9168b2e9b605253b1e9e7020865bffc8a1154f433dfc808d84db1c40a3c",
+      "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+      "grade": "validation/go-workflows-reset-provenance/release-oracle-final/go-workflows-reset-provenance__9eYyVcz/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/go-workflows-reset-provenance/release-oracle-release/go-workflows-reset-provenance__b3nXxCx",
+      "result": "validation/go-workflows-reset-provenance/release-oracle-release/go-workflows-reset-provenance__b3nXxCx/result.json",
+      "result_sha256": "57ebe1aee77abdec87421cef0cf3c8d6724b51414be2d95ec0762ee7642cea0d",
+      "task_checksum": "697f039f48b899386e3764bc506e9da5c5f8d637507dc4ea16756190ad9d2718",
+      "grade": "validation/go-workflows-reset-provenance/release-oracle-release/go-workflows-reset-provenance__b3nXxCx/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    }
+  ],
+  "note": "Portable navigation for retained evaluation evidence. Native records are retained from execution time.",
+  "dataset_number": 9,
+  "current_task_checksum": "138ffb6e25df816380d126afb0fcab6387993beed2eb8d0b806a4ebcd5199c3f",
+  "metadata_equivalent_evaluated_checksums": [
+    "138ffb6e25df816380d126afb0fcab6387993beed2eb8d0b806a4ebcd5199c3f",
+    "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f"
+  ]
+}

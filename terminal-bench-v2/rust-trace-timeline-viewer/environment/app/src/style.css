@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f7f8fb;
+  color: #172033;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: end;
+  margin-bottom: 14px;
+}
+
+h1 {
+  flex-basis: 100%;
+  margin: 0 0 8px;
+}
+
+input, button, textarea {
+  font: inherit;
+}
+
+#details, aside, textarea {
+  background: white;
+  border: 1px solid #d8deea;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.lane {
+  background: white;
+  border: 1px solid #d8deea;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.lane h2 {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.rail {
+  position: relative;
+  min-height: 56px;
+  background: linear-gradient(90deg, #eef2f8 1px, transparent 1px) 0 0 / 10% 100%;
+  border: 1px solid #edf0f6;
+  overflow: hidden;
+}
+
+.entry, .sample {
+  position: absolute;
+  min-width: 6px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background: #3066d6;
+  cursor: pointer;
+}
+
+.sample {
+  background: #6f42c1;
+}
+
+.bookmarked {
+  outline: 3px solid #f0ad00;
+}
+
+[aria-pressed="true"] {
+  box-shadow: 0 0 0 3px #111827 inset;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}

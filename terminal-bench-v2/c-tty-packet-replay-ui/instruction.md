@@ -1,0 +1,3 @@
+Security incident responders need `/app` to act as a forensic TTY evidence replay station for seized hostile terminal captures, with searchable attacker-session review through the command line, HTTP API, and bundled browser viewer. The authoritative evidence contract for capture records, replay semantics, filters, JSON fields, and browser audit controls is `/app/replay.spec` and is part of the required behavior.
+
+The `/app` build interface is `make`; after the build, `/app/bin/ttynorm` and `/app/bin/ttyd` must exist, and `/app/bin/ttyd` must serve the audit API and UI on the requested host and port. Full credit requires satisfying the incident-response evidence contract in `/app/replay.spec`.

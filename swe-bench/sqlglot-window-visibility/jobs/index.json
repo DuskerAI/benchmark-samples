@@ -1,0 +1,240 @@
+{
+  "task_directory": "../sqlglot-window-visibility",
+  "task_files_unchanged": true,
+  "model_series": [
+    {
+      "series": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/series.json",
+      "status": "COMPLETED",
+      "task_id": "dusker-ai/sqlglot-window-visibility",
+      "task_version": "1.0.0",
+      "model_id": "anthropic/claude-sonnet-5-5",
+      "passed_trials": 3,
+      "failed_trials": 1,
+      "trials": [
+        {
+          "trial_number": 1,
+          "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn",
+          "result_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn/result.json",
+          "result_sha256": "86e2e6e49d11728d0d2b7dfbf3eea7a921c28da889172ddd1f3bca28456f17d1",
+          "grade_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn/verifier/grade.json",
+          "verification": "PASS",
+          "grade_category": "acceptance_pass",
+          "nonpassing_tests": [],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 3.6219303
+        },
+        {
+          "trial_number": 2,
+          "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY",
+          "result_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY/result.json",
+          "result_sha256": "84c711fc51fa2872b0681cbfa62e7b4ce30d141bce0b0eb81d219e48e6d26eed",
+          "grade_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY/verifier/grade.json",
+          "verification": "PASS",
+          "grade_category": "acceptance_pass",
+          "nonpassing_tests": [],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 3.0243775999999993
+        },
+        {
+          "trial_number": 3,
+          "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu",
+          "result_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu/result.json",
+          "result_sha256": "4f6e78ffcccecd78ec9c72b411ceb4b73f969b9f0b90d21999c8445542b37fcf",
+          "grade_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu/verifier/grade.json",
+          "verification": "PASS",
+          "grade_category": "acceptance_pass",
+          "nonpassing_tests": [],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 4.6393515
+        },
+        {
+          "trial_number": 4,
+          "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg",
+          "result_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg/result.json",
+          "result_sha256": "fde9419c44d27818714debe3460bda1513ccd1bdd8e739288b7bbc10874486db",
+          "grade_path": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_window_semantics.TestWindows.test_window_join_input"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 4.7487791
+        }
+      ]
+    }
+  ],
+  "native_trials": [
+    {
+      "directory": "history/initial-validation/validation/reference-clean-regrade/sqlglot-window-visibility__MmtpfXi",
+      "result": "history/initial-validation/validation/reference-clean-regrade/sqlglot-window-visibility__MmtpfXi/result.json",
+      "result_sha256": "c729a6660bf0f88d794c1543ea6c0f955c4eaa3e87540a80157f4b9c563558ac",
+      "task_checksum": "79bbfbdff7853ec5fa14b57eb5d9112ad36ba322216f156375871d8ab531603b",
+      "grade": "history/initial-validation/validation/reference-clean-regrade/sqlglot-window-visibility__MmtpfXi/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "history/initial-validation/validation/release-integrity/sqlglot-window-visibility__aAygtNj",
+      "result": "history/initial-validation/validation/release-integrity/sqlglot-window-visibility__aAygtNj/result.json",
+      "result_sha256": "cc31855efa667e0adfe8be330aafa396d27d315c66ac830d80191f032723a07e",
+      "task_checksum": "79bbfbdff7853ec5fa14b57eb5d9112ad36ba322216f156375871d8ab531603b",
+      "grade": "history/initial-validation/validation/release-integrity/sqlglot-window-visibility__aAygtNj/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "history/initial-validation/validation/release-nop/sqlglot-window-visibility__8Foa9TW",
+      "result": "history/initial-validation/validation/release-nop/sqlglot-window-visibility__8Foa9TW/result.json",
+      "result_sha256": "06d92e8ee19671fd8860947e106a192fb9f11146e62a35781369946451bba137",
+      "task_checksum": "79bbfbdff7853ec5fa14b57eb5d9112ad36ba322216f156375871d8ab531603b",
+      "grade": "history/initial-validation/validation/release-nop/sqlglot-window-visibility__8Foa9TW/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "history/initial-validation/validation/release-oracle/sqlglot-window-visibility__XmgcAKZ",
+      "result": "history/initial-validation/validation/release-oracle/sqlglot-window-visibility__XmgcAKZ/result.json",
+      "result_sha256": "e9fc184c5f3283b8aaae0b429a8c7aeaedb67a331c1cd86f2b81578d634ad0ce",
+      "task_checksum": "79bbfbdff7853ec5fa14b57eb5d9112ad36ba322216f156375871d8ab531603b",
+      "grade": "history/initial-validation/validation/release-oracle/sqlglot-window-visibility__XmgcAKZ/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn/result.json",
+      "result_sha256": "86e2e6e49d11728d0d2b7dfbf3eea7a921c28da889172ddd1f3bca28456f17d1",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1-regrade/sqlglot-window-visibility__P7S8Ypg",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1-regrade/sqlglot-window-visibility__P7S8Ypg/result.json",
+      "result_sha256": "8b564e9d55adf5d2fdb07d816d72a3ddf51b0d94cda839335830f810396945b5",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1-regrade/sqlglot-window-visibility__P7S8Ypg/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY/result.json",
+      "result_sha256": "84c711fc51fa2872b0681cbfa62e7b4ce30d141bce0b0eb81d219e48e6d26eed",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2-regrade/sqlglot-window-visibility__j7eHnWQ",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2-regrade/sqlglot-window-visibility__j7eHnWQ/result.json",
+      "result_sha256": "687493fbb40c455cfb7841d10d98a380765b1c3e42ca4285a66019e7b985c2b9",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2-regrade/sqlglot-window-visibility__j7eHnWQ/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu/result.json",
+      "result_sha256": "4f6e78ffcccecd78ec9c72b411ceb4b73f969b9f0b90d21999c8445542b37fcf",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3-regrade/sqlglot-window-visibility__J8oUY2P",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3-regrade/sqlglot-window-visibility__J8oUY2P/result.json",
+      "result_sha256": "31871f2ef9d44ac069b8c74f00a7312b790fd142a9399aa9b7c76a38d777a715",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3-regrade/sqlglot-window-visibility__J8oUY2P/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg/result.json",
+      "result_sha256": "fde9419c44d27818714debe3460bda1513ccd1bdd8e739288b7bbc10874486db",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4-regrade/sqlglot-window-visibility__QBcgnoo",
+      "result": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4-regrade/sqlglot-window-visibility__QBcgnoo/result.json",
+      "result_sha256": "6aa729ec4ff58dc7a94f3af2d4cb3a031db9c34b1d6be7f43f9bbf535976c75c",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4-regrade/sqlglot-window-visibility__QBcgnoo/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/sqlglot-window-visibility/reference-clean-regrade/sqlglot-window-visibility__LjP7hdB",
+      "result": "validation/sqlglot-window-visibility/reference-clean-regrade/sqlglot-window-visibility__LjP7hdB/result.json",
+      "result_sha256": "bb4406b996298cb905b100319c8c418aa6811f873a60c28fb8c3302c46472e18",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "validation/sqlglot-window-visibility/reference-clean-regrade/sqlglot-window-visibility__LjP7hdB/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/sqlglot-window-visibility/release-integrity/sqlglot-window-visibility__ovaUfLy",
+      "result": "validation/sqlglot-window-visibility/release-integrity/sqlglot-window-visibility__ovaUfLy/result.json",
+      "result_sha256": "b2053b32b7eab28bcafed99283d7117f0ce37ea6d1f0b4f3be5eebec3d3564cb",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "validation/sqlglot-window-visibility/release-integrity/sqlglot-window-visibility__ovaUfLy/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/sqlglot-window-visibility/release-nop/sqlglot-window-visibility__5SHCBRJ",
+      "result": "validation/sqlglot-window-visibility/release-nop/sqlglot-window-visibility__5SHCBRJ/result.json",
+      "result_sha256": "e72a169f7fdcd3b5c1abb7921e8a7fc120d5e687a4379cbc9536a4e0ecd22fbd",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "validation/sqlglot-window-visibility/release-nop/sqlglot-window-visibility__5SHCBRJ/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/sqlglot-window-visibility/release-oracle/sqlglot-window-visibility__gYmtcva",
+      "result": "validation/sqlglot-window-visibility/release-oracle/sqlglot-window-visibility__gYmtcva/result.json",
+      "result_sha256": "9041d09a9407d66c0d7d0306f2b1b8c11c8b417de666963e91824d5a27d0b5cb",
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "grade": "validation/sqlglot-window-visibility/release-oracle/sqlglot-window-visibility__gYmtcva/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    }
+  ],
+  "note": "Portable navigation for retained evaluation evidence. Native records are retained from execution time.",
+  "dataset_number": 6,
+  "current_task_checksum": "989117a8d9f108092b68599c172dadd77b4acfd202967d813c90d77a19d578db",
+  "metadata_equivalent_evaluated_checksums": [
+    "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+    "989117a8d9f108092b68599c172dadd77b4acfd202967d813c90d77a19d578db"
+  ]
+}

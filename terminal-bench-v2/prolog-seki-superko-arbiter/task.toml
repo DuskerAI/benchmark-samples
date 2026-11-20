@@ -1,0 +1,33 @@
+# Task configuration schema version
+version = "2.0"
+
+[metadata]
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "hard"
+category = "games"
+subcategories = [ ]
+number_of_milestones = 0
+codebase_size = "minimal"
+languages = [ "Prolog", "bash" ]
+tags = [ "go", "tournament", "superko", "checkpoint-resume", "prolog" ]
+expert_time_estimate_min = 300
+junior_time_estimate_min = 600
+
+# Verifier: runs the test script to check task completion
+[verifier]
+timeout_sec = 450.0
+
+# Agent: limits how long the agent can run when attempting the task
+[agent]
+timeout_sec = 1800.0
+
+# Sandbox environment limits
+[environment]
+allow_internet = false
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+gpus = 0
+gpu_types = []

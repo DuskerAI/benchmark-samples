@@ -1,0 +1,4 @@
+ARCHIVE upgrade
+MEMBER unused_upgrade
+SECTION .upgrade - 32 -
+SYMBOL arena STRONG DEF .upgrade 0

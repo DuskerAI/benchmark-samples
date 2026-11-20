@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-oracle/sqlglot-window-visibility__XmgcAKZ/artifacts/candidate-source",
+  "tree_sha256": "50e7899211b6cb24e11f15d0fe43a3b46860e6c760621187927b406040a434df",
+  "file_count": 186,
+  "bytes": 2999257,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

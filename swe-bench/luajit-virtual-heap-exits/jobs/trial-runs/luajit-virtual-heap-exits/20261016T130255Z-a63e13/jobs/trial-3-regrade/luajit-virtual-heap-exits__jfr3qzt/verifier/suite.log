@@ -1,0 +1,71 @@
+test_G01_deep_cold (__main__.DeoptSemantics.test_G01_deep_cold) ... ok
+test_G01_deep_hot (__main__.DeoptSemantics.test_G01_deep_hot) ... ok
+test_G01_diamond_cold (__main__.DeoptSemantics.test_G01_diamond_cold) ... ok
+test_G01_diamond_hot (__main__.DeoptSemantics.test_G01_diamond_hot) ... ok
+test_G01_wide_cold (__main__.DeoptSemantics.test_G01_wide_cold) ... ok
+test_G01_wide_hot (__main__.DeoptSemantics.test_G01_wide_hot) ... FAIL
+test_G02_pair_cold (__main__.DeoptSemantics.test_G02_pair_cold) ... ok
+test_G02_pair_hot (__main__.DeoptSemantics.test_G02_pair_hot) ... ok
+test_G02_ring_cold (__main__.DeoptSemantics.test_G02_ring_cold) ... ok
+test_G02_ring_hot (__main__.DeoptSemantics.test_G02_ring_hot) ... ok
+test_G02_self_cold (__main__.DeoptSemantics.test_G02_self_cold) ... ok
+test_G02_self_hot (__main__.DeoptSemantics.test_G02_self_hot) ... ok
+test_G03_hidden_cold (__main__.DeoptSemantics.test_G03_hidden_cold) ... ok
+test_G03_hidden_hot (__main__.DeoptSemantics.test_G03_hidden_hot) ... ok
+test_G03_pressure_cold (__main__.DeoptSemantics.test_G03_pressure_cold) ... ok
+test_G03_pressure_hot (__main__.DeoptSemantics.test_G03_pressure_hot) ... ok
+test_G04_distinct_cold (__main__.DeoptSemantics.test_G04_distinct_cold) ... ok
+test_G04_distinct_hot (__main__.DeoptSemantics.test_G04_distinct_hot) ... ok
+test_G05_after_cold (__main__.DeoptSemantics.test_G05_after_cold) ... ok
+test_G05_after_hot (__main__.DeoptSemantics.test_G05_after_hot) ... ok
+test_G05_before_cold (__main__.DeoptSemantics.test_G05_before_cold) ... ok
+test_G05_before_hot (__main__.DeoptSemantics.test_G05_before_hot) ... ok
+test_G06_ffi_graph_cold (__main__.DeoptSemantics.test_G06_ffi_graph_cold) ... ok
+test_G06_ffi_graph_hot (__main__.DeoptSemantics.test_G06_ffi_graph_hot) ... ok
+test_G06_payload_cold (__main__.DeoptSemantics.test_G06_payload_cold) ... ok
+test_G06_payload_hot (__main__.DeoptSemantics.test_G06_payload_hot) ... ok
+test_G06_template_cold (__main__.DeoptSemantics.test_G06_template_cold) ... ok
+test_G06_template_hot (__main__.DeoptSemantics.test_G06_template_hot) ... ok
+test_G07_mutate_cold (__main__.DeoptSemantics.test_G07_mutate_cold) ... ok
+test_G07_mutate_hot (__main__.DeoptSemantics.test_G07_mutate_hot) ... ok
+test_G08_table (__main__.DeoptSemantics.test_G08_table) ... ok
+test_G08_upvalue (__main__.DeoptSemantics.test_G08_upvalue) ... ok
+test_G09_cold (__main__.DeoptSemantics.test_G09_cold) ... ok
+test_G09_hot (__main__.DeoptSemantics.test_G09_hot) ... ok
+test_G10_flush (__main__.DeoptSemantics.test_G10_flush) ... ok
+test_G10_same_trace (__main__.DeoptSemantics.test_G10_same_trace) ... ok
+test_G11_coroutine (__main__.DeoptSemantics.test_G11_coroutine) ... ok
+test_G11_error (__main__.DeoptSemantics.test_G11_error) ... ok
+test_P01_diamond (__main__.DeoptSemantics.test_P01_diamond) ... ok
+test_P01_pair (__main__.DeoptSemantics.test_P01_pair) ... ok
+test_P01_template (__main__.DeoptSemantics.test_P01_template) ... ok
+test_P02_ffi (__main__.DeoptSemantics.test_P02_ffi) ... ok
+test_P02_flat (__main__.DeoptSemantics.test_P02_flat) ... ok
+test_P02_interpreter (__main__.DeoptSemantics.test_P02_interpreter) ... ok
+test_P02_loop_carried (__main__.DeoptSemantics.test_P02_loop_carried) ... ok
+test_P02_nosink (__main__.DeoptSemantics.test_P02_nosink) ... ok
+test_P02_table_key (__main__.DeoptSemantics.test_P02_table_key) ... ok
+test_P03_real_escapes (__main__.DeoptSemantics.test_P03_real_escapes) ... ok
+
+======================================================================
+FAIL: test_G01_wide_hot (__main__.DeoptSemantics.test_G01_wide_hot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_jit_deopt.py", line 427, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_jit_deopt.py", line 178, in topology
+    def topology(self,variant):name,mode=variant.split(':');self.run_graph(name,mode=='hot')
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_jit_deopt.py", line 173, in run_graph
+    out=self.probe(lua);self.compiled(out,hot)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_jit_deopt.py", line 125, in compiled
+    if hot:self.assertIs(result.get('imported'),True,'target guard did not compile a side trace')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not True : target guard did not compile a side trace
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.445s
+
+FAILED (failures=1)

@@ -1,0 +1,9 @@
+Skipping image OS validation for hb__6b83ba3c61fdb91c4761814fc678e5cf: docker inspect returned 1
+Claude Code is already available at the requested version
+Running command: mkdir -p $CLAUDE_CONFIG_DIR/debug $CLAUDE_CONFIG_DIR/projects/-app $CLAUDE_CONFIG_DIR/shell-snapshots $CLAUDE_CONFIG_DIR/statsig $CLAUDE_CONFIG_DIR/todos $CLAUDE_CONFIG_DIR/skills && if [ -d ~/.claude/skills ]; then cp -r ~/.claude/skills/. $CLAUDE_CONFIG_DIR/skills/ 2>/dev/null || true; fi
+Command outputs captured
+Running command: export PATH="$HOME/.local/bin:$PATH"; harbor_claude_code_instruction_d124f27123a74b69aa0dca398167f66e="$HARBOR_CLAUDE_CODE_INSTRUCTION_D124F27123A74B69AA0DCA398167F66E"; unset HARBOR_CLAUDE_CODE_INSTRUCTION_D124F27123A74B69AA0DCA398167F66E; printf "%s" "$harbor_claude_code_instruction_d124f27123a74b69aa0dca398167f66e" | claude --verbose --output-format=stream-json --max-turns 100 --effort high --disallowedTools WebFetch,WebSearch,Agent,Task --permission-mode=bypassPermissions --print 2>&1 | tee /logs/agent/claude-code.txt
+Command outputs captured
+Wrote Claude Code trajectory to /Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2/go-workflows-reset-provenance__xUAbaTU/agent/trajectory.json
+Collecting main service artifacts
+Skipping image OS validation for hb__b9dbf7aeffb160f7b1174f244d7bb556: docker inspect returned 1

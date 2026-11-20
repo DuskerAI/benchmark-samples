@@ -1,0 +1,11 @@
+# Output Schema
+
+`collector_summary.json` contains `schema_version`, `capture_files`, `messages`, `accepted_flows`, `rejected_flows`, `sequence_gaps`, `sampled_packets`, `sampled_octets`, and `exporters`. `rejected_flows` counts every data record rejected before it becomes a flow row, including stale-template and malformed-record rejections. Each exporter row contains `exporter_id`, `observation_domain_id`, `accepted_flows`, `rejected_flows`, `sequence_gaps`, `templates_seen`, and `sampling_intervals` keyed by sampler id string.
+
+`template_lifecycle.csv` has header `exporter_id,observation_domain_id,template_id,event,field_count,message_sequence,capture_file`. Event is `define`, `redefine`, or `withdraw`.
+
+`flow_records.jsonl` contains one JSON object per accepted flow with fields, in this order, `exporter_id`, `observation_domain_id`, `template_id`, `source_ip`, `destination_ip`, `protocol`, `source_port`, `destination_port`, `packets`, `octets`, `sampled_packets`, `sampled_octets`, `sampler_id`, `flow_start`, `flow_end`, and `application_name`. Write one compact JSON object per line with a trailing newline after each row.
+
+`anomaly_trace.jsonl` contains one JSON object per anomaly with fields `type`, `exporter_id`, `observation_domain_id`, `sequence`, `template_id`, `capture_file`, and `detail`.
+
+`audit_manifest.tsv` has header `artifact	sha256	rows`. It lists the other four artifacts in filename order. The `rows` value is the number of data rows or JSONL lines, not including CSV/TSV headers.

@@ -1,0 +1,29 @@
+{
+  "previous": 241,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 8,
+    "on": true,
+    "roots": 2,
+    "sides": 1
+  },
+  "sum": 7260,
+  "value": 242
+}

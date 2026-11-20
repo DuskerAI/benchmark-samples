@@ -1,0 +1,85 @@
+{
+  "orders.csv": {
+    "columns": [
+      "order_id",
+      "customer_id",
+      "product_id",
+      "order_date",
+      "quantity",
+      "unit_price"
+    ],
+    "types": [
+      "INTEGER",
+      "INTEGER",
+      "INTEGER",
+      "DATE",
+      "INTEGER",
+      "DECIMAL"
+    ],
+    "notes": "order_date is ISO-8601 (YYYY-MM-DD). unit_price is the per-unit selling price at time of order."
+  },
+  "customers.csv": {
+    "columns": [
+      "customer_id",
+      "name",
+      "email",
+      "city",
+      "country",
+      "signup_date"
+    ],
+    "types": [
+      "INTEGER",
+      "VARCHAR",
+      "VARCHAR",
+      "VARCHAR",
+      "VARCHAR",
+      "DATE"
+    ],
+    "notes": "signup_date is when the customer registered. A customer's first order may be on or after signup_date."
+  },
+  "products.csv": {
+    "columns": [
+      "product_id",
+      "name",
+      "category",
+      "supplier_id",
+      "base_price"
+    ],
+    "types": [
+      "INTEGER",
+      "VARCHAR",
+      "VARCHAR",
+      "INTEGER",
+      "DECIMAL"
+    ],
+    "notes": "base_price is the standard cost. Actual unit_price in orders may differ due to promotions."
+  },
+  "suppliers.csv": {
+    "columns": [
+      "supplier_id",
+      "name",
+      "country"
+    ],
+    "types": [
+      "INTEGER",
+      "VARCHAR",
+      "VARCHAR"
+    ],
+    "notes": "Each supplier exclusively supplies products in one category."
+  },
+  "returns.csv": {
+    "columns": [
+      "return_id",
+      "order_id",
+      "return_date",
+      "quantity_returned"
+    ],
+    "types": [
+      "INTEGER",
+      "INTEGER",
+      "DATE",
+      "INTEGER"
+    ],
+    "notes": "return_date is ISO-8601 (YYYY-MM-DD), always after the corresponding order_date. quantity_returned is the number of units the customer returned. This file may contain data quality issues \u2014 agents must handle them appropriately before computing metrics."
+  }
+}

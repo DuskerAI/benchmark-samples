@@ -1,0 +1,49 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "go-workflows-checkpoint-fencing",
+        "version": "2.0.0",
+        "type": "local",
+        "digest": "sha256:cfec573801ec75e8f566271feba7cd9a628c1862c7b6cacc1a6806976c13070c",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "oracle",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [],
+        "kwargs": {},
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    },
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "99b9c154-b558-44c6-a9ff-d26349cb430d",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/release-oracle-final/go-workflows-checkpoint-fencing__CW9mhWT",
+        "task": {
+            "name": "go-workflows-checkpoint-fencing",
+            "version": "2.0.0",
+            "type": "local",
+            "digest": "sha256:cfec573801ec75e8f566271feba7cd9a628c1862c7b6cacc1a6806976c13070c",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+        }
+    }
+}

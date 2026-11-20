@@ -1,0 +1,114 @@
+{
+    "id": "1c6f3d89-8da2-4e84-b96e-895d11c14040",
+    "task_name": "dusker-ai/go-workflows-replay-turns",
+    "trial_name": "go-workflows-replay-turns__yMpqx53",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/release-integrity/go-workflows-replay-turns__yMpqx53",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+    },
+    "source": null,
+    "task_checksum": "05b9c23bf6bfe80cc6400beeea216615116757c5fa54d2abb7e79f80119acff9",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "go-workflows-replay-turns__yMpqx53",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/release-integrity",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "workflow_probe:IntegrityProbe",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "ce217a0a-edc6-4ba1-ad21-d6766cf42c1c",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "workflow-integrity-probe",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-15T22:27:51.062578Z",
+    "finished_at": "2026-10-15T22:28:12.170403Z",
+    "environment_setup": {
+        "started_at": "2026-10-15T22:27:51.083653Z",
+        "finished_at": "2026-10-15T22:27:53.887018Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-15T22:27:53.887083Z",
+        "finished_at": "2026-10-15T22:27:53.887149Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-15T22:27:53.887225Z",
+        "finished_at": "2026-10-15T22:27:56.140176Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-15T22:28:01.417998Z",
+        "finished_at": "2026-10-15T22:28:12.170373Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,3 @@
+from_org	from_name	from_scala_binary	from_version	dep_scope	to_org	to_name	to_scala_binary	version	classifier	platform
+com.acme	root	2.13	1.0.0	compile	com.acme	core	2.13	1.2.0		
+com.acme	core	2.13	1.2.0	compile	com.acme	util		1.0.0		

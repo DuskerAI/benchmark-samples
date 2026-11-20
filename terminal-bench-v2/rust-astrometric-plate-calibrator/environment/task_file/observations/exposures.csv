@@ -1,0 +1,4 @@
+exposure_id,file,center_ra_deg,center_dec_deg,epoch_year,crpix_x,crpix_y,scale_arcsec_px,rotation_deg,radial_k
+wrap_2024a,exposure_wrap_2024a.csv,359.965,-0.12,2024.5,2048,2048,0.82,27.5,2e-08
+crowded_2025b,exposure_crowded_2025b.csv,142.375,27.8,2025.2,1975,2055,0.77,-13,-1.6e-08
+offaxis_2023c,exposure_offaxis_2023c.csv,211.42,-18.35,2023.75,2059,1988,0.91,41,3.1e-08

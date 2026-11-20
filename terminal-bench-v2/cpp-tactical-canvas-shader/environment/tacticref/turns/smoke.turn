@@ -1,0 +1,5 @@
+board 10 8
+time 0.5
+select 3 2
+zone base 0 0 6 4 2 1
+unit scout 0 0 7 3 3 2 5 2

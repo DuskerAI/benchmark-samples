@@ -1,0 +1,36 @@
+{
+  "events": [
+    {"type": "cluster", "membership": {"phase": "stable", "voters": ["a", "b", "c"], "learners": ["d"]}},
+    {"type": "install_snapshot", "node": "a", "last_index": 10, "last_term": 4, "state": {"p": 7, "q": 3}, "sessions": {"cli": {"seq": 2, "response": 7, "request_id": "p0"}}, "membership": {"phase": "stable", "voters": ["a", "b", "c"], "learners": ["d"]}},
+    {"type": "install_snapshot", "node": "b", "last_index": 10, "last_term": 4, "state": {"p": 7, "q": 3}, "sessions": {"cli": {"seq": 2, "response": 7, "request_id": "p0"}}, "membership": {"phase": "stable", "voters": ["a", "b", "c"], "learners": ["d"]}},
+    {"type": "install_snapshot", "node": "c", "last_index": 10, "last_term": 4, "state": {"p": 7, "q": 3}, "sessions": {"cli": {"seq": 2, "response": 7, "request_id": "p0"}}, "membership": {"phase": "stable", "voters": ["a", "b", "c"], "learners": ["d"]}},
+    {"type": "append_entries", "node": "a", "term": 5, "prev_index": 10, "prev_term": 4, "leader_commit": 15, "entries": [
+      {"index": 11, "term": 4, "type": "command", "client_id": "cli", "seq": 2, "request_id": "p0-retry", "command": {"op": "incr", "key": "p", "delta": 2}},
+      {"index": 12, "term": 4, "type": "command", "client_id": "other", "seq": 1, "request_id": "q1", "command": {"op": "delete", "key": "q"}},
+      {"index": 13, "term": 5, "type": "config", "membership": {"phase": "joint", "voters": ["a", "b", "d"], "outgoing_voters": ["a", "b", "c"], "learners": []}},
+      {"index": 14, "term": 5, "type": "config", "membership": {"phase": "stable", "voters": ["a", "b", "d"], "learners": []}},
+      {"index": 15, "term": 5, "type": "command", "client_id": "zed", "seq": 1, "request_id": "z1", "command": {"op": "set", "key": "z", "value": 9}}
+    ]},
+    {"type": "append_entries", "node": "b", "term": 8, "prev_index": 10, "prev_term": 4, "leader_commit": 12, "entries": [
+      {"index": 11, "term": 4, "type": "command", "client_id": "cli", "seq": 2, "request_id": "p0-retry", "command": {"op": "incr", "key": "p", "delta": 2}},
+      {"index": 12, "term": 8, "type": "command", "client_id": "other", "seq": 1, "request_id": "stale", "command": {"op": "set", "key": "q", "value": 100}}
+    ]},
+    {"type": "append_entries", "node": "b", "term": 5, "prev_index": 11, "prev_term": 4, "leader_commit": 15, "entries": [
+      {"index": 12, "term": 4, "type": "command", "client_id": "other", "seq": 1, "request_id": "q1", "command": {"op": "delete", "key": "q"}},
+      {"index": 13, "term": 5, "type": "config", "membership": {"phase": "joint", "voters": ["a", "b", "d"], "outgoing_voters": ["a", "b", "c"], "learners": []}},
+      {"index": 14, "term": 5, "type": "config", "membership": {"phase": "stable", "voters": ["a", "b", "d"], "learners": []}},
+      {"index": 15, "term": 5, "type": "command", "client_id": "zed", "seq": 1, "request_id": "z1", "command": {"op": "set", "key": "z", "value": 9}}
+    ]},
+    {"type": "append_entries", "node": "c", "term": 5, "prev_index": 10, "prev_term": 4, "leader_commit": 13, "entries": [
+      {"index": 11, "term": 4, "type": "command", "client_id": "cli", "seq": 2, "request_id": "p0-retry", "command": {"op": "incr", "key": "p", "delta": 2}},
+      {"index": 12, "term": 4, "type": "command", "client_id": "other", "seq": 1, "request_id": "q1", "command": {"op": "delete", "key": "q"}},
+      {"index": 13, "term": 5, "type": "config", "membership": {"phase": "joint", "voters": ["a", "b", "d"], "outgoing_voters": ["a", "b", "c"], "learners": []}}
+    ]},
+    {"type": "append_entries", "node": "d", "term": 5, "prev_index": 12, "prev_term": 4, "leader_commit": 15, "entries": [
+      {"index": 13, "term": 5, "type": "config", "membership": {"phase": "joint", "voters": ["a", "b", "d"], "outgoing_voters": ["a", "b", "c"], "learners": []}},
+      {"index": 14, "term": 5, "type": "config", "membership": {"phase": "stable", "voters": ["a", "b", "d"], "learners": []}},
+      {"index": 15, "term": 5, "type": "command", "client_id": "zed", "seq": 1, "request_id": "z1", "command": {"op": "set", "key": "z", "value": 9}}
+    ]},
+    {"type": "crash_cut", "live": ["a", "b", "d"]}
+  ]
+}

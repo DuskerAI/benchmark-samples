@@ -1,0 +1,17 @@
+{
+  "request_id": "aptplan-2026-07-edge",
+  "architecture": "amd64",
+  "requested": [
+    "rescue-console",
+    "observatory-agent",
+    "codec-worker"
+  ],
+  "held": [
+    "legacy-gui",
+    "libssl-compat"
+  ],
+  "forbidden_suites": [
+    "experimental",
+    "quarantine"
+  ]
+}

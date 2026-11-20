@@ -1,0 +1,18 @@
+{
+    "job_name": "trial-1-regrade",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+        }
+    ],
+    "source_jobs": [
+        {
+            "action": "regrade",
+            "type": "local",
+            "job_id": "4642a91f-6b49-4b72-b17b-57cfbaa72a04",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1"
+        }
+    ]
+}

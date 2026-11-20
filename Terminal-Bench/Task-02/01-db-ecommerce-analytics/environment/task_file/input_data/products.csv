@@ -1,0 +1,51 @@
+product_id,name,category,supplier_id,base_price
+1,Wireless Headphones,Electronics,1,124.11
+2,Bluetooth Speaker,Electronics,1,28.88
+3,USB-C Hub,Electronics,1,67.63
+4,Mechanical Keyboard,Electronics,1,59.6
+5,Webcam HD,Electronics,1,139.15
+6,Monitor Stand,Electronics,1,129.89
+7,LED Desk Lamp,Electronics,1,163.29
+8,Smart Plug,Electronics,1,38.48
+9,External SSD,Electronics,1,90.4
+10,Noise Cancelling Earbuds,Electronics,1,29.62
+11,Running Shoes,Apparel,2,37.96
+12,Yoga Pants,Apparel,2,68.06
+13,Down Jacket,Apparel,2,17.79
+14,Baseball Cap,Apparel,2,35.88
+15,Cotton T-Shirt,Apparel,2,83.24
+16,Denim Jeans,Apparel,2,72.22
+17,Wool Sweater,Apparel,2,38.15
+18,Leather Belt,Apparel,2,76.87
+19,Waterproof Boots,Apparel,2,99.99
+20,Compression Socks,Apparel,2,15.68
+21,Data Science Handbook,Books,3,50.68
+22,Clean Code,Books,3,45.51
+23,Design Patterns,Books,3,28.33
+24,The Pragmatic Programmer,Books,3,19.46
+25,Deep Learning Book,Books,3,57.95
+26,Python Cookbook,Books,3,28.16
+27,Algorithms Unlocked,Books,3,16.45
+28,Linux Bible,Books,3,16.64
+29,DevOps Handbook,Books,3,52.68
+30,Refactoring,Books,3,40.98
+31,Plant Pot Set,Home & Garden,4,66.5
+32,Garden Hose,Home & Garden,4,61.08
+33,Compost Bin,Home & Garden,4,47.54
+34,LED Grow Light,Home & Garden,4,78.12
+35,Pruning Shears,Home & Garden,4,36.5
+36,Seed Starter Kit,Home & Garden,4,48.64
+37,Raised Garden Bed,Home & Garden,4,68.06
+38,Solar Pathway Lights,Home & Garden,4,53.3
+39,Garden Gloves,Home & Garden,4,70.32
+40,Watering Can,Home & Garden,4,50.41
+41,Yoga Mat,Sports,5,86.91
+42,Resistance Bands,Sports,5,13.13
+43,Foam Roller,Sports,5,33.52
+44,Jump Rope,Sports,5,40.41
+45,Dumbbell Set,Sports,5,16.94
+46,Pull-up Bar,Sports,5,34.07
+47,Water Bottle,Sports,5,19.31
+48,Gym Bag,Sports,5,39.13
+49,Running Belt,Sports,5,79.2
+50,Massage Gun,Sports,5,48.86

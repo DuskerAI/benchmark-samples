@@ -1,0 +1,48 @@
+{
+  "release": {
+    "project": "libwidget",
+    "version": "2.4.1",
+    "artifact_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "sequence": 42,
+    "signer": "release-alpha",
+    "statement_sig": "7e5ad5476a61d35ca44d7184d21bfe4da1fa451ee80f24a15292fe3503e48203"
+  },
+  "log": {
+    "log_id": "main",
+    "prev_size": 2,
+    "prev_root_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "tree_size": 4,
+    "root_hash": "fc0cf3094d157a4d6a0a2b8f35ec04d1bf43b55d7dd3c58780bb0d7ad4dfd395",
+    "checkpoint_sig": "e3e392240cd8b0a692a722a5c59ccf250f6677447764b57d95090cbef6b25d91"
+  },
+  "entries": [
+    {
+      "index": 2,
+      "leaf_hash": "21d5daf9004c639ae14fbedb856f08b5f8d32590abaf4b285c704330c5c7e27e"
+    },
+    {
+      "index": 3,
+      "leaf_hash": "85a48f2775ac5b5b928fbec9a8744775a60bc0ce04d935393a013b797dfbdeb9"
+    }
+  ],
+  "witnesses": [
+    {
+      "id": "north",
+      "tree_size": 4,
+      "root_hash": "fc0cf3094d157a4d6a0a2b8f35ec04d1bf43b55d7dd3c58780bb0d7ad4dfd395",
+      "sig": "5172c4c0031db3fa6b14eb008ddd3f76c97467dfb5a78d93ead7e3a3f14a7f09"
+    },
+    {
+      "id": "south",
+      "tree_size": 4,
+      "root_hash": "fc0cf3094d157a4d6a0a2b8f35ec04d1bf43b55d7dd3c58780bb0d7ad4dfd395",
+      "sig": "37916c81c10c20f09f674564ae9ab6ed83e98297f5288d08dd8328aede835802"
+    },
+    {
+      "id": "east",
+      "tree_size": 4,
+      "root_hash": "fc0cf3094d157a4d6a0a2b8f35ec04d1bf43b55d7dd3c58780bb0d7ad4dfd395",
+      "sig": "4303fe4a61ab1d58e1cbde1b4add1b6730e0919b61bc31fd067c9a79dc75f1f0"
+    }
+  ]
+}

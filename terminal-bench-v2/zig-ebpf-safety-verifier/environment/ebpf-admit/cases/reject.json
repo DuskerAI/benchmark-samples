@@ -1,0 +1,1 @@
+{"pkt_len":4,"insns":[{"op":"add_imm","dst":1,"imm":4},{"op":"ld_pkt","dst":0,"base":1,"off":0,"size":1},{"op":"exit"}]}

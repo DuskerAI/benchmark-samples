@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+    },
+    "trial_name": "go-workflows-replay-turns__wGoXDwz",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/reference-clean-regrade",
+    "job_id": "97027280-a485-4b15-a3f4-f98bacf7f2da",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "dde7595f-0673-4e28-a1e1-5a2002883cf1",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/draft-oracle/go-workflows-replay-turns__yQ9ZNVW"
+    }
+}

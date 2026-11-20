@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": false,
+  "case_id": "delta-overflow-004",
+  "evacuation_status": "advisory",
+  "exceptions": [],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-03",
+  "jurisdiction": "delta",
+  "medical_dependent": false,
+  "opened_at": "2026-02-12",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 100,
+  "shelter_type": "gym",
+  "staff_count": 3,
+  "transport_status": "not_required",
+  "water_days": 3
+}

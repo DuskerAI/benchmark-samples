@@ -1,0 +1,7 @@
+# Local ABI policy consumed by /app/abiguard.
+allow_removed = [
+  "libalpha.so:alpha_deprecated:ALPHA_0.9"
+]
+allowed_new_globals = [
+  "libbeta.so:beta_trace_marker:BETA_1.0"
+]

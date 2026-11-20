@@ -1,0 +1,115 @@
+{
+  "source": "Dusker SWE catalog.json, dataset9 (copied verbatim at packaging time)",
+  "sample_location": "swe-bench/go-workflows-reset-provenance",
+  "catalog_entry": {
+    "number": 9,
+    "slug": "go-workflows-reset-provenance",
+    "task_id": "dusker-ai/go-workflows-reset-provenance",
+    "version": "3.0.0",
+    "description": "Recover shared workflow history and external work across nested execution resets",
+    "category": "Durable workflow engines",
+    "path": "dataset9/go-workflows-reset-provenance",
+    "jobs": "dataset9/jobs",
+    "base_commit": "8290e0a52ebcb5225a2dcfe154dff5b97054481f",
+    "upstream_commit": "48e811947bece0a2a9993d85edcf9a0f3a7e486b",
+    "repository": "https://github.com/cschleiden/go-workflows",
+    "harbor_task_checksum": "138ffb6e25df816380d126afb0fcab6387993beed2eb8d0b806a4ebcd5199c3f",
+    "package_tree_sha256": "337b5cb1fb11bfb17d29e5d86c96d0df6a54fe39c820d16ab8f72108bf4f6149",
+    "files": {
+      "environment/Dockerfile": {
+        "sha256": "3647d855f3161ea70155c7d178b0e65c060e4e36534dd194e84208e615d83f0b",
+        "bytes": 906
+      },
+      "environment/base.bundle": {
+        "sha256": "02b62880d4a357d0e5d39a688b81fd9f979733268c1a6ea0926a6e3462adbed4",
+        "bytes": 2356259
+      },
+      "instruction.md": {
+        "sha256": "f334107a10a46a5225efa03b3fc4235672b7bc26901ddd597df2d3b1f36dbd0d",
+        "bytes": 2713
+      },
+      "solution/gold_patch.diff": {
+        "sha256": "b22b70037b81c6a02551abb0dcecc4526911f8344b932e51ae7a84b96e829cee",
+        "bytes": 8732
+      },
+      "solution/solve.sh": {
+        "sha256": "369a3d62fac253a533c6bca14142d1a60f323dad5482328ea7e3f0c25d3a4094",
+        "bytes": 190
+      },
+      "task.toml": {
+        "sha256": "51f79b3e0a38dc20df13096828a2f6f619bf98a10a8e1d61bf086995501a83b9",
+        "bytes": 1958
+      },
+      "tests/Dockerfile": {
+        "sha256": "4ff236496cbcb2a9ca92af5883b039a693c94993cb7f30388e48852705c12828",
+        "bytes": 963
+      },
+      "tests/base.bundle": {
+        "sha256": "02b62880d4a357d0e5d39a688b81fd9f979733268c1a6ea0926a6e3462adbed4",
+        "bytes": 2356259
+      },
+      "tests/config.json": {
+        "sha256": "af59da20d039b09efd05323921fbe1c7ccc2775f4389806403af19b9be67679b",
+        "bytes": 6301
+      },
+      "tests/driver.go": {
+        "sha256": "c95d491ca8c97bf778b2290592b0e587dfaf1196c422ccf85fdf1bee2bbf5da9",
+        "bytes": 11240
+      },
+      "tests/launch_candidate.py": {
+        "sha256": "6edd12119a678e521dbcfc46605e642d0c558a2e4bb48e1b49e26c8b71db21c8",
+        "bytes": 522
+      },
+      "tests/parser.py": {
+        "sha256": "f7bd9eec33d12f5da069344f50590b46dc48e7cb56e468a2512806a2329b3f5d",
+        "bytes": 6668
+      },
+      "tests/run_script.sh": {
+        "sha256": "b7282c83daee2669b8bd15c3fa3977f7856a7dd8e3cf7ef0f6a3fb664370207b",
+        "bytes": 94
+      },
+      "tests/test.sh": {
+        "sha256": "da861e7427ddebc5b9189e29556c7f3fd1c3ae5baa8670fb1aa9a618f00aba34",
+        "bytes": 924
+      },
+      "tests/test_patch.patch": {
+        "sha256": "399d3e310c53fc18963bee57a7ecfab81858a79313b3e5fe741b0285f102889e",
+        "bytes": 25912
+      }
+    },
+    "evidence_tree_sha256": "a40941fda57c2f8eef61477fe49e163bfca76e0cc44b87449cd10b08181a9a62",
+    "declared_metadata_equivalent_checksums": [
+      "138ffb6e25df816380d126afb0fcab6387993beed2eb8d0b806a4ebcd5199c3f",
+      "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f"
+    ],
+    "recorded_controls": {
+      "clean_regrade": {
+        "result": "validation/go-workflows-reset-provenance/reference-clean-regrade-final/go-workflows-reset-provenance__8gVd4EB/result.json",
+        "grade": "validation/go-workflows-reset-provenance/reference-clean-regrade-final/go-workflows-reset-provenance__8gVd4EB/verifier/grade.json",
+        "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+        "reward": 1
+      },
+      "nop": {
+        "result": "validation/go-workflows-reset-provenance/release-nop-final/go-workflows-reset-provenance__8sVshyP/result.json",
+        "grade": "validation/go-workflows-reset-provenance/release-nop-final/go-workflows-reset-provenance__8sVshyP/verifier/grade.json",
+        "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+        "reward": 0
+      },
+      "oracle": {
+        "result": "validation/go-workflows-reset-provenance/release-oracle-final/go-workflows-reset-provenance__9eYyVcz/result.json",
+        "grade": "validation/go-workflows-reset-provenance/release-oracle-final/go-workflows-reset-provenance__9eYyVcz/verifier/grade.json",
+        "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+        "reward": 1
+      }
+    },
+    "tests": {
+      "fail_to_pass": 28,
+      "pass_to_pass": 19
+    },
+    "model_trials": {
+      "total": 4,
+      "passed": 0,
+      "failed": 4
+    }
+  }
+}

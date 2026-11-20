@@ -1,0 +1,2065 @@
+test_G01_model_graph_0_0_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_0_cjs) ... FAIL
+test_G01_model_graph_0_0_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_0_esm) ... FAIL
+test_G01_model_graph_0_1_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_1_cjs) ... FAIL
+test_G01_model_graph_0_1_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_1_esm) ... FAIL
+test_G01_model_graph_0_2_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_2_cjs) ... FAIL
+test_G01_model_graph_0_2_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_2_esm) ... FAIL
+test_G01_model_graph_0_3_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_3_cjs) ... FAIL
+test_G01_model_graph_0_3_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_3_esm) ... FAIL
+test_G01_model_graph_1_0_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_0_cjs) ... FAIL
+test_G01_model_graph_1_0_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_0_esm) ... FAIL
+test_G01_model_graph_1_1_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_1_cjs) ... FAIL
+test_G01_model_graph_1_1_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_1_esm) ... FAIL
+test_G01_model_graph_1_2_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_2_cjs) ... FAIL
+test_G01_model_graph_1_2_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_2_esm) ... FAIL
+test_G01_model_graph_1_3_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_3_cjs) ... FAIL
+test_G01_model_graph_1_3_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_3_esm) ... FAIL
+test_G01_model_graph_2_0_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_0_cjs) ... FAIL
+test_G01_model_graph_2_0_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_0_esm) ... FAIL
+test_G01_model_graph_2_1_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_1_cjs) ... FAIL
+test_G01_model_graph_2_1_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_1_esm) ... FAIL
+test_G01_model_graph_2_2_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_2_cjs) ... FAIL
+test_G01_model_graph_2_2_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_2_esm) ... FAIL
+test_G01_model_graph_2_3_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_3_cjs) ... FAIL
+test_G01_model_graph_2_3_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_3_esm) ... FAIL
+test_P01_normal_batches_and_laziness_cjs (test_savepoint_semantics.SavepointSemantics.test_P01_normal_batches_and_laziness_cjs) ... ok
+test_P01_normal_batches_and_laziness_esm (test_savepoint_semantics.SavepointSemantics.test_P01_normal_batches_and_laziness_esm) ... ok
+test_P01_normal_previous_values_cjs (test_savepoint_semantics.SavepointSemantics.test_P01_normal_previous_values_cjs) ... ok
+test_P01_normal_previous_values_esm (test_savepoint_semantics.SavepointSemantics.test_P01_normal_previous_values_esm) ... ok
+test_P02_ordinary_scope_ownership_cjs (test_savepoint_semantics.SavepointSemantics.test_P02_ordinary_scope_ownership_cjs) ... ok
+test_P02_ordinary_scope_ownership_esm (test_savepoint_semantics.SavepointSemantics.test_P02_ordinary_scope_ownership_esm) ... ok
+test_P03_low_level_system_without_transaction_callbacks_cjs (test_savepoint_semantics.SavepointSemantics.test_P03_low_level_system_without_transaction_callbacks_cjs) ... ok
+test_P03_low_level_system_without_transaction_callbacks_esm (test_savepoint_semantics.SavepointSemantics.test_P03_low_level_system_without_transaction_callbacks_esm) ... ok
+test_P04_normal_trigger_and_untracked_cleanup_cjs (test_savepoint_semantics.SavepointSemantics.test_P04_normal_trigger_and_untracked_cleanup_cjs) ... ok
+test_P04_normal_trigger_and_untracked_cleanup_esm (test_savepoint_semantics.SavepointSemantics.test_P04_normal_trigger_and_untracked_cleanup_esm) ... ok
+test_S01_commit_return_and_nested_publication_cjs (test_savepoint_semantics.SavepointSemantics.test_S01_commit_return_and_nested_publication_cjs) ... FAIL
+test_S01_commit_return_and_nested_publication_esm (test_savepoint_semantics.SavepointSemantics.test_S01_commit_return_and_nested_publication_esm) ... FAIL
+test_S02_abort_exact_null_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_null_cjs) ... FAIL
+test_S02_abort_exact_null_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_null_esm) ... FAIL
+test_S02_abort_exact_number_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_number_cjs) ... FAIL
+test_S02_abort_exact_number_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_number_esm) ... FAIL
+test_S02_abort_exact_object_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_object_cjs) ... FAIL
+test_S02_abort_exact_object_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_object_esm) ... FAIL
+test_S02_abort_exact_string_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_string_cjs) ... FAIL
+test_S02_abort_exact_string_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_string_esm) ... FAIL
+test_S02_abort_exact_undefined_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_undefined_cjs) ... FAIL
+test_S02_abort_exact_undefined_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_undefined_esm) ... FAIL
+test_S03_nested_previous_cache_cjs (test_savepoint_semantics.SavepointSemantics.test_S03_nested_previous_cache_cjs) ... FAIL
+test_S03_nested_previous_cache_esm (test_savepoint_semantics.SavepointSemantics.test_S03_nested_previous_cache_esm) ... FAIL
+test_S03_outer_abort_undoes_inner_commit_cjs (test_savepoint_semantics.SavepointSemantics.test_S03_outer_abort_undoes_inner_commit_cjs) ... FAIL
+test_S03_outer_abort_undoes_inner_commit_esm (test_savepoint_semantics.SavepointSemantics.test_S03_outer_abort_undoes_inner_commit_esm) ... FAIL
+test_S04_existing_batch_work_survives_abort_cjs (test_savepoint_semantics.SavepointSemantics.test_S04_existing_batch_work_survives_abort_cjs) ... FAIL
+test_S04_existing_batch_work_survives_abort_esm (test_savepoint_semantics.SavepointSemantics.test_S04_existing_batch_work_survives_abort_esm) ... FAIL
+test_S04_ordinary_batch_inside_aborted_transaction_cjs (test_savepoint_semantics.SavepointSemantics.test_S04_ordinary_batch_inside_aborted_transaction_cjs) ... FAIL
+test_S04_ordinary_batch_inside_aborted_transaction_esm (test_savepoint_semantics.SavepointSemantics.test_S04_ordinary_batch_inside_aborted_transaction_esm) ... FAIL
+test_S05_computed_net_noop_after_reads_cjs (test_savepoint_semantics.SavepointSemantics.test_S05_computed_net_noop_after_reads_cjs) ... FAIL
+test_S05_computed_net_noop_after_reads_esm (test_savepoint_semantics.SavepointSemantics.test_S05_computed_net_noop_after_reads_esm) ... FAIL
+test_S05_direct_net_noop_cjs (test_savepoint_semantics.SavepointSemantics.test_S05_direct_net_noop_cjs) ... FAIL
+test_S05_direct_net_noop_esm (test_savepoint_semantics.SavepointSemantics.test_S05_direct_net_noop_esm) ... FAIL
+test_S06_successful_cache_is_published_without_reexecution_cjs (test_savepoint_semantics.SavepointSemantics.test_S06_successful_cache_is_published_without_reexecution_cjs) ... FAIL
+test_S06_successful_cache_is_published_without_reexecution_esm (test_savepoint_semantics.SavepointSemantics.test_S06_successful_cache_is_published_without_reexecution_esm) ... FAIL
+test_S06_unevaluated_cache_and_unrelated_laziness_cjs (test_savepoint_semantics.SavepointSemantics.test_S06_unevaluated_cache_and_unrelated_laziness_cjs) ... FAIL
+test_S06_unevaluated_cache_and_unrelated_laziness_esm (test_savepoint_semantics.SavepointSemantics.test_S06_unevaluated_cache_and_unrelated_laziness_esm) ... FAIL
+test_S07_trigger_abort_preserves_cache_and_notifications_cjs (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_abort_preserves_cache_and_notifications_cjs) ... FAIL
+test_S07_trigger_abort_preserves_cache_and_notifications_esm (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_abort_preserves_cache_and_notifications_esm) ... FAIL
+test_S07_trigger_commit_and_derived_equality_cjs (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_commit_and_derived_equality_cjs) ... FAIL
+test_S07_trigger_commit_and_derived_equality_esm (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_commit_and_derived_equality_esm) ... FAIL
+test_S08_dynamic_branch_rollback_restores_only_live_edges_cjs (test_savepoint_semantics.SavepointSemantics.test_S08_dynamic_branch_rollback_restores_only_live_edges_cjs) ... FAIL
+test_S08_dynamic_branch_rollback_restores_only_live_edges_esm (test_savepoint_semantics.SavepointSemantics.test_S08_dynamic_branch_rollback_restores_only_live_edges_esm) ... FAIL
+test_S09_ambient_dependency_prefix_rollback_cjs (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_dependency_prefix_rollback_cjs) ... FAIL
+test_S09_ambient_dependency_prefix_rollback_esm (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_dependency_prefix_rollback_esm) ... FAIL
+test_S09_ambient_tracking_commits_reads_cjs (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_tracking_commits_reads_cjs) ... FAIL
+test_S09_ambient_tracking_commits_reads_esm (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_tracking_commits_reads_esm) ... FAIL
+test_S10_escaped_new_values_reset_on_abort_cjs (test_savepoint_semantics.SavepointSemantics.test_S10_escaped_new_values_reset_on_abort_cjs) ... FAIL
+test_S10_escaped_new_values_reset_on_abort_esm (test_savepoint_semantics.SavepointSemantics.test_S10_escaped_new_values_reset_on_abort_esm) ... FAIL
+test_S11_aborted_effect_is_released_once_after_restore_cjs (test_savepoint_semantics.SavepointSemantics.test_S11_aborted_effect_is_released_once_after_restore_cjs) ... FAIL
+test_S11_aborted_effect_is_released_once_after_restore_esm (test_savepoint_semantics.SavepointSemantics.test_S11_aborted_effect_is_released_once_after_restore_esm) ... FAIL
+test_S11_nested_committed_resources_compensate_in_reverse_creation_cjs (test_savepoint_semantics.SavepointSemantics.test_S11_nested_committed_resources_compensate_in_reverse_creation_cjs) ... FAIL
+test_S11_nested_committed_resources_compensate_in_reverse_creation_esm (test_savepoint_semantics.SavepointSemantics.test_S11_nested_committed_resources_compensate_in_reverse_creation_esm) ... FAIL
+test_S12_inner_abort_keeps_parent_resource_live_cjs (test_savepoint_semantics.SavepointSemantics.test_S12_inner_abort_keeps_parent_resource_live_cjs) ... FAIL
+test_S12_inner_abort_keeps_parent_resource_live_esm (test_savepoint_semantics.SavepointSemantics.test_S12_inner_abort_keeps_parent_resource_live_esm) ... FAIL
+test_S13_parent_birth_stopped_in_inner_abort_is_revived_cjs (test_savepoint_semantics.SavepointSemantics.test_S13_parent_birth_stopped_in_inner_abort_is_revived_cjs) ... FAIL
+test_S13_parent_birth_stopped_in_inner_abort_is_revived_esm (test_savepoint_semantics.SavepointSemantics.test_S13_parent_birth_stopped_in_inner_abort_is_revived_esm) ... FAIL
+test_S13_tentative_existing_stop_aborts_without_cleanup_cjs (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_existing_stop_aborts_without_cleanup_cjs) ... FAIL
+test_S13_tentative_existing_stop_aborts_without_cleanup_esm (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_existing_stop_aborts_without_cleanup_esm) ... FAIL
+test_S13_tentative_stop_commits_once_cjs (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_stop_commits_once_cjs) ... FAIL
+test_S13_tentative_stop_commits_once_esm (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_stop_commits_once_esm) ... FAIL
+test_S14_scope_stop_rollback_restores_nested_tree_cjs (test_savepoint_semantics.SavepointSemantics.test_S14_scope_stop_rollback_restores_nested_tree_cjs) ... FAIL
+test_S14_scope_stop_rollback_restores_nested_tree_esm (test_savepoint_semantics.SavepointSemantics.test_S14_scope_stop_rollback_restores_nested_tree_esm) ... FAIL
+test_S15_computed_child_generation_aborts_cjs (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_aborts_cjs) ... FAIL
+test_S15_computed_child_generation_aborts_esm (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_aborts_esm) ... FAIL
+test_S15_computed_child_generation_commits_without_rerunning_getter_cjs (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_commits_without_rerunning_getter_cjs) ... FAIL
+test_S15_computed_child_generation_commits_without_rerunning_getter_esm (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_commits_without_rerunning_getter_esm) ... FAIL
+test_S16_shared_computed_survives_tentative_owner_stop_cjs (test_savepoint_semantics.SavepointSemantics.test_S16_shared_computed_survives_tentative_owner_stop_cjs) ... FAIL
+test_S16_shared_computed_survives_tentative_owner_stop_esm (test_savepoint_semantics.SavepointSemantics.test_S16_shared_computed_survives_tentative_owner_stop_esm) ... FAIL
+test_S17_compensation_created_resource_belongs_to_surviving_parent_cjs (test_savepoint_semantics.SavepointSemantics.test_S17_compensation_created_resource_belongs_to_surviving_parent_cjs) ... FAIL
+test_S17_compensation_created_resource_belongs_to_surviving_parent_esm (test_savepoint_semantics.SavepointSemantics.test_S17_compensation_created_resource_belongs_to_surviving_parent_esm) ... FAIL
+test_S17_inner_compensation_writes_join_parent_cjs (test_savepoint_semantics.SavepointSemantics.test_S17_inner_compensation_writes_join_parent_cjs) ... FAIL
+test_S17_inner_compensation_writes_join_parent_esm (test_savepoint_semantics.SavepointSemantics.test_S17_inner_compensation_writes_join_parent_esm) ... FAIL
+test_S17_outer_compensation_writes_publish_after_restore_cjs (test_savepoint_semantics.SavepointSemantics.test_S17_outer_compensation_writes_publish_after_restore_cjs) ... FAIL
+test_S17_outer_compensation_writes_publish_after_restore_esm (test_savepoint_semantics.SavepointSemantics.test_S17_outer_compensation_writes_publish_after_restore_esm) ... FAIL
+test_S18_cleanup_failure_precedes_observer_failure_after_commit_cjs (test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_cjs) ... FAIL
+test_S18_cleanup_failure_precedes_observer_failure_after_commit_esm (test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_esm) ... FAIL
+test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_cjs (test_savepoint_semantics.SavepointSemantics.test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_cjs) ... FAIL
+test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_esm (test_savepoint_semantics.SavepointSemantics.test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_esm) ... FAIL
+test_S19_reentrant_transactions_preserve_notification_cursor_cjs (test_savepoint_semantics.SavepointSemantics.test_S19_reentrant_transactions_preserve_notification_cursor_cjs) ... FAIL
+test_S19_reentrant_transactions_preserve_notification_cursor_esm (test_savepoint_semantics.SavepointSemantics.test_S19_reentrant_transactions_preserve_notification_cursor_esm) ... FAIL
+test_S20_assigned_identity_restored_without_deep_cloning_cjs (test_savepoint_semantics.SavepointSemantics.test_S20_assigned_identity_restored_without_deep_cloning_cjs) ... FAIL
+test_S20_assigned_identity_restored_without_deep_cloning_esm (test_savepoint_semantics.SavepointSemantics.test_S20_assigned_identity_restored_without_deep_cloning_esm) ... FAIL
+test_S20_callback_result_identity_and_caught_error_cjs (test_savepoint_semantics.SavepointSemantics.test_S20_callback_result_identity_and_caught_error_cjs) ... FAIL
+test_S20_callback_result_identity_and_caught_error_esm (test_savepoint_semantics.SavepointSemantics.test_S20_callback_result_identity_and_caught_error_esm) ... FAIL
+test_S21_failed_speculative_read_restores_valid_cache_cjs (test_savepoint_semantics.SavepointSemantics.test_S21_failed_speculative_read_restores_valid_cache_cjs) ... FAIL
+test_S21_failed_speculative_read_restores_valid_cache_esm (test_savepoint_semantics.SavepointSemantics.test_S21_failed_speculative_read_restores_valid_cache_esm) ... FAIL
+test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs (test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs) ... FAIL
+test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm (test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm) ... FAIL
+test_S22_new_effect_initial_callback_still_synchronous_cjs (test_savepoint_semantics.SavepointSemantics.test_S22_new_effect_initial_callback_still_synchronous_cjs) ... FAIL
+test_S22_new_effect_initial_callback_still_synchronous_esm (test_savepoint_semantics.SavepointSemantics.test_S22_new_effect_initial_callback_still_synchronous_esm) ... FAIL
+test_S23_last_consumer_branch_abort_restores_owned_generation_cjs (test_savepoint_semantics.SavepointSemantics.test_S23_last_consumer_branch_abort_restores_owned_generation_cjs) ... FAIL
+test_S23_last_consumer_branch_abort_restores_owned_generation_esm (test_savepoint_semantics.SavepointSemantics.test_S23_last_consumer_branch_abort_restores_owned_generation_esm) ... FAIL
+test_S24_three_savepoints_preserve_previous_value_history_cjs (test_savepoint_semantics.SavepointSemantics.test_S24_three_savepoints_preserve_previous_value_history_cjs) ... FAIL
+test_S24_three_savepoints_preserve_previous_value_history_esm (test_savepoint_semantics.SavepointSemantics.test_S24_three_savepoints_preserve_previous_value_history_esm) ... FAIL
+test_S25_inner_trigger_abort_keeps_outer_forced_notification_cjs (test_savepoint_semantics.SavepointSemantics.test_S25_inner_trigger_abort_keeps_outer_forced_notification_cjs) ... FAIL
+test_S25_inner_trigger_abort_keeps_outer_forced_notification_esm (test_savepoint_semantics.SavepointSemantics.test_S25_inner_trigger_abort_keeps_outer_forced_notification_esm) ... FAIL
+test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_cjs (test_savepoint_semantics.SavepointSemantics.test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_cjs) ... FAIL
+test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_esm (test_savepoint_semantics.SavepointSemantics.test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_esm) ... FAIL
+test_S27_all_abort_compensation_runs_original_undefined_wins_cjs (test_savepoint_semantics.SavepointSemantics.test_S27_all_abort_compensation_runs_original_undefined_wins_cjs) ... FAIL
+test_S27_all_abort_compensation_runs_original_undefined_wins_esm (test_savepoint_semantics.SavepointSemantics.test_S27_all_abort_compensation_runs_original_undefined_wins_esm) ... FAIL
+test_S28_inner_committed_stop_is_reversed_by_outer_abort_cjs (test_savepoint_semantics.SavepointSemantics.test_S28_inner_committed_stop_is_reversed_by_outer_abort_cjs) ... FAIL
+test_S28_inner_committed_stop_is_reversed_by_outer_abort_esm (test_savepoint_semantics.SavepointSemantics.test_S28_inner_committed_stop_is_reversed_by_outer_abort_esm) ... FAIL
+
+======================================================================
+FAIL: test_G01_model_graph_0_0_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_0_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_0_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_0_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_1_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_1_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_1_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_1_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_2_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_2_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_2_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_2_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_3_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_3_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_0_3_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_3_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_0_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_0_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_0_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_0_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_1_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_1_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_1_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_1_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_2_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_2_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_2_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_2_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_3_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_3_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_1_3_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_3_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_0_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_0_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_0_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_0_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_1_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_1_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_1_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_1_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_2_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_2_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_2_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_2_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_3_cjs (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_3_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_G01_model_graph_2_3_esm (test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_3_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['sink', -2]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:12:5)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S01_commit_return_and_nested_publication_cjs (test_savepoint_semantics.SavepointSemantics.test_S01_commit_return_and_nested_publication_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:107)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:107)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S01_commit_return_and_nested_publication_esm (test_savepoint_semantics.SavepointSemantics.test_S01_commit_return_and_nested_publication_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:107)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:107)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S02_abort_exact_null_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_null_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'null'], ['after', 2, 6, 2, 0, True]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
+?                            ^^^^^^^^^                    ^
+
++ [['first', 6], ['preview', 27], ['abort', 'null'], ['after', 2, 6, 2, 0, True]]
+?               +++++++++++++++++            + ^^                    ^
+
+
+======================================================================
+FAIL: test_S02_abort_exact_null_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_null_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'null'], ['after', 2, 6, 2, 0, True]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
+?                            ^^^^^^^^^                    ^
+
++ [['first', 6], ['preview', 27], ['abort', 'null'], ['after', 2, 6, 2, 0, True]]
+?               +++++++++++++++++            + ^^                    ^
+
+
+======================================================================
+FAIL: test_S02_abort_exact_number_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_number_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 17], ['after', 2, 6, 2, 0, True]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
+?                          ^^^^^^^^^^^^                   ^
+
++ [['first', 6], ['preview', 27], ['abort', 17], ['after', 2, 6, 2, 0, True]]
+?               +++++++++++++++++           ^^                   ^
+
+
+======================================================================
+FAIL: test_S02_abort_exact_number_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_number_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 17], ['after', 2, 6, 2, 0, True]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
+?                          ^^^^^^^^^^^^                   ^
+
++ [['first', 6], ['preview', 27], ['abort', 17], ['after', 2, 6, 2, 0, True]]
+?               +++++++++++++++++           ^^                   ^
+
+
+======================================================================
+FAIL: test_S02_abort_exact_object_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_object_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'abort'], ['after', 2, 6, 2, 0, True]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
+?                           ^^^^^^^ --                    ^
+
++ [['first', 6], ['preview', 27], ['abort', 'abort'], ['after', 2, 6, 2, 0, True]]
+?               +++++++++++++++++            ^^^^                     ^
+
+
+======================================================================
+FAIL: test_S02_abort_exact_object_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_object_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'abort'], ['after', 2, 6, 2, 0, True]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
+?                           ^^^^^^^ --                    ^
+
++ [['first', 6], ['preview', 27], ['abort', 'abort'], ['after', 2, 6, 2, 0, True]]
+?               +++++++++++++++++            ^^^^                     ^
+
+
+======================================================================
+FAIL: test_S02_abort_exact_string_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_string_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'cancel'], ['aft[18 chars]rue]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
++ [['first', 6],
++  ['preview', 27],
++  ['abort', 'cancel'],
++  ['after', 2, 6, 2, 0, True]]
+
+======================================================================
+FAIL: test_S02_abort_exact_string_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_string_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'cancel'], ['aft[18 chars]rue]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
++ [['first', 6],
++  ['preview', 27],
++  ['abort', 'cancel'],
++  ['after', 2, 6, 2, 0, True]]
+
+======================================================================
+FAIL: test_S02_abort_exact_undefined_cjs (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_undefined_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'undefined'], ['[21 chars]rue]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
++ [['first', 6],
++  ['preview', 27],
++  ['abort', 'undefined'],
++  ['after', 2, 6, 2, 0, True]]
+
+======================================================================
+FAIL: test_S02_abort_exact_undefined_esm (test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_undefined_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]] != [['first', 6], ['preview', 27], ['abort', 'undefined'], ['[21 chars]rue]]
+
+First differing element 1:
+['abort', 'unexpected']
+['preview', 27]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['after', 2, 6, 2, 0, True]
+
+- [['first', 6], ['abort', 'unexpected'], ['after', 2, 6, 1, 0, True]]
++ [['first', 6],
++  ['preview', 27],
++  ['abort', 'undefined'],
++  ['after', 2, 6, 2, 0, True]]
+
+======================================================================
+FAIL: test_S03_nested_previous_cache_cjs (test_savepoint_semantics.SavepointSemantics.test_S03_nested_previous_cache_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['getter', 1, 'none'], ['first', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:148)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['getter', 1, 'none'], ['first', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:148)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S03_nested_previous_cache_esm (test_savepoint_semantics.SavepointSemantics.test_S03_nested_previous_cache_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['getter', 1, 'none'], ['first', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:148)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['getter', 1, 'none'], ['first', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:148)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S03_outer_abort_undoes_inner_commit_cjs (test_savepoint_semantics.SavepointSemantics.test_S03_outer_abort_undoes_inner_commit_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 1], ['outer', 'unexpected'], ['restored', 1, 1,[15 chars], 2]] != [['first', 1], ['a', 3], ['b', 6], ['c', 6], ['outer', 'ab[40 chars], 4]]
+
+First differing element 1:
+['outer', 'unexpected']
+['a', 3]
+
+Second list contains 3 additional elements.
+First extra element 4:
+['outer', 'abort']
+
+- [['first', 1], ['outer', 'unexpected'], ['restored', 1, 1, 1], ['next', 5, 2]]
++ [['first', 1],
++  ['a', 3],
++  ['b', 6],
++  ['c', 6],
++  ['outer', 'abort'],
++  ['restored', 1, 1, 3],
++  ['next', 5, 4]]
+
+======================================================================
+FAIL: test_S03_outer_abort_undoes_inner_commit_esm (test_savepoint_semantics.SavepointSemantics.test_S03_outer_abort_undoes_inner_commit_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['first', 1], ['outer', 'unexpected'], ['restored', 1, 1,[15 chars], 2]] != [['first', 1], ['a', 3], ['b', 6], ['c', 6], ['outer', 'ab[40 chars], 4]]
+
+First differing element 1:
+['outer', 'unexpected']
+['a', 3]
+
+Second list contains 3 additional elements.
+First extra element 4:
+['outer', 'abort']
+
+- [['first', 1], ['outer', 'unexpected'], ['restored', 1, 1, 1], ['next', 5, 2]]
++ [['first', 1],
++  ['a', 3],
++  ['b', 6],
++  ['c', 6],
++  ['outer', 'abort'],
++  ['restored', 1, 1, 3],
++  ['next', 5, 4]]
+
+======================================================================
+FAIL: test_S04_existing_batch_work_survives_abort_cjs (test_savepoint_semantics.SavepointSemantics.test_S04_existing_batch_work_survives_abort_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['pending', 2, [2][29 chars], 0]] != [['preview', 18], ['abort', 'abort'], ['pend[41 chars], 0]]
+
+First differing element 0:
+['abort', 'unexpected']
+['preview', 18]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['published', 4, [2, 4], 0]
+
+- [['abort', 'unexpected'], ['pending', 2, [2], 1], ['published', 4, [2, 4], 0]]
++ [['preview', 18],
++  ['abort', 'abort'],
++  ['pending', 2, [2], 1],
++  ['published', 4, [2, 4], 0]]
+
+======================================================================
+FAIL: test_S04_existing_batch_work_survives_abort_esm (test_savepoint_semantics.SavepointSemantics.test_S04_existing_batch_work_survives_abort_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['pending', 2, [2][29 chars], 0]] != [['preview', 18], ['abort', 'abort'], ['pend[41 chars], 0]]
+
+First differing element 0:
+['abort', 'unexpected']
+['preview', 18]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['published', 4, [2, 4], 0]
+
+- [['abort', 'unexpected'], ['pending', 2, [2], 1], ['published', 4, [2, 4], 0]]
++ [['preview', 18],
++  ['abort', 'abort'],
++  ['pending', 2, [2], 1],
++  ['published', 4, [2, 4], 0]]
+
+======================================================================
+FAIL: test_S04_ordinary_batch_inside_aborted_transaction_cjs (test_savepoint_semantics.SavepointSemantics.test_S04_ordinary_batch_inside_aborted_transaction_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', 0, [0], [17 chars] 3]]] != [['pending', [0], 1], ['abort', 'abort'], ['[33 chars] 3]]]
+
+First differing element 0:
+['abort', 'unexpected']
+['pending', [0], 1]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['fresh', [0, 3]]
+
+- [['abort', 'unexpected'], ['after', 0, [0], 0], ['fresh', [0, 3]]]
++ [['pending', [0], 1],
++  ['abort', 'abort'],
++  ['after', 0, [0], 0],
++  ['fresh', [0, 3]]]
+
+======================================================================
+FAIL: test_S04_ordinary_batch_inside_aborted_transaction_esm (test_savepoint_semantics.SavepointSemantics.test_S04_ordinary_batch_inside_aborted_transaction_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', 0, [0], [17 chars] 3]]] != [['pending', [0], 1], ['abort', 'abort'], ['[33 chars] 3]]]
+
+First differing element 0:
+['abort', 'unexpected']
+['pending', [0], 1]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['fresh', [0, 3]]
+
+- [['abort', 'unexpected'], ['after', 0, [0], 0], ['fresh', [0, 3]]]
++ [['pending', [0], 1],
++  ['abort', 'abort'],
++  ['after', 0, [0], 0],
++  ['fresh', [0, 3]]]
+
+======================================================================
+FAIL: test_S05_computed_net_noop_after_reads_cjs (test_savepoint_semantics.SavepointSemantics.test_S05_computed_net_noop_after_reads_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:124)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:124)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S05_computed_net_noop_after_reads_esm (test_savepoint_semantics.SavepointSemantics.test_S05_computed_net_noop_after_reads_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:124)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:124)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S05_direct_net_noop_cjs (test_savepoint_semantics.SavepointSemantics.test_S05_direct_net_noop_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S05_direct_net_noop_esm (test_savepoint_semantics.SavepointSemantics.test_S05_direct_net_noop_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S06_successful_cache_is_published_without_reexecution_cjs (test_savepoint_semantics.SavepointSemantics.test_S06_successful_cache_is_published_without_reexecution_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:128)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:128)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S06_successful_cache_is_published_without_reexecution_esm (test_savepoint_semantics.SavepointSemantics.test_S06_successful_cache_is_published_without_reexecution_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:128)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:128)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S06_unevaluated_cache_and_unrelated_laziness_cjs (test_savepoint_semantics.SavepointSemantics.test_S06_unevaluated_cache_and_unrelated_laziness_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected'], ['before_read', 0, 0], ['after_read', 2, 1, 0]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:294)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['abort', 'unexpected'], ['before_read', 0, 0], ['after_read', 2, 1, 0]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:294)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S06_unevaluated_cache_and_unrelated_laziness_esm (test_savepoint_semantics.SavepointSemantics.test_S06_unevaluated_cache_and_unrelated_laziness_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected'], ['before_read', 0, 0], ['after_read', 2, 1, 0]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:294)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['abort', 'unexpected'], ['before_read', 0, 0], ['after_read', 2, 1, 0]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:294)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S07_trigger_abort_preserves_cache_and_notifications_cjs (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_abort_preserves_cache_and_notifications_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected'], ['after', 1, 1, [1]]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:240)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['abort', 'unexpected'], ['after', 1, 1, [1]]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:240)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S07_trigger_abort_preserves_cache_and_notifications_esm (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_abort_preserves_cache_and_notifications_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected'], ['after', 1, 1, [1]]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:240)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['abort', 'unexpected'], ['after', 1, 1, [1]]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:240)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S07_trigger_commit_and_derived_equality_cjs (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_commit_and_derived_equality_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:147)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:147)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S07_trigger_commit_and_derived_equality_esm (test_savepoint_semantics.SavepointSemantics.test_S07_trigger_commit_and_derived_equality_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:147)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:147)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S08_dynamic_branch_rollback_restores_only_live_edges_cjs (test_savepoint_semantics.SavepointSemantics.test_S08_dynamic_branch_rollback_restores_only_live_edges_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['unused', [1], 1], ['live', [1, 2], 2]] != [['preview', 10], ['abort', 'abort'], ['unused', [1], 2], ['live', [1, 2], 3]]
+
+First differing element 0:
+['abort', 'unexpected']
+['preview', 10]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['live', [1, 2], 3]
+
+- [['abort', 'unexpected'], ['unused', [1], 1], ['live', [1, 2], 2]]
+?             ^^^^^^^ --                    ^                    ^
+
++ [['preview', 10], ['abort', 'abort'], ['unused', [1], 2], ['live', [1, 2], 3]]
+?  +++++++++++++++++           ^^^^                     ^                    ^
+
+
+======================================================================
+FAIL: test_S08_dynamic_branch_rollback_restores_only_live_edges_esm (test_savepoint_semantics.SavepointSemantics.test_S08_dynamic_branch_rollback_restores_only_live_edges_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['unused', [1], 1], ['live', [1, 2], 2]] != [['preview', 10], ['abort', 'abort'], ['unused', [1], 2], ['live', [1, 2], 3]]
+
+First differing element 0:
+['abort', 'unexpected']
+['preview', 10]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['live', [1, 2], 3]
+
+- [['abort', 'unexpected'], ['unused', [1], 1], ['live', [1, 2], 2]]
+?             ^^^^^^^ --                    ^                    ^
+
++ [['preview', 10], ['abort', 'abort'], ['unused', [1], 2], ['live', [1, 2], 3]]
+?  +++++++++++++++++           ^^^^                     ^                    ^
+
+
+======================================================================
+FAIL: test_S09_ambient_dependency_prefix_rollback_cjs (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_dependency_prefix_rollback_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['caught', 'unexpected'], ['caught', 'unexpected'], [[47 chars], 3]] != [['caught', 'abort'], ['caught', 'abort'], ['unused', [32 chars], 3]]
+
+First differing element 0:
+['caught', 'unexpected']
+['caught', 'abort']
+
+- [['caught', 'unexpected'],
+-  ['caught', 'unexpected'],
++ [['caught', 'abort'],
++  ['caught', 'abort'],
+   ['unused', 2],
+-  ['caught', 'unexpected'],
++  ['caught', 'abort'],
+   ['live', 3]]
+
+======================================================================
+FAIL: test_S09_ambient_dependency_prefix_rollback_esm (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_dependency_prefix_rollback_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['caught', 'unexpected'], ['caught', 'unexpected'], [[47 chars], 3]] != [['caught', 'abort'], ['caught', 'abort'], ['unused', [32 chars], 3]]
+
+First differing element 0:
+['caught', 'unexpected']
+['caught', 'abort']
+
+- [['caught', 'unexpected'],
+-  ['caught', 'unexpected'],
++ [['caught', 'abort'],
++  ['caught', 'abort'],
+   ['unused', 2],
+-  ['caught', 'unexpected'],
++  ['caught', 'abort'],
+   ['live', 3]]
+
+======================================================================
+FAIL: test_S09_ambient_tracking_commits_reads_cjs (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_tracking_commits_reads_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at Object.eval [as fn] (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:84)\n    at effect (/app/compiled/cjs/index.cjs:140:23)\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:57)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at Object.eval [as fn] (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:84)\n    at effect (/app/compiled/cjs/index.cjs:140:23)\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:57)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)'}
+
+======================================================================
+FAIL: test_S09_ambient_tracking_commits_reads_esm (test_savepoint_semantics.SavepointSemantics.test_S09_ambient_tracking_commits_reads_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at Object.eval [as fn] (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:84)\n    at effect (file:///app/compiled/esm/index.mjs:124:23)\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:57)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at Object.eval [as fn] (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:84)\n    at effect (file:///app/compiled/esm/index.mjs:124:23)\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:57)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S10_escaped_new_values_reset_on_abort_cjs (test_savepoint_semantics.SavepointSemantics.test_S10_escaped_new_values_reset_on_abort_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: x is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:184)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: x is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:184)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S10_escaped_new_values_reset_on_abort_esm (test_savepoint_semantics.SavepointSemantics.test_S10_escaped_new_values_reset_on_abort_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: x is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:184)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: x is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:184)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S11_aborted_effect_is_released_once_after_restore_cjs (test_savepoint_semantics.SavepointSemantics.test_S11_aborted_effect_is_released_once_after_restore_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: stop is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:157)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: stop is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:157)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S11_aborted_effect_is_released_once_after_restore_esm (test_savepoint_semantics.SavepointSemantics.test_S11_aborted_effect_is_released_once_after_restore_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: stop is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:157)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['abort', 'unexpected']], 'uncaught': 'TypeError: stop is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:157)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S11_nested_committed_resources_compensate_in_reverse_creation_cjs (test_savepoint_semantics.SavepointSemantics.test_S11_nested_committed_resources_compensate_in_reverse_creation_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', 0]] != [['clean', 'c'], ['clean', 'child'], ['clean[53 chars], 0]]
+
+First differing element 0:
+['abort', 'unexpected']
+['clean', 'c']
+
+Second list contains 4 additional elements.
+First extra element 2:
+['clean', 'b']
+
+- [['abort', 'unexpected'], ['after', 0]]
++ [['clean', 'c'],
++  ['clean', 'child'],
++  ['clean', 'b'],
++  ['clean', 'a'],
++  ['abort', 'abort'],
++  ['after', 0]]
+
+======================================================================
+FAIL: test_S11_nested_committed_resources_compensate_in_reverse_creation_esm (test_savepoint_semantics.SavepointSemantics.test_S11_nested_committed_resources_compensate_in_reverse_creation_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', 0]] != [['clean', 'c'], ['clean', 'child'], ['clean[53 chars], 0]]
+
+First differing element 0:
+['abort', 'unexpected']
+['clean', 'c']
+
+Second list contains 4 additional elements.
+First extra element 2:
+['clean', 'b']
+
+- [['abort', 'unexpected'], ['after', 0]]
++ [['clean', 'c'],
++  ['clean', 'child'],
++  ['clean', 'b'],
++  ['clean', 'a'],
++  ['abort', 'abort'],
++  ['after', 0]]
+
+======================================================================
+FAIL: test_S12_inner_abort_keeps_parent_resource_live_cjs (test_savepoint_semantics.SavepointSemantics.test_S12_inner_abort_keeps_parent_resource_live_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S12_inner_abort_keeps_parent_resource_live_esm (test_savepoint_semantics.SavepointSemantics.test_S12_inner_abort_keeps_parent_resource_live_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S13_parent_birth_stopped_in_inner_abort_is_revived_cjs (test_savepoint_semantics.SavepointSemantics.test_S13_parent_birth_stopped_in_inner_abort_is_revived_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S13_parent_birth_stopped_in_inner_abort_is_revived_esm (test_savepoint_semantics.SavepointSemantics.test_S13_parent_birth_stopped_in_inner_abort_is_revived_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S13_tentative_existing_stop_aborts_without_cleanup_cjs (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_existing_stop_aborts_without_cleanup_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['body', 1], ['abort', 'unexpected'], ['after', 1], ['cl[35 chars], 2]] != [['body', 1], ['inside', 9], ['abort', 'abort'], ['after'[45 chars], 2]]
+
+First differing element 1:
+['abort', 'unexpected']
+['inside', 9]
+
+Second list contains 1 additional elements.
+First extra element 6:
+['cleanup', 2]
+
+  [['body', 1],
+-  ['abort', 'unexpected'],
++  ['inside', 9],
++  ['abort', 'abort'],
+   ['after', 1],
+   ['cleanup', 1],
+   ['body', 2],
+   ['cleanup', 2]]
+
+======================================================================
+FAIL: test_S13_tentative_existing_stop_aborts_without_cleanup_esm (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_existing_stop_aborts_without_cleanup_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['body', 1], ['abort', 'unexpected'], ['after', 1], ['cl[35 chars], 2]] != [['body', 1], ['inside', 9], ['abort', 'abort'], ['after'[45 chars], 2]]
+
+First differing element 1:
+['abort', 'unexpected']
+['inside', 9]
+
+Second list contains 1 additional elements.
+First extra element 6:
+['cleanup', 2]
+
+  [['body', 1],
+-  ['abort', 'unexpected'],
++  ['inside', 9],
++  ['abort', 'abort'],
+   ['after', 1],
+   ['cleanup', 1],
+   ['body', 2],
+   ['cleanup', 2]]
+
+======================================================================
+FAIL: test_S13_tentative_stop_commits_once_cjs (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_stop_commits_once_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['body', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:151)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['body', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:151)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S13_tentative_stop_commits_once_esm (test_savepoint_semantics.SavepointSemantics.test_S13_tentative_stop_commits_once_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['body', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:151)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['body', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:151)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S14_scope_stop_rollback_restores_nested_tree_cjs (test_savepoint_semantics.SavepointSemantics.test_S14_scope_stop_rollback_restores_nested_tree_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['before', ['a0', 'b0'], [][56 chars]b']]] != [['abort', 'abort'], ['before', ['a0', 'b0'], []], ['[51 chars]b']]]
+
+First differing element 0:
+['abort', 'unexpected']
+['abort', 'abort']
+
+- [['abort', 'unexpected'],
++ [['abort', 'abort'],
+   ['before', ['a0', 'b0'], []],
+   ['after', ['a0', 'a2', 'b0', 'b2'], ['a', 'a', 'b', 'b']]]
+
+======================================================================
+FAIL: test_S14_scope_stop_rollback_restores_nested_tree_esm (test_savepoint_semantics.SavepointSemantics.test_S14_scope_stop_rollback_restores_nested_tree_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['before', ['a0', 'b0'], [][56 chars]b']]] != [['abort', 'abort'], ['before', ['a0', 'b0'], []], ['[51 chars]b']]]
+
+First differing element 0:
+['abort', 'unexpected']
+['abort', 'abort']
+
+- [['abort', 'unexpected'],
++ [['abort', 'abort'],
+   ['before', ['a0', 'b0'], []],
+   ['after', ['a0', 'a2', 'b0', 'b2'], ['a', 'a', 'b', 'b']]]
+
+======================================================================
+FAIL: test_S15_computed_child_generation_aborts_cjs (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_aborts_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['ge[38 chars]], ['abort', 'unexpected'], ['cleanup', 1, 1],[95 chars], 3]] != [['ge[38 chars]], ['getter', 2], ['child', 2, 0], ['preview',[157 chars], 3]]
+
+First differing element 3:
+['abort', 'unexpected']
+['getter', 2]
+
+Second list contains 4 additional elements.
+First extra element 11:
+['getter', 3]
+
+  [['getter', 1],
+   ['child', 1, 0],
+   ['sink', 1],
+-  ['abort', 'unexpected'],
++  ['getter', 2],
++  ['child', 2, 0],
++  ['preview', 2],
++  ['cleanup', 2, 1],
++  ['abort', 'abort'],
+   ['cleanup', 1, 1],
+   ['child', 1, 1],
+   ['cleanup', 1, 3],
+   ['getter', 3],
+   ['child', 3, 1],
+   ['sink', 3],
+   ['cleanup', 3, 3]]
+
+======================================================================
+FAIL: test_S15_computed_child_generation_aborts_esm (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_aborts_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['ge[38 chars]], ['abort', 'unexpected'], ['cleanup', 1, 1],[95 chars], 3]] != [['ge[38 chars]], ['getter', 2], ['child', 2, 0], ['preview',[157 chars], 3]]
+
+First differing element 3:
+['abort', 'unexpected']
+['getter', 2]
+
+Second list contains 4 additional elements.
+First extra element 11:
+['getter', 3]
+
+  [['getter', 1],
+   ['child', 1, 0],
+   ['sink', 1],
+-  ['abort', 'unexpected'],
++  ['getter', 2],
++  ['child', 2, 0],
++  ['preview', 2],
++  ['cleanup', 2, 1],
++  ['abort', 'abort'],
+   ['cleanup', 1, 1],
+   ['child', 1, 1],
+   ['cleanup', 1, 3],
+   ['getter', 3],
+   ['child', 3, 1],
+   ['sink', 3],
+   ['cleanup', 3, 3]]
+
+======================================================================
+FAIL: test_S15_computed_child_generation_commits_without_rerunning_getter_cjs (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_commits_without_rerunning_getter_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['getter', 1], ['child', 1, 0], ['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:243)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['getter', 1], ['child', 1, 0], ['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:243)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S15_computed_child_generation_commits_without_rerunning_getter_esm (test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_commits_without_rerunning_getter_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['getter', 1], ['child', 1, 0], ['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:243)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['getter', 1], ['child', 1, 0], ['sink', 1]], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:243)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S16_shared_computed_survives_tentative_owner_stop_cjs (test_savepoint_semantics.SavepointSemantics.test_S16_shared_computed_survives_tentative_owner_stop_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:169)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:169)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S16_shared_computed_survives_tentative_owner_stop_esm (test_savepoint_semantics.SavepointSemantics.test_S16_shared_computed_survives_tentative_owner_stop_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:169)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:169)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S17_compensation_created_resource_belongs_to_surviving_parent_cjs (test_savepoint_semantics.SavepointSemantics.test_S17_compensation_created_resource_belongs_to_surviving_parent_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:244)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:244)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S17_compensation_created_resource_belongs_to_surviving_parent_esm (test_savepoint_semantics.SavepointSemantics.test_S17_compensation_created_resource_belongs_to_surviving_parent_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:244)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:244)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S17_inner_compensation_writes_join_parent_cjs (test_savepoint_semantics.SavepointSemantics.test_S17_inner_compensation_writes_join_parent_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S17_inner_compensation_writes_join_parent_esm (test_savepoint_semantics.SavepointSemantics.test_S17_inner_compensation_writes_join_parent_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S17_outer_compensation_writes_publish_after_restore_cjs (test_savepoint_semantics.SavepointSemantics.test_S17_outer_compensation_writes_publish_after_restore_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['outer', 'unexpected'], ['after', 0, [0]]] != [['compensation', 0], ['outer', 'abort'], ['after', 5, [0, 5]]]
+
+First differing element 0:
+['outer', 'unexpected']
+['compensation', 0]
+
+Second list contains 1 additional elements.
+First extra element 2:
+['after', 5, [0, 5]]
+
+- [['outer', 'unexpected'], ['after', 0, [0]]]
++ [['compensation', 0], ['outer', 'abort'], ['after', 5, [0, 5]]]
+
+======================================================================
+FAIL: test_S17_outer_compensation_writes_publish_after_restore_esm (test_savepoint_semantics.SavepointSemantics.test_S17_outer_compensation_writes_publish_after_restore_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['outer', 'unexpected'], ['after', 0, [0]]] != [['compensation', 0], ['outer', 'abort'], ['after', 5, [0, 5]]]
+
+First differing element 0:
+['outer', 'unexpected']
+['compensation', 0]
+
+Second list contains 1 additional elements.
+First extra element 2:
+['after', 5, [0, 5]]
+
+- [['outer', 'unexpected'], ['after', 0, [0]]]
++ [['compensation', 0], ['outer', 'abort'], ['after', 5, [0, 5]]]
+
+======================================================================
+FAIL: test_S18_cleanup_failure_precedes_observer_failure_after_commit_cjs (test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['commit', 'unexpected'], ['after', 0, [0]], ['cleanup']], 'uncaught': '[object Object]'} : {'events': [['commit', 'unexpected'], ['after', 0, [0]], ['cleanup']], 'uncaught': '[object Object]'}
+
+======================================================================
+FAIL: test_S18_cleanup_failure_precedes_observer_failure_after_commit_esm (test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['commit', 'unexpected'], ['after', 0, [0]], ['cleanup']], 'uncaught': '[object Object]'} : {'events': [['commit', 'unexpected'], ['after', 0, [0]], ['cleanup']], 'uncaught': '[object Object]'}
+
+======================================================================
+FAIL: test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_cjs (test_savepoint_semantics.SavepointSemantics.test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['commit', 'unexpected'], ['after', 0, [0], [0]], ['r[20 chars] 3]]] != [['commit', 'other'], ['after', 2, [0, 2], [0, 2]], ['[27 chars] 3]]]
+
+First differing element 0:
+['commit', 'unexpected']
+['commit', 'other']
+
+- [['commit', 'unexpected'], ['after', 0, [0], [0]], ['recover', [0, 3], [0, 3]]]
++ [['commit', 'other'],
++  ['after', 2, [0, 2], [0, 2]],
++  ['recover', [0, 2, 3], [0, 2, 3]]]
+
+======================================================================
+FAIL: test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_esm (test_savepoint_semantics.SavepointSemantics.test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['commit', 'unexpected'], ['after', 0, [0], [0]], ['r[20 chars] 3]]] != [['commit', 'other'], ['after', 2, [0, 2], [0, 2]], ['[27 chars] 3]]]
+
+First differing element 0:
+['commit', 'unexpected']
+['commit', 'other']
+
+- [['commit', 'unexpected'], ['after', 0, [0], [0]], ['recover', [0, 3], [0, 3]]]
++ [['commit', 'other'],
++  ['after', 2, [0, 2], [0, 2]],
++  ['recover', [0, 2, 3], [0, 2, 3]]]
+
+======================================================================
+FAIL: test_S19_reentrant_transactions_preserve_notification_cursor_cjs (test_savepoint_semantics.SavepointSemantics.test_S19_reentrant_transactions_preserve_notification_cursor_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:233)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:233)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S19_reentrant_transactions_preserve_notification_cursor_esm (test_savepoint_semantics.SavepointSemantics.test_S19_reentrant_transactions_preserve_notification_cursor_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:233)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:233)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S20_assigned_identity_restored_without_deep_cloning_cjs (test_savepoint_semantics.SavepointSemantics.test_S20_assigned_identity_restored_without_deep_cloning_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', True, 1, 9]] != [['abort', 'abort'], ['after', True, 3, 9]]
+
+First differing element 0:
+['abort', 'unexpected']
+['abort', 'abort']
+
+- [['abort', 'unexpected'], ['after', True, 1, 9]]
+?             ^^^^^^^ --                    ^
+
++ [['abort', 'abort'], ['after', True, 3, 9]]
+?             ^^^^                     ^
+
+
+======================================================================
+FAIL: test_S20_assigned_identity_restored_without_deep_cloning_esm (test_savepoint_semantics.SavepointSemantics.test_S20_assigned_identity_restored_without_deep_cloning_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', True, 1, 9]] != [['abort', 'abort'], ['after', True, 3, 9]]
+
+First differing element 0:
+['abort', 'unexpected']
+['abort', 'abort']
+
+- [['abort', 'unexpected'], ['after', True, 1, 9]]
+?             ^^^^^^^ --                    ^
+
++ [['abort', 'abort'], ['after', True, 3, 9]]
+?             ^^^^                     ^
+
+
+======================================================================
+FAIL: test_S20_callback_result_identity_and_caught_error_cjs (test_savepoint_semantics.SavepointSemantics.test_S20_callback_result_identity_and_caught_error_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:75)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:75)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S20_callback_result_identity_and_caught_error_esm (test_savepoint_semantics.SavepointSemantics.test_S20_callback_result_identity_and_caught_error_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:75)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:75)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S21_failed_speculative_read_restores_valid_cache_cjs (test_savepoint_semantics.SavepointSemantics.test_S21_failed_speculative_read_restores_valid_cache_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['initial', 1], ['abort', 'unexpected'], ['restored', 1, 1, 1], ['next', 3, 2]] != [['initial', 1], ['abort', 'other'], ['restored', 1, 1, 2], ['next', 3, 3]]
+
+First differing element 1:
+['abort', 'unexpected']
+['abort', 'other']
+
+- [['initial', 1], ['abort', 'unexpected'], ['restored', 1, 1, 1], ['next', 3, 2]]
+?                             ^^ ^^^^^^^                       ^               ^
+
++ [['initial', 1], ['abort', 'other'], ['restored', 1, 1, 2], ['next', 3, 3]]
+?                             ^^^ ^                       ^               ^
+
+
+======================================================================
+FAIL: test_S21_failed_speculative_read_restores_valid_cache_esm (test_savepoint_semantics.SavepointSemantics.test_S21_failed_speculative_read_restores_valid_cache_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['initial', 1], ['abort', 'unexpected'], ['restored', 1, 1, 1], ['next', 3, 2]] != [['initial', 1], ['abort', 'other'], ['restored', 1, 1, 2], ['next', 3, 3]]
+
+First differing element 1:
+['abort', 'unexpected']
+['abort', 'other']
+
+- [['initial', 1], ['abort', 'unexpected'], ['restored', 1, 1, 1], ['next', 3, 2]]
+?                             ^^ ^^^^^^^                       ^               ^
+
++ [['initial', 1], ['abort', 'other'], ['restored', 1, 1, 2], ['next', 3, 3]]
+?                             ^^^ ^                       ^               ^
+
+
+======================================================================
+FAIL: test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs (test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:19)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:19)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm (test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:19)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:19)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S22_new_effect_initial_callback_still_synchronous_cjs (test_savepoint_semantics.SavepointSemantics.test_S22_new_effect_initial_callback_still_synchronous_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S22_new_effect_initial_callback_still_synchronous_esm (test_savepoint_semantics.SavepointSemantics.test_S22_new_effect_initial_callback_still_synchronous_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:28)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S23_last_consumer_branch_abort_restores_owned_generation_cjs (test_savepoint_semantics.SavepointSemantics.test_S23_last_consumer_branch_abort_restores_owned_generation_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', [1], [0,[37 chars], 2]] != [['preview', 10], ['abort', 'abort'], ['afte[49 chars], 2]]
+
+First differing element 0:
+['abort', 'unexpected']
+['preview', 10]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['released', 2]
+
+- [['abort', 'unexpected'],
++ [['preview', 10],
++  ['abort', 'abort'],
+   ['after', [1], [0, 1], ['resource'], 1, 1],
+   ['released', 2]]
+
+======================================================================
+FAIL: test_S23_last_consumer_branch_abort_restores_owned_generation_esm (test_savepoint_semantics.SavepointSemantics.test_S23_last_consumer_branch_abort_restores_owned_generation_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', [1], [0,[37 chars], 2]] != [['preview', 10], ['abort', 'abort'], ['afte[49 chars], 2]]
+
+First differing element 0:
+['abort', 'unexpected']
+['preview', 10]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['released', 2]
+
+- [['abort', 'unexpected'],
++ [['preview', 10],
++  ['abort', 'abort'],
+   ['after', [1], [0, 1], ['resource'], 1, 1],
+   ['released', 2]]
+
+======================================================================
+FAIL: test_S24_three_savepoints_preserve_previous_value_history_cjs (test_savepoint_semantics.SavepointSemantics.test_S24_three_savepoints_preserve_previous_value_history_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['in[17 chars]er', 'unexpected'], ['after', 1, 1, 1]] != [['in[17 chars]er', 3], ['middle', 6], ['deep', 10], ['inner'[113 chars], 5]]
+
+First differing element 1:
+['outer', 'unexpected']
+['outer', 3]
+
+Second list contains 7 additional elements.
+First extra element 3:
+['deep', 10]
+
+- [['initial', 1], ['outer', 'unexpected'], ['after', 1, 1, 1]]
++ [['initial', 1],
++  ['outer', 3],
++  ['middle', 6],
++  ['deep', 10],
++  ['inner', 'other'],
++  ['middle_restored', 6],
++  ['middle_final', 11],
++  ['outer_final', 11],
++  ['outer', 'abort'],
++  ['after', 1, 1, 5]]
+
+======================================================================
+FAIL: test_S24_three_savepoints_preserve_previous_value_history_esm (test_savepoint_semantics.SavepointSemantics.test_S24_three_savepoints_preserve_previous_value_history_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['in[17 chars]er', 'unexpected'], ['after', 1, 1, 1]] != [['in[17 chars]er', 3], ['middle', 6], ['deep', 10], ['inner'[113 chars], 5]]
+
+First differing element 1:
+['outer', 'unexpected']
+['outer', 3]
+
+Second list contains 7 additional elements.
+First extra element 3:
+['deep', 10]
+
+- [['initial', 1], ['outer', 'unexpected'], ['after', 1, 1, 1]]
++ [['initial', 1],
++  ['outer', 3],
++  ['middle', 6],
++  ['deep', 10],
++  ['inner', 'other'],
++  ['middle_restored', 6],
++  ['middle_final', 11],
++  ['outer_final', 11],
++  ['outer', 'abort'],
++  ['after', 1, 1, 5]]
+
+======================================================================
+FAIL: test_S25_inner_trigger_abort_keeps_outer_forced_notification_cjs (test_savepoint_semantics.SavepointSemantics.test_S25_inner_trigger_abort_keeps_outer_forced_notification_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S25_inner_trigger_abort_keeps_outer_forced_notification_esm (test_savepoint_semantics.SavepointSemantics.test_S25_inner_trigger_abort_keeps_outer_forced_notification_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [], 'uncaught': 'TypeError: transaction is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:67)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_cjs (test_savepoint_semantics.SavepointSemantics.test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:217)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'} : {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:217)\n    at main (/opt/savepoint-api-driver.cjs:11:54)\n    at Object.<anonymous> (/opt/savepoint-api-driver.cjs:15:1)\n    at Module._compile (node:internal/modules/cjs/loader:1781:14)\n    at Object..js (node:internal/modules/cjs/loader:1913:10)\n    at Module.load (node:internal/modules/cjs/loader:1505:32)\n    at Function._load (node:internal/modules/cjs/loader:1309:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)\n    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)\n    at node:internal/main/run_main_module:36:49'}
+
+======================================================================
+FAIL: test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_esm (test_savepoint_semantics.SavepointSemantics.test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 16, in behavior
+    self.assertNotIn('uncaught',result,result)
+AssertionError: 'uncaught' unexpectedly found in {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:217)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'} : {'events': [['outer', 'unexpected']], 'uncaught': 'TypeError: escaped is not a function\n    at eval (eval at main (/opt/savepoint-api-driver.cjs:11:3), <anonymous>:6:217)\n    at main (/opt/savepoint-api-driver.cjs:11:54)'}
+
+======================================================================
+FAIL: test_S27_all_abort_compensation_runs_original_undefined_wins_cjs (test_savepoint_semantics.SavepointSemantics.test_S27_all_abort_compensation_runs_original_undefined_wins_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', 0, [0]]] != [['second_cleanup', 0], ['first_cleanup', 5][42 chars] 5]]]
+
+First differing element 0:
+['abort', 'unexpected']
+['second_cleanup', 0]
+
+Second list contains 2 additional elements.
+First extra element 2:
+['abort', 'undefined']
+
+- [['abort', 'unexpected'], ['after', 0, [0]]]
++ [['second_cleanup', 0],
++  ['first_cleanup', 5],
++  ['abort', 'undefined'],
++  ['after', 5, [0, 5]]]
+
+======================================================================
+FAIL: test_S27_all_abort_compensation_runs_original_undefined_wins_esm (test_savepoint_semantics.SavepointSemantics.test_S27_all_abort_compensation_runs_original_undefined_wins_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['abort', 'unexpected'], ['after', 0, [0]]] != [['second_cleanup', 0], ['first_cleanup', 5][42 chars] 5]]]
+
+First differing element 0:
+['abort', 'unexpected']
+['second_cleanup', 0]
+
+Second list contains 2 additional elements.
+First extra element 2:
+['abort', 'undefined']
+
+- [['abort', 'unexpected'], ['after', 0, [0]]]
++ [['second_cleanup', 0],
++  ['first_cleanup', 5],
++  ['abort', 'undefined'],
++  ['after', 5, [0, 5]]]
+
+======================================================================
+FAIL: test_S28_inner_committed_stop_is_reversed_by_outer_abort_cjs (test_savepoint_semantics.SavepointSemantics.test_S28_inner_committed_stop_is_reversed_by_outer_abort_cjs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['outer', 'unexpected'], ['after', 1, [1], [27 chars] 2]]] != [['new_cleanup', 1], ['outer', 'abort'], ['a[42 chars] 2]]]
+
+First differing element 0:
+['outer', 'unexpected']
+['new_cleanup', 1]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['future', [1, 2], [2, 2]]
+
+- [['outer', 'unexpected'], ['after', 1, [1], []], ['future', [1, 2], [2, 2]]]
++ [['new_cleanup', 1],
++  ['outer', 'abort'],
++  ['after', 1, [1], []],
++  ['future', [1, 2], [2, 2]]]
+
+======================================================================
+FAIL: test_S28_inner_committed_stop_is_reversed_by_outer_abort_esm (test_savepoint_semantics.SavepointSemantics.test_S28_inner_committed_stop_is_reversed_by_outer_abort_esm)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_savepoint_semantics.py", line 2553, in test
+    def test(self,fixture=fixture,format=format):return self.behavior(fixture,format)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_savepoint_semantics.py", line 17, in behavior
+    self.assertEqual(result['events'],fixture['expected'])
+AssertionError: Lists differ: [['outer', 'unexpected'], ['after', 1, [1], [27 chars] 2]]] != [['new_cleanup', 1], ['outer', 'abort'], ['a[42 chars] 2]]]
+
+First differing element 0:
+['outer', 'unexpected']
+['new_cleanup', 1]
+
+Second list contains 1 additional elements.
+First extra element 3:
+['future', [1, 2], [2, 2]]
+
+- [['outer', 'unexpected'], ['after', 1, [1], []], ['future', [1, 2], [2, 2]]]
++ [['new_cleanup', 1],
++  ['outer', 'abort'],
++  ['after', 1, [1], []],
++  ['future', [1, 2], [2, 2]]]
+
+----------------------------------------------------------------------
+Ran 128 tests in 2.291s
+
+FAILED (failures=118)

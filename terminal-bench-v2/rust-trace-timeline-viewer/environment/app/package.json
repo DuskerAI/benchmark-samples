@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "esbuild src/app.ts --bundle --format=iife --target=es2020 --outfile=public/app.js --log-level=warning && cp src/style.css public/style.css"
+  },
+  "devDependencies": {}
+}

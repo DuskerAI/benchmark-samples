@@ -1,0 +1,110 @@
+{
+    "id": "19e9da1a-bd58-493c-9c55-b97866ea4bfa",
+    "task_name": "dusker-ai/go-workflows-reset-provenance",
+    "trial_name": "go-workflows-reset-provenance__8gVd4EB",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/reference-clean-regrade-final/go-workflows-reset-provenance__8gVd4EB",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "source": null,
+    "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "go-workflows-reset-provenance__8gVd4EB",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/reference-clean-regrade-final",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "7f8eed59-6618-4f30-82c3-b6a9d47f4ba8",
+        "source_trial": {
+            "action": "regrade",
+            "type": "local",
+            "trial_id": "49ede0b4-f5e7-4722-8ece-77204d93d303",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-oracle-final/go-workflows-reset-provenance__9eYyVcz"
+        }
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T09:38:14.585265Z",
+    "finished_at": "2026-10-16T09:38:31.988867Z",
+    "environment_setup": null,
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": {
+        "started_at": "2026-10-16T09:38:14.779360Z",
+        "finished_at": "2026-10-16T09:38:31.988838Z"
+    },
+    "step_results": null
+}

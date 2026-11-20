@@ -1,0 +1,121 @@
+{
+  "reward": 1,
+  "category": "acceptance_pass",
+  "exact_inventory": true,
+  "fail_to_pass": {
+    "passed": 74,
+    "total": 74
+  },
+  "pass_to_pass": {
+    "passed": 18,
+    "total": 18
+  },
+  "nonpassing": [],
+  "suite_exit_code": 0,
+  "requirement_groups": {
+    "P01": {
+      "passed": 4,
+      "total": 4
+    },
+    "P02": {
+      "passed": 2,
+      "total": 2
+    },
+    "P03": {
+      "passed": 2,
+      "total": 2
+    },
+    "R01": {
+      "passed": 10,
+      "total": 10
+    },
+    "R02": {
+      "passed": 4,
+      "total": 4
+    },
+    "R03": {
+      "passed": 8,
+      "total": 8
+    },
+    "R04": {
+      "passed": 8,
+      "total": 8
+    },
+    "R05": {
+      "passed": 4,
+      "total": 4
+    },
+    "R06": {
+      "passed": 4,
+      "total": 4
+    },
+    "R07": {
+      "passed": 2,
+      "total": 2
+    },
+    "R08": {
+      "passed": 2,
+      "total": 2
+    },
+    "R09": {
+      "passed": 4,
+      "total": 4
+    },
+    "R10": {
+      "passed": 2,
+      "total": 2
+    },
+    "R11": {
+      "passed": 4,
+      "total": 4
+    },
+    "R12": {
+      "passed": 4,
+      "total": 4
+    },
+    "R13": {
+      "passed": 4,
+      "total": 4
+    },
+    "R14": {
+      "passed": 2,
+      "total": 2
+    },
+    "R15": {
+      "passed": 4,
+      "total": 4
+    },
+    "R16": {
+      "passed": 2,
+      "total": 2
+    },
+    "R17": {
+      "passed": 2,
+      "total": 2
+    },
+    "R18": {
+      "passed": 2,
+      "total": 2
+    },
+    "R19": {
+      "passed": 4,
+      "total": 4
+    },
+    "R20": {
+      "passed": 2,
+      "total": 2
+    },
+    "R21": {
+      "passed": 2,
+      "total": 2
+    },
+    "R22": {
+      "passed": 2,
+      "total": 2
+    },
+    "R23": {
+      "passed": 2,
+      "total": 2
+    }
+  }
+}

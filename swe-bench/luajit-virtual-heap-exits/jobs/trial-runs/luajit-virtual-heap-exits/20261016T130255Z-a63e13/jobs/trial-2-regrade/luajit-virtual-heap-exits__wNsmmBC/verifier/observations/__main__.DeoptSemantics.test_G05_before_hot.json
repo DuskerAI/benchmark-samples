@@ -1,0 +1,81 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$phase",
+            [
+              "string",
+              "late"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "337"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$value",
+            [
+              "number",
+              "431"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": true,
+  "observed": 337,
+  "phase": "early",
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 2
+  }
+}

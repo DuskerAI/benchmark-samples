@@ -1,0 +1,62 @@
+[
+  {
+    "path": "/tests/test.sh",
+    "mode": "r",
+    "denied": true
+  },
+  {
+    "path": "/tests/test.sh",
+    "mode": "a",
+    "denied": true
+  },
+  {
+    "path": "/tests/parser.py",
+    "mode": "r",
+    "denied": true
+  },
+  {
+    "path": "/tests/parser.py",
+    "mode": "a",
+    "denied": true
+  },
+  {
+    "path": "/tests/config.json",
+    "mode": "r",
+    "denied": true
+  },
+  {
+    "path": "/tests/config.json",
+    "mode": "a",
+    "denied": true
+  },
+  {
+    "path": "/tests/test_patch.patch",
+    "mode": "r",
+    "denied": true
+  },
+  {
+    "path": "/tests/test_patch.patch",
+    "mode": "a",
+    "denied": true
+  },
+  {
+    "path": "/app/tests/test_window_semantics.py",
+    "mode": "r",
+    "denied": true
+  },
+  {
+    "path": "/app/tests/test_window_semantics.py",
+    "mode": "a",
+    "denied": true
+  },
+  {
+    "path": "/logs/verifier/reward.txt",
+    "mode": "r",
+    "denied": true
+  },
+  {
+    "path": "/logs/verifier/reward.txt",
+    "mode": "a",
+    "denied": true
+  }
+]

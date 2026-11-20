@@ -1,0 +1,7 @@
+# Issuer Script Rules
+
+Issuer scripts are grouped by card lineage, not by terminal id, batch id, or input file order. A script row has kind `SCRIPT` and a non-empty `script_id`. The script status is `applied` for successful final statuses, `failed_soft` for selected-profile soft statuses, and `failed_hard` for selected-profile hard statuses. Any non-success script status word that is not listed as soft by the selected profile is treated as `failed_hard`.
+
+Duplicate transaction ATCs do not suppress scripts. If two script rows have the same script id, same lineage, and same ATC, keep the first by canonical record order and ignore the later duplicate for ledger side effects. Scripts with the same id on different lineages are independent.
+
+`issuer_scripts.jsonl` contains one JSON object per kept script, sorted by card id, lineage first ATC, numeric ATC, script id, and record id. Each row contains `case_id`, `session_id`, `card_id`, `lineage_key`, `script_id`, `atc`, `status`, `terminal_id`, and `private_tags`.

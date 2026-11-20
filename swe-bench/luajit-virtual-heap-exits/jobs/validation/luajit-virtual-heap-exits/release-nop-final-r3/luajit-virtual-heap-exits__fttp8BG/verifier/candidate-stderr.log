@@ -1,0 +1,30 @@
+__main__.DeoptSemantics.test_G01_deep_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0155 with bad op 82
+
+__main__.DeoptSemantics.test_G01_diamond_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0025 with bad op 82
+
+__main__.DeoptSemantics.test_G01_wide_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0237 with bad op 82
+
+__main__.DeoptSemantics.test_G03_hidden_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0029 with bad op 82
+
+__main__.DeoptSemantics.test_G04_distinct_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0031 with bad op 82
+
+__main__.DeoptSemantics.test_G05_after_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0031 with bad op 82
+
+__main__.DeoptSemantics.test_G05_before_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0031 with bad op 82
+
+__main__.DeoptSemantics.test_G06_ffi_graph_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0040 with bad op 82
+
+__main__.DeoptSemantics.test_G06_payload_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0036 with bad op 82
+
+__main__.DeoptSemantics.test_G07_mutate_hot
+LuaJIT ASSERT lj_snap.c:654: lj_snap_replay: sunk store for parent IR 0025 with bad op 82
+

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-integrity-final/go-workflows-replay-turns__CdnvSEe/artifacts/candidate-source",
+  "tree_sha256": "33335e3013bdb65c3f891a03ef038e0edcbc412dc8d8ecdc964a281ea8d67863",
+  "file_count": 309,
+  "bytes": 4172576,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

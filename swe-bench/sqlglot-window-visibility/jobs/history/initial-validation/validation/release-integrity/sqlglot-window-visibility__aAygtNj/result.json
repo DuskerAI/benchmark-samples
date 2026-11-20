@@ -1,0 +1,114 @@
+{
+    "id": "738a5cab-b098-4c56-b9f7-046e69df4898",
+    "task_name": "dusker-ai/sqlglot-window-visibility",
+    "trial_name": "sqlglot-window-visibility__aAygtNj",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs/release-integrity/sqlglot-window-visibility__aAygtNj",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+    },
+    "source": null,
+    "task_checksum": "79bbfbdff7853ec5fa14b57eb5d9112ad36ba322216f156375871d8ab531603b",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "sqlglot-window-visibility__aAygtNj",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs/release-integrity",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "window_probe:IntegrityProbe",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "a281e1c0-2858-4ea9-ae0c-9f20bbb8135c",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "window-integrity-probe",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-15T06:49:21.041430Z",
+    "finished_at": "2026-10-15T06:49:40.014259Z",
+    "environment_setup": {
+        "started_at": "2026-10-15T06:49:21.072454Z",
+        "finished_at": "2026-10-15T06:49:23.955922Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-15T06:49:23.955990Z",
+        "finished_at": "2026-10-15T06:49:23.956050Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-15T06:49:23.956126Z",
+        "finished_at": "2026-10-15T06:49:26.182904Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-15T06:49:30.320858Z",
+        "finished_at": "2026-10-15T06:49:40.014236Z"
+    },
+    "step_results": null
+}

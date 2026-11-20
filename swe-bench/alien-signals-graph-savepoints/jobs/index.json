@@ -1,0 +1,349 @@
+{
+  "task_directory": "../alien-signals-graph-savepoints",
+  "task_files_unchanged": true,
+  "model_series": [
+    {
+      "series": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/series.json",
+      "status": "COMPLETED",
+      "task_id": "dusker-ai/alien-signals-graph-savepoints",
+      "task_version": "1.0.0",
+      "model_id": "anthropic/claude-sonnet-5-5",
+      "passed_trials": 0,
+      "failed_trials": 1,
+      "trials": [
+        {
+          "trial_number": 1,
+          "directory": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ",
+          "result_path": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ/result.json",
+          "result_sha256": "f05543fdd846aedf2dd60f30bc554858fd13f3d8d2391315bea4737c7f2cc3f9",
+          "grade_path": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 1.1010358000000002
+        }
+      ]
+    },
+    {
+      "series": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/series.json",
+      "status": "COMPLETED",
+      "task_id": "dusker-ai/alien-signals-graph-savepoints",
+      "task_version": "1.0.0",
+      "model_id": "anthropic/claude-sonnet-5-5",
+      "passed_trials": 0,
+      "failed_trials": 4,
+      "trials": [
+        {
+          "trial_number": 1,
+          "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1/alien-signals-graph-savepoints__yFbn6y9",
+          "result_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1/alien-signals-graph-savepoints__yFbn6y9/result.json",
+          "result_sha256": "1823e0e29123a21a423cdbc5d68090d2900e713f7986c97d6e9ef4d19d906e1f",
+          "grade_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1/alien-signals-graph-savepoints__yFbn6y9/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 1.2701981999999998
+        },
+        {
+          "trial_number": 2,
+          "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2/alien-signals-graph-savepoints__c63kU4g",
+          "result_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2/alien-signals-graph-savepoints__c63kU4g/result.json",
+          "result_sha256": "62fff194be374243522d7a0ff2d9f68691e7e493b590d8ea259b74894ca89d3f",
+          "grade_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2/alien-signals-graph-savepoints__c63kU4g/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_cjs",
+            "test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_esm",
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 1.6126973000000002
+        },
+        {
+          "trial_number": 3,
+          "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8",
+          "result_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8/result.json",
+          "result_sha256": "1aa24ddd81abc55e46514fd1817fe20b5f77145f6be38da3f0223384efe35ff7",
+          "grade_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 1.4605419000000002
+        },
+        {
+          "trial_number": 4,
+          "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb",
+          "result_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb/result.json",
+          "result_sha256": "fa1462fd207fdd535ac3e7ae7b5cdfd05c53d46d927b71c59fcc33d697b32946",
+          "grade_path": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+            "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 1.9211930999999995
+        }
+      ]
+    }
+  ],
+  "native_trials": [
+    {
+      "directory": "history/standard-module-validation/release-oracle/alien-signals-failure-propagatio__dk55Pny",
+      "result": "history/standard-module-validation/release-oracle/alien-signals-failure-propagatio__dk55Pny/result.json",
+      "result_sha256": "ac3499cd6df7c3cff4242d221dfcbbd3b1de4abd62cf5ce0fe50918d28e8d160",
+      "task_checksum": "b18edcf364956dec4ba9a2d0d3363301497d6b4a71939732b2fa5201d62c7f01",
+      "grade": "history/standard-module-validation/release-oracle/alien-signals-failure-propagatio__dk55Pny/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ/result.json",
+      "result_sha256": "f05543fdd846aedf2dd60f30bc554858fd13f3d8d2391315bea4737c7f2cc3f9",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1-regrade/alien-signals-graph-savepoints__HeP25M2",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1-regrade/alien-signals-graph-savepoints__HeP25M2/result.json",
+      "result_sha256": "5661f3680fd9d28da21d07c13037b81566d387aedc1129cb6c80dc6f14655ff8",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1-regrade/alien-signals-graph-savepoints__HeP25M2/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1/alien-signals-graph-savepoints__yFbn6y9",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1/alien-signals-graph-savepoints__yFbn6y9/result.json",
+      "result_sha256": "1823e0e29123a21a423cdbc5d68090d2900e713f7986c97d6e9ef4d19d906e1f",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1/alien-signals-graph-savepoints__yFbn6y9/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1-regrade/alien-signals-graph-savepoints__nF3F73b",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1-regrade/alien-signals-graph-savepoints__nF3F73b/result.json",
+      "result_sha256": "7ee201d19e34b91ca791adfb25ecf518fbf606b9fea4d862956fd32ffd381424",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-1-regrade/alien-signals-graph-savepoints__nF3F73b/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2/alien-signals-graph-savepoints__c63kU4g",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2/alien-signals-graph-savepoints__c63kU4g/result.json",
+      "result_sha256": "62fff194be374243522d7a0ff2d9f68691e7e493b590d8ea259b74894ca89d3f",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2/alien-signals-graph-savepoints__c63kU4g/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2-regrade/alien-signals-graph-savepoints__Vno7mw7",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2-regrade/alien-signals-graph-savepoints__Vno7mw7/result.json",
+      "result_sha256": "ea3d47e9cc555bea3913b67ce47697d7e5450327377ddff4a1d199956c850550",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-2-regrade/alien-signals-graph-savepoints__Vno7mw7/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8/result.json",
+      "result_sha256": "1aa24ddd81abc55e46514fd1817fe20b5f77145f6be38da3f0223384efe35ff7",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3-regrade/alien-signals-graph-savepoints__rYyDT7e",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3-regrade/alien-signals-graph-savepoints__rYyDT7e/result.json",
+      "result_sha256": "d540d65d01bbe4e7c2c5554c0bad21d143c55fa62c51f6b1d20e66ec27d95f5e",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3-regrade/alien-signals-graph-savepoints__rYyDT7e/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb/result.json",
+      "result_sha256": "fa1462fd207fdd535ac3e7ae7b5cdfd05c53d46d927b71c59fcc33d697b32946",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4-regrade/alien-signals-graph-savepoints__HCxDFGo",
+      "result": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4-regrade/alien-signals-graph-savepoints__HCxDFGo/result.json",
+      "result_sha256": "09116c25fd33fde27593a7c435d22e2da00c8ba4ba2a6910a3dc75b9888f5efc",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4-regrade/alien-signals-graph-savepoints__HCxDFGo/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/reference-clean-regrade/alien-signals-failure-propagatio__tt8Ky7U",
+      "result": "validation/alien-signals-failure-propagation/reference-clean-regrade/alien-signals-failure-propagatio__tt8Ky7U/result.json",
+      "result_sha256": "88b5deb5bac9017de5e7e8f62ebfbd05d4f88ffdab36683fce5160b1702f1dcc",
+      "task_checksum": "3eea97f67a9d15e0c70d7b4b04a1e81f2819afe461d14a2c8d1fc09baa7ba064",
+      "grade": "validation/alien-signals-failure-propagation/reference-clean-regrade/alien-signals-failure-propagatio__tt8Ky7U/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/release-integrity/alien-signals-failure-propagatio__j8ui2Wf",
+      "result": "validation/alien-signals-failure-propagation/release-integrity/alien-signals-failure-propagatio__j8ui2Wf/result.json",
+      "result_sha256": "d58e106752d081a054682835e8ecbd779b171773583163c80700ea5bf9a3afc1",
+      "task_checksum": "3eea97f67a9d15e0c70d7b4b04a1e81f2819afe461d14a2c8d1fc09baa7ba064",
+      "grade": "validation/alien-signals-failure-propagation/release-integrity/alien-signals-failure-propagatio__j8ui2Wf/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/release-nop/alien-signals-failure-propagatio__FCq2btD",
+      "result": "validation/alien-signals-failure-propagation/release-nop/alien-signals-failure-propagatio__FCq2btD/result.json",
+      "result_sha256": "ed9fa3f41c7325db32773a46906c1a0da344fc0ff6d37d57380236b52302653f",
+      "task_checksum": "3eea97f67a9d15e0c70d7b4b04a1e81f2819afe461d14a2c8d1fc09baa7ba064",
+      "grade": "validation/alien-signals-failure-propagation/release-nop/alien-signals-failure-propagatio__FCq2btD/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/release-oracle/alien-signals-failure-propagatio__r6VEfUH",
+      "result": "validation/alien-signals-failure-propagation/release-oracle/alien-signals-failure-propagatio__r6VEfUH/result.json",
+      "result_sha256": "11db2c25fad8535c2e0c45ab11200d82559189115bd4c608d1999913b1181c2c",
+      "task_checksum": "3eea97f67a9d15e0c70d7b4b04a1e81f2819afe461d14a2c8d1fc09baa7ba064",
+      "grade": "validation/alien-signals-failure-propagation/release-oracle/alien-signals-failure-propagatio__r6VEfUH/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/revision-integrity/alien-signals-failure-propagatio__iw5gUne",
+      "result": "validation/alien-signals-failure-propagation/revision-integrity/alien-signals-failure-propagatio__iw5gUne/result.json",
+      "result_sha256": "b94cf6a4f0787813c7d8e08c51f9b20eae420cf82c9621d1f05be1d46999935f",
+      "task_checksum": "bb2c50b8e2b83f4b062a2fa6ccbfd50ab32b93e8b8c4c91619a355c45c2b5b7a",
+      "grade": "validation/alien-signals-failure-propagation/revision-integrity/alien-signals-failure-propagatio__iw5gUne/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/revision-nop/alien-signals-failure-propagatio__BTFL4sB",
+      "result": "validation/alien-signals-failure-propagation/revision-nop/alien-signals-failure-propagatio__BTFL4sB/result.json",
+      "result_sha256": "c9cc73c6f508261c897f719661f4d0bd74d919fa331afe924b151edf4ca65613",
+      "task_checksum": "bb2c50b8e2b83f4b062a2fa6ccbfd50ab32b93e8b8c4c91619a355c45c2b5b7a",
+      "grade": "validation/alien-signals-failure-propagation/revision-nop/alien-signals-failure-propagatio__BTFL4sB/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/revision-oracle/alien-signals-failure-propagatio__LWDcoQm",
+      "result": "validation/alien-signals-failure-propagation/revision-oracle/alien-signals-failure-propagatio__LWDcoQm/result.json",
+      "result_sha256": "fed01f1c06740eec83c69e4d90f1f353c13911b1f7b8afa4b634d62598d22a64",
+      "task_checksum": "bb2c50b8e2b83f4b062a2fa6ccbfd50ab32b93e8b8c4c91619a355c45c2b5b7a",
+      "grade": "validation/alien-signals-failure-propagation/revision-oracle/alien-signals-failure-propagatio__LWDcoQm/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-failure-propagation/revision-reference-clean-regrade/alien-signals-failure-propagatio__8u5crq8",
+      "result": "validation/alien-signals-failure-propagation/revision-reference-clean-regrade/alien-signals-failure-propagatio__8u5crq8/result.json",
+      "result_sha256": "c590198bfb1aab5da5294275d4349bd4b72de5067ad6e89878d0ac0861bfc1d2",
+      "task_checksum": "bb2c50b8e2b83f4b062a2fa6ccbfd50ab32b93e8b8c4c91619a355c45c2b5b7a",
+      "grade": "validation/alien-signals-failure-propagation/revision-reference-clean-regrade/alien-signals-failure-propagatio__8u5crq8/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-graph-savepoints/reference-clean-regrade/alien-signals-graph-savepoints__VAZPcdf",
+      "result": "validation/alien-signals-graph-savepoints/reference-clean-regrade/alien-signals-graph-savepoints__VAZPcdf/result.json",
+      "result_sha256": "9b5f5ad9db4c54b6113cf56be009398996a9bfbbee6f028669beccf401fe5a54",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "validation/alien-signals-graph-savepoints/reference-clean-regrade/alien-signals-graph-savepoints__VAZPcdf/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-graph-savepoints/release-integrity/alien-signals-graph-savepoints__F4VPbiv",
+      "result": "validation/alien-signals-graph-savepoints/release-integrity/alien-signals-graph-savepoints__F4VPbiv/result.json",
+      "result_sha256": "e867fe00f28e7727635af9bca7fce072e0377297f28c3ea5ae0aa093042d1bc1",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "validation/alien-signals-graph-savepoints/release-integrity/alien-signals-graph-savepoints__F4VPbiv/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-graph-savepoints/release-nop/alien-signals-graph-savepoints__MwJbcXK",
+      "result": "validation/alien-signals-graph-savepoints/release-nop/alien-signals-graph-savepoints__MwJbcXK/result.json",
+      "result_sha256": "92f9b579cab114da796718a172734fa7468f93d67be5b2f4743f42a9daacf69f",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "validation/alien-signals-graph-savepoints/release-nop/alien-signals-graph-savepoints__MwJbcXK/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/alien-signals-graph-savepoints/release-oracle/alien-signals-graph-savepoints__QJDrRPs",
+      "result": "validation/alien-signals-graph-savepoints/release-oracle/alien-signals-graph-savepoints__QJDrRPs/result.json",
+      "result_sha256": "0185689ee762559acc42216d9cc4a7c234ab391201b4b912efaadf0b3939de8e",
+      "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+      "grade": "validation/alien-signals-graph-savepoints/release-oracle/alien-signals-graph-savepoints__QJDrRPs/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    }
+  ],
+  "note": "Portable navigation for retained evaluation evidence. Native records are retained from execution time.",
+  "dataset_number": 8,
+  "current_task_checksum": "6235444d4464d1463522ac677a3cb79d2c103d12e9893ef8b27e0117713ae712",
+  "metadata_equivalent_evaluated_checksums": [
+    "6235444d4464d1463522ac677a3cb79d2c103d12e9893ef8b27e0117713ae712",
+    "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f"
+  ]
+}

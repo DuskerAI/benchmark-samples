@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+    },
+    "trial_name": "go-workflows-replay-turns__CdnvSEe",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/release-integrity-final",
+    "agent": {
+        "name": "workflow_probe:IntegrityProbe"
+    },
+    "job_id": "a2d9abe8-f067-40d6-bb4e-0f3132576f56"
+}

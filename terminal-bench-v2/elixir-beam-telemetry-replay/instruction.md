@@ -1,0 +1,7 @@
+Repair the offline Elixir audit tool in `/app/beamtrail`. It must build with `mix escript.build`; `/app/beamtrail/beam_audit` must accept `--input <dir> --output <dir>`.
+
+Inputs contain `config.json` and JSONL event files; ignore blank JSONL lines. Replay all records as one BEAM supervision stream ordered by normalized monotonic time, then `seq`, source basename, and source line. Normalized timestamps are microseconds after `epoch * 2^32 + mono_or_ts` with `ns`, `us`, or `ms` conversion. Non-snapshot records with the same non-empty `ref` are idempotent within their trace and supervisor.
+
+Snapshot records use `state.supervisors[]`, each with `name` and `children[]`; applying one replaces those child states, counts in that trace's `totals.events`, and emits no timeline row. `config.json` gives `restart_intensity` and `restart_period_us`; a child exceeds policy only after more crashes than the intensity within that period. Keep inputs unchanged and deterministic for same-schema cases.
+
+Write exactly `summary.json` and `timeline.jsonl`. `summary.json` has top-level `generated_by: "beam_audit"` and `traces`; each trace has `trace`, `totals.events`, `totals.duplicates`, and supervisors with `name` plus child summaries. Child summaries contain `id`, `current_pid`, `status`, `crashes`, `restarts`, `intensity_breached`, `first_ts`, and `last_ts`. `timeline.jsonl` contains non-duplicate, non-snapshot records with `trace`, `ts`, `seq`, `sup`, `id`, `pid`, `event`, and `status`.

@@ -1,0 +1,89 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$flag",
+            [
+              "boolean",
+              false
+            ]
+          ],
+          [
+            "$kind",
+            [
+              "string",
+              "record"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "241"
+            ]
+          ]
+        ],
+        "meta": 3
+      },
+      {
+        "fields": [
+          [
+            "#1",
+            [
+              "boolean",
+              false
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "435"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$label",
+            [
+              "string",
+              "virtual-meta"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": false,
+  "observed": 241,
+  "stats": {
+    "aborts": [],
+    "exits": 3,
+    "on": true,
+    "roots": 2,
+    "sides": 0
+  }
+}

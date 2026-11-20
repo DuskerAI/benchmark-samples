@@ -1,0 +1,565 @@
+{
+  "trial_number": 4,
+  "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset8/jobs/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb",
+  "started_at": "2026-10-15T20:49:23.176617Z",
+  "finished_at": "2026-10-15T21:02:51.345529Z",
+  "agent_execution": {
+    "started_at": "2026-10-15T20:49:26.209150Z",
+    "finished_at": "2026-10-15T21:02:34.889854Z"
+  },
+  "task_checksum": "76355ebd964a95f14c790a3b4e9b9b837ea06eb0936f7abbefe2fb40ac4b646f",
+  "exception_type": null,
+  "client_estimated_api_cost_usd": 1.9211930999999995,
+  "provider_billed_cost_usd": null,
+  "assistant_events": 87,
+  "valid_difficulty_trial": true,
+  "observed_primary_model": "claude-sonnet-5-5",
+  "observed_agent_version": "2.1.295",
+  "model_usage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 62,
+      "outputTokens": 96260,
+      "cacheReadInputTokens": 3039383,
+      "cacheCreationInputTokens": 140237,
+      "webSearchRequests": 0,
+      "costUSD": 1.9211930999999995,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 70779,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "agent_reported_error": false,
+  "agent_stop_category": "success",
+  "num_turns": 32,
+  "grade": {
+    "reward": 0,
+    "category": "acceptance_failure",
+    "exact_inventory": true,
+    "fail_to_pass": {
+      "passed": 116,
+      "total": 118
+    },
+    "pass_to_pass": {
+      "passed": 10,
+      "total": 10
+    },
+    "nonpassing": [
+      "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+      "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+    ],
+    "suite_exit_code": 1,
+    "requirement_groups": {
+      "S01": {
+        "passed": 2,
+        "total": 2
+      },
+      "S02": {
+        "passed": 10,
+        "total": 10
+      },
+      "S03": {
+        "passed": 4,
+        "total": 4
+      },
+      "S04": {
+        "passed": 4,
+        "total": 4
+      },
+      "S05": {
+        "passed": 4,
+        "total": 4
+      },
+      "S06": {
+        "passed": 4,
+        "total": 4
+      },
+      "S07": {
+        "passed": 4,
+        "total": 4
+      },
+      "S08": {
+        "passed": 2,
+        "total": 2
+      },
+      "S09": {
+        "passed": 4,
+        "total": 4
+      },
+      "S10": {
+        "passed": 2,
+        "total": 2
+      },
+      "S11": {
+        "passed": 4,
+        "total": 4
+      },
+      "S12": {
+        "passed": 2,
+        "total": 2
+      },
+      "S13": {
+        "passed": 6,
+        "total": 6
+      },
+      "S14": {
+        "passed": 2,
+        "total": 2
+      },
+      "S15": {
+        "passed": 4,
+        "total": 4
+      },
+      "S16": {
+        "passed": 2,
+        "total": 2
+      },
+      "S17": {
+        "passed": 6,
+        "total": 6
+      },
+      "S18": {
+        "passed": 4,
+        "total": 4
+      },
+      "S19": {
+        "passed": 2,
+        "total": 2
+      },
+      "S20": {
+        "passed": 4,
+        "total": 4
+      },
+      "S21": {
+        "passed": 2,
+        "total": 2
+      },
+      "S22": {
+        "passed": 2,
+        "total": 4
+      },
+      "P01": {
+        "passed": 4,
+        "total": 4
+      },
+      "P02": {
+        "passed": 2,
+        "total": 2
+      },
+      "P03": {
+        "passed": 2,
+        "total": 2
+      },
+      "P04": {
+        "passed": 2,
+        "total": 2
+      },
+      "G01": {
+        "passed": 24,
+        "total": 24
+      },
+      "S23": {
+        "passed": 2,
+        "total": 2
+      },
+      "S24": {
+        "passed": 2,
+        "total": 2
+      },
+      "S25": {
+        "passed": 2,
+        "total": 2
+      },
+      "S26": {
+        "passed": 2,
+        "total": 2
+      },
+      "S27": {
+        "passed": 2,
+        "total": 2
+      },
+      "S28": {
+        "passed": 2,
+        "total": 2
+      }
+    }
+  },
+  "failure_category": "ACCEPTANCE_FAILURE",
+  "agent_budget_exhausted": false,
+  "agent_stop_reason": "completed",
+  "verification_outcome": "FAIL",
+  "command": [
+    "harbor",
+    "run",
+    "-p",
+    "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints",
+    "-a",
+    "claude-code",
+    "-m",
+    "anthropic/claude-sonnet-5-5",
+    "--ak",
+    "version=2.1.295",
+    "--ak",
+    "reasoning_effort=high",
+    "--ak",
+    "max_turns=100",
+    "--ak",
+    "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+    "--ae",
+    "DISABLE_AUTOUPDATER=1",
+    "--mounts",
+    "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+    "--agent-setup-timeout-multiplier",
+    "3",
+    "--allow-agent-host",
+    "api.anthropic.com",
+    "-e",
+    "docker",
+    "-n",
+    "1",
+    "-k",
+    "1",
+    "-r",
+    "0",
+    "--job-name",
+    "trial-4",
+    "--jobs-dir",
+    "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs"
+  ],
+  "attempt_number": 1,
+  "cli_exit_code": 0,
+  "duration_sec": 810.673,
+  "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset8/jobs/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/trial-4-harbor.log",
+  "clean_regrade": {
+    "command": [
+      "harbor",
+      "job",
+      "regrade",
+      "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4",
+      "-p",
+      "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints",
+      "-e",
+      "docker",
+      "-n",
+      "1",
+      "--job-name",
+      "trial-4-regrade",
+      "--jobs-dir",
+      "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs"
+    ],
+    "cli_exit_code": 0,
+    "duration_sec": 15.158,
+    "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset8/jobs/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4-regrade/alien-signals-graph-savepoints__HCxDFGo/result.json",
+    "grade": {
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exact_inventory": true,
+      "fail_to_pass": {
+        "passed": 116,
+        "total": 118
+      },
+      "pass_to_pass": {
+        "passed": 10,
+        "total": 10
+      },
+      "nonpassing": [
+        "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+        "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+      ],
+      "suite_exit_code": 1,
+      "requirement_groups": {
+        "S01": {
+          "passed": 2,
+          "total": 2
+        },
+        "S02": {
+          "passed": 10,
+          "total": 10
+        },
+        "S03": {
+          "passed": 4,
+          "total": 4
+        },
+        "S04": {
+          "passed": 4,
+          "total": 4
+        },
+        "S05": {
+          "passed": 4,
+          "total": 4
+        },
+        "S06": {
+          "passed": 4,
+          "total": 4
+        },
+        "S07": {
+          "passed": 4,
+          "total": 4
+        },
+        "S08": {
+          "passed": 2,
+          "total": 2
+        },
+        "S09": {
+          "passed": 4,
+          "total": 4
+        },
+        "S10": {
+          "passed": 2,
+          "total": 2
+        },
+        "S11": {
+          "passed": 4,
+          "total": 4
+        },
+        "S12": {
+          "passed": 2,
+          "total": 2
+        },
+        "S13": {
+          "passed": 6,
+          "total": 6
+        },
+        "S14": {
+          "passed": 2,
+          "total": 2
+        },
+        "S15": {
+          "passed": 4,
+          "total": 4
+        },
+        "S16": {
+          "passed": 2,
+          "total": 2
+        },
+        "S17": {
+          "passed": 6,
+          "total": 6
+        },
+        "S18": {
+          "passed": 4,
+          "total": 4
+        },
+        "S19": {
+          "passed": 2,
+          "total": 2
+        },
+        "S20": {
+          "passed": 4,
+          "total": 4
+        },
+        "S21": {
+          "passed": 2,
+          "total": 2
+        },
+        "S22": {
+          "passed": 2,
+          "total": 4
+        },
+        "P01": {
+          "passed": 4,
+          "total": 4
+        },
+        "P02": {
+          "passed": 2,
+          "total": 2
+        },
+        "P03": {
+          "passed": 2,
+          "total": 2
+        },
+        "P04": {
+          "passed": 2,
+          "total": 2
+        },
+        "G01": {
+          "passed": 24,
+          "total": 24
+        },
+        "S23": {
+          "passed": 2,
+          "total": 2
+        },
+        "S24": {
+          "passed": 2,
+          "total": 2
+        },
+        "S25": {
+          "passed": 2,
+          "total": 2
+        },
+        "S26": {
+          "passed": 2,
+          "total": 2
+        },
+        "S27": {
+          "passed": 2,
+          "total": 2
+        },
+        "S28": {
+          "passed": 2,
+          "total": 2
+        }
+      }
+    },
+    "exception": null,
+    "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset8/jobs/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/trial-4-regrade-harbor.log"
+  },
+  "original_grade": {
+    "reward": 0,
+    "category": "acceptance_failure",
+    "exact_inventory": true,
+    "fail_to_pass": {
+      "passed": 116,
+      "total": 118
+    },
+    "pass_to_pass": {
+      "passed": 10,
+      "total": 10
+    },
+    "nonpassing": [
+      "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+      "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm"
+    ],
+    "suite_exit_code": 1,
+    "requirement_groups": {
+      "S01": {
+        "passed": 2,
+        "total": 2
+      },
+      "S02": {
+        "passed": 10,
+        "total": 10
+      },
+      "S03": {
+        "passed": 4,
+        "total": 4
+      },
+      "S04": {
+        "passed": 4,
+        "total": 4
+      },
+      "S05": {
+        "passed": 4,
+        "total": 4
+      },
+      "S06": {
+        "passed": 4,
+        "total": 4
+      },
+      "S07": {
+        "passed": 4,
+        "total": 4
+      },
+      "S08": {
+        "passed": 2,
+        "total": 2
+      },
+      "S09": {
+        "passed": 4,
+        "total": 4
+      },
+      "S10": {
+        "passed": 2,
+        "total": 2
+      },
+      "S11": {
+        "passed": 4,
+        "total": 4
+      },
+      "S12": {
+        "passed": 2,
+        "total": 2
+      },
+      "S13": {
+        "passed": 6,
+        "total": 6
+      },
+      "S14": {
+        "passed": 2,
+        "total": 2
+      },
+      "S15": {
+        "passed": 4,
+        "total": 4
+      },
+      "S16": {
+        "passed": 2,
+        "total": 2
+      },
+      "S17": {
+        "passed": 6,
+        "total": 6
+      },
+      "S18": {
+        "passed": 4,
+        "total": 4
+      },
+      "S19": {
+        "passed": 2,
+        "total": 2
+      },
+      "S20": {
+        "passed": 4,
+        "total": 4
+      },
+      "S21": {
+        "passed": 2,
+        "total": 2
+      },
+      "S22": {
+        "passed": 2,
+        "total": 4
+      },
+      "P01": {
+        "passed": 4,
+        "total": 4
+      },
+      "P02": {
+        "passed": 2,
+        "total": 2
+      },
+      "P03": {
+        "passed": 2,
+        "total": 2
+      },
+      "P04": {
+        "passed": 2,
+        "total": 2
+      },
+      "G01": {
+        "passed": 24,
+        "total": 24
+      },
+      "S23": {
+        "passed": 2,
+        "total": 2
+      },
+      "S24": {
+        "passed": 2,
+        "total": 2
+      },
+      "S25": {
+        "passed": 2,
+        "total": 2
+      },
+      "S26": {
+        "passed": 2,
+        "total": 2
+      },
+      "S27": {
+        "passed": 2,
+        "total": 2
+      },
+      "S28": {
+        "passed": 2,
+        "total": 2
+      }
+    }
+  },
+  "failed_requirement_groups": {
+    "S22": 2
+  }
+}

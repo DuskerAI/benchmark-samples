@@ -1,0 +1,340 @@
+{
+  "trial_number": 3,
+  "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset10/jobs/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe",
+  "started_at": "2026-10-16T14:08:55.804451Z",
+  "finished_at": "2026-10-16T14:32:16.318829Z",
+  "agent_execution": {
+    "started_at": "2026-10-16T14:08:58.836510Z",
+    "finished_at": "2026-10-16T14:31:57.609507Z"
+  },
+  "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+  "exception_type": null,
+  "client_estimated_api_cost_usd": 2.7450342999999995,
+  "provider_billed_cost_usd": null,
+  "assistant_events": 117,
+  "valid_difficulty_trial": true,
+  "observed_primary_model": "claude-sonnet-5-5",
+  "observed_agent_version": "2.1.295",
+  "model_usage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 122,
+      "outputTokens": 95122,
+      "cacheReadInputTokens": 6991614,
+      "cacheCreationInputTokens": 158099,
+      "webSearchRequests": 0,
+      "costUSD": 2.7450342999999995,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 63396,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "agent_reported_error": false,
+  "agent_stop_category": "success",
+  "num_turns": 62,
+  "grade": {
+    "reward": 0,
+    "category": "acceptance_failure",
+    "exact_inventory": true,
+    "tests_executed": 48,
+    "fail_to_pass": {
+      "passed": 37,
+      "total": 38
+    },
+    "pass_to_pass": {
+      "passed": 10,
+      "total": 10
+    },
+    "nonpassing": [
+      "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+    ],
+    "suite_exit_code": 1,
+    "requirement_groups": {
+      "G01": {
+        "passed": 5,
+        "total": 6
+      },
+      "G02": {
+        "passed": 6,
+        "total": 6
+      },
+      "G03": {
+        "passed": 4,
+        "total": 4
+      },
+      "G04": {
+        "passed": 2,
+        "total": 2
+      },
+      "G05": {
+        "passed": 4,
+        "total": 4
+      },
+      "G06": {
+        "passed": 6,
+        "total": 6
+      },
+      "G07": {
+        "passed": 2,
+        "total": 2
+      },
+      "G08": {
+        "passed": 2,
+        "total": 2
+      },
+      "G09": {
+        "passed": 2,
+        "total": 2
+      },
+      "G10": {
+        "passed": 2,
+        "total": 2
+      },
+      "G11": {
+        "passed": 2,
+        "total": 2
+      },
+      "P01": {
+        "passed": 3,
+        "total": 3
+      },
+      "P02": {
+        "passed": 6,
+        "total": 6
+      },
+      "P03": {
+        "passed": 1,
+        "total": 1
+      }
+    },
+    "trusted_assets_unchanged": true
+  },
+  "failure_category": "ACCEPTANCE_FAILURE",
+  "agent_budget_exhausted": false,
+  "agent_stop_reason": "completed",
+  "verification_outcome": "FAIL",
+  "command": [
+    "harbor",
+    "run",
+    "-p",
+    "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits",
+    "-a",
+    "claude-code",
+    "-m",
+    "anthropic/claude-sonnet-5-5",
+    "--ak",
+    "version=2.1.295",
+    "--ak",
+    "reasoning_effort=high",
+    "--ak",
+    "max_turns=100",
+    "--ak",
+    "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+    "--ae",
+    "DISABLE_AUTOUPDATER=1",
+    "--mounts",
+    "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+    "--agent-setup-timeout-multiplier",
+    "3",
+    "--allow-agent-host",
+    "api.anthropic.com",
+    "-e",
+    "docker",
+    "-n",
+    "1",
+    "-k",
+    "1",
+    "-r",
+    "0",
+    "--job-name",
+    "trial-3",
+    "--jobs-dir",
+    "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs"
+  ],
+  "attempt_number": 1,
+  "cli_exit_code": 0,
+  "duration_sec": 1403.168,
+  "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset10/jobs/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/trial-3-harbor.log",
+  "clean_regrade": {
+    "command": [
+      "harbor",
+      "job",
+      "regrade",
+      "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3",
+      "-p",
+      "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits",
+      "-e",
+      "docker",
+      "-n",
+      "1",
+      "--job-name",
+      "trial-3-regrade",
+      "--jobs-dir",
+      "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs"
+    ],
+    "cli_exit_code": 0,
+    "duration_sec": 16.547,
+    "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset10/jobs/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3-regrade/luajit-virtual-heap-exits__jfr3qzt/result.json",
+    "grade": {
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exact_inventory": true,
+      "tests_executed": 48,
+      "fail_to_pass": {
+        "passed": 37,
+        "total": 38
+      },
+      "pass_to_pass": {
+        "passed": 10,
+        "total": 10
+      },
+      "nonpassing": [
+        "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+      ],
+      "suite_exit_code": 1,
+      "requirement_groups": {
+        "G01": {
+          "passed": 5,
+          "total": 6
+        },
+        "G02": {
+          "passed": 6,
+          "total": 6
+        },
+        "G03": {
+          "passed": 4,
+          "total": 4
+        },
+        "G04": {
+          "passed": 2,
+          "total": 2
+        },
+        "G05": {
+          "passed": 4,
+          "total": 4
+        },
+        "G06": {
+          "passed": 6,
+          "total": 6
+        },
+        "G07": {
+          "passed": 2,
+          "total": 2
+        },
+        "G08": {
+          "passed": 2,
+          "total": 2
+        },
+        "G09": {
+          "passed": 2,
+          "total": 2
+        },
+        "G10": {
+          "passed": 2,
+          "total": 2
+        },
+        "G11": {
+          "passed": 2,
+          "total": 2
+        },
+        "P01": {
+          "passed": 3,
+          "total": 3
+        },
+        "P02": {
+          "passed": 6,
+          "total": 6
+        },
+        "P03": {
+          "passed": 1,
+          "total": 1
+        }
+      },
+      "trusted_assets_unchanged": true
+    },
+    "exception": null,
+    "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset10/jobs/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/trial-3-regrade-harbor.log"
+  },
+  "original_grade": {
+    "reward": 0,
+    "category": "acceptance_failure",
+    "exact_inventory": true,
+    "tests_executed": 48,
+    "fail_to_pass": {
+      "passed": 37,
+      "total": 38
+    },
+    "pass_to_pass": {
+      "passed": 10,
+      "total": 10
+    },
+    "nonpassing": [
+      "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+    ],
+    "suite_exit_code": 1,
+    "requirement_groups": {
+      "G01": {
+        "passed": 5,
+        "total": 6
+      },
+      "G02": {
+        "passed": 6,
+        "total": 6
+      },
+      "G03": {
+        "passed": 4,
+        "total": 4
+      },
+      "G04": {
+        "passed": 2,
+        "total": 2
+      },
+      "G05": {
+        "passed": 4,
+        "total": 4
+      },
+      "G06": {
+        "passed": 6,
+        "total": 6
+      },
+      "G07": {
+        "passed": 2,
+        "total": 2
+      },
+      "G08": {
+        "passed": 2,
+        "total": 2
+      },
+      "G09": {
+        "passed": 2,
+        "total": 2
+      },
+      "G10": {
+        "passed": 2,
+        "total": 2
+      },
+      "G11": {
+        "passed": 2,
+        "total": 2
+      },
+      "P01": {
+        "passed": 3,
+        "total": 3
+      },
+      "P02": {
+        "passed": 6,
+        "total": 6
+      },
+      "P03": {
+        "passed": 1,
+        "total": 1
+      }
+    },
+    "trusted_assets_unchanged": true
+  },
+  "failed_requirement_groups": {
+    "G01": 1
+  }
+}

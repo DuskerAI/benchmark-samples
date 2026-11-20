@@ -1,0 +1,6 @@
+{
+  "retain_boots": 1,
+  "retain_realtime_after_us": 1710000800,
+  "max_bytes": 750,
+  "max_rotated_bytes": 400
+}

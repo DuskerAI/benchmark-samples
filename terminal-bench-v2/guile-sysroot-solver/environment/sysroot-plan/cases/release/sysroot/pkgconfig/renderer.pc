@@ -1,0 +1,6 @@
+Name: renderer
+Version: 3.1.0
+Target: armv7-linux-gnueabihf
+Requires.private: gpu-abi = 2.0
+Cflags: -I/usr/include/renderer
+Libs: -L/usr/lib/renderer -lrender

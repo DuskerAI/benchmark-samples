@@ -1,0 +1,30 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+    },
+    "trial_name": "alien-signals-graph-savepoints__HCxDFGo",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4-regrade",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        }
+    },
+    "job_id": "dc599ff7-4583-488d-baab-89394459f959",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "11477510-a7ce-417a-b77d-9d0283b3eeb6",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-4/alien-signals-graph-savepoints__vHeDfxb"
+    }
+}

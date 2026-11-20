@@ -1,0 +1,4 @@
+OBJECT o3
+SECTION .inl grp.inl 16 -
+SYMBOL inl_fn WEAK DEF .inl 4
+RELOC .inl 0 first REL32 0

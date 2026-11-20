@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": true,
+  "case_id": "ridge-transport-011",
+  "evacuation_status": "mandatory",
+  "exceptions": [],
+  "generator_class": "A",
+  "generator_tested_at": "2026-02-06",
+  "jurisdiction": "ridge",
+  "medical_dependent": false,
+  "opened_at": "2026-02-14",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 70,
+  "shelter_type": "arena",
+  "staff_count": 4,
+  "transport_status": "pending",
+  "water_days": 4
+}

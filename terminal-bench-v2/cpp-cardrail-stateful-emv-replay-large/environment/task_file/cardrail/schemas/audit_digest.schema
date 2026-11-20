@@ -1,0 +1,9 @@
+# Audit Digest Canonicalization
+
+The audit digest is FNV-1a-64. Start with offset basis `1469598103934665603` and multiply by prime `1099511628211` after each byte xor, modulo `2^64`. The canonical stream is UTF-8 text with one line per logical artifact row.
+
+First add a summary line: `summary|<case_id>|<profile_id>|<transactions_kept>|<scripts_kept>|<reversals_queued>`. Then add one line per session in summary order, sorted by `card_id`, `lineage_key`, and `session_id`: `session|<session_id>|<card_id>|<lineage_key>|<first_atc>|<last_atc>|<approved>|<declined>|<scripts_applied>|<scripts_failed_soft>|<scripts_failed_hard>|<reversal_required>|<private-tags-comma-joined>`. `reversal_required` is the integer count from `case_summary.json`. Then add issuer script lines in JSONL order: `script|<session_id>|<card_id>|<lineage_key>|<script_id>|<atc>|<status>|<private-tags-comma-joined>`. Finally add reversal lines in CSV data order: `reversal|<session_id>|<card_id>|<atc>|<reason>|<amount>|<currency>`.
+
+The session and script private-tag fields in the stream are the already-canonical output values from `case_summary.json` and `issuer_scripts.jsonl`. They must not include tags from suppressed duplicate rows or from raw rows that did not become kept logical artifacts.
+
+The digest is over this stream only. Whitespace in JSON files, CSV quoting choices that do not affect field values, and local ledger line order must not change the digest.

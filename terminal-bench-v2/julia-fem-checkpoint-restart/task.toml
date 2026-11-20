@@ -1,0 +1,30 @@
+version = "2.0"
+
+[metadata]
+# Non-canonical base: no t-bench Julia image exists; this task uses pinned
+# debian:bookworm-slim with manual Julia and harness-tool installation.
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "hard"
+category = "scientific-computing"
+subcategories = []
+number_of_milestones = 0
+codebase_size = "minimal"
+languages = ["julia", "bash"]
+tags = ["sparse-linear-algebra", "finite-element", "diffusion", "checkpointing", "gauss-quadrature", "theta-method"]
+expert_time_estimate_min = 330
+junior_time_estimate_min = 720
+
+[verifier]
+timeout_sec = 1200.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+allow_internet = false
+build_timeout_sec = 1800.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+workdir = "/app"

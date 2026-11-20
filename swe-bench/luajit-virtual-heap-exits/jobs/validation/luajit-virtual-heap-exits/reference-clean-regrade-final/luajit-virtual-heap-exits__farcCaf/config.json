@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+    },
+    "trial_name": "luajit-virtual-heap-exits__farcCaf",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/reference-clean-regrade-final",
+    "job_id": "ac07efd3-5e05-49f3-abf3-a3b7623472b9",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "948a1709-1dbf-4acb-88ee-75e6bcd0466a",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/release-oracle-final/luajit-virtual-heap-exits__qS2oFSc"
+    }
+}

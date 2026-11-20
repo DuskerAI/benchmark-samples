@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-I",
+    "/tests/launch_candidate.py",
+    "/usr/local/bin/node",
+    "-e",
+    "\nconst fs=require('node:fs'),path=require('node:path'),ts=require('/app/node_modules/typescript');\nconst parsed=ts.getParsedCommandLineOfConfigFile('/app/tsconfig.json',{}, {...ts.sys,onUnRecoverableConfigFileDiagnostic:d=>{throw Error(ts.flattenDiagnosticMessageText(d.messageText,'\\\\n'));}});\nif(!parsed)throw Error('Invalid trusted TypeScript configuration');\nfor(const format of ['cjs','esm']) {\n const options={...parsed.options,ignoreDeprecations:'6.0',outDir:'/tmp/propagation-build/'+format,\n  module:format==='cjs'?ts.ModuleKind.CommonJS:ts.ModuleKind.ESNext,\n  moduleResolution:format==='cjs'?ts.ModuleResolutionKind.Node10:ts.ModuleResolutionKind.Bundler,\n  declaration:false,noEmitOnError:true,sourceMap:false};\n const program=ts.createProgram(parsed.fileNames,options);\n const diagnostics=ts.getPreEmitDiagnostics(program);\n if(diagnostics.length){process.stderr.write(ts.formatDiagnosticsWithColorAndContext(diagnostics,{getCurrentDirectory:()=>'/app',getCanonicalFileName:f=>f,getNewLine:()=> '\\\\n'}));process.exit(1);}\n const output=program.emit();if(output.emitSkipped)process.exit(1);\n fs.writeFileSync(options.outDir+'/package.json',JSON.stringify({type:format==='esm'?'module':'commonjs'}));\n}\n"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

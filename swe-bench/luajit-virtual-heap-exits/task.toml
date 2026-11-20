@@ -1,0 +1,47 @@
+schema_version = "1.4"
+artifacts = [
+  { source = "/app/src", destination = "candidate-source/src" },
+  { source = "/app/dynasm", destination = "candidate-source/dynasm" }
+]
+
+[task]
+name = "dusker-ai/luajit-virtual-heap-exits"
+version = "1.0.0"
+description = "Preserve virtual heap identity and values across native trace recovery and side-trace import"
+authors = [{ name = "dusker ai" }]
+keywords = ["jit", "deoptimization", "snapshots", "allocation-sinking", "virtual-objects"]
+
+[metadata]
+difficulty = "hard"
+category = "JIT compiler deoptimization"
+tags = ["original", "luajit", "arm64", "compiler-correctness"]
+base_commit = "620a6171118fa972c3b000b7c17f2d151175cde6"
+upstream_commit = "2a8e017ef1ece6a95b983ffca073d30609dce7c4"
+repository = "https://github.com/LuaJIT/LuaJIT"
+
+[agent]
+timeout_sec = 3000.0
+network_mode = "no-network"
+user = "solver"
+
+[environment]
+build_timeout_sec = 600.0
+network_mode = "public"
+cpus = 2
+memory_mb = 4096
+storage_mb = 8192
+workdir = "/app"
+
+[verifier]
+timeout_sec = 600.0
+environment_mode = "separate"
+network_mode = "no-network"
+user = "root"
+
+[verifier.environment]
+build_timeout_sec = 600.0
+network_mode = "no-network"
+cpus = 2
+memory_mb = 4096
+storage_mb = 8192
+workdir = "/app"

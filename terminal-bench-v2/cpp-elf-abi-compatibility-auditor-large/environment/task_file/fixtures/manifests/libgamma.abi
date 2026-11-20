@@ -1,0 +1,5 @@
+library libgamma.so
+soname libgamma.so.1
+export gamma_open GAMMA_1.0 default
+export gamma_close GAMMA_1.0 default
+version_node GAMMA_1.0

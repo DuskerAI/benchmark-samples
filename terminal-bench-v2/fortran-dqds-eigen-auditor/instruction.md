@@ -1,0 +1,5 @@
+Scientific-computing work is in `/app/eigen`. Build there with `make` so `/app/eigen/eigenaudit <case.in> <report.json> <checkpoint.bin>` audits real symmetric tridiagonal eigenproblems deterministically.
+
+Case files use `key=value` lines for `n`, `scale`, `diag`, `offdiag`, and `restart`. The represented matrix has diagonal entries `scale*diag` and off-diagonal entries `scale*offdiag`; tiny nonzero represented off-diagonal entries remain couplings, and only scaled off-diagonal entries that are exactly zero split contiguous blocks. Report eigenvalues in ascending order, keeping the eigenvectors used for the audit metrics paired with those ordered eigenvalues.
+
+The JSON report must contain `n`, `scale`, `eigenvalues`, `residual_max`, `orthogonality_max`, `trace_error`, and `block_count`. Compute `residual_max` as the largest infinity-norm residual divided by `max(1,||A||_inf)*max(1,|lambda|)`, `orthogonality_max` as the largest absolute entry of `V^T V-I`, and `trace_error` as `abs(sum(eigenvalues)-trace(A))/max(1,abs(trace(A)))`. A run with `restart=false` writes a checkpoint; the same case with `restart=true` and that checkpoint must produce the same report.

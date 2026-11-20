@@ -1,0 +1,9 @@
+# Audit digest canonicalization
+
+The audit digest uses FNV-1a-64. Start with offset basis 1469598103934665603. For each byte, xor the byte into the hash and multiply by 1099511628211 modulo 2^64. The input stream is UTF-8 text with one line per logical artifact row.
+
+The first line is summary|case_id|profile_id|transactions_kept|scripts_kept|reversals_queued. Then come session lines in summary order, sorted by card_id, lineage_key, and session_id: session|session_id|card_id|lineage_key|first_atc|last_atc|approved|declined|scripts_applied|scripts_failed_soft|scripts_failed_hard|reversal_required|private-tags-comma-joined. reversal_required is the same integer count emitted in case_summary.json. Next come script lines in JSONL order: script|session_id|card_id|lineage_key|script_id|atc|status|private-tags-comma-joined. Reversal lines come last in CSV data order: reversal|session_id|card_id|atc|reason|amount|currency.
+
+The private tag fields in the digest stream are the already canonical output values from case_summary.json and issuer_scripts.jsonl. They do not include tags from suppressed duplicate rows or from raw rows that did not become kept logical artifacts.
+
+The digest is over this stream only. JSON whitespace, harmless CSV quoting choices, and local ledger line order do not change it.

@@ -1,0 +1,5 @@
+{
+  "detector_gain": "already_applied",
+  "dark_current": "already_removed",
+  "angle_unit": "degrees"
+}

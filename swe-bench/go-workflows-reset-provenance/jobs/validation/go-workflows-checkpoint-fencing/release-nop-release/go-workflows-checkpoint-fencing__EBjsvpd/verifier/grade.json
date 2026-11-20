@@ -1,0 +1,157 @@
+{
+  "reward": 0,
+  "category": "acceptance_failure",
+  "exact_inventory": true,
+  "tests_executed": 86,
+  "fail_to_pass": {
+    "passed": 0,
+    "total": 77
+  },
+  "pass_to_pass": {
+    "passed": 9,
+    "total": 9
+  },
+  "nonpassing": [
+    "test_checkpoint_fencing.CheckpointSemantics.test_F01_other_worker",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F01_same_worker",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F01_worker_cycle",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F02_empty_token",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F02_expired_only",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F02_same_worker",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F02_unknown_token",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F03_consumed",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F03_expired_only",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F03_same_worker",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_continued",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_continued_cleanup",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_finished",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_later_acquisition",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_later_commit",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_other_worker",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F04_restart",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_attempt",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_input",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_name",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_order",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_activity_queue",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_drop_activity",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_drop_message",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_drop_timer",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_event_kind",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_event_owner",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_executed_id",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_executed_order",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_input_id",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_input_order",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_input_payload",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_message_id",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_message_order",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_sequence",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_state",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_target_execution",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_target_input",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_target_parent",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_boundary",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_metadata",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_queue",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_task_state",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_at",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_order",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_owner",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_timer_visible",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F05_timestamp",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F06_activity",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F06_attributes",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F06_history",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F06_target",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F06_timer",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_active_success",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_canceled",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_complete_error",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_evict_error",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_execute_error",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_terminal_error",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F07_terminal_success",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F08_after",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F08_before",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F09_11",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F09_23",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F09_47",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F09_5",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F10_identical",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F11_after_error",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F11_after_success",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F11_before",
+    "test_checkpoint_fencing.CheckpointSemantics.test_F11_execute_error",
+    "test_checkpoint_fencing.CheckpointSemantics.test_P01_empty_lists",
+    "test_checkpoint_fencing.CheckpointSemantics.test_P01_timezone",
+    "test_checkpoint_fencing.CheckpointSemantics.test_P02_retry",
+    "test_checkpoint_fencing.CheckpointSemantics.test_P02_second_commit",
+    "test_checkpoint_fencing.CheckpointSemantics.test_P03_history",
+    "test_checkpoint_fencing.CheckpointSemantics.test_P03_pending"
+  ],
+  "suite_exit_code": 1,
+  "requirement_groups": {
+    "F01": {
+      "passed": 0,
+      "total": 3
+    },
+    "F02": {
+      "passed": 1,
+      "total": 5
+    },
+    "F03": {
+      "passed": 1,
+      "total": 4
+    },
+    "F04": {
+      "passed": 0,
+      "total": 7
+    },
+    "F05": {
+      "passed": 0,
+      "total": 31
+    },
+    "P01": {
+      "passed": 0,
+      "total": 2
+    },
+    "F06": {
+      "passed": 0,
+      "total": 5
+    },
+    "P02": {
+      "passed": 0,
+      "total": 2
+    },
+    "F07": {
+      "passed": 0,
+      "total": 7
+    },
+    "F08": {
+      "passed": 0,
+      "total": 2
+    },
+    "F09": {
+      "passed": 0,
+      "total": 4
+    },
+    "F10": {
+      "passed": 1,
+      "total": 2
+    },
+    "P03": {
+      "passed": 0,
+      "total": 2
+    },
+    "P04": {
+      "passed": 6,
+      "total": 6
+    },
+    "F11": {
+      "passed": 0,
+      "total": 4
+    }
+  },
+  "trusted_assets_unchanged": true
+}

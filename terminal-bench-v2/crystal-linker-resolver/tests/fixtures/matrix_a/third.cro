@@ -1,0 +1,4 @@
+OBJECT third
+SECTION .tail - 3 -
+SYMBOL final STRONG DEF .tail 0
+SYMBOL fixed STRONG DEF .tail 1

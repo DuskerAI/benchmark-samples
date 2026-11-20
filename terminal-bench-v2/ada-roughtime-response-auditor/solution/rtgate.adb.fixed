@@ -1,0 +1,866 @@
+with Ada.Command_Line;
+with Ada.Containers;
+with Ada.Containers.Vectors;
+with Ada.Directories;
+with Ada.Streams;
+with Ada.Streams.Stream_IO;
+with Ada.Strings.Fixed;
+with Ada.Strings.Unbounded;
+with Ada.Text_IO;
+with Crypto_Hash;
+with Interfaces;
+with Interfaces.C;
+
+procedure Rtgate is
+   use Ada.Strings.Unbounded;
+   use Crypto_Hash;
+   use type Ada.Containers.Count_Type;
+   use type Interfaces.C.int;
+
+   function C_System (Command : Interfaces.C.char_array) return Interfaces.C.int;
+   pragma Import (C, C_System, "system");
+
+   function C_Getpid return Interfaces.C.int;
+   pragma Import (C, C_Getpid, "getpid");
+
+   type Root_Rec is record
+       Name : Unbounded_String;
+       Pub  : Unbounded_String;
+   end record;
+
+   type Revoke_Rec is record
+      Root_Name : Unbounded_String;
+      Server : Unbounded_String;
+      Start_T : Long_Long_Integer := 0;
+      End_T : Long_Long_Integer := 0;
+   end record;
+
+   package Roots_Vec is new Ada.Containers.Vectors (Index_Type => Natural, Element_Type => Root_Rec);
+   package Revoke_Vec is new Ada.Containers.Vectors (Index_Type => Natural, Element_Type => Revoke_Rec);
+   Roots : Roots_Vec.Vector;
+   Revokes : Revoke_Vec.Vector;
+
+   type Evidence is record
+      Source : Unbounded_String;
+      Id : Unbounded_String;
+      Server : Unbounded_String;
+      Root : Unbounded_String;
+      Deleg_Start : Unbounded_String;
+      Deleg_End : Unbounded_String;
+      Delegate_Pub : Unbounded_String;
+      Delegate_Sig : Unbounded_String;
+      Nonce : Unbounded_String;
+      Midpoint : Unbounded_String;
+      Radius : Unbounded_String;
+      Index_Str : Unbounded_String;
+      Leaves_Str : Unbounded_String;
+      Path : Unbounded_String;
+      Root_Hash : Unbounded_String;
+      Prev_Hash : Unbounded_String;
+      Chain_Hash : Unbounded_String;
+      Response_Sig : Unbounded_String;
+      Malformed : Boolean := False;
+   end record;
+
+   type Decision is record
+      Id : Unbounded_String;
+      Source : Unbounded_String;
+      Server : Unbounded_String;
+      Midpoint : Long_Long_Integer := 0;
+      Radius : Long_Long_Integer := 0;
+      Ok : Boolean := False;
+      Reason : Unbounded_String;
+      Nonce : Unbounded_String;
+      Root_Hash : Unbounded_String;
+      Prev_Hash : Unbounded_String;
+      Chain_Hash : Unbounded_String;
+   end record;
+
+   type Path_Rec is record
+      Full : Unbounded_String;
+      Base : Unbounded_String;
+   end record;
+
+   package Evidence_Vec is new Ada.Containers.Vectors (Index_Type => Natural, Element_Type => Evidence);
+   package Decision_Vec is new Ada.Containers.Vectors (Index_Type => Natural, Element_Type => Decision);
+   package Path_Vec is new Ada.Containers.Vectors (Index_Type => Natural, Element_Type => Path_Rec);
+
+   Parsed : Evidence_Vec.Vector;
+   Results : Decision_Vec.Vector;
+
+   function Trim_Image (V : Long_Long_Integer) return String is
+      S : constant String := Long_Long_Integer'Image (V);
+   begin
+      if S'Length > 0 and then S (S'First) = ' ' then
+         return S (S'First + 1 .. S'Last);
+      end if;
+      return S;
+   end Trim_Image;
+
+   function Trim_Nat (V : Natural) return String is
+      S : constant String := Natural'Image (V);
+   begin
+      if S'Length > 0 and then S (S'First) = ' ' then
+         return S (S'First + 1 .. S'Last);
+      end if;
+      return S;
+   end Trim_Nat;
+
+   function Arg_Value (Name : String) return String is
+   begin
+      if Ada.Command_Line.Argument_Count < 2 then
+         return "";
+      end if;
+      for I in 1 .. Ada.Command_Line.Argument_Count - 1 loop
+         if Ada.Command_Line.Argument (I) = Name then
+            return Ada.Command_Line.Argument (I + 1);
+         end if;
+      end loop;
+      return "";
+   end Arg_Value;
+
+   function Is_Token (S : String) return Boolean is
+   begin
+      if S'Length = 0 then
+         return False;
+      end if;
+      for C of S loop
+         if not ((C >= 'a' and C <= 'z') or else (C >= 'A' and C <= 'Z') or else (C >= '0' and C <= '9') or else C = '.' or else C = '_' or else C = '-') then
+            return False;
+         end if;
+      end loop;
+      return True;
+   end Is_Token;
+
+   function Is_Lower_Hex (S : String; Bytes : Natural) return Boolean is
+   begin
+      if S'Length /= Bytes * 2 then
+         return False;
+      end if;
+      for C of S loop
+         if not ((C >= '0' and C <= '9') or else (C >= 'a' and C <= 'f')) then
+            return False;
+         end if;
+      end loop;
+      return True;
+   end Is_Lower_Hex;
+
+   function Is_Decimal (S : String) return Boolean is
+   begin
+      if S'Length = 0 then
+         return False;
+      end if;
+      if S'Length > 1 and then S (S'First) = '0' then
+         return False;
+      end if;
+      for C of S loop
+         if C < '0' or else C > '9' then
+            return False;
+         end if;
+      end loop;
+      return True;
+   end Is_Decimal;
+
+   function Int_Value (S : String) return Long_Long_Integer is
+   begin
+      return Long_Long_Integer'Value (S);
+   exception
+      when others => return -1;
+   end Int_Value;
+
+   function Hex_Nibble (C : Character) return Natural is
+   begin
+      if C >= '0' and C <= '9' then
+         return Character'Pos (C) - Character'Pos ('0');
+      else
+         return 10 + Character'Pos (C) - Character'Pos ('a');
+      end if;
+   end Hex_Nibble;
+
+   function Hex_Byte (S : String; Pair : Natural) return Interfaces.Unsigned_8 is
+      P : constant Natural := S'First + Pair * 2;
+   begin
+      return Interfaces.Unsigned_8 (Hex_Nibble (S (P)) * 16 + Hex_Nibble (S (P + 1)));
+   end Hex_Byte;
+
+   function Byte_To_Hex (B : Interfaces.Unsigned_8) return String is
+      Hex_Digits : constant String := "0123456789abcdef";
+      V : constant Natural := Natural (B);
+      R : String (1 .. 2);
+   begin
+      R (1) := Hex_Digits (V / 16 + 1);
+      R (2) := Hex_Digits (V mod 16 + 1);
+      return R;
+   end Byte_To_Hex;
+
+   function Digest_Hex (D : Byte_Array) return String is
+      R : Unbounded_String;
+   begin
+      for B of D loop
+         Append (R, Byte_To_Hex (B));
+      end loop;
+      return To_String (R);
+   end Digest_Hex;
+
+   procedure Put_Ascii (B : in out Byte_Array; Pos : in out Natural; S : String) is
+   begin
+      for C of S loop
+         B (Pos) := Interfaces.Unsigned_8 (Character'Pos (C));
+         Pos := Pos + 1;
+      end loop;
+   end Put_Ascii;
+
+   procedure Put_Hex (B : in out Byte_Array; Pos : in out Natural; H : String) is
+   begin
+      for I in 0 .. H'Length / 2 - 1 loop
+         B (Pos) := Hex_Byte (H, I);
+         Pos := Pos + 1;
+      end loop;
+   end Put_Hex;
+
+   function Leaf_Hash (Nonce : String) return String is
+      Input : Byte_Array (0 .. 40);
+      Outp : Byte_Array (0 .. 31);
+      P : Natural := 0;
+   begin
+      Put_Ascii (Input, P, "RTE-LEAF");
+      Input (P) := 0; P := P + 1;
+      Put_Hex (Input, P, Nonce);
+      SHA256_Hash (Input, Outp);
+      return Digest_Hex (Outp);
+   end Leaf_Hash;
+
+   function Node_Hash (Left_Hex : String; Right_Hex : String) return String is
+      Input : Byte_Array (0 .. 72);
+      Outp : Byte_Array (0 .. 31);
+      P : Natural := 0;
+   begin
+      Put_Ascii (Input, P, "RTE-NODE");
+      Input (P) := 0; P := P + 1;
+      Put_Hex (Input, P, Left_Hex);
+      Put_Hex (Input, P, Right_Hex);
+      SHA256_Hash (Input, Outp);
+      return Digest_Hex (Outp);
+   end Node_Hash;
+
+   function Chain_Hash_Value (Prev_Hex : String; Server : String; Nonce : String; Root_Hash : String; Midpoint : String; Radius : String) return String is
+      Input : Byte_Array (0 .. 10 + 32 + Server'Length + 1 + 32 + 32 + Midpoint'Length + 1 + Radius'Length - 1);
+      Outp : Byte_Array (0 .. 31);
+      P : Natural := 0;
+   begin
+      Put_Ascii (Input, P, "RTE-CHAIN");
+      Input (P) := 0; P := P + 1;
+      Put_Hex (Input, P, Prev_Hex);
+      Put_Ascii (Input, P, Server);
+      Input (P) := 0; P := P + 1;
+      Put_Hex (Input, P, Nonce);
+      Put_Hex (Input, P, Root_Hash);
+      Put_Ascii (Input, P, Midpoint);
+      Input (P) := 0; P := P + 1;
+      Put_Ascii (Input, P, Radius);
+      SHA256_Hash (Input, Outp);
+      return Digest_Hex (Outp);
+   end Chain_Hash_Value;
+
+   procedure Write_Hex_File (Name : String; Hex : String) is
+      F : Ada.Streams.Stream_IO.File_Type;
+      One : Ada.Streams.Stream_Element_Array (1 .. 1);
+   begin
+      Ada.Streams.Stream_IO.Create (F, Ada.Streams.Stream_IO.Out_File, Name);
+      for I in 0 .. Hex'Length / 2 - 1 loop
+         One (1) := Ada.Streams.Stream_Element (Hex_Byte (Hex, I));
+         Ada.Streams.Stream_IO.Write (F, One);
+      end loop;
+      Ada.Streams.Stream_IO.Close (F);
+   end Write_Hex_File;
+
+   procedure Write_Text_File (Name : String; Text : String) is
+      F : Ada.Streams.Stream_IO.File_Type;
+      One : Ada.Streams.Stream_Element_Array (1 .. 1);
+   begin
+      Ada.Streams.Stream_IO.Create (F, Ada.Streams.Stream_IO.Out_File, Name);
+      for C of Text loop
+         One (1) := Ada.Streams.Stream_Element (Character'Pos (C));
+         Ada.Streams.Stream_IO.Write (F, One);
+      end loop;
+      Ada.Streams.Stream_IO.Close (F);
+   end Write_Text_File;
+
+   function Shell (Cmd : String) return Boolean is
+   begin
+      return C_System (Interfaces.C.To_C (Cmd)) = 0;
+   end Shell;
+
+   Verify_Counter : Natural := 0;
+
+   function Verify_Ed25519 (Pub_Hex : String; Sig_Hex : String; Message : String) return Boolean is
+      Prefix : constant String := "302a300506032b6570032100";
+      Temp_Base : constant String := "/tmp/rtgate_" & Trim_Nat (Natural (Integer (C_Getpid))) & "_" & Trim_Nat (Verify_Counter);
+      Pub_File : constant String := Temp_Base & "_pub.der";
+      Sig_File : constant String := Temp_Base & "_sig.bin";
+      Msg_File : constant String := Temp_Base & "_msg.bin";
+      Ok : Boolean := False;
+
+      procedure Remove_Temps is
+      begin
+         if Ada.Directories.Exists (Pub_File) then Ada.Directories.Delete_File (Pub_File); end if;
+         if Ada.Directories.Exists (Sig_File) then Ada.Directories.Delete_File (Sig_File); end if;
+         if Ada.Directories.Exists (Msg_File) then Ada.Directories.Delete_File (Msg_File); end if;
+      exception
+         when others => null;
+      end Remove_Temps;
+   begin
+      Verify_Counter := Verify_Counter + 1;
+      Remove_Temps;
+      Write_Hex_File (Pub_File, Prefix & Pub_Hex);
+      Write_Hex_File (Sig_File, Sig_Hex);
+      Write_Text_File (Msg_File, Message);
+      Ok := Shell ("openssl pkeyutl -verify -rawin -pubin -keyform DER -inkey " & Pub_File & " -sigfile " & Sig_File & " -in " & Msg_File & " >/dev/null 2>/dev/null");
+      Remove_Temps;
+      return Ok;
+   exception
+      when others =>
+         Remove_Temps;
+         return False;
+   end Verify_Ed25519;
+
+   function Json (S : String) return String is
+      R : Unbounded_String;
+   begin
+      Append (R, '"');
+      for C of S loop
+         if C = '"' or else C = '\' then
+            Append (R, '\');
+         end if;
+         Append (R, C);
+      end loop;
+      Append (R, '"');
+      return To_String (R);
+   end Json;
+
+   procedure Load_Trust (Path : String) is
+      F : Ada.Text_IO.File_Type;
+      Line : String (1 .. 4096);
+      Last : Natural;
+   begin
+      Ada.Text_IO.Open (F, Ada.Text_IO.In_File, Path);
+      while not Ada.Text_IO.End_Of_File (F) loop
+         Ada.Text_IO.Get_Line (F, Line, Last);
+         declare
+            S : constant String := Line (1 .. Last);
+            P1 : constant Natural := Ada.Strings.Fixed.Index (S, " ");
+         begin
+            if P1 > 0 and then S (S'First .. P1 - 1) = "root" then
+               declare
+                  Rest : constant String := S (P1 + 1 .. S'Last);
+                  P2 : constant Natural := Ada.Strings.Fixed.Index (Rest, " ");
+               begin
+                  if P2 > 1 then
+                      declare
+                         N : constant String := Rest (Rest'First .. P2 - 1);
+                         P : constant String := Rest (P2 + 1 .. Rest'Last);
+                         Replaced : Boolean := False;
+                      begin
+                         if Is_Token (N) and then Is_Lower_Hex (P, 32) then
+                            if Roots.Length > 0 then
+                               for I in Roots.First_Index .. Roots.Last_Index loop
+                                  if To_String (Roots.Element (I).Name) = N then
+                                     Roots.Replace_Element (I, Root_Rec'(Name => To_Unbounded_String (N), Pub => To_Unbounded_String (P)));
+                                     Replaced := True;
+                                  end if;
+                               end loop;
+                            end if;
+                            if not Replaced then
+                               Roots.Append (Root_Rec'(Name => To_Unbounded_String (N), Pub => To_Unbounded_String (P)));
+                            end if;
+                         end if;
+                      end;
+                  end if;
+                end;
+             elsif P1 > 0 and then S (S'First .. P1 - 1) = "revoke" then
+                declare
+                   Rest1 : constant String := S (P1 + 1 .. S'Last);
+                   P2 : constant Natural := Ada.Strings.Fixed.Index (Rest1, " ");
+                begin
+                   if P2 > 1 then
+                      declare
+                         Name : constant String := Rest1 (Rest1'First .. P2 - 1);
+                         Rest2 : constant String := Rest1 (P2 + 1 .. Rest1'Last);
+                         P3 : constant Natural := Ada.Strings.Fixed.Index (Rest2, " ");
+                      begin
+                         if P3 > 1 then
+                            declare
+                               Server : constant String := Rest2 (Rest2'First .. P3 - 1);
+                               Rest3 : constant String := Rest2 (P3 + 1 .. Rest2'Last);
+                               P4 : constant Natural := Ada.Strings.Fixed.Index (Rest3, " ");
+                            begin
+                               if P4 > 1 then
+                                  declare
+                                     Start_S : constant String := Rest3 (Rest3'First .. P4 - 1);
+                                     End_S : constant String := Rest3 (P4 + 1 .. Rest3'Last);
+                                     Start_V : constant Long_Long_Integer := Int_Value (Start_S);
+                                     End_V : constant Long_Long_Integer := Int_Value (End_S);
+                                  begin
+                                     if Is_Token (Name) and then Is_Token (Server) and then Is_Decimal (Start_S) and then Is_Decimal (End_S) and then Start_V <= End_V then
+                                        Revokes.Append (Revoke_Rec'(Root_Name => To_Unbounded_String (Name), Server => To_Unbounded_String (Server), Start_T => Start_V, End_T => End_V));
+                                     end if;
+                                  end;
+                               end if;
+                            end;
+                         end if;
+                      end;
+                   end if;
+                end;
+             end if;
+          end;
+       end loop;
+      Ada.Text_IO.Close (F);
+   exception
+      when others =>
+         if Ada.Text_IO.Is_Open (F) then Ada.Text_IO.Close (F); end if;
+   end Load_Trust;
+
+   function Find_Root (Name : String) return String is
+   begin
+      for R of Roots loop
+         if To_String (R.Name) = Name then
+            return To_String (R.Pub);
+         end if;
+      end loop;
+      return "";
+   end Find_Root;
+
+   function Is_Revoked (Root_Name : String; Server : String; Midpoint : Long_Long_Integer) return Boolean is
+   begin
+      for R of Revokes loop
+         if To_String (R.Root_Name) = Root_Name and then To_String (R.Server) = Server
+           and then Midpoint >= R.Start_T and then Midpoint <= R.End_T then
+            return True;
+         end if;
+      end loop;
+      return False;
+   end Is_Revoked;
+
+   procedure Set_Field (E : in out Evidence; K : String; V : String; Seen : in out String) is
+      Code : Character := ASCII.NUL;
+   begin
+      if K = "id" then Code := 'a'; E.Id := To_Unbounded_String (V);
+      elsif K = "server" then Code := 'b'; E.Server := To_Unbounded_String (V);
+      elsif K = "root" then Code := 'c'; E.Root := To_Unbounded_String (V);
+      elsif K = "delegation-start" then Code := 'd'; E.Deleg_Start := To_Unbounded_String (V);
+      elsif K = "delegation-end" then Code := 'e'; E.Deleg_End := To_Unbounded_String (V);
+      elsif K = "delegate-pub" then Code := 'f'; E.Delegate_Pub := To_Unbounded_String (V);
+      elsif K = "delegate-sig" then Code := 'g'; E.Delegate_Sig := To_Unbounded_String (V);
+      elsif K = "nonce" then Code := 'h'; E.Nonce := To_Unbounded_String (V);
+      elsif K = "midpoint" then Code := 'i'; E.Midpoint := To_Unbounded_String (V);
+      elsif K = "radius" then Code := 'j'; E.Radius := To_Unbounded_String (V);
+      elsif K = "index" then Code := 'k'; E.Index_Str := To_Unbounded_String (V);
+      elsif K = "leaves" then Code := 'l'; E.Leaves_Str := To_Unbounded_String (V);
+      elsif K = "path" then Code := 'm'; E.Path := To_Unbounded_String (V);
+      elsif K = "root-hash" then Code := 'n'; E.Root_Hash := To_Unbounded_String (V);
+      elsif K = "prev-hash" then Code := 'o'; E.Prev_Hash := To_Unbounded_String (V);
+      elsif K = "chain-hash" then Code := 'p'; E.Chain_Hash := To_Unbounded_String (V);
+      elsif K = "response-sig" then Code := 'q'; E.Response_Sig := To_Unbounded_String (V);
+      else E.Malformed := True; return;
+      end if;
+
+      for C of Seen loop
+         if C = Code then
+            E.Malformed := True;
+            return;
+         end if;
+      end loop;
+      for I in Seen'Range loop
+         if Seen (I) = ASCII.NUL then
+            Seen (I) := Code;
+            return;
+         end if;
+      end loop;
+   end Set_Field;
+
+   function Parse_Evidence (Path : String; Base : String) return Evidence is
+      F : Ada.Text_IO.File_Type;
+      Line : String (1 .. 8192);
+      Last : Natural;
+      E : Evidence;
+      Seen : String (1 .. 18) := (others => ASCII.NUL);
+   begin
+      E.Source := To_Unbounded_String (Base);
+      Ada.Text_IO.Open (F, Ada.Text_IO.In_File, Path);
+      if Ada.Text_IO.End_Of_File (F) then
+         E.Malformed := True;
+      else
+         Ada.Text_IO.Get_Line (F, Line, Last);
+         if Last /= 4 or else Line (1 .. Last) /= "RTE1" then
+            E.Malformed := True;
+         end if;
+      end if;
+      while not Ada.Text_IO.End_Of_File (F) loop
+         Ada.Text_IO.Get_Line (F, Line, Last);
+         declare
+            S : constant String := Line (1 .. Last);
+            P : constant Natural := Ada.Strings.Fixed.Index (S, ": ");
+         begin
+            if Last = 0 then
+               null;
+            elsif P <= 1 or else Ada.Strings.Fixed.Index (S, "  ") > 0 or else S (S'First) = ' '
+              or else (S (S'Last) = ' ' and then not (S (S'First .. P - 1) = "path" and then P + 1 = S'Last)) then
+               E.Malformed := True;
+            else
+               Set_Field (E, S (S'First .. P - 1), S (P + 2 .. S'Last), Seen);
+            end if;
+         end;
+      end loop;
+      Ada.Text_IO.Close (F);
+      return E;
+   exception
+      when others =>
+         if Ada.Text_IO.Is_Open (F) then Ada.Text_IO.Close (F); end if;
+         E.Malformed := True;
+         return E;
+   end Parse_Evidence;
+
+   function Required_And_Canonical (E : Evidence) return Boolean is
+   begin
+      return Is_Token (To_String (E.Id)) and then Is_Token (To_String (E.Server)) and then Is_Token (To_String (E.Root))
+        and then Is_Decimal (To_String (E.Deleg_Start)) and then Is_Decimal (To_String (E.Deleg_End))
+        and then Is_Lower_Hex (To_String (E.Delegate_Pub), 32) and then Is_Lower_Hex (To_String (E.Delegate_Sig), 64)
+        and then Is_Lower_Hex (To_String (E.Nonce), 32) and then Is_Decimal (To_String (E.Midpoint))
+         and then Is_Decimal (To_String (E.Radius)) and then Is_Decimal (To_String (E.Index_Str))
+         and then Is_Decimal (To_String (E.Leaves_Str)) and then Is_Lower_Hex (To_String (E.Root_Hash), 32)
+        and then Is_Lower_Hex (To_String (E.Prev_Hash), 32) and then Is_Lower_Hex (To_String (E.Chain_Hash), 32)
+         and then Is_Lower_Hex (To_String (E.Response_Sig), 64);
+   end Required_And_Canonical;
+
+   function Is_Duplicate (E : Evidence) return Boolean is
+      Id : constant String := To_String (E.Id);
+      Count : Natural := 0;
+   begin
+      if Id = "" then
+         return False;
+      end if;
+      for X of Parsed loop
+         if not X.Malformed and then To_String (X.Id) = Id then
+            Count := Count + 1;
+         end if;
+      end loop;
+      return Count > 1;
+   end Is_Duplicate;
+
+   function Path_Length (P : String) return Natural is
+      Count : Natural := 0;
+      In_Tok : Boolean := False;
+   begin
+      if P'Length = 0 then
+         return 0;
+      end if;
+      for C of P loop
+         if C = ' ' then
+            In_Tok := False;
+         elsif not In_Tok then
+            Count := Count + 1;
+            In_Tok := True;
+         end if;
+      end loop;
+      return Count;
+   end Path_Length;
+
+   function Validate_Merkle (E : Evidence) return Boolean is
+      P : constant String := To_String (E.Path);
+      Pos : Natural := P'First;
+      Len : constant Natural := Path_Length (P);
+      Leaves : Long_Long_Integer := Int_Value (To_String (E.Leaves_Str));
+      Idx : Long_Long_Integer := Int_Value (To_String (E.Index_Str));
+      Need : Long_Long_Integer := 1;
+      Cur : Unbounded_String := To_Unbounded_String (Leaf_Hash (To_String (E.Nonce)));
+   begin
+      for I in 1 .. Len loop
+         Need := Need * 2;
+      end loop;
+      if Leaves /= Need or else Idx < 0 or else Idx >= Leaves then
+         return False;
+      end if;
+      if P'Length = 0 then
+         return To_String (Cur) = To_String (E.Root_Hash) and then Leaves = 1 and then Idx = 0;
+      end if;
+      while Pos <= P'Last loop
+         declare
+            Stop : Natural := Pos;
+         begin
+            while Stop <= P'Last and then P (Stop) /= ' ' loop
+               Stop := Stop + 1;
+            end loop;
+            declare
+               Tok : constant String := P (Pos .. Stop - 1);
+            begin
+               if Tok'Length /= 66 or else Tok (Tok'First + 1) /= ':' or else not Is_Lower_Hex (Tok (Tok'First + 2 .. Tok'Last), 32) then
+                  return False;
+               end if;
+               if Tok (Tok'First) = 'L' then
+                  if Idx mod 2 /= 1 then return False; end if;
+                  Cur := To_Unbounded_String (Node_Hash (Tok (Tok'First + 2 .. Tok'Last), To_String (Cur)));
+               elsif Tok (Tok'First) = 'R' then
+                  if Idx mod 2 /= 0 then return False; end if;
+                  Cur := To_Unbounded_String (Node_Hash (To_String (Cur), Tok (Tok'First + 2 .. Tok'Last)));
+               else
+                  return False;
+               end if;
+               Idx := Idx / 2;
+            end;
+            Pos := Stop + 1;
+         end;
+      end loop;
+      return Idx = 0 and then To_String (Cur) = To_String (E.Root_Hash);
+   exception
+      when others => return False;
+   end Validate_Merkle;
+
+   function Decide (E : Evidence; Now_Time : Long_Long_Integer) return Decision is
+      D : Decision;
+      Root_Pub : Unbounded_String;
+      Start_T, End_T, Mid, Rad : Long_Long_Integer;
+      Deleg_Msg, Resp_Msg : Unbounded_String;
+   begin
+      D.Id := E.Id;
+      D.Source := E.Source;
+      D.Server := E.Server;
+      D.Nonce := E.Nonce;
+      D.Root_Hash := E.Root_Hash;
+      D.Prev_Hash := E.Prev_Hash;
+      D.Chain_Hash := E.Chain_Hash;
+      if E.Malformed or else not Required_And_Canonical (E) then
+         D.Reason := To_Unbounded_String ("malformed");
+         return D;
+      end if;
+      if Is_Duplicate (E) then
+         D.Reason := To_Unbounded_String ("duplicate");
+         return D;
+      end if;
+      Root_Pub := To_Unbounded_String (Find_Root (To_String (E.Root)));
+      if Length (Root_Pub) = 0 then
+         D.Reason := To_Unbounded_String ("unknown-root");
+         return D;
+      end if;
+      Start_T := Int_Value (To_String (E.Deleg_Start));
+      End_T := Int_Value (To_String (E.Deleg_End));
+      Mid := Int_Value (To_String (E.Midpoint));
+      Rad := Int_Value (To_String (E.Radius));
+      D.Midpoint := Mid;
+      D.Radius := Rad;
+      if Start_T < 0 or else End_T < Start_T or else Mid < Start_T or else Mid > End_T then
+          D.Reason := To_Unbounded_String ("bad-delegation");
+          return D;
+      end if;
+      if Is_Revoked (To_String (E.Root), To_String (E.Server), Mid) then
+         D.Reason := To_Unbounded_String ("bad-delegation");
+         return D;
+      end if;
+      Deleg_Msg := To_Unbounded_String ("RTE-DELEGATION" & ASCII.LF & To_String (E.Server) & ASCII.LF & To_String (E.Delegate_Pub) & ASCII.LF & To_String (E.Deleg_Start) & ASCII.LF & To_String (E.Deleg_End) & ASCII.LF);
+      if not Verify_Ed25519 (To_String (Root_Pub), To_String (E.Delegate_Sig), To_String (Deleg_Msg)) then
+         D.Reason := To_Unbounded_String ("bad-delegation");
+         return D;
+      end if;
+      if Rad < 0 or else Now_Time < Mid - Rad or else Now_Time > Mid + Rad then
+         D.Reason := To_Unbounded_String ("stale");
+         return D;
+      end if;
+      if not Validate_Merkle (E) then
+         D.Reason := To_Unbounded_String ("bad-merkle");
+         return D;
+      end if;
+      Resp_Msg := To_Unbounded_String ("RTE-RESPONSE" & ASCII.LF & To_String (E.Server) & ASCII.LF & To_String (E.Nonce) & ASCII.LF & To_String (E.Root_Hash) & ASCII.LF & To_String (E.Midpoint) & ASCII.LF & To_String (E.Radius) & ASCII.LF);
+      if not Verify_Ed25519 (To_String (E.Delegate_Pub), To_String (E.Response_Sig), To_String (Resp_Msg)) then
+         D.Reason := To_Unbounded_String ("bad-response");
+         return D;
+      end if;
+      D.Ok := True;
+      return D;
+   end Decide;
+
+   function Less (A, B : Decision) return Boolean is
+      AI : constant String := To_String (A.Id);
+      BI : constant String := To_String (B.Id);
+      ASrc : constant String := To_String (A.Source);
+      BSrc : constant String := To_String (B.Source);
+   begin
+      return AI < BI or else (AI = BI and then ASrc < BSrc);
+   end Less;
+
+   function Chain_Less (A, B : Decision) return Boolean is
+      ASrv : constant String := To_String (A.Server);
+      BSrv : constant String := To_String (B.Server);
+      AI : constant String := To_String (A.Id);
+      BI : constant String := To_String (B.Id);
+      ASrc : constant String := To_String (A.Source);
+      BSrc : constant String := To_String (B.Source);
+   begin
+      return ASrv < BSrv or else (ASrv = BSrv and then (A.Midpoint < B.Midpoint
+        or else (A.Midpoint = B.Midpoint and then (AI < BI or else (AI = BI and then ASrc < BSrc)))));
+   end Chain_Less;
+
+   procedure Sort_Results_For_Chain is
+   begin
+      if Results.Length < 2 then return; end if;
+      for I in Results.First_Index .. Results.Last_Index loop
+         for J in I + 1 .. Results.Last_Index loop
+            if Chain_Less (Results.Element (J), Results.Element (I)) then
+               declare
+                  A : constant Decision := Results.Element (I);
+                  B : constant Decision := Results.Element (J);
+               begin
+                  Results.Replace_Element (I, B);
+                  Results.Replace_Element (J, A);
+               end;
+            end if;
+         end loop;
+      end loop;
+   end Sort_Results_For_Chain;
+
+    procedure Apply_Chain_Rules is
+       Zero : constant String := "0000000000000000000000000000000000000000000000000000000000000000";
+       Current_Server : Unbounded_String := To_Unbounded_String ("");
+       Expected : Unbounded_String := To_Unbounded_String (Zero);
+       Seen_Nonces : Unbounded_String := To_Unbounded_String ("");
+
+       function Contains_Nonce (Nonce : String) return Boolean is
+          Haystack : constant String := To_String (Seen_Nonces);
+          Needle : constant String := "|" & Nonce & "|";
+       begin
+          return Ada.Strings.Fixed.Index (Haystack, Needle) > 0;
+       end Contains_Nonce;
+    begin
+       Sort_Results_For_Chain;
+      for I in Results.First_Index .. Results.Last_Index loop
+         declare
+            R : Decision := Results.Element (I);
+         begin
+            if R.Ok then
+               declare
+                  Computed : constant String := Chain_Hash_Value (To_String (R.Prev_Hash), To_String (R.Server), To_String (R.Nonce), To_String (R.Root_Hash), Trim_Image (R.Midpoint), Trim_Image (R.Radius));
+               begin
+                   if To_String (R.Server) /= To_String (Current_Server) then
+                      Current_Server := R.Server;
+                      Expected := To_Unbounded_String (Zero);
+                      Seen_Nonces := To_Unbounded_String ("");
+                   end if;
+                   if To_String (R.Prev_Hash) /= To_String (Expected) or else To_String (R.Chain_Hash) /= Computed or else Contains_Nonce (To_String (R.Nonce)) then
+                      R.Ok := False;
+                      R.Reason := To_Unbounded_String ("bad-chain");
+                   else
+                      Expected := R.Chain_Hash;
+                      Append (Seen_Nonces, "|" & To_String (R.Nonce) & "|");
+                   end if;
+                  Results.Replace_Element (I, R);
+               end;
+            end if;
+         end;
+      end loop;
+   end Apply_Chain_Rules;
+
+   procedure Sort_Results is
+   begin
+      if Results.Length < 2 then return; end if;
+      for I in Results.First_Index .. Results.Last_Index loop
+         for J in I + 1 .. Results.Last_Index loop
+            if Less (Results.Element (J), Results.Element (I)) then
+               declare
+                  A : constant Decision := Results.Element (I);
+                  B : constant Decision := Results.Element (J);
+               begin
+                  Results.Replace_Element (I, B);
+                  Results.Replace_Element (J, A);
+               end;
+            end if;
+         end loop;
+      end loop;
+   end Sort_Results;
+
+   function Path_Less (A, B : Path_Rec) return Boolean is
+   begin
+      return To_String (A.Base) < To_String (B.Base);
+   end Path_Less;
+
+   procedure Sort_Paths (Paths : in out Path_Vec.Vector) is
+   begin
+      if Paths.Length < 2 then return; end if;
+      for I in Paths.First_Index .. Paths.Last_Index loop
+         for J in I + 1 .. Paths.Last_Index loop
+            if Path_Less (Paths.Element (J), Paths.Element (I)) then
+               declare
+                  A : constant Path_Rec := Paths.Element (I);
+                  B : constant Path_Rec := Paths.Element (J);
+               begin
+                  Paths.Replace_Element (I, B);
+                  Paths.Replace_Element (J, A);
+               end;
+            end if;
+         end loop;
+      end loop;
+   end Sort_Paths;
+
+   Trust_Path : constant String := Arg_Value ("--trust");
+   Evidence_Dir : constant String := Arg_Value ("--evidence");
+   Now_Text : constant String := Arg_Value ("--now");
+   Out_Path : constant String := Arg_Value ("--out");
+   Now_Time : Long_Long_Integer := Int_Value (Now_Text);
+   Search : Ada.Directories.Search_Type;
+   Ent : Ada.Directories.Directory_Entry_Type;
+   Paths : Path_Vec.Vector;
+   OutF : Ada.Text_IO.File_Type;
+   Accepted : Natural := 0;
+   Rejected : Natural := 0;
+begin
+   if Trust_Path = "" or else Evidence_Dir = "" or else Now_Text = "" or else Out_Path = "" or else Now_Time < 0 then
+      Ada.Command_Line.Set_Exit_Status (2);
+      return;
+   end if;
+
+   Load_Trust (Trust_Path);
+   Ada.Directories.Start_Search (Search, Evidence_Dir, "*.rte", (Ada.Directories.Ordinary_File => True, others => False));
+   while Ada.Directories.More_Entries (Search) loop
+      Ada.Directories.Get_Next_Entry (Search, Ent);
+      Paths.Append (Path_Rec'(Full => To_Unbounded_String (Ada.Directories.Full_Name (Ent)), Base => To_Unbounded_String (Ada.Directories.Simple_Name (Ent))));
+   end loop;
+   Ada.Directories.End_Search (Search);
+   Sort_Paths (Paths);
+
+   for P of Paths loop
+      Parsed.Append (Parse_Evidence (To_String (P.Full), To_String (P.Base)));
+   end loop;
+   for E of Parsed loop
+      Results.Append (Decide (E, Now_Time));
+   end loop;
+   Apply_Chain_Rules;
+   Sort_Results;
+   for R of Results loop
+      if R.Ok then Accepted := Accepted + 1; else Rejected := Rejected + 1; end if;
+   end loop;
+
+   Ada.Text_IO.Create (OutF, Ada.Text_IO.Out_File, Out_Path);
+   Ada.Text_IO.Put (OutF, "{""accepted"":[");
+   declare
+      First : Boolean := True;
+   begin
+      for R of Results loop
+         if R.Ok then
+            if not First then Ada.Text_IO.Put (OutF, ","); end if;
+            First := False;
+            Ada.Text_IO.Put (OutF, "{""id"":" & Json (To_String (R.Id)) & ",""source"":" & Json (To_String (R.Source)) & ",""server"":" & Json (To_String (R.Server)) & ",""midpoint"":" & Trim_Image (R.Midpoint) & ",""radius"":" & Trim_Image (R.Radius) & "}");
+         end if;
+      end loop;
+   end;
+   Ada.Text_IO.Put (OutF, "],""rejected"":[");
+   declare
+      First : Boolean := True;
+   begin
+      for R of Results loop
+         if not R.Ok then
+            if not First then Ada.Text_IO.Put (OutF, ","); end if;
+            First := False;
+            Ada.Text_IO.Put (OutF, "{""id"":" & Json (To_String (R.Id)) & ",""source"":" & Json (To_String (R.Source)) & ",""reason"":" & Json (To_String (R.Reason)) & "}");
+         end if;
+      end loop;
+   end;
+   Ada.Text_IO.Put_Line (OutF, "],""summary"":{""accepted"":" & Trim_Nat (Accepted) & ",""rejected"":" & Trim_Nat (Rejected) & "}}");
+   Ada.Text_IO.Close (OutF);
+end Rtgate;

@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+    },
+    "trial_name": "go-workflows-checkpoint-fencing__LLH7u9p",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/reference-clean-regrade-release",
+    "job_id": "b78f0d79-cfee-4639-b38d-089ff3272386",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "b1712da4-aa0c-4585-b2f2-7e7b83fc9a68",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/release-oracle-release/go-workflows-checkpoint-fencing__cbkeKgT"
+    }
+}

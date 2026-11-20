@@ -1,0 +1,9 @@
+[Unit]
+Description=Edge gateway firewall policy
+After=gateway.service
+
+[Service]
+EnvironmentFile=/app/run/rendered/configs/firewall.env
+
+[Install]
+WantedBy=edge-gateway.target

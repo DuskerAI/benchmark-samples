@@ -1,0 +1,60 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "alien-signals-graph-savepoints",
+        "version": "1.0.0",
+        "type": "local",
+        "digest": "sha256:f23c7cde0f1c824d331c1baccc7e1b5b7ed4149edfcb80c86707d6b3db949cab",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        },
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    },
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "0184d021-1203-40ba-a65b-2f16b5d72ae7",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T200144Z-331679/jobs/trial-1/alien-signals-graph-savepoints__gQQgqUQ",
+        "task": {
+            "name": "alien-signals-graph-savepoints",
+            "version": "1.0.0",
+            "type": "local",
+            "digest": "sha256:f23c7cde0f1c824d331c1baccc7e1b5b7ed4149edfcb80c86707d6b3db949cab",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "trial_name": "go-workflows-reset-provenance__jwxV6mG",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3-regrade",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        }
+    },
+    "job_id": "5ecfc3ab-7670-4f74-9aca-bfc92e9d9d55",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "2598d532-be87-4689-9836-91c62eb3691b",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3/go-workflows-reset-provenance__ZkAs5YP"
+    }
+}

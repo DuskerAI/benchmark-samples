@@ -1,0 +1,84 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "357"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$fraction",
+            [
+              "number",
+              "44.625"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "cdata",
+              "357LL"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": true,
+  "observed": 357,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "9"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 2,
+    "on": true,
+    "roots": 1,
+    "sides": 2
+  }
+}

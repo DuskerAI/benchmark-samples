@@ -1,0 +1,4 @@
+case	capture	qlog
+alpha	captures/alpha.qcap	qlogs/alpha.jsonl
+bravo	captures/bravo.qcap	qlogs/bravo.jsonl
+charlie	captures/charlie.qcap	qlogs/charlie.jsonl

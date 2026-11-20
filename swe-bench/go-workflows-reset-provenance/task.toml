@@ -1,0 +1,57 @@
+schema_version = "1.4"
+artifacts = [
+  { source = "/app/activity", destination = "candidate-source/activity" },
+  { source = "/app/activitytester", destination = "candidate-source/activitytester" },
+  { source = "/app/analyzer", destination = "candidate-source/analyzer" },
+  { source = "/app/backend", destination = "candidate-source/backend" },
+  { source = "/app/client", destination = "candidate-source/client" },
+  { source = "/app/core", destination = "candidate-source/core" },
+  { source = "/app/diag", destination = "candidate-source/diag" },
+  { source = "/app/internal", destination = "candidate-source/internal" },
+  { source = "/app/registry", destination = "candidate-source/registry" },
+  { source = "/app/tester", destination = "candidate-source/tester" },
+  { source = "/app/worker", destination = "candidate-source/worker" },
+  { source = "/app/workflow", destination = "candidate-source/workflow" }
+]
+
+[task]
+name = "dusker-ai/go-workflows-reset-provenance"
+version = "3.0.0"
+description = "Recover shared workflow history and external work across nested execution resets"
+authors = [{ name = "dusker ai" }]
+keywords = ["durable-workflows", "history-branches", "effect-provenance", "sqlite", "recovery"]
+
+[metadata]
+difficulty = "hard"
+category = "Durable workflow engines"
+tags = ["original", "replay", "go-workflows"]
+base_commit = "8290e0a52ebcb5225a2dcfe154dff5b97054481f"
+upstream_commit = "48e811947bece0a2a9993d85edcf9a0f3a7e486b"
+repository = "https://github.com/cschleiden/go-workflows"
+
+[agent]
+timeout_sec = 3000.0
+network_mode = "no-network"
+user = "solver"
+
+[environment]
+build_timeout_sec = 900.0
+network_mode = "public"
+cpus = 2
+memory_mb = 4096
+storage_mb = 8192
+workdir = "/app"
+
+[verifier]
+timeout_sec = 360.0
+environment_mode = "separate"
+network_mode = "no-network"
+user = "root"
+
+[verifier.environment]
+build_timeout_sec = 900.0
+network_mode = "no-network"
+cpus = 2
+memory_mb = 4096
+storage_mb = 8192
+workdir = "/app"

@@ -1,0 +1,2 @@
+DEP_1.0 { global: dep_stable; local: *; };
+DEP_2.0 { global: dep_new; } DEP_1.0;

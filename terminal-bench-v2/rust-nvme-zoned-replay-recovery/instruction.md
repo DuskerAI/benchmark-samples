@@ -1,0 +1,3 @@
+Fix the Rust project in `/opt/nvmez-recover`. It should build with `cd /opt/nvmez-recover && cargo build --release`, and `/opt/nvmez-recover/target/release/nvmez-recover --case /opt/nvmez-recover/cases/rack-a --out /var/lib/nvmez/output` must write exactly `zones.jsonl`, `audit.csv`, and `manifest.json`.
+
+The authoritative replay, state, and output contract is in the top comment of `/opt/nvmez-recover/src/main.rs`. Keep the same command interface and follow that contract for all same-format cases; the verifier generates additional cases. Derive artifacts from the runtime `geometry.tsv` and `stream.ncap`, not from fixed record numbers, path ids, command ids, or precomputed output. Do not modify `/opt/nvmez-recover/cases`.

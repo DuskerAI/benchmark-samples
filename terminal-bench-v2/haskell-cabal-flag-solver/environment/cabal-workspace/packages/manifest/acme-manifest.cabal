@@ -1,0 +1,26 @@
+cabal-version: 2.4
+name: acme-manifest
+version: 5.1.0
+build-type: Simple
+
+flag signed-metadata
+  description: Select signed release metadata
+  default: False
+  manual: True
+
+library
+  exposed-modules: Acme.Manifest.Internal
+  hs-source-dirs: src
+  build-depends: base >=4.14 && <5
+  if flag(signed-metadata)
+    cpp-options: -DSIGNED_METADATA
+  default-language: Haskell2010
+
+library fingerprint
+  exposed-modules: Acme.Manifest.Wire
+  hs-source-dirs: routes
+  build-depends:
+      base >=4.14 && <5,
+      acme-schema:wire,
+      acme-schema >=1.0 && <2
+  default-language: Haskell2010

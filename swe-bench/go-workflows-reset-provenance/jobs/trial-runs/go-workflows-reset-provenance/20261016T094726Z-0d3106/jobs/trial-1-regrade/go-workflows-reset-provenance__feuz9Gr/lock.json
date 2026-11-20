@@ -1,0 +1,60 @@
+{
+    "schema_version": 2,
+    "task": {
+        "name": "go-workflows-reset-provenance",
+        "version": "3.0.0",
+        "type": "local",
+        "digest": "sha256:2d4a607f1b897f8d98fadecf4b84614cb88e5a8445de29b4555a034ca2910dd6",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "skills": [],
+        "resume_trajectory": false,
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        },
+        "mcp_servers": []
+    },
+    "bridge_inputs": {},
+    "skills": [],
+    "environment": {
+        "type": "docker",
+        "force_build": false,
+        "delete": true,
+        "cpu_enforcement_policy": "auto",
+        "memory_enforcement_policy": "auto",
+        "extra_docker_compose": [],
+        "kwargs": {},
+        "extra_allowed_hosts": []
+    },
+    "verifier": {
+        "disable": false,
+        "environment_mode": "separate"
+    },
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "03cf2654-0ee5-4b4b-b200-505028eecd4c",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ",
+        "task": {
+            "name": "go-workflows-reset-provenance",
+            "version": "3.0.0",
+            "type": "local",
+            "digest": "sha256:2d4a607f1b897f8d98fadecf4b84614cb88e5a8445de29b4555a034ca2910dd6",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+        }
+    }
+}

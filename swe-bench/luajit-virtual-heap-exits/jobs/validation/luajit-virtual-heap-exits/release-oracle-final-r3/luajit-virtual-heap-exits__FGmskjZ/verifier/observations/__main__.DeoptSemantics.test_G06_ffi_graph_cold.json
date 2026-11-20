@@ -1,0 +1,63 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "306"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$fraction",
+            [
+              "number",
+              "38.25"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "cdata",
+              "306LL"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": false,
+  "observed": 306,
+  "stats": {
+    "aborts": [],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 0
+  }
+}

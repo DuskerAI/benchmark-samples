@@ -1,0 +1,1 @@
+/app/target/release/tomo_repair /app/data /app/output/reconstruction.json

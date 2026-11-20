@@ -1,0 +1,3 @@
+1. Fix CMake configuration, C source compilation errors, and Express server configuration so the C binary compiles, the React frontend builds, and the Express server starts and responds to health checks.
+2. Fix numerical computation bugs in the C engine and REST API layer including median calculation, standard deviation formula, JSON numeric formatting, CSV row parsing, and API response key mapping.
+3. Fix React frontend integration, chart rendering, and full-pipeline issues including frontend API paths, chart axis configuration, Vite proxy settings, regression response field mapping, and React state management.

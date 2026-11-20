@@ -1,0 +1,49 @@
+{
+    "id": "de110bb3-8006-4c34-8989-6dedee254a8c",
+    "started_at": "2026-07-24T03:07:20.498493",
+    "finished_at": "2026-07-24T14:27:18.882923",
+    "n_total_trials": 16,
+    "stats": {
+        "n_trials": 16,
+        "n_errors": 3,
+        "evals": {
+            "claude-code__tasks": {
+                "n_trials": 13,
+                "n_errors": 3,
+                "metrics": [
+                    {
+                        "mean": 0.375
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "04-ffmpeg-video-pipeline__xzY46Lo",
+                            "06-numeric-dashboard-fullstack-r__L4AdTDZ",
+                            "04-ffmpeg-video-pipeline__bHou2LS",
+                            "10-debug-terraform-aws-infra__4evMpvD",
+                            "10-debug-terraform-aws-infra__7smiGtg",
+                            "04-ffmpeg-video-pipeline__o4d8jNz",
+                            "10-debug-terraform-aws-infra__6hFHAQA"
+                        ],
+                        "1.0": [
+                            "07-corpus-ranking-repair__EExGphQ",
+                            "10-debug-terraform-aws-infra__W8McEAS",
+                            "06-numeric-dashboard-fullstack-r__5CJHz8x",
+                            "07-corpus-ranking-repair__PBEvuDn",
+                            "06-numeric-dashboard-fullstack-r__ZUziGqW",
+                            "07-corpus-ranking-repair__jLbyxS9"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentSetupTimeoutError": [
+                        "04-ffmpeg-video-pipeline__ebeG6Kb",
+                        "06-numeric-dashboard-fullstack-r__dcYJpB7",
+                        "07-corpus-ranking-repair__64inWKM"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "id": "e86dae1f-7f71-4647-a13d-de2e85435ae4",
+    "started_at": "2026-07-24T00:46:59.492413",
+    "finished_at": "2026-07-24T01:05:06.719196",
+    "n_total_trials": 8,
+    "stats": {
+        "n_trials": 8,
+        "n_errors": 0,
+        "evals": {
+            "claude-code__tasks": {
+                "n_trials": 8,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 1.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "08-tiered-cache-optimizer__joka7bx",
+                            "09-event-sourcing-compactor__Ui2hBGu",
+                            "08-tiered-cache-optimizer__HHpY2HW",
+                            "09-event-sourcing-compactor__MkNRePc",
+                            "08-tiered-cache-optimizer__hQgCPoZ",
+                            "09-event-sourcing-compactor__phEMv3J",
+                            "08-tiered-cache-optimizer__ogEQdnE",
+                            "09-event-sourcing-compactor__FpwPo82"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,4 @@
+Name: libm
+Version: 1.0
+Target: any
+Libs: -lm

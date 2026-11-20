@@ -1,0 +1,370 @@
+Package: rescue-console
+Version: 2.0-1
+Architecture: amd64
+Depends: libui (>= 1.4), terminal-emulator
+Description: rescue-console package from stable
+
+Package: rescue-console
+Version: 1.8-4
+Architecture: amd64
+Depends: libui (>= 1.3), terminal-emulator
+Description: rescue-console package from stable
+
+Package: observatory-agent
+Version: 1.1-1
+Architecture: amd64
+Depends: libcore (>= 1:9.0), log-router | journald-provider, zlib1g (>= 1:1.2.13)
+Description: observatory-agent package from stable
+
+Package: codec-worker
+Version: 1.0-1
+Architecture: amd64
+Depends: media-runtime, libcodec-ng (>= 3.0)
+Description: codec-worker package from stable
+
+Package: libcore
+Version: 1:9.9-1
+Architecture: amd64
+Description: libcore package from stable
+
+Package: libui
+Version: 1.4~beta1-1
+Architecture: amd64
+Description: libui package from stable
+
+Package: libui
+Version: 1.4-1
+Architecture: amd64
+Description: libui package from stable
+
+Package: terminal-emulator
+Version: 0.9-1
+Architecture: amd64
+Description: terminal-emulator package from stable
+
+Package: log-router
+Version: 3.0-1
+Architecture: amd64
+Conflicts: rescue-console
+Description: log-router package from stable
+
+Package: mini-journald
+Version: 1.0-1
+Architecture: amd64
+Provides: journald-provider
+Description: mini-journald package from stable
+
+Package: zlib1g
+Version: 1:1.2.13-1
+Architecture: amd64
+Description: zlib1g package from stable
+
+Package: media-runtime
+Version: 4.0-1
+Architecture: amd64
+Depends: libcodec-ng (>= 3.0)
+Description: media-runtime package from stable
+
+Package: libcodec-ng
+Version: 3.0-1
+Architecture: amd64
+Description: libcodec-ng package from stable
+
+Package: diagnostic-shell
+Version: 0.5-1
+Architecture: amd64
+Depends: libcore (>= 2:1.0~rc1)
+Description: diagnostic-shell package from stable
+
+Package: legacy-gui
+Version: 7.0-1
+Architecture: amd64
+Description: legacy-gui package from stable
+
+Package: libssl-compat
+Version: 3.0-1
+Architecture: amd64
+Description: libssl-compat package from stable
+
+Package: filler-lib-004
+Version: 4:1.4~build1-5
+Architecture: amd64
+Description: filler-lib-004 package from stable
+
+Package: filler-lib-008
+Version: 1:1.8~build2-4
+Architecture: amd64
+Description: filler-lib-008 package from stable
+
+Package: filler-lib-012
+Version: 5:1.12~build0-3
+Architecture: amd64
+Description: filler-lib-012 package from stable
+
+Package: filler-lib-016
+Version: 2:1.16~build1-2
+Architecture: amd64
+Description: filler-lib-016 package from stable
+
+Package: filler-lib-020
+Version: 6:2.0~build2-1
+Architecture: all
+Description: filler-lib-020 package from stable
+
+Package: filler-lib-024
+Version: 3:2.4~build0-5
+Architecture: amd64
+Description: filler-lib-024 package from stable
+
+Package: filler-lib-028
+Version: 0:2.8~build1-4
+Architecture: amd64
+Description: filler-lib-028 package from stable
+
+Package: filler-lib-032
+Version: 4:2.12~build2-3
+Architecture: amd64
+Description: filler-lib-032 package from stable
+
+Package: filler-lib-036
+Version: 1:2.16~build0-2
+Architecture: amd64
+Description: filler-lib-036 package from stable
+
+Package: filler-lib-040
+Version: 5:3.0~build1-1
+Architecture: all
+Description: filler-lib-040 package from stable
+
+Package: filler-lib-044
+Version: 2:3.4~build2-5
+Architecture: amd64
+Depends: filler-lib-043
+Description: filler-lib-044 package from stable
+
+Package: filler-lib-048
+Version: 6:3.8~build0-4
+Architecture: amd64
+Description: filler-lib-048 package from stable
+
+Package: filler-lib-052
+Version: 3:3.12~build1-3
+Architecture: amd64
+Description: filler-lib-052 package from stable
+
+Package: filler-lib-056
+Version: 0:3.16~build2-2
+Architecture: amd64
+Description: filler-lib-056 package from stable
+
+Package: filler-lib-060
+Version: 4:4.0~build0-1
+Architecture: all
+Description: filler-lib-060 package from stable
+
+Package: filler-lib-064
+Version: 1:4.4~build1-5
+Architecture: amd64
+Description: filler-lib-064 package from stable
+
+Package: filler-lib-068
+Version: 5:4.8~build2-4
+Architecture: amd64
+Provides: virtual-filler-068
+Description: filler-lib-068 package from stable
+
+Package: filler-lib-072
+Version: 2:4.12~build0-3
+Architecture: amd64
+Description: filler-lib-072 package from stable
+
+Package: filler-lib-076
+Version: 6:4.16~build1-2
+Architecture: amd64
+Description: filler-lib-076 package from stable
+
+Package: filler-lib-080
+Version: 3:5.0~build2-1
+Architecture: all
+Description: filler-lib-080 package from stable
+
+Package: filler-lib-084
+Version: 0:5.4~build0-5
+Architecture: amd64
+Description: filler-lib-084 package from stable
+
+Package: filler-lib-088
+Version: 4:5.8~build1-4
+Architecture: amd64
+Depends: filler-lib-087
+Description: filler-lib-088 package from stable
+
+Package: filler-lib-092
+Version: 1:5.12~build2-3
+Architecture: amd64
+Description: filler-lib-092 package from stable
+
+Package: filler-lib-096
+Version: 5:5.16~build0-2
+Architecture: amd64
+Description: filler-lib-096 package from stable
+
+Package: filler-lib-100
+Version: 2:6.0~build1-1
+Architecture: all
+Description: filler-lib-100 package from stable
+
+Package: filler-lib-104
+Version: 6:6.4~build2-5
+Architecture: amd64
+Description: filler-lib-104 package from stable
+
+Package: filler-lib-108
+Version: 3:6.8~build0-4
+Architecture: amd64
+Description: filler-lib-108 package from stable
+
+Package: filler-lib-112
+Version: 0:6.12~build1-3
+Architecture: amd64
+Description: filler-lib-112 package from stable
+
+Package: filler-lib-116
+Version: 4:6.16~build2-2
+Architecture: amd64
+Description: filler-lib-116 package from stable
+
+Package: filler-lib-120
+Version: 1:7.0~build0-1
+Architecture: all
+Description: filler-lib-120 package from stable
+
+Package: filler-lib-124
+Version: 5:7.4~build1-5
+Architecture: amd64
+Description: filler-lib-124 package from stable
+
+Package: filler-lib-128
+Version: 2:7.8~build2-4
+Architecture: amd64
+Description: filler-lib-128 package from stable
+
+Package: filler-lib-132
+Version: 6:7.12~build0-3
+Architecture: amd64
+Depends: filler-lib-131
+Description: filler-lib-132 package from stable
+
+Package: filler-lib-136
+Version: 3:7.16~build1-2
+Architecture: amd64
+Provides: virtual-filler-136
+Description: filler-lib-136 package from stable
+
+Package: filler-lib-140
+Version: 0:8.0~build2-1
+Architecture: all
+Description: filler-lib-140 package from stable
+
+Package: filler-lib-144
+Version: 4:8.4~build0-5
+Architecture: amd64
+Description: filler-lib-144 package from stable
+
+Package: filler-lib-148
+Version: 1:8.8~build1-4
+Architecture: amd64
+Description: filler-lib-148 package from stable
+
+Package: filler-lib-152
+Version: 5:8.12~build2-3
+Architecture: amd64
+Description: filler-lib-152 package from stable
+
+Package: filler-lib-156
+Version: 2:8.16~build0-2
+Architecture: amd64
+Description: filler-lib-156 package from stable
+
+Package: filler-lib-160
+Version: 6:9.0~build1-1
+Architecture: all
+Description: filler-lib-160 package from stable
+
+Package: filler-lib-164
+Version: 3:9.4~build2-5
+Architecture: amd64
+Description: filler-lib-164 package from stable
+
+Package: filler-lib-168
+Version: 0:9.8~build0-4
+Architecture: amd64
+Description: filler-lib-168 package from stable
+
+Package: filler-lib-172
+Version: 4:9.12~build1-3
+Architecture: amd64
+Description: filler-lib-172 package from stable
+
+Package: filler-lib-176
+Version: 1:9.16~build2-2
+Architecture: amd64
+Depends: filler-lib-175
+Description: filler-lib-176 package from stable
+
+Package: filler-lib-180
+Version: 5:10.0~build0-1
+Architecture: all
+Description: filler-lib-180 package from stable
+
+Package: filler-lib-184
+Version: 2:10.4~build1-5
+Architecture: amd64
+Description: filler-lib-184 package from stable
+
+Package: filler-lib-188
+Version: 6:10.8~build2-4
+Architecture: amd64
+Description: filler-lib-188 package from stable
+
+Package: filler-lib-192
+Version: 3:10.12~build0-3
+Architecture: amd64
+Description: filler-lib-192 package from stable
+
+Package: filler-lib-196
+Version: 0:10.16~build1-2
+Architecture: amd64
+Description: filler-lib-196 package from stable
+
+Package: filler-lib-200
+Version: 4:11.0~build2-1
+Architecture: all
+Description: filler-lib-200 package from stable
+
+Package: filler-lib-204
+Version: 1:11.4~build0-5
+Architecture: amd64
+Provides: virtual-filler-204
+Description: filler-lib-204 package from stable
+
+Package: filler-lib-208
+Version: 5:11.8~build1-4
+Architecture: amd64
+Description: filler-lib-208 package from stable
+
+Package: filler-lib-212
+Version: 2:11.12~build2-3
+Architecture: amd64
+Description: filler-lib-212 package from stable
+
+Package: filler-lib-216
+Version: 6:11.16~build0-2
+Architecture: amd64
+Description: filler-lib-216 package from stable
+
+Package: filler-lib-220
+Version: 3:12.0~build1-1
+Architecture: all
+Depends: filler-lib-219
+Description: filler-lib-220 package from stable

@@ -1,0 +1,3 @@
+{"id":"toolchain","platforms":["x86_64-linux"],"features":[],"inputs":[],"outputs":[{"name":"out","path":"/nix/store/010-toolchain","hash":"sha256-toolchain","fixed":false}]}
+{"id":"fetch-lib","platforms":["x86_64-linux"],"features":["netless"],"inputs":[],"outputs":[{"name":"out","path":"/nix/store/020-fetch-lib","hash":"sha256-fetch-lib","fixed":true}]}
+{"id":"app","platforms":["x86_64-linux"],"features":["netless"],"inputs":["toolchain","fetch-lib"],"outputs":[{"name":"out","path":"/nix/store/100-app","hash":"sha256-app","fixed":false}]}

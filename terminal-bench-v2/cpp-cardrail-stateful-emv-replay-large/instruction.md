@@ -1,0 +1,9 @@
+The offline issuer security-audit replay program in /app/cardrail is missing controls for stored card-terminal traces from untrusted terminals. Fix the C++ tool so /app/cardrail/scripts/build.sh builds /app/cardrail/bin/cardrail_replay, and so this command works for any documented case directory:
+
+    /app/cardrail/bin/cardrail_replay <case_dir> <output_dir>
+
+The program reads manifest.meta and trace.tsv, keeps /app/cardrail/state/ledger.tsv, and writes exactly four artifacts: case_summary.json, issuer_scripts.jsonl, reversal_queue.csv, and audit_digest.txt. These issuer-side audit artifacts must identify duplicate ATC replay attempts, offline approvals later rejected by host outcomes, online approvals that timed out, issuer-script hard failures, private TLV evidence, and profile-controlled status policy. Replaying the same case must not duplicate ledger effects or change output bytes. Each kept ledger effect is a five-field, tab-delimited record: case_id, lineage_key, TXN or SCRIPT, ATC, record_id or script_id. The environment includes /etc/cardrail/profile.toml; follow profile-selection precedence instead of assuming the manifest profile wins.
+
+Use /app/cardrail/reference/contract.txt as the starting point. It links the rest of the reference material, including the threat model. At a high level, case_summary.json contains schema_version, case_id, profile_id, totals, and sessions in that order. JSONL script rows contain case_id, session_id, card_id, lineage_key, script_id, atc, status, terminal_id, and private_tags. The reversal CSV header is case_id,session_id,card_id,atc,reason,amount,currency. The digest file has one line beginning with cardrail-v1 followed by a 16 digit lower-case hexadecimal FNV-1a-64 value.
+
+Do not modify anything under /app/cardrail/cases, /app/cardrail/reference, or /app/cardrail/profiles.

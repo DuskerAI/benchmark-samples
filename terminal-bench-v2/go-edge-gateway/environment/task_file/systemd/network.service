@@ -1,0 +1,8 @@
+[Unit]
+Description=Edge gateway network preparation
+
+[Service]
+EnvironmentFile=/app/run/rendered/configs/network.env
+
+[Install]
+WantedBy=edge-gateway.target

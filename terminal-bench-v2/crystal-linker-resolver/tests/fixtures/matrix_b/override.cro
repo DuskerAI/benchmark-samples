@@ -1,0 +1,3 @@
+OBJECT override
+SECTION .data - 4 -
+SYMBOL pool STRONG DEF .data 0

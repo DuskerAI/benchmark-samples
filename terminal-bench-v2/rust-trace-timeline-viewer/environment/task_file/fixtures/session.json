@@ -1,0 +1,16 @@
+{
+  "sources": [
+    { "id": "runtime", "group": "worker", "unit": "us", "origin": 1200000, "offsetNs": 250 },
+    { "id": "storage", "group": "worker", "unit": "ms", "origin": 1199, "offsetNs": 750 },
+    { "id": "metrics", "group": "process", "unit": "s", "origin": 1, "offsetNs": 1999999500 }
+  ],
+  "items": [
+    { "id": "a1", "kind": "span", "source": "runtime", "lane": "main", "label": "parse", "category": "cpu", "ts": 300, "dur": 120 },
+    { "id": "a2", "kind": "span", "source": "runtime", "lane": "main", "label": "decode", "category": "io", "ts": 360, "dur": 90 },
+    { "id": "b1", "kind": "span", "source": "storage", "lane": "main", "label": "flush", "category": "io", "ts": 1500, "dur": 700, "unit": "us" },
+    { "id": "a3", "kind": "event", "source": "runtime", "lane": "main", "label": "checkpoint", "category": "state", "ts": 510 },
+    { "id": "m1", "kind": "counter", "source": "metrics", "lane": "rss", "label": "rss", "category": "memory", "ts": 200, "unit": "ms", "value": 41.5 },
+    { "id": "m2", "kind": "counter", "source": "metrics", "lane": "rss", "label": "rss", "category": "memory", "ts": 230, "unit": "ms", "value": 39.25 },
+    { "id": "a4", "kind": "span", "source": "runtime", "lane": "aux", "label": "publish", "category": "network", "ts": 470, "dur": 35 }
+  ]
+}

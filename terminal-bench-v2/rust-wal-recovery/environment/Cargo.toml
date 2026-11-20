@@ -1,0 +1,12 @@
+[package]
+name = "state-admin"
+version = "0.1.0"
+edition = "2021"
+
+# The task builds and runs offline; keep external crates out unless they are vendored.
+
+[profile.release]
+debug = false
+strip = true
+codegen-units = 1
+lto = true

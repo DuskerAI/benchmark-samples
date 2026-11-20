@@ -1,0 +1,6 @@
+file,role
+catalog.csv,reference catalog
+exposures.csv,exposure metadata
+exposure_wrap_2024a.csv,centroid table
+exposure_crowded_2025b.csv,centroid table
+exposure_offaxis_2023c.csv,centroid table

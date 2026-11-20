@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../revision-oracle/alien-signals-failure-propagatio__LWDcoQm/artifacts/candidate-source",
+  "tree_sha256": "e37489a5a2207668b2bc43bc24fa51844d37e9d30a7b7c8aac3be034a42c8f26",
+  "file_count": 2,
+  "bytes": 19288,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

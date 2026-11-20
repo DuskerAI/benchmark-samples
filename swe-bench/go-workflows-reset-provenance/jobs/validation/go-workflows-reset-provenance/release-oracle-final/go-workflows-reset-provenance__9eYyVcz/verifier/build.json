@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/usr/local/go/bin/go",
+    "build",
+    "-mod=readonly",
+    "-buildvcs=false",
+    "-o",
+    "/sandbox/bin/durable-driver",
+    "./cmd/durable_driver"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

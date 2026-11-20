@@ -1,0 +1,14 @@
+cabal-version: 2.4
+name: workspace-probe
+version: 1.0.0
+build-type: Simple
+
+executable workspace-probe
+  main-is: Probe.hs
+  hs-source-dirs: app
+  build-depends:
+      base >=4.14 && <5,
+      acme-schema ^>=0.9,
+      acme-schema:wire,
+      acme-policy >=4.1 && <5
+  default-language: Haskell2010

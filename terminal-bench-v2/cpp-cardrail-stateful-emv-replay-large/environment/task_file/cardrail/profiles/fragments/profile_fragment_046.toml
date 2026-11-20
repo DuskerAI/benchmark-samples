@@ -1,0 +1,6 @@
+# Auxiliary profile fragment 046
+fragment_id = "frag-046"
+profile_family = "fleet"
+priority_hint = 12
+continuation_retry_budget = 3
+private_tag_prefix = "DF"

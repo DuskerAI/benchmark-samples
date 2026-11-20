@@ -1,0 +1,114 @@
+{
+    "id": "0c2a5a63-adda-4f0d-98a4-c5b965b69778",
+    "task_name": "dusker-ai/go-workflows-checkpoint-fencing",
+    "trial_name": "go-workflows-checkpoint-fencing__hLux8Gq",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/release-nop/go-workflows-checkpoint-fencing__hLux8Gq",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+    },
+    "source": null,
+    "task_checksum": "c6778a5bf8d227ecb70b833a5c3b649a1528454269bf4fbbbc9d720c0fa00261",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "go-workflows-checkpoint-fencing__hLux8Gq",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/release-nop",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "7083785a-5ced-49b3-abc0-dd08510938f8",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T07:12:06.259439Z",
+    "finished_at": "2026-10-16T07:13:01.902620Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T07:12:06.293608Z",
+        "finished_at": "2026-10-16T07:12:40.249117Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T07:12:40.249208Z",
+        "finished_at": "2026-10-16T07:12:40.249280Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T07:12:40.249368Z",
+        "finished_at": "2026-10-16T07:12:42.419897Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T07:12:48.182567Z",
+        "finished_at": "2026-10-16T07:13:01.902600Z"
+    },
+    "step_results": null
+}

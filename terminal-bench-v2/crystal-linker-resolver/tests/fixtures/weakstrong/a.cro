@@ -1,0 +1,5 @@
+OBJECT a
+SECTION .text - 8 -
+SYMBOL alpha WEAK DEF .text 0
+SYMBOL beta WEAK DEF .text 4
+SYMBOL gamma STRONG DEF .text 2

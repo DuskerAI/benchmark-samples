@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": true,
+  "case_id": "harbor-med-008",
+  "evacuation_status": "advisory",
+  "exceptions": [],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-05",
+  "jurisdiction": "harbor",
+  "medical_dependent": true,
+  "opened_at": "2026-02-13",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 40,
+  "shelter_type": "school",
+  "staff_count": 3,
+  "transport_status": "confirmed",
+  "water_days": 3
+}

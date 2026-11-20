@@ -1,0 +1,193 @@
+{
+  "count": 47,
+  "tests": [
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B01_2",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B01_4",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B01_8",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B02_envelope",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B02_plain",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B03_envelope",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B03_plain",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B04_envelope",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B04_plain",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B05_envelope",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B05_plain",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B06_first_cut",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B06_four",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B06_partial_cut",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B07_inherited",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B07_reset_child",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B08_held_result",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B09_canceled",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B09_fired",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B10_restart",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B11_active_collector",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B11_bulk",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B11_single",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B12_cycle",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B12_duplicate",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B12_gap",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B12_interior",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B12_missing",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B13_completed",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B13_outstanding",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B14_envelope",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_B14_plain",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P01_interior",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P01_negative",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P01_past_end",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P01_zero",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P02_instance",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P02_ownership",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P02_pending",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P03_cold",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P03_warm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P04_consumed",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P04_pending",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P04_terminal",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P05_acknowledged",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P05_uncommitted",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_reset_provenance.ResetSemantics.test_P06_retained",
+      "status": "PASSED"
+    }
+  ]
+}

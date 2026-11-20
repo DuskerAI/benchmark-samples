@@ -1,0 +1,63 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "386"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$changed",
+            [
+              "boolean",
+              true
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "292"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": false,
+  "observed": 386,
+  "stats": {
+    "aborts": [],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 0
+  }
+}

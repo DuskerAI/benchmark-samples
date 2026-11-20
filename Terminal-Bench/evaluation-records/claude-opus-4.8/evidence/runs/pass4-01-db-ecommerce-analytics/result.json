@@ -1,0 +1,34 @@
+{
+    "id": "632cb4f7-d572-42d9-bb25-420d850bd455",
+    "started_at": "2026-07-23T23:24:27.677845",
+    "finished_at": "2026-07-23T23:38:14.680332",
+    "n_total_trials": 4,
+    "stats": {
+        "n_trials": 4,
+        "n_errors": 0,
+        "evals": {
+            "claude-code__adhoc": {
+                "n_trials": 4,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.5
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "01-db-ecommerce-analytics__ga7xfSF",
+                            "01-db-ecommerce-analytics__5HDzftE"
+                        ],
+                        "0.0": [
+                            "01-db-ecommerce-analytics__nXZm7nf",
+                            "01-db-ecommerce-analytics__DpmeAwr"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

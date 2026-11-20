@@ -1,0 +1,461 @@
+diff --git a/tests/test_jit_deopt.py b/tests/test_jit_deopt.py
+new file mode 100644
+--- /dev/null
++++ b/tests/test_jit_deopt.py
+@@ -0,0 +1,456 @@
++"""Independent topology/value oracle and trusted-process regression assertions."""
++import hashlib,json,os,signal,subprocess,tempfile,unittest
++from pathlib import Path
++
++COMMON='local jit=require(\'jit\')\njit.off(true,true)\nlocal array_meta={}\nlocal function arr(t) return setmetatable(t or {},array_meta) end\nlocal function quote(s)\n return \'"\'..string.gsub(s,\'[%z\\1-\\31\\\\"]\',function(c)\n  if c==\'"\' then return \'\\\\"\' end\n  if c==\'\\\\\' then return \'\\\\\\\\\' end\n  return string.format(\'\\\\u%04x\',string.byte(c))\n end)..\'"\'\nend\nlocal function encode(v)\n local t=type(v)\n if t==\'string\' then return quote(v) end\n if t==\'number\' then return string.format(\'%.17g\',v) end\n if t==\'boolean\' then return v and \'true\' or \'false\' end\n if t==\'nil\' then return \'null\' end\n local values={}\n if getmetatable(v)==array_meta then\n  for i=1,#v do values[#values+1]=encode(v[i]) end\n  return \'[\'..table.concat(values,\',\')..\']\'\n end\n local keys={};for k in pairs(v) do keys[#keys+1]=k end;table.sort(keys)\n for _,k in ipairs(keys) do values[#values+1]=quote(k)..\':\'..encode(v[k]) end\n return \'{\'..table.concat(values,\',\')..\'}\'\nend\nlocal function number(v) return string.format(\'%.17g\',v) end\nlocal function graph(roots)\n local ids,queue={},{}\n local function add(t)\n  if not ids[t] then ids[t]=#queue+1;queue[#queue+1]=t end\n  return ids[t]\n end\n local result={roots=arr(),nodes=arr()}\n for _,root in ipairs(roots) do result.roots[#result.roots+1]=add(root) end\n local i=1\n while i<=#queue do\n  local t=queue[i];local keys={};local values={}\n  for key,value in pairs(t) do\n   local tag=type(key)==\'number\' and \'#\'..number(key) or \'$\'..tostring(key)\n   keys[#keys+1]=tag;values[tag]=value\n  end\n  table.sort(keys)\n  local node={fields=arr(),meta=0}\n  for _,tag in ipairs(keys) do\n   local value=values[tag];local kind=type(value);local cell\n   if kind==\'table\' then cell=arr({\'ref\',add(value)})\n   elseif kind==\'number\' then cell=arr({\'number\',number(value)})\n   elseif kind==\'boolean\' then cell=arr({\'boolean\',value})\n   elseif kind==\'string\' then cell=arr({\'string\',value})\n   elseif kind==\'cdata\' then cell=arr({\'cdata\',tostring(value)})\n   else cell=arr({kind,tostring(value)}) end\n   node.fields[#node.fields+1]=arr({tag,cell})\n  end\n  local mt=getmetatable(t)\n  if type(mt)==\'table\' then node.meta=add(mt) end\n  result.nodes[i]=node;i=i+1\n end\n return result\nend\nlocal util=require(\'jit.util\')\nlocal starts,stops,exit_log={}, {}, {}\nlocal aborted=arr()\nlocal watched_function,watched_line\nlocal function watch(fn,offset)\n watched_function=fn;watched_line=util.funcinfo(fn).linedefined+offset\nend\njit.attach(function(what,tr,fn,pc,parent,ex)\n if what==\'abort\' then aborted[#aborted+1]={error=tostring(parent),detail=tostring(ex)} end\n if what==\'start\' then starts[tr]={parent=parent or 0,exit=ex or -1} end\n if what==\'stop\' then stops[tr]=starts[tr] or {parent=0,exit=-1} end\nend,\'trace\')\njit.attach(function(tr,ex) exit_log[#exit_log+1]={tr=tr,exit=ex} end,\'texit\')\nlocal function stats()\n local root,side=0,0\n for _,s in pairs(stops) do if s.parent>0 then side=side+1 else root=root+1 end end\n return {roots=root,sides=side,exits=#exit_log,on=jit.status(),aborts=aborted}\nend\nlocal function reset_exits() exit_log={} end\nlocal function imported_side()\n if not watched_function then return false end\n for _,s in pairs(stops) do\n  if s.parent>0 then\n   local snapshot,pc=util.tracesnap(s.parent,s.exit,true)\n   if snapshot and pc then\n    local line=util.funcinfo(watched_function,pc).currentline\n    if line>=watched_line and line<=watched_line+1 then return true end\n   end\n  end\n end\n return false\nend\njit.opt.start(\'hotloop=1\',\'hotexit=2\',\'maxtrace=2000\')\n'
++LOG=Path('/logs/verifier')
++
++class Node:
++    def __init__(self,**fields):self.fields=fields;self.meta=None
++
++class CData:
++    def __init__(self,text):self.text=text
++
++def canonical(roots):
++    nodes=[];ids={}
++    def add(node):
++        if id(node) not in ids:ids[id(node)]=len(nodes)+1;nodes.append(node)
++        return ids[id(node)]
++    answer={'roots':[add(x) for x in roots],'nodes':[]}
++    for node in nodes:
++        row={'fields':[],'meta':0}
++        for key,value in sorted(node.fields.items(),key=lambda item:('#'+format(item[0],'.17g')) if isinstance(item[0],(int,float)) else '$'+item[0]):
++            tag='#'+format(key,'.17g') if isinstance(key,(int,float)) else '$'+key
++            if isinstance(value,Node):cell=['ref',add(value)]
++            elif isinstance(value,CData):cell=['cdata',value.text]
++            elif isinstance(value,bool):cell=['boolean',value]
++            elif isinstance(value,(int,float)):cell=['number',format(value,'.17g')]
++            elif isinstance(value,str):cell=['string',value]
++            else:raise ValueError('invalid model scalar')
++            row['fields'].append([tag,cell])
++        if node.meta is not None:row['meta']=add(node.meta)
++        answer['nodes'].append(row)
++    return answer
++
++def recipe(name,seed,index):
++    value=seed+index;root=Node(value=value)
++    common='local root={value=seed+i}\n'
++    if name=='ffi-graph':
++        child=Node(value=CData(str(seed+index)+'LL'),fraction=(seed+index)/8)
++        root.fields.update(a=child,b=child)
++        return common+"local child={value=ffi.new('int64_t',seed+i),fraction=(seed+i)/8};root.a=child;root.b=child\n",root
++    if name=='template-plain':
++        child=Node(value=seed*2+index,kind='leaf',flag=False)
++        root.fields.update(kind='record',flag=False,a=child,b=child)
++        return "local root={kind='record',flag=false};root.value=seed+i\nlocal child={kind='leaf',flag=false};child.value=seed*2+i;root.a=child;root.b=child\n",root
++    if name in ('diamond','distinct','pair','payload','template','snapshot','mutate'):
++        child=Node(value=seed*2+index);root.fields.update(a=child,b=child)
++        source=common+'local child={value=seed*2+i};root.a=child;root.b=child\n'
++        if name=='distinct':
++            other=Node(value=seed*2+index);root.fields.update(b=other,c=child)
++            source=common+'local child={value=seed*2+i};local other={value=seed*2+i};root.a=child;root.b=other;root.c=child\n'
++        if name=='pair':child.fields['owner']=root;source+='child.owner=root\n'
++        if name=='payload':
++            child.fields.update(flag=False,text='snapshot payload',fraction=value/8,zero=-0.0)
++            source+="child.flag=false;child.text='snapshot payload';child.fraction=(seed+i)/8;child.zero=-0.0\n"
++        if name=='template':
++            mt=Node(label='virtual-meta',owner=root);root.meta=mt
++            root.fields.update(kind='record',flag=False);child.fields[1]=False
++            source="local root={kind='record',flag=false,gone=true};root.value=seed+i\nlocal child={value=seed*2+i,[1]=false};root.a=child;root.b=child;root.gone=nil\nlocal mt={label='virtual-meta'};mt.owner=root;setmetatable(root,mt)\n"
++        if name=='snapshot':root.fields['phase']='early';source+="root.phase='early'\n"
++        return source,root
++    if name=='self':root.fields['self']=root;return common+'root.self=root\n',root
++    if name=='ring':
++        a=Node(value=value+1);b=Node(value=value+2);c=Node(value=value+3)
++        root.fields['next']=a;a.fields['next']=b;b.fields['next']=c;c.fields['next']=root
++        return common+'local x={value=seed+i+1};local y={value=seed+i+2};local z={value=seed+i+3};root.next=x;x.next=y;y.next=z;z.next=root\n',root
++    if name=='hidden':
++        leaf=Node(value=seed*3+index);holder=Node(tag='nested-only',leaf=leaf)
++        root.fields.update(a=holder,b=leaf)
++        return "local root={value=seed+i,a={tag='nested-only',leaf={value=seed*3+i}}};root.b=root.a.leaf\n",root
++    if name=='wide':
++        shared=Node(value=seed*2+index)
++        source=common+'local shared={value=seed*2+i}\n'
++        for n in range(1,25):
++            root.fields['n'+str(n)]=Node(value=seed+index+n,leaf=shared)
++            source+=f'do local child={{value=seed+i+{n},leaf=shared}};root.n{n}=child end\n'
++        return source,root
++    if name=='deep':
++        source='local root\ndo\nlocal n0={value=seed+i}\n';previous=root
++        for depth in range(1,9):
++            parent=Node(value=value+depth,a=previous,b=previous)
++            source+=f'local n{depth}={{value=seed+i+{depth},a=n{depth-1},b=n{depth-1}}}\n'
++            previous=parent
++        source+='root=n8\nend\n'
++        return source,previous
++    if name=='pressure':
++        child=Node();root.fields.update(a=child,b=child)
++        source=common+'do\nlocal child={}\n'
++        for n in range(1,25):
++            child.fields['v'+str(n)]=(seed+n*7)+index*(n%3+1)
++            source+=f'local v{n}=data[{n}]+i*{n%3+1};child.v{n}=v{n}\n'
++        source+='root.a=child;root.b=child\nend\n'
++        return source,root
++    raise ValueError(name)
++
++class DeoptSemantics(unittest.TestCase):
++    maxDiff=3200
++    def setUp(self):self.seed=101+int(hashlib.sha256(self.id().encode()).hexdigest()[:8],16)%251
++    def probe(self,source):
++        with tempfile.TemporaryFile(dir=LOG) as stdout,tempfile.TemporaryFile(dir=LOG) as stderr:
++            process=subprocess.Popen(['/usr/bin/python3','-I','-B','/tests/launch_candidate.py','/bin/jit-driver'],stdin=subprocess.PIPE,stdout=stdout,stderr=stderr,start_new_session=True,cwd='/',env={'PATH':'/usr/bin:/bin','HOME':'/tmp','TMPDIR':'/tmp','TZ':'UTC','LC_ALL':'C','LUA_PATH':'','LUA_CPATH':''})
++            try:process.communicate((COMMON+'\n'+source).encode(),timeout=8)
++            except subprocess.TimeoutExpired:self.fail('native VM execution did not terminate')
++            finally:
++                try:os.killpg(process.pid,signal.SIGKILL)
++                except ProcessLookupError:pass
++                process.wait()
++            stdout.seek(0);raw=stdout.read(4*1024*1024+1);stderr.seek(0);diagnostic=stderr.read(8192)
++        if diagnostic:
++            with (LOG/'candidate-stderr.log').open('ab') as f:f.write(self.id().encode()+b'\n'+diagnostic+b'\n')
++        if b'File "/tests/launch_candidate.py"' in diagnostic:raise RuntimeError('isolation launcher failed: '+diagnostic.decode(errors='replace'))
++        self.assertEqual(process.returncode,0,'native VM failed: '+diagnostic.decode(errors='replace')[-2500:])
++        self.assertLessEqual(len(raw),4*1024*1024)
++        try:result=json.loads(raw)
++        except (ValueError,UnicodeError):self.fail('VM produced no valid observation')
++        self.assertIsInstance(result,dict)
++        observations=LOG/'observations';observations.mkdir(exist_ok=True)
++        (observations/(self.id()+'.json')).write_text(json.dumps(result,indent=2)+'\n')
++        return result
++    def compiled(self,result,hot=False):
++        stats=result.get('stats',{})
++        self.assertIs(stats.get('on'),True,'JIT was disabled')
++        self.assertGreater(stats.get('roots',0),0,'no native root trace compiled')
++        self.assertGreater(stats.get('exits',0),0,'no native trace exit exercised')
++        if hot:self.assertIs(result.get('imported'),True,'target guard did not compile a side trace')
++    def run_graph(self,name,hot=False,position='ordinary',extra='',post=''):
++        source,expected=recipe(name,self.seed,47)
++        before='';after=''
++        if name=='snapshot':
++            update="root.phase='late';root.a.value=seed+i*3\n"
++            if position=='after':before=update
++            else:after=update
++            expected.fields['phase']='late';expected.fields['a'].fields['value']=self.seed+47*3
++        if name=='mutate':
++            extra+='root.a.value=seed-i;root.b.changed=true\n'
++            expected.fields['a'].fields.update(value=self.seed-47,changed=True)
++        observed=expected.fields['value']
++        phase='late' if position=='after' else 'early'
++        lua=f'''
++jit.opt.start('hotexit={2 if hot else 500}')
++local seed={self.seed};local data={{}}
++for n=1,40 do data[n]=seed+n*7 end
++local function run(stop,seed,out,data)
++ local sum=0
++ for i=1,120 do
++ {source}
++ {before}
++ if i==stop then
++  out.graph=root;out.observed=root.value;out.phase=root.phase
++  {extra}
++ end
++ {after}
++ sum=sum+i
++ end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(-1,seed+n,{{}},data) end
++reset_exits()
++local result={{}};local first
++for n=1,{12 if hot else 1} do
++ local out={{}};run(47,seed,out,data)
++ if n==1 then first=out.graph end
++ result=out
++ collectgarbage('collect')
++end
++{post}
++return encode({{graph=graph({{result.graph}}),observed=result.observed,phase=result.phase,stats=stats(),imported=imported_side()}})
++'''
++        if name=='ffi-graph':lua="local ffi=require('ffi')\n"+lua
++        offset=lua[lua.index('local function run('):lua.index(' if i==stop then')].count('\n')
++        lua=lua.replace('jit.on(run)\n','jit.on(run)\nwatch(run,'+str(offset)+')\n',1)
++        out=self.probe(lua);self.compiled(out,hot)
++        self.assertEqual(out.get('graph'),canonical([expected]),'recovered heap topology, identity or fields differ')
++        self.assertEqual(out.get('observed'),observed)
++        if name=='snapshot':self.assertEqual(out.get('phase'),phase,'future store leaked into an earlier snapshot')
++
++    def topology(self,variant):name,mode=variant.split(':');self.run_graph(name,mode=='hot')
++    def snapshot(self,variant):position,mode=variant.split(':');self.run_graph('snapshot',mode=='hot',position)
++
++    def escapes(self,variant):
++        seed=self.seed
++        destination='out.graph=root' if variant=='table' else 'escaped=root'
++        get='out.graph' if variant=='table' else 'escaped'
++        lua=f'''
++local seed={seed};local escaped
++local function run(seed,out)
++ local sum=0
++ for i=1,120 do
++  local root={{value=seed+i}};local b={{value=seed+i+1}};local c={{value=seed+i+2}}
++  root.next=b;b.next=c;c.back=b
++  {destination}
++  sum=sum+i
++ end
++ return sum
++end
++jit.on(run)
++local out={{}}
++for n=1,20 do run(seed,out) end
++collectgarbage('collect')
++return encode({{graph=graph({{{get}}}),stats=stats()}})
++'''
++        root=Node(value=seed+120);b=Node(value=seed+121);c=Node(value=seed+122)
++        root.fields['next']=b;b.fields['next']=c;c.fields['back']=b
++        out=self.probe(lua);self.compiled(out);self.assertEqual(out.get('graph'),canonical([root]))
++
++    def inline(self,variant):
++        source,expected=recipe('pair',self.seed,47)
++        lua=f'''
++local function helper(i,seed,stop,out)
++ {source}
++ if i==stop then out.graph=root end
++ return i+seed
++end
++local function run(stop,seed,out)
++ local sum=0
++ for i=1,120 do sum=sum+helper(i,seed,stop,out) end
++ return sum
++end
++jit.on(helper);jit.on(run)
++for n=1,12 do run(-1,{self.seed}+n,{{}}) end
++reset_exits()
++local out={{}}
++for n=1,{12 if variant=='hot' else 1} do run(47,{self.seed},out) end
++collectgarbage('collect')
++return encode({{graph=graph({{out.graph}}),stats=stats(),imported=imported_side()}})
++'''
++        offset=lua[lua.index('local function helper('):lua.index(' if i==stop then')].count('\n')
++        lua=lua.replace('jit.on(helper);jit.on(run)','jit.on(helper);jit.on(run);watch(helper,'+str(offset)+')',1)
++        if variant=='cold':lua="jit.opt.start('hotexit=500')\n"+lua
++        out=self.probe(lua);self.compiled(out,variant=='hot');self.assertEqual(out.get('graph'),canonical([expected]))
++
++    def repeated(self,variant):
++        source,one=recipe('pair',self.seed,47);_,two=recipe('pair',self.seed+31,47)
++        change="jit.flush();for n=1,12 do run(-1,200+n,{}) end" if variant=='flush' else ''
++        lua=f'''
++local function run(stop,seed,out)
++ local sum=0
++ for i=1,120 do
++ {source}
++ if i==stop then out.graph=root end
++ sum=sum+i
++ end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(-1,n,{{}}) end
++local a={{}};run(47,{self.seed},a)
++{change}
++local b={{}};run(47,{self.seed+31},b)
++a.graph.a.changed='first-only'
++local weak=setmetatable({{a.graph}},{{__mode='v'}})
++local answer=graph({{a.graph,b.graph}})
++a=nil
++collectgarbage('collect');collectgarbage('collect')
++return encode({{graph=answer,collected=weak[1]==nil,stats=stats()}})
++'''
++        one.fields['a'].fields['changed']='first-only'
++        out=self.probe(lua);self.compiled(out);self.assertEqual(out.get('graph'),canonical([one,two]));self.assertIs(out.get('collected'),True,'exit cache retained a recovered object')
++
++    def control_flow(self,variant):
++        source,expected=recipe('pair',self.seed,47)
++        if variant=='error':
++            rare='error(root)'
++            action=f"local ok,value=pcall(run,47,{self.seed});local recovered=value"
++            extra="ok=ok"
++        else:
++            rare="coroutine.yield(root);root.a.resumed='yes'"
++            action=f"local co=coroutine.create(run);local ok,value=coroutine.resume(co,47,{self.seed});local recovered=value;collectgarbage('collect');local resumed=coroutine.resume(co)"
++            extra='resumed=resumed'
++            expected.fields['a'].fields['resumed']='yes'
++        lua=f'''
++jit.opt.start('hotexit=500')
++local function run(stop,seed)
++ local sum=0
++ for i=1,120 do
++ {source}
++ if i==stop then {rare} end
++ sum=sum+i
++ end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(-1,n) end
++reset_exits()
++{action}
++collectgarbage('collect')
++return encode({{graph=graph({{recovered}}),stats=stats(),{extra}}})
++'''
++        out=self.probe(lua);self.compiled(out);self.assertEqual(out.get('graph'),canonical([expected]))
++        self.assertIs(out.get('ok' if variant=='error' else 'resumed'),False if variant=='error' else True)
++
++    def allocation(self,variant):
++        source,_=recipe('template-plain' if variant=='template' else variant,self.seed,47)
++        lua=f'''
++local function run(limit,seed)
++ local sum=0
++ for i=1,limit do
++ {source}
++ sum=sum+root.value
++ end
++ return sum
++end
++jit.on(run)
++for n=1,24 do run(200,n) end
++collectgarbage('stop')
++meter.reset();local small=run(256,{self.seed});local small_alloc=meter.read()
++meter.reset();local big=run(16384,{self.seed});local big_alloc=meter.read()
++return encode({{small=small,big=big,small_alloc=small_alloc,big_alloc=big_alloc,stats=stats()}})
++'''
++        out=self.probe(lua);self.compiled(out)
++        self.assertEqual(out.get('small'),256*self.seed+256*257//2)
++        self.assertEqual(out.get('big'),16384*self.seed+16384*16385//2)
++        self.assertIsInstance(out.get('big_alloc'),(int,float));self.assertIsInstance(out.get('small_alloc'),(int,float))
++        self.assertLessEqual(out['big_alloc'],out['small_alloc']+96,'heap allocation grows with nonescaping graph iterations')
++
++    def normal(self,variant):
++        if variant=='nosink':self.run_graph_disabled('pair',"jit.opt.start('-sink')")
++        elif variant=='interpreter':self.run_graph_disabled('pair','jit.off()')
++        elif variant=='flat':
++            source="local root={value=seed+i};root.left=seed-i"
++            expected=Node(value=self.seed+47,left=self.seed-47)
++            self.simple_normal(source,expected)
++        elif variant=='loop-carried':
++            lua=f'''
++local function run(seed)
++ local old={{value=seed}};local sum=0
++ for i=1,120 do local fresh={{value=old.value+1,prev=old}};old=fresh;sum=sum+i end
++ return old,sum
++end
++jit.on(run)
++for n=1,12 do run(n) end
++local root,sum=run({self.seed});collectgarbage('collect')
++return encode({{value=root.value,previous=root.prev.value,sum=sum,stats=stats()}})
++'''
++            out=self.probe(lua);self.compiled(out);self.assertEqual([out.get(k) for k in ('value','previous','sum')],[self.seed+120,self.seed+119,7260])
++        elif variant=='ffi':
++            lua=f'''
++local ffi=require('ffi')
++local function run(stop,seed)
++ local sum=0
++ for i=1,120 do local value=ffi.new('int64_t',seed+i);if i==stop then return value end;sum=sum+i end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(-1,n) end
++reset_exits()
++local value=run(47,{self.seed});collectgarbage('collect')
++return encode({{value=tostring(value),stats=stats()}})
++'''
++            out=self.probe(lua);self.compiled(out);self.assertEqual(out.get('value'),str(self.seed+47)+'LL')
++        elif variant=='table-key':
++            lua=f'''
++local function run(stop,seed)
++ local sum=0
++ for i=1,120 do
++  local key={{value=seed+i}};local root={{marker=key}};root[key]=key
++  if i==stop then return root end
++  sum=sum+i
++ end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(-1,n) end
++local root=run(47,{self.seed});collectgarbage('collect')
++return encode({{same=root[root.marker]==root.marker,value=root.marker.value,stats=stats()}})
++'''
++            out=self.probe(lua);self.compiled(out);self.assertIs(out.get('same'),True);self.assertEqual(out.get('value'),self.seed+47)
++        else:raise ValueError(variant)
++
++    def allocator_contract(self,variant):
++        lua=f'''
++local function run(limit,seed,out)
++ local sum=0
++ for i=1,limit do
++  local child={{value=seed+i}};local root={{a=child,b=child}};out[i]=root
++  sum=sum+child.value
++ end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(32,n,{{}}) end
++collectgarbage('stop')
++local a={{}};meter.reset();run(32,{self.seed},a);local small=meter.read()
++local b={{}};meter.reset();local sum=run(256,{self.seed},b);local big=meter.read()
++return encode({{small_alloc=small,big_alloc=big,sum=sum,same=b[256].a==b[256].b,stats=stats()}})
++'''
++        out=self.probe(lua);self.compiled(out)
++        self.assertEqual(out.get('sum'),256*self.seed+256*257//2);self.assertIs(out.get('same'),True)
++        self.assertGreater(out.get('small_alloc',0),0,'embedding allocator received no allocation requests')
++        self.assertGreater(out.get('big_alloc',0),256)
++        self.assertGreater(out.get('big_alloc',0),out['small_alloc']*4,'escaping heap allocations bypass the embedding allocator')
++    def simple_normal(self,source,expected):
++        lua=f'''
++local function run(stop,seed)
++ local sum=0
++ for i=1,120 do {source};if i==stop then return root end;sum=sum+i end
++ return sum
++end
++jit.on(run)
++for n=1,12 do run(-1,n) end
++local root=run(47,{self.seed})
++return encode({{graph=graph({{root}}),stats=stats()}})
++'''
++        out=self.probe(lua);self.compiled(out);self.assertEqual(out.get('graph'),canonical([expected]))
++    def run_graph_disabled(self,name,mode):
++        source,expected=recipe(name,self.seed,47)
++        lua=f'''
++{mode}
++local function run(stop,seed)
++ local sum=0
++ for i=1,120 do {source};if i==stop then return root end;sum=sum+i end
++ return sum
++end
++{'jit.on(run)' if mode!='jit.off()' else ''}
++for n=1,12 do run(-1,n) end
++local root=run(47,{self.seed});collectgarbage('collect')
++return encode({{graph=graph({{root}})}})
++'''
++        self.assertEqual(self.probe(lua).get('graph'),canonical([expected]))
++
++CASES=[]
++def family(group,method,variants):
++    for variant in variants:
++        name=group+'_'+variant.replace(':','_').replace('-','_')
++        CASES.append({'name':name,'group':group,'method':method,'variant':variant})
++        def test(self,method=method,variant=variant):getattr(self,method)(variant)
++        setattr(DeoptSemantics,'test_'+name,test)
++
++family('G01','topology',['diamond:cold','diamond:hot','deep:cold','deep:hot','wide:cold','wide:hot'])
++family('G02','topology',['self:cold','self:hot','pair:cold','pair:hot','ring:cold','ring:hot'])
++family('G03','topology',['hidden:cold','hidden:hot','pressure:cold','pressure:hot'])
++family('G04','topology',['distinct:cold','distinct:hot'])
++family('G05','snapshot',['before:cold','after:cold','before:hot','after:hot'])
++family('G06','topology',['payload:cold','payload:hot','template:cold','template:hot','ffi-graph:cold','ffi-graph:hot'])
++family('G07','topology',['mutate:cold','mutate:hot'])
++family('G08','escapes',['table','upvalue'])
++family('G09','inline',['cold','hot'])
++family('G10','repeated',['same-trace','flush'])
++family('G11','control_flow',['error','coroutine'])
++family('P01','allocation',['diamond','pair','template'])
++family('P02','normal',['nosink','interpreter','flat','loop-carried','ffi','table-key'])
++family('P03','allocator_contract',['real-escapes'])
++
++class RecordingResult(unittest.TextTestResult):
++    def __init__(self,*a,**kw):super().__init__(*a,**kw);self.records=[]
++    def record(self,t,status):self.records.append({'name':t.id().replace('__main__.','test_jit_deopt.'),'status':status})
++    def addSuccess(self,t):super().addSuccess(t);self.record(t,'PASSED')
++    def addFailure(self,t,e):super().addFailure(t,e);self.record(t,'FAILED')
++    def addError(self,t,e):super().addError(t,e);self.record(t,'ERROR')
++    def addSkip(self,t,r):super().addSkip(t,r);self.record(t,'SKIPPED')
++
++if __name__=='__main__':
++    result=unittest.TextTestRunner(verbosity=2,resultclass=RecordingResult).run(unittest.defaultTestLoader.loadTestsFromTestCase(DeoptSemantics))
++    (LOG/'results.json').write_text(json.dumps({'count':result.testsRun,'tests':result.records},indent=2)+'\n')
++    raise SystemExit(0 if result.wasSuccessful() else 1)

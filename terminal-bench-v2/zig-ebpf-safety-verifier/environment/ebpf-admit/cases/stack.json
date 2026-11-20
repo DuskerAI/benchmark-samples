@@ -1,0 +1,1 @@
+{"pkt_len":8,"insns":[{"op":"st_stack","off":-8,"size":8},{"op":"ld_stack","dst":0,"off":-8,"size":8},{"op":"exit"}]}

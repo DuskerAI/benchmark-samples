@@ -1,0 +1,4 @@
+channel	tier	audit_salt	policy_epoch
+ga	standard	211	5
+edge	preview	307	8
+diag	restricted	401	13

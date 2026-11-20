@@ -1,0 +1,292 @@
+Package: libcore
+Version: 2:1.0-1
+Architecture: amd64
+Description: libcore package from experimental
+
+Package: libcodec-ng
+Version: 4.0-1
+Architecture: amd64
+Description: libcodec-ng package from experimental
+
+Package: filler-lib-002
+Version: 2:1.2~build2-3
+Architecture: amd64
+Description: filler-lib-002 package from experimental
+
+Package: filler-lib-006
+Version: 6:1.6~build0-2
+Architecture: amd64
+Description: filler-lib-006 package from experimental
+
+Package: filler-lib-010
+Version: 3:1.10~build1-1
+Architecture: all
+Description: filler-lib-010 package from experimental
+
+Package: filler-lib-014
+Version: 0:1.14~build2-5
+Architecture: amd64
+Description: filler-lib-014 package from experimental
+
+Package: filler-lib-018
+Version: 4:1.18~build0-4
+Architecture: amd64
+Description: filler-lib-018 package from experimental
+
+Package: filler-lib-022
+Version: 1:2.2~build1-3
+Architecture: amd64
+Depends: filler-lib-021
+Description: filler-lib-022 package from experimental
+
+Package: filler-lib-026
+Version: 5:2.6~build2-2
+Architecture: amd64
+Description: filler-lib-026 package from experimental
+
+Package: filler-lib-030
+Version: 2:2.10~build0-1
+Architecture: all
+Description: filler-lib-030 package from experimental
+
+Package: filler-lib-034
+Version: 6:2.14~build1-5
+Architecture: amd64
+Provides: virtual-filler-034
+Description: filler-lib-034 package from experimental
+
+Package: filler-lib-038
+Version: 3:2.18~build2-4
+Architecture: amd64
+Description: filler-lib-038 package from experimental
+
+Package: filler-lib-042
+Version: 0:3.2~build0-3
+Architecture: amd64
+Description: filler-lib-042 package from experimental
+
+Package: filler-lib-046
+Version: 4:3.6~build1-2
+Architecture: amd64
+Description: filler-lib-046 package from experimental
+
+Package: filler-lib-050
+Version: 1:3.10~build2-1
+Architecture: all
+Description: filler-lib-050 package from experimental
+
+Package: filler-lib-054
+Version: 5:3.14~build0-5
+Architecture: amd64
+Description: filler-lib-054 package from experimental
+
+Package: filler-lib-058
+Version: 2:3.18~build1-4
+Architecture: amd64
+Description: filler-lib-058 package from experimental
+
+Package: filler-lib-062
+Version: 6:4.2~build2-3
+Architecture: amd64
+Description: filler-lib-062 package from experimental
+
+Package: filler-lib-066
+Version: 3:4.6~build0-2
+Architecture: amd64
+Depends: filler-lib-065
+Description: filler-lib-066 package from experimental
+
+Package: filler-lib-070
+Version: 0:4.10~build1-1
+Architecture: all
+Description: filler-lib-070 package from experimental
+
+Package: filler-lib-074
+Version: 4:4.14~build2-5
+Architecture: amd64
+Description: filler-lib-074 package from experimental
+
+Package: filler-lib-078
+Version: 1:4.18~build0-4
+Architecture: amd64
+Description: filler-lib-078 package from experimental
+
+Package: filler-lib-082
+Version: 5:5.2~build1-3
+Architecture: amd64
+Description: filler-lib-082 package from experimental
+
+Package: filler-lib-086
+Version: 2:5.6~build2-2
+Architecture: amd64
+Description: filler-lib-086 package from experimental
+
+Package: filler-lib-090
+Version: 6:5.10~build0-1
+Architecture: all
+Description: filler-lib-090 package from experimental
+
+Package: filler-lib-094
+Version: 3:5.14~build1-5
+Architecture: amd64
+Description: filler-lib-094 package from experimental
+
+Package: filler-lib-098
+Version: 0:5.18~build2-4
+Architecture: amd64
+Description: filler-lib-098 package from experimental
+
+Package: filler-lib-102
+Version: 4:6.2~build0-3
+Architecture: amd64
+Provides: virtual-filler-102
+Description: filler-lib-102 package from experimental
+
+Package: filler-lib-106
+Version: 1:6.6~build1-2
+Architecture: amd64
+Description: filler-lib-106 package from experimental
+
+Package: filler-lib-110
+Version: 5:6.10~build2-1
+Architecture: all
+Depends: filler-lib-109
+Description: filler-lib-110 package from experimental
+
+Package: filler-lib-114
+Version: 2:6.14~build0-5
+Architecture: amd64
+Description: filler-lib-114 package from experimental
+
+Package: filler-lib-118
+Version: 6:6.18~build1-4
+Architecture: amd64
+Description: filler-lib-118 package from experimental
+
+Package: filler-lib-122
+Version: 3:7.2~build2-3
+Architecture: amd64
+Description: filler-lib-122 package from experimental
+
+Package: filler-lib-126
+Version: 0:7.6~build0-2
+Architecture: amd64
+Description: filler-lib-126 package from experimental
+
+Package: filler-lib-130
+Version: 4:7.10~build1-1
+Architecture: all
+Description: filler-lib-130 package from experimental
+
+Package: filler-lib-134
+Version: 1:7.14~build2-5
+Architecture: amd64
+Description: filler-lib-134 package from experimental
+
+Package: filler-lib-138
+Version: 5:7.18~build0-4
+Architecture: amd64
+Description: filler-lib-138 package from experimental
+
+Package: filler-lib-142
+Version: 2:8.2~build1-3
+Architecture: amd64
+Description: filler-lib-142 package from experimental
+
+Package: filler-lib-146
+Version: 6:8.6~build2-2
+Architecture: amd64
+Description: filler-lib-146 package from experimental
+
+Package: filler-lib-150
+Version: 3:8.10~build0-1
+Architecture: all
+Description: filler-lib-150 package from experimental
+
+Package: filler-lib-154
+Version: 0:8.14~build1-5
+Architecture: amd64
+Depends: filler-lib-153
+Description: filler-lib-154 package from experimental
+
+Package: filler-lib-158
+Version: 4:8.18~build2-4
+Architecture: amd64
+Description: filler-lib-158 package from experimental
+
+Package: filler-lib-162
+Version: 1:9.2~build0-3
+Architecture: amd64
+Description: filler-lib-162 package from experimental
+
+Package: filler-lib-166
+Version: 5:9.6~build1-2
+Architecture: amd64
+Description: filler-lib-166 package from experimental
+
+Package: filler-lib-170
+Version: 2:9.10~build2-1
+Architecture: all
+Provides: virtual-filler-170
+Description: filler-lib-170 package from experimental
+
+Package: filler-lib-174
+Version: 6:9.14~build0-5
+Architecture: amd64
+Description: filler-lib-174 package from experimental
+
+Package: filler-lib-178
+Version: 3:9.18~build1-4
+Architecture: amd64
+Description: filler-lib-178 package from experimental
+
+Package: filler-lib-182
+Version: 0:10.2~build2-3
+Architecture: amd64
+Description: filler-lib-182 package from experimental
+
+Package: filler-lib-186
+Version: 4:10.6~build0-2
+Architecture: amd64
+Description: filler-lib-186 package from experimental
+
+Package: filler-lib-190
+Version: 1:10.10~build1-1
+Architecture: all
+Description: filler-lib-190 package from experimental
+
+Package: filler-lib-194
+Version: 5:10.14~build2-5
+Architecture: amd64
+Description: filler-lib-194 package from experimental
+
+Package: filler-lib-198
+Version: 2:10.18~build0-4
+Architecture: amd64
+Depends: filler-lib-197
+Description: filler-lib-198 package from experimental
+
+Package: filler-lib-202
+Version: 6:11.2~build1-3
+Architecture: amd64
+Description: filler-lib-202 package from experimental
+
+Package: filler-lib-206
+Version: 3:11.6~build2-2
+Architecture: amd64
+Description: filler-lib-206 package from experimental
+
+Package: filler-lib-210
+Version: 0:11.10~build0-1
+Architecture: all
+Description: filler-lib-210 package from experimental
+
+Package: filler-lib-214
+Version: 4:11.14~build1-5
+Architecture: amd64
+Description: filler-lib-214 package from experimental
+
+Package: filler-lib-218
+Version: 1:11.18~build2-4
+Architecture: amd64
+Description: filler-lib-218 package from experimental

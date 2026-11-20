@@ -1,0 +1,6 @@
+OBJECT o2
+SECTION .inl grp.inl 16 -
+SECTION .text - 8 -
+SYMBOL inl_fn WEAK DEF .inl 4
+SYMBOL second STRONG DEF .text 0
+RELOC .text 0 inl_fn ABS32 0

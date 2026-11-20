@@ -1,0 +1,18 @@
+{
+    "job_name": "trial-1-regrade",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+        }
+    ],
+    "source_jobs": [
+        {
+            "action": "regrade",
+            "type": "local",
+            "job_id": "2dd2dc2d-8e79-4a1e-8b75-67e0e24987e2",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1"
+        }
+    ]
+}

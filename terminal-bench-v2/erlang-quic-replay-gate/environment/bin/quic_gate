@@ -1,0 +1,2 @@
+#!/bin/sh
+exec erl -noshell -pa /opt/quic_gate/ebin -s quic_gate main -extra "$@"

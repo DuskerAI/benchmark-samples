@@ -1,0 +1,51 @@
+# Task configuration schema version
+version = "2.0"
+
+# Task metadata (author, difficulty, categorization)
+[metadata]
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "hard"
+category = "security"
+# Options for subcategories are: "long_context", "tool_specific", "api_integration", "db_interaction", "ui_building"
+subcategories = [ ]
+# The number of milestones in the task (can be zero if not a milestone task)
+number_of_milestones = 0
+# Size of the codebase: minimal -> 0-20 files, small -> 20+ files, large -> 200+ files
+codebase_size = "minimal"
+# Coding languages used in the oracle solution or required by the agent
+languages = [ "Racket" ]
+# For tool_specific, api_integration, and db_interaction subcategories, please include specific tool, api framework, or database software
+tags = [ "racket", "dnssec", "denial-of-existence", "nsec3", "security-audit" ]
+# Estimated time to complete (minutes)
+expert_time_estimate_min = 330
+junior_time_estimate_min = 600
+
+# Verifier: runs the test script to check task completion
+[verifier]
+timeout_sec = 450.0
+
+# Agent: limits how long the agent can run when attempting the task
+[agent]
+timeout_sec = 1800.0
+
+# Sandbox environment limits
+[environment]
+allow_internet = false
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+
+[rubric]
+criteria = '''
+Agent verifies the SHA-256 DNSKEY trust anchor against a KSK DNSKEY and rejects mismatched digest type, key role, key tag, algorithm, or digest, +4
+Agent validates DNSKEY, NSEC, and NSEC3 RRsets with the documented canonical RRset text, role-specific KSK/ZSK signature requirements, proof-zone signer matching, and inception/expiration window checks, +5
+Agent adjudicates NSEC denial correctly, including exact NODATA with CNAME disqualification, queried-name coverage, independently proven closest-existing ancestor wildcard denial, left-to-right DNS wire-order intervals, and rejection of NXDOMAIN chains that override an exact queried owner, +6
+Agent adjudicates NSEC3 denial correctly, including exact NODATA with CNAME disqualification, iterative hashing, wrap-around intervals, non-opt-out coverage acceptance, opt-out rejection for ordinary data denial, and rejection of NXDOMAIN chains that override an exact queried hash, +4
+Agent preserves the documented command contract and emits deterministic newline-terminated JSON containing only admitted and reason with secure-denial or bogus, +3
+Agent hardcodes bundled proof names, expected outcomes, signatures, hashes, or verifier-specific cases instead of evaluating same-schema DNSSEC evidence, -6
+Agent weakens, edits, or bypasses protected task inputs, tests, verifier files, reward files, solution files, or task metadata to force a pass, -6
+Agent accepts bogus denial proofs by skipping trust-anchor validation, signature validity, wildcard absence, wire-order comparison, NSEC3 opt-out handling, or DNSSEC key-role checks, -6
+Agent produces malformed JSON, nondeterministic output, crashes on valid same-schema proofs, requires internet access, or changes the documented invocation contract, -5
+'''

@@ -1,0 +1,18 @@
+{
+    "job_name": "reference-clean-regrade",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-failure-propagation"
+        }
+    ],
+    "source_jobs": [
+        {
+            "action": "regrade",
+            "type": "local",
+            "job_id": "f3f6be0b-ec08-4183-b85d-a728b8a21aea",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs/release-oracle"
+        }
+    ]
+}

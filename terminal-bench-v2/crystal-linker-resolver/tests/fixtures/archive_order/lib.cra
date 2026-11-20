@@ -1,0 +1,17 @@
+ARCHIVE lib
+MEMBER prov
+SECTION .text - 8 -
+SYMBOL base STRONG DEF .text 0
+MEMBER mid
+SECTION .text - 8 -
+SYMBOL link STRONG DEF .text 0
+SYMBOL base STRONG UNDEF
+RELOC .text 0 base ABS32 0
+MEMBER top
+SECTION .text - 8 -
+SYMBOL top STRONG DEF .text 0
+SYMBOL link STRONG UNDEF
+RELOC .text 0 link ABS32 0
+MEMBER unused
+SECTION .text - 8 -
+SYMBOL never STRONG DEF .text 0

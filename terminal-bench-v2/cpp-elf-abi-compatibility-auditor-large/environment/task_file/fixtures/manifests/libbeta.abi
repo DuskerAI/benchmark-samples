@@ -1,0 +1,5 @@
+library libbeta.so
+soname libbeta.so.1
+export beta_open BETA_1.0 default
+export beta_trace_marker BETA_1.0 default
+version_node BETA_1.0

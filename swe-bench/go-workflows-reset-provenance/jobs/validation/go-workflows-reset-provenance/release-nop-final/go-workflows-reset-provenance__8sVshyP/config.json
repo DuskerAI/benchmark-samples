@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "trial_name": "go-workflows-reset-provenance__8sVshyP",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-nop-final",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "881ae0d7-0474-4380-89a0-bc564f9f970c"
+}

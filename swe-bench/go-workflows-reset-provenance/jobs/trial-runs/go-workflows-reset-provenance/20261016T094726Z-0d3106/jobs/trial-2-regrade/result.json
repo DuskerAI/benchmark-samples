@@ -1,0 +1,39 @@
+{
+    "id": "7a3d587d-1ca9-40ee-a9a1-ee640be53571",
+    "started_at": "2026-10-16T15:50:43.477528",
+    "updated_at": "2026-10-16T15:50:58.740807",
+    "finished_at": "2026-10-16T15:50:58.740807",
+    "n_total_trials": 1,
+    "stats": {
+        "n_completed_trials": 1,
+        "n_errored_trials": 0,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "claude-code__claude-sonnet-5-5__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "pass_at_k": {},
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "go-workflows-reset-provenance__JW3BC49"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        },
+        "n_input_tokens": 5841916,
+        "n_cache_tokens": 5662310,
+        "n_output_tokens": 90859,
+        "cost_usd": 2.4900260000000007
+    }
+}

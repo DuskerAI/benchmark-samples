@@ -1,0 +1,9 @@
+# ACME order evidence gate
+
+`acmegate` is an offline admission utility for archived ACME-style order records. Reviewers run it without contacting a CA, then attach the JSON report to an incident packet. The command line is `acmegate --trust TRUST --state STATE --bundle BUNDLE --out REPORT --now UNIX`.
+
+The trust file is a UTF-8 TSV file. Blank lines and lines starting with `#` are ignored. Each other line has `account`, `key`, and `status`; only `status` equal to `active` is trusted for admission, and later duplicate accounts replace earlier ones. The state file is also TSV and ignores blank lines and lines starting with `#`. `nonce<TAB>VALUE` marks a previously consumed nonce. `order<TAB>ORDER<TAB>ACCOUNT<TAB>STATUS<TAB>EXPIRES` records the CA's archived order state. `challenge<TAB>ID<TAB>ACCOUNT<TAB>TOKEN<TAB>NOT_BEFORE<TAB>EXPIRES<TAB>STATUS` records the challenge authorization state.
+
+The bundle directory contains `evidence.tsv`, where blank lines and lines starting with `#` are ignored. Each other line has `order`, `account`, `nonce`, `challenge`, `protected`, `payload`, and `signature`. The report path's parent may be absent and should be created. Inputs are evidence, not workspace state, and must not be edited by the gate.
+
+The JSON report contains `accepted`, `records`, `state`, and `summary`. `records` follows evidence line order and each entry has `account`, `decision`, `line`, `nonce`, `order`, and `reasons`; `line` is the 1-based physical line number in `evidence.tsv`, including skipped comments and blanks. `decision` is `ACCEPT` only when `reasons` is empty, otherwise `REJECT`. `state.new_nonces` and `state.ready_orders` contain accepted values in lexicographic order. `summary.accepted` and `summary.rejected` count record decisions. JSON object keys and array ordering are stable across runs.

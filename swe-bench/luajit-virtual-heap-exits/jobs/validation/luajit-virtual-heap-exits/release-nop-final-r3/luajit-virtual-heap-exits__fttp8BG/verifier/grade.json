@@ -1,0 +1,114 @@
+{
+  "reward": 0,
+  "category": "acceptance_failure",
+  "exact_inventory": true,
+  "tests_executed": 48,
+  "fail_to_pass": {
+    "passed": 0,
+    "total": 38
+  },
+  "pass_to_pass": {
+    "passed": 10,
+    "total": 10
+  },
+  "nonpassing": [
+    "test_jit_deopt.DeoptSemantics.test_G01_deep_cold",
+    "test_jit_deopt.DeoptSemantics.test_G01_deep_hot",
+    "test_jit_deopt.DeoptSemantics.test_G01_diamond_cold",
+    "test_jit_deopt.DeoptSemantics.test_G01_diamond_hot",
+    "test_jit_deopt.DeoptSemantics.test_G01_wide_cold",
+    "test_jit_deopt.DeoptSemantics.test_G01_wide_hot",
+    "test_jit_deopt.DeoptSemantics.test_G02_pair_cold",
+    "test_jit_deopt.DeoptSemantics.test_G02_pair_hot",
+    "test_jit_deopt.DeoptSemantics.test_G02_ring_cold",
+    "test_jit_deopt.DeoptSemantics.test_G02_ring_hot",
+    "test_jit_deopt.DeoptSemantics.test_G02_self_cold",
+    "test_jit_deopt.DeoptSemantics.test_G02_self_hot",
+    "test_jit_deopt.DeoptSemantics.test_G03_hidden_cold",
+    "test_jit_deopt.DeoptSemantics.test_G03_hidden_hot",
+    "test_jit_deopt.DeoptSemantics.test_G03_pressure_cold",
+    "test_jit_deopt.DeoptSemantics.test_G03_pressure_hot",
+    "test_jit_deopt.DeoptSemantics.test_G04_distinct_cold",
+    "test_jit_deopt.DeoptSemantics.test_G04_distinct_hot",
+    "test_jit_deopt.DeoptSemantics.test_G05_after_cold",
+    "test_jit_deopt.DeoptSemantics.test_G05_after_hot",
+    "test_jit_deopt.DeoptSemantics.test_G05_before_cold",
+    "test_jit_deopt.DeoptSemantics.test_G05_before_hot",
+    "test_jit_deopt.DeoptSemantics.test_G06_ffi_graph_cold",
+    "test_jit_deopt.DeoptSemantics.test_G06_ffi_graph_hot",
+    "test_jit_deopt.DeoptSemantics.test_G06_payload_cold",
+    "test_jit_deopt.DeoptSemantics.test_G06_payload_hot",
+    "test_jit_deopt.DeoptSemantics.test_G06_template_cold",
+    "test_jit_deopt.DeoptSemantics.test_G06_template_hot",
+    "test_jit_deopt.DeoptSemantics.test_G07_mutate_cold",
+    "test_jit_deopt.DeoptSemantics.test_G07_mutate_hot",
+    "test_jit_deopt.DeoptSemantics.test_G08_table",
+    "test_jit_deopt.DeoptSemantics.test_G08_upvalue",
+    "test_jit_deopt.DeoptSemantics.test_G09_cold",
+    "test_jit_deopt.DeoptSemantics.test_G09_hot",
+    "test_jit_deopt.DeoptSemantics.test_G10_flush",
+    "test_jit_deopt.DeoptSemantics.test_G10_same_trace",
+    "test_jit_deopt.DeoptSemantics.test_G11_coroutine",
+    "test_jit_deopt.DeoptSemantics.test_G11_error"
+  ],
+  "suite_exit_code": 1,
+  "requirement_groups": {
+    "G01": {
+      "passed": 0,
+      "total": 6
+    },
+    "G02": {
+      "passed": 0,
+      "total": 6
+    },
+    "G03": {
+      "passed": 0,
+      "total": 4
+    },
+    "G04": {
+      "passed": 0,
+      "total": 2
+    },
+    "G05": {
+      "passed": 0,
+      "total": 4
+    },
+    "G06": {
+      "passed": 0,
+      "total": 6
+    },
+    "G07": {
+      "passed": 0,
+      "total": 2
+    },
+    "G08": {
+      "passed": 0,
+      "total": 2
+    },
+    "G09": {
+      "passed": 0,
+      "total": 2
+    },
+    "G10": {
+      "passed": 0,
+      "total": 2
+    },
+    "G11": {
+      "passed": 0,
+      "total": 2
+    },
+    "P01": {
+      "passed": 3,
+      "total": 3
+    },
+    "P02": {
+      "passed": 6,
+      "total": 6
+    },
+    "P03": {
+      "passed": 1,
+      "total": 1
+    }
+  },
+  "trusted_assets_unchanged": true
+}

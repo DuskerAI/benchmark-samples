@@ -1,0 +1,345 @@
+Package: rescue-console
+Version: 2.1-1
+Architecture: amd64
+Depends: legacy-gui, terminal-emulator
+Description: rescue-console package from updates
+
+Package: observatory-agent
+Version: 1.2-1
+Architecture: amd64
+Depends: libcore (>= 2:1.0~rc1), log-router | journald-provider, zlib1g (>= 1:1.2.13)
+Description: observatory-agent package from updates
+
+Package: codec-worker
+Version: 1.1-1
+Architecture: amd64
+Depends: media-runtime, libcodec-ng (>= 3.0), libssl-compat
+Description: codec-worker package from updates
+
+Package: libcore
+Version: 2:1.0~rc1-1
+Architecture: amd64
+Description: libcore package from updates
+
+Package: libui
+Version: 1.5-1
+Architecture: amd64
+Depends: legacy-gui
+Description: libui package from updates
+
+Package: terminal-emulator
+Version: 1.5-1
+Architecture: arm64
+Description: terminal-emulator package from updates
+
+Package: rsyslog-lite
+Version: 8.2-1
+Architecture: amd64
+Provides: journald-provider
+Breaks: rescue-console
+Description: rsyslog-lite package from updates
+
+Package: zlib1g
+Version: 1:1.3-1
+Architecture: amd64
+Description: zlib1g package from updates
+
+Package: media-runtime
+Version: 4.1-1
+Architecture: amd64
+Depends: libcodec-ng (>= 3.1)
+Description: media-runtime package from updates
+
+Package: libcodec-ng
+Version: 3.1-1
+Architecture: amd64
+Description: libcodec-ng package from updates
+
+Package: diagnostic-shell
+Version: 0.6-1
+Architecture: amd64
+Depends: libcore (>= 2:1.0~rc1), journald-provider
+Description: diagnostic-shell package from updates
+
+Package: filler-lib-001
+Version: 1:1.1~build1-2
+Architecture: amd64
+Description: filler-lib-001 package from updates
+
+Package: filler-lib-005
+Version: 5:1.5~build2-1
+Architecture: all
+Description: filler-lib-005 package from updates
+
+Package: filler-lib-009
+Version: 2:1.9~build0-5
+Architecture: amd64
+Description: filler-lib-009 package from updates
+
+Package: filler-lib-013
+Version: 6:1.13~build1-4
+Architecture: amd64
+Description: filler-lib-013 package from updates
+
+Package: filler-lib-017
+Version: 3:1.17~build2-3
+Architecture: amd64
+Provides: virtual-filler-017
+Description: filler-lib-017 package from updates
+
+Package: filler-lib-021
+Version: 0:2.1~build0-2
+Architecture: amd64
+Description: filler-lib-021 package from updates
+
+Package: filler-lib-025
+Version: 4:2.5~build1-1
+Architecture: all
+Description: filler-lib-025 package from updates
+
+Package: filler-lib-029
+Version: 1:2.9~build2-5
+Architecture: amd64
+Description: filler-lib-029 package from updates
+
+Package: filler-lib-033
+Version: 5:2.13~build0-4
+Architecture: amd64
+Depends: filler-lib-032
+Description: filler-lib-033 package from updates
+
+Package: filler-lib-037
+Version: 2:2.17~build1-3
+Architecture: amd64
+Description: filler-lib-037 package from updates
+
+Package: filler-lib-041
+Version: 6:3.1~build2-2
+Architecture: amd64
+Description: filler-lib-041 package from updates
+
+Package: filler-lib-045
+Version: 3:3.5~build0-1
+Architecture: all
+Description: filler-lib-045 package from updates
+
+Package: filler-lib-049
+Version: 0:3.9~build1-5
+Architecture: amd64
+Description: filler-lib-049 package from updates
+
+Package: filler-lib-053
+Version: 4:3.13~build2-4
+Architecture: amd64
+Description: filler-lib-053 package from updates
+
+Package: filler-lib-057
+Version: 1:3.17~build0-3
+Architecture: amd64
+Description: filler-lib-057 package from updates
+
+Package: filler-lib-061
+Version: 5:4.1~build1-2
+Architecture: amd64
+Description: filler-lib-061 package from updates
+
+Package: filler-lib-065
+Version: 2:4.5~build2-1
+Architecture: all
+Description: filler-lib-065 package from updates
+
+Package: filler-lib-069
+Version: 6:4.9~build0-5
+Architecture: amd64
+Description: filler-lib-069 package from updates
+
+Package: filler-lib-073
+Version: 3:4.13~build1-4
+Architecture: amd64
+Description: filler-lib-073 package from updates
+
+Package: filler-lib-077
+Version: 0:4.17~build2-3
+Architecture: amd64
+Depends: filler-lib-076
+Description: filler-lib-077 package from updates
+
+Package: filler-lib-081
+Version: 4:5.1~build0-2
+Architecture: amd64
+Description: filler-lib-081 package from updates
+
+Package: filler-lib-085
+Version: 1:5.5~build1-1
+Architecture: all
+Provides: virtual-filler-085
+Description: filler-lib-085 package from updates
+
+Package: filler-lib-089
+Version: 5:5.9~build2-5
+Architecture: amd64
+Description: filler-lib-089 package from updates
+
+Package: filler-lib-093
+Version: 2:5.13~build0-4
+Architecture: amd64
+Description: filler-lib-093 package from updates
+
+Package: filler-lib-097
+Version: 6:5.17~build1-3
+Architecture: amd64
+Description: filler-lib-097 package from updates
+
+Package: filler-lib-101
+Version: 3:6.1~build2-2
+Architecture: amd64
+Description: filler-lib-101 package from updates
+
+Package: filler-lib-105
+Version: 0:6.5~build0-1
+Architecture: all
+Description: filler-lib-105 package from updates
+
+Package: filler-lib-109
+Version: 4:6.9~build1-5
+Architecture: amd64
+Description: filler-lib-109 package from updates
+
+Package: filler-lib-113
+Version: 1:6.13~build2-4
+Architecture: amd64
+Description: filler-lib-113 package from updates
+
+Package: filler-lib-117
+Version: 5:6.17~build0-3
+Architecture: amd64
+Description: filler-lib-117 package from updates
+
+Package: filler-lib-121
+Version: 2:7.1~build1-2
+Architecture: amd64
+Depends: filler-lib-120
+Description: filler-lib-121 package from updates
+
+Package: filler-lib-125
+Version: 6:7.5~build2-1
+Architecture: all
+Description: filler-lib-125 package from updates
+
+Package: filler-lib-129
+Version: 3:7.9~build0-5
+Architecture: amd64
+Description: filler-lib-129 package from updates
+
+Package: filler-lib-133
+Version: 0:7.13~build1-4
+Architecture: amd64
+Description: filler-lib-133 package from updates
+
+Package: filler-lib-137
+Version: 4:7.17~build2-3
+Architecture: amd64
+Description: filler-lib-137 package from updates
+
+Package: filler-lib-141
+Version: 1:8.1~build0-2
+Architecture: amd64
+Description: filler-lib-141 package from updates
+
+Package: filler-lib-145
+Version: 5:8.5~build1-1
+Architecture: all
+Description: filler-lib-145 package from updates
+
+Package: filler-lib-149
+Version: 2:8.9~build2-5
+Architecture: amd64
+Description: filler-lib-149 package from updates
+
+Package: filler-lib-153
+Version: 6:8.13~build0-4
+Architecture: amd64
+Provides: virtual-filler-153
+Description: filler-lib-153 package from updates
+
+Package: filler-lib-157
+Version: 3:8.17~build1-3
+Architecture: amd64
+Description: filler-lib-157 package from updates
+
+Package: filler-lib-161
+Version: 0:9.1~build2-2
+Architecture: amd64
+Description: filler-lib-161 package from updates
+
+Package: filler-lib-165
+Version: 4:9.5~build0-1
+Architecture: all
+Depends: filler-lib-164
+Description: filler-lib-165 package from updates
+
+Package: filler-lib-169
+Version: 1:9.9~build1-5
+Architecture: amd64
+Description: filler-lib-169 package from updates
+
+Package: filler-lib-173
+Version: 5:9.13~build2-4
+Architecture: amd64
+Description: filler-lib-173 package from updates
+
+Package: filler-lib-177
+Version: 2:9.17~build0-3
+Architecture: amd64
+Description: filler-lib-177 package from updates
+
+Package: filler-lib-181
+Version: 6:10.1~build1-2
+Architecture: amd64
+Description: filler-lib-181 package from updates
+
+Package: filler-lib-185
+Version: 3:10.5~build2-1
+Architecture: all
+Description: filler-lib-185 package from updates
+
+Package: filler-lib-189
+Version: 0:10.9~build0-5
+Architecture: amd64
+Description: filler-lib-189 package from updates
+
+Package: filler-lib-193
+Version: 4:10.13~build1-4
+Architecture: amd64
+Description: filler-lib-193 package from updates
+
+Package: filler-lib-197
+Version: 1:10.17~build2-3
+Architecture: amd64
+Description: filler-lib-197 package from updates
+
+Package: filler-lib-201
+Version: 5:11.1~build0-2
+Architecture: amd64
+Description: filler-lib-201 package from updates
+
+Package: filler-lib-205
+Version: 2:11.5~build1-1
+Architecture: all
+Description: filler-lib-205 package from updates
+
+Package: filler-lib-209
+Version: 6:11.9~build2-5
+Architecture: amd64
+Depends: filler-lib-208
+Description: filler-lib-209 package from updates
+
+Package: filler-lib-213
+Version: 3:11.13~build0-4
+Architecture: amd64
+Description: filler-lib-213 package from updates
+
+Package: filler-lib-217
+Version: 0:11.17~build1-3
+Architecture: amd64
+Description: filler-lib-217 package from updates

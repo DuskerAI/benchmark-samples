@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 1,
+    "on": true,
+    "roots": 2,
+    "sides": 1
+  },
+  "value": "181LL"
+}

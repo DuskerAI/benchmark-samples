@@ -1,0 +1,4 @@
+profile	optimization	feature_mask	codec_salt	channel
+stable	ReleaseSmall	0x00000005	17	ga
+edge	ReleaseFast	0x0000000a	29	edge
+diagnostics	ReleaseSafe	0x0000001c	43	diag

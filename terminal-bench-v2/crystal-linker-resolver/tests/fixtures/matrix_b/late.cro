@@ -1,0 +1,4 @@
+OBJECT late
+SECTION .text - 4 -
+SYMBOL dormant STRONG UNDEF
+RELOC .text 0 dormant REL32 0

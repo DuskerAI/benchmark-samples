@@ -1,0 +1,5 @@
+# staged release request
+roots: app-runtime >= 2.0
+link: static
+host-tools: idlgen >= 2.0, shaderc >= 3.1
+exclude: zlib-ng >= 2.1

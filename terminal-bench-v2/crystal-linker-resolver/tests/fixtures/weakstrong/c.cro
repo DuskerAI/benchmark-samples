@@ -1,0 +1,6 @@
+OBJECT c
+SECTION .text - 8 -
+SYMBOL alpha STRONG DEF .text 6
+RELOC .text 0 alpha ABS32 0
+RELOC .text 4 beta ABS32 0
+RELOC .text 0 gamma ABS32 0

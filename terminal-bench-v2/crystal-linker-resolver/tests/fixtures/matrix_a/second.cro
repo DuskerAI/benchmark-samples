@@ -1,0 +1,4 @@
+OBJECT second
+SECTION .data - 5 -
+SYMBOL cap COMMON 9 16
+SYMBOL arena COMMON 12 4

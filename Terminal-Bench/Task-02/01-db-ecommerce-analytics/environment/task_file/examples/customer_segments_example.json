@@ -1,0 +1,16 @@
+[
+  {
+    "segment": "Champions",
+    "customer_count": 87,
+    "avg_recency_days": 14.3,
+    "avg_frequency": 12.4,
+    "total_net_spend": 284310.5
+  },
+  {
+    "segment": "Loyal",
+    "customer_count": 213,
+    "avg_recency_days": 45.1,
+    "avg_frequency": 7.2,
+    "total_net_spend": 412840.2
+  }
+]

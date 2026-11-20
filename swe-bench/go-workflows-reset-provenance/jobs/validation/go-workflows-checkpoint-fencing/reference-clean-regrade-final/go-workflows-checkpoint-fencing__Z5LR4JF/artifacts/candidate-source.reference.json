@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-oracle-final/go-workflows-checkpoint-fencing__CW9mhWT/artifacts/candidate-source",
+  "tree_sha256": "7e66e02583b5a28115e506c513abecb3e4b70f472e751279c535197f61b8e56a",
+  "file_count": 313,
+  "bytes": 4185998,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

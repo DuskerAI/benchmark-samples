@@ -1,0 +1,3 @@
+JSEG	name=alpha	seq=1	rotated=true	bytes=210
+R	a1	boot-a	5	1710000000	sshd.service	5	accepted-key	90
+R	a2	boot-a	7	1710000010	cron.service	6	daily-start	70

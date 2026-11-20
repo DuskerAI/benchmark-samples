@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": true,
+  "case_id": "ridge-evac-002",
+  "evacuation_status": "mandatory",
+  "exceptions": [],
+  "generator_class": "B",
+  "generator_tested_at": "2026-01-29",
+  "jurisdiction": "ridge",
+  "medical_dependent": false,
+  "opened_at": "2026-02-11",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 75,
+  "shelter_type": "arena",
+  "staff_count": 4,
+  "transport_status": "confirmed",
+  "water_days": 4
+}

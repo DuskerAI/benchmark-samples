@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+    },
+    "trial_name": "alien-signals-graph-savepoints__MwJbcXK",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-graph-savepoints/jobs/release-nop",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "25224648-c742-43f7-b24f-01c65db15920"
+}

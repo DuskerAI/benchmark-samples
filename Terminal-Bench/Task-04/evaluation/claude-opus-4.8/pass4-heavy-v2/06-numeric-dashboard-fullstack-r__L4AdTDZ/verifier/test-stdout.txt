@@ -1,0 +1,117 @@
+Hit:1 http://deb.debian.org/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.88.1-10+deb12u15).
+0 upgraded, 0 newly installed, 0 to remove and 153 not upgraded.
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 33 items
+
+../tests/test_m1.py ........                                             [ 24%]
+../tests/test_m2.py ....F.FF...                                          [ 57%]
+../tests/test_m3.py ..............                                       [100%]
+
+=================================== FAILURES ===================================
+__________________ TestMilestone2.test_engine_median_accuracy __________________
+
+self = <test_m2.TestMilestone2 object at 0x7f8810e3e330>
+
+    def test_engine_median_accuracy(self):
+        """Median values must use correct even-length averaging."""
+        data = _run_engine_cli()
+        for col, ref in REFERENCE_STATS.items():
+            actual = data["columns"][col]["median"]
+>           assert isinstance(actual, float), (
+                f"{col} median must be float, got {type(actual).__name__}"
+            )
+E           AssertionError: age median must be float, got int
+E           assert False
+E            +  where False = isinstance(41, float)
+
+/tests/test_m2.py:114: AssertionError
+________________ TestMilestone2.test_engine_min_max_are_floats _________________
+
+self = <test_m2.TestMilestone2 object at 0x7f8810ef7460>
+
+    def test_engine_min_max_are_floats(self):
+        """Min and max values from engine binary must be floating-point numbers."""
+        data = _run_engine_cli()
+        for col, ref in REFERENCE_STATS.items():
+            actual_min = data["columns"][col]["min"]
+            actual_max = data["columns"][col]["max"]
+>           assert isinstance(actual_min, float), (
+                f"{col} min must be float, got {type(actual_min).__name__}"
+            )
+E           AssertionError: age min must be float, got int
+E           assert False
+E            +  where False = isinstance(18, float)
+
+/tests/test_m2.py:139: AssertionError
+________________ TestMilestone2.test_engine_percentile_accuracy ________________
+
+self = <test_m2.TestMilestone2 object at 0x7f8810f8ee50>
+
+    def test_engine_percentile_accuracy(self):
+        """Percentile values (p25, p75) must use linear interpolation."""
+        data = _run_engine_cli()
+        for col, ref in REFERENCE_STATS.items():
+            for pct in ["p25", "p75"]:
+                actual = data["columns"][col][pct]
+>               assert isinstance(actual, float), f"{col} {pct} must be float"
+E               AssertionError: age p25 must be float
+E               assert False
+E                +  where False = isinstance(31, float)
+
+/tests/test_m2.py:158: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED ../tests/test_m1.py::TestMilestone1::test_build_config_passes
+PASSED ../tests/test_m1.py::TestMilestone1::test_native_build_passes
+PASSED ../tests/test_m1.py::TestMilestone1::test_engine_binary_present
+PASSED ../tests/test_m1.py::TestMilestone1::test_usage_flag_output
+PASSED ../tests/test_m1.py::TestMilestone1::test_stats_mode_exits_cleanly
+PASSED ../tests/test_m1.py::TestMilestone1::test_server_health_check
+PASSED ../tests/test_m1.py::TestMilestone1::test_frontend_build_passes
+PASSED ../tests/test_m1.py::TestMilestone1::test_frontend_dist_present
+PASSED ../tests/test_m2.py::TestMilestone2::test_dataset_record_count
+PASSED ../tests/test_m2.py::TestMilestone2::test_engine_output_valid_json
+PASSED ../tests/test_m2.py::TestMilestone2::test_engine_reports_all_columns
+PASSED ../tests/test_m2.py::TestMilestone2::test_engine_mean_accuracy
+PASSED ../tests/test_m2.py::TestMilestone2::test_engine_stddev_accuracy
+PASSED ../tests/test_m2.py::TestMilestone2::test_compute_endpoint_status
+PASSED ../tests/test_m2.py::TestMilestone2::test_api_includes_stddev
+PASSED ../tests/test_m2.py::TestMilestone2::test_api_engine_mean_parity
+PASSED ../tests/test_m3.py::TestMilestone3::test_regression_endpoint_status
+PASSED ../tests/test_m3.py::TestMilestone3::test_linear_fit_slope
+PASSED ../tests/test_m3.py::TestMilestone3::test_linear_fit_intercept
+PASSED ../tests/test_m3.py::TestMilestone3::test_coefficient_of_determination
+PASSED ../tests/test_m3.py::TestMilestone3::test_regression_x_column_field
+PASSED ../tests/test_m3.py::TestMilestone3::test_regression_y_column_field
+PASSED ../tests/test_m3.py::TestMilestone3::test_engine_regression_json_valid
+PASSED ../tests/test_m3.py::TestMilestone3::test_root_serves_html
+PASSED ../tests/test_m3.py::TestMilestone3::test_root_contains_dashboard_title
+PASSED ../tests/test_m3.py::TestMilestone3::test_frontend_uses_correct_compute_path
+PASSED ../tests/test_m3.py::TestMilestone3::test_engine_produces_wellformed_json
+PASSED ../tests/test_m3.py::TestMilestone3::test_full_mode_combined_json
+PASSED ../tests/test_m3.py::TestMilestone3::test_default_mode_is_full
+PASSED ../tests/test_m3.py::TestMilestone3::test_sequential_api_requests
+FAILED ../tests/test_m2.py::TestMilestone2::test_engine_median_accuracy - Ass...
+FAILED ../tests/test_m2.py::TestMilestone2::test_engine_min_max_are_floats - ...
+FAILED ../tests/test_m2.py::TestMilestone2::test_engine_percentile_accuracy
+========================= 3 failed, 30 passed in 5.61s =========================

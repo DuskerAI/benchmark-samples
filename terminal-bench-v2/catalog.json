@@ -1,0 +1,3276 @@
+{
+  "catalog_schema_version": "1.0",
+  "collection": "Dusker AI expert bench — Terminal-Bench-style tasks",
+  "github_owner": "dusker-dynamics",
+  "benchmark_release": null,
+  "benchmark_release_note": "Custom tasks; not verified as members of official Terminal-Bench 2.0 or 2.1. The task version field does not establish benchmark release membership.",
+  "task_count": 121,
+  "tasks": [
+    {
+      "id": "ada-btrfs-recovery-auditor",
+      "path": "ada-btrfs-recovery-auditor",
+      "readme_path": "ada-btrfs-recovery-auditor/README.md",
+      "instruction_path": "ada-btrfs-recovery-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Ada",
+        "bash"
+      ],
+      "tags": [
+        "storage-admin",
+        "filesystem-recovery",
+        "quota-audit",
+        "crash-recovery",
+        "integrity-audit"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-btrfs-recovery-auditor"
+    },
+    {
+      "id": "ada-cr3bp-manifold-continuation",
+      "path": "ada-cr3bp-manifold-continuation",
+      "readme_path": "ada-cr3bp-manifold-continuation/README.md",
+      "instruction_path": "ada-cr3bp-manifold-continuation/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "software-engineering",
+      "difficulty": "unknown",
+      "languages": [
+        "bash"
+      ],
+      "tags": [
+        "file-operations"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-cr3bp-manifold-continuation"
+    },
+    {
+      "id": "ada-ext4-journal-recovery",
+      "path": "ada-ext4-journal-recovery",
+      "readme_path": "ada-ext4-journal-recovery/README.md",
+      "instruction_path": "ada-ext4-journal-recovery/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Ada",
+        "bash"
+      ],
+      "tags": [
+        "storage-admin",
+        "filesystem-recovery",
+        "fsck",
+        "journal-replay",
+        "incident-audit"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 640,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-ext4-journal-recovery"
+    },
+    {
+      "id": "ada-isometric-scanline-renderer",
+      "path": "ada-isometric-scanline-renderer",
+      "readme_path": "ada-isometric-scanline-renderer/README.md",
+      "instruction_path": "ada-isometric-scanline-renderer/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Ada",
+        "bash"
+      ],
+      "tags": [
+        "ada",
+        "isometric-game-board",
+        "ppm-renderer",
+        "scanline",
+        "determinism"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-isometric-scanline-renderer"
+    },
+    {
+      "id": "ada-nft-policy-compiler",
+      "path": "ada-nft-policy-compiler",
+      "readme_path": "ada-nft-policy-compiler/README.md",
+      "instruction_path": "ada-nft-policy-compiler/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Ada",
+        "bash"
+      ],
+      "tags": [
+        "nftables",
+        "firewall",
+        "ada",
+        "policy-equivalence",
+        "ipv6"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-nft-policy-compiler"
+    },
+    {
+      "id": "ada-roughtime-response-auditor",
+      "path": "ada-roughtime-response-auditor",
+      "readme_path": "ada-roughtime-response-auditor/README.md",
+      "instruction_path": "ada-roughtime-response-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Ada",
+        "bash"
+      ],
+      "tags": [
+        "ada",
+        "roughtime",
+        "ed25519",
+        "merkle-proof",
+        "offline-admission",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-roughtime-response-auditor"
+    },
+    {
+      "id": "ada-tpm-pcr-eventlog-audit",
+      "path": "ada-tpm-pcr-eventlog-audit",
+      "readme_path": "ada-tpm-pcr-eventlog-audit/README.md",
+      "instruction_path": "ada-tpm-pcr-eventlog-audit/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Ada",
+        "bash"
+      ],
+      "tags": [
+        "measured-boot",
+        "tpm",
+        "pcr",
+        "offline-admission",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ada-tpm-pcr-eventlog-audit"
+    },
+    {
+      "id": "c-allocator-replay",
+      "path": "c-allocator-replay",
+      "readme_path": "c-allocator-replay/README.md",
+      "instruction_path": "c-allocator-replay/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "C"
+      ],
+      "tags": [
+        "c",
+        "allocator",
+        "trace-replay",
+        "crash-recovery",
+        "debugging"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-allocator-replay"
+    },
+    {
+      "id": "c-ansi-build-log-viewer-ui",
+      "path": "c-ansi-build-log-viewer-ui",
+      "readme_path": "c-ansi-build-log-viewer-ui/README.md",
+      "instruction_path": "c-ansi-build-log-viewer-ui/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "c",
+        "html",
+        "javascript"
+      ],
+      "tags": [
+        "c",
+        "ansi-terminal",
+        "build-logs",
+        "browser-ui",
+        "playwright"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-ansi-build-log-viewer-ui"
+    },
+    {
+      "id": "c-cose-replay-gate",
+      "path": "c-cose-replay-gate",
+      "readme_path": "c-cose-replay-gate/README.md",
+      "instruction_path": "c-cose-replay-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "C"
+      ],
+      "tags": [
+        "c",
+        "cbor",
+        "cose",
+        "anti-replay",
+        "key-rotation",
+        "crash-safety"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-cose-replay-gate"
+    },
+    {
+      "id": "c-dax-inode-policy-engine",
+      "path": "c-dax-inode-policy-engine",
+      "readme_path": "c-dax-inode-policy-engine/README.md",
+      "instruction_path": "c-dax-inode-policy-engine/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "C",
+        "bash"
+      ],
+      "tags": [
+        "linux",
+        "dax",
+        "filesystem-policy",
+        "inode-lifecycle",
+        "mount-administration"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-dax-inode-policy-engine"
+    },
+    {
+      "id": "c-der-chain-admission",
+      "path": "c-der-chain-admission",
+      "readme_path": "c-der-chain-admission/README.md",
+      "instruction_path": "c-der-chain-admission/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "medium",
+      "languages": [
+        "C",
+        "bash"
+      ],
+      "tags": [
+        "der-parsing",
+        "certificate-chain",
+        "binary-protocol",
+        "admission-policy"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 240,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-der-chain-admission"
+    },
+    {
+      "id": "c-fido2-hid-admission-gate",
+      "path": "c-fido2-hid-admission-gate",
+      "readme_path": "c-fido2-hid-admission-gate/README.md",
+      "instruction_path": "c-fido2-hid-admission-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "C",
+        "bash"
+      ],
+      "tags": [
+        "fido2",
+        "ctap2",
+        "hid",
+        "cbor",
+        "credential-replay",
+        "security-admission"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-fido2-hid-admission-gate"
+    },
+    {
+      "id": "c-forward-secure-log-auditor",
+      "path": "c-forward-secure-log-auditor",
+      "readme_path": "c-forward-secure-log-auditor/README.md",
+      "instruction_path": "c-forward-secure-log-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "C",
+        "bash"
+      ],
+      "tags": [
+        "c",
+        "audit-log",
+        "forward-security",
+        "hmac",
+        "checkpoint-proof",
+        "crash-recovery"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-forward-secure-log-auditor"
+    },
+    {
+      "id": "c-io-uring-replay",
+      "path": "c-io-uring-replay",
+      "readme_path": "c-io-uring-replay/README.md",
+      "instruction_path": "c-io-uring-replay/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "c"
+      ],
+      "tags": [
+        "c",
+        "io-uring",
+        "trace-replay",
+        "debugging",
+        "linux-io"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-io-uring-replay"
+    },
+    {
+      "id": "c-tty-packet-replay-ui",
+      "path": "c-tty-packet-replay-ui",
+      "readme_path": "c-tty-packet-replay-ui/README.md",
+      "instruction_path": "c-tty-packet-replay-ui/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "c",
+        "html",
+        "javascript"
+      ],
+      "tags": [
+        "c",
+        "tty",
+        "session-audit",
+        "incident-response",
+        "playwright"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/c-tty-packet-replay-ui"
+    },
+    {
+      "id": "clojure-kalman-smoother",
+      "path": "clojure-kalman-smoother",
+      "readme_path": "clojure-kalman-smoother/README.md",
+      "instruction_path": "clojure-kalman-smoother/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "Clojure",
+        "bash"
+      ],
+      "tags": [
+        "clojure",
+        "kalman-filter",
+        "rts-smoother",
+        "numerical-methods",
+        "sensor-fusion"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/clojure-kalman-smoother"
+    },
+    {
+      "id": "cpp-bgp-mrt-repair",
+      "path": "cpp-bgp-mrt-repair",
+      "readme_path": "cpp-bgp-mrt-repair/README.md",
+      "instruction_path": "cpp-bgp-mrt-repair/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "c++",
+        "bash"
+      ],
+      "tags": [
+        "bgp",
+        "mrt",
+        "binary-parsing",
+        "routing",
+        "debugging"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-bgp-mrt-repair"
+    },
+    {
+      "id": "cpp-cardrail-stateful-emv-replay-large",
+      "path": "cpp-cardrail-stateful-emv-replay-large",
+      "readme_path": "cpp-cardrail-stateful-emv-replay-large/README.md",
+      "instruction_path": "cpp-cardrail-stateful-emv-replay-large/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "cpp",
+        "bash"
+      ],
+      "tags": [
+        "smart-card",
+        "apdu",
+        "tlv",
+        "protocol-replay",
+        "security-audit",
+        "replay-detection"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-cardrail-stateful-emv-replay-large"
+    },
+    {
+      "id": "cpp-dwarf-cfi-unwinder",
+      "path": "cpp-dwarf-cfi-unwinder",
+      "readme_path": "cpp-dwarf-cfi-unwinder/README.md",
+      "instruction_path": "cpp-dwarf-cfi-unwinder/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "C++"
+      ],
+      "tags": [
+        "dwarf",
+        "cfi",
+        "unwinding",
+        "crash-analysis",
+        "binary-parsing"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-dwarf-cfi-unwinder"
+    },
+    {
+      "id": "cpp-elf-abi-compatibility-auditor-large",
+      "path": "cpp-elf-abi-compatibility-auditor-large",
+      "readme_path": "cpp-elf-abi-compatibility-auditor-large/README.md",
+      "instruction_path": "cpp-elf-abi-compatibility-auditor-large/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "c++",
+        "bash"
+      ],
+      "tags": [
+        "elf",
+        "abi",
+        "symbol-versioning",
+        "binutils",
+        "shared-libraries"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 420,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-elf-abi-compatibility-auditor-large"
+    },
+    {
+      "id": "cpp-elf-note-summarizer",
+      "path": "cpp-elf-note-summarizer",
+      "readme_path": "cpp-elf-note-summarizer/README.md",
+      "instruction_path": "cpp-elf-note-summarizer/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "c++",
+        "bash"
+      ],
+      "tags": [
+        "cpp",
+        "elf",
+        "binary-format",
+        "core-dumps",
+        "debugging"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 640,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-elf-note-summarizer"
+    },
+    {
+      "id": "cpp-hpack-continuation-decoder-repair",
+      "path": "cpp-hpack-continuation-decoder-repair",
+      "readme_path": "cpp-hpack-continuation-decoder-repair/README.md",
+      "instruction_path": "cpp-hpack-continuation-decoder-repair/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "http2",
+        "hpack",
+        "binary-protocol",
+        "forensics",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-hpack-continuation-decoder-repair"
+    },
+    {
+      "id": "cpp-hpack-security-audit-analyzer",
+      "path": "cpp-hpack-security-audit-analyzer",
+      "readme_path": "cpp-hpack-security-audit-analyzer/README.md",
+      "instruction_path": "cpp-hpack-security-audit-analyzer/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "http2",
+        "hpack",
+        "binary-protocol",
+        "forensics",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-hpack-security-audit-analyzer"
+    },
+    {
+      "id": "cpp-ipfix-flow-template-auditor-large",
+      "path": "cpp-ipfix-flow-template-auditor-large",
+      "readme_path": "cpp-ipfix-flow-template-auditor-large/README.md",
+      "instruction_path": "cpp-ipfix-flow-template-auditor-large/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "c++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "ipfix",
+        "netflow",
+        "binary-protocol",
+        "telemetry",
+        "data-audit"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-ipfix-flow-template-auditor-large"
+    },
+    {
+      "id": "cpp-kryo-fem-checkpoint",
+      "path": "cpp-kryo-fem-checkpoint",
+      "readme_path": "cpp-kryo-fem-checkpoint/README.md",
+      "instruction_path": "cpp-kryo-fem-checkpoint/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "debugging",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "finite-element",
+        "cryosphere",
+        "checkpoint-restart",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-kryo-fem-checkpoint"
+    },
+    {
+      "id": "cpp-quic-replay-reassembler",
+      "path": "cpp-quic-replay-reassembler",
+      "readme_path": "cpp-quic-replay-reassembler/README.md",
+      "instruction_path": "cpp-quic-replay-reassembler/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "quic",
+        "qlog",
+        "binary-protocol",
+        "stream-reassembly",
+        "offline"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 540,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-quic-replay-reassembler"
+    },
+    {
+      "id": "cpp-reloc-planner",
+      "path": "cpp-reloc-planner",
+      "readme_path": "cpp-reloc-planner/README.md",
+      "instruction_path": "cpp-reloc-planner/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "c++",
+        "bash"
+      ],
+      "tags": [
+        "cpp",
+        "linker",
+        "relocations",
+        "offline-build",
+        "release-planning"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-reloc-planner"
+    },
+    {
+      "id": "cpp-sctp-reassembly-state",
+      "path": "cpp-sctp-reassembly-state",
+      "readme_path": "cpp-sctp-reassembly-state/README.md",
+      "instruction_path": "cpp-sctp-reassembly-state/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "c++",
+        "bash"
+      ],
+      "tags": [
+        "cpp",
+        "sctp",
+        "reassembly",
+        "state-machine",
+        "protocols"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-sctp-reassembly-state"
+    },
+    {
+      "id": "cpp-stiff-ode-enclosure",
+      "path": "cpp-stiff-ode-enclosure",
+      "readme_path": "cpp-stiff-ode-enclosure/README.md",
+      "instruction_path": "cpp-stiff-ode-enclosure/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "stiff-ode",
+        "validated-numerics",
+        "checkpoint-restart",
+        "event-bracketing"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-stiff-ode-enclosure"
+    },
+    {
+      "id": "cpp-tactical-canvas-shader",
+      "path": "cpp-tactical-canvas-shader",
+      "readme_path": "cpp-tactical-canvas-shader/README.md",
+      "instruction_path": "cpp-tactical-canvas-shader/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "game-engine",
+        "geometric-algorithms",
+        "pathfinding",
+        "visibility-systems"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-tactical-canvas-shader"
+    },
+    {
+      "id": "cpp-webauthn-admission-gate",
+      "path": "cpp-webauthn-admission-gate",
+      "readme_path": "cpp-webauthn-admission-gate/README.md",
+      "instruction_path": "cpp-webauthn-admission-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "C++",
+        "bash"
+      ],
+      "tags": [
+        "c++",
+        "webauthn",
+        "attestation",
+        "sign-counter",
+        "offline-authentication"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/cpp-webauthn-admission-gate"
+    },
+    {
+      "id": "crystal-linker-resolver",
+      "path": "crystal-linker-resolver",
+      "readme_path": "crystal-linker-resolver/README.md",
+      "instruction_path": "crystal-linker-resolver/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "crystal",
+        "bash"
+      ],
+      "tags": [
+        "crystal",
+        "static-linker",
+        "symbol-resolution",
+        "relocations",
+        "comdat",
+        "archive-inclusion"
+      ],
+      "expert_time_estimate_min": 120,
+      "junior_time_estimate_min": 300,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/crystal-linker-resolver"
+    },
+    {
+      "id": "crystal-quant-inference",
+      "path": "crystal-quant-inference",
+      "readme_path": "crystal-quant-inference/README.md",
+      "instruction_path": "crystal-quant-inference/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "machine-learning",
+      "difficulty": "hard",
+      "languages": [
+        "Crystal"
+      ],
+      "tags": [
+        "crystal",
+        "quantization",
+        "inference",
+        "transformer",
+        "reproducibility"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 240,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/crystal-quant-inference"
+    },
+    {
+      "id": "crystal-riichi-ledger",
+      "path": "crystal-riichi-ledger",
+      "readme_path": "crystal-riichi-ledger/README.md",
+      "instruction_path": "crystal-riichi-ledger/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Crystal",
+        "Bash"
+      ],
+      "tags": [
+        "riichi",
+        "mahjong",
+        "hanchan",
+        "chombo",
+        "nagashi"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/crystal-riichi-ledger"
+    },
+    {
+      "id": "crystal-sat-package-lock-auditor",
+      "path": "crystal-sat-package-lock-auditor",
+      "readme_path": "crystal-sat-package-lock-auditor/README.md",
+      "instruction_path": "crystal-sat-package-lock-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "crystal",
+        "bash"
+      ],
+      "tags": [
+        "crystal",
+        "dependency-resolution",
+        "lockfiles",
+        "offline",
+        "package-audit",
+        "custom-base-image"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 780,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/crystal-sat-package-lock-auditor"
+    },
+    {
+      "id": "d-pseudo-arclength-continuation",
+      "path": "d-pseudo-arclength-continuation",
+      "readme_path": "d-pseudo-arclength-continuation/README.md",
+      "instruction_path": "d-pseudo-arclength-continuation/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "d",
+        "bash"
+      ],
+      "tags": [
+        "numerical-continuation",
+        "bifurcation",
+        "nonlinear-systems",
+        "checkpoint-restart",
+        "adaptive-stepping"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/d-pseudo-arclength-continuation"
+    },
+    {
+      "id": "d-taylor-ode-enclosure",
+      "path": "d-taylor-ode-enclosure",
+      "readme_path": "d-taylor-ode-enclosure/README.md",
+      "instruction_path": "d-taylor-ode-enclosure/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "D",
+        "bash"
+      ],
+      "tags": [
+        "validated-numerics",
+        "adaptive-ode",
+        "interval-arithmetic",
+        "checkpoint-restart"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/d-taylor-ode-enclosure"
+    },
+    {
+      "id": "d864d846-1813-4d1b-8d02-96332218ade6",
+      "path": "d864d846-1813-4d1b-8d02-96332218ade6",
+      "readme_path": "d864d846-1813-4d1b-8d02-96332218ade6/README.md",
+      "instruction_path": "d864d846-1813-4d1b-8d02-96332218ade6/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "OCaml"
+      ],
+      "tags": [
+        "ocaml",
+        "supply-chain-security",
+        "sigstore",
+        "rekor",
+        "merkle-tree",
+        "admission-policy"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/d864d846-1813-4d1b-8d02-96332218ade6"
+    },
+    {
+      "id": "elixir-backgammon-match-arbiter",
+      "path": "elixir-backgammon-match-arbiter",
+      "readme_path": "elixir-backgammon-match-arbiter/README.md",
+      "instruction_path": "elixir-backgammon-match-arbiter/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Elixir",
+        "Bash"
+      ],
+      "tags": [
+        "backgammon",
+        "match-play",
+        "game-replay",
+        "checkpoint-resume",
+        "elixir"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/elixir-backgammon-match-arbiter"
+    },
+    {
+      "id": "elixir-beam-telemetry-replay",
+      "path": "elixir-beam-telemetry-replay",
+      "readme_path": "elixir-beam-telemetry-replay/README.md",
+      "instruction_path": "elixir-beam-telemetry-replay/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Elixir"
+      ],
+      "tags": [
+        "elixir",
+        "beam",
+        "telemetry",
+        "supervision",
+        "replay"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/elixir-beam-telemetry-replay"
+    },
+    {
+      "id": "erlang-mqtt-session-replay",
+      "path": "erlang-mqtt-session-replay",
+      "readme_path": "erlang-mqtt-session-replay/README.md",
+      "instruction_path": "erlang-mqtt-session-replay/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Erlang"
+      ],
+      "tags": [
+        "erlang",
+        "mqtt-security",
+        "abuse-audit",
+        "session-state",
+        "replay"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/erlang-mqtt-session-replay"
+    },
+    {
+      "id": "erlang-quic-replay-gate",
+      "path": "erlang-quic-replay-gate",
+      "readme_path": "erlang-quic-replay-gate/README.md",
+      "instruction_path": "erlang-quic-replay-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "medium",
+      "languages": [
+        "Erlang"
+      ],
+      "tags": [
+        "erlang",
+        "quic",
+        "protocol-security",
+        "anti-replay",
+        "packet-number"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/erlang-quic-replay-gate"
+    },
+    {
+      "id": "erlang-rebar-release-resolver-final",
+      "path": "erlang-rebar-release-resolver-final",
+      "readme_path": "erlang-rebar-release-resolver-final/README.md",
+      "instruction_path": "erlang-rebar-release-resolver-final/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "Erlang"
+      ],
+      "tags": [
+        "erlang",
+        "rebar3",
+        "dependency-resolution",
+        "release-manifest",
+        "profiles"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/erlang-rebar-release-resolver-final"
+    },
+    {
+      "id": "erlang-ssh-certificate-policy",
+      "path": "erlang-ssh-certificate-policy",
+      "readme_path": "erlang-ssh-certificate-policy/README.md",
+      "instruction_path": "erlang-ssh-certificate-policy/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Erlang"
+      ],
+      "tags": [
+        "ssh",
+        "certificates",
+        "protocol-security",
+        "cryptography",
+        "state-machines"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/erlang-ssh-certificate-policy"
+    },
+    {
+      "id": "erlang-vector-clock-arbiter",
+      "path": "erlang-vector-clock-arbiter",
+      "readme_path": "erlang-vector-clock-arbiter/README.md",
+      "instruction_path": "erlang-vector-clock-arbiter/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Erlang",
+        "bash"
+      ],
+      "tags": [
+        "erlang",
+        "arena-match",
+        "score-clock",
+        "referee",
+        "saved-game"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/erlang-vector-clock-arbiter"
+    },
+    {
+      "id": "fortran-adaptive-quadrature-restart",
+      "path": "fortran-adaptive-quadrature-restart",
+      "readme_path": "fortran-adaptive-quadrature-restart/README.md",
+      "instruction_path": "fortran-adaptive-quadrature-restart/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "medium",
+      "languages": [
+        "fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "adaptive-quadrature",
+        "checkpoint-restart",
+        "oscillatory-integrals",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-adaptive-quadrature-restart"
+    },
+    {
+      "id": "fortran-amr-reflux-restart-payload-1c758df5",
+      "path": "fortran-amr-reflux-restart-payload-1c758df5",
+      "readme_path": "fortran-amr-reflux-restart-payload-1c758df5/README.md",
+      "instruction_path": "fortran-amr-reflux-restart-payload-1c758df5/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "adaptive-mesh",
+        "finite-volume",
+        "refluxing",
+        "checkpoint-restart"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-amr-reflux-restart-payload-1c758df5"
+    },
+    {
+      "id": "fortran-dg-shallow-water-restart",
+      "path": "fortran-dg-shallow-water-restart",
+      "readme_path": "fortran-dg-shallow-water-restart/README.md",
+      "instruction_path": "fortran-dg-shallow-water-restart/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "debugging",
+        "discontinuous-galerkin",
+        "checkpoint-restart",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-dg-shallow-water-restart"
+    },
+    {
+      "id": "fortran-dqds-eigen-auditor",
+      "path": "fortran-dqds-eigen-auditor",
+      "readme_path": "fortran-dqds-eigen-auditor/README.md",
+      "instruction_path": "fortran-dqds-eigen-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "eigenvalues",
+        "tridiagonal-matrices",
+        "checkpoint-restart",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-dqds-eigen-auditor"
+    },
+    {
+      "id": "fortran-netcdf-restart-solver",
+      "path": "fortran-netcdf-restart-solver",
+      "readme_path": "fortran-netcdf-restart-solver/README.md",
+      "instruction_path": "fortran-netcdf-restart-solver/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "checkpointing",
+        "binary-format",
+        "pde",
+        "scientific-computing"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-netcdf-restart-solver"
+    },
+    {
+      "id": "fortran-orbit-restart",
+      "path": "fortran-orbit-restart",
+      "readme_path": "fortran-orbit-restart/README.md",
+      "instruction_path": "fortran-orbit-restart/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "n-body",
+        "checkpoint-restart",
+        "numerical-invariants",
+        "symplectic-integration",
+        "code-repair"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-orbit-restart"
+    },
+    {
+      "id": "fortran-shallow-water-restart",
+      "path": "fortran-shallow-water-restart",
+      "readme_path": "fortran-shallow-water-restart/README.md",
+      "instruction_path": "fortran-shallow-water-restart/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "Fortran",
+        "bash"
+      ],
+      "tags": [
+        "fortran",
+        "shallow-water",
+        "finite-volume",
+        "checkpoint-restart",
+        "numerical-invariants"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fortran-shallow-water-restart"
+    },
+    {
+      "id": "fsharp-nuget-prerelease-resolver",
+      "path": "fsharp-nuget-prerelease-resolver",
+      "readme_path": "fsharp-nuget-prerelease-resolver/README.md",
+      "instruction_path": "fsharp-nuget-prerelease-resolver/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "F#",
+        "bash"
+      ],
+      "tags": [
+        "fsharp",
+        "nuget",
+        "dependency-resolution",
+        "semver",
+        "offline"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/fsharp-nuget-prerelease-resolver"
+    },
+    {
+      "id": "go-continuity-shelter-policy-auditor-large",
+      "path": "go-continuity-shelter-policy-auditor-large",
+      "readme_path": "go-continuity-shelter-policy-auditor-large/README.md",
+      "instruction_path": "go-continuity-shelter-policy-auditor-large/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "go",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "policy",
+        "emergency-management",
+        "offline"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-continuity-shelter-policy-auditor-large"
+    },
+    {
+      "id": "go-ct-log-gate",
+      "path": "go-ct-log-gate",
+      "readme_path": "go-ct-log-gate/README.md",
+      "instruction_path": "go-ct-log-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Go",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "certificate-transparency",
+        "merkle-proof",
+        "offline-admission",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-ct-log-gate"
+    },
+    {
+      "id": "go-edge-gateway",
+      "path": "go-edge-gateway",
+      "readme_path": "go-edge-gateway/README.md",
+      "instruction_path": "go-edge-gateway/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "go",
+        "bash"
+      ],
+      "tags": [
+        "systemd",
+        "service-orchestration",
+        "edge-gateway",
+        "rollback"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 210,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-edge-gateway"
+    },
+    {
+      "id": "go-jose-gate",
+      "path": "go-jose-gate",
+      "readme_path": "go-jose-gate/README.md",
+      "instruction_path": "go-jose-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Go",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "jose",
+        "jwk",
+        "hmac",
+        "offline-admission",
+        "replay-detection"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-jose-gate"
+    },
+    {
+      "id": "go-journal-vacuum-auditor",
+      "path": "go-journal-vacuum-auditor",
+      "readme_path": "go-journal-vacuum-auditor/README.md",
+      "instruction_path": "go-journal-vacuum-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Go",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "systemd-journal",
+        "retention",
+        "rotation",
+        "offline-audit"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-journal-vacuum-auditor"
+    },
+    {
+      "id": "go-quic-transcript-validator",
+      "path": "go-quic-transcript-validator",
+      "readme_path": "go-quic-transcript-validator/README.md",
+      "instruction_path": "go-quic-transcript-validator/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "go",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "quic",
+        "packet-parsing",
+        "transcript",
+        "offline"
+      ],
+      "expert_time_estimate_min": 150,
+      "junior_time_estimate_min": 300,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-quic-transcript-validator"
+    },
+    {
+      "id": "go-raft-replay-recovery",
+      "path": "go-raft-replay-recovery",
+      "readme_path": "go-raft-replay-recovery/README.md",
+      "instruction_path": "go-raft-replay-recovery/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "medium",
+      "languages": [
+        "Go"
+      ],
+      "tags": [
+        "go",
+        "raft",
+        "json",
+        "replay",
+        "recovery"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 300,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-raft-replay-recovery"
+    },
+    {
+      "id": "go-raft-snapshot-compaction-repair",
+      "path": "go-raft-snapshot-compaction-repair",
+      "readme_path": "go-raft-snapshot-compaction-repair/README.md",
+      "instruction_path": "go-raft-snapshot-compaction-repair/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "go",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "raft",
+        "snapshots",
+        "log-replay",
+        "crash-recovery"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 520,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/go-raft-snapshot-compaction-repair"
+    },
+    {
+      "id": "guile-firewall-restore-planner",
+      "path": "guile-firewall-restore-planner",
+      "readme_path": "guile-firewall-restore-planner/README.md",
+      "instruction_path": "guile-firewall-restore-planner/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "medium",
+      "languages": [
+        "Guile Scheme",
+        "bash"
+      ],
+      "tags": [
+        "guile",
+        "nftables",
+        "firewall-restore",
+        "rollback",
+        "service-audit"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/guile-firewall-restore-planner"
+    },
+    {
+      "id": "guile-sysroot-solver",
+      "path": "guile-sysroot-solver",
+      "readme_path": "guile-sysroot-solver/README.md",
+      "instruction_path": "guile-sysroot-solver/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "Guile Scheme"
+      ],
+      "tags": [
+        "guile",
+        "pkg-config",
+        "sysroot",
+        "dependency-resolution",
+        "cross-compilation"
+      ],
+      "expert_time_estimate_min": 150,
+      "junior_time_estimate_min": 300,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/guile-sysroot-solver"
+    },
+    {
+      "id": "haskell-cabal-flag-solver",
+      "path": "haskell-cabal-flag-solver",
+      "readme_path": "haskell-cabal-flag-solver/README.md",
+      "instruction_path": "haskell-cabal-flag-solver/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "haskell",
+        "bash"
+      ],
+      "tags": [
+        "haskell",
+        "cabal",
+        "offline-build",
+        "package-flags",
+        "workspace-recovery"
+      ],
+      "expert_time_estimate_min": 340,
+      "junior_time_estimate_min": 780,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/haskell-cabal-flag-solver"
+    },
+    {
+      "id": "haskell-cabal-planner",
+      "path": "haskell-cabal-planner",
+      "readme_path": "haskell-cabal-planner/README.md",
+      "instruction_path": "haskell-cabal-planner/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "Haskell",
+        "bash"
+      ],
+      "tags": [
+        "haskell",
+        "cabal",
+        "dependency-resolution",
+        "backpack",
+        "lockfile"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/haskell-cabal-planner"
+    },
+    {
+      "id": "haskell-lens-calibrator",
+      "path": "haskell-lens-calibrator",
+      "readme_path": "haskell-lens-calibrator/README.md",
+      "instruction_path": "haskell-lens-calibrator/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "Haskell",
+        "bash"
+      ],
+      "tags": [
+        "haskell",
+        "camera-calibration",
+        "lens-distortion",
+        "bundle-adjustment",
+        "robust-fitting",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/haskell-lens-calibrator"
+    },
+    {
+      "id": "haskell-spectral-checkpoint-solver",
+      "path": "haskell-spectral-checkpoint-solver",
+      "readme_path": "haskell-spectral-checkpoint-solver/README.md",
+      "instruction_path": "haskell-spectral-checkpoint-solver/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "haskell",
+        "bash"
+      ],
+      "tags": [
+        "haskell",
+        "spectral-methods",
+        "checkpoint-restart",
+        "pde",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 340,
+      "junior_time_estimate_min": 780,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/haskell-spectral-checkpoint-solver"
+    },
+    {
+      "id": "java-debian-snapshot-pin-resolver-large",
+      "path": "java-debian-snapshot-pin-resolver-large",
+      "readme_path": "java-debian-snapshot-pin-resolver-large/README.md",
+      "instruction_path": "java-debian-snapshot-pin-resolver-large/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "java",
+        "bash"
+      ],
+      "tags": [
+        "java",
+        "dependency-resolution",
+        "debian-metadata",
+        "offline",
+        "package-planning"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/java-debian-snapshot-pin-resolver-large"
+    },
+    {
+      "id": "julia-fem-checkpoint-restart",
+      "path": "julia-fem-checkpoint-restart",
+      "readme_path": "julia-fem-checkpoint-restart/README.md",
+      "instruction_path": "julia-fem-checkpoint-restart/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "julia",
+        "bash"
+      ],
+      "tags": [
+        "sparse-linear-algebra",
+        "finite-element",
+        "diffusion",
+        "checkpointing",
+        "gauss-quadrature",
+        "theta-method"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/julia-fem-checkpoint-restart"
+    },
+    {
+      "id": "julia-gmres-restart-auditor",
+      "path": "julia-gmres-restart-auditor",
+      "readme_path": "julia-gmres-restart-auditor/README.md",
+      "instruction_path": "julia-gmres-restart-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "julia",
+        "bash"
+      ],
+      "tags": [
+        "julia",
+        "gmres",
+        "sparse-linear-algebra",
+        "krylov-methods",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/julia-gmres-restart-auditor"
+    },
+    {
+      "id": "kotlin-sigstore-bundle-auditor",
+      "path": "kotlin-sigstore-bundle-auditor",
+      "readme_path": "kotlin-sigstore-bundle-auditor/README.md",
+      "instruction_path": "kotlin-sigstore-bundle-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "kotlin",
+        "bash"
+      ],
+      "tags": [
+        "sigstore",
+        "supply-chain-security",
+        "cryptography",
+        "kotlin",
+        "offline-verification"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 640,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/kotlin-sigstore-bundle-auditor"
+    },
+    {
+      "id": "lua-register-vm-resume",
+      "path": "lua-register-vm-resume",
+      "readme_path": "lua-register-vm-resume/README.md",
+      "instruction_path": "lua-register-vm-resume/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Nim",
+        "bash"
+      ],
+      "tags": [
+        "bytecode-vm",
+        "register-machine",
+        "checkpoint-resume",
+        "closures",
+        "nim"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/lua-register-vm-resume"
+    },
+    {
+      "id": "lua-seccomp-bpf-broker",
+      "path": "lua-seccomp-bpf-broker",
+      "readme_path": "lua-seccomp-bpf-broker/README.md",
+      "instruction_path": "lua-seccomp-bpf-broker/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "lua",
+        "bash"
+      ],
+      "tags": [
+        "seccomp",
+        "linux-abi",
+        "bpf",
+        "policy-audit",
+        "lua"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/lua-seccomp-bpf-broker"
+    },
+    {
+      "id": "lyra-matchroom-host",
+      "path": "lyra-matchroom-host",
+      "readme_path": "lyra-matchroom-host/README.md",
+      "instruction_path": "lyra-matchroom-host/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Bash"
+      ],
+      "tags": [
+        "linux-users",
+        "sudoers",
+        "ssh",
+        "logrotate",
+        "access-control",
+        "audit-logging"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 420,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/lyra-matchroom-host"
+    },
+    {
+      "id": "nim-amr-certifier-staging-e7e587e7",
+      "path": "nim-amr-certifier-staging-e7e587e7",
+      "readme_path": "nim-amr-certifier-staging-e7e587e7/README.md",
+      "instruction_path": "nim-amr-certifier-staging-e7e587e7/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "Nim",
+        "bash"
+      ],
+      "tags": [
+        "nim",
+        "finite-volume",
+        "amr",
+        "shock-tube",
+        "checkpoint-restart",
+        "certification"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-amr-certifier-staging-e7e587e7"
+    },
+    {
+      "id": "nim-cose-sign1-audit-final",
+      "path": "nim-cose-sign1-audit-final",
+      "readme_path": "nim-cose-sign1-audit-final/README.md",
+      "instruction_path": "nim-cose-sign1-audit-final/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "nim"
+      ],
+      "tags": [
+        "nim",
+        "security",
+        "authentication",
+        "cose",
+        "forgery-detection",
+        "offline-audit"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 540,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-cose-sign1-audit-final"
+    },
+    {
+      "id": "nim-nix-store-closure-admission",
+      "path": "nim-nix-store-closure-admission",
+      "readme_path": "nim-nix-store-closure-admission/README.md",
+      "instruction_path": "nim-nix-store-closure-admission/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "Nim",
+        "bash"
+      ],
+      "tags": [
+        "dependency-closure",
+        "admission-control",
+        "nix-like",
+        "custom-base"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-nix-store-closure-admission"
+    },
+    {
+      "id": "nim-sensor-bitstream-decoder",
+      "path": "nim-sensor-bitstream-decoder",
+      "readme_path": "nim-sensor-bitstream-decoder/README.md",
+      "instruction_path": "nim-sensor-bitstream-decoder/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "nim",
+        "bash"
+      ],
+      "tags": [
+        "nim",
+        "canonical-huffman",
+        "lz77",
+        "bitstream",
+        "binary-format"
+      ],
+      "expert_time_estimate_min": 120,
+      "junior_time_estimate_min": 300,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-sensor-bitstream-decoder"
+    },
+    {
+      "id": "nim-shogi-judge",
+      "path": "nim-shogi-judge",
+      "readme_path": "nim-shogi-judge/README.md",
+      "instruction_path": "nim-shogi-judge/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Nim",
+        "bash",
+        "Python"
+      ],
+      "tags": [
+        "nim",
+        "shogi",
+        "rules-engine",
+        "repetition",
+        "command-line"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-shogi-judge"
+    },
+    {
+      "id": "nim-wireguard-transcript-auditor",
+      "path": "nim-wireguard-transcript-auditor",
+      "readme_path": "nim-wireguard-transcript-auditor/README.md",
+      "instruction_path": "nim-wireguard-transcript-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "medium",
+      "languages": [
+        "Nim",
+        "bash"
+      ],
+      "tags": [
+        "wireguard",
+        "noiseik",
+        "offline-admission",
+        "replay-detection",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-wireguard-transcript-auditor"
+    },
+    {
+      "id": "nim-x509-path-audit",
+      "path": "nim-x509-path-audit",
+      "readme_path": "nim-x509-path-audit/README.md",
+      "instruction_path": "nim-x509-path-audit/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Nim",
+        "bash"
+      ],
+      "tags": [
+        "nim",
+        "x509",
+        "certificate-path-validation",
+        "incident-response",
+        "openssl"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/nim-x509-path-audit"
+    },
+    {
+      "id": "ocaml-dnssec-nsec3-validator",
+      "path": "ocaml-dnssec-nsec3-validator",
+      "readme_path": "ocaml-dnssec-nsec3-validator/README.md",
+      "instruction_path": "ocaml-dnssec-nsec3-validator/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "OCaml"
+      ],
+      "tags": [
+        "ocaml",
+        "dnssec-security",
+        "nsec3",
+        "authenticated-denial",
+        "downgrade-detection"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ocaml-dnssec-nsec3-validator"
+    },
+    {
+      "id": "ocaml-rpki-roa-auditor",
+      "path": "ocaml-rpki-roa-auditor",
+      "readme_path": "ocaml-rpki-roa-auditor/README.md",
+      "instruction_path": "ocaml-rpki-roa-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "OCaml",
+        "bash"
+      ],
+      "tags": [
+        "ocaml",
+        "rpki",
+        "route-origin-validation",
+        "offline-admission",
+        "revocation"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ocaml-rpki-roa-auditor"
+    },
+    {
+      "id": "ocaml-x509-policy-admission",
+      "path": "ocaml-x509-policy-admission",
+      "readme_path": "ocaml-x509-policy-admission/README.md",
+      "instruction_path": "ocaml-x509-policy-admission/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "OCaml"
+      ],
+      "tags": [
+        "ocaml",
+        "x509",
+        "certificate-policy",
+        "revocation",
+        "offline-admission"
+      ],
+      "expert_time_estimate_min": 340,
+      "junior_time_estimate_min": 510,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ocaml-x509-policy-admission"
+    },
+    {
+      "id": "prolog-seki-superko-arbiter",
+      "path": "prolog-seki-superko-arbiter",
+      "readme_path": "prolog-seki-superko-arbiter/README.md",
+      "instruction_path": "prolog-seki-superko-arbiter/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Prolog",
+        "bash"
+      ],
+      "tags": [
+        "go",
+        "tournament",
+        "superko",
+        "checkpoint-resume",
+        "prolog"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/prolog-seki-superko-arbiter"
+    },
+    {
+      "id": "quorum-evidence-attest",
+      "path": "quorum-evidence-attest",
+      "readme_path": "quorum-evidence-attest/README.md",
+      "instruction_path": "quorum-evidence-attest/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Erlang",
+        "bash"
+      ],
+      "tags": [
+        "erlang",
+        "quorum-consensus",
+        "incident-response",
+        "forensic-attestation",
+        "leader-election"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/quorum-evidence-attest"
+    },
+    {
+      "id": "racket-dnssec-denial-audit",
+      "path": "racket-dnssec-denial-audit",
+      "readme_path": "racket-dnssec-denial-audit/README.md",
+      "instruction_path": "racket-dnssec-denial-audit/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Racket"
+      ],
+      "tags": [
+        "racket",
+        "dnssec",
+        "denial-of-existence",
+        "nsec3",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/racket-dnssec-denial-audit"
+    },
+    {
+      "id": "racket-go-superko-arbiter",
+      "path": "racket-go-superko-arbiter",
+      "readme_path": "racket-go-superko-arbiter/README.md",
+      "instruction_path": "racket-go-superko-arbiter/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "medium",
+      "languages": [
+        "Racket",
+        "Bash"
+      ],
+      "tags": [
+        "go",
+        "superko",
+        "game-replay",
+        "checkpoint-resume",
+        "racket"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/racket-go-superko-arbiter"
+    },
+    {
+      "id": "racket-go-tournament-arbiter",
+      "path": "racket-go-tournament-arbiter",
+      "readme_path": "racket-go-tournament-arbiter/README.md",
+      "instruction_path": "racket-go-tournament-arbiter/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Racket",
+        "Bash"
+      ],
+      "tags": [
+        "go",
+        "tournament",
+        "sgf",
+        "racket",
+        "scoring"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/racket-go-tournament-arbiter"
+    },
+    {
+      "id": "racket-macro-sandbox",
+      "path": "racket-macro-sandbox",
+      "readme_path": "racket-macro-sandbox/README.md",
+      "instruction_path": "racket-macro-sandbox/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Racket",
+        "bash"
+      ],
+      "tags": [
+        "racket-security",
+        "incident-response",
+        "quarantine",
+        "sandbox-policy",
+        "exfiltration-control"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/racket-macro-sandbox"
+    },
+    {
+      "id": "racket-wasm-guard",
+      "path": "racket-wasm-guard",
+      "readme_path": "racket-wasm-guard/README.md",
+      "instruction_path": "racket-wasm-guard/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "medium",
+      "languages": [
+        "racket",
+        "bash"
+      ],
+      "tags": [
+        "untrusted-code",
+        "sandbox-policy",
+        "capability-allowlist",
+        "control-flow-safety",
+        "racket"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/racket-wasm-guard"
+    },
+    {
+      "id": "ruby-rpm-admission-planner",
+      "path": "ruby-rpm-admission-planner",
+      "readme_path": "ruby-rpm-admission-planner/README.md",
+      "instruction_path": "ruby-rpm-admission-planner/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "Ruby",
+        "bash"
+      ],
+      "tags": [
+        "ruby",
+        "rpm",
+        "dependency-resolution",
+        "modules",
+        "lockfiles"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ruby-rpm-admission-planner"
+    },
+    {
+      "id": "ruby-tpm-measured-boot-auditor",
+      "path": "ruby-tpm-measured-boot-auditor",
+      "readme_path": "ruby-tpm-measured-boot-auditor/README.md",
+      "instruction_path": "ruby-tpm-measured-boot-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Ruby",
+        "bash"
+      ],
+      "tags": [
+        "ruby",
+        "tpm",
+        "uefi",
+        "measured-boot",
+        "attestation",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 360,
+      "junior_time_estimate_min": 840,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/ruby-tpm-measured-boot-auditor"
+    },
+    {
+      "id": "rust-acme-order-gate",
+      "path": "rust-acme-order-gate",
+      "readme_path": "rust-acme-order-gate/README.md",
+      "instruction_path": "rust-acme-order-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Rust",
+        "bash"
+      ],
+      "tags": [
+        "rust",
+        "acme",
+        "certificate-operations",
+        "offline-admission",
+        "outage-records"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-acme-order-gate"
+    },
+    {
+      "id": "rust-astrometric-plate-calibrator",
+      "path": "rust-astrometric-plate-calibrator",
+      "readme_path": "rust-astrometric-plate-calibrator/README.md",
+      "instruction_path": "rust-astrometric-plate-calibrator/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "rust"
+      ],
+      "tags": [
+        "plate-solving",
+        "tangent-plane",
+        "proper-motion",
+        "coordinate-transforms",
+        "numerical-methods"
+      ],
+      "expert_time_estimate_min": 150,
+      "junior_time_estimate_min": 300,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-astrometric-plate-calibrator"
+    },
+    {
+      "id": "rust-decimal-interval-engine",
+      "path": "rust-decimal-interval-engine",
+      "readme_path": "rust-decimal-interval-engine/README.md",
+      "instruction_path": "rust-decimal-interval-engine/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "medium",
+      "languages": [
+        "rust",
+        "bash"
+      ],
+      "tags": [
+        "rust",
+        "fixed-point",
+        "interval-arithmetic",
+        "risk-aggregation",
+        "scientific-computing"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-decimal-interval-engine"
+    },
+    {
+      "id": "rust-limited-angle-tomography-repair_submission1",
+      "path": "rust-limited-angle-tomography-repair_submission1",
+      "readme_path": "rust-limited-angle-tomography-repair_submission1/README.md",
+      "instruction_path": "rust-limited-angle-tomography-repair_submission1/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "medium",
+      "languages": [
+        "rust"
+      ],
+      "tags": [
+        "rust",
+        "scientific-computing",
+        "tomography",
+        "numerical-methods",
+        "debugging"
+      ],
+      "expert_time_estimate_min": 120,
+      "junior_time_estimate_min": 240,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-limited-angle-tomography-repair_submission1"
+    },
+    {
+      "id": "rust-nftables-rollback",
+      "path": "rust-nftables-rollback",
+      "readme_path": "rust-nftables-rollback/README.md",
+      "instruction_path": "rust-nftables-rollback/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Rust",
+        "bash"
+      ],
+      "tags": [
+        "rust",
+        "firewall",
+        "rollback",
+        "change-planning",
+        "nftables"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-nftables-rollback"
+    },
+    {
+      "id": "rust-nvme-zoned-replay-recovery",
+      "path": "rust-nvme-zoned-replay-recovery",
+      "readme_path": "rust-nvme-zoned-replay-recovery/README.md",
+      "instruction_path": "rust-nvme-zoned-replay-recovery/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Rust"
+      ],
+      "tags": [
+        "rust",
+        "nvme-tcp",
+        "zoned-storage",
+        "replay-recovery",
+        "binary-protocol"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-nvme-zoned-replay-recovery"
+    },
+    {
+      "id": "rust-onnx-int8-replay",
+      "path": "rust-onnx-int8-replay",
+      "readme_path": "rust-onnx-int8-replay/README.md",
+      "instruction_path": "rust-onnx-int8-replay/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "machine-learning",
+      "difficulty": "hard",
+      "languages": [
+        "Rust"
+      ],
+      "tags": [
+        "quantized-inference",
+        "int8-neural-network",
+        "ml-certification",
+        "rust",
+        "checkpointed-inference"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-onnx-int8-replay"
+    },
+    {
+      "id": "rust-quantized-transformer-cache",
+      "path": "rust-quantized-transformer-cache",
+      "readme_path": "rust-quantized-transformer-cache/README.md",
+      "instruction_path": "rust-quantized-transformer-cache/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "machine-learning",
+      "difficulty": "hard",
+      "languages": [
+        "Rust",
+        "bash"
+      ],
+      "tags": [
+        "rust",
+        "transformer-inference",
+        "quantization",
+        "kv-cache",
+        "deterministic-ml"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-quantized-transformer-cache"
+    },
+    {
+      "id": "rust-sparse-solver-checkpoint",
+      "path": "rust-sparse-solver-checkpoint",
+      "readme_path": "rust-sparse-solver-checkpoint/README.md",
+      "instruction_path": "rust-sparse-solver-checkpoint/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "scientific-computing",
+      "difficulty": "hard",
+      "languages": [
+        "rust",
+        "bash"
+      ],
+      "tags": [
+        "rust",
+        "sparse-matrix",
+        "linear-solver",
+        "checkpointing",
+        "scientific-computing"
+      ],
+      "expert_time_estimate_min": 320,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-sparse-solver-checkpoint"
+    },
+    {
+      "id": "rust-trace-timeline-viewer",
+      "path": "rust-trace-timeline-viewer",
+      "readme_path": "rust-trace-timeline-viewer/README.md",
+      "instruction_path": "rust-trace-timeline-viewer/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "rust",
+        "typescript",
+        "html",
+        "css"
+      ],
+      "tags": [
+        "rust",
+        "typescript",
+        "browser-ui",
+        "trace-processing",
+        "timeline"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 600,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-trace-timeline-viewer"
+    },
+    {
+      "id": "rust-wal-recovery",
+      "path": "rust-wal-recovery",
+      "readme_path": "rust-wal-recovery/README.md",
+      "instruction_path": "rust-wal-recovery/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Rust",
+        "bash"
+      ],
+      "tags": [
+        "incident-response",
+        "forensics",
+        "integrity",
+        "evidence-attestation",
+        "tamper-evidence"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-wal-recovery"
+    },
+    {
+      "id": "rust-wal-recovery-boundary",
+      "path": "rust-wal-recovery-boundary",
+      "readme_path": "rust-wal-recovery-boundary/README.md",
+      "instruction_path": "rust-wal-recovery-boundary/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "data-processing",
+      "difficulty": "hard",
+      "languages": [
+        "rust",
+        "bash"
+      ],
+      "tags": [
+        "rust",
+        "storage",
+        "crash-recovery",
+        "binary-format",
+        "checksums"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/rust-wal-recovery-boundary"
+    },
+    {
+      "id": "scala-jvm-stackmap-verifier",
+      "path": "scala-jvm-stackmap-verifier",
+      "readme_path": "scala-jvm-stackmap-verifier/README.md",
+      "instruction_path": "scala-jvm-stackmap-verifier/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Scala"
+      ],
+      "tags": [
+        "security",
+        "jvm",
+        "classfile",
+        "stack-map",
+        "bytecode-audit"
+      ],
+      "expert_time_estimate_min": 330,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/scala-jvm-stackmap-verifier"
+    },
+    {
+      "id": "scala-sbt-eviction-planner",
+      "path": "scala-sbt-eviction-planner",
+      "readme_path": "scala-sbt-eviction-planner/README.md",
+      "instruction_path": "scala-sbt-eviction-planner/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "Scala",
+        "bash"
+      ],
+      "tags": [
+        "scala",
+        "sbt",
+        "ivy",
+        "dependency-resolution",
+        "lockfiles",
+        "offline"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/scala-sbt-eviction-planner"
+    },
+    {
+      "id": "swift-webauthn-attestation-gate",
+      "path": "swift-webauthn-attestation-gate",
+      "readme_path": "swift-webauthn-attestation-gate/README.md",
+      "instruction_path": "swift-webauthn-attestation-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Swift",
+        "bash"
+      ],
+      "tags": [
+        "swift",
+        "webauthn",
+        "packed-attestation",
+        "x509",
+        "offline-admission",
+        "replay-detection"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/swift-webauthn-attestation-gate"
+    },
+    {
+      "id": "typescript-arena-replay",
+      "path": "typescript-arena-replay",
+      "readme_path": "typescript-arena-replay/README.md",
+      "instruction_path": "typescript-arena-replay/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "TypeScript",
+        "bash"
+      ],
+      "tags": [
+        "typescript",
+        "arena-replay",
+        "checkpoint-resume",
+        "fog-of-war",
+        "determinism"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/typescript-arena-replay"
+    },
+    {
+      "id": "zig-ansi-dungeon-renderer",
+      "path": "zig-ansi-dungeon-renderer",
+      "readme_path": "zig-ansi-dungeon-renderer/README.md",
+      "instruction_path": "zig-ansi-dungeon-renderer/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "zig",
+        "bash"
+      ],
+      "tags": [
+        "terminal-game",
+        "ansi-terminal",
+        "roguelike",
+        "viewport-rendering",
+        "checkpoint-replay"
+      ],
+      "expert_time_estimate_min": 340,
+      "junior_time_estimate_min": 900,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-ansi-dungeon-renderer"
+    },
+    {
+      "id": "zig-build-manifests",
+      "path": "zig-build-manifests",
+      "readme_path": "zig-build-manifests/README.md",
+      "instruction_path": "zig-build-manifests/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "zig",
+        "cmake",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "cmake",
+        "cross-compilation",
+        "release-manifest",
+        "generated-metadata",
+        "link-order"
+      ],
+      "expert_time_estimate_min": 90,
+      "junior_time_estimate_min": 180,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-build-manifests"
+    },
+    {
+      "id": "zig-ebpf-admission-gate",
+      "path": "zig-ebpf-admission-gate",
+      "readme_path": "zig-ebpf-admission-gate/README.md",
+      "instruction_path": "zig-ebpf-admission-gate/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Zig",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "ebpf",
+        "abstract-interpretation",
+        "admission-control",
+        "sandbox-policy"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-ebpf-admission-gate"
+    },
+    {
+      "id": "zig-ebpf-safety-verifier",
+      "path": "zig-ebpf-safety-verifier",
+      "readme_path": "zig-ebpf-safety-verifier/README.md",
+      "instruction_path": "zig-ebpf-safety-verifier/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Zig",
+        "bash"
+      ],
+      "tags": [
+        "kernel-security",
+        "memory-safety",
+        "zig",
+        "untrusted-code",
+        "packet-bounds",
+        "sandbox"
+      ],
+      "expert_time_estimate_min": 180,
+      "junior_time_estimate_min": 360,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-ebpf-safety-verifier"
+    },
+    {
+      "id": "zig-hermetic-codegen-build",
+      "path": "zig-hermetic-codegen-build",
+      "readme_path": "zig-hermetic-codegen-build/README.md",
+      "instruction_path": "zig-hermetic-codegen-build/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "build-and-dependency-management",
+      "difficulty": "hard",
+      "languages": [
+        "zig",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "cross-compilation",
+        "code-generation",
+        "build-graph",
+        "reproducible-builds",
+        "offline"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 720,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-hermetic-codegen-build"
+    },
+    {
+      "id": "zig-lightmap-minimap-renderer",
+      "path": "zig-lightmap-minimap-renderer",
+      "readme_path": "zig-lightmap-minimap-renderer/README.md",
+      "instruction_path": "zig-lightmap-minimap-renderer/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "hard",
+      "languages": [
+        "Zig",
+        "bash"
+      ],
+      "tags": [
+        "dungeon-map",
+        "torchlight",
+        "minimap",
+        "saved-game",
+        "tactical-game"
+      ],
+      "expert_time_estimate_min": 300,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-lightmap-minimap-renderer"
+    },
+    {
+      "id": "zig-minisign-witness",
+      "path": "zig-minisign-witness",
+      "readme_path": "zig-minisign-witness/README.md",
+      "instruction_path": "zig-minisign-witness/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "Zig",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "minisign",
+        "transparency-log",
+        "offline-admission",
+        "security-audit"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-minisign-witness"
+    },
+    {
+      "id": "zig-onnx-quant-inference",
+      "path": "zig-onnx-quant-inference",
+      "readme_path": "zig-onnx-quant-inference/README.md",
+      "instruction_path": "zig-onnx-quant-inference/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "machine-learning",
+      "difficulty": "hard",
+      "languages": [
+        "Zig",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "onnx",
+        "quantized-inference",
+        "convolution",
+        "deterministic-ml"
+      ],
+      "expert_time_estimate_min": 240,
+      "junior_time_estimate_min": 480,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-onnx-quant-inference"
+    },
+    {
+      "id": "zig-retrograde-tablebase",
+      "path": "zig-retrograde-tablebase",
+      "readme_path": "zig-retrograde-tablebase/README.md",
+      "instruction_path": "zig-retrograde-tablebase/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "games",
+      "difficulty": "medium",
+      "languages": [
+        "zig",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "retrograde-analysis",
+        "tablebase",
+        "hex-board",
+        "game-certificates"
+      ],
+      "expert_time_estimate_min": 340,
+      "junior_time_estimate_min": 900,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-retrograde-tablebase"
+    },
+    {
+      "id": "zig-riscv-elf-relocation-auditor",
+      "path": "zig-riscv-elf-relocation-auditor",
+      "readme_path": "zig-riscv-elf-relocation-auditor/README.md",
+      "instruction_path": "zig-riscv-elf-relocation-auditor/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "security",
+      "difficulty": "hard",
+      "languages": [
+        "zig",
+        "bash"
+      ],
+      "tags": [
+        "security",
+        "zig",
+        "riscv",
+        "elf",
+        "relocation-integrity",
+        "firmware"
+      ],
+      "expert_time_estimate_min": 260,
+      "junior_time_estimate_min": 660,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-riscv-elf-relocation-auditor"
+    },
+    {
+      "id": "zig-unit-restart-planner",
+      "path": "zig-unit-restart-planner",
+      "readme_path": "zig-unit-restart-planner/README.md",
+      "instruction_path": "zig-unit-restart-planner/instruction.md",
+      "declared_task_version": "2.0",
+      "benchmark_release": null,
+      "author_name": "Dusker AI expert bench",
+      "author_email": "tasks@dusker.ai",
+      "category": "system-administration",
+      "difficulty": "hard",
+      "languages": [
+        "Zig",
+        "bash"
+      ],
+      "tags": [
+        "zig",
+        "systemd",
+        "restart-planning",
+        "drop-ins",
+        "offline"
+      ],
+      "expert_time_estimate_min": 60,
+      "junior_time_estimate_min": 120,
+      "evaluation_results": null,
+      "listing_path": "terminal-bench-v2/zig-unit-restart-planner"
+    }
+  ]
+}

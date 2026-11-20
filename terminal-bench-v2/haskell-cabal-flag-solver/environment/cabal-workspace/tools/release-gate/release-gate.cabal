@@ -1,0 +1,17 @@
+cabal-version: 2.4
+name: release-gate
+version: 1.0.0
+build-type: Simple
+
+executable release-gate
+  main-is: Gate.hs
+  hs-source-dirs: app
+  build-depends:
+      base >=4.14 && <5,
+      acme-attestation >=0.5 && <1,
+      acme-attestation:receipt,
+      acme-codec ^>=1.4,
+      acme-manifest >=5.3 && <6,
+      acme-manifest:wire,
+      acme-policy >=4.1 && <5
+  default-language: Haskell2010

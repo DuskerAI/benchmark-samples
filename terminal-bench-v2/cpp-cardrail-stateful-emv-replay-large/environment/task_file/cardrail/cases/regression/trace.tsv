@@ -1,0 +1,4 @@
+record|batch|session|card|terminal|atc|kind|pan_token|amount|currency|cid|host|sw|tlv|script_id|seq
+Q001|B11|S-X|CARD-99|TERM-9|0200|TXN|tok-x|1000|USD|offline_approved|approved|9000|700ADF1002CAFE5F2A020840||1
+Q002|B11|S-X|CARD-99|TERM-9|0200|SCRIPT|tok-x|1000|USD|||6300|710ADF1102BABE8602CAFE|SCR-X|2
+Q003|B11|S-Y|CARD-99|TERM-8|0201|TXN|tok-x|3000|USD|offline_approved|declined|9000|700ADF1202ABCD9F270180||1

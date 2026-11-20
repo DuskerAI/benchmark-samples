@@ -1,0 +1,9 @@
+capture_dir	exporter_id	description
+alpha	exp-alpha	Alpha border collector
+beta	exp-beta	Beta aggregation collector
+redefine	exp-red	Template redefine regression
+enterprise	exp-ent	Enterprise field regression
+visible/alpha	exp-alpha	Alpha nested path
+visible/beta	exp-beta	Beta nested path
+regression/redefine	exp-red	Regression nested path
+regression/enterprise	exp-ent	Enterprise nested path

@@ -1,0 +1,5 @@
+OBJECT o1
+SECTION .text - 8 -
+SECTION .inl grp.inl 16 -
+SYMBOL first STRONG DEF .text 0
+SYMBOL inl_fn WEAK DEF .inl 4

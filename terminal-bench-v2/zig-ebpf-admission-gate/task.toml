@@ -1,0 +1,27 @@
+version = "2.0"
+
+[metadata]
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "hard"
+category = "security"
+subcategories = []
+number_of_milestones = 0
+codebase_size = "minimal"
+languages = ["Zig", "bash"]
+tags = ["zig", "ebpf", "abstract-interpretation", "admission-control", "sandbox-policy"]
+expert_time_estimate_min = 240
+junior_time_estimate_min = 480
+
+[verifier]
+timeout_sec = 450.0
+
+[agent]
+timeout_sec = 1200.0
+
+[environment]
+allow_internet = false
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240

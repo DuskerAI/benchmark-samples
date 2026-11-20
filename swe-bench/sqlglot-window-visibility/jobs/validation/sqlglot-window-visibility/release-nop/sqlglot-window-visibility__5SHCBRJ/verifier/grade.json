@@ -1,0 +1,198 @@
+{
+  "reward": 0,
+  "category": "acceptance_failure",
+  "exact_inventory": true,
+  "fail_to_pass": {
+    "passed": 0,
+    "total": 104
+  },
+  "pass_to_pass": {
+    "passed": 22,
+    "total": 22
+  },
+  "nonpassing": [
+    "test_window_semantics.TestWindows.test_all_null_empty_distinction",
+    "test_window_semantics.TestWindows.test_collision_names",
+    "test_window_semantics.TestWindows.test_cte_reused",
+    "test_window_semantics.TestWindows.test_derived_two_window_stages",
+    "test_window_semantics.TestWindows.test_duplicate_physical_rows",
+    "test_window_semantics.TestWindows.test_empty_filtered_window",
+    "test_window_semantics.TestWindows.test_empty_registered_table",
+    "test_window_semantics.TestWindows.test_exclude_all_without_order",
+    "test_window_semantics.TestWindows.test_exclude_groups_current_row",
+    "test_window_semantics.TestWindows.test_exclude_groups_group",
+    "test_window_semantics.TestWindows.test_exclude_groups_no_others",
+    "test_window_semantics.TestWindows.test_exclude_groups_ties",
+    "test_window_semantics.TestWindows.test_exclude_range_current_row",
+    "test_window_semantics.TestWindows.test_exclude_range_group",
+    "test_window_semantics.TestWindows.test_exclude_range_no_others",
+    "test_window_semantics.TestWindows.test_exclude_range_ties",
+    "test_window_semantics.TestWindows.test_exclude_rows_current_row",
+    "test_window_semantics.TestWindows.test_exclude_rows_group",
+    "test_window_semantics.TestWindows.test_exclude_rows_no_others",
+    "test_window_semantics.TestWindows.test_exclude_rows_ties",
+    "test_window_semantics.TestWindows.test_exclude_ties_current_outside_frame",
+    "test_window_semantics.TestWindows.test_filter_avg",
+    "test_window_semantics.TestWindows.test_filter_count",
+    "test_window_semantics.TestWindows.test_filter_count_star",
+    "test_window_semantics.TestWindows.test_filter_max",
+    "test_window_semantics.TestWindows.test_filter_min",
+    "test_window_semantics.TestWindows.test_filter_sum",
+    "test_window_semantics.TestWindows.test_group_expression",
+    "test_window_semantics.TestWindows.test_grouped_empty_having",
+    "test_window_semantics.TestWindows.test_grouped_filter_operand",
+    "test_window_semantics.TestWindows.test_grouped_global_empty",
+    "test_window_semantics.TestWindows.test_grouped_native_plan_reuse",
+    "test_window_semantics.TestWindows.test_grouped_nested_sum",
+    "test_window_semantics.TestWindows.test_grouped_rank",
+    "test_window_semantics.TestWindows.test_groups_adjacent",
+    "test_window_semantics.TestWindows.test_groups_composite_peers",
+    "test_window_semantics.TestWindows.test_groups_future",
+    "test_window_semantics.TestWindows.test_groups_no_order",
+    "test_window_semantics.TestWindows.test_groups_past",
+    "test_window_semantics.TestWindows.test_groups_tail",
+    "test_window_semantics.TestWindows.test_hidden_window_order_key",
+    "test_window_semantics.TestWindows.test_incompatible_orders",
+    "test_window_semantics.TestWindows.test_metamorphic_1337",
+    "test_window_semantics.TestWindows.test_metamorphic_2243",
+    "test_window_semantics.TestWindows.test_metamorphic_401",
+    "test_window_semantics.TestWindows.test_metamorphic_827",
+    "test_window_semantics.TestWindows.test_named_inheritance",
+    "test_window_semantics.TestWindows.test_named_inline_frame",
+    "test_window_semantics.TestWindows.test_native_env_aggregate",
+    "test_window_semantics.TestWindows.test_native_env_operand",
+    "test_window_semantics.TestWindows.test_native_plan_reuse",
+    "test_window_semantics.TestWindows.test_navigation_default_expression",
+    "test_window_semantics.TestWindows.test_navigation_lag",
+    "test_window_semantics.TestWindows.test_navigation_lead",
+    "test_window_semantics.TestWindows.test_navigation_long",
+    "test_window_semantics.TestWindows.test_navigation_zero",
+    "test_window_semantics.TestWindows.test_qualify_alias",
+    "test_window_semantics.TestWindows.test_qualify_grouped",
+    "test_window_semantics.TestWindows.test_qualify_unprojected",
+    "test_window_semantics.TestWindows.test_range_ascending",
+    "test_window_semantics.TestWindows.test_range_descending",
+    "test_window_semantics.TestWindows.test_range_fractional",
+    "test_window_semantics.TestWindows.test_range_future_only",
+    "test_window_semantics.TestWindows.test_range_left_unbounded",
+    "test_window_semantics.TestWindows.test_range_past_only",
+    "test_window_semantics.TestWindows.test_range_right_unbounded",
+    "test_window_semantics.TestWindows.test_range_text_current",
+    "test_window_semantics.TestWindows.test_range_text_offset",
+    "test_window_semantics.TestWindows.test_range_zero_peers",
+    "test_window_semantics.TestWindows.test_rank_cume_dist",
+    "test_window_semantics.TestWindows.test_rank_dense_rank",
+    "test_window_semantics.TestWindows.test_rank_no_order",
+    "test_window_semantics.TestWindows.test_rank_ntile",
+    "test_window_semantics.TestWindows.test_rank_ntile20",
+    "test_window_semantics.TestWindows.test_rank_percent_rank",
+    "test_window_semantics.TestWindows.test_rank_rank",
+    "test_window_semantics.TestWindows.test_rank_row_number",
+    "test_window_semantics.TestWindows.test_repeated_same_expression",
+    "test_window_semantics.TestWindows.test_rows_empty_count",
+    "test_window_semantics.TestWindows.test_rows_future_only",
+    "test_window_semantics.TestWindows.test_rows_oversized",
+    "test_window_semantics.TestWindows.test_rows_own",
+    "test_window_semantics.TestWindows.test_rows_past_only",
+    "test_window_semantics.TestWindows.test_rows_sliding",
+    "test_window_semantics.TestWindows.test_rows_tail",
+    "test_window_semantics.TestWindows.test_rows_zero",
+    "test_window_semantics.TestWindows.test_scalar_operand",
+    "test_window_semantics.TestWindows.test_singleton",
+    "test_window_semantics.TestWindows.test_star_count_partition",
+    "test_window_semantics.TestWindows.test_static_relation",
+    "test_window_semantics.TestWindows.test_sum_default_desc",
+    "test_window_semantics.TestWindows.test_sum_default_peer",
+    "test_window_semantics.TestWindows.test_sum_global",
+    "test_window_semantics.TestWindows.test_sum_partition",
+    "test_window_semantics.TestWindows.test_value_default_peer",
+    "test_window_semantics.TestWindows.test_value_empty",
+    "test_window_semantics.TestWindows.test_value_first",
+    "test_window_semantics.TestWindows.test_value_last",
+    "test_window_semantics.TestWindows.test_value_missing",
+    "test_window_semantics.TestWindows.test_value_nth",
+    "test_window_semantics.TestWindows.test_window_cte_then_navigation",
+    "test_window_semantics.TestWindows.test_window_join_input",
+    "test_window_semantics.TestWindows.test_window_scalar_composition",
+    "test_window_semantics.TestWindows.test_window_subquery_consumed"
+  ],
+  "suite_exit_code": 1,
+  "requirement_groups": {
+    "W01": {
+      "passed": 0,
+      "total": 6
+    },
+    "W02": {
+      "passed": 0,
+      "total": 4
+    },
+    "W03": {
+      "passed": 0,
+      "total": 8
+    },
+    "W04": {
+      "passed": 0,
+      "total": 6
+    },
+    "W05": {
+      "passed": 0,
+      "total": 10
+    },
+    "W06": {
+      "passed": 0,
+      "total": 14
+    },
+    "W07": {
+      "passed": 0,
+      "total": 8
+    },
+    "W08": {
+      "passed": 0,
+      "total": 8
+    },
+    "W09": {
+      "passed": 0,
+      "total": 5
+    },
+    "W10": {
+      "passed": 0,
+      "total": 6
+    },
+    "W11": {
+      "passed": 0,
+      "total": 2
+    },
+    "W12": {
+      "passed": 0,
+      "total": 6
+    },
+    "W13": {
+      "passed": 1,
+      "total": 4
+    },
+    "W14": {
+      "passed": 0,
+      "total": 5
+    },
+    "W15": {
+      "passed": 0,
+      "total": 4
+    },
+    "W16": {
+      "passed": 0,
+      "total": 5
+    },
+    "W17": {
+      "passed": 9,
+      "total": 9
+    },
+    "W18": {
+      "passed": 0,
+      "total": 4
+    },
+    "P01": {
+      "passed": 12,
+      "total": 12
+    }
+  }
+}

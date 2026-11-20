@@ -1,0 +1,14 @@
+tests/
+solution/
+.git
+__pycache__/
+*.pyc
+node_modules/
+.env
+*.o
+*.tmp
+stiffbox/bin/stiffbox
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+**/.pytest_cache/

@@ -1,0 +1,58 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$self",
+            [
+              "ref",
+              1
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "155"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": true,
+  "observed": 155,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "9"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 2,
+    "on": true,
+    "roots": 1,
+    "sides": 2
+  }
+}

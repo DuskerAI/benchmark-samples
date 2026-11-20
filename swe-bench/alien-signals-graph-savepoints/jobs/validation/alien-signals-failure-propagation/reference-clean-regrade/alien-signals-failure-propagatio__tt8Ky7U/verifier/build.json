@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "-I",
+    "/tests/launch_candidate.py",
+    "/usr/local/bin/node",
+    "-e",
+    "\nconst ts=require('/app/node_modules/typescript');\nconst parsed=ts.getParsedCommandLineOfConfigFile('/app/tsconfig.json',{}, {...ts.sys,onUnRecoverableConfigFileDiagnostic:d=>{throw Error(ts.flattenDiagnosticMessageText(d.messageText,'\\\\n'));}});\nif(!parsed)throw Error('Invalid trusted TypeScript configuration');\nfor(const module of [ts.ModuleKind.CommonJS,ts.ModuleKind.ESNext]) {\n const options={...parsed.options,ignoreDeprecations:'6.0',noEmit:true,\n  module,moduleResolution:module===ts.ModuleKind.CommonJS?ts.ModuleResolutionKind.Node10:ts.ModuleResolutionKind.Bundler};\n const program=ts.createProgram(parsed.fileNames,options);\n const diagnostics=ts.getPreEmitDiagnostics(program);\n if(diagnostics.length){process.stderr.write(ts.formatDiagnosticsWithColorAndContext(diagnostics,{getCurrentDirectory:()=>'/app',getCanonicalFileName:f=>f,getNewLine:()=> '\\\\n'}));process.exit(1);}\n}\n// Execute the pristine publisher, never a candidate-supplied build script.\n// Relative distribution paths resolve into a fresh writable build directory.\nprocess.chdir('/tmp/propagation-build');\nrequire('/app/build.js');\n"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,111 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$next",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "168"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$next",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "169"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$next",
+            [
+              "ref",
+              4
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "170"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$next",
+            [
+              "ref",
+              1
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "171"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": true,
+  "observed": 168,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 2
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "184"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "183"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              4
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              4
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "182"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              5
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              5
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "181"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              6
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              6
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "180"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              7
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              7
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "179"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              8
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              8
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "178"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              9
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              9
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "177"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$value",
+            [
+              "number",
+              "176"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": true,
+  "observed": 184,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 2
+  }
+}

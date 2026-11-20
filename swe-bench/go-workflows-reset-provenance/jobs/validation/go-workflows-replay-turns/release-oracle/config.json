@@ -1,0 +1,10 @@
+{
+    "job_name": "release-oracle",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+        }
+    ]
+}

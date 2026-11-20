@@ -1,0 +1,62 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "253"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$owner",
+            [
+              "ref",
+              1
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "459"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "ok": false,
+  "stats": {
+    "aborts": [],
+    "exits": 1,
+    "on": true,
+    "roots": 2,
+    "sides": 0
+  }
+}

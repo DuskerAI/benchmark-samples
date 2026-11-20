@@ -1,0 +1,5 @@
+Name: gpu-abi
+Version: 2.0.0
+Target: armv7-linux-gnueabihf
+Cflags: -I/usr/include/gpu
+Libs: -L/usr/lib/gpu -lgpuabi

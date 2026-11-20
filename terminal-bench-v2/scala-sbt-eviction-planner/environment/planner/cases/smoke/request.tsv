@@ -1,0 +1,2 @@
+org	name	scala_binary	version	scope	classifier	platform
+com.acme	root	2.13	1.0.0	compile		

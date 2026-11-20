@@ -1,0 +1,6 @@
+tests/
+solution/
+__pycache__/
+*.pyc
+*.log
+tmp/

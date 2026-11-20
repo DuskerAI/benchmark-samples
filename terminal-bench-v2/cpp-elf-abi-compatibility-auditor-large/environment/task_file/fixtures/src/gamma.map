@@ -1,0 +1,1 @@
+GAMMA_1.0 { global: gamma_open; gamma_close; local: *; };

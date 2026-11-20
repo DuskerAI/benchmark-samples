@@ -1,0 +1,5 @@
+The C++ tool in `/app/task_file` is supposed to summarize `PT_NOTE` records from small ELF64 little-endian core-like files, but the current implementation is unreliable on real note streams.
+
+Bring it into compliance with `/app/task_file/README.md`. Keep `cd /app/task_file && make test` passing, then build `note_summary` with `make`. The verifier will run `/app/task_file/build/note_summary <input-elf> <output-json>` on generated ELF fixtures, so do not hardcode file names, fixture contents, or output bytes. The binary must read the input path from `argv[1]`, write exactly the JSON output path from `argv[2]`, and not write anywhere else.
+
+The README is the contract for accepted ELF layout, note parsing, descriptor decoding, malformed-data handling, and the output schema. Preserve the documented JSON key names: `input`, `note_count`, `gnu_build_ids`, `threads`, `signals`, `processes`, `auxv`, `mapped_files`, and `unknown_notes`. Some documented note classes and ELF header forms may not be implemented by the current code. Do not require network access.

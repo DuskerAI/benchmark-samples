@@ -1,0 +1,5 @@
+Release engineering runs the offline planner in `/app/sysroot-plan` before cross builds leave the staging network. Its build entry point is `/app/sysroot-plan/scripts/build.sh`, and the deliverable is `/app/sysroot-plan/bin/sysplan`, a Guile executable that reads local sysroot metadata and emits a deterministic dependency and link plan. Network access is not part of the workflow.
+
+The command `/app/sysroot-plan/bin/sysplan --sysroot SYSROOT --target TARGET --request REQUEST --out OUTDIR` must replace `OUTDIR` with the three accepted artifacts for the requested plan. `/app/sysroot-plan/spec.md` is the public contract for request files, package metadata, dependency closure, host-tool separation, versioned provides and conflicts, sysroot path rewriting, ordering, output files, and error reporting. The shipped cases under `/app/sysroot-plan/cases` are examples, not the limit of the contract.
+
+Treat the implementation in the tree as a release candidate, not the authority. The accepted result is correct behavior for any corpus that follows `/app/sysroot-plan/spec.md`, while preserving input metadata and request files.

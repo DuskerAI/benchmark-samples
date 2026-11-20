@@ -1,0 +1,14 @@
+{
+  "/app/tests/actor_model.py": "18a0a1f7c1a71a2591514dcc6da4dcc49692ae9f86c639871b2fac6bbe72fc1f",
+  "/app/tests/legacy_checkpoints.json": "faf792e95a83e8eaf076f43245204b0d5e19d979c01ac5abe4f22deaa2b37fea",
+  "/app/tests/test_replay_turns.py": "981539b8932609cd50dfe2da48ab9026fd812dcd8acf93b5c7d7ff01bf203150",
+  "/tests/Dockerfile": "e5b3e783c20d1ef3adc21e2b549bad754ef85a06d27b6e22a983658f85fb83f2",
+  "/tests/base.bundle": "2d07d1bed71d7342d0809653187f22da8b9acf6a4efc176b0836ec43a8d34893",
+  "/tests/config.json": "17773992143a9f15e39a790411f8e5a38b3fb1881831c0d09a149429d59e056f",
+  "/tests/driver.go": "8f50527c5cce357130c8bc231a49e0b180299f456f8f5edb92fb7472bb1c8a56",
+  "/tests/launch_candidate.py": "6edd12119a678e521dbcfc46605e642d0c558a2e4bb48e1b49e26c8b71db21c8",
+  "/tests/parser.py": "f7bd9eec33d12f5da069344f50590b46dc48e7cb56e468a2512806a2329b3f5d",
+  "/tests/run_script.sh": "c4590b0ba00dec7b5dd93d10d24040858af17f8dc3148a6bf6a235c0c0816034",
+  "/tests/test.sh": "e24c5b259ca76f005ecae22040926d43e82eabfbc650147369f2b237495fd263",
+  "/tests/test_patch.patch": "15037804da10c8a1aaed6ec16572bfa2a6614c269cc8ba02c8c5977c8e2d6e4c"
+}

@@ -1,0 +1,12 @@
+ARCHIVE plugins
+MEMBER pfmt
+SECTION .rodata - 8 -
+SYMBOL fmt STRONG DEF .rodata 0
+MEMBER psvc
+SECTION .text - 12 -
+SYMBOL svc STRONG DEF .text 0
+SYMBOL fmt STRONG UNDEF
+RELOC .text 0 fmt REL32 -4
+MEMBER pextra
+SECTION .text - 8 -
+SYMBOL extra_unused STRONG DEF .text 0

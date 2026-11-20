@@ -1,0 +1,18 @@
+{
+    "job_name": "trial-2-regrade",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+        }
+    ],
+    "source_jobs": [
+        {
+            "action": "regrade",
+            "type": "local",
+            "job_id": "fc27b200-fd51-4435-8472-9936cbba1c93",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-2"
+        }
+    ]
+}

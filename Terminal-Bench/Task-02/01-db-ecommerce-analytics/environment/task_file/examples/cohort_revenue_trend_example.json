@@ -1,0 +1,26 @@
+[
+  {
+    "cohort_month": "2022-01",
+    "activity_month": "2022-01",
+    "months_since_acquisition": 0,
+    "active_customers": 43,
+    "gross_revenue": 8420.5,
+    "net_revenue": 8210.3
+  },
+  {
+    "cohort_month": "2022-01",
+    "activity_month": "2022-02",
+    "months_since_acquisition": 1,
+    "active_customers": 18,
+    "gross_revenue": 3150.8,
+    "net_revenue": 3090.4
+  },
+  {
+    "cohort_month": "2022-02",
+    "activity_month": "2022-02",
+    "months_since_acquisition": 0,
+    "active_customers": 38,
+    "gross_revenue": 7840.2,
+    "net_revenue": 7640.0
+  }
+]

@@ -1,0 +1,88 @@
+{
+    "schema_version": 3,
+    "created_at": "2026-10-15T20:49:08.792938Z",
+    "harbor": {
+        "version": "0.22.0",
+        "is_editable": false
+    },
+    "n_concurrent_trials": 1,
+    "retry": {
+        "max_retries": 0,
+        "exclude_exceptions": [
+            "RewardFileEmptyError",
+            "AgentTimeoutError",
+            "AgentSafetyRefusalError",
+            "AgentAuthenticationError",
+            "ApiUsageLimitError",
+            "VerifierTimeoutError",
+            "ModelNotFoundError",
+            "RewardFileNotFoundError",
+            "VerifierOutputParseError"
+        ],
+        "wait_multiplier": 1.0,
+        "min_wait_sec": 1.0,
+        "max_wait_sec": 60.0
+    },
+    "trials": [
+        {
+            "schema_version": 2,
+            "task": {
+                "name": "alien-signals-graph-savepoints",
+                "version": "1.0.0",
+                "type": "local",
+                "digest": "sha256:f23c7cde0f1c824d331c1baccc7e1b5b7ed4149edfcb80c86707d6b3db949cab",
+                "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+            },
+            "install_only": false,
+            "timeout_multiplier": 1.0,
+            "agent": {
+                "name": "claude-code",
+                "model_name": "anthropic/claude-sonnet-5-5",
+                "skills": [],
+                "resume_trajectory": false,
+                "extra_allowed_hosts": [
+                    "api.anthropic.com"
+                ],
+                "kwargs": {
+                    "version": "2.1.295",
+                    "reasoning_effort": "high",
+                    "max_turns": 100,
+                    "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+                },
+                "env": {
+                    "DISABLE_AUTOUPDATER": "1"
+                },
+                "mcp_servers": []
+            },
+            "bridge_inputs": {},
+            "skills": [],
+            "environment": {
+                "type": "docker",
+                "force_build": false,
+                "delete": true,
+                "cpu_enforcement_policy": "auto",
+                "memory_enforcement_policy": "auto",
+                "extra_docker_compose": [],
+                "kwargs": {},
+                "extra_allowed_hosts": []
+            },
+            "verifier": {
+                "disable": false,
+                "environment_mode": "separate"
+            },
+            "source_trial": {
+                "action": "regrade",
+                "type": "local",
+                "trial_id": "38dbce53-ad54-45cd-b94a-257b92811970",
+                "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/trial-runs/alien-signals-graph-savepoints/20261015T201356Z-e8dd80/jobs/trial-3/alien-signals-graph-savepoints__Lk6rfQ8",
+                "task": {
+                    "name": "alien-signals-graph-savepoints",
+                    "version": "1.0.0",
+                    "type": "local",
+                    "digest": "sha256:f23c7cde0f1c824d331c1baccc7e1b5b7ed4149edfcb80c86707d6b3db949cab",
+                    "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+                }
+            }
+        }
+    ]
+}

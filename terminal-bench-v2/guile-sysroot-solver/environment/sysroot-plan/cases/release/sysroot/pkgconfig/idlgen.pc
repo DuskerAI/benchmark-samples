@@ -1,0 +1,5 @@
+Name: idlgen
+Version: 2.2.0
+Target: host
+Cflags: -I/usr/include/idlgen
+Libs: -lidlgen

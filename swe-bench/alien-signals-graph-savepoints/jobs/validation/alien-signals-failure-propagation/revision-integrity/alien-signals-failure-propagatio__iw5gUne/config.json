@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-failure-propagation"
+    },
+    "trial_name": "alien-signals-failure-propagatio__iw5gUne",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs/revision-integrity",
+    "agent": {
+        "name": "reactive_probe:IntegrityProbe"
+    },
+    "job_id": "5c17006f-527a-4cd0-bd8b-7197823c3540"
+}

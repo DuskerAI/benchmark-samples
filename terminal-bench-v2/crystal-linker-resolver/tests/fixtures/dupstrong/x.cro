@@ -1,0 +1,4 @@
+OBJECT x
+SECTION .text - 8 -
+SYMBOL dup STRONG DEF .text 0
+SYMBOL xref STRONG DEF .text 4

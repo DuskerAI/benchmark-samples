@@ -1,0 +1,37 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$self",
+            [
+              "ref",
+              1
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "321"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": false,
+  "observed": 321,
+  "stats": {
+    "aborts": [],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 0
+  }
+}

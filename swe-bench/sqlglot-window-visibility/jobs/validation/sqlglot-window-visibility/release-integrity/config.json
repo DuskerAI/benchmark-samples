@@ -1,0 +1,15 @@
+{
+    "job_name": "release-integrity",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs",
+    "n_concurrent_trials": 1,
+    "agents": [
+        {
+            "name": "window_probe:IntegrityProbe"
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+        }
+    ]
+}

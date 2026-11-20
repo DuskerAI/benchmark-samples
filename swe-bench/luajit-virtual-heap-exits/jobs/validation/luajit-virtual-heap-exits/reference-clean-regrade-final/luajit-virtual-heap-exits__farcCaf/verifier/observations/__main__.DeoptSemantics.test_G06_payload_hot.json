@@ -1,0 +1,101 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "339"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$flag",
+            [
+              "boolean",
+              false
+            ]
+          ],
+          [
+            "$fraction",
+            [
+              "number",
+              "42.375"
+            ]
+          ],
+          [
+            "$text",
+            [
+              "string",
+              "snapshot payload"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "631"
+            ]
+          ],
+          [
+            "$zero",
+            [
+              "number",
+              "-0"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": true,
+  "observed": 339,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 2
+  }
+}

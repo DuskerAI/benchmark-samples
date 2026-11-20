@@ -1,0 +1,14 @@
+pub const version = "@RELKIT_VERSION@";
+pub const target = "@RELKIT_TARGET@";
+pub const profile = "@RELKIT_PROFILE@";
+pub const target_name = "@RELKIT_TARGET_NAME@";
+pub const abi: u32 = @RELKIT_ABI_HEX@;
+pub const packet_limit: u32 = @RELKIT_PACKET_LIMIT@;
+pub const endianness = "@RELKIT_ENDIANNESS@";
+pub const feature_mask: u32 = @RELKIT_FEATURE_MASK@;
+pub const codec_salt: u32 = @RELKIT_CODEC_SALT@;
+pub const channel = "@RELKIT_CHANNEL@";
+pub const tier = "@RELKIT_TIER@";
+pub const audit_salt: u32 = @RELKIT_AUDIT_SALT@;
+pub const dependency_hash: u64 = @RELKIT_DEPENDENCY_HASH@;
+pub const policy_fingerprint: u64 = 0x0000000000000000;

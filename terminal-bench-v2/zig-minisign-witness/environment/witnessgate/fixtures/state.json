@@ -1,0 +1,16 @@
+{
+  "logs": {
+    "main": {
+      "tree_size": 2,
+      "root_hash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "seen_releases": [
+    {
+      "project": "libwidget",
+      "version": "2.4.0",
+      "sequence": 41,
+      "artifact_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    }
+  ]
+}

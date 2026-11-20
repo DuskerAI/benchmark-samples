@@ -1,0 +1,1 @@
+STUB_1.0 { global: stub_001; local: *; };

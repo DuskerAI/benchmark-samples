@@ -1,0 +1,12 @@
+task_id,task_name,attempts,passes,solve_rate,solved_pass_at_4
+01,db-ecommerce-analytics,4,2,0.50,yes
+02,job-shop-scheduling,4,2,0.50,yes
+03,sbom-vulnerability-analyzer,4,3,0.75,yes
+04,ffmpeg-video-pipeline,4,1,0.25,yes
+05,lang-go-merkle-tree,4,1,0.25,yes
+06,numeric-dashboard-fullstack-repair,4,3,0.75,yes
+07,corpus-ranking-repair,4,3,0.75,yes
+08,tiered-cache-optimizer,4,4,1.00,yes
+09,event-sourcing-compactor,4,4,1.00,yes
+10,debug-terraform-aws-infra,4,1,0.25,yes
+TOTAL,,40,24,0.60,10/10

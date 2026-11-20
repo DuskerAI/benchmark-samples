@@ -1,0 +1,15 @@
+**/.git
+**/bin
+**/*.test
+**/tmp
+.git
+.env
+node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
+**/*.pyc
+.pytest_cache/
+**/.pytest_cache/
+solution/
+tests/

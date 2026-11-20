@@ -1,0 +1,1 @@
+ALPHA_2.0 { global: alpha_init; alpha_internal; local: *; };

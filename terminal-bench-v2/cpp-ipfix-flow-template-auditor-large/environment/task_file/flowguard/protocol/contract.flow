@@ -1,0 +1,27 @@
+# Flowguard IPFIX Collector Contract
+
+`flowguard` is an offline collector for the IP Flow Information Export protocol family. It reads every `*.ipfix` file below the capture root in bytewise sorted path order. Each file contains one or more IPFIX messages. The collector must write deterministic audit artifacts and exit 0 after writing them, even if anomalies are present.
+
+## Input framing
+
+Each message uses the standard 16-byte IPFIX header: version `10`, total message length, export time, sequence number, and observation domain id. Multi-octet integer values are network byte order. A message body is a sequence of sets; each set has a 4-byte set header containing set id and set length. Set id `2` is a template set, set id `3` is an options template set, and set ids `256` and above are data sets whose records use the template with the same id.
+
+## Template state
+
+Template state is scoped by `(exporter_id, observation_domain_id, template_id)`. The exporter id comes from `exporters.tsv`, matched by the longest capture-relative directory prefix. For example, the registry row `visible/alpha<TAB>exp-alpha<TAB>...` means records from `/var/lib/flowguard/captures/visible/alpha/0001.ipfix` use `exporter_id` `exp-alpha`, not `visible` or `alpha`. Likewise, `regression/enterprise<TAB>exp-ent<TAB>...` maps that shard family to `exp-ent`. A template definition replaces only the previous template with the same scoped key. A template record with field count `0` withdraws that scoped template. Data records for unknown or withdrawn templates are rejected and reported as `stale_template_data` anomalies without contributing flow totals.
+
+## Field decoding
+
+Field specifiers contain a 15-bit information-element id and an enterprise bit. When the enterprise bit is set, the specifier is followed by a 4-byte private enterprise number. Data records must be decoded according to their template field order. Reduced-size unsigned integer encodings are valid: packet and octet counters may be 1, 2, 4, or 8 bytes and must not be sign-extended. Variable-length fields use one length byte when the first byte is below 255, otherwise one byte of `255` followed by a two-byte length.
+
+## Options templates and sampling
+
+Options template data applies to the same `(exporter_id, observation_domain_id)` scope. The supported options fields are `samplerId`, `samplingInterval`, and `samplingAlgorithm`. A flow record that carries a sampler id uses the latest interval for that sampler in the same scope. If no matching option exists, interval `1` is used. `sampled_packets` and `sampled_octets` are the decoded counters multiplied by the interval.
+
+## Sequence accounting
+
+Sequence numbers are tracked separately per `(exporter_id, observation_domain_id)`. For each new message after the first in that scope, expected sequence is previous sequence plus the number of accepted data-flow records in the previous message. Records emitted for set IDs 2 and 3 (template and options-template sets) never advance the accepted-record counter used for sequence accounting. If the current sequence differs, write one `sequence_gap` anomaly. A rejected stale-template record does not advance the accepted-record count.
+
+## Output ordering
+
+Reports must be deterministic. Process capture files by sorted relative path, but final flow rows must be sorted by exporter id, observation domain id, flow start time, source IP, destination IP, protocol, source port, destination port, and template id. Template lifecycle rows and anomaly rows retain processing order. JSONL line ordering and the field order defined for `flow_records.jsonl` are significant.

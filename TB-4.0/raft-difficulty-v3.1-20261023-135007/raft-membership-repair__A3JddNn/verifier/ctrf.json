@@ -1,0 +1,1223 @@
+{
+    "reportFormat": "CTRF",
+    "specVersion": "0.0.0",
+    "timestamp": "2026-10-23T08:46:18.523438+00:00",
+    "generatedBy": "pytest",
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "9.1.1"
+        },
+        "summary": {
+            "tests": 109,
+            "passed": 109,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1792745123114,
+            "stop": 1792745178523
+        },
+        "environment": {
+            "buildName": "Pytest JSON CTRF Report",
+            "buildNumber": "000",
+            "buildUrl": "https://ctrf.io"
+        },
+        "tests": [
+            {
+                "name": "test_consensus.py::test_conditional_writes_and_retry_identity",
+                "status": "passed",
+                "duration": 3242,
+                "start": 1792745123176,
+                "stop": 1792745126418,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_read_quorum_is_fresh_and_reads_do_not_grow_log",
+                "status": "passed",
+                "duration": 74,
+                "start": 1792745126419,
+                "stop": 1792745126493,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_vote_survives_process_restart",
+                "status": "passed",
+                "duration": 39,
+                "start": 1792745126493,
+                "stop": 1792745126532,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_voting_compares_term_before_length",
+                "status": "passed",
+                "duration": 8,
+                "start": 1792745126532,
+                "stop": 1792745126540,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_old_term_prefix_waits_for_current_term_barrier",
+                "status": "passed",
+                "duration": 92,
+                "start": 1792745126541,
+                "stop": 1792745126633,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_delayed_heartbeat_does_not_truncate_a_newer_suffix",
+                "status": "passed",
+                "duration": 44,
+                "start": 1792745126633,
+                "stop": 1792745126677,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_joint_configuration_needs_both_majorities",
+                "status": "passed",
+                "duration": 44,
+                "start": 1792745126677,
+                "stop": 1792745126721,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::old,new,available::[([1, 2, 3], [3, 4, 5], {1, 4, 5}), ([1, 2, 3, 4, 5], [4, 5, 6], {1, 2, 3, 4})]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_joint_configuration_needs_both_majorities",
+                "status": "passed",
+                "duration": 55,
+                "start": 1792745126722,
+                "stop": 1792745126777,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::old,new,available::[([1, 2, 3], [3, 4, 5], {1, 4, 5}), ([1, 2, 3, 4, 5], [4, 5, 6], {1, 2, 3, 4})]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_membership_rollout_removes_leader_and_old_voters",
+                "status": "passed",
+                "duration": 67,
+                "start": 1792745126777,
+                "stop": 1792745126844,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_new_leader_finishes_inflight_membership_change",
+                "status": "passed",
+                "duration": 72,
+                "start": 1792745126844,
+                "stop": 1792745126916,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_learner_votes_do_not_elect_a_leader",
+                "status": "passed",
+                "duration": 32,
+                "start": 1792745126916,
+                "stop": 1792745126948,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_snapshot_transfer_keeps_client_sessions",
+                "status": "passed",
+                "duration": 293,
+                "start": 1792745126948,
+                "stop": 1792745127241,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_install_snapshot_preserves_matching_uncommitted_suffix",
+                "status": "passed",
+                "duration": 6,
+                "start": 1792745127242,
+                "stop": 1792745127248,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::transport::['legacy', 'chunks']"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_install_snapshot_preserves_matching_uncommitted_suffix",
+                "status": "passed",
+                "duration": 11,
+                "start": 1792745127248,
+                "stop": 1792745127259,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::transport::['legacy', 'chunks']"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_stale_snapshot_cannot_roll_back_committed_state",
+                "status": "passed",
+                "duration": 6,
+                "start": 1792745127259,
+                "stop": 1792745127265,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1132,
+                "start": 1792745127266,
+                "stop": 1792745128398,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1221,
+                "start": 1792745128398,
+                "stop": 1792745129619,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1267,
+                "start": 1792745129619,
+                "stop": 1792745130886,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1112,
+                "start": 1792745130886,
+                "stop": 1792745131998,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1590,
+                "start": 1792745131998,
+                "stop": 1792745133588,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1124,
+                "start": 1792745133588,
+                "stop": 1792745134712,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1223,
+                "start": 1792745134712,
+                "stop": 1792745135935,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1195,
+                "start": 1792745135935,
+                "stop": 1792745137130,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1069,
+                "start": 1792745137130,
+                "stop": 1792745138199,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1199,
+                "start": 1792745138199,
+                "stop": 1792745139398,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 1212,
+                "start": 1792745139398,
+                "stop": 1792745140610,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_generated_operational_histories",
+                "status": "passed",
+                "duration": 885,
+                "start": 1792745140610,
+                "stop": 1792745141495,
+                "retries": 0,
+                "file_path": "test_consensus.py",
+                "tags": [
+                    "parametrize::seed::[103, 211, 307, 419, 523, 631, 733, 839, 947, 1051, 1153, 1259]"
+                ]
+            },
+            {
+                "name": "test_consensus.py::test_joint_snapshot_recovery_completes_transition",
+                "status": "passed",
+                "duration": 71,
+                "start": 1792745141496,
+                "stop": 1792745141567,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_consensus.py::test_single_voter_replacement_and_arbitrary_node_ids",
+                "status": "passed",
+                "duration": 35,
+                "start": 1792745141567,
+                "stop": 1792745141602,
+                "retries": 0,
+                "file_path": "test_consensus.py"
+            },
+            {
+                "name": "test_async.py::test_unflushed_election_is_not_visible_to_other_replicas",
+                "status": "passed",
+                "duration": 4160,
+                "start": 1792745141602,
+                "stop": 1792745145762,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_busy_storage_does_not_block_higher_term_and_old_callbacks",
+                "status": "passed",
+                "duration": 51,
+                "start": 1792745145763,
+                "stop": 1792745145814,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_append_ack_requires_durability_and_unflushed_suffix_is_lost",
+                "status": "passed",
+                "duration": 73,
+                "start": 1792745145814,
+                "stop": 1792745145887,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_fsync_survives_crash_even_when_its_callback_was_lost",
+                "status": "passed",
+                "duration": 45,
+                "start": 1792745145887,
+                "stop": 1792745145932,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_prefix_fsync_cannot_release_a_later_generation",
+                "status": "passed",
+                "duration": 12,
+                "start": 1792745145933,
+                "stop": 1792745145945,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::crash_after_prefix::[False, True]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_prefix_fsync_cannot_release_a_later_generation",
+                "status": "passed",
+                "duration": 23,
+                "start": 1792745145945,
+                "stop": 1792745145968,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::crash_after_prefix::[False, True]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_application_stall_keeps_replication_live_but_pins_reads_and_compaction",
+                "status": "passed",
+                "duration": 69,
+                "start": 1792745145968,
+                "stop": 1792745146037,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_recovery_replays_durable_commit_before_releasing_retry",
+                "status": "passed",
+                "duration": 93,
+                "start": 1792745146037,
+                "stop": 1792745146130,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_snapshot_crash_cuts_with_pending_application",
+                "status": "passed",
+                "duration": 138,
+                "start": 1792745146130,
+                "stop": 1792745146268,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::cut::['before-fsync', 'after-fsync', 'after-apply']"
+                ]
+            },
+            {
+                "name": "test_async.py::test_snapshot_crash_cuts_with_pending_application",
+                "status": "passed",
+                "duration": 135,
+                "start": 1792745146268,
+                "stop": 1792745146403,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::cut::['before-fsync', 'after-fsync', 'after-apply']"
+                ]
+            },
+            {
+                "name": "test_async.py::test_snapshot_crash_cuts_with_pending_application",
+                "status": "passed",
+                "duration": 122,
+                "start": 1792745146404,
+                "stop": 1792745146526,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::cut::['before-fsync', 'after-fsync', 'after-apply']"
+                ]
+            },
+            {
+                "name": "test_async.py::test_old_apply_completion_cannot_roll_back_an_installed_snapshot",
+                "status": "passed",
+                "duration": 78,
+                "start": 1792745146526,
+                "stop": 1792745146604,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_leader_removal_finishes_while_application_workers_are_stalled",
+                "status": "passed",
+                "duration": 90,
+                "start": 1792745146605,
+                "stop": 1792745146695,
+                "retries": 0,
+                "file_path": "test_async.py"
+            },
+            {
+                "name": "test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts",
+                "status": "passed",
+                "duration": 1005,
+                "start": 1792745146696,
+                "stop": 1792745147701,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::seed::[1601, 1613, 1627, 1637, 1657, 1663]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts",
+                "status": "passed",
+                "duration": 1012,
+                "start": 1792745147702,
+                "stop": 1792745148714,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::seed::[1601, 1613, 1627, 1637, 1657, 1663]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts",
+                "status": "passed",
+                "duration": 611,
+                "start": 1792745148714,
+                "stop": 1792745149325,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::seed::[1601, 1613, 1627, 1637, 1657, 1663]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts",
+                "status": "passed",
+                "duration": 536,
+                "start": 1792745149325,
+                "stop": 1792745149861,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::seed::[1601, 1613, 1627, 1637, 1657, 1663]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts",
+                "status": "passed",
+                "duration": 569,
+                "start": 1792745149861,
+                "stop": 1792745150430,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::seed::[1601, 1613, 1627, 1637, 1657, 1663]"
+                ]
+            },
+            {
+                "name": "test_async.py::test_mixed_io_histories_with_rollouts_and_crash_cuts",
+                "status": "passed",
+                "duration": 557,
+                "start": 1792745150430,
+                "stop": 1792745150987,
+                "retries": 0,
+                "file_path": "test_async.py",
+                "tags": [
+                    "parametrize::seed::[1601, 1613, 1627, 1637, 1657, 1663]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_multi_key_write_skew_is_rejected",
+                "status": "passed",
+                "duration": 3301,
+                "start": 1792745150987,
+                "stop": 1792745154288,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_range_predicates_detect_phantoms_and_aba",
+                "status": "passed",
+                "duration": 106,
+                "start": 1792745154288,
+                "stop": 1792745154394,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::interference::['insert', 'delete', 'aba', 'same-value']"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_range_predicates_detect_phantoms_and_aba",
+                "status": "passed",
+                "duration": 106,
+                "start": 1792745154394,
+                "stop": 1792745154500,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::interference::['insert', 'delete', 'aba', 'same-value']"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_range_predicates_detect_phantoms_and_aba",
+                "status": "passed",
+                "duration": 132,
+                "start": 1792745154500,
+                "stop": 1792745154632,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::interference::['insert', 'delete', 'aba', 'same-value']"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_range_predicates_detect_phantoms_and_aba",
+                "status": "passed",
+                "duration": 106,
+                "start": 1792745154632,
+                "stop": 1792745154738,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::interference::['insert', 'delete', 'aba', 'same-value']"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_disjoint_concurrent_transactions_do_not_false_conflict",
+                "status": "passed",
+                "duration": 92,
+                "start": 1792745154738,
+                "stop": 1792745154830,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_blind_writes_and_absent_point_reads_conflict",
+                "status": "passed",
+                "duration": 95,
+                "start": 1792745154830,
+                "stop": 1792745154925,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_retried_and_failed_counter_updates_do_not_create_false_versions",
+                "status": "passed",
+                "duration": 82,
+                "start": 1792745154925,
+                "stop": 1792745155007,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_pagination_remains_at_original_snapshot_through_rewrites",
+                "status": "passed",
+                "duration": 250,
+                "start": 1792745155007,
+                "stop": 1792745155257,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_oldest_pin_controls_vacuum_and_tombstone_retention",
+                "status": "passed",
+                "duration": 306,
+                "start": 1792745155257,
+                "stop": 1792745155563,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_commit_receipt_survives_retry_recovery_and_payload_changes",
+                "status": "passed",
+                "duration": 110,
+                "start": 1792745155563,
+                "stop": 1792745155673,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_abort_and_unknown_transactions_are_distinct",
+                "status": "passed",
+                "duration": 78,
+                "start": 1792745155673,
+                "stop": 1792745155751,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_delayed_application_hides_transaction_results_and_pins",
+                "status": "passed",
+                "duration": 51,
+                "start": 1792745155751,
+                "stop": 1792745155802,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_snapshot_reads_cannot_bypass_a_new_leaders_closed_receipt",
+                "status": "passed",
+                "duration": 81,
+                "start": 1792745155802,
+                "stop": 1792745155883,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_live_transaction_survives_leader_replacement_and_compaction",
+                "status": "passed",
+                "duration": 104,
+                "start": 1792745155883,
+                "stop": 1792745155987,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_speculative_transaction_is_discarded_after_partition",
+                "status": "passed",
+                "duration": 87,
+                "start": 1792745155987,
+                "stop": 1792745156074,
+                "retries": 0,
+                "file_path": "test_transactions.py"
+            },
+            {
+                "name": "test_transactions.py::test_transaction_retry_across_independent_workers_and_crash",
+                "status": "passed",
+                "duration": 112,
+                "start": 1792745156074,
+                "stop": 1792745156186,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::schedule::[4109, 4111, 4127, 4129]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transaction_retry_across_independent_workers_and_crash",
+                "status": "passed",
+                "duration": 111,
+                "start": 1792745156186,
+                "stop": 1792745156297,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::schedule::[4109, 4111, 4127, 4129]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transaction_retry_across_independent_workers_and_crash",
+                "status": "passed",
+                "duration": 111,
+                "start": 1792745156297,
+                "stop": 1792745156408,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::schedule::[4109, 4111, 4127, 4129]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transaction_retry_across_independent_workers_and_crash",
+                "status": "passed",
+                "duration": 111,
+                "start": 1792745156408,
+                "stop": 1792745156519,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::schedule::[4109, 4111, 4127, 4129]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration",
+                "status": "passed",
+                "duration": 961,
+                "start": 1792745156519,
+                "stop": 1792745157480,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::seed_value::[2707, 2711, 2713, 2719, 2729, 2731]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration",
+                "status": "passed",
+                "duration": 1173,
+                "start": 1792745157480,
+                "stop": 1792745158653,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::seed_value::[2707, 2711, 2713, 2719, 2729, 2731]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration",
+                "status": "passed",
+                "duration": 1002,
+                "start": 1792745158653,
+                "stop": 1792745159655,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::seed_value::[2707, 2711, 2713, 2719, 2729, 2731]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration",
+                "status": "passed",
+                "duration": 2629,
+                "start": 1792745159655,
+                "stop": 1792745162284,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::seed_value::[2707, 2711, 2713, 2719, 2729, 2731]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration",
+                "status": "passed",
+                "duration": 889,
+                "start": 1792745162284,
+                "stop": 1792745163173,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::seed_value::[2707, 2711, 2713, 2719, 2729, 2731]"
+                ]
+            },
+            {
+                "name": "test_transactions.py::test_transactions_composed_with_failover_gc_and_reconfiguration",
+                "status": "passed",
+                "duration": 1044,
+                "start": 1792745163173,
+                "stop": 1792745164217,
+                "retries": 0,
+                "file_path": "test_transactions.py",
+                "tags": [
+                    "parametrize::seed_value::[2707, 2711, 2713, 2719, 2729, 2731]"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_out_of_order_duplicate_and_overlapping_fragments",
+                "status": "passed",
+                "duration": 3607,
+                "start": 1792745164217,
+                "stop": 1792745167824,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::width::[127, 509, 1024]"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_out_of_order_duplicate_and_overlapping_fragments",
+                "status": "passed",
+                "duration": 105,
+                "start": 1792745167824,
+                "stop": 1792745167929,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::width::[127, 509, 1024]"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_out_of_order_duplicate_and_overlapping_fragments",
+                "status": "passed",
+                "duration": 103,
+                "start": 1792745167929,
+                "stop": 1792745168032,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::width::[127, 509, 1024]"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_conflicting_overlap_preserves_previously_accepted_bytes",
+                "status": "passed",
+                "duration": 108,
+                "start": 1792745168033,
+                "stop": 1792745168141,
+                "retries": 0,
+                "file_path": "test_transfer.py"
+            },
+            {
+                "name": "test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts",
+                "status": "passed",
+                "duration": 119,
+                "start": 1792745168142,
+                "stop": 1792745168261,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'partial-fsync-no-callback', 'partial-callback', 'complete-fsync-no-callback', 'complete-before-apply']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts",
+                "status": "passed",
+                "duration": 106,
+                "start": 1792745168261,
+                "stop": 1792745168367,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'partial-fsync-no-callback', 'partial-callback', 'complete-fsync-no-callback', 'complete-before-apply']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts",
+                "status": "passed",
+                "duration": 114,
+                "start": 1792745168367,
+                "stop": 1792745168481,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'partial-fsync-no-callback', 'partial-callback', 'complete-fsync-no-callback', 'complete-before-apply']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts",
+                "status": "passed",
+                "duration": 108,
+                "start": 1792745168481,
+                "stop": 1792745168589,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'partial-fsync-no-callback', 'partial-callback', 'complete-fsync-no-callback', 'complete-before-apply']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_transfer_recovers_at_storage_and_application_crash_cuts",
+                "status": "passed",
+                "duration": 94,
+                "start": 1792745168589,
+                "stop": 1792745168683,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'partial-fsync-no-callback', 'partial-callback', 'complete-fsync-no-callback', 'complete-before-apply']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_partial_generation_cannot_acknowledge_a_later_fragment",
+                "status": "passed",
+                "duration": 88,
+                "start": 1792745168683,
+                "stop": 1792745168771,
+                "retries": 0,
+                "file_path": "test_transfer.py"
+            },
+            {
+                "name": "test_transfer.py::test_checksum_failure_never_installs_and_valid_retry_recovers",
+                "status": "passed",
+                "duration": 114,
+                "start": 1792745168771,
+                "stop": 1792745168885,
+                "retries": 0,
+                "file_path": "test_transfer.py"
+            },
+            {
+                "name": "test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress",
+                "status": "passed",
+                "duration": 88,
+                "start": 1792745168885,
+                "stop": 1792745168973,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['empty', 'oversize-fragment', 'outside', 'overflow', 'zero-size', 'oversize-snapshot']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress",
+                "status": "passed",
+                "duration": 118,
+                "start": 1792745168973,
+                "stop": 1792745169091,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['empty', 'oversize-fragment', 'outside', 'overflow', 'zero-size', 'oversize-snapshot']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress",
+                "status": "passed",
+                "duration": 113,
+                "start": 1792745169092,
+                "stop": 1792745169205,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['empty', 'oversize-fragment', 'outside', 'overflow', 'zero-size', 'oversize-snapshot']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress",
+                "status": "passed",
+                "duration": 106,
+                "start": 1792745169205,
+                "stop": 1792745169311,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['empty', 'oversize-fragment', 'outside', 'overflow', 'zero-size', 'oversize-snapshot']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress",
+                "status": "passed",
+                "duration": 93,
+                "start": 1792745169311,
+                "stop": 1792745169404,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['empty', 'oversize-fragment', 'outside', 'overflow', 'zero-size', 'oversize-snapshot']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_invalid_fragment_does_not_destroy_durable_progress",
+                "status": "passed",
+                "duration": 103,
+                "start": 1792745169404,
+                "stop": 1792745169507,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['empty', 'oversize-fragment', 'outside', 'overflow', 'zero-size', 'oversize-snapshot']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_complete_payload_must_match_manifest_and_decode",
+                "status": "passed",
+                "duration": 112,
+                "start": 1792745169507,
+                "stop": 1792745169619,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['index', 'term', 'json']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_complete_payload_must_match_manifest_and_decode",
+                "status": "passed",
+                "duration": 113,
+                "start": 1792745169619,
+                "stop": 1792745169732,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['index', 'term', 'json']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_complete_payload_must_match_manifest_and_decode",
+                "status": "passed",
+                "duration": 102,
+                "start": 1792745169732,
+                "stop": 1792745169834,
+                "retries": 0,
+                "file_path": "test_transfer.py",
+                "tags": [
+                    "parametrize::fault::['index', 'term', 'json']"
+                ]
+            },
+            {
+                "name": "test_transfer.py::test_superseded_and_old_term_transfers_cannot_rollback",
+                "status": "passed",
+                "duration": 120,
+                "start": 1792745169834,
+                "stop": 1792745169954,
+                "retries": 0,
+                "file_path": "test_transfer.py"
+            },
+            {
+                "name": "test_transfer.py::test_streamed_pins_and_receipts_survive_voter_promotion",
+                "status": "passed",
+                "duration": 200,
+                "start": 1792745169954,
+                "stop": 1792745170154,
+                "retries": 0,
+                "file_path": "test_transfer.py"
+            },
+            {
+                "name": "test_transfer.py::test_sender_recovers_from_lost_fragment_reply_and_receiver_restart",
+                "status": "passed",
+                "duration": 89,
+                "start": 1792745170154,
+                "stop": 1792745170243,
+                "retries": 0,
+                "file_path": "test_transfer.py"
+            },
+            {
+                "name": "test_interleavings.py::test_each_compaction_request_completes_when_its_prefix_is_eligible",
+                "status": "passed",
+                "duration": 3320,
+                "start": 1792745170243,
+                "stop": 1792745173563,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::nodes::[1, 3]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_each_compaction_request_completes_when_its_prefix_is_eligible",
+                "status": "passed",
+                "duration": 36,
+                "start": 1792745173563,
+                "stop": 1792745173599,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::nodes::[1, 3]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_clients_workers_and_recovery",
+                "status": "passed",
+                "duration": 598,
+                "start": 1792745173599,
+                "stop": 1792745174197,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::crash::['follower', 'leader']",
+                    "parametrize::seed_value::[1729, 3253, 7919]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_clients_workers_and_recovery",
+                "status": "passed",
+                "duration": 609,
+                "start": 1792745174197,
+                "stop": 1792745174806,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::crash::['follower', 'leader']",
+                    "parametrize::seed_value::[1729, 3253, 7919]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_clients_workers_and_recovery",
+                "status": "passed",
+                "duration": 610,
+                "start": 1792745174806,
+                "stop": 1792745175416,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::crash::['follower', 'leader']",
+                    "parametrize::seed_value::[1729, 3253, 7919]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_clients_workers_and_recovery",
+                "status": "passed",
+                "duration": 528,
+                "start": 1792745175416,
+                "stop": 1792745175944,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::crash::['follower', 'leader']",
+                    "parametrize::seed_value::[1729, 3253, 7919]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_clients_workers_and_recovery",
+                "status": "passed",
+                "duration": 546,
+                "start": 1792745175945,
+                "stop": 1792745176491,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::crash::['follower', 'leader']",
+                    "parametrize::seed_value::[1729, 3253, 7919]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_clients_workers_and_recovery",
+                "status": "passed",
+                "duration": 526,
+                "start": 1792745176491,
+                "stop": 1792745177017,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::crash::['follower', 'leader']",
+                    "parametrize::seed_value::[1729, 3253, 7919]"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_overlapping_duplicate_receipts_with_application_stalled",
+                "status": "passed",
+                "duration": 159,
+                "start": 1792745177017,
+                "stop": 1792745177176,
+                "retries": 0,
+                "file_path": "test_interleavings.py"
+            },
+            {
+                "name": "test_interleavings.py::test_streamed_pins_during_complete_voter_replacement",
+                "status": "passed",
+                "duration": 446,
+                "start": 1792745177176,
+                "stop": 1792745177622,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'fsync-without-notice', 'after-notice']"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_streamed_pins_during_complete_voter_replacement",
+                "status": "passed",
+                "duration": 448,
+                "start": 1792745177623,
+                "stop": 1792745178071,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'fsync-without-notice', 'after-notice']"
+                ]
+            },
+            {
+                "name": "test_interleavings.py::test_streamed_pins_during_complete_voter_replacement",
+                "status": "passed",
+                "duration": 450,
+                "start": 1792745178072,
+                "stop": 1792745178522,
+                "retries": 0,
+                "file_path": "test_interleavings.py",
+                "tags": [
+                    "parametrize::cut::['unflushed', 'fsync-without-notice', 'after-notice']"
+                ]
+            }
+        ]
+    }
+}

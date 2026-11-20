@@ -1,0 +1,22 @@
+# Local credentials and machine-specific state must never be published.
+.env
+.env.*
+!.env.example
+.netrc
+.npmrc
+.pypirc
+.snorkel_config
+credentials.json
+auth.json
+id_rsa
+id_ed25519
+*.p12
+*.pfx
+
+# New local runs and caches, not the deliberately packaged historical evidence.
+/runs/
+__pycache__/
+*.pyc
+.DS_Store
+*secret-scan*.json
+*gitleaks-report*.json

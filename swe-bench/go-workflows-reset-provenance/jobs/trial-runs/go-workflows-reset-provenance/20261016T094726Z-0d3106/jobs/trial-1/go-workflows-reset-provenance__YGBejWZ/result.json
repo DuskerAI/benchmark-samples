@@ -1,0 +1,137 @@
+{
+    "id": "03cf2654-0ee5-4b4b-b200-505028eecd4c",
+    "task_name": "dusker-ai/go-workflows-reset-provenance",
+    "trial_name": "go-workflows-reset-provenance__YGBejWZ",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1/go-workflows-reset-provenance__YGBejWZ",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "source": null,
+    "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "go-workflows-reset-provenance__YGBejWZ",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-1",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": 3.0,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5-5",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [
+                "api.anthropic.com"
+            ],
+            "kwargs": {
+                "version": "2.1.295",
+                "reasoning_effort": "high",
+                "max_turns": 100,
+                "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+            },
+            "env": {
+                "DISABLE_AUTOUPDATER": "1"
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": [
+                {
+                    "type": "bind",
+                    "source": "/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude",
+                    "target": "/usr/local/bin/claude",
+                    "read_only": true,
+                    "bind": {
+                        "create_host_path": false
+                    }
+                }
+            ],
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "180d202c-4cc2-448f-80de-7d6c73466567",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.295",
+        "model_info": {
+            "name": "claude-sonnet-5-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 6576440,
+        "n_cache_tokens": 6363308,
+        "n_output_tokens": 106203,
+        "cost_usd": 2.8674796000000002,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T09:47:55.627322Z",
+    "finished_at": "2026-10-16T10:05:33.053561Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T09:47:55.658436Z",
+        "finished_at": "2026-10-16T09:47:58.585809Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T09:47:58.585884Z",
+        "finished_at": "2026-10-16T09:47:58.801433Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T09:47:58.801579Z",
+        "finished_at": "2026-10-16T10:05:12.309799Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T10:05:18.078270Z",
+        "finished_at": "2026-10-16T10:05:33.053517Z"
+    },
+    "step_results": null
+}

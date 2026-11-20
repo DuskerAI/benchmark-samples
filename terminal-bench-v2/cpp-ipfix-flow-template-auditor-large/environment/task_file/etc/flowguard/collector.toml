@@ -1,0 +1,6 @@
+[collector]
+schema_version = 1
+fail_on_anomaly = false
+
+[paths]
+default_output = "/var/lib/flowguard/output"

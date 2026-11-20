@@ -1,0 +1,31 @@
+title = "Dusker AI benchmark samples: exact reviewed non-secret values"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Public GPG fingerprint from the recorded container environment; not private key material"
+regexTarget = "secret"
+regexes = [
+  '''^A035C8C19219BA821ECEA86B64E628F8D684696D$''',
+]
+
+[[allowlists]]
+description = "Audited source-file SHA-256 checksum; not a credential"
+regexTarget = "secret"
+regexes = [
+  '''^21f39fd3928a70c69c8fb74dfae52c7c38c895469b605d7c79d59f40f8c6afd9$''',
+  '''^4408c2e07963d4c19579e188e7902fc5f6baa778bc9611f2bebb194ca52f633e$''',
+  '''^a6f3e42880b61152257d6f7c0d937b63cf760c08442b185169a4ac208913a95f$''',
+  '''^ba0ad73050d758d8ceede5cabae88608268efd5493b0cea83d72ee666f579ae9$''',
+  '''^ccf13abb6afa56ef5733889d1c14136a840e19d738abcae551c940f82881397d$''',
+  '''^f26ca62c123065a4169f78f5a2b0c3aba4a691633b208dd33db5a32fc38dc9a5$''',
+  '''^f45c32e6814fbe20cb5c2eb0500ab5aecd3cdb0408acc5ea8d49aa9071721c36$''',
+]
+
+[[allowlists]]
+description = "Audited JavaScript method name in upstream minified code; not a credential"
+regexTarget = "secret"
+regexes = [
+  '''^calculateD3Geometry$''',
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "source": "/logs/artifacts",
+    "destination": "artifacts/logs/artifacts",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/activity",
+    "destination": "artifacts/candidate-source/activity",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/activitytester",
+    "destination": "artifacts/candidate-source/activitytester",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/analyzer",
+    "destination": "artifacts/candidate-source/analyzer",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/backend",
+    "destination": "artifacts/candidate-source/backend",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/client",
+    "destination": "artifacts/candidate-source/client",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/core",
+    "destination": "artifacts/candidate-source/core",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/diag",
+    "destination": "artifacts/candidate-source/diag",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/internal",
+    "destination": "artifacts/candidate-source/internal",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/registry",
+    "destination": "artifacts/candidate-source/registry",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/tester",
+    "destination": "artifacts/candidate-source/tester",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/worker",
+    "destination": "artifacts/candidate-source/worker",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  },
+  {
+    "source": "/app/workflow",
+    "destination": "artifacts/candidate-source/workflow",
+    "type": "directory",
+    "status": "ok",
+    "service": null
+  }
+]

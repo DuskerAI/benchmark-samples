@@ -1,0 +1,9 @@
+name: crlink
+version: 0.1.0
+
+targets:
+  crlink:
+    main: src/main.cr
+
+crystal: ">= 1.14.0"
+license: MIT

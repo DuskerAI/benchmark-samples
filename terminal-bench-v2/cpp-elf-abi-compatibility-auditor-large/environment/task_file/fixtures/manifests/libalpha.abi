@@ -1,0 +1,9 @@
+library libalpha.so
+soname libalpha.so.1
+export alpha_init ALPHA_1.0 default
+export alpha_legacy ALPHA_1.0 default
+export alpha_deprecated ALPHA_0.9 default allow
+version_node ALPHA_0.9
+version_node ALPHA_1.0
+version_node ALPHA_1.1
+need_version libdep.so.1 DEP_1.0

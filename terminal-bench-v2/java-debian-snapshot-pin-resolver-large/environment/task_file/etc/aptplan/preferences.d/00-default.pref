@@ -1,0 +1,15 @@
+Package: *
+Snapshot: stable
+Pin-Priority: 700
+
+Package: *
+Snapshot: updates
+Pin-Priority: 900
+
+Package: *
+Snapshot: experimental
+Pin-Priority: 50
+
+Package: *
+Snapshot: quarantine
+Pin-Priority: -1

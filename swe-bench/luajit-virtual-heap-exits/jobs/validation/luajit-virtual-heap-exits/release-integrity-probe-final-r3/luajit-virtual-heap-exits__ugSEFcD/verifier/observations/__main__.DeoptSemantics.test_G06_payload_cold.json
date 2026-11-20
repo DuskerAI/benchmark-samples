@@ -1,0 +1,124 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "203"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$flag",
+            [
+              "boolean",
+              false
+            ]
+          ],
+          [
+            "$fraction",
+            [
+              "number",
+              "25.375"
+            ]
+          ],
+          [
+            "$text",
+            [
+              "string",
+              "snapshot payload"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "359"
+            ]
+          ],
+          [
+            "$zero",
+            [
+              "number",
+              "-0"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$flag",
+            [
+              "boolean",
+              false
+            ]
+          ],
+          [
+            "$fraction",
+            [
+              "number",
+              "25.375"
+            ]
+          ],
+          [
+            "$text",
+            [
+              "string",
+              "snapshot payload"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "359"
+            ]
+          ],
+          [
+            "$zero",
+            [
+              "number",
+              "-0"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "imported": false,
+  "observed": 203,
+  "stats": {
+    "aborts": [],
+    "exits": 2,
+    "on": true,
+    "roots": 2,
+    "sides": 0
+  }
+}

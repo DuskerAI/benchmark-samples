@@ -1,0 +1,132 @@
+{
+  "collected": true,
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              3
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "278"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$a",
+            [
+              "ref",
+              4
+            ]
+          ],
+          [
+            "$b",
+            [
+              "ref",
+              4
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "309"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$changed",
+            [
+              "string",
+              "first-only"
+            ]
+          ],
+          [
+            "$owner",
+            [
+              "ref",
+              1
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "509"
+            ]
+          ]
+        ],
+        "meta": 0
+      },
+      {
+        "fields": [
+          [
+            "$owner",
+            [
+              "ref",
+              2
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "571"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1,
+      2
+    ]
+  },
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 8,
+    "on": true,
+    "roots": 2,
+    "sides": 2
+  }
+}

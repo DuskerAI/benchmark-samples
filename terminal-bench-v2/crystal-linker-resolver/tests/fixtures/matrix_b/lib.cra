@@ -1,0 +1,11 @@
+ARCHIVE lib
+MEMBER mdormant
+SECTION .text - 4 -
+SYMBOL dormant STRONG DEF .text 0
+MEMBER mleaf
+SYMBOL leaf COMMON 4 4
+MEMBER mpool
+SECTION .text - 8 -
+SYMBOL pool COMMON 16 16
+SYMBOL leaf STRONG UNDEF
+RELOC .text 0 leaf REL32 0

@@ -1,0 +1,7 @@
+Package: log-router
+Snapshot: stable
+Pin-Priority: 920
+
+Package: mini-journald
+Snapshot: stable
+Pin-Priority: 910

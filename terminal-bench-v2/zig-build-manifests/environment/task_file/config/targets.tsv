@@ -1,0 +1,4 @@
+target	profile	name	abi	packet_limit	endianness	depends_on
+x86_64-linux-musl	stable	linux-x86_64	0x524b5836	4096	little	
+aarch64-linux-musl	edge	linux-aarch64	0x524b4136	8192	little	x86_64-linux-musl:stable@3
+x86_64-linux-musl	diagnostics	linux-x86_64-diag	0x524b4431	12288	little	x86_64-linux-musl:stable@5,aarch64-linux-musl:edge@7

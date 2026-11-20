@@ -1,0 +1,4 @@
+JSEG	name=beta	seq=2	rotated=true	bytes=260
+R	b1	boot-b	2	1710000500	kernel	4	mount-ro	100
+R	b2	boot-b	3	1710000600	kernel	4	mount-rw	100
+R	bad-tail	boot-b	4

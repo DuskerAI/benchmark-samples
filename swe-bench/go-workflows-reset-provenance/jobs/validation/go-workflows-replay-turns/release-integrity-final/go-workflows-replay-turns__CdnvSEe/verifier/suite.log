@@ -1,0 +1,993 @@
+test_P01_existing_activity_replay (__main__.ReplayTurnSemantics.test_P01_existing_activity_replay) ... ok
+test_P01_existing_child_replay (__main__.ReplayTurnSemantics.test_P01_existing_child_replay) ... ok
+test_P01_existing_timer_replay (__main__.ReplayTurnSemantics.test_P01_existing_timer_replay) ... ok
+test_P02_live_channels (__main__.ReplayTurnSemantics.test_P02_live_channels) ... ok
+test_P02_live_side (__main__.ReplayTurnSemantics.test_P02_live_side) ... ok
+test_P02_live_simple (__main__.ReplayTurnSemantics.test_P02_live_simple) ... ok
+test_P02_live_spans (__main__.ReplayTurnSemantics.test_P02_live_spans) ... ok
+test_R01_cold_actor_ownership_2 (__main__.ReplayTurnSemantics.test_R01_cold_actor_ownership_2) ... FAIL
+test_R01_cold_actor_ownership_3 (__main__.ReplayTurnSemantics.test_R01_cold_actor_ownership_3) ... FAIL
+test_R01_cold_actor_ownership_5 (__main__.ReplayTurnSemantics.test_R01_cold_actor_ownership_5) ... FAIL
+test_R01_inline_actor_before_plain_actor (__main__.ReplayTurnSemantics.test_R01_inline_actor_before_plain_actor) ... FAIL
+test_R01_plain_actor_before_inline_actor (__main__.ReplayTurnSemantics.test_R01_plain_actor_before_inline_actor) ... ok
+test_R02_immediate_select_1 (__main__.ReplayTurnSemantics.test_R02_immediate_select_1) ... FAIL
+test_R02_immediate_select_2 (__main__.ReplayTurnSemantics.test_R02_immediate_select_2) ... FAIL
+test_R02_immediate_select_4 (__main__.ReplayTurnSemantics.test_R02_immediate_select_4) ... FAIL
+test_R03_nested_span_around_memo (__main__.ReplayTurnSemantics.test_R03_nested_span_around_memo) ... FAIL
+test_R03_nested_span_parentage_2 (__main__.ReplayTurnSemantics.test_R03_nested_span_parentage_2) ... FAIL
+test_R03_nested_span_parentage_3 (__main__.ReplayTurnSemantics.test_R03_nested_span_parentage_3) ... FAIL
+test_R03_span_without_side_effect (__main__.ReplayTurnSemantics.test_R03_span_without_side_effect) ... FAIL
+test_R04_three_turn_alternate (__main__.ReplayTurnSemantics.test_R04_three_turn_alternate) ... FAIL
+test_R04_three_turn_cold (__main__.ReplayTurnSemantics.test_R04_three_turn_cold) ... FAIL
+test_R04_three_turn_warm_suffix (__main__.ReplayTurnSemantics.test_R04_three_turn_warm_suffix) ... FAIL
+test_R05_completion_order_forward_batch_0 (__main__.ReplayTurnSemantics.test_R05_completion_order_forward_batch_0) ... FAIL
+test_R05_completion_order_forward_batch_1 (__main__.ReplayTurnSemantics.test_R05_completion_order_forward_batch_1) ... FAIL
+test_R05_completion_order_reverse_batch_0 (__main__.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_0) ... FAIL
+test_R05_completion_order_reverse_batch_1 (__main__.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_1) ... FAIL
+test_R06_blocked_receiver_then_inline_sender (__main__.ReplayTurnSemantics.test_R06_blocked_receiver_then_inline_sender) ... FAIL
+test_R06_buffered_handoff_after_memo (__main__.ReplayTurnSemantics.test_R06_buffered_handoff_after_memo) ... FAIL
+test_R06_spawn_after_inline_memo (__main__.ReplayTurnSemantics.test_R06_spawn_after_inline_memo) ... FAIL
+test_R06_spawn_before_explicit_span (__main__.ReplayTurnSemantics.test_R06_spawn_before_explicit_span) ... FAIL
+test_R07_cancelled_timer_stays_cancelled (__main__.ReplayTurnSemantics.test_R07_cancelled_timer_stays_cancelled) ... FAIL
+test_R07_real_child_waits (__main__.ReplayTurnSemantics.test_R07_real_child_waits) ... FAIL
+test_R07_real_signal_waits (__main__.ReplayTurnSemantics.test_R07_real_signal_waits) ... FAIL
+test_R07_real_timer_waits (__main__.ReplayTurnSemantics.test_R07_real_timer_waits) ... FAIL
+test_R08_caught_activity_failure_then_inline_work (__main__.ReplayTurnSemantics.test_R08_caught_activity_failure_then_inline_work) ... FAIL
+test_R08_retry_keeps_actor_identity (__main__.ReplayTurnSemantics.test_R08_retry_keeps_actor_identity) ... FAIL
+test_R09_empty_string_is_a_committed_value (__main__.ReplayTurnSemantics.test_R09_empty_string_is_a_committed_value) ... FAIL
+test_R09_null_payload_remains_distinct_from_missing (__main__.ReplayTurnSemantics.test_R09_null_payload_remains_distinct_from_missing) ... FAIL
+test_R09_wrapped_payloads_across_restarts (__main__.ReplayTurnSemantics.test_R09_wrapped_payloads_across_restarts) ... FAIL
+test_R10_sqlite_process_restart_2_wrapped_0 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_0) ... FAIL
+test_R10_sqlite_process_restart_2_wrapped_1 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_1) ... FAIL
+test_R10_sqlite_process_restart_3_wrapped_0 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_0) ... FAIL
+test_R10_sqlite_process_restart_3_wrapped_1 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_1) ... FAIL
+test_R11_reject_bad_payload (__main__.ReplayTurnSemantics.test_R11_reject_bad_payload) ... ok
+test_R11_reject_duplicate_side (__main__.ReplayTurnSemantics.test_R11_reject_duplicate_side) ... ok
+test_R11_reject_duplicate_trace (__main__.ReplayTurnSemantics.test_R11_reject_duplicate_trace) ... ok
+test_R11_reject_future_turn_side (__main__.ReplayTurnSemantics.test_R11_reject_future_turn_side) ... ok
+test_R11_reject_future_turn_trace (__main__.ReplayTurnSemantics.test_R11_reject_future_turn_trace) ... ok
+test_R11_reject_missing_side (__main__.ReplayTurnSemantics.test_R11_reject_missing_side) ... ok
+test_R11_reject_missing_trace (__main__.ReplayTurnSemantics.test_R11_reject_missing_trace) ... ok
+test_R11_reject_wrong_owner (__main__.ReplayTurnSemantics.test_R11_reject_wrong_owner) ... ok
+test_R12_legacy_actor_tokens (__main__.ReplayTurnSemantics.test_R12_legacy_actor_tokens) ... FAIL
+test_R12_legacy_nested_spans (__main__.ReplayTurnSemantics.test_R12_legacy_nested_spans) ... FAIL
+test_R12_legacy_ready_and_null (__main__.ReplayTurnSemantics.test_R12_legacy_ready_and_null) ... FAIL
+test_R12_legacy_wrapped_receipts (__main__.ReplayTurnSemantics.test_R12_legacy_wrapped_receipts) ... FAIL
+test_R13_logical_task_clock_cold (__main__.ReplayTurnSemantics.test_R13_logical_task_clock_cold) ... FAIL
+test_R13_logical_task_clock_warm_suffix (__main__.ReplayTurnSemantics.test_R13_logical_task_clock_warm_suffix) ... FAIL
+
+======================================================================
+FAIL: test_R01_cold_actor_ownership_2 (__main__.ReplayTurnSemantics.test_R01_cold_actor_ownership_2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: [] != ['A:side:token=key-0', 'A:activity:deliver[117 chars]y-1']
+
+Second list contains 6 additional elements.
+First extra element 0:
+'A:side:token=key-0'
+
+- []
++ ['A:side:token=key-0',
++  'A:activity:deliver:wait',
++  'B:side:token=key-1',
++  'B:activity:deliver:wait',
++  'A:activity:deliver=done:key-0',
++  'B:activity:deliver=done:key-1'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R01_cold_actor_ownership_3 (__main__.ReplayTurnSemantics.test_R01_cold_actor_ownership_3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: [] != ['A:side:token=key-0', 'A:activity:deliver[199 chars]y-2']
+
+Second list contains 9 additional elements.
+First extra element 0:
+'A:side:token=key-0'
+
+- []
++ ['A:side:token=key-0',
++  'A:activity:deliver:wait',
++  'B:side:token=key-1',
++  'B:activity:deliver:wait',
++  'C:side:token=key-2',
++  'C:activity:deliver:wait',
++  'A:activity:deliver=done:key-0',
++  'B:activity:deliver=done:key-1',
++  'C:activity:deliver=done:key-2'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R01_cold_actor_ownership_5 (__main__.ReplayTurnSemantics.test_R01_cold_actor_ownership_5)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: [] != ['A:side:token=key-0', 'A:activity:deliver[363 chars]y-4']
+
+Second list contains 15 additional elements.
+First extra element 0:
+'A:side:token=key-0'
+
+- []
++ ['A:side:token=key-0',
++  'A:activity:deliver:wait',
++  'B:side:token=key-1',
++  'B:activity:deliver:wait',
++  'C:side:token=key-2',
++  'C:activity:deliver:wait',
++  'D:side:token=key-3',
++  'D:activity:deliver:wait',
++  'E:side:token=key-4',
++  'E:activity:deliver:wait',
++  'A:activity:deliver=done:key-0',
++  'B:activity:deliver=done:key-1',
++  'C:activity:deliver=done:key-2',
++  'D:activity:deliver=done:key-3',
++  'E:activity:deliver=done:key-4'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R01_inline_actor_before_plain_actor (__main__.ReplayTurnSemantics.test_R01_inline_actor_before_plain_actor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['B:activity:reserve:wait'] != ['A:side:token=invoice-7', 'A:activity:book[101 chars]t-9']
+
+First differing element 0:
+'B:activity:reserve:wait'
+'A:side:token=invoice-7'
+
+Second list contains 4 additional elements.
+First extra element 1:
+'A:activity:book:wait'
+
++ ['A:side:token=invoice-7',
++  'A:activity:book:wait',
+- ['B:activity:reserve:wait']
+? ^                         ^
+
++  'B:activity:reserve:wait',
+? ^                         ^
+
++  'A:activity:book=done:invoice-7',
++  'B:activity:reserve=done:shipment-9'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R02_immediate_select_1 (__main__.ReplayTurnSemantics.test_R02_immediate_select_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:selectside:choice=NOT_READY', 'A:activity:use:wait', 'A:act[20 chars]e-0'] != ['A:selectside:choice=choice-0', 'A:activity:use:wait', 'A:acti[19 chars]e-0']
+
+First differing element 0:
+'A:selectside:choice=NOT_READY'
+'A:selectside:choice=choice-0'
+
+- ['A:selectside:choice=NOT_READY',
++ ['A:selectside:choice=choice-0',
+   'A:activity:use:wait',
+   'A:activity:use=done:choice-0'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R02_immediate_select_2 (__main__.ReplayTurnSemantics.test_R02_immediate_select_2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:selectside:choice=NOT_READY', 'A:activity:use:wait'] != ['A:selectside:choice=choice-0', 'A:activity:use:wait', 'B:sele[106 chars]e-1']
+
+First differing element 0:
+'A:selectside:choice=NOT_READY'
+'A:selectside:choice=choice-0'
+
+Second list contains 4 additional elements.
+First extra element 2:
+'B:selectside:choice=choice-1'
+
+- ['A:selectside:choice=NOT_READY', 'A:activity:use:wait']
++ ['A:selectside:choice=choice-0',
++  'A:activity:use:wait',
++  'B:selectside:choice=choice-1',
++  'B:activity:use:wait',
++  'A:activity:use=done:choice-0',
++  'B:activity:use=done:choice-1'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R02_immediate_select_4 (__main__.ReplayTurnSemantics.test_R02_immediate_select_4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:selectside:choice=NOT_READY', 'A:activity:use:wait'] != ['A:selectside:choice=choice-0', 'A:activity:use:wait', 'B:sele[280 chars]e-3']
+
+First differing element 0:
+'A:selectside:choice=NOT_READY'
+'A:selectside:choice=choice-0'
+
+Second list contains 10 additional elements.
+First extra element 2:
+'B:selectside:choice=choice-1'
+
+- ['A:selectside:choice=NOT_READY', 'A:activity:use:wait']
++ ['A:selectside:choice=choice-0',
++  'A:activity:use:wait',
++  'B:selectside:choice=choice-1',
++  'B:activity:use:wait',
++  'C:selectside:choice=choice-2',
++  'C:activity:use:wait',
++  'D:selectside:choice=choice-3',
++  'D:activity:use:wait',
++  'A:activity:use=done:choice-0',
++  'B:activity:use=done:choice-1',
++  'C:activity:use=done:choice-2',
++  'D:activity:use=done:choice-3'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R03_nested_span_around_memo (__main__.ReplayTurnSemantics.test_R03_nested_span_around_memo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:span:outer'] != ['A:span:outer', 'A:side:load=alpha', 'A:span:inner', 'A[119 chars]eta']
+
+Second list contains 7 additional elements.
+First extra element 1:
+'A:side:load=alpha'
+
+- ['A:span:outer']
+?                ^
+
++ ['A:span:outer',
+?                ^
+
++  'A:side:load=alpha',
++  'A:span:inner',
++  'A:activity:ship:wait',
++  'B:side:load=beta',
++  'B:activity:ship:wait',
++  'A:activity:ship=done:alpha',
++  'B:activity:ship=done:beta'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R03_nested_span_parentage_2 (__main__.ReplayTurnSemantics.test_R03_nested_span_parentage_2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:span:outer', 'B:span:outer'] != ['A:span:outer', 'A:span:inner', 'A:activity:operation:wait[128 chars]g-1']
+
+First differing element 1:
+'B:span:outer'
+'A:span:inner'
+
+Second list contains 6 additional elements.
+First extra element 2:
+'A:activity:operation:wait'
+
+- ['A:span:outer', 'B:span:outer']
++ ['A:span:outer',
++  'A:span:inner',
++  'A:activity:operation:wait',
++  'B:span:outer',
++  'B:span:inner',
++  'B:activity:operation:wait',
++  'A:activity:operation=done:arg-0',
++  'B:activity:operation=done:arg-1'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R03_nested_span_parentage_3 (__main__.ReplayTurnSemantics.test_R03_nested_span_parentage_3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:span:outer', 'B:span:outer'] != ['A:span:outer', 'A:span:inner', 'A:activity:operation:wait[224 chars]g-2']
+
+First differing element 1:
+'B:span:outer'
+'A:span:inner'
+
+Second list contains 10 additional elements.
+First extra element 2:
+'A:activity:operation:wait'
+
+- ['A:span:outer', 'B:span:outer']
++ ['A:span:outer',
++  'A:span:inner',
++  'A:activity:operation:wait',
++  'B:span:outer',
++  'B:span:inner',
++  'B:activity:operation:wait',
++  'C:span:outer',
++  'C:span:inner',
++  'C:activity:operation:wait',
++  'A:activity:operation=done:arg-0',
++  'B:activity:operation=done:arg-1',
++  'C:activity:operation=done:arg-2'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R03_span_without_side_effect (__main__.ReplayTurnSemantics.test_R03_span_without_side_effect)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['B:activity:tax:wait', 'A:span:order', 'A:[16 chars]ait'] != ['A:span:order', 'A:activity:order:wait', '[78 chars]x-2']
+
+First differing element 0:
+'B:activity:tax:wait'
+'A:span:order'
+
+Second list contains 2 additional elements.
+First extra element 3:
+'A:activity:order=done:order-1'
+
+- ['B:activity:tax:wait', 'A:span:order', 'A:activity:order:wait']
++ ['A:span:order',
++  'A:activity:order:wait',
++  'B:activity:tax:wait',
++  'A:activity:order=done:order-1',
++  'B:activity:tax=done:tax-2'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R04_three_turn_alternate (__main__.ReplayTurnSemantics.test_R04_three_turn_alternate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one'] != ['A:one', 'A:two', 'B:two', 'A:three']
+
+Second list contains 3 additional elements.
+First extra element 1:
+'A:two'
+
+- ['A:one']
++ ['A:one', 'A:two', 'B:two', 'A:three'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R04_three_turn_cold (__main__.ReplayTurnSemantics.test_R04_three_turn_cold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one'] != ['A:one', 'A:two', 'B:two', 'A:three']
+
+Second list contains 3 additional elements.
+First extra element 1:
+'A:two'
+
+- ['A:one']
++ ['A:one', 'A:two', 'B:two', 'A:three'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R04_three_turn_warm_suffix (__main__.ReplayTurnSemantics.test_R04_three_turn_warm_suffix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one'] != ['A:one', 'A:two', 'B:two', 'A:three']
+
+Second list contains 3 additional elements.
+First extra element 1:
+'A:two'
+
+- ['A:one']
++ ['A:one', 'A:two', 'B:two', 'A:three'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R05_completion_order_forward_batch_0 (__main__.ReplayTurnSemantics.test_R05_completion_order_forward_batch_0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one', 'B:one'] != ['A:one', 'B:one', 'A:two', 'C:two']
+
+Second list contains 2 additional elements.
+First extra element 2:
+'A:two'
+
+- ['A:one', 'B:one']
++ ['A:one', 'B:one', 'A:two', 'C:two'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R05_completion_order_forward_batch_1 (__main__.ReplayTurnSemantics.test_R05_completion_order_forward_batch_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one', 'B:one'] != ['A:one', 'B:one', 'A:two', 'C:two']
+
+Second list contains 2 additional elements.
+First extra element 2:
+'A:two'
+
+- ['A:one', 'B:one']
++ ['A:one', 'B:one', 'A:two', 'C:two'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R05_completion_order_reverse_batch_0 (__main__.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one', 'B:one'] != ['A:one', 'B:one', 'C:two', 'A:two']
+
+Second list contains 2 additional elements.
+First extra element 2:
+'C:two'
+
+- ['A:one', 'B:one']
++ ['A:one', 'B:one', 'C:two', 'A:two'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R05_completion_order_reverse_batch_1 (__main__.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:one', 'B:one'] != ['A:one', 'B:one', 'C:two', 'A:two']
+
+Second list contains 2 additional elements.
+First extra element 2:
+'C:two'
+
+- ['A:one', 'B:one']
++ ['A:one', 'B:one', 'C:two', 'A:two'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R06_blocked_receiver_then_inline_sender (__main__.ReplayTurnSemantics.test_R06_blocked_receiver_then_inline_sender)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: [] != ['B:side:token=message', 'B:send:mailbox=m[277 chars]age']
+
+Second list contains 11 additional elements.
+First extra element 0:
+'B:side:token=message'
+
+- []
++ ['B:side:token=message',
++  'B:send:mailbox=message',
++  'B:activity:producer:wait',
++  'C:side:token=other',
++  'C:activity:parallel:wait',
++  'A:receive:mailbox=message',
++  'A:selectside:received=message',
++  'A:activity:consumer:wait',
++  'B:activity:producer=done:message',
++  'C:activity:parallel=done:other',
++  'A:activity:consumer=done:message'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R06_buffered_handoff_after_memo (__main__.ReplayTurnSemantics.test_R06_buffered_handoff_after_memo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['C:activity:parallel:wait'] != ['A:side:token=handoff', 'A:send:mailbox=ha[242 chars]e:c']
+
+First differing element 0:
+'C:activity:parallel:wait'
+'A:side:token=handoff'
+
+Second list contains 9 additional elements.
+First extra element 1:
+'A:send:mailbox=handoff'
+
++ ['A:side:token=handoff',
++  'A:send:mailbox=handoff',
++  'A:activity:producer:wait',
++  'B:receive:mailbox=handoff',
++  'B:side:copied=handoff',
++  'B:activity:consumer:wait',
+- ['C:activity:parallel:wait']
+? ^                          ^
+
++  'C:activity:parallel:wait',
+? ^                          ^
+
++  'A:activity:producer=done:handoff',
++  'B:activity:consumer=done:handoff',
++  'C:activity:parallel=done:c'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R06_spawn_after_inline_memo (__main__.ReplayTurnSemantics.test_R06_spawn_after_inline_memo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['B:activity:deliver:wait'] != ['A:side:token=a', 'A:spawn:children', 'A:a[176 chars]e:c']
+
+First differing element 0:
+'B:activity:deliver:wait'
+'A:side:token=a'
+
+Second list contains 8 additional elements.
+First extra element 1:
+'A:spawn:children'
+
++ ['A:side:token=a',
++  'A:spawn:children',
++  'A:activity:deliver:wait',
+- ['B:activity:deliver:wait']
+? ^                         ^
+
++  'B:activity:deliver:wait',
+? ^                         ^
+
++  'C:side:token=c',
++  'C:activity:deliver:wait',
++  'A:activity:deliver=done:a',
++  'B:activity:deliver=done:b',
++  'C:activity:deliver=done:c'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R06_spawn_before_explicit_span (__main__.ReplayTurnSemantics.test_R06_spawn_before_explicit_span)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:s[58 chars]wait'] != ['A:s[58 chars]wait', 'B:side:token=b', 'B:activity:deliver:w[135 chars]e:c']
+
+Second list contains 7 additional elements.
+First extra element 3:
+'B:side:token=b'
+
+- ['A:spawn:children', 'A:span:parent-span', 'A:activity:deliver:wait']
++ ['A:spawn:children',
++  'A:span:parent-span',
++  'A:activity:deliver:wait',
++  'B:side:token=b',
++  'B:activity:deliver:wait',
++  'C:span:child-span',
++  'C:activity:deliver:wait',
++  'A:activity:deliver=done:a',
++  'B:activity:deliver=done:b',
++  'C:activity:deliver=done:c'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R07_cancelled_timer_stays_cancelled (__main__.ReplayTurnSemantics.test_R07_cancelled_timer_stays_cancelled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token'] != ['A:token', 'A:after']
+
+Second list contains 1 additional elements.
+First extra element 1:
+'A:after'
+
+- ['A:token']
++ ['A:token', 'A:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R07_real_child_waits (__main__.ReplayTurnSemantics.test_R07_real_child_waits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token'] != ['A:token', 'A:after', 'B:after']
+
+Second list contains 2 additional elements.
+First extra element 1:
+'A:after'
+
+- ['A:token']
++ ['A:token', 'A:after', 'B:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R07_real_signal_waits (__main__.ReplayTurnSemantics.test_R07_real_signal_waits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token'] != ['A:token', 'B:after', 'A:after']
+
+Second list contains 2 additional elements.
+First extra element 1:
+'B:after'
+
+- ['A:token']
++ ['A:token', 'B:after', 'A:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R07_real_timer_waits (__main__.ReplayTurnSemantics.test_R07_real_timer_waits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token'] != ['A:token', 'A:after', 'B:after']
+
+Second list contains 2 additional elements.
+First extra element 1:
+'A:after'
+
+- ['A:token']
++ ['A:token', 'A:after', 'B:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R08_caught_activity_failure_then_inline_work (__main__.ReplayTurnSemantics.test_R08_caught_activity_failure_then_inline_work)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token'] != ['A:token', 'B:token', 'A:recovered']
+
+Second list contains 1 additional elements.
+First extra element 2:
+'A:recovered'
+
+- ['A:token', 'B:token']
++ ['A:token', 'B:token', 'A:recovered'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R08_retry_keeps_actor_identity (__main__.ReplayTurnSemantics.test_R08_retry_keeps_actor_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token'] != ['A:token', 'B:token', 'A:recovered']
+
+Second list contains 1 additional elements.
+First extra element 2:
+'A:recovered'
+
+- ['A:token', 'B:token']
++ ['A:token', 'B:token', 'A:recovered'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R09_empty_string_is_a_committed_value (__main__.ReplayTurnSemantics.test_R09_empty_string_is_a_committed_value)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: [] != ['A:emptyside:token=', 'A:activity:first:w[96 chars]e:b']
+
+Second list contains 6 additional elements.
+First extra element 0:
+'A:emptyside:token='
+
+- []
++ ['A:emptyside:token=',
++  'A:activity:first:wait',
++  'B:side:token=b',
++  'B:activity:first:wait',
++  'A:activity:first=done:',
++  'B:activity:first=done:b'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R09_null_payload_remains_distinct_from_missing (__main__.ReplayTurnSemantics.test_R09_null_payload_remains_distinct_from_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: [] != ['A:nullside:nil=null', 'A:activity:first:[98 chars]e:b']
+
+Second list contains 6 additional elements.
+First extra element 0:
+'A:nullside:nil=null'
+
+- []
++ ['A:nullside:nil=null',
++  'A:activity:first:wait',
++  'B:side:token=b',
++  'B:activity:first:wait',
++  'A:activity:first=done:a',
++  'B:activity:first=done:b'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R09_wrapped_payloads_across_restarts (__main__.ReplayTurnSemantics.test_R09_wrapped_payloads_across_restarts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token'] != ['A:token', 'B:token', 'A:token2']
+
+Second list contains 1 additional elements.
+First extra element 2:
+'A:token2'
+
+- ['A:token', 'B:token']
++ ['A:token', 'B:token', 'A:token2']
+?                      ++++++++++++
+ : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R10_sqlite_process_restart_2_wrapped_0 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token'] != ['A:token', 'B:token', 'A:after', 'B:after']
+
+Second list contains 2 additional elements.
+First extra element 2:
+'A:after'
+
+- ['A:token', 'B:token']
++ ['A:token', 'B:token', 'A:after', 'B:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R10_sqlite_process_restart_2_wrapped_1 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token'] != ['A:token', 'B:token', 'A:after', 'B:after']
+
+Second list contains 2 additional elements.
+First extra element 2:
+'A:after'
+
+- ['A:token', 'B:token']
++ ['A:token', 'B:token', 'A:after', 'B:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R10_sqlite_process_restart_3_wrapped_0 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_0)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token', 'C:token'] != ['A:token', 'B:token', 'C:token', 'A:after', 'B:after', 'C:after']
+
+Second list contains 3 additional elements.
+First extra element 3:
+'A:after'
+
+- ['A:token', 'B:token', 'C:token']
++ ['A:token', 'B:token', 'C:token', 'A:after', 'B:after', 'C:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R10_sqlite_process_restart_3_wrapped_1 (__main__.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 98, in evaluate
+    self.assertEqual(callbacks,expected['callbacks'],'committed callback ownership/count/order changed')
+AssertionError: Lists differ: ['A:token', 'B:token', 'C:token'] != ['A:token', 'B:token', 'C:token', 'A:after', 'B:after', 'C:after']
+
+Second list contains 3 additional elements.
+First extra element 3:
+'A:after'
+
+- ['A:token', 'B:token', 'C:token']
++ ['A:token', 'B:token', 'C:token', 'A:after', 'B:after', 'C:after'] : committed callback ownership/count/order changed
+
+======================================================================
+FAIL: test_R12_legacy_actor_tokens (__main__.ReplayTurnSemantics.test_R12_legacy_actor_tokens)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 96, in evaluate
+    self.assertEqual(result['Steps'][0]['Trace'],expected['first'],'initial task replay changed actor order')
+AssertionError: Lists differ: [] != ['Mira:side:receipt=invoice-83', 'Mira:act[72 chars]ait']
+
+Second list contains 4 additional elements.
+First extra element 0:
+'Mira:side:receipt=invoice-83'
+
+- []
++ ['Mira:side:receipt=invoice-83',
++  'Mira:activity:send:wait',
++  'Orin:side:receipt=shipment-29',
++  'Orin:activity:send:wait'] : initial task replay changed actor order
+
+======================================================================
+FAIL: test_R12_legacy_nested_spans (__main__.ReplayTurnSemantics.test_R12_legacy_nested_spans)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 96, in evaluate
+    self.assertEqual(result['Steps'][0]['Trace'],expected['first'],'initial task replay changed actor order')
+AssertionError: Lists differ: ['Left:span:parent', 'Right:span:parent', 'Right:activity:send:wait'] != ['Left:span:parent', 'Left:side:receipt=left', 'Left:span:child[73 chars]ait']
+
+First differing element 1:
+'Right:span:parent'
+'Left:side:receipt=left'
+
+Second list contains 3 additional elements.
+First extra element 3:
+'Left:activity:send:wait'
+
+- ['Left:span:parent', 'Right:span:parent', 'Right:activity:send:wait']
++ ['Left:span:parent',
++  'Left:side:receipt=left',
++  'Left:span:child',
++  'Left:activity:send:wait',
++  'Right:span:parent',
++  'Right:activity:send:wait'] : initial task replay changed actor order
+
+======================================================================
+FAIL: test_R12_legacy_ready_and_null (__main__.ReplayTurnSemantics.test_R12_legacy_ready_and_null)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 96, in evaluate
+    self.assertEqual(result['Steps'][0]['Trace'],expected['first'],'initial task replay changed actor order')
+AssertionError: Lists differ: ['Rea[17 chars]eipt=NOT_READY', 'Ready:activity:send:wait'] != ['Rea[17 chars]eipt=selected', 'Ready:activity:send:wait', 'N[47 chars]ait']
+
+First differing element 0:
+'Ready:selectside:receipt=NOT_READY'
+'Ready:selectside:receipt=selected'
+
+Second list contains 2 additional elements.
+First extra element 2:
+'Nil:nullside:nothing=null'
+
+- ['Ready:selectside:receipt=NOT_READY', 'Ready:activity:send:wait']
++ ['Ready:selectside:receipt=selected',
++  'Ready:activity:send:wait',
++  'Nil:nullside:nothing=null',
++  'Nil:activity:send:wait'] : initial task replay changed actor order
+
+======================================================================
+FAIL: test_R12_legacy_wrapped_receipts (__main__.ReplayTurnSemantics.test_R12_legacy_wrapped_receipts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 96, in evaluate
+    self.assertEqual(result['Steps'][0]['Trace'],expected['first'],'initial task replay changed actor order')
+AssertionError: Lists differ: [] != ['West:side:receipt=west', 'West:activity:[59 chars]ait']
+
+Second list contains 4 additional elements.
+First extra element 0:
+'West:side:receipt=west'
+
+- []
++ ['West:side:receipt=west',
++  'West:activity:send:wait',
++  'East:side:receipt=east',
++  'East:activity:send:wait'] : initial task replay changed actor order
+
+======================================================================
+FAIL: test_R13_logical_task_clock_cold (__main__.ReplayTurnSemantics.test_R13_logical_task_clock_cold)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:now:entry=0'] != ['A:now:entry=0', 'A:side:token=a', 'A:now:inline=0', 'A:[331 chars]e:b']
+
+Second list contains 15 additional elements.
+First extra element 1:
+'A:side:token=a'
+
+- ['A:now:entry=0']
+?                 ^
+
++ ['A:now:entry=0',
+?                 ^
+
++  'A:side:token=a',
++  'A:now:inline=0',
++  'A:activity:first:wait',
++  'B:side:token=b',
++  'B:activity:first:wait',
++  'A:activity:first=done:a',
++  'A:now:resumed=1000000000',
++  'A:span:resumed',
++  'A:activity:second:wait',
++  'B:activity:first=done:b',
++  'B:now:resumed=1000000000',
++  'B:activity:second:wait',
++  'A:activity:second=done:done:a',
++  'A:now:third=2000000000',
++  'B:activity:second=done:done:b'] : recovery changed the actor program outcome
+
+======================================================================
+FAIL: test_R13_logical_task_clock_warm_suffix (__main__.ReplayTurnSemantics.test_R13_logical_task_clock_warm_suffix)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_replay_turns.py", line 129, in test
+    self.evaluate(case)
+  File "/app/tests/test_replay_turns.py", line 99, in evaluate
+    self.assertEqual(result['Steps'][-1]['Trace'],expected['trace'],'recovery changed the actor program outcome')
+AssertionError: Lists differ: ['A:now:entry=0'] != ['A:now:entry=0', 'A:side:token=a', 'A:now:inline=0', 'A:[331 chars]e:b']
+
+Second list contains 15 additional elements.
+First extra element 1:
+'A:side:token=a'
+
+- ['A:now:entry=0']
+?                 ^
+
++ ['A:now:entry=0',
+?                 ^
+
++  'A:side:token=a',
++  'A:now:inline=0',
++  'A:activity:first:wait',
++  'B:side:token=b',
++  'B:activity:first:wait',
++  'A:activity:first=done:a',
++  'A:now:resumed=1000000000',
++  'A:span:resumed',
++  'A:activity:second:wait',
++  'B:activity:first=done:b',
++  'B:now:resumed=1000000000',
++  'B:activity:second:wait',
++  'A:activity:second=done:done:a',
++  'A:now:third=2000000000',
++  'B:activity:second=done:done:b'] : recovery changed the actor program outcome
+
+----------------------------------------------------------------------
+Ran 57 tests in 1.151s
+
+FAILED (failures=41)

@@ -1,0 +1,343 @@
+diff --git a/tests/test_window_semantics.py b/tests/test_window_semantics.py
+new file mode 100644
+--- /dev/null
++++ b/tests/test_window_semantics.py
+@@ -0,0 +1,338 @@
++"""Independent behavioral specification; candidate code runs only in a child."""
++import collections
++import copy
++import json
++import math
++import os
++from pathlib import Path
++import random
++import select
++import sqlite3
++import subprocess
++import sys
++import unittest
++
++SCHEMA = {"events": {"id": "INT", "p": "INT", "k": "INT", "j": "INT", "v": "INT", "flag": "INT"}}
++ROWS = [
++    (9, 2, 7, 1, None, 1), (2, 1, 1, 2, 8, 0), (5, 1, 4, 2, None, 1),
++    (1, 1, 1, 1, 4, 1), (11, None, None, 1, 6, None), (6, 1, 8, 1, -3, 0),
++    (3, 1, 2, 1, None, None), (8, 2, 7, 1, 10, 0), (4, 1, 4, 1, 5, 1),
++    (7, 2, None, 2, 2, 1), (10, None, None, 1, None, 0), (12, 3, 0, 1, None, 1),
++]
++TABLES = {"events": [dict(zip(SCHEMA['events'], row)) for row in ROWS]}
++CASES = []
++
++
++def case(name, group, sql, *, schema=None, tables=None, oracle=None, expected=None, api='execute', error=False):
++    CASES.append(dict(name='test_' + name, group=group, sql=sql, schema=schema or SCHEMA,
++                      tables=TABLES if tables is None else tables, oracle=oracle or sql,
++                      expected=expected, api=api, error=error))
++
++
++def window_query(expression, spec):
++    return f'SELECT id, {expression} OVER ({spec}) AS answer FROM events ORDER BY id'
++
++
++# W01: Window aggregation must not change input cardinality or default peer frames.
++for name, spec in [('partition', 'PARTITION BY p'), ('global', ''),
++                   ('default_peer', 'PARTITION BY p ORDER BY k'),
++                   ('default_desc', 'PARTITION BY p ORDER BY k DESC NULLS LAST')]:
++    case('sum_' + name, 'W01', window_query('SUM(v)', spec))
++case('star_count_partition', 'W01', window_query('COUNT(*)', 'PARTITION BY p'))
++case('window_scalar_composition', 'W01', '''SELECT id, COALESCE(SUM(v) OVER (PARTITION BY p), -17) + id AS score,
++ CASE WHEN COUNT(v) OVER (PARTITION BY p) = 0 THEN 99 ELSE 7 END AS marker FROM events ORDER BY id''')
++
++# W02: Stable row identity must survive incompatible permutations and duplicates.
++case('incompatible_orders', 'W02', '''SELECT id,
++ SUM(v) OVER (PARTITION BY p ORDER BY k, id ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS a,
++ SUM(v) OVER (PARTITION BY j ORDER BY id DESC ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS b,
++ ROW_NUMBER() OVER (PARTITION BY p ORDER BY id DESC) AS rn FROM events ORDER BY id''')
++duplicate_tables = copy.deepcopy(TABLES)
++duplicate_tables['events'] += [copy.deepcopy(TABLES['events'][3]), copy.deepcopy(TABLES['events'][3])]
++case('duplicate_physical_rows', 'W02', '''SELECT p, k, v, SUM(v) OVER (PARTITION BY p ORDER BY k) AS a,
++ RANK() OVER (PARTITION BY p ORDER BY k) AS b FROM events ORDER BY p, k, v''', tables=duplicate_tables)
++case('hidden_window_order_key', 'W02', '''SELECT id FROM events
++ ORDER BY SUM(v) OVER (PARTITION BY p) DESC NULLS LAST, id''')
++case('repeated_same_expression', 'W02', '''SELECT id, SUM(v) OVER (PARTITION BY p ORDER BY k) AS a,
++ SUM(v) OVER (PARTITION BY p ORDER BY k) AS b FROM events ORDER BY id''')
++
++# W03: ROWS boundaries are inclusive, clipped, and may select an empty frame.
++for name, frame in [
++    ('own', 'CURRENT ROW AND CURRENT ROW'), ('sliding', '2 PRECEDING AND 1 FOLLOWING'),
++    ('past_only', '4 PRECEDING AND 2 PRECEDING'), ('future_only', '1 FOLLOWING AND 3 FOLLOWING'),
++    ('oversized', '99 PRECEDING AND 99 FOLLOWING'), ('tail', 'CURRENT ROW AND UNBOUNDED FOLLOWING'),
++    ('zero', '0 PRECEDING AND 0 FOLLOWING'),
++]:
++    case('rows_' + name, 'W03', window_query('SUM(v)', 'PARTITION BY p ORDER BY k, id ROWS BETWEEN ' + frame))
++case('rows_empty_count', 'W03', window_query('COUNT(*)', 'PARTITION BY p ORDER BY id ROWS BETWEEN 2 FOLLOWING AND 3 FOLLOWING'))
++
++# W04: GROUPS offsets count peer groups, not rows; all ordering terms matter.
++for name, frame in [('adjacent', '1 PRECEDING AND 1 FOLLOWING'), ('past', '2 PRECEDING AND 1 PRECEDING'),
++                    ('future', '1 FOLLOWING AND 2 FOLLOWING'), ('tail', 'CURRENT ROW AND UNBOUNDED FOLLOWING')]:
++    case('groups_' + name, 'W04', window_query('SUM(v)', 'PARTITION BY p ORDER BY k GROUPS BETWEEN ' + frame))
++case('groups_composite_peers', 'W04', window_query('COUNT(*)', 'PARTITION BY p ORDER BY k, j DESC GROUPS BETWEEN CURRENT ROW AND CURRENT ROW'))
++case('groups_no_order', 'W04', window_query('COUNT(*)', 'PARTITION BY p GROUPS BETWEEN CURRENT ROW AND CURRENT ROW'))
++
++# W05: RANGE offsets are value distances with directional and NULL semantics.
++for name, order, frame in [
++    ('ascending', 'k NULLS FIRST', '2 PRECEDING AND 1 FOLLOWING'),
++    ('descending', 'k DESC NULLS LAST', '2 PRECEDING AND 1 FOLLOWING'),
++    ('past_only', 'k', '3 PRECEDING AND 1 PRECEDING'),
++    ('future_only', 'k DESC', '1 FOLLOWING AND 4 FOLLOWING'),
++    ('left_unbounded', 'k NULLS LAST', 'UNBOUNDED PRECEDING AND 1 PRECEDING'),
++    ('right_unbounded', 'k DESC NULLS FIRST', '1 FOLLOWING AND UNBOUNDED FOLLOWING'),
++    ('zero_peers', 'k', '0 PRECEDING AND 0 FOLLOWING'),
++]:
++    case('range_' + name, 'W05', window_query('SUM(v)', 'PARTITION BY p ORDER BY ' + order + ' RANGE BETWEEN ' + frame))
++# Integral RANGE arithmetic must remain exact beyond binary64's integer precision.
++for range_case in CASES:
++    if range_case['name'] in {'test_range_ascending', 'test_range_descending'}:
++        range_case['tables'] = copy.deepcopy(TABLES)
++        for range_row in range_case['tables']['events']:
++            if range_row['k'] is not None:
++                range_row['k'] += 2 ** 60
++
++case('range_fractional', 'W05', 'SELECT id, SUM(v) OVER (ORDER BY k / 2.0 RANGE BETWEEN 0.5 PRECEDING AND 1.5 FOLLOWING) AS s FROM events ORDER BY id')
++text_schema = {'words': {'id': 'INT', 'k': 'TEXT', 'v': 'INT'}}
++text_tables = {'words': [{'id': i, 'k': k, 'v': v} for i, k, v in [(1, 'b', 2), (2, None, 3), (3, 'a', 5), (4, 'b', 7), (5, None, 11)]]}
++case('range_text_current', 'W05', 'SELECT id, SUM(v) OVER (ORDER BY k RANGE BETWEEN CURRENT ROW AND CURRENT ROW) AS s FROM words ORDER BY id', schema=text_schema, tables=text_tables)
++case('range_text_offset', 'W05', 'SELECT id, SUM(v) OVER (ORDER BY k RANGE BETWEEN 2 PRECEDING AND 2 FOLLOWING) AS s FROM words ORDER BY id', schema=text_schema, tables=text_tables)
++
++# W06: EXCLUDE acts on membership after boundaries, with peers even for ROWS.
++for unit in ('ROWS', 'GROUPS', 'RANGE'):
++    for exclude in ('CURRENT ROW', 'GROUP', 'TIES', 'NO OTHERS'):
++        case('exclude_' + unit.lower() + '_' + exclude.lower().replace(' ', '_'), 'W06',
++             window_query('SUM(v)', f'PARTITION BY p ORDER BY k {unit} BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE {exclude}'))
++case('exclude_ties_current_outside_frame', 'W06', window_query('COUNT(*)', 'PARTITION BY p ORDER BY k GROUPS BETWEEN 1 PRECEDING AND 1 PRECEDING EXCLUDE TIES'))
++case('exclude_all_without_order', 'W06', window_query('COUNT(*)', 'PARTITION BY p ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING EXCLUDE GROUP'))
++
++# W07: Aggregate operands and FILTER use row scope; empty COUNT differs from SUM.
++for func in ('SUM', 'COUNT', 'AVG', 'MIN', 'MAX'):
++    case('filter_' + func.lower(), 'W07', window_query(func + '(v) FILTER (WHERE flag = 1)', 'PARTITION BY p ORDER BY k ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW EXCLUDE TIES'))
++case('filter_count_star', 'W07', window_query('COUNT(*) FILTER (WHERE flag IS NULL OR v < 0)', 'PARTITION BY p ORDER BY id ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING'))
++case('scalar_operand', 'W07', window_query('SUM(CASE WHEN flag = 1 THEN COALESCE(v, 13) ELSE 0 - v END)', 'PARTITION BY p ORDER BY k, id ROWS BETWEEN 1 PRECEDING AND CURRENT ROW'))
++case('all_null_empty_distinction', 'W07', '''SELECT id,
++ SUM(v) OVER (PARTITION BY p) AS s, COUNT(v) OVER (PARTITION BY p) AS n,
++ COUNT(*) OVER (PARTITION BY p) AS rows_n,
++ AVG(v) OVER (PARTITION BY p) AS av FROM events ORDER BY id''')
++
++# W08: Ranking uses the partition, not frame/exclusion, and counts full peers.
++for func in ('ROW_NUMBER()', 'RANK()', 'DENSE_RANK()', 'PERCENT_RANK()', 'CUME_DIST()', 'NTILE(3)', 'NTILE(20)'):
++    order = 'k DESC NULLS FIRST, j' if not func.startswith(('ROW_NUMBER', 'NTILE')) else 'k DESC NULLS FIRST, id'
++    case('rank_' + func.split('(')[0].lower() + ('20' if '20' in func else ''), 'W08', window_query(func, 'PARTITION BY p ORDER BY ' + order + ' ROWS BETWEEN CURRENT ROW AND CURRENT ROW EXCLUDE CURRENT ROW'))
++case('rank_no_order', 'W08', '''SELECT id, RANK() OVER (PARTITION BY p) AS a,
++ DENSE_RANK() OVER (PARTITION BY p) AS b, CUME_DIST() OVER (PARTITION BY p) AS c FROM events ORDER BY id''')
++
++# W09: Navigation defaults apply only out of bounds; LAG/LEAD ignore frames.
++for name, func in [('lag', 'LAG(v)'), ('lead', 'LEAD(v, 2, -19)'), ('zero', 'LAG(v, 0, -19)'),
++                   ('default_expression', 'LEAD(v, 1, id + 100)'), ('long', 'LAG(v, 80, -19)')]:
++    case('navigation_' + name, 'W09', window_query(func, 'PARTITION BY p ORDER BY id ROWS BETWEEN CURRENT ROW AND CURRENT ROW EXCLUDE GROUP'))
++
++# W10: Value functions use the selected/excluded frame and respect NULL values.
++for name, func in [('first', 'FIRST_VALUE(v)'), ('last', 'LAST_VALUE(v)'), ('nth', 'NTH_VALUE(v, 2)'), ('missing', 'NTH_VALUE(v, 99)')]:
++    case('value_' + name, 'W10', window_query(func, 'PARTITION BY p ORDER BY k, id ROWS BETWEEN 1 PRECEDING AND 2 FOLLOWING EXCLUDE CURRENT ROW'))
++case('value_empty', 'W10', window_query('LAST_VALUE(v)', 'PARTITION BY p ORDER BY k GROUPS BETWEEN CURRENT ROW AND CURRENT ROW EXCLUDE GROUP'))
++case('value_default_peer', 'W10', window_query('LAST_VALUE(k)', 'PARTITION BY p ORDER BY k'))
++
++# W11: Named windows and inherited components are resolved before evaluation.
++case('named_inheritance', 'W11', '''SELECT id, SUM(v) OVER w AS s, COUNT(*) OVER w2 AS n,
++ LAG(v) OVER (w ORDER BY id) AS prev FROM events
++ WINDOW w AS (PARTITION BY p), w2 AS (w ORDER BY k GROUPS BETWEEN 1 PRECEDING AND CURRENT ROW)
++ ORDER BY id''')
++case('named_inline_frame', 'W11', '''SELECT id, SUM(v) OVER (w ROWS BETWEEN 1 PRECEDING AND CURRENT ROW) AS s
++ FROM events WINDOW w AS (PARTITION BY p ORDER BY id) ORDER BY id''')
++
++# W12: Grouping and HAVING finish before windows, including nested aggregates.
++case('grouped_nested_sum', 'W12', '''SELECT p, SUM(v) AS total,
++ SUM(SUM(v)) OVER (ORDER BY p NULLS LAST ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS cumulative
++ FROM events GROUP BY p HAVING COUNT(*) > 1 ORDER BY p NULLS LAST''')
++case('grouped_rank', 'W12', '''SELECT p, COUNT(*) AS n,
++ DENSE_RANK() OVER (ORDER BY COUNT(*) DESC) AS r FROM events GROUP BY p HAVING SUM(v) > 0 ORDER BY p''')
++case('grouped_filter_operand', 'W12', '''SELECT p,
++ SUM(SUM(v)) FILTER (WHERE COUNT(*) > 1) OVER () AS s FROM events GROUP BY p ORDER BY p''')
++case('grouped_global_empty', 'W12', 'SELECT COUNT(*) AS n, SUM(COUNT(*)) OVER () AS s FROM events WHERE id < 0')
++case('grouped_empty_having', 'W12', 'SELECT COUNT(*) AS n, SUM(COUNT(*)) OVER () AS s FROM events WHERE id < 0 HAVING COUNT(*) > 0')
++case('group_expression', 'W12', 'SELECT p + 1 AS g, SUM(SUM(v)) OVER (ORDER BY p + 1) AS s FROM events GROUP BY p + 1 ORDER BY g')
++
++# W13: QUALIFY is after windows, but before DISTINCT, final ORDER, and pagination.
++case('qualify_alias', 'W13', '''SELECT id, p, ROW_NUMBER() OVER (PARTITION BY p ORDER BY id DESC) AS rn
++ FROM events WHERE id > 1 QUALIFY rn <= 2 ORDER BY id LIMIT 4 OFFSET 1''',
++ oracle='''SELECT id, p, rn FROM (SELECT id, p, ROW_NUMBER() OVER (PARTITION BY p ORDER BY id DESC) AS rn
++ FROM events WHERE id > 1) WHERE rn <= 2 ORDER BY id LIMIT 4 OFFSET 1''')
++case('qualify_unprojected', 'W13', '''SELECT id FROM events
++ QUALIFY SUM(v) OVER (PARTITION BY p) > 10 ORDER BY id DESC LIMIT 3''',
++ oracle='SELECT id FROM (SELECT id, SUM(v) OVER (PARTITION BY p) AS z FROM events) WHERE z > 10 ORDER BY id DESC LIMIT 3')
++case('qualify_distinct', 'W13', '''SELECT DISTINCT p FROM events
++ QUALIFY ROW_NUMBER() OVER (PARTITION BY p ORDER BY id) <= 2 ORDER BY p NULLS LAST''',
++ oracle='SELECT DISTINCT p FROM (SELECT p, ROW_NUMBER() OVER (PARTITION BY p ORDER BY id) AS z FROM events) WHERE z <= 2 ORDER BY p NULLS LAST')
++case('qualify_grouped', 'W13', '''SELECT p, SUM(v) AS total FROM events GROUP BY p HAVING COUNT(*) > 1
++ QUALIFY RANK() OVER (ORDER BY SUM(v) DESC) <= 2 ORDER BY p''',
++ oracle='SELECT p, total FROM (SELECT p, SUM(v) AS total, RANK() OVER (ORDER BY SUM(v) DESC) AS z FROM events GROUP BY p HAVING COUNT(*) > 1) WHERE z <= 2 ORDER BY p')
++
++# W14: Derived scopes, CTEs and joins must retain their own phases.
++case('derived_two_window_stages', 'W14', '''SELECT id, s, SUM(s) OVER (PARTITION BY p ORDER BY id) AS second
++ FROM (SELECT id, p, SUM(v) OVER (PARTITION BY p ORDER BY k) AS s FROM events) AS q
++ WHERE id <> 3 ORDER BY id''')
++case('cte_reused', 'W14', '''WITH w AS (SELECT id, p, SUM(v) OVER (PARTITION BY p) AS s FROM events)
++ SELECT a.id, a.s, b.s AS b_s FROM w AS a JOIN w AS b ON a.id = b.id WHERE a.id < 5 ORDER BY a.id''')
++case('window_join_input', 'W14', '''SELECT a.id, SUM(b.v) OVER (PARTITION BY a.p ORDER BY a.id, b.id ROWS BETWEEN 1 PRECEDING AND CURRENT ROW) AS s
++ FROM events AS a JOIN events AS b ON a.p = b.p AND b.id < 5 WHERE a.id < 5 ORDER BY a.id, b.id''')
++case('window_cte_then_navigation', 'W14', '''WITH w AS (SELECT id, p, SUM(v) OVER (PARTITION BY p ORDER BY k) AS s FROM events)
++ SELECT id, s, LAG(s) OVER (PARTITION BY p ORDER BY id) AS previous FROM w ORDER BY id''')
++case('window_subquery_consumed', 'W14', '''SELECT p, SUM(s) AS total FROM
++ (SELECT p, SUM(v) OVER (PARTITION BY p ORDER BY k) AS s FROM events) AS q GROUP BY p ORDER BY p''')
++
++# W15: Empty inputs preserve output schema and global group semantics.
++case('empty_filtered_window', 'W15', 'SELECT id, SUM(v) OVER () AS s FROM events WHERE id < 0 ORDER BY id')
++case('empty_registered_table', 'W15', 'SELECT id, COUNT(*) OVER () AS n FROM events ORDER BY id', tables={'events': []})
++case('singleton', 'W15', '''SELECT id, PERCENT_RANK() OVER (ORDER BY k) AS p, CUME_DIST() OVER (ORDER BY k) AS c,
++ NTILE(4) OVER (ORDER BY k) AS n, SUM(v) OVER (ORDER BY k ROWS BETWEEN 1 FOLLOWING AND 1 FOLLOWING) AS s
++ FROM events WHERE id = 1''')
++case('static_relation', 'W15', 'SELECT SUM(7) OVER () AS s, COUNT(*) OVER () AS n, ROW_NUMBER() OVER () AS r')
++
++# W16: Public API composition, custom scalar env and re-entrancy, not SQL delegation.
++case('native_plan_reuse', 'W16', '''SELECT id, SUM(v) OVER (PARTITION BY p ORDER BY k) AS s,
++ LAG(v) OVER (PARTITION BY p ORDER BY id) AS prev FROM events ORDER BY id''', api='plan')
++case('grouped_native_plan_reuse', 'W16', '''SELECT p, SUM(SUM(v + 1)) OVER (ORDER BY p) AS s
++ FROM events GROUP BY p ORDER BY p''', api='plan')
++case('native_env_operand', 'W16', '''SELECT id, SUM(ABS(v)) OVER (PARTITION BY p ORDER BY id) AS s FROM events ORDER BY id''',
++ oracle='SELECT id, SUM(CASE WHEN v IS NULL THEN NULL ELSE ABS(v) + 17 END) OVER (PARTITION BY p ORDER BY id) AS s FROM events ORDER BY id', api='custom-env')
++case('native_env_aggregate', 'W16', 'SELECT id, SUM(v) OVER (PARTITION BY p ORDER BY k) AS s FROM events ORDER BY id',
++ oracle='SELECT id, SUM(v) OVER (PARTITION BY p ORDER BY k) + 101 AS s FROM events ORDER BY id', api='custom-aggregate')
++case('collision_names', 'W16', '''SELECT "_window_7", SUM("_window_8") OVER (PARTITION BY "_window_9" ORDER BY "_window_7") AS "_window_10"
++ FROM strange AS "_window_11" ORDER BY "_window_7"''',
++ schema={'strange': {'_window_7': 'INT', '_window_8': 'INT', '_window_9': 'INT'}},
++ tables={'strange': [{'_window_7': 2, '_window_8': 3, '_window_9': 1}, {'_window_7': 1, '_window_8': 5, '_window_9': 1}]})
++
++# W17: Invalid/unsupported requested frames must fail explicitly, never look valid.
++for name, expr, spec in [
++    ('negative_rows', 'SUM(v)', 'ORDER BY id ROWS BETWEEN -1 PRECEDING AND CURRENT ROW'),
++    ('fractional_groups', 'SUM(v)', 'ORDER BY k GROUPS BETWEEN 1.5 PRECEDING AND CURRENT ROW'),
++    ('negative_range', 'SUM(v)', 'ORDER BY k RANGE BETWEEN -0.5 PRECEDING AND CURRENT ROW'),
++    ('multi_key_range', 'SUM(v)', 'ORDER BY k, id RANGE BETWEEN 1 PRECEDING AND CURRENT ROW'),
++    ('range_without_order', 'SUM(v)', 'RANGE BETWEEN 1 PRECEDING AND CURRENT ROW'),
++    ('negative_lag', 'LAG(v, -1)', 'ORDER BY id'),
++    ('zero_nth', 'NTH_VALUE(v, 0)', 'ORDER BY id'),
++    ('zero_ntile', 'NTILE(0)', 'ORDER BY id'),
++    ('distinct_window', 'SUM(DISTINCT v)', 'PARTITION BY p'),
++]:
++    case('reject_' + name, 'W17', window_query(expr, spec), error=True)
++
++# W18: Metamorphic input identities, null peers and frames across deterministic seeds.
++for seed, kind, exclude in [(401, 'ROWS', 'TIES'), (827, 'GROUPS', 'CURRENT ROW'),
++                             (1337, 'RANGE', 'GROUP'), (2243, 'GROUPS', 'TIES')]:
++    rng = random.Random(seed)
++    data = [{'id': i, 'p': rng.choice([None, 1, 2]), 'k': rng.choice([None, -2, 0, 0, 3, 9]),
++             'j': rng.choice([0, 1]), 'v': rng.choice([None, -5, 0, 7, 12]), 'flag': rng.choice([None, 0, 1])}
++            for i in range(1, 28)]
++    rng.shuffle(data)
++    order = 'k DESC NULLS LAST' + (', id' if kind == 'ROWS' else '')
++    case('metamorphic_' + str(seed), 'W18', f'''SELECT id,
++ SUM(v) FILTER (WHERE flag = 1) OVER (PARTITION BY p ORDER BY {order} {kind} BETWEEN 1 PRECEDING AND 2 FOLLOWING EXCLUDE {exclude}) AS s,
++ COUNT(v) OVER (PARTITION BY p ORDER BY {order} {kind} BETWEEN 1 PRECEDING AND 2 FOLLOWING EXCLUDE {exclude}) AS n,
++ RANK() OVER (PARTITION BY j ORDER BY k NULLS FIRST) AS r FROM events ORDER BY id''', tables={'events': data})
++
++# P01: Existing non-window supported behavior, selected independently of the fix.
++for name, sql in [
++    ('projection', 'SELECT id, COALESCE(v, 0) AS n FROM events ORDER BY id'),
++    ('filter', 'SELECT id FROM events WHERE v > 3 OR flag IS NULL ORDER BY id'),
++    ('group', 'SELECT p, SUM(v) AS s, COUNT(*) AS n, COUNT(v) AS nv FROM events GROUP BY p ORDER BY p'),
++    ('having', 'SELECT p, SUM(v) AS s FROM events GROUP BY p HAVING COUNT(*) > 2 ORDER BY p'),
++    ('empty_aggregate', 'SELECT SUM(v) AS s, COUNT(*) AS n FROM events WHERE id < 0'),
++    ('distinct', 'SELECT DISTINCT p FROM events ORDER BY p'),
++    ('limit', 'SELECT id FROM events ORDER BY id DESC LIMIT 3 OFFSET 2'),
++    ('join', 'SELECT a.id, b.id AS other FROM events AS a JOIN events AS b ON a.id = b.id ORDER BY a.id'),
++    ('cte', 'WITH a AS (SELECT id, v FROM events WHERE id < 4) SELECT id, v FROM a ORDER BY id'),
++    ('union', 'SELECT id FROM (SELECT a.id FROM events AS a WHERE a.id < 3 UNION ALL SELECT b.id FROM events AS b WHERE b.id > 10) AS u ORDER BY id'),
++    ('count_operand', 'SELECT p, SUM(v + 2) AS s FROM events GROUP BY p ORDER BY p'),
++    ('case_3vl', 'SELECT id, CASE WHEN v > 3 THEN 1 WHEN v IS NULL THEN 9 ELSE 0 END AS c FROM events ORDER BY id'),
++]:
++    case('existing_' + name, 'P01', sql)
++
++
++def reference(item):
++    if item['expected'] is not None:
++        return item['expected']
++    connection = sqlite3.connect(':memory:')
++    try:
++        for name, columns in item['schema'].items():
++            names = list(columns)
++            quoted = lambda s: '"' + s.replace('"', '""') + '"'
++            connection.execute('CREATE TABLE ' + quoted(name) + ' (' + ','.join(quoted(n) + ' ' + columns[n] for n in names) + ')')
++            connection.executemany('INSERT INTO ' + quoted(name) + ' VALUES (' + ','.join('?' for _ in names) + ')',
++                                   [[row.get(n) for n in names] for row in item['tables'].get(name, [])])
++        cursor = connection.execute(item['oracle'])
++        return {'columns': [column[0] for column in cursor.description], 'rows': [list(row) for row in cursor]}
++    finally:
++        connection.close()
++
++
++class TestWindows(unittest.TestCase):
++    @classmethod
++    def setUpClass(cls):
++        assets = Path(os.environ.get('WINDOW_TEST_ASSETS', '/tests'))
++        candidate = os.environ.get('WINDOW_CANDIDATE_ROOT')
++        if candidate:
++            command = [sys.executable, '-I', '-B', str(assets / 'api_driver.py'), candidate]
++        else:
++            command = ['/usr/local/bin/python3', '-I', '/tests/launch_candidate.py',
++                       '/usr/local/bin/python3', '-I', '-B', '/opt/window-api-driver.py']
++        cls.worker_log = open('/tmp/window-worker.log', 'w')
++        cls.worker = subprocess.Popen(command, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=cls.worker_log,
++                                      text=True, bufsize=1, cwd='/tmp', env={'PATH': '/usr/local/bin:/usr/bin:/bin'})
++        cls.sequence = 0
++
++    @classmethod
++    def tearDownClass(cls):
++        if cls.worker.poll() is None:
++            cls.worker.stdin.close()
++            try:
++                cls.worker.wait(timeout=5)
++            except subprocess.TimeoutExpired:
++                cls.worker.kill(); cls.worker.wait()
++        cls.worker.stdout.close(); cls.worker_log.close()
++
++    def check(self, item):
++        self.__class__.sequence += 1
++        request = {key: item[key] for key in ('sql', 'schema', 'tables', 'api')}
++        request['id'] = self.sequence
++        try:
++            self.worker.stdin.write(json.dumps(request) + '\n'); self.worker.stdin.flush()
++        except (BrokenPipeError, OSError) as error:
++            self.fail('candidate runtime terminated: ' + str(error))
++        if not select.select([self.worker.stdout], [], [], 15)[0]:
++            self.fail('candidate exceeded per-request execution budget')
++        line = self.worker.stdout.readline()
++        self.assertTrue(line, 'candidate runtime terminated without a response')
++        try:
++            result = json.loads(line)
++        except ValueError:
++            self.fail('invalid candidate protocol output')
++        self.assertEqual(result.get('id'), self.sequence)
++        if item['error']:
++            self.assertEqual(result.get('status'), 'ExecuteError', result)
++            return
++        expected = reference(item)
++        self.assertEqual(result.get('status'), 'ok', result)
++        value = result['value']
++        self.assertTrue(value['inputs_unchanged'], 'caller-owned AST or tables mutated')
++        self.assertTrue(value['repeat_equal'], 'repeated native execution changed results')
++        self.assertEqual(value['columns'], expected['columns'], item['sql'])
++        self.assertEqual(len(value['rows']), len(expected['rows']), item['sql'])
++        for actual, wanted in zip(value['rows'], expected['rows']):
++            self.assertEqual(len(actual), len(wanted))
++            for a, b in zip(actual, wanted):
++                if isinstance(b, float):
++                    self.assertTrue(isinstance(a, (int, float)) and math.isclose(a, b, rel_tol=1e-10, abs_tol=1e-10), (actual, wanted, item['sql']))
++                else:
++                    self.assertEqual(a, b, (actual, wanted, item['sql']))
++
++
++for item in CASES:
++    def test(self, item=item):
++        self.check(item)
++    test.__doc__ = item['group'] + ': ' + item['name']
++    setattr(TestWindows, item['name'], test)
++
++if __name__ == '__main__':
++    unittest.main()

@@ -1,0 +1,35 @@
+schema:
+  score_sheet: "{players,start_points?,rounds}; players is seat order; start_points defaults to 25000"
+  round_state: "Each round may set dealer, honba, and riichi_sticks; otherwise carry current table state"
+  player_refs: "Names or seat indexes are accepted in result fields"
+  output: "{rounds,scores,standings,riichi_sticks,honba}"
+  scores: "Array of {player,points} in seat order"
+  standings: "Array of {player,points,rank}, sorted by points descending; ties stay in player input order and share rank"
+  tiles: "Suited tiles use 1m-9m, 1p-9p, 1s-9s; honors accept east/south/west/north/white/green/red and uppercase aliases E/S/W/N/P/F/C"
+
+win:
+  input: "{type,winner,from,riichi,furiten,hand}; from:null is tsumo, otherwise ron from that discarder"
+  output: "{kind,winner,han,fu,limit}; furiten wins instead output {kind:'chombo',offender}"
+  furiten: "A furiten win is resolved as a chombo by the winner: apply the normal chombo payment schedule, output {kind:'chombo',offender:winner}, do not deduct that win's riichi declaration, do not award the riichi pool, and leave honba and riichi sticks unchanged"
+  riichi: "For normal wins, a declared riichi first deducts 1000 into the live pool; the winner collects all live riichi sticks"
+  yaku_han: "Each comma-separated yaku before =N is worth N han: chiitoitsu=2; riichi,pinfu,menzen_tsumo,yakuhai,tanyao,iipeikou=1; honitsu=3; chinitsu=6; toitoi,sanankou,honroutou=2; add dora after summing yaku"
+  fu: "Start at 20; chiitoitsu fixed at 25; otherwise add closed ron +10, tsumo +2 except pinfu, pair/wait +2, dragon/seat/round pair +2, open triplets 2/4, closed triplets 4/8, open quads 8/16, and closed quads 16/32 for simple/terminal-or-honor groups, then round up to 10"
+  limits: "normal, mangan, haneman, baiman, sanbaiman, yakuman"
+  ron_settlement: "Round up to 100; discarder pays base*6 for dealer winner or base*4 for non-dealer winner, plus 300*honba"
+  tsumo_settlement: "Round up to 100; non-winners pay base*2 to dealer, dealer pays base*2 to a non-dealer winner, other non-dealers pay base*1 to a non-dealer winner, plus 100*honba from each non-winner"
+  counters: "Dealer wins keep dealer and add one honba; non-dealer wins advance dealer and reset honba"
+
+draw:
+  input: "{type,tenpai,riichi?,nagashi?,discards?,called_discards?}; discards is a mapping from player name to tile array"
+  riichi: "riichi is an array; each declaration deducts 1000 into the live pool before settlement"
+  nagashi: "nagashi is an array of claimant players"
+  nagashi_validity: "A claim is valid only when that player's discards are all terminals or honors and no called_discards entry names or indexes that player"
+  nagashi_success: "Score mangan as normal tsumo settlement, including +100*honba paid by each non-winner, use normal win counters, and output {kind:'nagashi',winner,limit:'mangan'}"
+  exhaustive_fallback: "If no nagashi claim is valid, split 3000 points among tenpai versus noten players, keep riichi sticks live, increase honba, and advance dealer only if the dealer is not tenpai"
+  output: "{kind:'draw',tenpai}"
+
+chombo:
+  input: "{type,offender}"
+  output: "{kind:'chombo',offender}"
+  payments: "Dealer offender pays 4000 to each other player; non-dealer offender pays 4000 to dealer and 2000 to each other non-dealer"
+  counters: "Do not advance dealer, honba, or riichi sticks"

@@ -1,0 +1,4 @@
+org	name	scala_binary	version	version_scheme
+com.acme	root	2.13	1.0.0	always
+com.acme	core	2.13	1.2.0	early-semver
+com.acme	util		1.0.0	always

@@ -1,0 +1,9 @@
+ARCHIVE libweak
+MEMBER mdeep
+SECTION .text - 8 -
+SYMBOL deep STRONG DEF .text 0
+MEMBER mextra
+SECTION .text - 8 -
+SYMBOL extra STRONG DEF .text 0
+SYMBOL deep STRONG UNDEF
+RELOC .text 0 deep REL32 -4

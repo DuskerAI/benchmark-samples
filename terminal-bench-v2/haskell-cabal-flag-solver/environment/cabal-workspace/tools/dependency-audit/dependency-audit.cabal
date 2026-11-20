@@ -1,0 +1,13 @@
+cabal-version: 2.4
+name: dependency-audit
+version: 1.0.0
+build-type: Simple
+
+executable dependency-audit
+  main-is: Main.hs
+  hs-source-dirs: app
+  build-depends:
+      base >=4.14 && <5,
+      acme-api ^>=2.1,
+      acme-codec ^>=1.4
+  default-language: Haskell2010

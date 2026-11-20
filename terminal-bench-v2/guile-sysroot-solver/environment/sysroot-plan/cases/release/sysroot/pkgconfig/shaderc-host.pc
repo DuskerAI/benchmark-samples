@@ -1,0 +1,6 @@
+Name: shaderc-host
+Version: 3.1.5
+Target: host
+Provides: shaderc = 3.1.5
+Cflags: -I/usr/include/shaderc
+Libs: -lshaderc

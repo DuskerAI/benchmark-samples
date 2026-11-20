@@ -1,0 +1,750 @@
+test_B01_2 (__main__.ResetSemantics.test_B01_2) ... FAIL
+test_B01_4 (__main__.ResetSemantics.test_B01_4) ... FAIL
+test_B01_8 (__main__.ResetSemantics.test_B01_8) ... FAIL
+test_B02_envelope (__main__.ResetSemantics.test_B02_envelope) ... FAIL
+test_B02_plain (__main__.ResetSemantics.test_B02_plain) ... FAIL
+test_B03_envelope (__main__.ResetSemantics.test_B03_envelope) ... FAIL
+test_B03_plain (__main__.ResetSemantics.test_B03_plain) ... FAIL
+test_B04_envelope (__main__.ResetSemantics.test_B04_envelope) ... FAIL
+test_B04_plain (__main__.ResetSemantics.test_B04_plain) ... FAIL
+test_B05_envelope (__main__.ResetSemantics.test_B05_envelope) ... FAIL
+test_B05_plain (__main__.ResetSemantics.test_B05_plain) ... FAIL
+test_B06_first_cut (__main__.ResetSemantics.test_B06_first_cut) ... FAIL
+test_B06_four (__main__.ResetSemantics.test_B06_four) ... FAIL
+test_B06_partial_cut (__main__.ResetSemantics.test_B06_partial_cut) ... ok
+test_B07_inherited (__main__.ResetSemantics.test_B07_inherited) ... ok
+test_B07_reset_child (__main__.ResetSemantics.test_B07_reset_child) ... ok
+test_B08_held_result (__main__.ResetSemantics.test_B08_held_result) ... FAIL
+test_B09_canceled (__main__.ResetSemantics.test_B09_canceled) ... FAIL
+test_B09_fired (__main__.ResetSemantics.test_B09_fired) ... FAIL
+test_B10_restart (__main__.ResetSemantics.test_B10_restart) ... ok
+test_B11_active_collector (__main__.ResetSemantics.test_B11_active_collector) ... FAIL
+test_B11_bulk (__main__.ResetSemantics.test_B11_bulk) ... FAIL
+test_B11_single (__main__.ResetSemantics.test_B11_single) ... FAIL
+test_B12_cycle (__main__.ResetSemantics.test_B12_cycle) ... FAIL
+test_B12_duplicate (__main__.ResetSemantics.test_B12_duplicate) ... FAIL
+test_B12_gap (__main__.ResetSemantics.test_B12_gap) ... FAIL
+test_B12_interior (__main__.ResetSemantics.test_B12_interior) ... FAIL
+test_B12_missing (__main__.ResetSemantics.test_B12_missing) ... FAIL
+test_B13_completed (__main__.ResetSemantics.test_B13_completed) ... FAIL
+test_B13_outstanding (__main__.ResetSemantics.test_B13_outstanding) ... FAIL
+test_B14_envelope (__main__.ResetSemantics.test_B14_envelope) ... FAIL
+test_B14_plain (__main__.ResetSemantics.test_B14_plain) ... FAIL
+test_P01_interior (__main__.ResetSemantics.test_P01_interior) ... ok
+test_P01_negative (__main__.ResetSemantics.test_P01_negative) ... ok
+test_P01_past_end (__main__.ResetSemantics.test_P01_past_end) ... ok
+test_P01_zero (__main__.ResetSemantics.test_P01_zero) ... ok
+test_P02_instance (__main__.ResetSemantics.test_P02_instance) ... ok
+test_P02_ownership (__main__.ResetSemantics.test_P02_ownership) ... ok
+test_P02_pending (__main__.ResetSemantics.test_P02_pending) ... ok
+test_P03_cold (__main__.ResetSemantics.test_P03_cold) ... ok
+test_P03_warm (__main__.ResetSemantics.test_P03_warm) ... ok
+test_P04_consumed (__main__.ResetSemantics.test_P04_consumed) ... ok
+test_P04_pending (__main__.ResetSemantics.test_P04_pending) ... ok
+test_P04_terminal (__main__.ResetSemantics.test_P04_terminal) ... ok
+test_P05_acknowledged (__main__.ResetSemantics.test_P05_acknowledged) ... ok
+test_P05_uncommitted (__main__.ResetSemantics.test_P05_uncommitted) ... ok
+test_P06_retained (__main__.ResetSemantics.test_P06_retained) ... ok
+
+======================================================================
+FAIL: test_B01_2 (__main__.ResetSemantics.test_B01_2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 120, in nested
+    self.ok([act('reset',label,Cut='first'),act('history'),act('history',Sequence=2)])
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [] != [{'id': '65b5b955-15e0-420b-a30b-152d3cc9c[864 chars]{}}}]
+
+Second list contains 5 additional elements.
+First extra element 0:
+{'id': '65b5b955-15e0-420b-a30b-152d3cc9cfb8', 'sid': 1, 't': 6, 'ts': '2025-01-01T00:00:00Z', 'attr': {}}
+
+- []
++ [{'attr': {},
++   'id': '65b5b955-15e0-420b-a30b-152d3cc9cfb8',
++   'sid': 1,
++   't': 6,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'metadata': {'nonce': 'c3f5f049a4e84508a7a2fc27b6f61952'},
++            'name': 'Root',
++            'queue': 'default',
++            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
++   'id': 'c3f5f049a4e84508a7a2fc27b6f61952-start',
++   'sid': 2,
++   't': 1,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'spanID': 'WzAsMCwwLDAsMCwwLDAsMF0='},
++   'id': 'cc464bc8-cd5e-436b-aeff-63626bf08361',
++   'seid': 1,
++   'sid': 3,
++   't': 19,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'result': 'InNlZWQ6YzNmNWYwNDlhNGU4NDUwOGE3YTJmYzI3YjZmNjE5NTIi'},
++   'id': '0a14cfc2-0f12-453d-8772-49cecfcb1bf7',
++   'seid': 2,
++   'sid': 4,
++   't': 18,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'inputs': ['ImMzZjVmMDQ5YTRlODQ1MDhhN2EyZmMyN2I2ZjYxOTUyIg=='],
++            'metadata': {},
++            'name': 'anchor'},
++   'id': 'e3b1df7d-ef2a-4b5f-a7c6-6c7396f68cff',
++   'seid': 3,
++   'sid': 5,
++   't': 11,
++   'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B01_4 (__main__.ResetSemantics.test_B01_4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 120, in nested
+    self.ok([act('reset',label,Cut='first'),act('history'),act('history',Sequence=2)])
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [] != [{'id': '301116d9-3934-453a-a3ed-2004c2314[864 chars]{}}}]
+
+Second list contains 5 additional elements.
+First extra element 0:
+{'id': '301116d9-3934-453a-a3ed-2004c2314b28', 'sid': 1, 't': 6, 'ts': '2025-01-01T00:00:00Z', 'attr': {}}
+
+- []
++ [{'attr': {},
++   'id': '301116d9-3934-453a-a3ed-2004c2314b28',
++   'sid': 1,
++   't': 6,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'metadata': {'nonce': '326439ac41af48f6a3eefc3a3126992b'},
++            'name': 'Root',
++            'queue': 'default',
++            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
++   'id': '326439ac41af48f6a3eefc3a3126992b-start',
++   'sid': 2,
++   't': 1,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'spanID': 'WzAsMCwwLDAsMCwwLDAsMF0='},
++   'id': '17d9abd1-6343-4c1e-8063-08eb5c6a6086',
++   'seid': 1,
++   'sid': 3,
++   't': 19,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'result': 'InNlZWQ6MzI2NDM5YWM0MWFmNDhmNmEzZWVmYzNhMzEyNjk5MmIi'},
++   'id': 'd9c7cc1c-cfd0-4118-82a6-c79c404b87ce',
++   'seid': 2,
++   'sid': 4,
++   't': 18,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'inputs': ['IjMyNjQzOWFjNDFhZjQ4ZjZhM2VlZmMzYTMxMjY5OTJiIg=='],
++            'metadata': {},
++            'name': 'anchor'},
++   'id': 'e7679e58-e875-4559-b38b-023a9891f22c',
++   'seid': 3,
++   'sid': 5,
++   't': 11,
++   'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B01_8 (__main__.ResetSemantics.test_B01_8)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 120, in nested
+    self.ok([act('reset',label,Cut='first'),act('history'),act('history',Sequence=2)])
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [] != [{'id': 'bd4fde6a-b7b3-4930-9186-210234ed8[864 chars]{}}}]
+
+Second list contains 5 additional elements.
+First extra element 0:
+{'id': 'bd4fde6a-b7b3-4930-9186-210234ed86ec', 'sid': 1, 't': 6, 'ts': '2025-01-01T00:00:00Z', 'attr': {}}
+
+- []
++ [{'attr': {},
++   'id': 'bd4fde6a-b7b3-4930-9186-210234ed86ec',
++   'sid': 1,
++   't': 6,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'metadata': {'nonce': '39e4c948e44e40819cd6550c2e73b050'},
++            'name': 'Root',
++            'queue': 'default',
++            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
++   'id': '39e4c948e44e40819cd6550c2e73b050-start',
++   'sid': 2,
++   't': 1,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'spanID': 'WzAsMCwwLDAsMCwwLDAsMF0='},
++   'id': '7e7ead56-ee10-4b5c-8e8c-07cf7914eab1',
++   'seid': 1,
++   'sid': 3,
++   't': 19,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'result': 'InNlZWQ6MzllNGM5NDhlNDRlNDA4MTljZDY1NTBjMmU3M2IwNTAi'},
++   'id': '930c4832-6923-40c1-8cdc-ac29e5c697ff',
++   'seid': 2,
++   'sid': 4,
++   't': 18,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'inputs': ['IjM5ZTRjOTQ4ZTQ0ZTQwODE5Y2Q2NTUwYzJlNzNiMDUwIg=='],
++            'metadata': {},
++            'name': 'anchor'},
++   'id': '8d6c416a-6bcc-4545-9ea5-52f87a4d2a72',
++   'seid': 3,
++   'sid': 5,
++   't': 11,
++   'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B02_envelope (__main__.ResetSemantics.test_B02_envelope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 128, in ancestor_cut
+    self.ok([act('reset','wide',Cut='second'),act('reset','early',Cut='first'),act('history')])
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [] != [{'id': '2c23ed0b-da5d-4a13-9366-0d426fc61[900 chars]{}}}]
+
+Second list contains 5 additional elements.
+First extra element 0:
+{'id': '2c23ed0b-da5d-4a13-9366-0d426fc61a43', 'sid': 1, 't': 6, 'ts': '2025-01-01T00:00:00Z', 'attr': {}}
+
+- []
++ [{'attr': {},
++   'id': '2c23ed0b-da5d-4a13-9366-0d426fc61a43',
++   'sid': 1,
++   't': 6,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'metadata': {'nonce': 'c8ffbfb86d3d489da5cd3bcee0727ed0'},
++            'name': 'Root',
++            'queue': 'default',
++            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
++   'id': 'c8ffbfb86d3d489da5cd3bcee0727ed0-start',
++   'sid': 2,
++   't': 1,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'spanID': 'ZW52ZWxvcGU6WzAsMCwwLDAsMCwwLDAsMF0='},
++   'id': '4412deba-ec15-4291-b2f5-65f12f717d39',
++   'seid': 1,
++   'sid': 3,
++   't': 19,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'result': 'ZW52ZWxvcGU6InNlZWQ6YzhmZmJmYjg2ZDNkNDg5ZGE1Y2QzYmNlZTA3MjdlZDAi'},
++   'id': '02af1085-2cba-4e21-98a8-a3e7f50ed07d',
++   'seid': 2,
++   'sid': 4,
++   't': 18,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'inputs': ['ZW52ZWxvcGU6ImM4ZmZiZmI4NmQzZDQ4OWRhNWNkM2JjZWUwNzI3ZWQwIg=='],
++            'metadata': {},
++            'name': 'anchor'},
++   'id': '6a1c88f1-b73f-4ef1-af96-5ac4c72b2db1',
++   'seid': 3,
++   'sid': 5,
++   't': 11,
++   'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B02_plain (__main__.ResetSemantics.test_B02_plain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 128, in ancestor_cut
+    self.ok([act('reset','wide',Cut='second'),act('reset','early',Cut='first'),act('history')])
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [] != [{'id': '508b6b37-9ece-4fd0-a5a6-40671e25f[864 chars]{}}}]
+
+Second list contains 5 additional elements.
+First extra element 0:
+{'id': '508b6b37-9ece-4fd0-a5a6-40671e25f7e8', 'sid': 1, 't': 6, 'ts': '2025-01-01T00:00:00Z', 'attr': {}}
+
+- []
++ [{'attr': {},
++   'id': '508b6b37-9ece-4fd0-a5a6-40671e25f7e8',
++   'sid': 1,
++   't': 6,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'metadata': {'nonce': 'bfbba65ad6ab4afd853bfa26e52e2cd8'},
++            'name': 'Root',
++            'queue': 'default',
++            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
++   'id': 'bfbba65ad6ab4afd853bfa26e52e2cd8-start',
++   'sid': 2,
++   't': 1,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'spanID': 'WzAsMCwwLDAsMCwwLDAsMF0='},
++   'id': '17c10f26-6981-4e32-8ed6-78e98d46c3ed',
++   'seid': 1,
++   'sid': 3,
++   't': 19,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'result': 'InNlZWQ6YmZiYmE2NWFkNmFiNGFmZDg1M2JmYTI2ZTUyZTJjZDgi'},
++   'id': '6c35f9a6-c3b1-4a83-82d7-ac2eb533ac80',
++   'seid': 2,
++   'sid': 4,
++   't': 18,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'inputs': ['ImJmYmJhNjVhZDZhYjRhZmQ4NTNiZmEyNmU1MmUyY2Q4Ig=='],
++            'metadata': {},
++            'name': 'anchor'},
++   'id': 'c10ff233-179d-4bb9-a5c2-03be3e7574c0',
++   'seid': 3,
++   'sid': 5,
++   't': 11,
++   'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B03_envelope (__main__.ResetSemantics.test_B03_envelope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 136, in stale_activity
+    self.ok([act('reset','branch',Cut='first'),act('phase',Value='new'),act('tick','resumed'),act('activity','new')])
+  File "/app/tests/test_reset_provenance.py", line 91, in ok
+    if result['Kind'] in ('tick','execute','activity','child'):self.assertFalse(result['Nil'],result)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : {'Kind': 'tick', 'Label': 'resumed', 'Error': '', 'Nil': True, 'Instance': None, 'History': None, 'Executed': None, 'Output': None, 'Activity': None, 'Trace': None}
+
+======================================================================
+FAIL: test_B03_plain (__main__.ResetSemantics.test_B03_plain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 136, in stale_activity
+    self.ok([act('reset','branch',Cut='first'),act('phase',Value='new'),act('tick','resumed'),act('activity','new')])
+  File "/app/tests/test_reset_provenance.py", line 91, in ok
+    if result['Kind'] in ('tick','execute','activity','child'):self.assertFalse(result['Nil'],result)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : {'Kind': 'tick', 'Label': 'resumed', 'Error': '', 'Nil': True, 'Instance': None, 'History': None, 'Executed': None, 'Output': None, 'Activity': None, 'Trace': None}
+
+======================================================================
+FAIL: test_B04_envelope (__main__.ResetSemantics.test_B04_envelope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 149, in completed_work
+    self.assertEqual(self.count('activities'),0,'completed anchor was rescheduled')
+AssertionError: 1 != 0 : completed anchor was rescheduled
+
+======================================================================
+FAIL: test_B04_plain (__main__.ResetSemantics.test_B04_plain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 149, in completed_work
+    self.assertEqual(self.count('activities'),0,'completed anchor was rescheduled')
+AssertionError: 1 != 0 : completed anchor was rescheduled
+
+======================================================================
+FAIL: test_B05_envelope (__main__.ResetSemantics.test_B05_envelope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 158, in signals
+    self.assertEqual(self.output(end),['seed:'+self.nonce,'signal:steps:one','signal:steps:two','signal:steps:three','signal:finish:done'])
+                     ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 94, in output
+    self.assertIsInstance(observation['Output'],list,'workflow did not reach its required terminal result')
+AssertionError: None is not an instance of <class 'list'> : workflow did not reach its required terminal result
+
+======================================================================
+FAIL: test_B05_plain (__main__.ResetSemantics.test_B05_plain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 158, in signals
+    self.assertEqual(self.output(end),['seed:'+self.nonce,'signal:steps:one','signal:steps:two','signal:steps:three','signal:finish:done'])
+                     ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 94, in output
+    self.assertIsInstance(observation['Output'],list,'workflow did not reach its required terminal result')
+AssertionError: None is not an instance of <class 'list'> : workflow did not reach its required terminal result
+
+======================================================================
+FAIL: test_B06_first_cut (__main__.ResetSemantics.test_B06_first_cut)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 170, in parallel
+    self.assertEqual(self.count('activities'),count-1,'reset duplicated completed or outstanding actors')
+AssertionError: 2 != 1 : reset duplicated completed or outstanding actors
+
+======================================================================
+FAIL: test_B06_four (__main__.ResetSemantics.test_B06_four)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 170, in parallel
+    self.assertEqual(self.count('activities'),count-1,'reset duplicated completed or outstanding actors')
+AssertionError: 4 != 3 : reset duplicated completed or outstanding actors
+
+======================================================================
+FAIL: test_B08_held_result (__main__.ResetSemantics.test_B08_held_result)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 191, in abandoned_child
+    self.ok([act('reset','branch',Cut='first'),act('phase',Value='new'),act('tick','resumed'),act('child','new-child',Source='resumed')])
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_B09_canceled (__main__.ResetSemantics.test_B09_canceled)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 211, in timer
+    self.ok([act('tick','resumed',Cold=True),act('signal','finish',Name='finish',Value='done')])
+  File "/app/tests/test_reset_provenance.py", line 91, in ok
+    if result['Kind'] in ('tick','execute','activity','child'):self.assertFalse(result['Nil'],result)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : {'Kind': 'tick', 'Label': 'resumed', 'Error': '', 'Nil': True, 'Instance': None, 'History': None, 'Executed': None, 'Output': None, 'Activity': None, 'Trace': None}
+
+======================================================================
+FAIL: test_B09_fired (__main__.ResetSemantics.test_B09_fired)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 213, in timer
+    self.assertIsInstance(self.output(end),list,'reset did not let the workflow finish')
+                          ^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 94, in output
+    self.assertIsInstance(observation['Output'],list,'workflow did not reach its required terminal result')
+AssertionError: None is not an instance of <class 'list'> : workflow did not reach its required terminal result
+
+======================================================================
+FAIL: test_B11_active_collector (__main__.ResetSemantics.test_B11_active_collector)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 242, in retention
+    if variant=='active-collector':self.ok([act('collect')]);self.assertEqual(self.snapshot(),before);return
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'ins[43 chars]e', '1157eecfeec64a0cbd02fc5abe14af5e-branch',[1031 chars]7')]} != {'ins[43 chars]e', 'initial', None, None, None, '{"nonce":"11[3359 chars]7')]}
+Diff is 6062 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_B11_bulk (__main__.ResetSemantics.test_B11_bulk)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 243, in retention
+    failed=self.call([act('remove',Source='root')])[0];self.assertTrue(failed['Error'],'referenced ancestor was removed');self.assertEqual(self.snapshot(),before)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : referenced ancestor was removed
+
+======================================================================
+FAIL: test_B11_single (__main__.ResetSemantics.test_B11_single)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 243, in retention
+    failed=self.call([act('remove',Source='root')])[0];self.assertTrue(failed['Error'],'referenced ancestor was removed');self.assertEqual(self.snapshot(),before)
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '' is not true : referenced ancestor was removed
+
+======================================================================
+FAIL: test_B12_cycle (__main__.ResetSemantics.test_B12_cycle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 260, in corruption
+    failed=self.call([act('history'),act('tick','invalid')])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_B12_duplicate (__main__.ResetSemantics.test_B12_duplicate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 260, in corruption
+    failed=self.call([act('history'),act('tick','invalid')])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [{'id[354 chars]d': '3d6dce7824154319b7994658e05cb241-start-du[758 chars]{}}}] != [{'id[354 chars]d': 'f2203dc9-cd7d-45e3-812a-ad759066b539', 's[501 chars]{}}}]
+
+First differing element 2:
+{'id': '3d6dce7824154319b7994658e05cb241-start-du[201 chars] 0]}}
+{'id': 'f2203dc9-cd7d-45e3-812a-ad759066b539', 's[100 chars]0='}}
+
+First list contains 1 additional elements.
+First extra element 5:
+{'id': 'a4216607-04d0-4fa9-848b-63e6799c40e0', 'sid': 5, 't': 11, 'ts': '2025-01-01T00:00:00Z', 'seid': 3, 'attr': {'name': 'anchor', 'inputs': ['IjNkNmRjZTc4MjQxNTQzMTliNzk5NDY1OGUwNWNiMjQxIg=='], 'metadata': {}}}
+
+  [{'attr': {},
+    'id': '6a8f48db-b4ad-4ed7-8c9f-0db49302e2fb',
+    'sid': 1,
+    't': 6,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'metadata': {'nonce': '3d6dce7824154319b7994658e05cb241'},
+             'name': 'Root',
+             'queue': 'default',
+             'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
+    'id': '3d6dce7824154319b7994658e05cb241-start',
+-   'sid': 2,
+-   't': 1,
+-   'ts': '2025-01-01T00:00:00Z'},
+-  {'attr': {'metadata': {'nonce': '3d6dce7824154319b7994658e05cb241'},
+-            'name': 'Root',
+-            'queue': 'default',
+-            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
+-   'id': '3d6dce7824154319b7994658e05cb241-start-duplicate',
+    'sid': 2,
+    't': 1,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'spanID': 'WzAsMCwwLDAsMCwwLDAsMF0='},
+    'id': 'f2203dc9-cd7d-45e3-812a-ad759066b539',
+    'seid': 1,
+    'sid': 3,
+    't': 19,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'result': 'InNlZWQ6M2Q2ZGNlNzgyNDE1NDMxOWI3OTk0NjU4ZTA1Y2IyNDEi'},
+    'id': 'e4e0af10-70d1-4b24-95d1-8f6b428939b2',
+    'seid': 2,
+    'sid': 4,
+    't': 18,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'inputs': ['IjNkNmRjZTc4MjQxNTQzMTliNzk5NDY1OGUwNWNiMjQxIg=='],
+             'metadata': {},
+             'name': 'anchor'},
+    'id': 'a4216607-04d0-4fa9-848b-63e6799c40e0',
+    'seid': 3,
+    'sid': 5,
+    't': 11,
+    'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B12_gap (__main__.ResetSemantics.test_B12_gap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 260, in corruption
+    failed=self.call([act('history'),act('tick','invalid')])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 81, in call
+    self.assertEqual(o['History'],[e for e in expected if e['sid']>after],'prefix/suffix read lost event identity or ownership')
+AssertionError: Lists differ: [{'id[107 chars]d': '651d6f6f-b57e-45df-ac84-9d90602ad22f', 's[501 chars]{}}}] != [{'id[107 chars]d': 'cc2e9effd047483592398b1baa43bf61-start', [748 chars]{}}}]
+
+First differing element 1:
+{'id': '651d6f6f-b57e-45df-ac84-9d90602ad22f', 's[100 chars]0='}}
+{'id': 'cc2e9effd047483592398b1baa43bf61-start', [191 chars] 0]}}
+
+Second list contains 1 additional elements.
+First extra element 4:
+{'id': '4732ff24-40fb-4f74-bd5d-af3a2e2e4b40', 'sid': 5, 't': 11, 'ts': '2025-01-01T00:00:00Z', 'seid': 3, 'attr': {'name': 'anchor', 'inputs': ['ImNjMmU5ZWZmZDA0NzQ4MzU5MjM5OGIxYmFhNDNiZjYxIg=='], 'metadata': {}}}
+
+  [{'attr': {},
+    'id': '53e06d28-e0fe-4336-bd1a-649a3ee13e9f',
+    'sid': 1,
+    't': 6,
++   'ts': '2025-01-01T00:00:00Z'},
++  {'attr': {'metadata': {'nonce': 'cc2e9effd047483592398b1baa43bf61'},
++            'name': 'Root',
++            'queue': 'default',
++            'workflowSpanID': [0, 0, 0, 0, 0, 0, 0, 0]},
++   'id': 'cc2e9effd047483592398b1baa43bf61-start',
++   'sid': 2,
++   't': 1,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'spanID': 'WzAsMCwwLDAsMCwwLDAsMF0='},
+    'id': '651d6f6f-b57e-45df-ac84-9d90602ad22f',
+    'seid': 1,
+    'sid': 3,
+    't': 19,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'result': 'InNlZWQ6Y2MyZTllZmZkMDQ3NDgzNTkyMzk4YjFiYWE0M2JmNjEi'},
+    'id': 'd338d665-42a9-4d14-907c-1eb6d3dd9b91',
+    'seid': 2,
+    'sid': 4,
+    't': 18,
+    'ts': '2025-01-01T00:00:00Z'},
+   {'attr': {'inputs': ['ImNjMmU5ZWZmZDA0NzQ4MzU5MjM5OGIxYmFhNDNiZjYxIg=='],
+             'metadata': {},
+             'name': 'anchor'},
+    'id': '4732ff24-40fb-4f74-bd5d-af3a2e2e4b40',
+    'seid': 3,
+    'sid': 5,
+    't': 11,
+    'ts': '2025-01-01T00:00:00Z'}] : prefix/suffix read lost event identity or ownership
+
+======================================================================
+FAIL: test_B12_interior (__main__.ResetSemantics.test_B12_interior)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 260, in corruption
+    failed=self.call([act('history'),act('tick','invalid')])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_B12_missing (__main__.ResetSemantics.test_B12_missing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 260, in corruption
+    failed=self.call([act('history'),act('tick','invalid')])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_B13_completed (__main__.ResetSemantics.test_B13_completed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 275, in mixed_branch
+    self.ok([act('reset','a',Cut='first'),act('phase',Value='branch-a'),act('tick','a-turn'),act('activity','a-work')])
+  File "/app/tests/test_reset_provenance.py", line 91, in ok
+    if result['Kind'] in ('tick','execute','activity','child'):self.assertFalse(result['Nil'],result)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : {'Kind': 'tick', 'Label': 'a-turn', 'Error': '', 'Nil': True, 'Instance': None, 'History': None, 'Executed': None, 'Output': None, 'Activity': None, 'Trace': None}
+
+======================================================================
+FAIL: test_B13_outstanding (__main__.ResetSemantics.test_B13_outstanding)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 275, in mixed_branch
+    self.ok([act('reset','a',Cut='first'),act('phase',Value='branch-a'),act('tick','a-turn'),act('activity','a-work')])
+  File "/app/tests/test_reset_provenance.py", line 91, in ok
+    if result['Kind'] in ('tick','execute','activity','child'):self.assertFalse(result['Nil'],result)
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false : {'Kind': 'tick', 'Label': 'a-turn', 'Error': '', 'Nil': True, 'Instance': None, 'History': None, 'Executed': None, 'Output': None, 'Activity': None, 'Trace': None}
+
+======================================================================
+FAIL: test_B14_envelope (__main__.ResetSemantics.test_B14_envelope)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 315, in completed_child
+    end=self.ok([act('tick','last',Cold=True)])[-1]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+======================================================================
+FAIL: test_B14_plain (__main__.ResetSemantics.test_B14_plain)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 315, in completed_child
+    end=self.ok([act('tick','last',Cold=True)])[-1]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 88, in ok
+    results=self.call(actions,**options)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+----------------------------------------------------------------------
+Ran 47 tests in 4.778s
+
+FAILED (failures=28)

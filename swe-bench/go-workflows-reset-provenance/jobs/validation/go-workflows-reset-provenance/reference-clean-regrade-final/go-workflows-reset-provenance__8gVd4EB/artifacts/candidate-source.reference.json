@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-oracle-final/go-workflows-reset-provenance__9eYyVcz/artifacts/candidate-source",
+  "tree_sha256": "28067519e9552f213f6eede765d2fceaf7e3dc8cac1408ccafc639d682f1f6b4",
+  "file_count": 318,
+  "bytes": 4220144,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

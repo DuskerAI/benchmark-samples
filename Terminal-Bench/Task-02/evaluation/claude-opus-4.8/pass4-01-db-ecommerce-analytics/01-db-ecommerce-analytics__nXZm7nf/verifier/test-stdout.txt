@@ -1,0 +1,210 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.15, pytest-8.3.4, pluggy-1.6.0 -- /usr/local/bin/python
+cachedir: .pytest_cache
+rootdir: /tests
+collecting ... collected 92 items
+
+tests/test_outputs.py::TestTopCustomers::test_file_exists PASSED         [  1%]
+tests/test_outputs.py::TestTopCustomers::test_exactly_15_rows PASSED     [  2%]
+tests/test_outputs.py::TestTopCustomers::test_required_fields PASSED     [  3%]
+tests/test_outputs.py::TestTopCustomers::test_sorted_by_net_spend_desc PASSED [  4%]
+tests/test_outputs.py::TestTopCustomers::test_top_customer_matches_expected PASSED [  5%]
+tests/test_outputs.py::TestTopCustomers::test_all_customer_ids_match_expected PASSED [  6%]
+tests/test_outputs.py::TestTopCustomers::test_avg_order_value_consistent PASSED [  7%]
+tests/test_outputs.py::TestTopCustomers::test_net_spend_equals_gross_minus_returns PASSED [  8%]
+tests/test_outputs.py::TestMonthlyRevenue::test_file_exists PASSED       [  9%]
+tests/test_outputs.py::TestMonthlyRevenue::test_correct_row_count FAILED [ 10%]
+tests/test_outputs.py::TestMonthlyRevenue::test_required_fields PASSED   [ 11%]
+tests/test_outputs.py::TestMonthlyRevenue::test_month_format PASSED      [ 13%]
+tests/test_outputs.py::TestMonthlyRevenue::test_sorted_by_month_asc PASSED [ 14%]
+tests/test_outputs.py::TestMonthlyRevenue::test_first_month_has_null_growth PASSED [ 15%]
+tests/test_outputs.py::TestMonthlyRevenue::test_first_two_months_null_rolling_avg PASSED [ 16%]
+tests/test_outputs.py::TestMonthlyRevenue::test_third_month_has_rolling_avg PASSED [ 17%]
+tests/test_outputs.py::TestMonthlyRevenue::test_gross_revenue_values_match PASSED [ 18%]
+tests/test_outputs.py::TestMonthlyRevenue::test_net_revenue_values_match PASSED [ 19%]
+tests/test_outputs.py::TestMonthlyRevenue::test_net_revenue_equals_gross_minus_returns PASSED [ 20%]
+tests/test_outputs.py::TestMonthlyRevenue::test_mom_growth_based_on_net_revenue PASSED [ 21%]
+tests/test_outputs.py::TestMonthlyRevenue::test_rolling_avg_values_match PASSED [ 22%]
+tests/test_outputs.py::TestCategoryStats::test_file_exists PASSED        [ 23%]
+tests/test_outputs.py::TestCategoryStats::test_all_categories_present PASSED [ 25%]
+tests/test_outputs.py::TestCategoryStats::test_required_fields PASSED    [ 26%]
+tests/test_outputs.py::TestCategoryStats::test_sorted_by_revenue_desc PASSED [ 27%]
+tests/test_outputs.py::TestCategoryStats::test_values_match PASSED       [ 28%]
+tests/test_outputs.py::TestCategoryStats::test_net_revenue_equals_gross_minus_returns PASSED [ 29%]
+tests/test_outputs.py::TestCategoryStats::test_return_rate_pct_bounds PASSED [ 30%]
+tests/test_outputs.py::TestSupplierShare::test_file_exists PASSED        [ 31%]
+tests/test_outputs.py::TestSupplierShare::test_all_suppliers_present PASSED [ 32%]
+tests/test_outputs.py::TestSupplierShare::test_required_fields PASSED    [ 33%]
+tests/test_outputs.py::TestSupplierShare::test_share_pcts_sum_to_100 PASSED [ 34%]
+tests/test_outputs.py::TestSupplierShare::test_sorted_by_net_revenue_desc PASSED [ 35%]
+tests/test_outputs.py::TestSupplierShare::test_values_match PASSED       [ 36%]
+tests/test_outputs.py::TestSupplierShare::test_net_revenue_equals_gross_minus_returns PASSED [ 38%]
+tests/test_outputs.py::TestCustomerCohorts::test_file_exists PASSED      [ 39%]
+tests/test_outputs.py::TestCustomerCohorts::test_required_fields PASSED  [ 40%]
+tests/test_outputs.py::TestCustomerCohorts::test_correct_row_count PASSED [ 41%]
+tests/test_outputs.py::TestCustomerCohorts::test_sorted_by_cohort_month PASSED [ 42%]
+tests/test_outputs.py::TestCustomerCohorts::test_cohort_sizes_match PASSED [ 43%]
+tests/test_outputs.py::TestCustomerCohorts::test_retained_counts_match PASSED [ 44%]
+tests/test_outputs.py::TestCustomerCohorts::test_retention_rate_computed_correctly PASSED [ 45%]
+tests/test_outputs.py::TestCustomerCohorts::test_last_month_excluded PASSED [ 46%]
+tests/test_outputs.py::TestProductPerformance::test_file_exists PASSED   [ 47%]
+tests/test_outputs.py::TestProductPerformance::test_all_50_products_present PASSED [ 48%]
+tests/test_outputs.py::TestProductPerformance::test_required_fields PASSED [ 50%]
+tests/test_outputs.py::TestProductPerformance::test_sorted_by_net_revenue_desc PASSED [ 51%]
+tests/test_outputs.py::TestProductPerformance::test_abc_classes_valid PASSED [ 52%]
+tests/test_outputs.py::TestProductPerformance::test_cumulative_revenue_pct_increases PASSED [ 53%]
+tests/test_outputs.py::TestProductPerformance::test_revenue_share_pct_sums_to_100 PASSED [ 54%]
+tests/test_outputs.py::TestProductPerformance::test_abc_a_class_count PASSED [ 55%]
+tests/test_outputs.py::TestProductPerformance::test_return_rate_pct_bounds PASSED [ 56%]
+tests/test_outputs.py::TestProductPerformance::test_net_revenue_values_match PASSED [ 57%]
+tests/test_outputs.py::TestProductPerformance::test_abc_classification_logic PASSED [ 58%]
+tests/test_outputs.py::TestProductPerformance::test_net_revenue_equals_gross_minus_returns PASSED [ 59%]
+tests/test_outputs.py::TestCustomerSegments::test_file_exists PASSED     [ 60%]
+tests/test_outputs.py::TestCustomerSegments::test_required_fields PASSED [ 61%]
+tests/test_outputs.py::TestCustomerSegments::test_valid_segments PASSED  [ 63%]
+tests/test_outputs.py::TestCustomerSegments::test_sorted_by_total_net_spend_desc PASSED [ 64%]
+tests/test_outputs.py::TestCustomerSegments::test_all_customers_accounted PASSED [ 65%]
+tests/test_outputs.py::TestCustomerSegments::test_revenue_share_sums_to_100 PASSED [ 66%]
+tests/test_outputs.py::TestCustomerSegments::test_customer_counts_match PASSED [ 67%]
+tests/test_outputs.py::TestCustomerSegments::test_avg_recency_days_match PASSED [ 68%]
+tests/test_outputs.py::TestCustomerSegments::test_total_net_spend_match PASSED [ 69%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_file_exists PASSED [ 70%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_exactly_three_tiers PASSED [ 71%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_required_fields PASSED [ 72%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_valid_tier_names PASSED [ 73%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_sorted_by_tier_asc PASSED [ 75%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_product_counts_sum_to_50 PASSED [ 76%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_product_counts_match PASSED [ 77%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_net_revenue_match PASSED [ 78%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_return_rate_pct_bounds PASSED [ 79%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_net_revenue_equals_gross_minus_returns PASSED [ 80%]
+tests/test_outputs.py::TestPriceCohortPerformance::test_avg_net_revenue_per_product_consistent PASSED [ 81%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_file_exists PASSED   [ 82%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_required_fields PASSED [ 83%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_correct_row_count PASSED [ 84%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_sorted_correctly PASSED [ 85%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_month_format PASSED  [ 86%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_activity_month_ge_cohort_month PASSED [ 88%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_months_since_acquisition_correct PASSED [ 89%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_zero_months_for_acquisition_month PASSED [ 90%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_active_customers_positive PASSED [ 91%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_net_revenue_le_gross_revenue PASSED [ 92%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_active_customers_match PASSED [ 93%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_net_revenue_values_match PASSED [ 94%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_gross_revenue_values_match PASSED [ 95%]
+tests/test_outputs.py::TestCohortRevenueTrend::test_no_duplicate_cohort_activity_pairs PASSED [ 96%]
+tests/test_outputs.py::TestDataQuality::test_orphaned_returns_excluded PASSED [ 97%]
+tests/test_outputs.py::TestDataQuality::test_quantity_returned_capped_at_order_quantity PASSED [ 98%]
+tests/test_outputs.py::TestGoImplementation::test_go_source_exists PASSED [100%]
+
+=================================== FAILURES ===================================
+__________________ TestMonthlyRevenue.test_correct_row_count ___________________
+
+self = <test_outputs.TestMonthlyRevenue object at 0x758d6ca2d210>
+expected = [('2022-01', 3017.95, 21, 0.0, 3017.95, None, ...), ('2022-02', 6745.68, 43, 0.0, 6745.68, None, ...), ('2022-03', 129...2-05', 20804.12, 170, 642.9, 20161.22, 16469.66, ...), ('2022-06', 30029.58, 232, 295.12, 29734.46, 22082.1, ...), ...]
+
+    def test_correct_row_count(self, expected):
+        """Verify the number of months matches the number of distinct order months."""
+        data = load_json("monthly_revenue.json")
+>       assert len(data) == len(expected),             f"Expected {len(expected)} months, got {len(data)}"
+E       AssertionError: Expected 24 months, got 25
+E       assert 25 == 24
+E        +  where 25 = len([{'gross_revenue': 3017.95, 'mom_growth_pct': None, 'month': '2022-01', 'net_revenue': 3017.95, ...}, {'gross_revenue': 6745.68, 'mom_growth_pct': 123.52, 'month': '2022-02', 'net_revenue': 6745.68, ...}, {'gross_revenue': 12999.95, 'mom_growth_pct': 91.19, 'month': '2022-03', 'net_revenue': 12897.14, ...}, {'gross_revenue': 16490.9, 'mom_growth_pct': 26.78, 'month': '2022-04', 'net_revenue': 16350.61, ...}, {'gross_revenue': 20804.12, 'mom_growth_pct': 23.31, 'month': '2022-05', 'net_revenue': 20161.22, ...}, {'gross_revenue': 30029.58, 'mom_growth_pct': 47.48, 'month': '2022-06', 'net_revenue': 29734.46, ...}, ...])
+E        +  and   24 = len([('2022-01', 3017.95, 21, 0.0, 3017.95, None, ...), ('2022-02', 6745.68, 43, 0.0, 6745.68, None, ...), ('2022-03', 12999.95, 96, 102.81, 12897.14, 7553.59, ...), ('2022-04', 16490.9, 125, 140.29, 16350.61, 11997.81, ...), ('2022-05', 20804.12, 170, 642.9, 20161.22, 16469.66, ...), ('2022-06', 30029.58, 232, 295.12, 29734.46, 22082.1, ...), ...])
+
+tests/test_outputs.py:182: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_outputs.py::TestTopCustomers::test_file_exists
+PASSED tests/test_outputs.py::TestTopCustomers::test_exactly_15_rows
+PASSED tests/test_outputs.py::TestTopCustomers::test_required_fields
+PASSED tests/test_outputs.py::TestTopCustomers::test_sorted_by_net_spend_desc
+PASSED tests/test_outputs.py::TestTopCustomers::test_top_customer_matches_expected
+PASSED tests/test_outputs.py::TestTopCustomers::test_all_customer_ids_match_expected
+PASSED tests/test_outputs.py::TestTopCustomers::test_avg_order_value_consistent
+PASSED tests/test_outputs.py::TestTopCustomers::test_net_spend_equals_gross_minus_returns
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_file_exists
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_required_fields
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_month_format
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_sorted_by_month_asc
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_first_month_has_null_growth
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_first_two_months_null_rolling_avg
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_third_month_has_rolling_avg
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_gross_revenue_values_match
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_net_revenue_values_match
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_net_revenue_equals_gross_minus_returns
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_mom_growth_based_on_net_revenue
+PASSED tests/test_outputs.py::TestMonthlyRevenue::test_rolling_avg_values_match
+PASSED tests/test_outputs.py::TestCategoryStats::test_file_exists
+PASSED tests/test_outputs.py::TestCategoryStats::test_all_categories_present
+PASSED tests/test_outputs.py::TestCategoryStats::test_required_fields
+PASSED tests/test_outputs.py::TestCategoryStats::test_sorted_by_revenue_desc
+PASSED tests/test_outputs.py::TestCategoryStats::test_values_match
+PASSED tests/test_outputs.py::TestCategoryStats::test_net_revenue_equals_gross_minus_returns
+PASSED tests/test_outputs.py::TestCategoryStats::test_return_rate_pct_bounds
+PASSED tests/test_outputs.py::TestSupplierShare::test_file_exists
+PASSED tests/test_outputs.py::TestSupplierShare::test_all_suppliers_present
+PASSED tests/test_outputs.py::TestSupplierShare::test_required_fields
+PASSED tests/test_outputs.py::TestSupplierShare::test_share_pcts_sum_to_100
+PASSED tests/test_outputs.py::TestSupplierShare::test_sorted_by_net_revenue_desc
+PASSED tests/test_outputs.py::TestSupplierShare::test_values_match
+PASSED tests/test_outputs.py::TestSupplierShare::test_net_revenue_equals_gross_minus_returns
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_file_exists
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_required_fields
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_correct_row_count
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_sorted_by_cohort_month
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_cohort_sizes_match
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_retained_counts_match
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_retention_rate_computed_correctly
+PASSED tests/test_outputs.py::TestCustomerCohorts::test_last_month_excluded
+PASSED tests/test_outputs.py::TestProductPerformance::test_file_exists
+PASSED tests/test_outputs.py::TestProductPerformance::test_all_50_products_present
+PASSED tests/test_outputs.py::TestProductPerformance::test_required_fields
+PASSED tests/test_outputs.py::TestProductPerformance::test_sorted_by_net_revenue_desc
+PASSED tests/test_outputs.py::TestProductPerformance::test_abc_classes_valid
+PASSED tests/test_outputs.py::TestProductPerformance::test_cumulative_revenue_pct_increases
+PASSED tests/test_outputs.py::TestProductPerformance::test_revenue_share_pct_sums_to_100
+PASSED tests/test_outputs.py::TestProductPerformance::test_abc_a_class_count
+PASSED tests/test_outputs.py::TestProductPerformance::test_return_rate_pct_bounds
+PASSED tests/test_outputs.py::TestProductPerformance::test_net_revenue_values_match
+PASSED tests/test_outputs.py::TestProductPerformance::test_abc_classification_logic
+PASSED tests/test_outputs.py::TestProductPerformance::test_net_revenue_equals_gross_minus_returns
+PASSED tests/test_outputs.py::TestCustomerSegments::test_file_exists
+PASSED tests/test_outputs.py::TestCustomerSegments::test_required_fields
+PASSED tests/test_outputs.py::TestCustomerSegments::test_valid_segments
+PASSED tests/test_outputs.py::TestCustomerSegments::test_sorted_by_total_net_spend_desc
+PASSED tests/test_outputs.py::TestCustomerSegments::test_all_customers_accounted
+PASSED tests/test_outputs.py::TestCustomerSegments::test_revenue_share_sums_to_100
+PASSED tests/test_outputs.py::TestCustomerSegments::test_customer_counts_match
+PASSED tests/test_outputs.py::TestCustomerSegments::test_avg_recency_days_match
+PASSED tests/test_outputs.py::TestCustomerSegments::test_total_net_spend_match
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_file_exists
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_exactly_three_tiers
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_required_fields
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_valid_tier_names
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_sorted_by_tier_asc
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_product_counts_sum_to_50
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_product_counts_match
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_net_revenue_match
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_return_rate_pct_bounds
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_net_revenue_equals_gross_minus_returns
+PASSED tests/test_outputs.py::TestPriceCohortPerformance::test_avg_net_revenue_per_product_consistent
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_file_exists
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_required_fields
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_correct_row_count
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_sorted_correctly
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_month_format
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_activity_month_ge_cohort_month
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_months_since_acquisition_correct
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_zero_months_for_acquisition_month
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_active_customers_positive
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_net_revenue_le_gross_revenue
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_active_customers_match
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_net_revenue_values_match
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_gross_revenue_values_match
+PASSED tests/test_outputs.py::TestCohortRevenueTrend::test_no_duplicate_cohort_activity_pairs
+PASSED tests/test_outputs.py::TestDataQuality::test_orphaned_returns_excluded
+PASSED tests/test_outputs.py::TestDataQuality::test_quantity_returned_capped_at_order_quantity
+PASSED tests/test_outputs.py::TestGoImplementation::test_go_source_exists
+FAILED tests/test_outputs.py::TestMonthlyRevenue::test_correct_row_count - As...
+========================= 1 failed, 91 passed in 1.08s =========================

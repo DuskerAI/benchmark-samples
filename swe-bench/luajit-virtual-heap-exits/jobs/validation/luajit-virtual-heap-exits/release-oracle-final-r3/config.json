@@ -1,0 +1,10 @@
+{
+    "job_name": "release-oracle-final-r3",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs",
+    "n_concurrent_trials": 1,
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+        }
+    ]
+}

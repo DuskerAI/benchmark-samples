@@ -1,0 +1,43 @@
+{
+    "job_name": "trial-2",
+    "jobs_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs",
+    "agent_setup_timeout_multiplier": 3.0,
+    "n_concurrent_trials": 1,
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude",
+                "target": "/usr/local/bin/claude",
+                "read_only": true,
+                "bind": {
+                    "create_host_path": false
+                }
+            }
+        ]
+    },
+    "agents": [
+        {
+            "name": "claude-code",
+            "model_name": "anthropic/claude-sonnet-5-5",
+            "extra_allowed_hosts": [
+                "api.anthropic.com"
+            ],
+            "kwargs": {
+                "version": "2.1.295",
+                "reasoning_effort": "high",
+                "max_turns": 100,
+                "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+            },
+            "env": {
+                "DISABLE_AUTOUPDATER": "1"
+            }
+        }
+    ],
+    "tasks": [
+        {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+        }
+    ]
+}

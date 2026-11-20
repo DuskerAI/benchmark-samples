@@ -1,0 +1,46 @@
+{
+    "job_name": "gpt55-pass4-full-high-effort",
+    "jobs_dir": "/Users/<user>/Downloads/terminal_bench/terminal_bench/jobs",
+    "n_attempts": 4,
+    "timeout_multiplier": 2.0,
+    "agent_setup_timeout_multiplier": 3.0,
+    "n_concurrent_trials": 2,
+    "retry": {
+        "max_retries": 1,
+        "include_exceptions": [
+            "AgentSetupTimeoutError"
+        ],
+        "exclude_exceptions": [
+            "RewardFileEmptyError",
+            "RewardFileNotFoundError",
+            "VerifierOutputParseError",
+            "VerifierTimeoutError"
+        ]
+    },
+    "agents": [
+        {
+            "name": "codex",
+            "model_name": "gpt-5.5",
+            "kwargs": {
+                "reasoning_effort": "high"
+            }
+        }
+    ],
+    "datasets": [
+        {
+            "path": "/Users/<user>/Downloads/terminal_bench/terminal_bench/tasks",
+            "task_names": [
+                "01-*",
+                "02-*",
+                "03-*",
+                "04-*",
+                "05-*",
+                "06-*",
+                "07-*",
+                "08-*",
+                "09-*",
+                "10-*"
+            ]
+        }
+    ]
+}

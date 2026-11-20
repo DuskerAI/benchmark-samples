@@ -1,0 +1,17 @@
+packages:
+  packages/api
+  packages/codec
+  packages/engine
+  packages/schema
+  apps/plan-report
+  tools/workspace-probe
+
+active-repositories: :none
+
+constraints:
+  acme-codec -fast,
+  acme-policy -strict +signed
+
+optimization: False
+tests: False
+benchmarks: False

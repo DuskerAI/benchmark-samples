@@ -1,0 +1,288 @@
+Package: observatory-agent
+Version: 9.9-1
+Architecture: amd64
+Depends: libcore
+Description: observatory-agent package from quarantine
+
+Package: filler-lib-003
+Version: 3:1.3~build0-4
+Architecture: amd64
+Description: filler-lib-003 package from quarantine
+
+Package: filler-lib-007
+Version: 0:1.7~build1-3
+Architecture: amd64
+Description: filler-lib-007 package from quarantine
+
+Package: filler-lib-011
+Version: 4:1.11~build2-2
+Architecture: amd64
+Depends: filler-lib-010
+Description: filler-lib-011 package from quarantine
+
+Package: filler-lib-015
+Version: 1:1.15~build0-1
+Architecture: all
+Description: filler-lib-015 package from quarantine
+
+Package: filler-lib-019
+Version: 5:1.19~build1-5
+Architecture: amd64
+Description: filler-lib-019 package from quarantine
+
+Package: filler-lib-023
+Version: 2:2.3~build2-4
+Architecture: amd64
+Description: filler-lib-023 package from quarantine
+
+Package: filler-lib-027
+Version: 6:2.7~build0-3
+Architecture: amd64
+Description: filler-lib-027 package from quarantine
+
+Package: filler-lib-031
+Version: 3:2.11~build1-2
+Architecture: amd64
+Description: filler-lib-031 package from quarantine
+
+Package: filler-lib-035
+Version: 0:2.15~build2-1
+Architecture: all
+Description: filler-lib-035 package from quarantine
+
+Package: filler-lib-039
+Version: 4:2.19~build0-5
+Architecture: amd64
+Description: filler-lib-039 package from quarantine
+
+Package: filler-lib-043
+Version: 1:3.3~build1-4
+Architecture: amd64
+Description: filler-lib-043 package from quarantine
+
+Package: filler-lib-047
+Version: 5:3.7~build2-3
+Architecture: amd64
+Description: filler-lib-047 package from quarantine
+
+Package: filler-lib-051
+Version: 2:3.11~build0-2
+Architecture: amd64
+Provides: virtual-filler-051
+Description: filler-lib-051 package from quarantine
+
+Package: filler-lib-055
+Version: 6:3.15~build1-1
+Architecture: all
+Depends: filler-lib-054
+Description: filler-lib-055 package from quarantine
+
+Package: filler-lib-059
+Version: 3:3.19~build2-5
+Architecture: amd64
+Description: filler-lib-059 package from quarantine
+
+Package: filler-lib-063
+Version: 0:4.3~build0-4
+Architecture: amd64
+Description: filler-lib-063 package from quarantine
+
+Package: filler-lib-067
+Version: 4:4.7~build1-3
+Architecture: amd64
+Description: filler-lib-067 package from quarantine
+
+Package: filler-lib-071
+Version: 1:4.11~build2-2
+Architecture: amd64
+Description: filler-lib-071 package from quarantine
+
+Package: filler-lib-075
+Version: 5:4.15~build0-1
+Architecture: all
+Description: filler-lib-075 package from quarantine
+
+Package: filler-lib-079
+Version: 2:4.19~build1-5
+Architecture: amd64
+Description: filler-lib-079 package from quarantine
+
+Package: filler-lib-083
+Version: 6:5.3~build2-4
+Architecture: amd64
+Description: filler-lib-083 package from quarantine
+
+Package: filler-lib-087
+Version: 3:5.7~build0-3
+Architecture: amd64
+Description: filler-lib-087 package from quarantine
+
+Package: filler-lib-091
+Version: 0:5.11~build1-2
+Architecture: amd64
+Description: filler-lib-091 package from quarantine
+
+Package: filler-lib-095
+Version: 4:5.15~build2-1
+Architecture: all
+Description: filler-lib-095 package from quarantine
+
+Package: filler-lib-099
+Version: 1:5.19~build0-5
+Architecture: amd64
+Depends: filler-lib-098
+Description: filler-lib-099 package from quarantine
+
+Package: filler-lib-103
+Version: 5:6.3~build1-4
+Architecture: amd64
+Description: filler-lib-103 package from quarantine
+
+Package: filler-lib-107
+Version: 2:6.7~build2-3
+Architecture: amd64
+Description: filler-lib-107 package from quarantine
+
+Package: filler-lib-111
+Version: 6:6.11~build0-2
+Architecture: amd64
+Description: filler-lib-111 package from quarantine
+
+Package: filler-lib-115
+Version: 3:6.15~build1-1
+Architecture: all
+Description: filler-lib-115 package from quarantine
+
+Package: filler-lib-119
+Version: 0:6.19~build2-5
+Architecture: amd64
+Provides: virtual-filler-119
+Description: filler-lib-119 package from quarantine
+
+Package: filler-lib-123
+Version: 4:7.3~build0-4
+Architecture: amd64
+Description: filler-lib-123 package from quarantine
+
+Package: filler-lib-127
+Version: 1:7.7~build1-3
+Architecture: amd64
+Description: filler-lib-127 package from quarantine
+
+Package: filler-lib-131
+Version: 5:7.11~build2-2
+Architecture: amd64
+Description: filler-lib-131 package from quarantine
+
+Package: filler-lib-135
+Version: 2:7.15~build0-1
+Architecture: all
+Description: filler-lib-135 package from quarantine
+
+Package: filler-lib-139
+Version: 6:7.19~build1-5
+Architecture: amd64
+Description: filler-lib-139 package from quarantine
+
+Package: filler-lib-143
+Version: 3:8.3~build2-4
+Architecture: amd64
+Depends: filler-lib-142
+Description: filler-lib-143 package from quarantine
+
+Package: filler-lib-147
+Version: 0:8.7~build0-3
+Architecture: amd64
+Description: filler-lib-147 package from quarantine
+
+Package: filler-lib-151
+Version: 4:8.11~build1-2
+Architecture: amd64
+Description: filler-lib-151 package from quarantine
+
+Package: filler-lib-155
+Version: 1:8.15~build2-1
+Architecture: all
+Description: filler-lib-155 package from quarantine
+
+Package: filler-lib-159
+Version: 5:8.19~build0-5
+Architecture: amd64
+Description: filler-lib-159 package from quarantine
+
+Package: filler-lib-163
+Version: 2:9.3~build1-4
+Architecture: amd64
+Description: filler-lib-163 package from quarantine
+
+Package: filler-lib-167
+Version: 6:9.7~build2-3
+Architecture: amd64
+Description: filler-lib-167 package from quarantine
+
+Package: filler-lib-171
+Version: 3:9.11~build0-2
+Architecture: amd64
+Description: filler-lib-171 package from quarantine
+
+Package: filler-lib-175
+Version: 0:9.15~build1-1
+Architecture: all
+Description: filler-lib-175 package from quarantine
+
+Package: filler-lib-179
+Version: 4:9.19~build2-5
+Architecture: amd64
+Description: filler-lib-179 package from quarantine
+
+Package: filler-lib-183
+Version: 1:10.3~build0-4
+Architecture: amd64
+Description: filler-lib-183 package from quarantine
+
+Package: filler-lib-187
+Version: 5:10.7~build1-3
+Architecture: amd64
+Depends: filler-lib-186
+Provides: virtual-filler-187
+Description: filler-lib-187 package from quarantine
+
+Package: filler-lib-191
+Version: 2:10.11~build2-2
+Architecture: amd64
+Description: filler-lib-191 package from quarantine
+
+Package: filler-lib-195
+Version: 6:10.15~build0-1
+Architecture: all
+Description: filler-lib-195 package from quarantine
+
+Package: filler-lib-199
+Version: 3:10.19~build1-5
+Architecture: amd64
+Description: filler-lib-199 package from quarantine
+
+Package: filler-lib-203
+Version: 0:11.3~build2-4
+Architecture: amd64
+Description: filler-lib-203 package from quarantine
+
+Package: filler-lib-207
+Version: 4:11.7~build0-3
+Architecture: amd64
+Description: filler-lib-207 package from quarantine
+
+Package: filler-lib-211
+Version: 1:11.11~build1-2
+Architecture: amd64
+Description: filler-lib-211 package from quarantine
+
+Package: filler-lib-215
+Version: 5:11.15~build2-1
+Architecture: all
+Description: filler-lib-215 package from quarantine
+
+Package: filler-lib-219
+Version: 2:11.19~build0-5
+Architecture: amd64
+Description: filler-lib-219 package from quarantine

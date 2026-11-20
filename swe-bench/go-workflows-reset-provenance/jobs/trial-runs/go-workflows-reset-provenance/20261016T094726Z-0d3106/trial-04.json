@@ -1,0 +1,412 @@
+{
+  "trial_number": 4,
+  "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset9/jobs/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4/go-workflows-reset-provenance__ry6B97K",
+  "started_at": "2026-10-16T10:38:38.811116Z",
+  "finished_at": "2026-10-16T11:01:02.921510Z",
+  "agent_execution": {
+    "started_at": "2026-10-16T10:38:41.865853Z",
+    "finished_at": "2026-10-16T11:00:40.633809Z"
+  },
+  "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+  "exception_type": null,
+  "client_estimated_api_cost_usd": 3.1950849999999993,
+  "provider_billed_cost_usd": null,
+  "assistant_events": 104,
+  "valid_difficulty_trial": true,
+  "observed_primary_model": "claude-sonnet-5-5",
+  "observed_agent_version": "2.1.295",
+  "model_usage": {
+    "claude-sonnet-5-5": {
+      "inputTokens": 96,
+      "outputTokens": 120648,
+      "cacheReadInputTokens": 7314290,
+      "cacheCreationInputTokens": 210222,
+      "webSearchRequests": 0,
+      "costUSD": 3.1950849999999993,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 78427,
+      "canonicalModel": "claude-sonnet-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "agent_reported_error": false,
+  "agent_stop_category": "success",
+  "num_turns": 50,
+  "grade": {
+    "reward": 0,
+    "category": "acceptance_failure",
+    "exact_inventory": true,
+    "tests_executed": 47,
+    "fail_to_pass": {
+      "passed": 27,
+      "total": 28
+    },
+    "pass_to_pass": {
+      "passed": 19,
+      "total": 19
+    },
+    "nonpassing": [
+      "test_reset_provenance.ResetSemantics.test_B12_interior"
+    ],
+    "suite_exit_code": 1,
+    "requirement_groups": {
+      "B01": {
+        "passed": 3,
+        "total": 3
+      },
+      "B02": {
+        "passed": 2,
+        "total": 2
+      },
+      "B03": {
+        "passed": 2,
+        "total": 2
+      },
+      "B04": {
+        "passed": 2,
+        "total": 2
+      },
+      "B05": {
+        "passed": 2,
+        "total": 2
+      },
+      "B06": {
+        "passed": 3,
+        "total": 3
+      },
+      "B07": {
+        "passed": 2,
+        "total": 2
+      },
+      "B08": {
+        "passed": 1,
+        "total": 1
+      },
+      "B09": {
+        "passed": 2,
+        "total": 2
+      },
+      "B10": {
+        "passed": 1,
+        "total": 1
+      },
+      "P01": {
+        "passed": 4,
+        "total": 4
+      },
+      "P02": {
+        "passed": 3,
+        "total": 3
+      },
+      "B11": {
+        "passed": 3,
+        "total": 3
+      },
+      "B12": {
+        "passed": 4,
+        "total": 5
+      },
+      "P03": {
+        "passed": 2,
+        "total": 2
+      },
+      "B13": {
+        "passed": 2,
+        "total": 2
+      },
+      "P04": {
+        "passed": 3,
+        "total": 3
+      },
+      "P05": {
+        "passed": 2,
+        "total": 2
+      },
+      "B14": {
+        "passed": 2,
+        "total": 2
+      },
+      "P06": {
+        "passed": 1,
+        "total": 1
+      }
+    },
+    "trusted_assets_unchanged": true
+  },
+  "failure_category": "ACCEPTANCE_FAILURE",
+  "agent_budget_exhausted": false,
+  "agent_stop_reason": "completed",
+  "verification_outcome": "FAIL",
+  "command": [
+    "harbor",
+    "run",
+    "-p",
+    "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance",
+    "-a",
+    "claude-code",
+    "-m",
+    "anthropic/claude-sonnet-5-5",
+    "--ak",
+    "version=2.1.295",
+    "--ak",
+    "reasoning_effort=high",
+    "--ak",
+    "max_turns=100",
+    "--ak",
+    "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+    "--ae",
+    "DISABLE_AUTOUPDATER=1",
+    "--mounts",
+    "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+    "--agent-setup-timeout-multiplier",
+    "3",
+    "--allow-agent-host",
+    "api.anthropic.com",
+    "-e",
+    "docker",
+    "-n",
+    "1",
+    "-k",
+    "1",
+    "-r",
+    "0",
+    "--job-name",
+    "trial-4",
+    "--jobs-dir",
+    "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs"
+  ],
+  "attempt_number": 1,
+  "cli_exit_code": 0,
+  "duration_sec": 1346.32,
+  "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset9/jobs/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/trial-4-harbor.log",
+  "clean_regrade": {
+    "command": [
+      "harbor",
+      "job",
+      "regrade",
+      "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4",
+      "-p",
+      "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance",
+      "-e",
+      "docker",
+      "-n",
+      "1",
+      "--job-name",
+      "trial-4-regrade",
+      "--jobs-dir",
+      "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs"
+    ],
+    "cli_exit_code": 0,
+    "duration_sec": 17.79,
+    "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset9/jobs/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-4-regrade/go-workflows-reset-provenance__vnxvHhw/result.json",
+    "grade": {
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exact_inventory": true,
+      "tests_executed": 47,
+      "fail_to_pass": {
+        "passed": 27,
+        "total": 28
+      },
+      "pass_to_pass": {
+        "passed": 19,
+        "total": 19
+      },
+      "nonpassing": [
+        "test_reset_provenance.ResetSemantics.test_B12_interior"
+      ],
+      "suite_exit_code": 1,
+      "requirement_groups": {
+        "B01": {
+          "passed": 3,
+          "total": 3
+        },
+        "B02": {
+          "passed": 2,
+          "total": 2
+        },
+        "B03": {
+          "passed": 2,
+          "total": 2
+        },
+        "B04": {
+          "passed": 2,
+          "total": 2
+        },
+        "B05": {
+          "passed": 2,
+          "total": 2
+        },
+        "B06": {
+          "passed": 3,
+          "total": 3
+        },
+        "B07": {
+          "passed": 2,
+          "total": 2
+        },
+        "B08": {
+          "passed": 1,
+          "total": 1
+        },
+        "B09": {
+          "passed": 2,
+          "total": 2
+        },
+        "B10": {
+          "passed": 1,
+          "total": 1
+        },
+        "P01": {
+          "passed": 4,
+          "total": 4
+        },
+        "P02": {
+          "passed": 3,
+          "total": 3
+        },
+        "B11": {
+          "passed": 3,
+          "total": 3
+        },
+        "B12": {
+          "passed": 4,
+          "total": 5
+        },
+        "P03": {
+          "passed": 2,
+          "total": 2
+        },
+        "B13": {
+          "passed": 2,
+          "total": 2
+        },
+        "P04": {
+          "passed": 3,
+          "total": 3
+        },
+        "P05": {
+          "passed": 2,
+          "total": 2
+        },
+        "B14": {
+          "passed": 2,
+          "total": 2
+        },
+        "P06": {
+          "passed": 1,
+          "total": 1
+        }
+      },
+      "trusted_assets_unchanged": true
+    },
+    "exception": null,
+    "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset9/jobs/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/trial-4-regrade-harbor.log"
+  },
+  "original_grade": {
+    "reward": 0,
+    "category": "acceptance_failure",
+    "exact_inventory": true,
+    "tests_executed": 47,
+    "fail_to_pass": {
+      "passed": 27,
+      "total": 28
+    },
+    "pass_to_pass": {
+      "passed": 19,
+      "total": 19
+    },
+    "nonpassing": [
+      "test_reset_provenance.ResetSemantics.test_B12_interior"
+    ],
+    "suite_exit_code": 1,
+    "requirement_groups": {
+      "B01": {
+        "passed": 3,
+        "total": 3
+      },
+      "B02": {
+        "passed": 2,
+        "total": 2
+      },
+      "B03": {
+        "passed": 2,
+        "total": 2
+      },
+      "B04": {
+        "passed": 2,
+        "total": 2
+      },
+      "B05": {
+        "passed": 2,
+        "total": 2
+      },
+      "B06": {
+        "passed": 3,
+        "total": 3
+      },
+      "B07": {
+        "passed": 2,
+        "total": 2
+      },
+      "B08": {
+        "passed": 1,
+        "total": 1
+      },
+      "B09": {
+        "passed": 2,
+        "total": 2
+      },
+      "B10": {
+        "passed": 1,
+        "total": 1
+      },
+      "P01": {
+        "passed": 4,
+        "total": 4
+      },
+      "P02": {
+        "passed": 3,
+        "total": 3
+      },
+      "B11": {
+        "passed": 3,
+        "total": 3
+      },
+      "B12": {
+        "passed": 4,
+        "total": 5
+      },
+      "P03": {
+        "passed": 2,
+        "total": 2
+      },
+      "B13": {
+        "passed": 2,
+        "total": 2
+      },
+      "P04": {
+        "passed": 3,
+        "total": 3
+      },
+      "P05": {
+        "passed": 2,
+        "total": 2
+      },
+      "B14": {
+        "passed": 2,
+        "total": 2
+      },
+      "P06": {
+        "passed": 1,
+        "total": 1
+      }
+    },
+    "trusted_assets_unchanged": true
+  },
+  "failed_requirement_groups": {
+    "B12": 1
+  }
+}

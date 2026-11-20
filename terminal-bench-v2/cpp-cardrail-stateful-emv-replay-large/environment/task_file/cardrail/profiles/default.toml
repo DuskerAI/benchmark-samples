@@ -1,0 +1,6 @@
+profile_id = "default"
+priority = 10
+private_tag_prefix = "DF"
+allow_private_tags = false
+soft_script_status = ["6283"]
+hard_script_status = ["6985", "6A80"]

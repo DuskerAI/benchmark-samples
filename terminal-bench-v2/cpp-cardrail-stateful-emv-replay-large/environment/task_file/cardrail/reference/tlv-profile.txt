@@ -1,0 +1,5 @@
+# BER-TLV profile
+
+The tlv column contains upper-case hexadecimal BER-TLV data. Tags may be one or more bytes. If the low five bits of the first tag byte are 0x1f, tag bytes continue until a byte with the high bit clear. Lengths may use short form or long form. In long form, the low seven bits of the first length byte give the number of length bytes that follow.
+
+Constructed tags have bit 0x20 set in the first tag byte. Parse constructed values recursively until all nested primitive children inside the value have been visited. Private tags begin with DF. Private tags inside constructed templates count the same as top-level private tags, including tags nested through multiple constructed levels such as 70 containing BF0C containing DFxx. Do not add a separate raw-hex scan for DF bytes outside the BER-TLV traversal. Preserve private tag names in upper-case lexical order when the selected profile allows private tags. If the profile disallows private tags, output empty arrays but still parse through the TLV structure.

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "agent",
+  "retained_directory": "../../trial-4/sqlglot-window-visibility__DwVo2zg/agent",
+  "tree_sha256": "6e7bf568dd2c3488e3107a367017d509c6f50b201944434d72c6360fc6cae73e",
+  "file_count": 3,
+  "bytes": 3184115,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

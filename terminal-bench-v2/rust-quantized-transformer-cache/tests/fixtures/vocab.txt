@@ -1,0 +1,20 @@
+0	<eos>
+1	<unk>
+2	 
+3	q
+4	u
+5	an
+6	quant
+7	c
+8	ca
+9	cache
+10	 cache
+11	det
+12	ermin
+13	istic
+14	edge
+15	resume
+16	kv
+17	t
+18	m
+19	.

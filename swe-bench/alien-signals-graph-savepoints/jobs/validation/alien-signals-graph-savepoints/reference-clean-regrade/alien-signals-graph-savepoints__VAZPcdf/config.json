@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-graph-savepoints"
+    },
+    "trial_name": "alien-signals-graph-savepoints__VAZPcdf",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-graph-savepoints/jobs/reference-clean-regrade",
+    "job_id": "30bcca52-c2fc-4067-ae79-a2167ccd38fb",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "47f3c118-d4fe-4a63-b2df-22ff504e5e99",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-graph-savepoints/jobs/release-oracle/alien-signals-graph-savepoints__QJDrRPs"
+    }
+}

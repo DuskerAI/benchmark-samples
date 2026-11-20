@@ -1,0 +1,39 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "trial_name": "go-workflows-reset-provenance__ZkAs5YP",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/trial-runs/go-workflows-reset-provenance/20261016T094726Z-0d3106/jobs/trial-3",
+    "agent_setup_timeout_multiplier": 3.0,
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        }
+    },
+    "environment": {
+        "type": "docker",
+        "mounts": [
+            {
+                "type": "bind",
+                "source": "/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude",
+                "target": "/usr/local/bin/claude",
+                "read_only": true,
+                "bind": {
+                    "create_host_path": false
+                }
+            }
+        ]
+    },
+    "job_id": "afaebea2-4a08-4626-a4c6-3c9d07e9494f"
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-oracle/alien-signals-graph-savepoints__QJDrRPs/artifacts/candidate-source",
+  "tree_sha256": "aa030650aaf11a6797e980f61e80a3558902f4407fd0bbfa5322b000c54d7d40",
+  "file_count": 2,
+  "bytes": 23653,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

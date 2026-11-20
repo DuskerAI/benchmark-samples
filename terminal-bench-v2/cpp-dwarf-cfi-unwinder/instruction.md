@@ -1,0 +1,3 @@
+The offline unwinder in `/app/task_file` is producing bad crash stacks for stripped C++ services.
+
+Please fix the C++ project so it follows `/app/task_file/README.md`. It should still build with `cd /app/task_file && make`, and the verifier will run `/app/task_file/build/cfi_unwind <crash-record> <report-json>` against fresh local records. The README is the contract for the TCFI byte format, CFI instruction bytes, unwind stop cases, and JSON schema. The tool must read the CFI data named by the crash record, reconstruct every thread deterministically, write only the JSON file passed as `argv[2]`, and not rely on network access or on the bundled smoke data.

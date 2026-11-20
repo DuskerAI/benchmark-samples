@@ -1,0 +1,246 @@
+{
+  "task_directory": "../luajit-virtual-heap-exits",
+  "task_files_unchanged": true,
+  "model_series": [
+    {
+      "series": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/series.json",
+      "status": "COMPLETED",
+      "task_id": "dusker-ai/luajit-virtual-heap-exits",
+      "task_version": "1.0.0",
+      "model_id": "anthropic/claude-sonnet-5-5",
+      "passed_trials": 0,
+      "failed_trials": 4,
+      "trials": [
+        {
+          "trial_number": 1,
+          "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1/luajit-virtual-heap-exits__JY4nEve",
+          "result_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1/luajit-virtual-heap-exits__JY4nEve/result.json",
+          "result_sha256": "60b4f099a1bdd45bc92a58364c4b208269fa4ad69d76d34d990b6498f21f9657",
+          "grade_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1/luajit-virtual-heap-exits__JY4nEve/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 3.7515594000000005
+        },
+        {
+          "trial_number": 2,
+          "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6",
+          "result_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6/result.json",
+          "result_sha256": "6726a9374617d4ed480fbe8c7b71342365e6488b7187070a1eacf7a8c7753863",
+          "grade_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 3.9268091
+        },
+        {
+          "trial_number": 3,
+          "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe",
+          "result_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe/result.json",
+          "result_sha256": "3b9f6759a09ceb2b14270355dc00c70611239b5e62f9eee68fa2655da9330173",
+          "grade_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 2.7450342999999995
+        },
+        {
+          "trial_number": 4,
+          "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4/luajit-virtual-heap-exits__khjEAzE",
+          "result_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4/luajit-virtual-heap-exits__khjEAzE/result.json",
+          "result_sha256": "c7fa061a7cad55f4c617af5ea518cc8503bced312a27d4cba8bfead226ae5bb1",
+          "grade_path": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4/luajit-virtual-heap-exits__khjEAzE/verifier/grade.json",
+          "verification": "FAIL",
+          "grade_category": "acceptance_failure",
+          "nonpassing_tests": [
+            "test_jit_deopt.DeoptSemantics.test_G01_wide_hot"
+          ],
+          "exception": null,
+          "valid_difficulty_trial": true,
+          "client_estimated_api_cost_usd": 3.1217806
+        }
+      ]
+    }
+  ],
+  "native_trials": [
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1/luajit-virtual-heap-exits__JY4nEve",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1/luajit-virtual-heap-exits__JY4nEve/result.json",
+      "result_sha256": "60b4f099a1bdd45bc92a58364c4b208269fa4ad69d76d34d990b6498f21f9657",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1/luajit-virtual-heap-exits__JY4nEve/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1-regrade/luajit-virtual-heap-exits__9e6ruoZ",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1-regrade/luajit-virtual-heap-exits__9e6ruoZ/result.json",
+      "result_sha256": "f3a206259255ffee13d56edebf183035638e4076298a74cd5d31d9b24b066b26",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-1-regrade/luajit-virtual-heap-exits__9e6ruoZ/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6/result.json",
+      "result_sha256": "6726a9374617d4ed480fbe8c7b71342365e6488b7187070a1eacf7a8c7753863",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2/luajit-virtual-heap-exits__i7TWFc6/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2-regrade/luajit-virtual-heap-exits__wNsmmBC",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2-regrade/luajit-virtual-heap-exits__wNsmmBC/result.json",
+      "result_sha256": "9cf11891f2134b89e558c95d7b14e50d6bb67c6e0e274960ab5fcc7fe04319b9",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-2-regrade/luajit-virtual-heap-exits__wNsmmBC/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe/result.json",
+      "result_sha256": "3b9f6759a09ceb2b14270355dc00c70611239b5e62f9eee68fa2655da9330173",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3/luajit-virtual-heap-exits__BSiDJPe/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3-regrade/luajit-virtual-heap-exits__jfr3qzt",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3-regrade/luajit-virtual-heap-exits__jfr3qzt/result.json",
+      "result_sha256": "4a3939f1724a38032f391f338739bbfa83eb0d1a653299b55c42fefc693e175b",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-3-regrade/luajit-virtual-heap-exits__jfr3qzt/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4/luajit-virtual-heap-exits__khjEAzE",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4/luajit-virtual-heap-exits__khjEAzE/result.json",
+      "result_sha256": "c7fa061a7cad55f4c617af5ea518cc8503bced312a27d4cba8bfead226ae5bb1",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4/luajit-virtual-heap-exits__khjEAzE/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4-regrade/luajit-virtual-heap-exits__ANr3jsr",
+      "result": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4-regrade/luajit-virtual-heap-exits__ANr3jsr/result.json",
+      "result_sha256": "5ba5b0e8416e07619178696e1d3d5e5e1c1878f059df1b26cb29f59dcc646a7b",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "trial-runs/luajit-virtual-heap-exits/20261016T130255Z-a63e13/jobs/trial-4-regrade/luajit-virtual-heap-exits__ANr3jsr/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final/luajit-virtual-heap-exits__farcCaf",
+      "result": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final/luajit-virtual-heap-exits__farcCaf/result.json",
+      "result_sha256": "a80faf5f1f7ac028c3b8a3cea3df43a51e8e09174434e4ca595a247af0975289",
+      "task_checksum": "fe9b5e8da9fab24e6aa6c4d818efe0bd2b3f9a57ebfe70e9fc2547103ecc688c",
+      "grade": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final/luajit-virtual-heap-exits__farcCaf/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final-r3/luajit-virtual-heap-exits__VixZJFk",
+      "result": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final-r3/luajit-virtual-heap-exits__VixZJFk/result.json",
+      "result_sha256": "375ab9762bb24942d93f5c06c773340069b2f67ee808d9583e3cc8e445fd90cc",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "validation/luajit-virtual-heap-exits/reference-clean-regrade-final-r3/luajit-virtual-heap-exits__VixZJFk/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/release-integrity-probe-final-r2/luajit-virtual-heap-exits__vyqNRfE",
+      "result": "validation/luajit-virtual-heap-exits/release-integrity-probe-final-r2/luajit-virtual-heap-exits__vyqNRfE/result.json",
+      "result_sha256": "60e4b8d6437191362a71ec2d5b33cd6398496d63fe143ebedebeab0f57b8b985",
+      "task_checksum": "fe9b5e8da9fab24e6aa6c4d818efe0bd2b3f9a57ebfe70e9fc2547103ecc688c",
+      "grade": "validation/luajit-virtual-heap-exits/release-integrity-probe-final-r2/luajit-virtual-heap-exits__vyqNRfE/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/release-integrity-probe-final-r3/luajit-virtual-heap-exits__ugSEFcD",
+      "result": "validation/luajit-virtual-heap-exits/release-integrity-probe-final-r3/luajit-virtual-heap-exits__ugSEFcD/result.json",
+      "result_sha256": "9beadec9295fa0f751aa7d65603a964f30fc070a222221b256945e5d50499e25",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "validation/luajit-virtual-heap-exits/release-integrity-probe-final-r3/luajit-virtual-heap-exits__ugSEFcD/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/release-nop-final/luajit-virtual-heap-exits__VF77CYJ",
+      "result": "validation/luajit-virtual-heap-exits/release-nop-final/luajit-virtual-heap-exits__VF77CYJ/result.json",
+      "result_sha256": "9e0a7ba7827529e9ded9f9b7b18519714c6bc9c3100a4c9ad20c1f2b58175f6e",
+      "task_checksum": "fe9b5e8da9fab24e6aa6c4d818efe0bd2b3f9a57ebfe70e9fc2547103ecc688c",
+      "grade": "validation/luajit-virtual-heap-exits/release-nop-final/luajit-virtual-heap-exits__VF77CYJ/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/release-nop-final-r3/luajit-virtual-heap-exits__fttp8BG",
+      "result": "validation/luajit-virtual-heap-exits/release-nop-final-r3/luajit-virtual-heap-exits__fttp8BG/result.json",
+      "result_sha256": "989d614bcf04df50eb9390ec29045cb65ea59b277a9c19fc12d5b1fec1d8c901",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "validation/luajit-virtual-heap-exits/release-nop-final-r3/luajit-virtual-heap-exits__fttp8BG/verifier/grade.json",
+      "reward": 0,
+      "category": "acceptance_failure",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/release-oracle-final/luajit-virtual-heap-exits__qS2oFSc",
+      "result": "validation/luajit-virtual-heap-exits/release-oracle-final/luajit-virtual-heap-exits__qS2oFSc/result.json",
+      "result_sha256": "4c27fe5ac16f565717296333d460a6d10b346ce19783514ab15b3d10392a5b25",
+      "task_checksum": "fe9b5e8da9fab24e6aa6c4d818efe0bd2b3f9a57ebfe70e9fc2547103ecc688c",
+      "grade": "validation/luajit-virtual-heap-exits/release-oracle-final/luajit-virtual-heap-exits__qS2oFSc/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    },
+    {
+      "directory": "validation/luajit-virtual-heap-exits/release-oracle-final-r3/luajit-virtual-heap-exits__FGmskjZ",
+      "result": "validation/luajit-virtual-heap-exits/release-oracle-final-r3/luajit-virtual-heap-exits__FGmskjZ/result.json",
+      "result_sha256": "35685304206c818ca45fd2bdb167499803545e045a102761e0bd9b5116aea971",
+      "task_checksum": "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+      "grade": "validation/luajit-virtual-heap-exits/release-oracle-final-r3/luajit-virtual-heap-exits__FGmskjZ/verifier/grade.json",
+      "reward": 1,
+      "category": "acceptance_pass",
+      "exception": null
+    }
+  ],
+  "note": "Portable navigation for retained evaluation evidence. Native records are retained from execution time.",
+  "dataset_number": 10,
+  "current_task_checksum": "6150315eafc9251c1d8e1d9175628ca5ac7fab2ea93be318c89e6b4b9ae837fb",
+  "metadata_equivalent_evaluated_checksums": [
+    "56807bd7dfac1f55b498aafdefa63e89332cb322fb1d45e4c15d3b08af44fa8a",
+    "6150315eafc9251c1d8e1d9175628ca5ac7fab2ea93be318c89e6b4b9ae837fb"
+  ]
+}

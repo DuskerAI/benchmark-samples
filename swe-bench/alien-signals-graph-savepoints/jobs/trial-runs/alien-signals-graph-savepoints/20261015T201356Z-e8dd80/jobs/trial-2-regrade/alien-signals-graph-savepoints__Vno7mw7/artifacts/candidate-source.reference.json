@@ -1,0 +1,10 @@
+{
+  "format": "dusker-job-directory-reference-v1",
+  "reason": "byte-identical regrade capture",
+  "retained_directory": "../../../trial-2/alien-signals-graph-savepoints__c63kU4g/artifacts/candidate-source",
+  "tree_sha256": "d201e1a38f6af59d93441c084fc17bbf6a619e9c0b5c0cfc58b76a06e9a1feee",
+  "file_count": 2,
+  "bytes": 25497,
+  "restore_tool": "tooling/job_archive.py",
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

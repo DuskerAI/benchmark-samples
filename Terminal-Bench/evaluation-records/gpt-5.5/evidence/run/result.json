@@ -1,0 +1,88 @@
+{
+    "id": "6bf82c54-4845-4fbe-994e-09fafdffdb7f",
+    "started_at": "2026-07-30T14:05:05.333834",
+    "updated_at": "2026-07-30T17:57:50.393201",
+    "finished_at": "2026-07-30T17:57:50.393201",
+    "n_total_trials": 40,
+    "stats": {
+        "n_completed_trials": 40,
+        "n_errored_trials": 2,
+        "n_running_trials": 0,
+        "n_pending_trials": 0,
+        "n_cancelled_trials": 0,
+        "n_retries": 0,
+        "evals": {
+            "codex__gpt-5.5__tasks": {
+                "n_trials": 40,
+                "n_errors": 2,
+                "metrics": [
+                    {
+                        "mean": 0.5
+                    }
+                ],
+                "pass_at_k": {
+                    "2": 0.5833333333333333,
+                    "4": 0.6
+                },
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "03-sbom-vulnerability-analyzer__TKbirXT",
+                            "03-sbom-vulnerability-analyzer__udTNHaf",
+                            "10-debug-terraform-aws-infra__B5gsDC8",
+                            "01-db-ecommerce-analytics__BfcWfLu",
+                            "05-lang-go-merkle-tree__V8Jf5mJ",
+                            "04-ffmpeg-video-pipeline__aaxgSfN",
+                            "03-sbom-vulnerability-analyzer__kLASmRk",
+                            "01-db-ecommerce-analytics__XQ79nEu",
+                            "01-db-ecommerce-analytics__Y5Y9M8r",
+                            "04-ffmpeg-video-pipeline__WaCbQZL",
+                            "03-sbom-vulnerability-analyzer__vkvTbXF",
+                            "05-lang-go-merkle-tree__giBANKL",
+                            "02-job-shop-scheduling__QshiYeo",
+                            "05-lang-go-merkle-tree__jrjs5AX",
+                            "02-job-shop-scheduling__uY93LCt",
+                            "05-lang-go-merkle-tree__Q7VKm57",
+                            "04-ffmpeg-video-pipeline__oJJKXnp",
+                            "04-ffmpeg-video-pipeline__ssV3h8K",
+                            "01-db-ecommerce-analytics__ACHaRLC",
+                            "06-numeric-dashboard-fullstack-r__7vv624c"
+                        ],
+                        "1.0": [
+                            "07-corpus-ranking-repair__rwrFJPf",
+                            "08-tiered-cache-optimizer__ZeCv9Ce",
+                            "10-debug-terraform-aws-infra__M4c3g7S",
+                            "09-event-sourcing-compactor__5C2pL2p",
+                            "06-numeric-dashboard-fullstack-r__tUHW5re",
+                            "08-tiered-cache-optimizer__LN63kkA",
+                            "02-job-shop-scheduling__N9awxLL",
+                            "07-corpus-ranking-repair__fEcnsUP",
+                            "07-corpus-ranking-repair__ttiMQHp",
+                            "08-tiered-cache-optimizer__cfHpShk",
+                            "07-corpus-ranking-repair__YFPeCBF",
+                            "06-numeric-dashboard-fullstack-r__JQqX4aG",
+                            "10-debug-terraform-aws-infra__mgU5NoB",
+                            "09-event-sourcing-compactor__9gSTFfy",
+                            "08-tiered-cache-optimizer__uSkddUv",
+                            "09-event-sourcing-compactor__hJDUXMz",
+                            "06-numeric-dashboard-fullstack-r__29S7spd",
+                            "02-job-shop-scheduling__KCuQbtx",
+                            "09-event-sourcing-compactor__NeVjkn8",
+                            "10-debug-terraform-aws-infra__Dc3VmuT"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "ApiUsageLimitError": [
+                        "02-job-shop-scheduling__KCuQbtx",
+                        "06-numeric-dashboard-fullstack-r__7vv624c"
+                    ]
+                }
+            }
+        },
+        "n_input_tokens": 25571830,
+        "n_cache_tokens": 17671424,
+        "n_output_tokens": 554700,
+        "cost_usd": 64.97874200000001
+    }
+}

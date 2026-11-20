@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+    },
+    "trial_name": "luajit-virtual-heap-exits__vyqNRfE",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/release-integrity-probe-final-r2",
+    "agent": {
+        "name": "tooling.jit_probe:IntegrityProbe"
+    },
+    "job_id": "02c9631e-64a5-4d5e-9339-b9812ec66b76"
+}

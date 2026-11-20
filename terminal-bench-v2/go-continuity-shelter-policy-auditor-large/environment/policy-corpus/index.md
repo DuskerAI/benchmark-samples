@@ -1,0 +1,5 @@
+# Continuity policy corpus index
+
+This corpus is the controlling local policy record for shelter continuity decisions. Later errata override amendments, amendments override handbook text, and annexes or memos override handbook text only for their named jurisdiction and scenario. When two records have the same specificity, the later dated record controls.
+
+Case records may offer exceptions, but exceptions are narrow. `WATER_SHORTAGE_1D` is accepted only when the case has `WATER_RESERVE_TOO_LOW`, the exception is active on the case open date, and the shelter has at least the controlling minimum minus one day of water reserve. `STAFFING_10_PERCENT` is accepted only when the case has `STAFFING_RATIO_TOO_HIGH`, the exception is active on the case open date, and the actual staffing ratio is no more than ten percent above the controlling maximum. Exception codes are exact identifiers, not prefixes. Exceptions never waive generator class, transport confirmation, pet accommodation outside the harbor advisory rule, or accessibility retrofit duties.

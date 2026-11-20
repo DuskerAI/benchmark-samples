@@ -1,0 +1,3 @@
+(executable
+ (name rekor_gate)
+ (libraries unix yojson))

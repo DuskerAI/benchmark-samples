@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": true,
+  "case_id": "harbor-stale-013",
+  "evacuation_status": "advisory",
+  "exceptions": [],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-01",
+  "jurisdiction": "harbor",
+  "medical_dependent": false,
+  "opened_at": "2026-02-13",
+  "pet_accommodation": true,
+  "pet_count": 1,
+  "residents": 36,
+  "shelter_type": "school",
+  "staff_count": 2,
+  "transport_status": "not_required",
+  "water_days": 3
+}

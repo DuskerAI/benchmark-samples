@@ -1,0 +1,4 @@
+OBJECT prov1
+SECTION .text - 8 -
+SECTION .cd grp.tbl 12 -
+SYMBOL hook STRONG DEF .text 0

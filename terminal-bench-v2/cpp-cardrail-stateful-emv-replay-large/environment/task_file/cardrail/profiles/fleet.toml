@@ -1,0 +1,6 @@
+profile_id = "fleet"
+priority = 50
+private_tag_prefix = "DF"
+allow_private_tags = true
+soft_script_status = ["6283", "6300"]
+hard_script_status = ["6985", "6A80"]

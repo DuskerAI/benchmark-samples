@@ -1,0 +1,5 @@
+ARENA name=smoke size=256 page=64 quarantine=1
+ALLOC id=a gen=1 size=8 align=8 tag=aa
+ALLOC id=b gen=1 size=8 align=8 tag=bb
+FREE id=a gen=1 tag=aa
+ALLOC id=c gen=1 size=16 align=16 tag=cc

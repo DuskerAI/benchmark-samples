@@ -1,0 +1,7 @@
+OBJECT caller
+SECTION .text - 24 -
+SYMBOL cmain STRONG DEF .text 0
+SYMBOL hook STRONG UNDEF
+SYMBOL tbl STRONG UNDEF
+RELOC .text 4 hook REL32 -4
+RELOC .text 12 tbl REL32 0

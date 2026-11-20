@@ -1,0 +1,5 @@
+The C++ replay tool in `/app/task_file` is meant to read offline MRT/BGP RIB captures and write a deterministic JSON summary, but its current reports are not trustworthy on mixed table dumps and update streams. Mixed captures may combine peer-index tables, RIB entries, BGP4MP updates, AS4 transition paths, MP IPv6 attributes, withdrawals, ignored records, and malformed records; the counters and route state must still follow the local contract exactly.
+
+Bring `/app/task_file` into compliance with `/app/task_file/README.md`. Build it with `cd /app/task_file && make`; the verifier will run `/app/task_file/build/mrt_replay <input-capture> <output-json>` on generated binary captures. Do not hardcode fixture names, fixture contents, or output bytes. The program must read only the input path from `argv[1]`, write exactly the JSON path from `argv[2]`, and leave malformed records quarantined as the local contract describes.
+
+Keep the JSON schema and ordering from the README stable. No network access is needed.

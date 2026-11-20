@@ -1,0 +1,21 @@
+Arena league match rules
+
+The offline match official is /app/bin/arbiter after /app/scripts/build.sh. It has three commands:
+
+- /app/bin/arbiter adjudicate <events> <report> judges the whole event stream.
+- /app/bin/arbiter checkpoint <events> <count> <state> <report> judges the first count ordered cards, writes an opaque saved state, and writes the checkpoint report.
+- /app/bin/arbiter resume <events> <state> <report> resumes from a saved checkpoint and judges the remaining ordered cards.
+
+<events> is a UTF-8 text file of dot-terminated Erlang terms in this form:
+
+{Player,Millis,Clock,Action}.
+
+Player, Zone, and Victim are Erlang atoms. Millis, Counter, and move points are integers. Clock is a list of {Player,Counter} pairs. Action is either {move,Zone,Points} or {timeout,Victim}.
+
+Order cards by score-clock causality first: one card is earlier than another when every named clock counter is no larger and at least one is smaller. Missing counters count as zero. Among simultaneous cards, use Millis, then player atom name, then one-based source line.
+
+The arbiter starts every seen player at score zero and accepted counter zero. A card sees a player if that player appears as the card player, in the clock, or as a timeout victim. A move is accepted only when the card player's counter is exactly one past that player's accepted counter. An accepted move adds Points to that player, assigns Zone to that player, and subtracts 1 from the prior owner if the zone had a different owner. A timeout is accepted only when the reporter's own counter is next and the timeout's victim counter in the card equals the victim's accepted counter. An accepted timeout subtracts 2 from the victim and adds 1 to the reporter. Rejected cards change only the rejected count and do not advance any counter.
+
+Reports are JSON objects with status, accepted, rejected, scores, zones, and order. accepted and rejected are integers. scores is sorted by player name and contains objects with player and score. zones is sorted by zone name and contains objects with zone and owner. order contains accepted cards as player:counter:source_line strings in accepted order. Successful judgments write status as ok and exit zero.
+
+If checkpoint is asked for more cards than the ordered stream contains, it must write a report with status set to rejected, accepted set to 0, and rejected set to 0, then exit nonzero. resume must complete the match only when the saved ordered prefix still matches the event stream. If the saved prefix no longer matches, or the checkpoint count is past the stream length, resume must write a rejected report and exit nonzero.

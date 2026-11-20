@@ -1,0 +1,115 @@
+{
+  "source": "Dusker SWE catalog.json, dataset6 (copied verbatim at packaging time)",
+  "sample_location": "swe-bench/sqlglot-window-visibility",
+  "catalog_entry": {
+    "number": 6,
+    "slug": "sqlglot-window-visibility",
+    "task_id": "dusker-ai/sqlglot-window-visibility",
+    "version": "1.0.0",
+    "description": "Execute peer-aware windows without losing row identity or query-phase visibility",
+    "category": "Query engine semantic correctness",
+    "path": "dataset6/sqlglot-window-visibility",
+    "jobs": "dataset6/jobs",
+    "base_commit": "0ebcabfcb4edfbbdd18a4fa1a38485a59a5f6d7f",
+    "upstream_commit": "ad8764a0436a7b5c500b783ebe50dbf20c1e477c",
+    "repository": "https://github.com/tobymao/sqlglot",
+    "harbor_task_checksum": "989117a8d9f108092b68599c172dadd77b4acfd202967d813c90d77a19d578db",
+    "package_tree_sha256": "5375027f9d0963c9298aecec90ac6a5509a4b37228df85c4cbf082eff94eeb6a",
+    "files": {
+      "environment/Dockerfile": {
+        "sha256": "d3b49c430bfae026bec6e20c93aa07eea66612684aa51705b6235edbddd3f504",
+        "bytes": 811
+      },
+      "environment/base.bundle": {
+        "sha256": "f16c814e83b42c8033d03371d21e511697c92e3b624b838958c74b46e6da7784",
+        "bytes": 8982821
+      },
+      "instruction.md": {
+        "sha256": "2007421b7dee978343d107087b647c206f75f7dd5594c3e992d9587bb80fac46",
+        "bytes": 3325
+      },
+      "solution/gold_patch.diff": {
+        "sha256": "2c034e97d54bb817cdca701a9cb263cbf2a7c1a75f968f0559103d5a2002cb1e",
+        "bytes": 16137
+      },
+      "solution/solve.sh": {
+        "sha256": "fb8b1e7a36358b4e22a5e2ac9ed5802264684cd6a2f2a703b711882492c1432d",
+        "bytes": 190
+      },
+      "task.toml": {
+        "sha256": "10eb44fd8203fb9d723ec8433681415a1ee01c0c481db6289ae4562517e54b7f",
+        "bytes": 1125
+      },
+      "tests/Dockerfile": {
+        "sha256": "cfe76d94d7efc247f133dac54562a0f92b244a0844b9c13fee487092f869cd67",
+        "bytes": 1176
+      },
+      "tests/api_driver.py": {
+        "sha256": "026827ef5e628d8085989d48cbd5a8366aa6173d7e5deaf7e3163aaa6204dae9",
+        "bytes": 3045
+      },
+      "tests/base.bundle": {
+        "sha256": "f16c814e83b42c8033d03371d21e511697c92e3b624b838958c74b46e6da7784",
+        "bytes": 8982821
+      },
+      "tests/config.json": {
+        "sha256": "8ced2ab22d55c1c5eab5f07b79e4f3efcd10740ca9c42e74d09a07f6e6b5f98e",
+        "bytes": 17012
+      },
+      "tests/launch_candidate.py": {
+        "sha256": "9ea51e8f7dba248728c3ea441f202db940d0bab365b76fdfb620aff65cc4045e",
+        "bytes": 496
+      },
+      "tests/parser.py": {
+        "sha256": "7ee82479e086a6147a78e8e2e8653f1a267e6fa385af7c3d330c17c85fbf9027",
+        "bytes": 5596
+      },
+      "tests/run_script.sh": {
+        "sha256": "16c73914fd80fe516d6d044d7e02b5c0f25143c4d4477e7a549b340f77e115d4",
+        "bytes": 85
+      },
+      "tests/test.sh": {
+        "sha256": "e134f88536a2ba8185ad1bbdcf21e7cbd672487e847329273b1458cd432d1615",
+        "bytes": 838
+      },
+      "tests/test_patch.patch": {
+        "sha256": "f21362c41420c3d3f20d9f38424f96cfb44082799a2a77d7e4aaf90426dc5731",
+        "bytes": 23298
+      }
+    },
+    "evidence_tree_sha256": "a0c557d4d95328d58755bf73e8b7665336dbbf476e9e186e697745f409ffdeb7",
+    "declared_metadata_equivalent_checksums": [
+      "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "989117a8d9f108092b68599c172dadd77b4acfd202967d813c90d77a19d578db"
+    ],
+    "recorded_controls": {
+      "clean_regrade": {
+        "result": "validation/sqlglot-window-visibility/reference-clean-regrade/sqlglot-window-visibility__LjP7hdB/result.json",
+        "grade": "validation/sqlglot-window-visibility/reference-clean-regrade/sqlglot-window-visibility__LjP7hdB/verifier/grade.json",
+        "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+        "reward": 1
+      },
+      "nop": {
+        "result": "validation/sqlglot-window-visibility/release-nop/sqlglot-window-visibility__5SHCBRJ/result.json",
+        "grade": "validation/sqlglot-window-visibility/release-nop/sqlglot-window-visibility__5SHCBRJ/verifier/grade.json",
+        "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+        "reward": 0
+      },
+      "oracle": {
+        "result": "validation/sqlglot-window-visibility/release-oracle/sqlglot-window-visibility__gYmtcva/result.json",
+        "grade": "validation/sqlglot-window-visibility/release-oracle/sqlglot-window-visibility__gYmtcva/verifier/grade.json",
+        "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+        "reward": 1
+      }
+    },
+    "tests": {
+      "fail_to_pass": 104,
+      "pass_to_pass": 22
+    },
+    "model_trials": {
+      "total": 4,
+      "passed": 3,
+      "failed": 1
+    }
+  }
+}

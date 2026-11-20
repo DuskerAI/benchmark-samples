@@ -1,0 +1,3 @@
+{"trace":"public","seq":1,"mono":1000,"unit":"us","event":"child_start","sup":"Root","id":"cache","pid":"<0.10.0>","ref":"p1"}
+{"trace":"public","seq":2,"mono":2000,"unit":"us","event":"child_exit","sup":"Root","id":"cache","pid":"<0.10.0>","reason":"error","ref":"p2"}
+{"trace":"public","seq":3,"mono":2100,"unit":"us","event":"child_restart","sup":"Root","id":"cache","pid":"<0.11.0>","ref":"p3"}

@@ -1,0 +1,114 @@
+{
+    "id": "62c3f59d-510a-4b82-aee1-2d2fee3d2cc9",
+    "task_name": "dusker-ai/luajit-virtual-heap-exits",
+    "trial_name": "luajit-virtual-heap-exits__vyqNRfE",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/release-integrity-probe-final-r2/luajit-virtual-heap-exits__vyqNRfE",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+    },
+    "source": null,
+    "task_checksum": "fe9b5e8da9fab24e6aa6c4d818efe0bd2b3f9a57ebfe70e9fc2547103ecc688c",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "luajit-virtual-heap-exits__vyqNRfE",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/release-integrity-probe-final-r2",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "tooling.jit_probe:IntegrityProbe",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "02c9631e-64a5-4d5e-9339-b9812ec66b76",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "jit-integrity-probe",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T12:05:56.756150Z",
+    "finished_at": "2026-10-16T12:06:19.766611Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T12:05:56.778799Z",
+        "finished_at": "2026-10-16T12:05:59.643507Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T12:05:59.643575Z",
+        "finished_at": "2026-10-16T12:05:59.643641Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T12:05:59.643719Z",
+        "finished_at": "2026-10-16T12:06:01.898533Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T12:06:05.923816Z",
+        "finished_at": "2026-10-16T12:06:19.766590Z"
+    },
+    "step_results": null
+}

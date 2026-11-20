@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-integrity-final/go-workflows-checkpoint-fencing__Ks7fwHn/artifacts/candidate-source",
+  "tree_sha256": "d9d6309a80b2d6848bf5bcbc6bfe023c362587e2dedc0e26794bbbee000ee6de",
+  "file_count": 311,
+  "bytes": 4178478,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

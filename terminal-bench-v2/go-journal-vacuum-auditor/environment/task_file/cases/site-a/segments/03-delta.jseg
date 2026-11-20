@@ -1,0 +1,3 @@
+JSEG	name=delta	seq=4	rotated=true	bytes=240
+R	d1	boot-c	1	1710000800	systemd-journald	5	rotate	90
+R	d2	boot-c	3	1710001200	app.service	4	flushed	90

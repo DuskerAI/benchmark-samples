@@ -1,0 +1,20 @@
+cabal-version: 2.4
+name: acme-engine
+version: 3.2.0
+build-type: Simple
+
+flag release
+  description: Select release planning behavior
+  default: True
+  manual: True
+
+library
+  exposed-modules: Acme.Engine
+  hs-source-dirs: src
+  build-depends:
+      base >=4.14 && <5,
+      acme-api >=2.2 && <3,
+      acme-codec ==1.4.*
+  if flag(release)
+    cpp-options: -DRELEASE_ENGINE
+  default-language: Haskell2010

@@ -1,0 +1,30 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+    },
+    "trial_name": "sqlglot-window-visibility__j7eHnWQ",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2-regrade",
+    "agent": {
+        "name": "claude-code",
+        "model_name": "anthropic/claude-sonnet-5-5",
+        "extra_allowed_hosts": [
+            "api.anthropic.com"
+        ],
+        "kwargs": {
+            "version": "2.1.295",
+            "reasoning_effort": "high",
+            "max_turns": 100,
+            "disallowed_tools": "WebFetch,WebSearch,Agent,Task"
+        },
+        "env": {
+            "DISABLE_AUTOUPDATER": "1"
+        }
+    },
+    "job_id": "4e7e0d83-7f06-45a0-91ff-e6e76e2cfe71",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "83d49cd2-34fb-499c-a83f-d6b6e4d76d05",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY"
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "id": "49ede0b4-f5e7-4722-8ece-77204d93d303",
+    "task_name": "dusker-ai/go-workflows-reset-provenance",
+    "trial_name": "go-workflows-reset-provenance__9eYyVcz",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-oracle-final/go-workflows-reset-provenance__9eYyVcz",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance"
+    },
+    "source": null,
+    "task_checksum": "4d7deb3b998a79ba8728788ba69557fd5da6f58b72c8736df3ca476d86c89a5f",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-reset-provenance",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "go-workflows-reset-provenance__9eYyVcz",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-reset-provenance/jobs/release-oracle-final",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "4225cec5-8dc4-4d55-aedc-575eae8f5281",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T09:37:35.770879Z",
+    "finished_at": "2026-10-16T09:38:03.445123Z",
+    "environment_setup": {
+        "started_at": "2026-10-16T09:37:35.805064Z",
+        "finished_at": "2026-10-16T09:37:38.921398Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-16T09:37:38.921467Z",
+        "finished_at": "2026-10-16T09:37:38.921521Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-16T09:37:38.921596Z",
+        "finished_at": "2026-10-16T09:37:41.222731Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-16T09:37:46.490436Z",
+        "finished_at": "2026-10-16T09:38:03.445104Z"
+    },
+    "step_results": null
+}

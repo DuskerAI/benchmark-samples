@@ -1,0 +1,1668 @@
+{
+  "task_id": "dusker-ai/sqlglot-window-visibility",
+  "task_version": "1.0.0",
+  "frozen_task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+  "model_id": "anthropic/claude-sonnet-5-5",
+  "agent_version": "2.1.295",
+  "effort": "high",
+  "planned_trials": 4,
+  "concurrency": 1,
+  "automatic_retries": 0,
+  "agent_timeout_sec": 3000,
+  "max_turns": 100,
+  "client_budget_limit": null,
+  "credential_preflight": {
+    "status": "PASS",
+    "model_id": "claude-sonnet-5-5",
+    "generation_requests": 0,
+    "checked_at_utc": "2026-10-15T07:17:20.218002+00:00",
+    "provider_model_metadata": {
+      "type": "model",
+      "id": "claude-sonnet-5-5",
+      "display_name": "Claude Sonnet 5.5",
+      "created_at": "2026-09-28T00:00:00Z",
+      "line": "sonnet",
+      "max_input_tokens": 1000000,
+      "max_tokens": 128000,
+      "capabilities": {
+        "batch": {
+          "supported": true
+        },
+        "citations": {
+          "supported": true
+        },
+        "code_execution": {
+          "supported": true
+        },
+        "context_management": {
+          "supported": true,
+          "clear_tool_uses_20250919": {
+            "supported": true
+          },
+          "clear_thinking_20251015": {
+            "supported": true
+          },
+          "compact_20260112": {
+            "supported": true
+          }
+        },
+        "effort": {
+          "supported": true,
+          "low": {
+            "supported": true
+          },
+          "medium": {
+            "supported": true
+          },
+          "high": {
+            "supported": true
+          },
+          "xhigh": {
+            "supported": true
+          },
+          "max": {
+            "supported": true
+          }
+        },
+        "image_input": {
+          "supported": true
+        },
+        "pdf_input": {
+          "supported": true
+        },
+        "server_tools": {
+          "supported": true,
+          "code_execution": {
+            "supported": true
+          },
+          "web_search": {
+            "supported": true
+          }
+        },
+        "structured_outputs": {
+          "supported": true
+        },
+        "thinking": {
+          "supported": true,
+          "types": {
+            "enabled": {
+              "supported": false
+            },
+            "adaptive": {
+              "supported": true
+            },
+            "disabled": {
+              "supported": false
+            }
+          }
+        }
+      },
+      "lifecycle": "active",
+      "deprecated_at": null,
+      "retires_at": null
+    }
+  },
+  "stop_on_valid_pass": false,
+  "status": "COMPLETED",
+  "trials": [
+    {
+      "trial_number": 1,
+      "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1/sqlglot-window-visibility__wTA7wLn",
+      "started_at": "2026-10-15T07:17:21.727832Z",
+      "finished_at": "2026-10-15T07:43:56.204370Z",
+      "agent_execution": {
+        "started_at": "2026-10-15T07:17:24.890691Z",
+        "finished_at": "2026-10-15T07:43:42.602757Z"
+      },
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "exception_type": null,
+      "client_estimated_api_cost_usd": 3.6219303,
+      "provider_billed_cost_usd": null,
+      "assistant_events": 130,
+      "valid_difficulty_trial": true,
+      "observed_primary_model": "claude-sonnet-5-5",
+      "observed_agent_version": "2.1.295",
+      "model_usage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 106,
+          "outputTokens": 133407,
+          "cacheReadInputTokens": 7997354,
+          "cacheCreationInputTokens": 275271,
+          "webSearchRequests": 0,
+          "costUSD": 3.6219303,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 80067,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "agent_reported_error": false,
+      "agent_stop_category": "success",
+      "num_turns": 54,
+      "grade": {
+        "reward": 1,
+        "category": "acceptance_pass",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 104,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [],
+        "suite_exit_code": 0,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 5,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failure_category": "ACCEPTANCE_PASS",
+      "agent_budget_exhausted": false,
+      "agent_stop_reason": "completed",
+      "verification_outcome": "PASS",
+      "command": [
+        "harbor",
+        "run",
+        "-p",
+        "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+        "-a",
+        "claude-code",
+        "-m",
+        "anthropic/claude-sonnet-5-5",
+        "--ak",
+        "version=2.1.295",
+        "--ak",
+        "reasoning_effort=high",
+        "--ak",
+        "max_turns=100",
+        "--ak",
+        "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+        "--ae",
+        "DISABLE_AUTOUPDATER=1",
+        "--mounts",
+        "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+        "--agent-setup-timeout-multiplier",
+        "3",
+        "--allow-agent-host",
+        "api.anthropic.com",
+        "-e",
+        "docker",
+        "-n",
+        "1",
+        "-k",
+        "1",
+        "-r",
+        "0",
+        "--job-name",
+        "trial-1",
+        "--jobs-dir",
+        "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+      ],
+      "attempt_number": 1,
+      "cli_exit_code": 0,
+      "duration_sec": 1597.449,
+      "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-1-harbor.log",
+      "clean_regrade": {
+        "command": [
+          "harbor",
+          "job",
+          "regrade",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1",
+          "-p",
+          "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+          "-e",
+          "docker",
+          "-n",
+          "1",
+          "--job-name",
+          "trial-1-regrade",
+          "--jobs-dir",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+        ],
+        "cli_exit_code": 0,
+        "duration_sec": 11.409,
+        "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-1-regrade/sqlglot-window-visibility__P7S8Ypg/result.json",
+        "grade": {
+          "reward": 1,
+          "category": "acceptance_pass",
+          "exact_inventory": true,
+          "fail_to_pass": {
+            "passed": 104,
+            "total": 104
+          },
+          "pass_to_pass": {
+            "passed": 22,
+            "total": 22
+          },
+          "nonpassing": [],
+          "suite_exit_code": 0,
+          "requirement_groups": {
+            "W01": {
+              "passed": 6,
+              "total": 6
+            },
+            "W02": {
+              "passed": 4,
+              "total": 4
+            },
+            "W03": {
+              "passed": 8,
+              "total": 8
+            },
+            "W04": {
+              "passed": 6,
+              "total": 6
+            },
+            "W05": {
+              "passed": 10,
+              "total": 10
+            },
+            "W06": {
+              "passed": 14,
+              "total": 14
+            },
+            "W07": {
+              "passed": 8,
+              "total": 8
+            },
+            "W08": {
+              "passed": 8,
+              "total": 8
+            },
+            "W09": {
+              "passed": 5,
+              "total": 5
+            },
+            "W10": {
+              "passed": 6,
+              "total": 6
+            },
+            "W11": {
+              "passed": 2,
+              "total": 2
+            },
+            "W12": {
+              "passed": 6,
+              "total": 6
+            },
+            "W13": {
+              "passed": 4,
+              "total": 4
+            },
+            "W14": {
+              "passed": 5,
+              "total": 5
+            },
+            "W15": {
+              "passed": 4,
+              "total": 4
+            },
+            "W16": {
+              "passed": 5,
+              "total": 5
+            },
+            "W17": {
+              "passed": 9,
+              "total": 9
+            },
+            "W18": {
+              "passed": 4,
+              "total": 4
+            },
+            "P01": {
+              "passed": 12,
+              "total": 12
+            }
+          }
+        },
+        "exception": null,
+        "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-1-regrade-harbor.log"
+      },
+      "original_grade": {
+        "reward": 1,
+        "category": "acceptance_pass",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 104,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [],
+        "suite_exit_code": 0,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 5,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failed_requirement_groups": {}
+    },
+    {
+      "trial_number": 2,
+      "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2/sqlglot-window-visibility__Hp3XQsY",
+      "started_at": "2026-10-15T07:44:10.628180Z",
+      "finished_at": "2026-10-15T08:04:53.341931Z",
+      "agent_execution": {
+        "started_at": "2026-10-15T07:44:13.682659Z",
+        "finished_at": "2026-10-15T08:04:39.814124Z"
+      },
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "exception_type": null,
+      "client_estimated_api_cost_usd": 3.0243775999999993,
+      "provider_billed_cost_usd": null,
+      "assistant_events": 108,
+      "valid_difficulty_trial": true,
+      "observed_primary_model": "claude-sonnet-5-5",
+      "observed_agent_version": "2.1.295",
+      "model_usage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 106,
+          "outputTokens": 111830,
+          "cacheReadInputTokens": 7223778,
+          "cacheCreationInputTokens": 184444,
+          "webSearchRequests": 0,
+          "costUSD": 3.0243775999999993,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 68653,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "agent_reported_error": false,
+      "agent_stop_category": "success",
+      "num_turns": 54,
+      "grade": {
+        "reward": 1,
+        "category": "acceptance_pass",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 104,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [],
+        "suite_exit_code": 0,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 5,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failure_category": "ACCEPTANCE_PASS",
+      "agent_budget_exhausted": false,
+      "agent_stop_reason": "completed",
+      "verification_outcome": "PASS",
+      "command": [
+        "harbor",
+        "run",
+        "-p",
+        "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+        "-a",
+        "claude-code",
+        "-m",
+        "anthropic/claude-sonnet-5-5",
+        "--ak",
+        "version=2.1.295",
+        "--ak",
+        "reasoning_effort=high",
+        "--ak",
+        "max_turns=100",
+        "--ak",
+        "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+        "--ae",
+        "DISABLE_AUTOUPDATER=1",
+        "--mounts",
+        "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+        "--agent-setup-timeout-multiplier",
+        "3",
+        "--allow-agent-host",
+        "api.anthropic.com",
+        "-e",
+        "docker",
+        "-n",
+        "1",
+        "-k",
+        "1",
+        "-r",
+        "0",
+        "--job-name",
+        "trial-2",
+        "--jobs-dir",
+        "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+      ],
+      "attempt_number": 1,
+      "cli_exit_code": 0,
+      "duration_sec": 1244.894,
+      "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-2-harbor.log",
+      "clean_regrade": {
+        "command": [
+          "harbor",
+          "job",
+          "regrade",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2",
+          "-p",
+          "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+          "-e",
+          "docker",
+          "-n",
+          "1",
+          "--job-name",
+          "trial-2-regrade",
+          "--jobs-dir",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+        ],
+        "cli_exit_code": 0,
+        "duration_sec": 11.616,
+        "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-2-regrade/sqlglot-window-visibility__j7eHnWQ/result.json",
+        "grade": {
+          "reward": 1,
+          "category": "acceptance_pass",
+          "exact_inventory": true,
+          "fail_to_pass": {
+            "passed": 104,
+            "total": 104
+          },
+          "pass_to_pass": {
+            "passed": 22,
+            "total": 22
+          },
+          "nonpassing": [],
+          "suite_exit_code": 0,
+          "requirement_groups": {
+            "W01": {
+              "passed": 6,
+              "total": 6
+            },
+            "W02": {
+              "passed": 4,
+              "total": 4
+            },
+            "W03": {
+              "passed": 8,
+              "total": 8
+            },
+            "W04": {
+              "passed": 6,
+              "total": 6
+            },
+            "W05": {
+              "passed": 10,
+              "total": 10
+            },
+            "W06": {
+              "passed": 14,
+              "total": 14
+            },
+            "W07": {
+              "passed": 8,
+              "total": 8
+            },
+            "W08": {
+              "passed": 8,
+              "total": 8
+            },
+            "W09": {
+              "passed": 5,
+              "total": 5
+            },
+            "W10": {
+              "passed": 6,
+              "total": 6
+            },
+            "W11": {
+              "passed": 2,
+              "total": 2
+            },
+            "W12": {
+              "passed": 6,
+              "total": 6
+            },
+            "W13": {
+              "passed": 4,
+              "total": 4
+            },
+            "W14": {
+              "passed": 5,
+              "total": 5
+            },
+            "W15": {
+              "passed": 4,
+              "total": 4
+            },
+            "W16": {
+              "passed": 5,
+              "total": 5
+            },
+            "W17": {
+              "passed": 9,
+              "total": 9
+            },
+            "W18": {
+              "passed": 4,
+              "total": 4
+            },
+            "P01": {
+              "passed": 12,
+              "total": 12
+            }
+          }
+        },
+        "exception": null,
+        "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-2-regrade-harbor.log"
+      },
+      "original_grade": {
+        "reward": 1,
+        "category": "acceptance_pass",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 104,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [],
+        "suite_exit_code": 0,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 5,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failed_requirement_groups": {}
+    },
+    {
+      "trial_number": 3,
+      "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3/sqlglot-window-visibility__N6LaBKu",
+      "started_at": "2026-10-15T08:05:07.138870Z",
+      "finished_at": "2026-10-15T08:33:46.273028Z",
+      "agent_execution": {
+        "started_at": "2026-10-15T08:05:10.160341Z",
+        "finished_at": "2026-10-15T08:33:32.660401Z"
+      },
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "exception_type": null,
+      "client_estimated_api_cost_usd": 4.6393515,
+      "provider_billed_cost_usd": null,
+      "assistant_events": 165,
+      "valid_difficulty_trial": true,
+      "observed_primary_model": "claude-sonnet-5-5",
+      "observed_agent_version": "2.1.295",
+      "model_usage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 140,
+          "outputTokens": 159310,
+          "cacheReadInputTokens": 12143070,
+          "cacheCreationInputTokens": 246943,
+          "webSearchRequests": 0,
+          "costUSD": 4.6393515,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 102223,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "agent_reported_error": false,
+      "agent_stop_category": "success",
+      "num_turns": 73,
+      "grade": {
+        "reward": 1,
+        "category": "acceptance_pass",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 104,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [],
+        "suite_exit_code": 0,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 5,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failure_category": "ACCEPTANCE_PASS",
+      "agent_budget_exhausted": false,
+      "agent_stop_reason": "completed",
+      "verification_outcome": "PASS",
+      "command": [
+        "harbor",
+        "run",
+        "-p",
+        "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+        "-a",
+        "claude-code",
+        "-m",
+        "anthropic/claude-sonnet-5-5",
+        "--ak",
+        "version=2.1.295",
+        "--ak",
+        "reasoning_effort=high",
+        "--ak",
+        "max_turns=100",
+        "--ak",
+        "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+        "--ae",
+        "DISABLE_AUTOUPDATER=1",
+        "--mounts",
+        "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+        "--agent-setup-timeout-multiplier",
+        "3",
+        "--allow-agent-host",
+        "api.anthropic.com",
+        "-e",
+        "docker",
+        "-n",
+        "1",
+        "-k",
+        "1",
+        "-r",
+        "0",
+        "--job-name",
+        "trial-3",
+        "--jobs-dir",
+        "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+      ],
+      "attempt_number": 1,
+      "cli_exit_code": 0,
+      "duration_sec": 1721.738,
+      "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-3-harbor.log",
+      "clean_regrade": {
+        "command": [
+          "harbor",
+          "job",
+          "regrade",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3",
+          "-p",
+          "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+          "-e",
+          "docker",
+          "-n",
+          "1",
+          "--job-name",
+          "trial-3-regrade",
+          "--jobs-dir",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+        ],
+        "cli_exit_code": 0,
+        "duration_sec": 11.945,
+        "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-3-regrade/sqlglot-window-visibility__J8oUY2P/result.json",
+        "grade": {
+          "reward": 1,
+          "category": "acceptance_pass",
+          "exact_inventory": true,
+          "fail_to_pass": {
+            "passed": 104,
+            "total": 104
+          },
+          "pass_to_pass": {
+            "passed": 22,
+            "total": 22
+          },
+          "nonpassing": [],
+          "suite_exit_code": 0,
+          "requirement_groups": {
+            "W01": {
+              "passed": 6,
+              "total": 6
+            },
+            "W02": {
+              "passed": 4,
+              "total": 4
+            },
+            "W03": {
+              "passed": 8,
+              "total": 8
+            },
+            "W04": {
+              "passed": 6,
+              "total": 6
+            },
+            "W05": {
+              "passed": 10,
+              "total": 10
+            },
+            "W06": {
+              "passed": 14,
+              "total": 14
+            },
+            "W07": {
+              "passed": 8,
+              "total": 8
+            },
+            "W08": {
+              "passed": 8,
+              "total": 8
+            },
+            "W09": {
+              "passed": 5,
+              "total": 5
+            },
+            "W10": {
+              "passed": 6,
+              "total": 6
+            },
+            "W11": {
+              "passed": 2,
+              "total": 2
+            },
+            "W12": {
+              "passed": 6,
+              "total": 6
+            },
+            "W13": {
+              "passed": 4,
+              "total": 4
+            },
+            "W14": {
+              "passed": 5,
+              "total": 5
+            },
+            "W15": {
+              "passed": 4,
+              "total": 4
+            },
+            "W16": {
+              "passed": 5,
+              "total": 5
+            },
+            "W17": {
+              "passed": 9,
+              "total": 9
+            },
+            "W18": {
+              "passed": 4,
+              "total": 4
+            },
+            "P01": {
+              "passed": 12,
+              "total": 12
+            }
+          }
+        },
+        "exception": null,
+        "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-3-regrade-harbor.log"
+      },
+      "original_grade": {
+        "reward": 1,
+        "category": "acceptance_pass",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 104,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [],
+        "suite_exit_code": 0,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 5,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failed_requirement_groups": {}
+    },
+    {
+      "trial_number": 4,
+      "trial_directory": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4/sqlglot-window-visibility__DwVo2zg",
+      "started_at": "2026-10-15T08:34:00.812120Z",
+      "finished_at": "2026-10-15T09:25:39.810806Z",
+      "agent_execution": {
+        "started_at": "2026-10-15T08:34:03.839408Z",
+        "finished_at": "2026-10-15T09:25:26.130283Z"
+      },
+      "task_checksum": "4c55b112da6cfd92aa569af1d8577e2e4f37125c06f31226b89d4347a5121d28",
+      "exception_type": null,
+      "client_estimated_api_cost_usd": 4.7487791,
+      "provider_billed_cost_usd": null,
+      "assistant_events": 100,
+      "valid_difficulty_trial": true,
+      "observed_primary_model": "claude-sonnet-5-5",
+      "observed_agent_version": "2.1.295",
+      "model_usage": {
+        "claude-sonnet-5-5": {
+          "inputTokens": 106,
+          "outputTokens": 142718,
+          "cacheReadInputTokens": 7342898,
+          "cacheCreationInputTokens": 741123,
+          "webSearchRequests": 0,
+          "costUSD": 4.7487791,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 91403,
+          "canonicalModel": "claude-sonnet-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "agent_reported_error": false,
+      "agent_stop_category": "success",
+      "num_turns": 54,
+      "grade": {
+        "reward": 0,
+        "category": "acceptance_failure",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 103,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [
+          "test_window_semantics.TestWindows.test_window_join_input"
+        ],
+        "suite_exit_code": 1,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 4,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failure_category": "ACCEPTANCE_FAILURE",
+      "agent_budget_exhausted": false,
+      "agent_stop_reason": "completed",
+      "verification_outcome": "FAIL",
+      "command": [
+        "harbor",
+        "run",
+        "-p",
+        "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+        "-a",
+        "claude-code",
+        "-m",
+        "anthropic/claude-sonnet-5-5",
+        "--ak",
+        "version=2.1.295",
+        "--ak",
+        "reasoning_effort=high",
+        "--ak",
+        "max_turns=100",
+        "--ak",
+        "disallowed_tools=WebFetch,WebSearch,Agent,Task",
+        "--ae",
+        "DISABLE_AUTOUPDATER=1",
+        "--mounts",
+        "[{\"type\": \"bind\", \"source\": \"/Users/<user>/Desktop/Dusker Swe/benchmark-support/agent-runtime/claude-code/2.1.295/linux-arm64/claude\", \"target\": \"/usr/local/bin/claude\", \"read_only\": true, \"bind\": {\"create_host_path\": false}}]",
+        "--agent-setup-timeout-multiplier",
+        "3",
+        "--allow-agent-host",
+        "api.anthropic.com",
+        "-e",
+        "docker",
+        "-n",
+        "1",
+        "-k",
+        "1",
+        "-r",
+        "0",
+        "--job-name",
+        "trial-4",
+        "--jobs-dir",
+        "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+      ],
+      "attempt_number": 1,
+      "cli_exit_code": 0,
+      "duration_sec": 1466.155,
+      "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-4-harbor.log",
+      "clean_regrade": {
+        "command": [
+          "harbor",
+          "job",
+          "regrade",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4",
+          "-p",
+          "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility",
+          "-e",
+          "docker",
+          "-n",
+          "1",
+          "--job-name",
+          "trial-4-regrade",
+          "--jobs-dir",
+          "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs"
+        ],
+        "cli_exit_code": 0,
+        "duration_sec": 12.101,
+        "result_path": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/jobs/trial-4-regrade/sqlglot-window-visibility__QBcgnoo/result.json",
+        "grade": {
+          "reward": 0,
+          "category": "acceptance_failure",
+          "exact_inventory": true,
+          "fail_to_pass": {
+            "passed": 103,
+            "total": 104
+          },
+          "pass_to_pass": {
+            "passed": 22,
+            "total": 22
+          },
+          "nonpassing": [
+            "test_window_semantics.TestWindows.test_window_join_input"
+          ],
+          "suite_exit_code": 1,
+          "requirement_groups": {
+            "W01": {
+              "passed": 6,
+              "total": 6
+            },
+            "W02": {
+              "passed": 4,
+              "total": 4
+            },
+            "W03": {
+              "passed": 8,
+              "total": 8
+            },
+            "W04": {
+              "passed": 6,
+              "total": 6
+            },
+            "W05": {
+              "passed": 10,
+              "total": 10
+            },
+            "W06": {
+              "passed": 14,
+              "total": 14
+            },
+            "W07": {
+              "passed": 8,
+              "total": 8
+            },
+            "W08": {
+              "passed": 8,
+              "total": 8
+            },
+            "W09": {
+              "passed": 5,
+              "total": 5
+            },
+            "W10": {
+              "passed": 6,
+              "total": 6
+            },
+            "W11": {
+              "passed": 2,
+              "total": 2
+            },
+            "W12": {
+              "passed": 6,
+              "total": 6
+            },
+            "W13": {
+              "passed": 4,
+              "total": 4
+            },
+            "W14": {
+              "passed": 4,
+              "total": 5
+            },
+            "W15": {
+              "passed": 4,
+              "total": 4
+            },
+            "W16": {
+              "passed": 5,
+              "total": 5
+            },
+            "W17": {
+              "passed": 9,
+              "total": 9
+            },
+            "W18": {
+              "passed": 4,
+              "total": 4
+            },
+            "P01": {
+              "passed": 12,
+              "total": 12
+            }
+          }
+        },
+        "exception": null,
+        "harbor_log": "/Users/<user>/Desktop/Dusker Swe/dataset6/jobs/trial-runs/sqlglot-window-visibility/20261015T071646Z-1d6208/trial-4-regrade-harbor.log"
+      },
+      "original_grade": {
+        "reward": 0,
+        "category": "acceptance_failure",
+        "exact_inventory": true,
+        "fail_to_pass": {
+          "passed": 103,
+          "total": 104
+        },
+        "pass_to_pass": {
+          "passed": 22,
+          "total": 22
+        },
+        "nonpassing": [
+          "test_window_semantics.TestWindows.test_window_join_input"
+        ],
+        "suite_exit_code": 1,
+        "requirement_groups": {
+          "W01": {
+            "passed": 6,
+            "total": 6
+          },
+          "W02": {
+            "passed": 4,
+            "total": 4
+          },
+          "W03": {
+            "passed": 8,
+            "total": 8
+          },
+          "W04": {
+            "passed": 6,
+            "total": 6
+          },
+          "W05": {
+            "passed": 10,
+            "total": 10
+          },
+          "W06": {
+            "passed": 14,
+            "total": 14
+          },
+          "W07": {
+            "passed": 8,
+            "total": 8
+          },
+          "W08": {
+            "passed": 8,
+            "total": 8
+          },
+          "W09": {
+            "passed": 5,
+            "total": 5
+          },
+          "W10": {
+            "passed": 6,
+            "total": 6
+          },
+          "W11": {
+            "passed": 2,
+            "total": 2
+          },
+          "W12": {
+            "passed": 6,
+            "total": 6
+          },
+          "W13": {
+            "passed": 4,
+            "total": 4
+          },
+          "W14": {
+            "passed": 4,
+            "total": 5
+          },
+          "W15": {
+            "passed": 4,
+            "total": 4
+          },
+          "W16": {
+            "passed": 5,
+            "total": 5
+          },
+          "W17": {
+            "passed": 9,
+            "total": 9
+          },
+          "W18": {
+            "passed": 4,
+            "total": 4
+          },
+          "P01": {
+            "passed": 12,
+            "total": 12
+          }
+        }
+      },
+      "failed_requirement_groups": {
+        "W14": 1
+      }
+    }
+  ],
+  "cli_cache": {
+    "version": "2.1.295",
+    "platform": "linux-arm64",
+    "sha256": "cfb9dc1332fb6f92a683f835823e91b3179a803398ca7852cd2381a3cb1dea3b",
+    "size_bytes": 255516664,
+    "source": "https://downloads.claude.ai/claude-code-releases/2.1.295/linux-arm64/claude"
+  }
+}

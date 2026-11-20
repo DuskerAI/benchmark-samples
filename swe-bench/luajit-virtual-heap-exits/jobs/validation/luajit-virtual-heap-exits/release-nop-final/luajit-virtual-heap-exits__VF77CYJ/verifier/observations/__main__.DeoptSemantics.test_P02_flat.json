@@ -1,0 +1,52 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "fields": [
+          [
+            "$left",
+            [
+              "number",
+              "120"
+            ]
+          ],
+          [
+            "$value",
+            [
+              "number",
+              "214"
+            ]
+          ]
+        ],
+        "meta": 0
+      }
+    ],
+    "roots": [
+      1
+    ]
+  },
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 7,
+    "on": true,
+    "roots": 2,
+    "sides": 1
+  }
+}

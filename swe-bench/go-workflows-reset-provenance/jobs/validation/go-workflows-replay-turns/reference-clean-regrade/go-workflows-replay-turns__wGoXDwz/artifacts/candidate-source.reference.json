@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../draft-oracle/go-workflows-replay-turns__yQ9ZNVW/artifacts/candidate-source",
+  "tree_sha256": "20158c4ab07986fc5279fffa8817224e3facbaf08dfb476fba5c8c8fbeccc4e6",
+  "file_count": 309,
+  "bytes": 4179391,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

@@ -1,0 +1,5 @@
+key,value
+detector_name,terminus_astrometric_test_chip
+pixel_size_um,10.0
+nominal_scale_arcsec_px,0.82
+orientation,sky_north_reference

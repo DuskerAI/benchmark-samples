@@ -1,0 +1,517 @@
+{
+  "count": 128,
+  "tests": [
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_0_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_0_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_1_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_1_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_2_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_2_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_3_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_0_3_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_0_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_0_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_1_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_1_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_2_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_2_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_3_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_1_3_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_0_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_0_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_1_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_1_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_2_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_2_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_3_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_G01_model_graph_2_3_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P01_normal_batches_and_laziness_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P01_normal_batches_and_laziness_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P01_normal_previous_values_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P01_normal_previous_values_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P02_ordinary_scope_ownership_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P02_ordinary_scope_ownership_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P03_low_level_system_without_transaction_callbacks_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P03_low_level_system_without_transaction_callbacks_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P04_normal_trigger_and_untracked_cleanup_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_P04_normal_trigger_and_untracked_cleanup_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S01_commit_return_and_nested_publication_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S01_commit_return_and_nested_publication_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_null_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_null_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_number_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_number_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_object_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_object_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_string_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_string_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_undefined_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S02_abort_exact_undefined_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S03_nested_previous_cache_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S03_nested_previous_cache_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S03_outer_abort_undoes_inner_commit_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S03_outer_abort_undoes_inner_commit_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S04_existing_batch_work_survives_abort_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S04_existing_batch_work_survives_abort_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S04_ordinary_batch_inside_aborted_transaction_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S04_ordinary_batch_inside_aborted_transaction_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S05_computed_net_noop_after_reads_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S05_computed_net_noop_after_reads_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S05_direct_net_noop_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S05_direct_net_noop_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S06_successful_cache_is_published_without_reexecution_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S06_successful_cache_is_published_without_reexecution_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S06_unevaluated_cache_and_unrelated_laziness_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S06_unevaluated_cache_and_unrelated_laziness_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S07_trigger_abort_preserves_cache_and_notifications_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S07_trigger_abort_preserves_cache_and_notifications_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S07_trigger_commit_and_derived_equality_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S07_trigger_commit_and_derived_equality_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S08_dynamic_branch_rollback_restores_only_live_edges_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S08_dynamic_branch_rollback_restores_only_live_edges_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S09_ambient_dependency_prefix_rollback_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S09_ambient_dependency_prefix_rollback_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S09_ambient_tracking_commits_reads_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S09_ambient_tracking_commits_reads_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S10_escaped_new_values_reset_on_abort_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S10_escaped_new_values_reset_on_abort_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S11_aborted_effect_is_released_once_after_restore_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S11_aborted_effect_is_released_once_after_restore_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S11_nested_committed_resources_compensate_in_reverse_creation_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S11_nested_committed_resources_compensate_in_reverse_creation_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S12_inner_abort_keeps_parent_resource_live_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S12_inner_abort_keeps_parent_resource_live_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S13_parent_birth_stopped_in_inner_abort_is_revived_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S13_parent_birth_stopped_in_inner_abort_is_revived_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S13_tentative_existing_stop_aborts_without_cleanup_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S13_tentative_existing_stop_aborts_without_cleanup_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S13_tentative_stop_commits_once_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S13_tentative_stop_commits_once_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S14_scope_stop_rollback_restores_nested_tree_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S14_scope_stop_rollback_restores_nested_tree_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_aborts_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_aborts_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_commits_without_rerunning_getter_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S15_computed_child_generation_commits_without_rerunning_getter_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S16_shared_computed_survives_tentative_owner_stop_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S16_shared_computed_survives_tentative_owner_stop_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S17_compensation_created_resource_belongs_to_surviving_parent_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S17_compensation_created_resource_belongs_to_surviving_parent_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S17_inner_compensation_writes_join_parent_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S17_inner_compensation_writes_join_parent_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S17_outer_compensation_writes_publish_after_restore_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S17_outer_compensation_writes_publish_after_restore_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_cjs",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S18_cleanup_failure_precedes_observer_failure_after_commit_esm",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S18_observer_failure_does_not_undo_commit_or_drop_siblings_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S19_reentrant_transactions_preserve_notification_cursor_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S19_reentrant_transactions_preserve_notification_cursor_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S20_assigned_identity_restored_without_deep_cloning_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S20_assigned_identity_restored_without_deep_cloning_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S20_callback_result_identity_and_caught_error_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S20_callback_result_identity_and_caught_error_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S21_failed_speculative_read_restores_valid_cache_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S21_failed_speculative_read_restores_valid_cache_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_cjs",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S22_caught_failed_initial_scope_releases_partial_work_at_commit_esm",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S22_new_effect_initial_callback_still_synchronous_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S22_new_effect_initial_callback_still_synchronous_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S23_last_consumer_branch_abort_restores_owned_generation_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S23_last_consumer_branch_abort_restores_owned_generation_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S24_three_savepoints_preserve_previous_value_history_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S24_three_savepoints_preserve_previous_value_history_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S25_inner_trigger_abort_keeps_outer_forced_notification_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S25_inner_trigger_abort_keeps_outer_forced_notification_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S26_failed_new_scope_caught_then_outer_aborted_cleans_once_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S27_all_abort_compensation_runs_original_undefined_wins_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S27_all_abort_compensation_runs_original_undefined_wins_esm",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S28_inner_committed_stop_is_reversed_by_outer_abort_cjs",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_savepoint_semantics.SavepointSemantics.test_S28_inner_committed_stop_is_reversed_by_outer_abort_esm",
+      "status": "PASSED"
+    }
+  ]
+}

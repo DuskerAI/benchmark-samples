@@ -1,0 +1,3 @@
+JSEG	name=gamma	seq=3	rotated=false	bytes=180
+R	g1	boot-b	4	1710000900	systemd	5	started	80
+R	g2	boot-b	4	1710000910	sshd.service	5	ready	80

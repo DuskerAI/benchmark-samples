@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build Log Viewer</title>
+  <link rel="stylesheet" href="data:text/css,body{font-family:system-ui;margin:1rem}.toolbar{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}.row{font-family:ui-monospace,monospace;white-space:pre;border-left:4px solid transparent;padding:.1rem .4rem}.row[tabindex='0']:focus{outline:2px solid #245}.error{border-color:#b00020}.warning{border-color:#9a6500}.group-toggle{margin-top:.6rem}.match{background:#ffe58a}textarea{width:100%;height:8rem;margin-top:.7rem}">
+</head>
+<body>
+  <h1>Build Log Viewer</h1>
+  <div class="toolbar">
+    <label for="search">Search log</label>
+    <input id="search" type="search" autocomplete="off">
+    <button id="export">Export visible JSON</button>
+    <span id="status" role="status" aria-live="polite">Loading</span>
+  </div>
+  <main id="log" aria-label="Rendered build log"></main>
+  <textarea id="export-json" aria-label="Export JSON"></textarea>
+  <script src="/app.js"></script>
+</body>
+</html>

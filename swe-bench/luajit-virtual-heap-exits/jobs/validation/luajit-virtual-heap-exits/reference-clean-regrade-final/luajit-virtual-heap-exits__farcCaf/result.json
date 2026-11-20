@@ -1,0 +1,110 @@
+{
+    "id": "3ce9d792-4594-444f-a733-422a5bd3ada7",
+    "task_name": "dusker-ai/luajit-virtual-heap-exits",
+    "trial_name": "luajit-virtual-heap-exits__farcCaf",
+    "trial_uri": "file:///Users/<user>/Desktop/Dusker%20Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/reference-clean-regrade-final/luajit-virtual-heap-exits__farcCaf",
+    "task_id": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits"
+    },
+    "source": null,
+    "task_checksum": "fe9b5e8da9fab24e6aa6c4d818efe0bd2b3f9a57ebfe70e9fc2547103ecc688c",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset11/luajit-virtual-heap-exits",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "luajit-virtual-heap-exits__farcCaf",
+        "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/reference-clean-regrade-final",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "ac07efd3-5e05-49f3-abf3-a3b7623472b9",
+        "source_trial": {
+            "action": "regrade",
+            "type": "local",
+            "trial_id": "948a1709-1dbf-4acb-88ee-75e6bcd0466a",
+            "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset11/validation/luajit-virtual-heap-exits/jobs/release-oracle-final/luajit-virtual-heap-exits__qS2oFSc"
+        }
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-16T12:04:13.548515Z",
+    "finished_at": "2026-10-16T12:04:31.686583Z",
+    "environment_setup": null,
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": {
+        "started_at": "2026-10-16T12:04:13.659223Z",
+        "finished_at": "2026-10-16T12:04:31.686565Z"
+    },
+    "step_results": null
+}

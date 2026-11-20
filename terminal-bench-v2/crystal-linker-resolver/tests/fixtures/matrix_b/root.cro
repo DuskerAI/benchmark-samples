@@ -1,0 +1,5 @@
+OBJECT root
+SECTION .text - 8 -
+SYMBOL root STRONG DEF .text 0
+SYMBOL pool STRONG UNDEF
+RELOC .text 0 pool ABS32 0

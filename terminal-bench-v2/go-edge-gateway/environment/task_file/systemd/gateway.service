@@ -1,0 +1,9 @@
+[Unit]
+Description=Edge gateway listener
+After=firewall.service
+
+[Service]
+EnvironmentFile=/app/run/rendered/configs/gateway.env
+
+[Install]
+WantedBy=edge-gateway.target

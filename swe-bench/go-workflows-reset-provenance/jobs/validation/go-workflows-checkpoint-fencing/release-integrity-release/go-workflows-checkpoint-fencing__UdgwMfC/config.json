@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-checkpoint-fencing"
+    },
+    "trial_name": "go-workflows-checkpoint-fencing__UdgwMfC",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-checkpoint-fencing/jobs/release-integrity-release",
+    "agent": {
+        "name": "checkpoint_probe:IntegrityProbe"
+    },
+    "job_id": "3213ec4b-db59-43f8-aef5-60dc26878a51"
+}

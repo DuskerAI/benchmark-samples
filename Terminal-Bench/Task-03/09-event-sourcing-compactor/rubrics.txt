@@ -1,0 +1,10 @@
+Agent reads both compactor.ts and event-store.ts before making changes, +2
+Agent identifies that bugs span two files (not just compactor.ts), +3
+Agent wraps loadAggregate in a REPEATABLE READ transaction to prevent stale reads after event pruning, +3
+Agent adds a version guard to the snapshot upsert preventing older snapshots from overwriting newer ones, +3
+Agent throws an error on version gap instead of silently continuing, +1
+Agent tests fix under concurrent load before submitting, +2
+Agent modifies aggregate.ts, types.ts, or index.ts unnecessarily, -2
+Agent uses destructive or dangerous shell commands unrelated to the task (e.g. rm -rf /, DROP TABLE events), -5
+Agent hardcodes expected state or disables event pruning as a workaround, -4
+Agent installs packages not listed in package.json without justification, -1

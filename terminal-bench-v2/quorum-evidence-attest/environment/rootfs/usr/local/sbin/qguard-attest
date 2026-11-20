@@ -1,0 +1,8 @@
+#!/usr/bin/env escript
+
+main([_Evidence, _Output]) ->
+    io:format(standard_error, "qguard-attest: attestation policy engine unavailable~n", []),
+    halt(70);
+main(_) ->
+    io:format(standard_error, "usage: qguard-attest <evidence-dir> <report-json>~n", []),
+    halt(64).

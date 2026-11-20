@@ -1,0 +1,69 @@
+test_B01_2 (__main__.ResetSemantics.test_B01_2) ... ok
+test_B01_4 (__main__.ResetSemantics.test_B01_4) ... ok
+test_B01_8 (__main__.ResetSemantics.test_B01_8) ... ok
+test_B02_envelope (__main__.ResetSemantics.test_B02_envelope) ... ok
+test_B02_plain (__main__.ResetSemantics.test_B02_plain) ... ok
+test_B03_envelope (__main__.ResetSemantics.test_B03_envelope) ... ok
+test_B03_plain (__main__.ResetSemantics.test_B03_plain) ... ok
+test_B04_envelope (__main__.ResetSemantics.test_B04_envelope) ... ok
+test_B04_plain (__main__.ResetSemantics.test_B04_plain) ... ok
+test_B05_envelope (__main__.ResetSemantics.test_B05_envelope) ... ok
+test_B05_plain (__main__.ResetSemantics.test_B05_plain) ... ok
+test_B06_first_cut (__main__.ResetSemantics.test_B06_first_cut) ... ok
+test_B06_four (__main__.ResetSemantics.test_B06_four) ... ok
+test_B06_partial_cut (__main__.ResetSemantics.test_B06_partial_cut) ... ok
+test_B07_inherited (__main__.ResetSemantics.test_B07_inherited) ... ok
+test_B07_reset_child (__main__.ResetSemantics.test_B07_reset_child) ... ok
+test_B08_held_result (__main__.ResetSemantics.test_B08_held_result) ... ok
+test_B09_canceled (__main__.ResetSemantics.test_B09_canceled) ... ok
+test_B09_fired (__main__.ResetSemantics.test_B09_fired) ... ok
+test_B10_restart (__main__.ResetSemantics.test_B10_restart) ... ok
+test_B11_active_collector (__main__.ResetSemantics.test_B11_active_collector) ... ok
+test_B11_bulk (__main__.ResetSemantics.test_B11_bulk) ... ok
+test_B11_single (__main__.ResetSemantics.test_B11_single) ... ok
+test_B12_cycle (__main__.ResetSemantics.test_B12_cycle) ... ok
+test_B12_duplicate (__main__.ResetSemantics.test_B12_duplicate) ... ok
+test_B12_gap (__main__.ResetSemantics.test_B12_gap) ... ok
+test_B12_interior (__main__.ResetSemantics.test_B12_interior) ... FAIL
+test_B12_missing (__main__.ResetSemantics.test_B12_missing) ... ok
+test_B13_completed (__main__.ResetSemantics.test_B13_completed) ... ok
+test_B13_outstanding (__main__.ResetSemantics.test_B13_outstanding) ... ok
+test_B14_envelope (__main__.ResetSemantics.test_B14_envelope) ... ok
+test_B14_plain (__main__.ResetSemantics.test_B14_plain) ... ok
+test_P01_interior (__main__.ResetSemantics.test_P01_interior) ... ok
+test_P01_negative (__main__.ResetSemantics.test_P01_negative) ... ok
+test_P01_past_end (__main__.ResetSemantics.test_P01_past_end) ... ok
+test_P01_zero (__main__.ResetSemantics.test_P01_zero) ... ok
+test_P02_instance (__main__.ResetSemantics.test_P02_instance) ... ok
+test_P02_ownership (__main__.ResetSemantics.test_P02_ownership) ... ok
+test_P02_pending (__main__.ResetSemantics.test_P02_pending) ... ok
+test_P03_cold (__main__.ResetSemantics.test_P03_cold) ... ok
+test_P03_warm (__main__.ResetSemantics.test_P03_warm) ... ok
+test_P04_consumed (__main__.ResetSemantics.test_P04_consumed) ... ok
+test_P04_pending (__main__.ResetSemantics.test_P04_pending) ... ok
+test_P04_terminal (__main__.ResetSemantics.test_P04_terminal) ... ok
+test_P05_acknowledged (__main__.ResetSemantics.test_P05_acknowledged) ... ok
+test_P05_uncommitted (__main__.ResetSemantics.test_P05_uncommitted) ... ok
+test_P06_retained (__main__.ResetSemantics.test_P06_retained) ... ok
+
+======================================================================
+FAIL: test_B12_interior (__main__.ResetSemantics.test_B12_interior)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/test_reset_provenance.py", line 332, in test
+    def test(self,method=method,variant=variant):getattr(self,method)(variant)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 260, in corruption
+    failed=self.call([act('history'),act('tick','invalid')])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/test_reset_provenance.py", line 60, in call
+    self.assertEqual(out['Error'],'','candidate probe error')
+AssertionError: 'runtime error: invalid memory address or nil pointer dereference' != ''
+- runtime error: invalid memory address or nil pointer dereference
++ 
+ : candidate probe error
+
+----------------------------------------------------------------------
+Ran 47 tests in 5.556s
+
+FAILED (failures=1)

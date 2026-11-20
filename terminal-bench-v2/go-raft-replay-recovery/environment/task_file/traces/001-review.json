@@ -1,0 +1,31 @@
+{
+  "events": [
+    {"type": "cluster", "membership": {"phase": "stable", "voters": ["n1", "n2", "n3"], "learners": ["n4"]}},
+    {"type": "append_entries", "node": "n1", "term": 2, "prev_index": 0, "prev_term": 0, "leader_commit": 5, "entries": [
+      {"index": 1, "term": 1, "type": "command", "client_id": "acct", "seq": 1, "request_id": "a", "command": {"op": "set", "key": "balance", "value": 10}},
+      {"index": 2, "term": 1, "type": "config", "membership": {"phase": "joint", "voters": ["n1", "n2", "n5"], "outgoing_voters": ["n1", "n2", "n3"], "learners": ["n4"]}},
+      {"index": 3, "term": 2, "type": "config", "membership": {"phase": "stable", "voters": ["n1", "n2", "n5"], "learners": ["n4"]}},
+      {"index": 4, "term": 2, "type": "command", "client_id": "acct", "seq": 2, "request_id": "b", "command": {"op": "incr", "key": "balance", "delta": 5}},
+      {"index": 5, "term": 2, "type": "command", "client_id": "acct", "seq": 2, "request_id": "b-retry", "command": {"op": "incr", "key": "balance", "delta": 5}}
+    ]},
+    {"type": "append_entries", "node": "n2", "term": 2, "prev_index": 0, "prev_term": 0, "leader_commit": 5, "entries": [
+      {"index": 1, "term": 1, "type": "command", "client_id": "acct", "seq": 1, "request_id": "a", "command": {"op": "set", "key": "balance", "value": 10}},
+      {"index": 2, "term": 1, "type": "config", "membership": {"phase": "joint", "voters": ["n1", "n2", "n5"], "outgoing_voters": ["n1", "n2", "n3"], "learners": ["n4"]}},
+      {"index": 3, "term": 2, "type": "config", "membership": {"phase": "stable", "voters": ["n1", "n2", "n5"], "learners": ["n4"]}},
+      {"index": 4, "term": 2, "type": "command", "client_id": "acct", "seq": 2, "request_id": "b", "command": {"op": "incr", "key": "balance", "delta": 5}},
+      {"index": 5, "term": 2, "type": "command", "client_id": "acct", "seq": 2, "request_id": "b-retry", "command": {"op": "incr", "key": "balance", "delta": 5}}
+    ]},
+    {"type": "append_entries", "node": "n3", "term": 1, "prev_index": 0, "prev_term": 0, "leader_commit": 2, "entries": [
+      {"index": 1, "term": 1, "type": "command", "client_id": "acct", "seq": 1, "request_id": "a", "command": {"op": "set", "key": "balance", "value": 10}},
+      {"index": 2, "term": 1, "type": "config", "membership": {"phase": "joint", "voters": ["n1", "n2", "n5"], "outgoing_voters": ["n1", "n2", "n3"], "learners": ["n4"]}}
+    ]},
+    {"type": "append_entries", "node": "n4", "term": 2, "prev_index": 0, "prev_term": 0, "leader_commit": 5, "entries": [
+      {"index": 1, "term": 1, "type": "command", "client_id": "acct", "seq": 1, "request_id": "a", "command": {"op": "set", "key": "balance", "value": 10}},
+      {"index": 2, "term": 1, "type": "config", "membership": {"phase": "joint", "voters": ["n1", "n2", "n5"], "outgoing_voters": ["n1", "n2", "n3"], "learners": ["n4"]}},
+      {"index": 3, "term": 2, "type": "config", "membership": {"phase": "stable", "voters": ["n1", "n2", "n5"], "learners": ["n4"]}},
+      {"index": 4, "term": 2, "type": "command", "client_id": "acct", "seq": 2, "request_id": "b", "command": {"op": "incr", "key": "balance", "delta": 5}},
+      {"index": 5, "term": 2, "type": "command", "client_id": "acct", "seq": 2, "request_id": "b-retry", "command": {"op": "incr", "key": "balance", "delta": 5}}
+    ]},
+    {"type": "crash_cut", "live": ["n1", "n2", "n4", "n5"]}
+  ]
+}

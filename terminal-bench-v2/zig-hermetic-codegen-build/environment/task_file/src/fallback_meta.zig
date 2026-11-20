@@ -1,0 +1,16 @@
+pub const revision = "2025.11.0";
+pub const channel = "preview";
+pub const schema: u32 = 9;
+pub const target = "x86_64-linux-musl";
+pub const profile = "legacy";
+pub const epoch: u32 = 1;
+pub const link_mode = "dynamic";
+pub const digest = "8d15b01b18bcdcbf31fdcf5d67ef456c24775b809b91103327d2e3f58c2b6a58";
+pub const relay_role = "legacy";
+pub const relay_priority: u32 = 1;
+pub const inspect_role = "legacy";
+pub const inspect_priority: u32 = 2;
+pub const route_count: u32 = 0;
+pub const route_weight_total: u32 = 0;
+pub const capability_count: u32 = 0;
+pub const manifest_digest = "8d15b01b18bcdcbf31fdcf5d67ef456c24775b809b91103327d2e3f58c2b6a58";

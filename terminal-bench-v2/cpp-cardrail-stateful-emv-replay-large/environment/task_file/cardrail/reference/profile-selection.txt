@@ -1,0 +1,13 @@
+# Profile selection
+
+The case manifest does not choose the profile by itself. Its profile field is only the middle fallback. The task image installs an /etc/cardrail/profile.toml override, so a normal run inside the environment selects that file before looking at the case manifest. Check these locations in order and stop at the first readable file with a profile_id key:
+
+1. `/etc/cardrail/profile.toml`
+2. `/app/cardrail/profiles/<manifest-profile>.toml`
+3. `/app/cardrail/profiles/default.toml`
+
+The profile_id in case_summary.json is copied from the selected file. For example, if /etc/cardrail/profile.toml contains profile_id = "fleet-issuer-override", the summary reports fleet-issuer-override even when the case manifest says profile=fleet.
+
+The selected profile also controls warning script classification. A script status word in soft_script_status is failed_soft. A status word in hard_script_status is failed_hard. The bundled /etc profile lists 6283 and 6300 as soft statuses, while the default profile is less permissive.
+
+Profile files are simple TOML-style key-value files. Remove quotes around string values, and ignore surrounding whitespace around keys and values.

@@ -1,0 +1,7 @@
+# Reversal precedence
+
+Choose reversal reasons after APDU continuation joining, duplicate ATC suppression, host outcome reconciliation, and issuer script classification. The precedence order is issuer_script_hard_failure, host_decline_after_offline_approval, host_timeout_after_online_approval, then duplicate_atc_replay_attempt. Emit only the highest-precedence reason for a transaction ATC.
+
+A transaction with cid=offline_approved and host=declined queues host_decline_after_offline_approval. A transaction with cid=online_approved and host=timeout queues host_timeout_after_online_approval. If a later TXN row repeats a kept lineage and ATC, the kept transaction queues duplicate_atc_replay_attempt unless a higher-precedence reason applies. If any kept script for the same lineage and ATC has status failed_hard, issuer_script_hard_failure wins even when a host or duplicate-replay reason also applies.
+
+reversal_queue.csv uses the header case_id,session_id,card_id,atc,reason,amount,currency. Sort rows by card id, numeric ATC, reason, and session id. Copy amount and currency from the kept transaction row for that ATC.

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../release-integrity-probe-final-r2/luajit-virtual-heap-exits__vyqNRfE/artifacts/candidate-source",
+  "tree_sha256": "25f8a0bf9e7c86797825ec7d0c784e70dd487f20b93f5eef8f2fc92953fd4c1b",
+  "file_count": 301,
+  "bytes": 8674739,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

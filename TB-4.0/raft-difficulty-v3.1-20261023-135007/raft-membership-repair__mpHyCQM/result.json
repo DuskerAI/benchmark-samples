@@ -1,0 +1,184 @@
+{
+    "id": "1f1968de-d664-44a5-9a6a-469676cb0e8e",
+    "task_name": "terminal-bench/raft-membership-repair",
+    "trial_name": "raft-membership-repair__mpHyCQM",
+    "trial_uri": "file:///Users/<user>/Downloads/raft-membership-v3.1/jobs/raft-difficulty-v3.1-20261023-135007/raft-membership-repair__mpHyCQM",
+    "task_id": {
+        "path": "/Users/<user>/Downloads/raft-membership-v3.1/raft-membership-repair"
+    },
+    "source": null,
+    "task_checksum": "cec95af5325abcb2d808b58ca02694f404d6b0b56598831950dbeb22f52063ac",
+    "config": {
+        "task": {
+            "path": "/Users/<user>/Downloads/raft-membership-v3.1/raft-membership-repair",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "raft-membership-repair__mpHyCQM",
+        "trials_dir": "/Users/<user>/Downloads/raft-membership-v3.1/jobs/raft-difficulty-v3.1-20261023-135007",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/gpt-6.1-sol",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "reasoning_effort": "high",
+                "use_responses_api": true,
+                "record_terminal_session": false
+            },
+            "mcp_servers": []
+        },
+        "user_agent": null,
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "extra_instructions": [],
+        "job_id": "9d682990-608f-49ee-a2ee-b6bf51b06438",
+        "source_trial": null
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "gpt-6.1-sol",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2997063,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 63440,
+        "cost_usd": 1.2333233000000001,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 58,
+            "api_request_times_msec": [
+                5501.9371509552,
+                5158.076286315918,
+                4947.940111160278,
+                3505.953073501587,
+                4498.331785202026,
+                5324.571847915649,
+                4753.0272006988525,
+                4623.34418296814,
+                3452.7580738067627,
+                3920.6790924072266,
+                5578.51505279541,
+                4822.898864746094,
+                3572.2591876983643,
+                3285.9959602355957,
+                3653.01775932312,
+                4435.760021209717,
+                3449.302911758423,
+                4082.8301906585693,
+                4628.623247146606,
+                123744.03619766235,
+                87996.93489074707,
+                47141.85571670532,
+                98580.82509040833,
+                26229.074001312256,
+                6847.148656845093,
+                4821.537971496582,
+                6292.896032333374,
+                111381.03294372559,
+                73631.39986991882,
+                79903.87892723083,
+                9418.805837631226,
+                46463.876247406006,
+                10736.222982406616,
+                51317.60787963867,
+                92173.39587211609,
+                17967.010736465454,
+                137125.09417533875,
+                20807.429313659668,
+                64477.89192199707,
+                10166.05019569397,
+                7471.887111663818,
+                120255.11503219604,
+                79347.84483909607,
+                7372.929096221924,
+                7576.714992523193,
+                106476.70221328735,
+                25646.18229866028,
+                11952.089786529541,
+                9025.671005249023,
+                5157.554149627686,
+                103539.27803039551,
+                44616.687059402466,
+                73964.74194526672,
+                4368.070840835571,
+                5666.365146636963,
+                4305.716991424561,
+                23399.33681488037,
+                4754.393815994263
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "verifier_environment_mode": "separate",
+    "exception_info": null,
+    "started_at": "2026-10-23T08:20:09.825996Z",
+    "finished_at": "2026-10-23T08:53:22.859025Z",
+    "environment_setup": {
+        "started_at": "2026-10-23T08:20:10.111975Z",
+        "finished_at": "2026-10-23T08:20:14.041639Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-23T08:20:14.041704Z",
+        "finished_at": "2026-10-23T08:20:34.505165Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-23T08:20:34.505301Z",
+        "finished_at": "2026-10-23T08:52:21.381823Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-23T08:52:25.319442Z",
+        "finished_at": "2026-10-23T08:53:22.858960Z"
+    },
+    "step_results": null
+}

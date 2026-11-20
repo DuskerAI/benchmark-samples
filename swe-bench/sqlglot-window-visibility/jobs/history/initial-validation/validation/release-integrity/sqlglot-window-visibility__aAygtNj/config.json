@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+    },
+    "trial_name": "sqlglot-window-visibility__aAygtNj",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs/release-integrity",
+    "agent": {
+        "name": "window_probe:IntegrityProbe"
+    },
+    "job_id": "a281e1c0-2858-4ea9-ae0c-9f20bbb8135c"
+}

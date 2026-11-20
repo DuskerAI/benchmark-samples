@@ -1,0 +1,10 @@
+[package]
+name = "walfix"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+debug = true
+
+[profile.release]
+debug = false

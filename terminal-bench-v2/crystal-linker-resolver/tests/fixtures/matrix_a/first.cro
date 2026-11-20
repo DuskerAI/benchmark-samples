@@ -1,0 +1,10 @@
+OBJECT first
+SECTION .text - 12 -
+SYMBOL entry STRONG DEF .text 0
+SYMBOL arena WEAK DEF .text 8
+SYMBOL cap COMMON 3 2
+SYMBOL arena COMMON 5 8
+SYMBOL fixed COMMON 20 16
+RELOC .text 0 arena ABS32 0
+RELOC .text 4 cap REL32 0
+RELOC .text 8 fixed ABS32 0

@@ -1,0 +1,52 @@
+{
+  "catalog_schema_version": "1.0",
+  "collection": "Dusker AI SWE-bench-style tasks",
+  "github_owner": "dusker-dynamics",
+  "task_count": 4,
+  "tasks": [
+    {
+      "id": "luajit-virtual-heap-exits",
+      "path": "luajit-virtual-heap-exits",
+      "listing_path": "swe-bench/luajit-virtual-heap-exits",
+      "readme_path": "luajit-virtual-heap-exits/README.md",
+      "instruction_path": "luajit-virtual-heap-exits/instruction.md",
+      "description": "Preserve virtual heap identity and values across native trace recovery and side-trace import",
+      "task_version": "1.0.0",
+      "repository": "https://github.com/LuaJIT/LuaJIT",
+      "category": "JIT compiler deoptimization"
+    },
+    {
+      "id": "go-workflows-reset-provenance",
+      "path": "go-workflows-reset-provenance",
+      "listing_path": "swe-bench/go-workflows-reset-provenance",
+      "readme_path": "go-workflows-reset-provenance/README.md",
+      "instruction_path": "go-workflows-reset-provenance/instruction.md",
+      "description": "Recover shared workflow history and external work across nested execution resets",
+      "task_version": "3.0.0",
+      "repository": "https://github.com/cschleiden/go-workflows",
+      "category": "Durable workflow engines"
+    },
+    {
+      "id": "alien-signals-graph-savepoints",
+      "path": "alien-signals-graph-savepoints",
+      "listing_path": "swe-bench/alien-signals-graph-savepoints",
+      "readme_path": "alien-signals-graph-savepoints/README.md",
+      "instruction_path": "alien-signals-graph-savepoints/instruction.md",
+      "description": "Nested transactions restore reactive values, dependencies and resource ownership",
+      "task_version": "1.0.0",
+      "repository": "https://github.com/stackblitz/alien-signals",
+      "category": "Reactive systems and dataflow propagation"
+    },
+    {
+      "id": "sqlglot-window-visibility",
+      "path": "sqlglot-window-visibility",
+      "listing_path": "swe-bench/sqlglot-window-visibility",
+      "readme_path": "sqlglot-window-visibility/README.md",
+      "instruction_path": "sqlglot-window-visibility/instruction.md",
+      "description": "Execute peer-aware windows without losing row identity or query-phase visibility",
+      "task_version": "1.0.0",
+      "repository": "https://github.com/tobymao/sqlglot",
+      "category": "Query engine semantic correctness"
+    }
+  ]
+}

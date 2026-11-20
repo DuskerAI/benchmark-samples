@@ -1,0 +1,95 @@
+{
+  "reward": 0,
+  "category": "acceptance_failure",
+  "exact_inventory": true,
+  "fail_to_pass": {
+    "passed": 103,
+    "total": 104
+  },
+  "pass_to_pass": {
+    "passed": 22,
+    "total": 22
+  },
+  "nonpassing": [
+    "test_window_semantics.TestWindows.test_window_join_input"
+  ],
+  "suite_exit_code": 1,
+  "requirement_groups": {
+    "W01": {
+      "passed": 6,
+      "total": 6
+    },
+    "W02": {
+      "passed": 4,
+      "total": 4
+    },
+    "W03": {
+      "passed": 8,
+      "total": 8
+    },
+    "W04": {
+      "passed": 6,
+      "total": 6
+    },
+    "W05": {
+      "passed": 10,
+      "total": 10
+    },
+    "W06": {
+      "passed": 14,
+      "total": 14
+    },
+    "W07": {
+      "passed": 8,
+      "total": 8
+    },
+    "W08": {
+      "passed": 8,
+      "total": 8
+    },
+    "W09": {
+      "passed": 5,
+      "total": 5
+    },
+    "W10": {
+      "passed": 6,
+      "total": 6
+    },
+    "W11": {
+      "passed": 2,
+      "total": 2
+    },
+    "W12": {
+      "passed": 6,
+      "total": 6
+    },
+    "W13": {
+      "passed": 4,
+      "total": 4
+    },
+    "W14": {
+      "passed": 4,
+      "total": 5
+    },
+    "W15": {
+      "passed": 4,
+      "total": 4
+    },
+    "W16": {
+      "passed": 5,
+      "total": 5
+    },
+    "W17": {
+      "passed": 9,
+      "total": 9
+    },
+    "W18": {
+      "passed": 4,
+      "total": 4
+    },
+    "P01": {
+      "passed": 12,
+      "total": 12
+    }
+  }
+}

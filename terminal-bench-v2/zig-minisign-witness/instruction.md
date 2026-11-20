@@ -1,0 +1,5 @@
+Release security reviewers use `/app/witnessgate` as an offline admission gate before Minisign-style signed release evidence enters a dossier. Build the native Zig program with `/app/witnessgate/scripts/build.sh`; it must produce `/app/witnessgate/bin/witnessgate`, and each run must preserve every input byte while making the same decision on every host.
+
+The gate is invoked as `/app/witnessgate/bin/witnessgate --trust TRUST --bundle BUNDLE --state STATE --out REPORT`. It must apply the trust, statement-signature, checkpoint, witness-quorum, append-only history, split-view, duplicate, replay, malformed-input, and deterministic JSON report rules in `/app/witnessgate/spec.md`. The process exits zero only for admitted evidence and nonzero for rejected evidence, but it must replace `REPORT` with the decision report in either case.
+
+Use `/app/witnessgate/fixtures/trust.json`, `/app/witnessgate/fixtures/bundle.json`, and `/app/witnessgate/fixtures/state.json` as local dossier fixtures. The same contract applies to any dossier with that schema.

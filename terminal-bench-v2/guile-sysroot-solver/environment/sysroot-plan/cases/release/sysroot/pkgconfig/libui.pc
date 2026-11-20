@@ -1,0 +1,7 @@
+Name: libui
+Version: 1.4.2
+Target: armv7-linux-gnueabihf
+Requires: libcore >= 1.0
+Requires.private: renderer >= 3.0
+Cflags: -I/usr/include/ui
+Libs: -L/usr/lib -lui

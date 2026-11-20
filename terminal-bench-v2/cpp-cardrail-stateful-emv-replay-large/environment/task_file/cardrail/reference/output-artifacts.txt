@@ -1,0 +1,13 @@
+# Output artifact schemas
+
+case_summary.json is a single JSON object. Its top-level keys are schema_version, case_id, profile_id, totals, and sessions. schema_version is the integer 1. The totals object contains transactions_seen, transactions_kept, scripts_seen, scripts_kept, scripts_applied, scripts_failed_soft, scripts_failed_hard, and reversals_queued. Each session row contains session_id, card_id, lineage_key, terminal_ids, first_atc, last_atc, approved, declined, scripts_applied, scripts_failed_soft, scripts_failed_hard, reversal_required, and private_tags. reversal_required is an integer count of emitted reversal rows for that session, not a JSON boolean.
+
+transactions_seen counts input rows with kind TXN before duplicate suppression. transactions_kept counts the transaction rows left after lineage duplicate suppression and continuation joining. scripts_seen and scripts_kept follow the same pattern for SCRIPT rows. The script status totals count kept scripts by final status. reversals_queued is the number of emitted reversal rows.
+
+For session counters, approved counts kept transactions whose host outcome is exactly approved. declined counts every kept transaction whose host outcome is not approved, including declined and timeout. There is no separate timeout counter. A timeout can still queue a reversal when the transaction was online approved.
+
+private_tags arrays are built only from kept logical rows. For sessions, collect tags from kept transactions after duplicate suppression and continuation joining, plus kept issuer scripts after script duplicate suppression. Suppressed duplicate rows and standalone continuation rows do not contribute tags. For issuer script rows, use only the tags from that kept script. If the selected profile disallows private tags, emit empty arrays.
+
+issuer_scripts.jsonl and reversal_queue.csv are described in their own files. Empty JSONL output is a zero-byte file. Empty CSV output contains only the header row and one trailing newline.
+
+All JSON arrays are sorted. Session objects are sorted by card_id, lineage_key, and session_id. Strings use normal JSON escaping. ATCs are emitted as four-character upper-case strings. Numeric ATC comparisons use hexadecimal value except for the pre-lineage first-ATC rule in apdu-state.txt, which uses the raw sorted row order to decide which TXN row is first.

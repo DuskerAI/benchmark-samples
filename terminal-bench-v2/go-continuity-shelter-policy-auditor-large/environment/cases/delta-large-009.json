@@ -1,0 +1,18 @@
+{
+  "accessibility_retrofit": true,
+  "case_id": "delta-large-009",
+  "evacuation_status": "advisory",
+  "exceptions": [],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-06",
+  "jurisdiction": "delta",
+  "medical_dependent": false,
+  "opened_at": "2026-02-14",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 85,
+  "shelter_type": "gym",
+  "staff_count": 4,
+  "transport_status": "not_required",
+  "water_days": 3
+}

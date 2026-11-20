@@ -1,0 +1,1 @@
+{"pkt_len":16,"insns":[{"op":"ld_pkt","dst":0,"base":1,"off":0,"size":4},{"op":"exit"}]}

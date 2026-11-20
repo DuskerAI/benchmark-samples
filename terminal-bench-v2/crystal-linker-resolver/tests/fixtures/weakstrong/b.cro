@@ -1,0 +1,4 @@
+OBJECT b
+SECTION .text - 8 -
+SYMBOL beta WEAK DEF .text 4
+SYMBOL gamma WEAK DEF .text 0

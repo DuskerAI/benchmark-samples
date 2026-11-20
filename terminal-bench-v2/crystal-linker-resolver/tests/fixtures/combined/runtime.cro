@@ -1,0 +1,8 @@
+OBJECT runtime
+SECTION .text - 16 -
+SECTION .vtbl grp.v 8 -
+SYMBOL log STRONG DEF .text 0
+SYMBOL rt STRONG DEF .text 4
+SYMBOL vt WEAK DEF .vtbl 0
+SYMBOL scratch COMMON 12 16
+RELOC .text 0 vt ABS32 0

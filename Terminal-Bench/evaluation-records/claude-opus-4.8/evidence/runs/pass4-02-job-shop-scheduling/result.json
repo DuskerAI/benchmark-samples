@@ -1,0 +1,38 @@
+{
+    "id": "7eba9148-baba-4eb5-b799-887f89a07cad",
+    "started_at": "2026-07-23T23:40:14.038620",
+    "finished_at": "2026-07-24T00:15:05.083481",
+    "n_total_trials": 4,
+    "stats": {
+        "n_trials": 4,
+        "n_errors": 1,
+        "evals": {
+            "claude-code__adhoc": {
+                "n_trials": 4,
+                "n_errors": 1,
+                "metrics": [
+                    {
+                        "mean": 0.5
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "02-job-shop-scheduling__DW9dcE7",
+                            "02-job-shop-scheduling__vfpJaGG"
+                        ],
+                        "1.0": [
+                            "02-job-shop-scheduling__iqkbTh4",
+                            "02-job-shop-scheduling__kagAE44"
+                        ]
+                    }
+                },
+                "exception_stats": {
+                    "AgentTimeoutError": [
+                        "02-job-shop-scheduling__DW9dcE7"
+                    ]
+                }
+            }
+        }
+    }
+}

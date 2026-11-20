@@ -1,0 +1,121 @@
+{
+  "reward": 0,
+  "category": "acceptance_failure",
+  "exact_inventory": true,
+  "tests_executed": 57,
+  "fail_to_pass": {
+    "passed": 0,
+    "total": 41
+  },
+  "pass_to_pass": {
+    "passed": 16,
+    "total": 16
+  },
+  "nonpassing": [
+    "test_replay_turns.ReplayTurnSemantics.test_R01_cold_actor_ownership_2",
+    "test_replay_turns.ReplayTurnSemantics.test_R01_cold_actor_ownership_3",
+    "test_replay_turns.ReplayTurnSemantics.test_R01_cold_actor_ownership_5",
+    "test_replay_turns.ReplayTurnSemantics.test_R01_inline_actor_before_plain_actor",
+    "test_replay_turns.ReplayTurnSemantics.test_R02_immediate_select_1",
+    "test_replay_turns.ReplayTurnSemantics.test_R02_immediate_select_2",
+    "test_replay_turns.ReplayTurnSemantics.test_R02_immediate_select_4",
+    "test_replay_turns.ReplayTurnSemantics.test_R03_nested_span_around_memo",
+    "test_replay_turns.ReplayTurnSemantics.test_R03_nested_span_parentage_2",
+    "test_replay_turns.ReplayTurnSemantics.test_R03_nested_span_parentage_3",
+    "test_replay_turns.ReplayTurnSemantics.test_R03_span_without_side_effect",
+    "test_replay_turns.ReplayTurnSemantics.test_R04_three_turn_alternate",
+    "test_replay_turns.ReplayTurnSemantics.test_R04_three_turn_cold",
+    "test_replay_turns.ReplayTurnSemantics.test_R04_three_turn_warm_suffix",
+    "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_forward_batch_0",
+    "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_forward_batch_1",
+    "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_0",
+    "test_replay_turns.ReplayTurnSemantics.test_R05_completion_order_reverse_batch_1",
+    "test_replay_turns.ReplayTurnSemantics.test_R06_blocked_receiver_then_inline_sender",
+    "test_replay_turns.ReplayTurnSemantics.test_R06_buffered_handoff_after_memo",
+    "test_replay_turns.ReplayTurnSemantics.test_R06_spawn_after_inline_memo",
+    "test_replay_turns.ReplayTurnSemantics.test_R06_spawn_before_explicit_span",
+    "test_replay_turns.ReplayTurnSemantics.test_R07_cancelled_timer_stays_cancelled",
+    "test_replay_turns.ReplayTurnSemantics.test_R07_real_child_waits",
+    "test_replay_turns.ReplayTurnSemantics.test_R07_real_signal_waits",
+    "test_replay_turns.ReplayTurnSemantics.test_R07_real_timer_waits",
+    "test_replay_turns.ReplayTurnSemantics.test_R08_caught_activity_failure_then_inline_work",
+    "test_replay_turns.ReplayTurnSemantics.test_R08_retry_keeps_actor_identity",
+    "test_replay_turns.ReplayTurnSemantics.test_R09_empty_string_is_a_committed_value",
+    "test_replay_turns.ReplayTurnSemantics.test_R09_null_payload_remains_distinct_from_missing",
+    "test_replay_turns.ReplayTurnSemantics.test_R09_wrapped_payloads_across_restarts",
+    "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_0",
+    "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_2_wrapped_1",
+    "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_0",
+    "test_replay_turns.ReplayTurnSemantics.test_R10_sqlite_process_restart_3_wrapped_1",
+    "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_actor_tokens",
+    "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_nested_spans",
+    "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_ready_and_null",
+    "test_replay_turns.ReplayTurnSemantics.test_R12_legacy_wrapped_receipts",
+    "test_replay_turns.ReplayTurnSemantics.test_R13_logical_task_clock_cold",
+    "test_replay_turns.ReplayTurnSemantics.test_R13_logical_task_clock_warm_suffix"
+  ],
+  "suite_exit_code": 1,
+  "requirement_groups": {
+    "R01": {
+      "passed": 1,
+      "total": 5
+    },
+    "R02": {
+      "passed": 0,
+      "total": 3
+    },
+    "R03": {
+      "passed": 0,
+      "total": 4
+    },
+    "R04": {
+      "passed": 0,
+      "total": 3
+    },
+    "R05": {
+      "passed": 0,
+      "total": 4
+    },
+    "R06": {
+      "passed": 0,
+      "total": 4
+    },
+    "R07": {
+      "passed": 0,
+      "total": 4
+    },
+    "R08": {
+      "passed": 0,
+      "total": 2
+    },
+    "R09": {
+      "passed": 0,
+      "total": 3
+    },
+    "R10": {
+      "passed": 0,
+      "total": 4
+    },
+    "P01": {
+      "passed": 3,
+      "total": 3
+    },
+    "P02": {
+      "passed": 4,
+      "total": 4
+    },
+    "R11": {
+      "passed": 8,
+      "total": 8
+    },
+    "R12": {
+      "passed": 0,
+      "total": 4
+    },
+    "R13": {
+      "passed": 0,
+      "total": 2
+    }
+  },
+  "trusted_assets_unchanged": true
+}

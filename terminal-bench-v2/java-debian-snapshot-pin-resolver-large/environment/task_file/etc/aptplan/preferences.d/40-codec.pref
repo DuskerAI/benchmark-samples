@@ -1,0 +1,10 @@
+Package: libcodec-ng
+Snapshot: stable
+Pin-Priority: 1001
+
+Package: legacy-gui
+Pin-Priority: -1
+
+Package: media-runtime
+Snapshot: stable
+Pin-Priority: 950

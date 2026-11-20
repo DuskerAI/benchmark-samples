@@ -1,0 +1,24 @@
+{
+  "accessibility_retrofit": false,
+  "case_id": "inland-waiver-010",
+  "evacuation_status": "advisory",
+  "exceptions": [
+    {
+      "code": "WATER_SHORTAGE_1D",
+      "expires_on": "2026-02-18",
+      "source": "waiver-board-18"
+    }
+  ],
+  "generator_class": "C",
+  "generator_tested_at": "2026-02-06",
+  "jurisdiction": "inland",
+  "medical_dependent": false,
+  "opened_at": "2026-02-14",
+  "pet_accommodation": false,
+  "pet_count": 0,
+  "residents": 80,
+  "shelter_type": "school",
+  "staff_count": 3,
+  "transport_status": "not_required",
+  "water_days": 2
+}

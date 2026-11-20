@@ -1,0 +1,75 @@
+{
+  "reward": 1,
+  "category": "acceptance_pass",
+  "exact_inventory": true,
+  "tests_executed": 48,
+  "fail_to_pass": {
+    "passed": 38,
+    "total": 38
+  },
+  "pass_to_pass": {
+    "passed": 10,
+    "total": 10
+  },
+  "nonpassing": [],
+  "suite_exit_code": 0,
+  "requirement_groups": {
+    "G01": {
+      "passed": 6,
+      "total": 6
+    },
+    "G02": {
+      "passed": 6,
+      "total": 6
+    },
+    "G03": {
+      "passed": 4,
+      "total": 4
+    },
+    "G04": {
+      "passed": 2,
+      "total": 2
+    },
+    "G05": {
+      "passed": 4,
+      "total": 4
+    },
+    "G06": {
+      "passed": 6,
+      "total": 6
+    },
+    "G07": {
+      "passed": 2,
+      "total": 2
+    },
+    "G08": {
+      "passed": 2,
+      "total": 2
+    },
+    "G09": {
+      "passed": 2,
+      "total": 2
+    },
+    "G10": {
+      "passed": 2,
+      "total": 2
+    },
+    "G11": {
+      "passed": 2,
+      "total": 2
+    },
+    "P01": {
+      "passed": 3,
+      "total": 3
+    },
+    "P02": {
+      "passed": 6,
+      "total": 6
+    },
+    "P03": {
+      "passed": 1,
+      "total": 1
+    }
+  },
+  "trusted_assets_unchanged": true
+}

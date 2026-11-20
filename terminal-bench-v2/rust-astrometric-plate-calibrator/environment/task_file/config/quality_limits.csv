@@ -1,0 +1,4 @@
+metric,value
+max_match_radius_arcsec,6.0
+max_report_rms_arcsec,1.5
+min_sources_per_exposure,6

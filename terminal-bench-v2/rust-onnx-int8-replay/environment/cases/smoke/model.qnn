@@ -1,0 +1,22 @@
+classes 3
+input_len 5
+input_scale 0.03125
+input_zp 0
+conv_out 2
+kernel 3
+pad_left 1
+pad_right 1
+conv_scales 0.02 0.03
+conv_zero_points -7 13
+conv_bias 18000 -17000
+conv_weights
+3 -2 4
+-1 2 1
+affine_scales 0.00009 0.00008 0.00007
+affine_zero_points -5 9 0
+affine_bias 300 -200 100
+affine_weights
+2 -3
+-1 4
+3 1
+temperature 0.05

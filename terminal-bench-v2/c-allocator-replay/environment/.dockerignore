@@ -1,0 +1,8 @@
+**/.git
+**/.pytest_cache
+**/__pycache__
+build/
+task_file/build/
+*.o
+solution/
+tests/

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "archive_kind": "candidate-source",
+  "retained_directory": "../../../trial-2/sqlglot-window-visibility__Hp3XQsY/artifacts/candidate-source",
+  "tree_sha256": "844b0155ee84b58a13975df9fb0241c33503ca0eaa0c422b582d99277b02ca7f",
+  "file_count": 185,
+  "bytes": 3013257,
+  "note": "Byte-identical capture retained at the relative target. Verify or restore with tools/archive.py from the repository root."
+}

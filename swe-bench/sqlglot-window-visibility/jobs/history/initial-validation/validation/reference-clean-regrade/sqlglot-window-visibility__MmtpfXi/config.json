@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset7/sqlglot-window-visibility"
+    },
+    "trial_name": "sqlglot-window-visibility__MmtpfXi",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs/reference-clean-regrade",
+    "job_id": "0574f752-c5dd-41d9-bd6d-46aec68187d4",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "b3c1526d-3763-413a-97b4-326ca9a53db4",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset7/validation/sqlglot-window-visibility/jobs/release-oracle/sqlglot-window-visibility__XmgcAKZ"
+    }
+}

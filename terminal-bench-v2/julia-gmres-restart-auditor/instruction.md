@@ -1,0 +1,5 @@
+The numerical methods group uses the restarted Krylov audit program in `/app/gmresaudit` to certify sparse linear-solve runs before residual histories are archived. Build the project there so this command is the supported interface: `julia --project=/app/gmresaudit /app/gmresaudit/audit.jl <case-dir> <report.json>`.
+
+Each case directory contains the files and numerical contract described in `/app/gmresaudit/spec.md`. The program must read the sparse matrix case, run the requested left-preconditioned restarted GMRES process, and write a deterministic JSON audit report whose convergence status, iteration records, residuals, and invalid-case behavior follow that document. Valid cases must exit 0 and replace the requested report; invalid cases must exit nonzero without creating or keeping that report.
+
+The report is used as numerical evidence, so it must distinguish the preconditioned stopping test from the true residual check, preserve restart state across cycles, and remain stable for repeated runs of the same case.

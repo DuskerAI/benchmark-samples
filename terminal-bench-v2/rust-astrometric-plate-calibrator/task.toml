@@ -1,0 +1,41 @@
+version = "2.0"
+
+[metadata]
+author_name = "Dusker AI expert bench"
+author_email = "tasks@dusker.ai"
+difficulty = "hard"
+category = "scientific-computing"
+subcategories = []
+number_of_milestones = 0
+codebase_size = "small"
+languages = ["rust"]
+tags = ["plate-solving", "tangent-plane", "proper-motion", "coordinate-transforms", "numerical-methods"]
+expert_time_estimate_min = 150
+junior_time_estimate_min = 300
+
+[verifier]
+timeout_sec = 900.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+allow_internet = false
+build_timeout_sec = 600.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 10240
+docker_flags = []
+gpus = 0
+gpu_types = []
+
+[rubric]
+criteria = '''
+Submitted Rust code preserves the documented `astrofit <observation_dir> <plate_solutions_csv> <calibrated_sources_csv>` interface, builds in release mode, and writes both CSVs with the exact documented headers and deterministic row ordering, +4
+Submitted Rust code matches the independent astrometric reference on bundled observations, including source identities, sky coordinates, residuals, fitted plate centers, area-equivalent scale, and signed rotation, +7
+Submitted Rust code generalizes to generated observation directories that combine RA wraparound, high declination, off-axis radial distortion, non-conformal affine/shear terms, close catalog pairs, extra detections, and non-default output paths, +9
+Submitted Rust code enforces one-to-one source assignment, rejects spurious detections, keeps residuals within the documented RMS/max bounds, and produces byte-identical outputs across repeated runs, +5
+Agent modifies bundled observations, configuration, documentation, verifier files, task metadata, or reward files instead of repairing `/app/src`, -6
+Agent hardcodes fixture names, generated holdout rows, source IDs, or numeric answer tables rather than computing from the observation directory and catalog, -6
+Agent bypasses the Rust crate by generating CSV outputs from shell/Python/static templates, or leaves valid inputs crashing/building unsuccessfully, -5
+'''

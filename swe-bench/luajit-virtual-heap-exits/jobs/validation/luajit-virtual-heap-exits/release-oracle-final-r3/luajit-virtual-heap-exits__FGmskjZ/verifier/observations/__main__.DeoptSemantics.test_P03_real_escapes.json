@@ -1,0 +1,30 @@
+{
+  "big_alloc": 1025,
+  "same": true,
+  "small_alloc": 129,
+  "stats": {
+    "aborts": [
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      },
+      {
+        "detail": "nil",
+        "error": "12"
+      }
+    ],
+    "exits": 11,
+    "on": true,
+    "roots": 2,
+    "sides": 3
+  },
+  "sum": 67712
+}

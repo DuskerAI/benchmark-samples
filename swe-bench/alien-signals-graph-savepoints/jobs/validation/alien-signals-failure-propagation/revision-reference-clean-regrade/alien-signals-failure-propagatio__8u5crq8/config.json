@@ -1,0 +1,14 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset9/alien-signals-failure-propagation"
+    },
+    "trial_name": "alien-signals-failure-propagatio__8u5crq8",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs/revision-reference-clean-regrade",
+    "job_id": "ab1e4ccd-4476-4187-8b69-e6366c41cffc",
+    "source_trial": {
+        "action": "regrade",
+        "type": "local",
+        "trial_id": "bfd0af3e-68db-43bf-a3c5-62150deafe91",
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset9/validation/alien-signals-failure-propagation/jobs/revision-oracle/alien-signals-failure-propagatio__LWDcoQm"
+    }
+}

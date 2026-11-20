@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/Users/<user>/Desktop/Dusker Swe/dataset10/go-workflows-replay-turns"
+    },
+    "trial_name": "go-workflows-replay-turns__9qCu8vS",
+    "trials_dir": "/Users/<user>/Desktop/Dusker Swe/dataset-records/dataset10/validation/go-workflows-replay-turns/jobs/release-nop",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "c131cb13-9e13-41a8-a04f-94cb59fcfdf2"
+}

@@ -1,0 +1,509 @@
+{
+  "count": 126,
+  "tests": [
+    {
+      "name": "test_window_semantics.TestWindows.test_all_null_empty_distinction",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_collision_names",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_cte_reused",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_derived_two_window_stages",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_duplicate_physical_rows",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_empty_filtered_window",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_empty_registered_table",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_all_without_order",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_groups_current_row",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_groups_group",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_groups_no_others",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_groups_ties",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_range_current_row",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_range_group",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_range_no_others",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_range_ties",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_rows_current_row",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_rows_group",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_rows_no_others",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_rows_ties",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_exclude_ties_current_outside_frame",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_case_3vl",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_count_operand",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_cte",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_distinct",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_empty_aggregate",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_filter",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_group",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_having",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_join",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_limit",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_projection",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_existing_union",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_filter_avg",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_filter_count",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_filter_count_star",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_filter_max",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_filter_min",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_filter_sum",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_group_expression",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_grouped_empty_having",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_grouped_filter_operand",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_grouped_global_empty",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_grouped_native_plan_reuse",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_grouped_nested_sum",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_grouped_rank",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_groups_adjacent",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_groups_composite_peers",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_groups_future",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_groups_no_order",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_groups_past",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_groups_tail",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_hidden_window_order_key",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_incompatible_orders",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_metamorphic_1337",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_metamorphic_2243",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_metamorphic_401",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_metamorphic_827",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_named_inheritance",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_named_inline_frame",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_native_env_aggregate",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_native_env_operand",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_native_plan_reuse",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_navigation_default_expression",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_navigation_lag",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_navigation_lead",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_navigation_long",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_navigation_zero",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_qualify_alias",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_qualify_distinct",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_qualify_grouped",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_qualify_unprojected",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_ascending",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_descending",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_fractional",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_future_only",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_left_unbounded",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_past_only",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_right_unbounded",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_text_current",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_text_offset",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_range_zero_peers",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_cume_dist",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_dense_rank",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_no_order",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_ntile",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_ntile20",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_percent_rank",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_rank",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rank_row_number",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_distinct_window",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_fractional_groups",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_multi_key_range",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_negative_lag",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_negative_range",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_negative_rows",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_range_without_order",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_zero_nth",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_reject_zero_ntile",
+      "status": "PASSED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_repeated_same_expression",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_empty_count",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_future_only",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_oversized",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_own",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_past_only",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_sliding",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_tail",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_rows_zero",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_scalar_operand",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_singleton",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_star_count_partition",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_static_relation",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_sum_default_desc",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_sum_default_peer",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_sum_global",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_sum_partition",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_value_default_peer",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_value_empty",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_value_first",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_value_last",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_value_missing",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_value_nth",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_window_cte_then_navigation",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_window_join_input",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_window_scalar_composition",
+      "status": "FAILED"
+    },
+    {
+      "name": "test_window_semantics.TestWindows.test_window_subquery_consumed",
+      "status": "FAILED"
+    }
+  ]
+}
